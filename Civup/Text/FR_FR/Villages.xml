@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysÂ®Us -->
 <GameData>
 	<Language_fr_FR>
 		<Update>
@@ -8,7 +8,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT" />
-			<Set Text="Un village est une communauté avec une population allant de quelques centaines à quelques milliers de personnes.  Ces petites colonies s'ajoutent à l'économie globale de votre société." />
+			<Set Text="Un village est une communautÃ© avec une population allant de quelques centaines Ã  quelques milliers de personnes.  Ces petites colonies s'ajoutent Ã  l'Ã©conomie globale de votre sociÃ©tÃ©." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADINGPOST" />
@@ -28,11 +28,11 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_WORKERS_TRADINGPOST_HEADING3_BODY" />
-			<Set Text="Le village augmente la production d'une case de 1 or.  Il n'a pas accès à une ressource.[NEWLINE]Technologie requise: Piège[NEWLINE]Durée de la construction: 5 Tours[NEWLINE]Peut être érigé sur: Toutes les cases, sauf la glace." />
+			<Set Text="Le village augmente la production d'une case de 1 or.  Il n'a pas accÃ¨s Ã  une ressource.[NEWLINE]Technologie requise: PiÃ¨ge[NEWLINE]DurÃ©e de la construction: 5 Tours[NEWLINE]Peut Ãªtre Ã©rigÃ© sur: Toutes les cases, sauf la glace." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP" />
-			<Set Text="[COLOR_POSITIVE_TEXT]Liberté de pensée[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science sur les villages.[NEWLINE]+17% [ICON_RESEARCH] Science provenant des universités." />
+			<Set Text="[COLOR_POSITIVE_TEXT]LibertÃ© de pensÃ©e[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science sur les villages.[NEWLINE]+17% [ICON_RESEARCH] Science provenant des universitÃ©s." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_BUILD_TRADING_POST" />
@@ -40,7 +40,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_BUILD_GOLD_REC" />
-			<Set Text="Augmentera la quantité [ICON_GOLD] d'or que procure cette case, stimulant du même coup le montant d'argent que vous aurez à dépenser." />
+			<Set Text="Augmentera la quantitÃ© [ICON_GOLD] d'or que procure cette case, stimulant du mÃªme coup le montant d'argent que vous aurez Ã  dÃ©penser." />
 		</Update>		
 	</Language_fr_FR>
 </GameData>

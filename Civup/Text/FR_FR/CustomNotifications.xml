@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysÂ®Us -->
 <GameData>
 	<Language_fr_FR>
 		<!-- Improved Events -->
 		<Row Tag="TXT_KEY_NOTIFICATION_CITY_GROWTH_2">
-			<Text>La ville de {1_CityName} a maintenant {2_Pop} [ICON_CITIZEN] Citoyens !  Les nouveaux citoyens vont automatiquement travailler la terre près de la ville pour obtenir plus de [ICON_FOOD] Nourriture, [ICON_PRODUCTION] Production ou [ICON_GOLD] Or.</Text>
+			<Text>La ville de {1_CityName} a maintenant {2_Pop} [ICON_CITIZEN] Citoyens !  Les nouveaux citoyens vont automatiquement travailler la terre prÃ¨s de la ville pour obtenir plus de [ICON_FOOD] Nourriture, [ICON_PRODUCTION] Production ou [ICON_GOLD] Or.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CITY_GROWTH_2">
 			<Text>{1_CityName} a grandi !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_CITY_TILE">
-			<Text>La ville de {1_CityName} a réclamé une nouvelle case pour [ICON_CITIZEN] travailler !</Text>
+			<Text>La ville de {1_CityName} a rÃ©clamÃ© une nouvelle case pour [ICON_CITIZEN] travailler !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CITY_TILE">
-			<Text>{1_CityName} a réclamé une nouvelle case !</Text>
+			<Text>{1_CityName} a rÃ©clamÃ© une nouvelle case !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_EMPIRE_TILE">
-			<Text>Nouvelle case réclamée !</Text>
+			<Text>Nouvelle case rÃ©clamÃ©e !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_EMPIRE_TILE">
-			<Text>Une nouvelle case a été réclamé par votre empire.  Cependant, personne ne peut y travailler.</Text>
+			<Text>Une nouvelle case a Ã©tÃ© rÃ©clamÃ© par votre empire.  Cependant, personne ne peut y travailler.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CNOTIFICATION_CITY_GROWTH">
-			<Text>Évènements - Croissance de la ville</Text>
+			<Text>Ã‰vÃ¨nements - Croissance de la ville</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CNOTIFICATION_CITY_GROWTH_OPTION">
 			<Text>[ICON_FOOD] Croissance de la ville</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CNOTIFICATION_CULTURE_GROWTH">
-			<Text>Évènements - Diffusion de la culture</Text>
+			<Text>Ã‰vÃ¨nements - Diffusion de la culture</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CNOTIFICATION_CULTURE_GROWTH_OPTION">
 			<Text>[ICON_CULTURE] Diffusion de la culture</Text>
@@ -39,28 +39,28 @@
 			<Text>ENLEVER LA NOTIFICATION</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DENUNCIATION_EXPIRED_OPTION">
-			<Text>[ICON_INFLUENCE] Dénonciation expirée</Text>
+			<Text>[ICON_INFLUENCE] DÃ©nonciation expirÃ©e</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_FRIENDSHIP_EXPIRED_OPTION">
-			<Text>[ICON_INFLUENCE] La déclaration d'amitié est expirée</Text>
+			<Text>[ICON_INFLUENCE] La dÃ©claration d'amitiÃ© est expirÃ©e</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_MINOR_QUEST_OPTION">
-			<Text>[ICON_CITY_STATE] Quête d'une Cité-État</Text>
+			<Text>[ICON_CITY_STATE] QuÃªte d'une CitÃ©-Ã‰tat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_MINOR_OPTION">
-			<Text>[ICON_CITY_STATE] Générique de la Cité-État</Text>
+			<Text>[ICON_CITY_STATE] GÃ©nÃ©rique de la CitÃ©-Ã‰tat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_WAR_OPTION">
-			<Text>[ICON_WAR] Déclaration de guerre - Autres</Text>
+			<Text>[ICON_WAR] DÃ©claration de guerre - Autres</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_WAR_ACTIVE_PLAYER_OPTION">
-			<Text>[ICON_WAR] Déclaration de guerre - Vous</Text>
+			<Text>[ICON_WAR] DÃ©claration de guerre - Vous</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_CAPITAL_LOST_ACTIVE_PLAYER_OPTION">
 			<Text>[ICON_RAZING] Perte de la Capitale - Vous</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_MET_MINOR_OPTION">
-			<Text>[ICON_CITY_STATE] Rencontre la Cité-État</Text>
+			<Text>[ICON_CITY_STATE] Rencontre la CitÃ©-Ã‰tat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_STARVING_OPTION">
 			<Text>[ICON_HAPPINESS_3] Famine dans la ville</Text>
@@ -69,67 +69,67 @@
 			<Text>[ICON_WAR] Ennemi dans le territoire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_GOODY_OPTION">
-			<Text>[ICON_FLOWER] Ruines découvertes</Text>
+			<Text>[ICON_FLOWER] Ruines dÃ©couvertes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PROJECT_COMPLETED_OPTION">
-			<Text>[ICON_PRODUCTION] Projet complété</Text>
+			<Text>[ICON_PRODUCTION] Projet complÃ©tÃ©</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_GOLDEN_AGE_ENDED_ACTIVE_PLAYER_OPTION">
-			<Text>[ICON_GOLDEN_AGE] L'Âge d'Or prend fin</Text>
+			<Text>[ICON_GOLDEN_AGE] L'Ã‚ge d'Or prend fin</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_TRADE_AGREEMENT_OPTION">
-			<Text>[ICON_GOLD] Entente expirée - Accord d'échange</Text>
+			<Text>[ICON_GOLD] Entente expirÃ©e - Accord d'Ã©change</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_RESEARCH_AGREEMENT_OPTION">
-			<Text>[ICON_GOLD] Entente expirée - Accord de recherche</Text>
+			<Text>[ICON_GOLD] Entente expirÃ©e - Accord de recherche</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_DEFENSIVE_PACT_OPTION">
-			<Text>[ICON_GOLD] Entente expirée - Pacte de défense</Text>
+			<Text>[ICON_GOLD] Entente expirÃ©e - Pacte de dÃ©fense</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_BARBARIAN_OPTION">
 			<Text>[ICON_PIRATE] Camp de barbares</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_OPEN_BORDERS_OPTION">
-			<Text>[ICON_GOLD] Entente expirée - Libre passage</Text>
+			<Text>[ICON_GOLD] Entente expirÃ©e - Libre passage</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_VICTORY_OPTION">
 			<Text>[ICON_TEAM_1] Victoire du jeu Civilisation 5</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER_OPTION">
-			<Text>[ICON_GOLDEN_AGE] Un personnage illustre est né</Text>
+			<Text>[ICON_GOLDEN_AGE] Un personnage illustre est nÃ©</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_TECH_AWARD_OPTION">
-			<Text>[ICON_RESEARCH] Découverte d'une technologie</Text>
+			<Text>[ICON_RESEARCH] DÃ©couverte d'une technologie</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DIPLOMACY_DECLARATION_OPTION">
-			<Text>[ICON_INFLUENCE] Déclaration diplomatique</Text>
+			<Text>[ICON_INFLUENCE] DÃ©claration diplomatique</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_UNIT_DIED_OPTION">
-			<Text>[ICON_WAR] Unité anéantie</Text>
+			<Text>[ICON_WAR] UnitÃ© anÃ©antie</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_DEAL_OPTION">
 			<Text>[ICON_GOLD] Entente</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_DEAL_RECEIVED_OPTION">
-			<Text>[ICON_GOLD] Entente - Reçue</Text>
+			<Text>[ICON_GOLD] Entente - ReÃ§ue</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_DEAL_RESOLVED_OPTION">
-			<Text>[ICON_GOLD] Entente - Résolue</Text>
+			<Text>[ICON_GOLD] Entente - RÃ©solue</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_WONDER_BEATEN_OPTION">
-			<Text>[ICON_PRODUCTION] Merveille complétée - Battu</Text>
+			<Text>[ICON_PRODUCTION] Merveille complÃ©tÃ©e - Battu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_CITY_RANGE_ATTACK_OPTION">
 			<Text>[ICON_RANGE_STRENGTH] La ville peut attaquer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_WONDER_COMPLETED_ACTIVE_PLAYER_OPTION">
-			<Text>[ICON_PRODUCTION] Merveille complétée - Vous</Text>
+			<Text>[ICON_PRODUCTION] Merveille complÃ©tÃ©e - Vous</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_CITY_GROWTH_OPTION">
-			<Text>[ICON_CITIZEN] Croissance de la ville (à 5 Pop)</Text>
+			<Text>[ICON_CITIZEN] Croissance de la ville (Ã  5 Pop)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_RESOURCE_OPTION">
-			<Text>[ICON_GOLD] Entente expirée - Ressource</Text>
+			<Text>[ICON_GOLD] Entente expirÃ©e - Ressource</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_CITY_LOST_OPTION">
 			<Text>[ICON_RAZING] Perte de la ville</Text>
@@ -141,37 +141,37 @@
 			<Text>[ICON_CAPITAL] Capitale reprise</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DISCOVERED_STRATEGIC_RESOURCE_OPTION">
-			<Text>[ICON_RES_IRON] Découverte d'une ressource stratégique</Text>
+			<Text>[ICON_RES_IRON] DÃ©couverte d'une ressource stratÃ©gique</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DISCOVERED_LUXURY_RESOURCE_OPTION">
-			<Text>[ICON_RES_GEMS] Découverte d'une ressource de luxe</Text>
+			<Text>[ICON_RES_GEMS] DÃ©couverte d'une ressource de luxe</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEMAND_RESOURCE_OPTION">
-			<Text>[ICON_RES_GEMS] -Fête du Roi- Demande d'une ressource</Text>
+			<Text>[ICON_RES_GEMS] -FÃªte du Roi- Demande d'une ressource</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_KILLED_OPTION">
-			<Text>[ICON_RAZING] Joueur éliminé</Text>
+			<Text>[ICON_RAZING] Joueur Ã©liminÃ©</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PEACE_OPTION">
-			<Text>[ICON_PEACE] Traité de paix - Autres</Text>
+			<Text>[ICON_PEACE] TraitÃ© de paix - Autres</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_PEACE_ACTIVE_PLAYER_OPTION">
-			<Text>[ICON_PEACE] Traité de paix - Vous</Text>
+			<Text>[ICON_PEACE] TraitÃ© de paix - Vous</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_REBELS_OPTION">
-			<Text>[ICON_RESISTANCE] Révolte</Text>
+			<Text>[ICON_RESISTANCE] RÃ©volte</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_OPTION">
-			<Text>[ICON_GOLD] Entente expirée - Or par tour</Text>
+			<Text>[ICON_GOLD] Entente expirÃ©e - Or par tour</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_WONDER_COMPLETED_OPTION">
-			<Text>[ICON_PRODUCTION] Merveille complétée - Autres</Text>
+			<Text>[ICON_PRODUCTION] Merveille complÃ©tÃ©e - Autres</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER_OPTION">
-			<Text>[ICON_GOLDEN_AGE] L'Âge d'Or débute</Text>
+			<Text>[ICON_GOLDEN_AGE] L'Ã‚ge d'Or dÃ©bute</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NOTIFICATION_EXPLORATION_RACE_OPTION">
-			<Text>[ICON_FLOWER] Découverte d'une Merveille Naturelle</Text>
+			<Text>[ICON_FLOWER] DÃ©couverte d'une Merveille Naturelle</Text>
 		</Row>
 	</Language_fr_FR>
 </GameData>

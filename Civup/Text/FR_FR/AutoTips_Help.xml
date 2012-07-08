@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysÂ®Us -->
 <GameData>
 	<Language_fr_FR>
 		<Update>
 			<Where Tag="TXT_KEY_WONDER_HIMEJI_CASTLE_HELP" />
-			<Set Text="+25% [ICON_STRENGTH] de puissance de combat en territoire allié" />
+			<Set Text="+25% [ICON_STRENGTH] de puissance de combat en territoire alliÃ©" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTION_GREAT_LIGHTHOUSE_HELP" />

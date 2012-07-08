@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysÂ®Us -->
 <GameData>
 	<Language_fr_FR>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_5">
 			<Text>Un plaisir de vous revoir, mon ami.  Cooment puis-je vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_6">
-			<Text>Vous êtes toujours le bienvenu ici, mon ami.  Qu'avez-vous en tête ?</Text>
+			<Text>Vous Ãªtes toujours le bienvenu ici, mon ami.  Qu'avez-vous en tÃªte ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_7">
-			<Text>Salut, mon ami.  J'espère que vous êtes venu ici pour en faire bénéficier nos relations réciproques.</Text>
+			<Text>Salut, mon ami.  J'espÃ¨re que vous Ãªtes venu ici pour en faire bÃ©nÃ©ficier nos relations rÃ©ciproques.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_8">
 			<Text>C'est formidable de voir un visage amical.  Comment puis-je vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_9">
-			<Text>Je vous souhaite la bienvenue, mon ami.  S'il vous plaît, restez.  Mes serviteurs vont préparer un merveilleux festin pour célébrer votre arrivée.</Text>
+			<Text>Je vous souhaite la bienvenue, mon ami.  S'il vous plaÃ®t, restez.  Mes serviteurs vont prÃ©parer un merveilleux festin pour cÃ©lÃ©brer votre arrivÃ©e.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_10">
 			<Text>Aujourd'hui, nous nous rencontrons, mon ami.  Comment ma glorieuse nation peut-elle vous venir en aide ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_11">
-			<Text>J'avais l'intuition ces jours-ci de voir finalement un visage amical comme le vôtre.  Que peut faire mon empire pour venir en aide à un leader aussi honorable que vous ?</Text>
+			<Text>J'avais l'intuition ces jours-ci de voir finalement un visage amical comme le vÃ´tre.  Que peut faire mon empire pour venir en aide Ã  un leader aussi honorable que vous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_12">
-			<Text>Mes citoyens ont apprécié le contact avec votre civilisation.  Cela ne peut que profiter à nous deux.  Maintenant, comment puis-je vous aider ?</Text>
+			<Text>Mes citoyens ont apprÃ©ciÃ© le contact avec votre civilisation.  Cela ne peut que profiter Ã  nous deux.  Maintenant, comment puis-je vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_13">
-			<Text>Formidable de voir un ami à nouveau.  Comment pouvons-nous vous aider ?</Text>
+			<Text>Formidable de voir un ami Ã  nouveau.  Comment pouvons-nous vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_14">
-			<Text>Vous avez frappé à la bonne porte pour la diplomatie.  De quoi voulez-vous discuter ?</Text>
+			<Text>Vous avez frappÃ© Ã  la bonne porte pour la diplomatie.  De quoi voulez-vous discuter ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_7">
-			<Text>Salut, qu'avez-vous en tête me concernant aujourd'hui ?</Text>
+			<Text>Salut, qu'avez-vous en tÃªte me concernant aujourd'hui ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_8">
 			<Text>Comment puis-je vous aider ?  Et comment pouvez-vous m'aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_9">
-			<Text>Bonjour.  J'espère que vous venez à ma rencontre avec d'honnêtes intentions.</Text>
+			<Text>Bonjour.  J'espÃ¨re que vous venez Ã  ma rencontre avec d'honnÃªtes intentions.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_10">
-			<Text>Mes salutations.  Puis-je vous faire déguster quelques-uns de mes meilleurs vins tout en discutant ?</Text>
+			<Text>Mes salutations.  Puis-je vous faire dÃ©guster quelques-uns de mes meilleurs vins tout en discutant ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_11">
 			<Text>Comment puis-je vous aider aujourd'hui ?</Text>
@@ -54,382 +54,382 @@
 			<Text>Bonjour.  Comment puis-je vous aider aujourd'hui ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_6">
-			<Text>J'ai des affaires urgentes à régler.  Ne me faites pas perdre mon temps.</Text>
+			<Text>J'ai des affaires urgentes Ã  rÃ©gler.  Ne me faites pas perdre mon temps.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_7">
-			<Text>Nous n'apprécions pas tellement votre compagnie.  Que votre visite soit brève.</Text>
+			<Text>Nous n'apprÃ©cions pas tellement votre compagnie.  Que votre visite soit brÃ¨ve.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_8">
-			<Text>Vous perdez votre temps ici.  Que pourriez-vous éventuellement avoir à me proposer ?</Text>
+			<Text>Vous perdez votre temps ici.  Que pourriez-vous Ã©ventuellement avoir Ã  me proposer ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_9">
-			<Text>N'ai-je pas déjà renvoyé votre émissaire ?  Vous ne manquez pas d'audace de venir vous-même me visiter.</Text>
+			<Text>N'ai-je pas dÃ©jÃ  renvoyÃ© votre Ã©missaire ?  Vous ne manquez pas d'audace de venir vous-mÃªme me visiter.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_10">
-			<Text>Ne me provoquez pas.  Vous n'êtes pas en position d'user de plus d'hostilité envers nous.  Bon sang, que voulez-vous ?</Text>
+			<Text>Ne me provoquez pas.  Vous n'Ãªtes pas en position d'user de plus d'hostilitÃ© envers nous.  Bon sang, que voulez-vous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_11">
-			<Text>M'entretenir avec vous ne faisait pas partie de mes priorités aujourd'hui.  Que voulez-vous faire de mon temps qui est si précieux ?</Text>
+			<Text>M'entretenir avec vous ne faisait pas partie de mes prioritÃ©s aujourd'hui.  Que voulez-vous faire de mon temps qui est si prÃ©cieux ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_12">
-			<Text>Oh, excellent, c'est vous.  Dites-moi, pourquoi me mettre en disgrâce en venant à ma rencontre ?</Text>
+			<Text>Oh, excellent, c'est vous.  Dites-moi, pourquoi me mettre en disgrÃ¢ce en venant Ã  ma rencontre ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_13">
-			<Text>Vous ne méritez pas que je vous accorde un audience.  Maintenant, partez ! .......... Pourquoi êtes-vous encore là ?</Text>
+			<Text>Vous ne mÃ©ritez pas que je vous accorde un audience.  Maintenant, partez ! .......... Pourquoi Ãªtes-vous encore lÃ  ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_14">
-			<Text>Avoir à traiter avec vous est déjà une épreuve en soi.  Vous avez rampé jusqu'ici ?</Text>
+			<Text>Avoir Ã  traiter avec vous est dÃ©jÃ  une Ã©preuve en soi.  Vous avez rampÃ© jusqu'ici ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_15">
-			<Text>Je voudrais vous montrer mon respect et vous offrir du vin, mais vous êtes une brute sauvage que seul le poison peut amadouer.  Maintenant, venez-en vite au fait.</Text>
+			<Text>Je voudrais vous montrer mon respect et vous offrir du vin, mais vous Ãªtes une brute sauvage que seul le poison peut amadouer.  Maintenant, venez-en vite au fait.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_4">
-			<Text>Nous devons cesser les combats.  Mon peuple et le vôtre poussent de longs cris afin de mettre fin à cette violence insensée.</Text>
+			<Text>Nous devons cesser les combats.  Mon peuple et le vÃ´tre poussent de longs cris afin de mettre fin Ã  cette violence insensÃ©e.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_5">
-			<Text>Je suis prêt à négocier un cessez-le-feu.  Cette guerre n'a que trop duré.</Text>
+			<Text>Je suis prÃªt Ã  nÃ©gocier un cessez-le-feu.  Cette guerre n'a que trop durÃ©.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_6">
-			<Text>Votre incapacité à mettre fin à cette guerre ne sert qu'à vous faire paraître plus méchant que vous ne l'êtes en réalité.  Je vous en conjure, mettons fin à cette folie et célébrons la paix plutôt.</Text>
+			<Text>Votre incapacitÃ© Ã  mettre fin Ã  cette guerre ne sert qu'Ã  vous faire paraÃ®tre plus mÃ©chant que vous ne l'Ãªtes en rÃ©alitÃ©.  Je vous en conjure, mettons fin Ã  cette folie et cÃ©lÃ©brons la paix plutÃ´t.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_7">
-			<Text>N'y a-t-il pas une manière plus civilisée de mettre fin aux hostilités ?</Text>
+			<Text>N'y a-t-il pas une maniÃ¨re plus civilisÃ©e de mettre fin aux hostilitÃ©s ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_8">
-			<Text>Combattre ne fait qu'aggraver la souffrance en ce monde.  Nous ne sommes pas des barbares, et devons conséquemment cesser d'agir comme eux.</Text>
+			<Text>Combattre ne fait qu'aggraver la souffrance en ce monde.  Nous ne sommes pas des barbares, et devons consÃ©quemment cesser d'agir comme eux.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_9">
-			<Text>En tant que leader responsable, voulez-vous m'aider à mettre fin à cette tension ?  Mon seul désir est d'ériger la paix entre nos peuples.</Text>
+			<Text>En tant que leader responsable, voulez-vous m'aider Ã  mettre fin Ã  cette tension ?  Mon seul dÃ©sir est d'Ã©riger la paix entre nos peuples.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_10">
-			<Text>Nous ne demandons rien de plus qu'un retour à la sensibilité.</Text>
+			<Text>Nous ne demandons rien de plus qu'un retour Ã  la sensibilitÃ©.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_11">
-			<Text>Il est temps de mettre le passé derrière nous et de régler nos différends.  Verser le sang ne règlera rien.</Text>
+			<Text>Il est temps de mettre le passÃ© derriÃ¨re nous et de rÃ©gler nos diffÃ©rends.  Verser le sang ne rÃ¨glera rien.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_12">
-			<Text>Nous devons réaliser que nous ne faisons qu'échanger des condoléances en mémoire de nos chers disparus.  Cessons cette guerre, célébrons la vie plutôt !</Text>
+			<Text>Nous devons rÃ©aliser que nous ne faisons qu'Ã©changer des condolÃ©ances en mÃ©moire de nos chers disparus.  Cessons cette guerre, cÃ©lÃ©brons la vie plutÃ´t !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_5">
-			<Text>Vous avez vraiment cru en sortir aussi facilement ?  Déguerpissez!</Text>
+			<Text>Vous avez vraiment cru en sortir aussi facilement ?  DÃ©guerpissez!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_6">
-			<Text>Pourquoi êtes-vous ici ?  Vous blaguez, n'est-ce pas ?</Text>
+			<Text>Pourquoi Ãªtes-vous ici ?  Vous blaguez, n'est-ce pas ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_9">
-			<Text>Il est temps de faire face à la réalité.  Je gagne, vous perdez.</Text>
+			<Text>Il est temps de faire face Ã  la rÃ©alitÃ©.  Je gagne, vous perdez.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_10">
-			<Text>Il n'y aura pas de paix.  Bientôt, toutes vos cités seront conquises.</Text>
+			<Text>Il n'y aura pas de paix.  BientÃ´t, toutes vos citÃ©s seront conquises.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_11">
-			<Text>Un jour, le monde sera à mes pieds.  Mais loin de moi l'idée de vous humilier de la sorte.  Vos genoux touchant le sol suffiront.</Text>
+			<Text>Un jour, le monde sera Ã  mes pieds.  Mais loin de moi l'idÃ©e de vous humilier de la sorte.  Vos genoux touchant le sol suffiront.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_12">
 			<Text>Vos terres pullulent de criminels, et j'en suis le juge.  Maintenant, hors de ma vue, la Cour m'appelle.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_13">
-			<Text>Vous entendez ?  C'est le son de votre péché criant pour son salut.  Une bonne chose que je sois momentanément dans les parages.</Text>
+			<Text>Vous entendez ?  C'est le son de votre pÃ©chÃ© criant pour son salut.  Une bonne chose que je sois momentanÃ©ment dans les parages.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_RESEARCH_AGREEMENT_2">
-			<Text>J'espère que vos scientifiques travaillent aussi fort que les nôtres afin de réaliser notre accord de recherche.  Je n'aime pas investir mon argent en vain.</Text>
+			<Text>J'espÃ¨re que vos scientifiques travaillent aussi fort que les nÃ´tres afin de rÃ©aliser notre accord de recherche.  Je n'aime pas investir mon argent en vain.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_RESEARCH_AGREEMENT_3">
-			<Text>Je vous salue, puissant chef.  Dites-moi, vos scientifiques ne comptent pas les heures investies afin de compléter notre accord de recherche ?</Text>
+			<Text>Je vous salue, puissant chef.  Dites-moi, vos scientifiques ne comptent pas les heures investies afin de complÃ©ter notre accord de recherche ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_RESEARCH_AGREEMENT_4">
-			<Text>Nous avons investi beaucoup d'or sonnant sur cet accord de recherche.  Une découverte en jaillira tel le chat qui sort du sac ?</Text>
+			<Text>Nous avons investi beaucoup d'or sonnant sur cet accord de recherche.  Une dÃ©couverte en jaillira tel le chat qui sort du sac ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_WITH_2">
-			<Text>Heureux de vous revoir à nouveau, mon ami.  J'espère que votre nation se développe selon votre bon vouloir.  Alors, comment puis-je vous aider ?</Text>
+			<Text>Heureux de vous revoir Ã  nouveau, mon ami.  J'espÃ¨re que votre nation se dÃ©veloppe selon votre bon vouloir.  Alors, comment puis-je vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_WITH_3">
 			<Text>Je vous salue, mon ami ! Comment puis-je aider votre grande nation aujourd'hui ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_WITH_4">
-			<Text>Il est bon de vous revoir, mon ami.  Puis-je vous être utile en quelque chose ?</Text>
+			<Text>Il est bon de vous revoir, mon ami.  Puis-je vous Ãªtre utile en quelque chose ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_WITH_5">
-			<Text>Salutations, mon ami.  Nous avons du travail à effectuer, n'est-ce pas ?</Text>
+			<Text>Salutations, mon ami.  Nous avons du travail Ã  effectuer, n'est-ce pas ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_4">
-			<Text>{1_ThirdPlayerName:textkey} me rend réellement malade.  Souhaitons le voir disparaître un jour pour de bon de nos vies.</Text>
+			<Text>{1_ThirdPlayerName:textkey} me rend rÃ©ellement malade.  Souhaitons le voir disparaÃ®tre un jour pour de bon de nos vies.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_5">
-			<Text>Comment des traîtres comme {1_ThirdPlayerName:textkey} peuvent-ils affirmer que leur peuple est civilisé ?  Qui se ressemble s'assemble, tout le monde le sait.</Text>
+			<Text>Comment des traÃ®tres comme {1_ThirdPlayerName:textkey} peuvent-ils affirmer que leur peuple est civilisÃ© ?  Qui se ressemble s'assemble, tout le monde le sait.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_6">
-			<Text>Êtes-vous d'accord avec moi, à savoir que {1_ThirdPlayerName:textkey} représente un réel problème pour le monde entier ?  Nous devons en avertir les autres.</Text>
+			<Text>ÃŠtes-vous d'accord avec moi, Ã  savoir que {1_ThirdPlayerName:textkey} reprÃ©sente un rÃ©el problÃ¨me pour le monde entier ?  Nous devons en avertir les autres.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_2">
-			<Text>Vous êtes toujours en un seul morceau ?  Cela me surprend.  Je croyais les barbares plus faciles à vaincre.  On ne peut qu'espérer.</Text>
+			<Text>Vous Ãªtes toujours en un seul morceau ?  Cela me surprend.  Je croyais les barbares plus faciles Ã  vaincre.  On ne peut qu'espÃ©rer.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_3">
-			<Text>Vous n'avez toujours pas été écrasé par la puissance de vos ennemis ?  Peut-être devrais-je m'en mêler ?  Ce serait génial, non ?</Text>
+			<Text>Vous n'avez toujours pas Ã©tÃ© Ã©crasÃ© par la puissance de vos ennemis ?  Peut-Ãªtre devrais-je m'en mÃªler ?  Ce serait gÃ©nial, non ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_4">
 			<Text>Mes conseillers viennent tout juste de discuter de votre petite guerre minable.  Nous n'avons rien vu de pire auparavant, jamais.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_5">
-			<Text>Les artistes de mon empire ont produit de nombreuses oeuvres ayant pour thème votre guerre.  Il en ressort que votre désir de survivre est une farce, non un fait concret.</Text>
+			<Text>Les artistes de mon empire ont produit de nombreuses oeuvres ayant pour thÃ¨me votre guerre.  Il en ressort que votre dÃ©sir de survivre est une farce, non un fait concret.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HUMAN_AT_WAR_2">
-			<Text>Désolé d'entendre que vous êtes distrait par la guerre.  Puis-je vous aider ?</Text>
+			<Text>DÃ©solÃ© d'entendre que vous Ãªtes distrait par la guerre.  Puis-je vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HUMAN_AT_WAR_3">
-			<Text>Envoyez à vos hommes au combat de vigoureux encouragements de ma part.  Maintenant, en quoi puis-je vous être utile aujourd'hui ?</Text>
+			<Text>Envoyez Ã  vos hommes au combat de vigoureux encouragements de ma part.  Maintenant, en quoi puis-je vous Ãªtre utile aujourd'hui ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_MILITARY_2">
-			<Text>N'allez pas croire que je n'ai pas remarqué vos militaires empiéter sur mes fronières.  Si vous voulez l'affrontement, alors venez.  N'agissez pas comme un lâche.</Text>
+			<Text>N'allez pas croire que je n'ai pas remarquÃ© vos militaires empiÃ©ter sur mes froniÃ¨res.  Si vous voulez l'affrontement, alors venez.  N'agissez pas comme un lÃ¢che.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_MILITARY_3">
-			<Text>Je ne me sens pas menacé par vos troupes.  Sortez vos griffes acérées, ou disparaissez de ma vue.</Text>
+			<Text>Je ne me sens pas menacÃ© par vos troupes.  Sortez vos griffes acÃ©rÃ©es, ou disparaissez de ma vue.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_MILITARY_2">
-			<Text>Mes généraux ont localisé de nombreuses troupes près de mes frontières.  Je vous demande respectueusement de les éloigner afin de ne pas inquiéter mes citoyens.  Maintenant, avez-vous quelque chose à me demander ?</Text>
+			<Text>Mes gÃ©nÃ©raux ont localisÃ© de nombreuses troupes prÃ¨s de mes frontiÃ¨res.  Je vous demande respectueusement de les Ã©loigner afin de ne pas inquiÃ©ter mes citoyens.  Maintenant, avez-vous quelque chose Ã  me demander ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_MILITARY_3">
-			<Text>Je veux rester en bons termes avec vous, mais la disposition actuelle de vos forces armées rend cela très difficile.  S'il vous plaît, reconsidérez le positionnement de vos troupes ou nous devrons cesser d'user de diplomatie avec vous.</Text>
+			<Text>Je veux rester en bons termes avec vous, mais la disposition actuelle de vos forces armÃ©es rend cela trÃ¨s difficile.  S'il vous plaÃ®t, reconsidÃ©rez le positionnement de vos troupes ou nous devrons cesser d'user de diplomatie avec vous.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_2">
-			<Text>L'expansion de votre empire est une nuisance pour moi et tous ceux qui m'entourent.  Mais je ne devrais pas m'en faire, vos bâtiments sont probablement érodés par cette saleté que vous appelez une nation.</Text>
+			<Text>L'expansion de votre empire est une nuisance pour moi et tous ceux qui m'entourent.  Mais je ne devrais pas m'en faire, vos bÃ¢timents sont probablement Ã©rodÃ©s par cette saletÃ© que vous appelez une nation.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_3">
-			<Text>Vous me faites penser à un essaim de sauterelles.  Vous dérangez tout le monde sans pourtant donner aucun signe de retenue qui serait pourtant grandement apprécié.  Mon seul espoir est que vous réalisiez vite que vous êtes un mal de tête pour tous.</Text>
+			<Text>Vous me faites penser Ã  un essaim de sauterelles.  Vous dÃ©rangez tout le monde sans pourtant donner aucun signe de retenue qui serait pourtant grandement apprÃ©ciÃ©.  Mon seul espoir est que vous rÃ©alisiez vite que vous Ãªtes un mal de tÃªte pour tous.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_EXPANSION_2">
-			<Text>Votre rapide émancipation a été remarquée par mes conseillers aux affaires étrangères.  Leur crainte est que l'espace vienne à manquer, ce qui pourrait provoquer une vive tension entre nous.  Je vous invite donc à freiner votre expansion.  Qu'en dites-vous ?</Text>
+			<Text>Votre rapide Ã©mancipation a Ã©tÃ© remarquÃ©e par mes conseillers aux affaires Ã©trangÃ¨res.  Leur crainte est que l'espace vienne Ã  manquer, ce qui pourrait provoquer une vive tension entre nous.  Je vous invite donc Ã  freiner votre expansion.  Qu'en dites-vous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_PLOT_BUYING_2">
-			<Text>Continuer de jeter ainsi votre argent sur les terres qui vous entourent me donnera encore plus de territoire à capturer plus tard.  J'espère que vous comprenez cela.</Text>
+			<Text>Continuer de jeter ainsi votre argent sur les terres qui vous entourent me donnera encore plus de territoire Ã  capturer plus tard.  J'espÃ¨re que vous comprenez cela.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_PLOT_BUYING_2">
-			<Text>J'apprécie un achat juste et équitable de temps à autre, mais votre rythme vertigineux de dépenser est alarmant.  Je vous exhorte à réexaminer votre manière de faire pour éviter que la tension ne s'attise entre nous.</Text>
+			<Text>J'apprÃ©cie un achat juste et Ã©quitable de temps Ã  autre, mais votre rythme vertigineux de dÃ©penser est alarmant.  Je vous exhorte Ã  rÃ©examiner votre maniÃ¨re de faire pour Ã©viter que la tension ne s'attise entre nous.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_MILITARY_2">
-			<Text>Votre armée est très puissante.  Je ne peux qu'espérer que vous allez utiliser votre force pour le bien et non la barbarie.</Text>
+			<Text>Votre armÃ©e est trÃ¨s puissante.  Je ne peux qu'espÃ©rer que vous allez utiliser votre force pour le bien et non la barbarie.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_MILITARY_3">
-			<Text>J'ai entendu les récits narrant les exploits de vos militaires.  Vos ennemis devraient craindre le jour où vous croiserez leur chemin.</Text>
+			<Text>J'ai entendu les rÃ©cits narrant les exploits de vos militaires.  Vos ennemis devraient craindre le jour oÃ¹ vous croiserez leur chemin.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_ECONOMY_2">
-			<Text>Mes commerçants sont revenus ébahis de leur voyage chez vous.  Peut-être pourriez-vous leur enseigner l'art de faire de l'argent ?</Text>
+			<Text>Mes commerÃ§ants sont revenus Ã©bahis de leur voyage chez vous.  Peut-Ãªtre pourriez-vous leur enseigner l'art de faire de l'argent ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_ECONOMY_3">
-			<Text>Vos coffres sont remplis d'or tandis que les miens sont vides.  Si vous pouviez apprendre à mes collecteurs d'impôts la bonne façon de maintenir une économie à flot, je vous en serais très reconnaissant.</Text>
+			<Text>Vos coffres sont remplis d'or tandis que les miens sont vides.  Si vous pouviez apprendre Ã  mes collecteurs d'impÃ´ts la bonne faÃ§on de maintenir une Ã©conomie Ã  flot, je vous en serais trÃ¨s reconnaissant.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_BY_AI_3">
-			<Text>J'ai parlé contre vous et avec raison.  Pourquoi alors encore m'importuner de vos bêtises ?  Partez.</Text>
+			<Text>J'ai parlÃ© contre vous et avec raison.  Pourquoi alors encore m'importuner de vos bÃªtises ?  Partez.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_AI_3">
-			<Text>Tout en vous sonne tellement faux.  Vous êtes une imposture.  Hors de ma vue.</Text>
+			<Text>Tout en vous sonne tellement faux.  Vous Ãªtes une imposture.  Hors de ma vue.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_DOF_3">
-			<Text>Une offre intéressante.  Bien que j'apprécie grandement votre politesse, je dois apprendre à vous connaître un peu plus avant de vous faire confiance.  Peut-être une autre fois ?</Text>
+			<Text>Une offre intÃ©ressante.  Bien que j'apprÃ©cie grandement votre politesse, je dois apprendre Ã  vous connaÃ®tre un peu plus avant de vous faire confiance.  Peut-Ãªtre une autre fois ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_DOF_4">
-			<Text>Vous me semblez un sympathique leader, mais je ne peux honorer une quelconque Alliance pour le moment.  Dans un futur rapproché, sûrement.</Text>
+			<Text>Vous me semblez un sympathique leader, mais je ne peux honorer une quelconque Alliance pour le moment.  Dans un futur rapprochÃ©, sÃ»rement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DOF_NOT_HONORED_3">
-			<Text>Vous m'avez baigné de mensonges durant tout ce temps pour ensuite me poignarder dans le dos !  Vous ne méritez pas qu'une personne s'attarde à vous.  Allez-vous en ![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Vous m'avez baignÃ© de mensonges durant tout ce temps pour ensuite me poignarder dans le dos !  Vous ne mÃ©ritez pas qu'une personne s'attarde Ã  vous.  Allez-vous en ![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DOF_NOT_HONORED_4">
-			<Text>Vous me faites penser à un enfant trop gourmand.  Vous exigez beaucoup trop de tout le monde, pour finalement vous retrouver les mains vides.  Vous êtes un menteur et le moment est venu de faire connaître votre vrai visage.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Vous me faites penser Ã  un enfant trop gourmand.  Vous exigez beaucoup trop de tout le monde, pour finalement vous retrouver les mains vides.  Vous Ãªtes un menteur et le moment est venu de faire connaÃ®tre votre vrai visage.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCING_FRIEND_3">
-			<Text>Vous avez montré vos vraies couleurs.  Ma seule alternative maintenant est de mettre les autres au courant de vos agissements qui ne mènent jamais à quelque chose de valable.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Vous avez montrÃ© vos vraies couleurs.  Ma seule alternative maintenant est de mettre les autres au courant de vos agissements qui ne mÃ¨nent jamais Ã  quelque chose de valable.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCING_FRIEND_4">
-			<Text>Vous êtes une perte de temps pour chacun.  Travailler avec vous a été la plus grande erreur de ma vie.  Cette bavure ne se reproduira pas.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Vous Ãªtes une perte de temps pour chacun.  Travailler avec vous a Ã©tÃ© la plus grande erreur de ma vie.  Cette bavure ne se reproduira pas.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HUMAN_DOF_SO_AI_DENOUNCE_2">
 			<Text>Vous et votre petit ami {1_CivName} me rendez malade.  Je ne peux attendre plus longtemps le jour durant lequel votre empire se consumera dans les flammes.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HOSTILE_AGGRESSIVE_MILITARY_WARNING_2">
-			<Text>Misérable ver de terre, j'en ai assez de jouer au fou.  Si vous voulez vous battre, approchez.</Text>
+			<Text>MisÃ©rable ver de terre, j'en ai assez de jouer au fou.  Si vous voulez vous battre, approchez.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HOSTILE_AGGRESSIVE_MILITARY_WARNING_3">
-			<Text>Je vous mets au défi d'attaquer.  Vos villes auront alors bonne mine coiffées de mes nombreux drapeaux.</Text>
+			<Text>Je vous mets au dÃ©fi d'attaquer.  Vos villes auront alors bonne mine coiffÃ©es de mes nombreux drapeaux.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HOSTILE_AGGRESSIVE_MILITARY_WARNING_4">
 			<Text>Vous voulez verser le sang ?  Alors venez.  Je ne peux plus attendre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EXPANSION_SERIOUS_WARNING_2">
-			<Text>Ne vous ai-je pas déjà averti à propos de votre insouciante expansion ?  C'est un problème très grave.  Quittez mes terres, ou alors une réplique militaire peut s'ensuivre.  Vous avez bien compris ?</Text>
+			<Text>Ne vous ai-je pas dÃ©jÃ  averti Ã  propos de votre insouciante expansion ?  C'est un problÃ¨me trÃ¨s grave.  Quittez mes terres, ou alors une rÃ©plique militaire peut s'ensuivre.  Vous avez bien compris ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCE_4">
-			<Text>Vous êtes si diabolique que jamais vous ne connaîtrai la gratitude d'une personne chaudement reconnaissante.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Vous Ãªtes si diabolique que jamais vous ne connaÃ®trai la gratitude d'une personne chaudement reconnaissante.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCE_5">
-			<Text>Vous êtes vraiment une perte de temps.  Pourrissez dans un quelconque coin perdu de votre royaume, cela m'est égal.  Je n'ai pas une minute de plus à vous accorder.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Vous Ãªtes vraiment une perte de temps.  Pourrissez dans un quelconque coin perdu de votre royaume, cela m'est Ã©gal.  Je n'ai pas une minute de plus Ã  vous accorder.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DENOUNCE_6">
-			<Text>Maintenant, le monde sait que votre nation est dirigée par un idiot.  De toute évidence, Vous menez votre peuple à une extinction rapide.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
+			<Text>Maintenant, le monde sait que votre nation est dirigÃ©e par un idiot.  De toute Ã©vidence, Vous menez votre peuple Ã  une extinction rapide.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons Ã©tÃ© dÃ©noncÃ©s publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_LAND_4">
-			<Text>Nos frontières rapprochées ont suscité trop de tension.  Il est maintenant temps de voir qui de nous deux sera victorieux au combat.</Text>
+			<Text>Nos frontiÃ¨res rapprochÃ©es ont suscitÃ© trop de tension.  Il est maintenant temps de voir qui de nous deux sera victorieux au combat.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_LAND_5">
-			<Text>Il est temps d'élargir mon empire.  Je vous déclare donc la guerre sans aucun regret.</Text>
+			<Text>Il est temps d'Ã©largir mon empire.  Je vous dÃ©clare donc la guerre sans aucun regret.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_5">
-			<Text>Comment avez-vous pu croire que j'étais un Allié ?  Votre naïveté causera votre perte.</Text>
+			<Text>Comment avez-vous pu croire que j'Ã©tais un AlliÃ© ?  Votre naÃ¯vetÃ© causera votre perte.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_6">
-			<Text>L'amitié est une belle chose, le temps qu'elle dure.  Désolé de rompre avec vous, mais vous n'étiez qu'un pion dans ma grande stratégie.  Le temps est venu de mourir.</Text>
+			<Text>L'amitiÃ© est une belle chose, le temps qu'elle dure.  DÃ©solÃ© de rompre avec vous, mais vous n'Ã©tiez qu'un pion dans ma grande stratÃ©gie.  Le temps est venu de mourir.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_7">
-			<Text>L'heure est venue de périr, petit vaurien.  Ce fut très ennuyant que de prétendre être votre ami.  Il est temps d'affirmer ma position dominante.</Text>
+			<Text>L'heure est venue de pÃ©rir, petit vaurien.  Ce fut trÃ¨s ennuyant que de prÃ©tendre Ãªtre votre ami.  Il est temps d'affirmer ma position dominante.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_WEAK_BETRAYAL_2">
-			<Text>Je sais que je n'ai qu'une chance très minime de remporter la victoire, mais si je n'attaque pas maintenant, mon adversaire n'en sera que plus fort par la suite.</Text>
+			<Text>Je sais que je n'ai qu'une chance trÃ¨s minime de remporter la victoire, mais si je n'attaque pas maintenant, mon adversaire n'en sera que plus fort par la suite.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_PLOT_BUYING_WARNING_GOOD_2">
-			<Text>Vous comprenez la situation, et j'en suis heureux.  J'espère que nous continuerons à aussi bien nous entendre.</Text>
+			<Text>Vous comprenez la situation, et j'en suis heureux.  J'espÃ¨re que nous continuerons Ã  aussi bien nous entendre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_EXPANSION_WARNING_GOOD_2">
-			<Text>Nous vous remercions de votre compréhension.  Nous ne l'oublierons pas.</Text>
+			<Text>Nous vous remercions de votre comprÃ©hension.  Nous ne l'oublierons pas.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_5">
-			<Text>J'étais si confiant que vous comprendriez.  Mon peuple est déçu maintenant.</Text>
+			<Text>J'Ã©tais si confiant que vous comprendriez.  Mon peuple est dÃ©Ã§u maintenant.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_6">
-			<Text>Hors de ma vue.  Vous êtes une honte pour mon peuple.</Text>
+			<Text>Hors de ma vue.  Vous Ãªtes une honte pour mon peuple.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_GOOD_2">
-			<Text>Très bien.  Cependant, je garde l'oeil ouvert pour surveiller vos armées.</Text>
+			<Text>TrÃ¨s bien.  Cependant, je garde l'oeil ouvert pour surveiller vos armÃ©es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_GOOD_3">
 			<Text>Alors, voyez-y !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_2">
-			<Text>Pauvre fou, je suppose que vous n'êtes pas à blâmer.  C'est dans votre nature barbare que de prendre des décisions effrontées.</Text>
+			<Text>Pauvre fou, je suppose que vous n'Ãªtes pas Ã  blÃ¢mer.  C'est dans votre nature barbare que de prendre des dÃ©cisions effrontÃ©es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_3">
-			<Text>Que vous soyez honnête ou non, vos nombreux choix insensés ne me laissent aucun respect pour vous.  Maintenant, nos armées devront se heurter.</Text>
+			<Text>Que vous soyez honnÃªte ou non, vos nombreux choix insensÃ©s ne me laissent aucun respect pour vous.  Maintenant, nos armÃ©es devront se heurter.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_4">
-			<Text>Vous n'êtes peut-être pas un lâche, mais cela ne signifie pas pour autant que vous êtes intelligent.  Vous êtes une disgrâce aux yeux de tous les dirigeants.</Text>
+			<Text>Vous n'Ãªtes peut-Ãªtre pas un lÃ¢che, mais cela ne signifie pas pour autant que vous Ãªtes intelligent.  Vous Ãªtes une disgrÃ¢ce aux yeux de tous les dirigeants.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_AGGRESSIVE_MILITARY_WARNING_BAD_2">
-			<Text>Vous avez trahi notre confiance.  Je suis très désappointé.</Text>
+			<Text>Vous avez trahi notre confiance.  Je suis trÃ¨s dÃ©sappointÃ©.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_AGGRESSIVE_MILITARY_WARNING_BAD_3">
-			<Text>Si les choses doivent se passer ainsi, je vais vous détruire, ainsi que vos vilaines armées.</Text>
+			<Text>Si les choses doivent se passer ainsi, je vais vous dÃ©truire, ainsi que vos vilaines armÃ©es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_4">
-			<Text>Vous avez fait preuve de compassion là où d'autres ont montré de la cupidité.  Pour cela, je vous en félicite.</Text>
+			<Text>Vous avez fait preuve de compassion lÃ  oÃ¹ d'autres ont montrÃ© de la cupiditÃ©.  Pour cela, je vous en fÃ©licite.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_5">
-			<Text>En libérant nos citoyens, vous avez démontré que vous êtes un allié plus fiable que je ne le pensais.  J'espère que ces bonnes relations vont perdurer.</Text>
+			<Text>En libÃ©rant nos citoyens, vous avez dÃ©montrÃ© que vous Ãªtes un alliÃ© plus fiable que je ne le pensais.  J'espÃ¨re que ces bonnes relations vont perdurer.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_6">
-			<Text>Je suis privilégié de revoir ces personnes à nouveau.  Vous avez ma gratitude la plus sincère.</Text>
+			<Text>Je suis privilÃ©giÃ© de revoir ces personnes Ã  nouveau.  Vous avez ma gratitude la plus sincÃ¨re.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_7">
-			<Text>Vous m'avez ramené ces prisonniers de guerre !  Je n'oublierai pas de sitôt votre très noble geste.</Text>
+			<Text>Vous m'avez ramenÃ© ces prisonniers de guerre !  Je n'oublierai pas de sitÃ´t votre trÃ¨s noble geste.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_8">
-			<Text>Merci de libérer mon peuple.  Vous êtes un leader bienveillant et compatissant.</Text>
+			<Text>Merci de libÃ©rer mon peuple.  Vous Ãªtes un leader bienveillant et compatissant.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_4">
-			<Text>Nous devrions ouvrir une bouteille de mon meilleur champagne pour célébrer votre bonté !</Text>
+			<Text>Nous devrions ouvrir une bouteille de mon meilleur champagne pour cÃ©lÃ©brer votre bontÃ© !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_5">
-			<Text>Je suis reconnaissant envers vos actions désintéressées.</Text>
+			<Text>Je suis reconnaissant envers vos actions dÃ©sintÃ©ressÃ©es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_6">
 			<Text>Notre peuple ne peut que profiter de cela.  Merci.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_4">
-			<Text>Quelle entente permettrait de mettre fin à notre souffrance mutuelle ?</Text>
+			<Text>Quelle entente permettrait de mettre fin Ã  notre souffrance mutuelle ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_5">
-			<Text>Je suis ouvert à des pourparlers de paix.  Quelle est votre offre ?</Text>
+			<Text>Je suis ouvert Ã  des pourparlers de paix.  Quelle est votre offre ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_6">
-			<Text>Au nom de mon peuple, je vous presse d'en arriver à un accord hâtif.  Quel est le prix de la paix ?</Text>
+			<Text>Au nom de mon peuple, je vous presse d'en arriver Ã  un accord hÃ¢tif.  Quel est le prix de la paix ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DOW_DESPERATE_9">
-			<Text>Mes conseillers peuvent bien me dire le contraire, par contre je suis le seul en charge ici.  J'ai peu d'espoir de remporter la victoire, mais il faut bien tester sa propre chance de temps à autre.</Text>
+			<Text>Mes conseillers peuvent bien me dire le contraire, par contre je suis le seul en charge ici.  J'ai peu d'espoir de remporter la victoire, mais il faut bien tester sa propre chance de temps Ã  autre.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_4"/>
-			<Set Text="Voilà l'occasion rêvée pour moi.  Je vais devenir le roi de toutes les nations.  Inclinez-vous devant ma puissance !"/>
+			<Set Text="VoilÃ  l'occasion rÃªvÃ©e pour moi.  Je vais devenir le roi de toutes les nations.  Inclinez-vous devant ma puissance !"/>
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_7"/>
-			<Set Text="Je ne peux pas ignorer cette possibilité de renforcer mon peuple."/>
+			<Set Text="Je ne peux pas ignorer cette possibilitÃ© de renforcer mon peuple."/>
 		</Update>
 		<Row Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_3">
-			<Text>Je suis curieux de connaître votre offre.</Text>
+			<Text>Je suis curieux de connaÃ®tre votre offre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_4">
-			<Text>De grâce, faites une offre.</Text>
+			<Text>De grÃ¢ce, faites une offre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_5">
 			<Text>Voyons votre proposition.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_5">
-			<Text>J'ai le droit de m'établir où je veux.  Ne me faites pas la leçon, vous qui adorez occuper un logement vide sans y avoir droit ni titre.</Text>
+			<Text>J'ai le droit de m'Ã©tablir oÃ¹ je veux.  Ne me faites pas la leÃ§on, vous qui adorez occuper un logement vide sans y avoir droit ni titre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_6">
 			<Text>Pourquoi pas ?  Si cela vous fait sortir de vos gonds, faites quelque chose.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_7">
-			<Text>Bien sûr que non, stupide bâtard.  Et je vais garder cela à l'esprit.  Loin de moi l'idée de mener des négociations avec une brute.</Text>
+			<Text>Bien sÃ»r que non, stupide bÃ¢tard.  Et je vais garder cela Ã  l'esprit.  Loin de moi l'idÃ©e de mener des nÃ©gociations avec une brute.</Text>
 		</Row>
 		<!-- AI Trade Offers -->
 		<Row Tag="TXT_KEY_GENERIC_RESEARCH_AGREEMENT_OFFER_2">
-			<Text>Le futur brille devant nous et mes scientifiques sont prêts à explorer l'inconnu.  Voulez-vous nous aider en signant un accord de recherche ?</Text>
+			<Text>Le futur brille devant nous et mes scientifiques sont prÃªts Ã  explorer l'inconnu.  Voulez-vous nous aider en signant un accord de recherche ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_RESEARCH_AGREEMENT_OFFER_3">
-			<Text>Un groupe de scientifiques peut sonder l'univers et en extirper ses secrets.  Imaginez alors ce que deux équipes peuvent accomplir.  Voulez-vous endosser un accord de recherche avec nous ?</Text>
+			<Text>Un groupe de scientifiques peut sonder l'univers et en extirper ses secrets.  Imaginez alors ce que deux Ã©quipes peuvent accomplir.  Voulez-vous endosser un accord de recherche avec nous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LUXURY_TRADE_2">
-			<Text>L'échange de ces ressources de luxe feraient le bonheur de tout le monde.  Qu'en dites-vous ?</Text>
+			<Text>L'Ã©change de ces ressources de luxe feraient le bonheur de tout le monde.  Qu'en dites-vous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_REQUEST_ITEM_4">
-			<Text>Le mauvais sort s'acharne sur nous.  Je vous demande humblement votre aide, de grâce.</Text>
+			<Text>Le mauvais sort s'acharne sur nous.  Je vous demande humblement votre aide, de grÃ¢ce.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_REQUEST_ITEM_5">
-			<Text>Les amis doivent s'entraider mutuellement.  Je connais des temps très difficiles.  Pouvez-vous nous dépanner ?  Je ne l'oublirai pas.</Text>
+			<Text>Les amis doivent s'entraider mutuellement.  Je connais des temps trÃ¨s difficiles.  Pouvez-vous nous dÃ©panner ?  Je ne l'oublirai pas.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_PEACE_OFFER_4">
-			<Text>Je pense que le moment est venu de déposer les armes et de négocier la paix.  Voulez-vous signer un tel traité avec nous?</Text>
+			<Text>Je pense que le moment est venu de dÃ©poser les armes et de nÃ©gocier la paix.  Voulez-vous signer un tel traitÃ© avec nous?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_PEACE_OFFER_5">
-			<Text>Nous ne sommes pas des barbares sanguinaires.  Nous devons mettre fin à cette guerre alors que nous avons encore notre dignité.  Acceptez-vous cette offre ?</Text>
+			<Text>Nous ne sommes pas des barbares sanguinaires.  Nous devons mettre fin Ã  cette guerre alors que nous avons encore notre dignitÃ©.  Acceptez-vous cette offre ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_PEACE_OFFER_6">
-			<Text>Aujourd'hui, un enfant est venu vers moi et m'a dit que son père a été massacré par vos hommes.  Sa vie a été ruinée.  Ces gens sont notre avenir.  Nous ne devons pas les trahir.  S'il vous plaît, acceptez cette offre de paix.</Text>
+			<Text>Aujourd'hui, un enfant est venu vers moi et m'a dit que son pÃ¨re a Ã©tÃ© massacrÃ© par vos hommes.  Sa vie a Ã©tÃ© ruinÃ©e.  Ces gens sont notre avenir.  Nous ne devons pas les trahir.  S'il vous plaÃ®t, acceptez cette offre de paix.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_4">
 			<Text>Fantastique.  Je suis impatient de partager cette Alliance qui changera le monde.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_5">
-			<Text>J'accepte gracieusement, avec des termes satisfaisants pour nos deux nations.  Combattons aussi le Malin qui rôde hors de nos frontières.</Text>
+			<Text>J'accepte gracieusement, avec des termes satisfaisants pour nos deux nations.  Combattons aussi le Malin qui rÃ´de hors de nos frontiÃ¨res.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_3"/>
 			<Set>
-				<Text>Je ne sais pas comment votre empire parvient à se maintenir à flot.  On pourrait penser que votre peuple aimerait se joindre à une nation digne de leurs aspirations les plus intimes.  À bien y songer, je crois être une destination alléchante.</Text>
+				<Text>Je ne sais pas comment votre empire parvient Ã  se maintenir Ã  flot.  On pourrait penser que votre peuple aimerait se joindre Ã  une nation digne de leurs aspirations les plus intimes.  Ã€ bien y songer, je crois Ãªtre une destination allÃ©chante.</Text>
 			</Set>
 		</Update>
 		<Row Tag="TXT_KEY_GENERIC_WARMONGER_5">
-			<Text>Les gens commencent à parler de vous entre eux.  Ils semblent croire que vous êtes en faveur d'un génocide plutôt qu'une solution diplomatique à la situation actuelle.</Text>
+			<Text>Les gens commencent Ã  parler de vous entre eux.  Ils semblent croire que vous Ãªtes en faveur d'un gÃ©nocide plutÃ´t qu'une solution diplomatique Ã  la situation actuelle.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_WARMONGER_6">
-			<Text>Partout où vos pas se posent, la peur se répand.  Les autres nations commencent à s'inquiéter.  Personnellement, je pense que vous n'êtes qu'un pur idiot, bavard comme la pie.</Text>
+			<Text>Partout oÃ¹ vos pas se posent, la peur se rÃ©pand.  Les autres nations commencent Ã  s'inquiÃ©ter.  Personnellement, je pense que vous n'Ãªtes qu'un pur idiot, bavard comme la pie.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_BOOT_KISSING_3">
-			<Text>Oh, grand chef.  Montrez-moi comment diriger un grand empire tel que le vôtre.</Text>
+			<Text>Oh, grand chef.  Montrez-moi comment diriger un grand empire tel que le vÃ´tre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_3">
-			<Text>S'il vous plaît, je vous en supplie.  Montrez de la pitié envers mon peuple, la mort étant le dernier de leur souhait.</Text>
+			<Text>S'il vous plaÃ®t, je vous en supplie.  Montrez de la pitiÃ© envers mon peuple, la mort Ã©tant le dernier de leur souhait.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_4">
-			<Text>Vous avez brisé le moral de mon peuple.  Leurs maisons sont en ruine, les familles sont dispersées.  Je ne peux qu'espérer que vous mettiez fin à cette folie avant que d'autres innocents ne rendent l'âme inutilement.</Text>
+			<Text>Vous avez brisÃ© le moral de mon peuple.  Leurs maisons sont en ruine, les familles sont dispersÃ©es.  Je ne peux qu'espÃ©rer que vous mettiez fin Ã  cette folie avant que d'autres innocents ne rendent l'Ã¢me inutilement.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLOMACY_FRIENDSHIP_ADV_QUEST" />
@@ -437,7 +437,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLOMACY_FRIENDSHIP_HEADING3_BODY" />
-			<Set Text="Une Alliance entre deux joueurs ou plus signifie, en des termes simples, que ces joueurs ont un intérêt mutuel à prendre soin les uns des autres. (Généralement, il s'agit de devenir des partenaires commerciaux et de partager les ressources)." />
+			<Set Text="Une Alliance entre deux joueurs ou plus signifie, en des termes simples, que ces joueurs ont un intÃ©rÃªt mutuel Ã  prendre soin les uns des autres. (GÃ©nÃ©ralement, il s'agit de devenir des partenaires commerciaux et de partager les ressources)." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLOMACY_FRIENDSHIP_HEADING3_TITLE" />
@@ -445,59 +445,59 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NTFN_DOF_S" />
-			<Set Text="{1_PlayerName} est allié avec {2_PlayerName} !" />
+			<Set Text="{1_PlayerName} est alliÃ© avec {2_PlayerName} !" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NTFN_DOF" />
-			<Set Text="{1_CivName:textkey} et {2_CivName:textkey} ont formé une Alliance, forgeant ainsi un lien solide entre les deux empires." />
+			<Set Text="{1_CivName:textkey} et {2_CivName:textkey} ont formÃ© une Alliance, forgeant ainsi un lien solide entre les deux empires." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_DOF_S" />
-			<Set Text="{1_PlayerName} est allié avec {2_PlayerName}!" />
+			<Set Text="{1_PlayerName} est alliÃ© avec {2_PlayerName}!" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_DOF" />
-			<Set Text="{1_CivName:textkey} et {2_CivName:textkey} ont formé une Alliance, forgeant ainsi un lien solide entre les deux empires." />
+			<Set Text="{1_CivName:textkey} et {2_CivName:textkey} ont formÃ© une Alliance, forgeant ainsi un lien solide entre les deux empires." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_FRIENDSHIP_EXPIRED_S" />
-			<Set Text="Alliance Expirée" />
+			<Set Text="Alliance ExpirÃ©e" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_FRIENDSHIP_EXPIRED" />
-			<Set Text="Votre Alliance avec {1_LeaderName} a suivi son cours et devra être renouvelée." />
+			<Set Text="Votre Alliance avec {1_LeaderName} a suivi son cours et devra Ãªtre renouvelÃ©e." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_DOF" />
-			<Set Text="[COLOR_POSITIVE_TEXT]Nous sommes alliés ![ENDCOLOR]" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Nous sommes alliÃ©s ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_MUTUAL_DOF" />
-			<Set Text="[COLOR_POSITIVE_TEXT]Nous sommes alliés avec les mêmes leaders ![ENDCOLOR]" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Nous sommes alliÃ©s avec les mÃªmes leaders ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_HUMAN_DOF_WITH_ENEMY" />
-			<Set Text="[COLOR_NEGATIVE_TEXT]Vous vous êtes alliés avec l'un de nos ennemis ![ENDCOLOR]" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Vous vous Ãªtes alliÃ©s avec l'un de nos ennemis ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_REFUSED_REQUESTS" />
-			<Set Text="[COLOR_NEGATIVE_TEXT]Vous avez refusé une demande formulée par ce joueur après la formation d'une Alliance ![ENDCOLOR]" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Vous avez refusÃ© une demande formulÃ©e par ce joueur aprÃ¨s la formation d'une Alliance ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_HUMAN_FRIEND_DECLARED_WAR" />
-			<Set Text="[COLOR_NEGATIVE_TEXT]Nous leur avons déclaré la guerre alors que nous sommes alliés ![ENDCOLOR]" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Nous leur avons dÃ©clarÃ© la guerre alors que nous sommes alliÃ©s ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_HUMAN_FRIEND_DENOUNCED" />
-			<Set Text="[COLOR_NEGATIVE_TEXT]Nous les avons dénoncé alors que nous sommes alliés ![ENDCOLOR]" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Nous les avons dÃ©noncÃ© alors que nous sommes alliÃ©s ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_HUMAN_DECLARED_WAR_ON_FRIENDS" />
-			<Set Text="[COLOR_NEGATIVE_TEXT]Vous avez déclaré la guerre à vos alliés ![ENDCOLOR]" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Vous avez dÃ©clarÃ© la guerre Ã  vos alliÃ©s ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_HUMAN_DENOUNCED_FRIENDS" />
-			<Set Text="[COLOR_NEGATIVE_TEXT]Vous avez dénoncé vos alliés ![ENDCOLOR]" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Vous avez dÃ©noncÃ© vos alliÃ©s ![ENDCOLOR]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP" />
@@ -505,15 +505,15 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT"/>
-			<Set Text="Une Alliance favorise la diplomatie amicale et décourage parfois d'éventuels agresseurs.  Les Alliés peuvent solliciter une assistance diplomatique ou économique, et y réagir par la négative peut les contrarier."/>
+			<Set Text="Une Alliance favorise la diplomatie amicale et dÃ©courage parfois d'Ã©ventuels agresseurs.  Les AlliÃ©s peuvent solliciter une assistance diplomatique ou Ã©conomique, et y rÃ©agir par la nÃ©gative peut les contrarier."/>
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_1" />
-			<Set Text="Il est ardu de trouver des amis de valeur en ce monde.  Je voudrais former une Alliance, et en informer les autres empires par la suite.  Qu'avez-vous à dire ?" />
+			<Set Text="Il est ardu de trouver des amis de valeur en ce monde.  Je voudrais former une Alliance, et en informer les autres empires par la suite.  Qu'avez-vous Ã  dire ?" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_2" />
-			<Set Text="Grand leader, vous donneriez-vous la peine d'être allié avec nous ?  Mon souhait est de bâtir un lien durable entre nos deux empires." />
+			<Set Text="Grand leader, vous donneriez-vous la peine d'Ãªtre alliÃ© avec nous ?  Mon souhait est de bÃ¢tir un lien durable entre nos deux empires." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_3" />
@@ -521,16 +521,16 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_4" />
-			<Set Text="Ce monde peut être cruel.  Ce n'est qu'avec l'assistance des autres que l'on peut espérer le transcender.  Allons-nous annoncer au monde que nous sommes des alliés ?" />
+			<Set Text="Ce monde peut Ãªtre cruel.  Ce n'est qu'avec l'assistance des autres que l'on peut espÃ©rer le transcender.  Allons-nous annoncer au monde que nous sommes des alliÃ©s ?" />
 		</Update>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_5">
 			<Text>Salut, grand dirigeant.  Voulez-vous vous Allier avec nous pour renforcer le lien entre nos empires ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_6">
-			<Text>Ce n'est qu'en formant une Alliance que finalement nos empires inspireront une crainte véritable aux éventuels antagonistes.  Vous joindrerez-vous à moi afin de partager cet honneur ?</Text>
+			<Text>Ce n'est qu'en formant une Alliance que finalement nos empires inspireront une crainte vÃ©ritable aux Ã©ventuels antagonistes.  Vous joindrerez-vous Ã  moi afin de partager cet honneur ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_7">
-			<Text>Je suis à la recherche d'un ami véritable.  Vous voulez devenir mon Allié ?</Text>
+			<Text>Je suis Ã  la recherche d'un ami vÃ©ritable.  Vous voulez devenir mon AlliÃ© ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEC_FRIENDSHIP_8">
 			<Text>Cher souverain, vous voulez vous allier avec nous ?  Ainsi, nos amis pousseraient des cris de joie tandis que nos ennemis trembleraient devant notre puissance.</Text>
@@ -538,44 +538,44 @@
 
 		<!-- City States -->
 		<Row Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_3">
-			<Text>J'ai lancé une attaque contre l'une de vos Cités-États.  Cela ne devrait pas être une perte pour vous; ils planifiaient probablement de vous attaquer par derrière de toute façon.</Text>
+			<Text>J'ai lancÃ© une attaque contre l'une de vos CitÃ©s-Ã‰tats.  Cela ne devrait pas Ãªtre une perte pour vous; ils planifiaient probablement de vous attaquer par derriÃ¨re de toute faÃ§on.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_4">
-			<Text>En ce moment, je célèbre devant un grand festin.  Lancer une attaque contre votre minuscule Cité-État fut l'un des plus beaux coups de ma carrière militaire.</Text>
+			<Text>En ce moment, je cÃ©lÃ¨bre devant un grand festin.  Lancer une attaque contre votre minuscule CitÃ©-Ã‰tat fut l'un des plus beaux coups de ma carriÃ¨re militaire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_5">
-			<Text>Oh, entendez-vous quelque chose ?  Ce doit être les cris de votre insignifiant protectorat.  Ne vous faites aucun souci, mes hommes les réduiront au silence bientôt.</Text>
+			<Text>Oh, entendez-vous quelque chose ?  Ce doit Ãªtre les cris de votre insignifiant protectorat.  Ne vous faites aucun souci, mes hommes les rÃ©duiront au silence bientÃ´t.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_3">
-			<Text>Mes plus profonds regrets, mais il semble qu'une Cité-État avec qui vous avez eu des relations dans le passé vient d'être attaquée par mon armée.  Rassurez-vous, cela n'a aucun lien avec vous.  J'étais dans l'obligation d'agir de la sorte.</Text>
+			<Text>Mes plus profonds regrets, mais il semble qu'une CitÃ©-Ã‰tat avec qui vous avez eu des relations dans le passÃ© vient d'Ãªtre attaquÃ©e par mon armÃ©e.  Rassurez-vous, cela n'a aucun lien avec vous.  J'Ã©tais dans l'obligation d'agir de la sorte.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_4">
-			<Text>Pardonnez-moi, mais mes hommes ont quelque peu dépassé les limites et attaqué une Cité-État avec laquelle vous avez déjà eu des rapports auparavant.  Saurez-vous nous pardonner ?</Text>
+			<Text>Pardonnez-moi, mais mes hommes ont quelque peu dÃ©passÃ© les limites et attaquÃ© une CitÃ©-Ã‰tat avec laquelle vous avez dÃ©jÃ  eu des rapports auparavant.  Saurez-vous nous pardonner ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_5">
-			<Text>Loin de moi l'idée d'envenimer les relations entre nous, mais par erreur, mes militaires s'en ont pris à une Cité-État avec laquelle vous avez transigé jadis.  Je tiens à l'affirmer, ce n'était pas une action hostile dirigée contre vous.</Text>
+			<Text>Loin de moi l'idÃ©e d'envenimer les relations entre nous, mais par erreur, mes militaires s'en ont pris Ã  une CitÃ©-Ã‰tat avec laquelle vous avez transigÃ© jadis.  Je tiens Ã  l'affirmer, ce n'Ã©tait pas une action hostile dirigÃ©e contre vous.</Text>
 		</Row>
 
 
 		<!-- Diplomacy Dispute -->
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_DISCUSS_SETTLE_WHAT_WE_PLEASE"/>
-			<Set Text="Peu importe l'endroit, nous allons nous y établir si tel est notre bon souhait." />
+			<Set Text="Peu importe l'endroit, nous allons nous y Ã©tablir si tel est notre bon souhait." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_DISCUSS_SORRY_FOR_SETTLING"/>
-			<Set Text="Toutes nos excuses, nous allons éviter de dresser des tentes trop près de vos frontières." />
+			<Set Text="Toutes nos excuses, nous allons Ã©viter de dresser des tentes trop prÃ¨s de vos frontiÃ¨res." />
 		</Update>
 		<Row Tag="TXT_KEY_EXPANSION_WARNING_5">
-			<Text>J'ai remarqué que vos frontières s'élargissent à un rythme alarmant.  Établir vos villes à proximité de mon territoire pourrait ruiner toute possibilité d'amitié pour nos nations.</Text>
+			<Text>J'ai remarquÃ© que vos frontiÃ¨res s'Ã©largissent Ã  un rythme alarmant.  Ã‰tablir vos villes Ã  proximitÃ© de mon territoire pourrait ruiner toute possibilitÃ© d'amitiÃ© pour nos nations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_EXPANSION_WARNING_6">
-			<Text>Nous vous permettons de conserver les terres que vous occupez présentement.  Mais nous devrons prendre les actions jugées nécessaires si vous persistez à étendre votr ombrage plus loin sur le sol sacré de nos ancêtres.</Text>
+			<Text>Nous vous permettons de conserver les terres que vous occupez prÃ©sentement.  Mais nous devrons prendre les actions jugÃ©es nÃ©cessaires si vous persistez Ã  Ã©tendre votr ombrage plus loin sur le sol sacrÃ© de nos ancÃªtres.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_VICTORY_DISPUTE"/>
 			<Set>
-				<Text>[COLOR_NEGATIVE_TEXT]Ils croient que vos intérêts sont en conflit avec les leurs, et ils détestent ça !</Text>
+				<Text>[COLOR_NEGATIVE_TEXT]Ils croient que vos intÃ©rÃªts sont en conflit avec les leurs, et ils dÃ©testent Ã§a !</Text>
 			</Set>
 		</Update>
 		<Update>
@@ -587,7 +587,7 @@
 		<Update>
 			<Where Tag="TXT_KEY_DIPLO_MINOR_OTHER_GUY_WANTS_WAR"/>
 			<Set>
-				<Text>L'autre leader politique ne désire pas la paix avec le chef discutant présentement avec vous.</Text>
+				<Text>L'autre leader politique ne dÃ©sire pas la paix avec le chef discutant prÃ©sentement avec vous.</Text>
 			</Set>
 		</Update>
 
@@ -619,7 +619,7 @@
 		<Update>
 			<Where Tag="TXT_KEY_PROGRESS_SCREEN_SCIENCE"/>
 			<Set>
-				<Text>Les nations les plus avancées du monde</Text>
+				<Text>Les nations les plus avancÃ©es du monde</Text>
 			</Set>
 		</Update>
 		<Update>
@@ -650,185 +650,185 @@
 
 		<!-- Added 8/4/11 -->
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_5">
-			<Text>L'extermination totale, c'est ce que vous voulez vraiment ?  Je vous supplie de nous épargner.</Text>
+			<Text>L'extermination totale, c'est ce que vous voulez vraiment ?  Je vous supplie de nous Ã©pargner.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_6">
-			<Text>Cette guerre nous a fait un tort énorme.  Je ne peux vous offrir en ce moment autre chose que la paix.  S'il vous plaît, ayez pitié.</Text>
+			<Text>Cette guerre nous a fait un tort Ã©norme.  Je ne peux vous offrir en ce moment autre chose que la paix.  S'il vous plaÃ®t, ayez pitiÃ©.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_7">
-			<Text>Mon peuple n'a aucune chance de survie.  Notre destinée est entre vos mains.  S'il vous plaît, épargnez-nous.</Text>
+			<Text>Mon peuple n'a aucune chance de survie.  Notre destinÃ©e est entre vos mains.  S'il vous plaÃ®t, Ã©pargnez-nous.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_8">
-			<Text>Vous avez réduit mon peuple à un simple petit tas de gravats.  Je vous en conjure, laissez-nous rebâtir et relever à nouveau décemment ces ruines.  Pour la bonne suite de nos relations.</Text>
+			<Text>Vous avez rÃ©duit mon peuple Ã  un simple petit tas de gravats.  Je vous en conjure, laissez-nous rebÃ¢tir et relever Ã  nouveau dÃ©cemment ces ruines.  Pour la bonne suite de nos relations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ALEXANDER_FIRSTGREETING_4">
-			<Text>Salutations, grand chef !  Hermès lui-même, messager des Dieux, m'avait prévenu à l'avance de notre rencontre.</Text>
+			<Text>Salutations, grand chef !  HermÃ¨s lui-mÃªme, messager des Dieux, m'avait prÃ©venu Ã  l'avance de notre rencontre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ALEXANDER_FIRSTGREETING_5">
-			<Text>Que les Dieux nous soient favorables, grand leader.  Je suis Alexandre III, roi de la toute-puissante Grèce.  Je suis honoré de vous rencontrer.</Text>
+			<Text>Que les Dieux nous soient favorables, grand leader.  Je suis Alexandre III, roi de la toute-puissante GrÃ¨ce.  Je suis honorÃ© de vous rencontrer.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ALEXANDER_FIRSTGREETING_6">
-			<Text>Mes salutations, énigmatique personnage.  Je suis Alexandre, chef des puissants Grecs !  Je vous prie de partager un dîner à mes côtés au mont Olympe.</Text>
+			<Text>Mes salutations, Ã©nigmatique personnage.  Je suis Alexandre, chef des puissants Grecs !  Je vous prie de partager un dÃ®ner Ã  mes cÃ´tÃ©s au mont Olympe.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ASKIA_FIRSTGREETING_5">
-			<Text>Par la gloire de Dieu, je vous salue !  Je suis Askia, chef du puissant empire Songhaï.  Puissent nos deux nations vivre ensemble dans la paix.</Text>
+			<Text>Par la gloire de Dieu, je vous salue !  Je suis Askia, chef du puissant empire SonghaÃ¯.  Puissent nos deux nations vivre ensemble dans la paix.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ASKIA_FIRSTGREETING_6">
-			<Text>Salutations, grand chef.  J'espère que vous êtes aussi érudit que moi.  Que la grâce de Dieu protège nos deux nations de tout conflit.</Text>
+			<Text>Salutations, grand chef.  J'espÃ¨re que vous Ãªtes aussi Ã©rudit que moi.  Que la grÃ¢ce de Dieu protÃ¨ge nos deux nations de tout conflit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ASKIA_FIRSTGREETING_7">
-			<Text>Salutations !  Je suis Askia, de l'intrépide empire Songhaï.  Je vous prie d'être un bon ami, non un ennemi pitoyable.</Text>
+			<Text>Salutations !  Je suis Askia, de l'intrÃ©pide empire SonghaÃ¯.  Je vous prie d'Ãªtre un bon ami, non un ennemi pitoyable.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_AUGUSTUS_FIRSTGREETING_4">
-			<Text>S'il vous plaît, venez plus près.  Mon nom est Auguste César, dirigeant du glorieux empire de Rome.  J'espère que vous êtes un leader digne de confiance.</Text>
+			<Text>S'il vous plaÃ®t, venez plus prÃ¨s.  Mon nom est Auguste CÃ©sar, dirigeant du glorieux empire de Rome.  J'espÃ¨re que vous Ãªtes un leader digne de confiance.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_AUGUSTUS_FIRSTGREETING_5">
-			<Text>Le peuple romain vous salue.  Je suis Auguste César, empereur de cette puissante nation.  Un jour, et c'est écrit dans le ciel, ma patrie sera la plus impressionnante que le monde ait connue !</Text>
+			<Text>Le peuple romain vous salue.  Je suis Auguste CÃ©sar, empereur de cette puissante nation.  Un jour, et c'est Ã©crit dans le ciel, ma patrie sera la plus impressionnante que le monde ait connue !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_AUGUSTUS_FIRSTGREETING_6">
-			<Text>Bienvenue à Rome, grand leader.  Je vais servir le meilleur vin pour célébrer la rencontre de nos deux nations.</Text>
+			<Text>Bienvenue Ã  Rome, grand leader.  Je vais servir le meilleur vin pour cÃ©lÃ©brer la rencontre de nos deux nations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_BISMARCK_FIRSTGREETING_4">
 			<Text>Bienvenue, grand chef.  La puissante nation de l'Allemagne vous accueille.  Mon nom est Otto Von Bismarck.  Je souhaite nos relations cordiales et franches dans le futur.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_BISMARCK_FIRSTGREETING_5">
-			<Text>L'Allemagne vous accueille sur ses nombreuses terres, étranger.  Moi, Otto Von Bismarck, aspire à ce que nos nations demeurent en bons termes et bénéficient positivement de cette rencontre.</Text>
+			<Text>L'Allemagne vous accueille sur ses nombreuses terres, Ã©tranger.  Moi, Otto Von Bismarck, aspire Ã  ce que nos nations demeurent en bons termes et bÃ©nÃ©ficient positivement de cette rencontre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_BISMARCK_FIRSTGREETING_6">
-			<Text>Je te salue, étranger.  Bienvenue en Allemagne.  Mon nom est Otto Von Bismarck.  Aimeriez-vous goûter à ce vin exquis ?</Text>
+			<Text>Je te salue, Ã©tranger.  Bienvenue en Allemagne.  Mon nom est Otto Von Bismarck.  Aimeriez-vous goÃ»ter Ã  ce vin exquis ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_CATHERINE_FIRSTGREETING_4">
-			<Text>Je vous salue, étranger.  Je suis Catherine la Grande, impératrice de Russie.  J'espère que nous nous entendrons bien.</Text>
+			<Text>Je vous salue, Ã©tranger.  Je suis Catherine la Grande, impÃ©ratrice de Russie.  J'espÃ¨re que nous nous entendrons bien.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_CATHERINE_FIRSTGREETING_5">
-			<Text>Je vous salue, grand chef.  Bienvenue sur la glorieuse terre de la Russie.  Si vos sujets ont des affinités certaines avec les miens, alors nous ferons l'envie du monde entier !</Text>
+			<Text>Je vous salue, grand chef.  Bienvenue sur la glorieuse terre de la Russie.  Si vos sujets ont des affinitÃ©s certaines avec les miens, alors nous ferons l'envie du monde entier !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_CATHERINE_FIRSTGREETING_6">
-			<Text>Ravie de vous rencontrer, grand chef.  De quelle façon le peuple russe peut-il vous rendre service ?</Text>
+			<Text>Ravie de vous rencontrer, grand chef.  De quelle faÃ§on le peuple russe peut-il vous rendre service ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_DARIUS_FIRSTGREETING_4">
 			<Text>Je vous salue, chef de file.  Je suis Darius, de la puissante Perse.  Notre peuple deviendra la convoitise du monde un jour.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_DARIUS_FIRSTGREETING_5">
-			<Text>Mes salutations, cher leader.  Mon nom est Darius, puissant roi de la Perse.  Mon espoir est que vous soyez un allié bénéfique pour notre nation.</Text>
+			<Text>Mes salutations, cher leader.  Mon nom est Darius, puissant roi de la Perse.  Mon espoir est que vous soyez un alliÃ© bÃ©nÃ©fique pour notre nation.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_DARIUS_FIRSTGREETING_6">
-			<Text>Bienvenue en Perse, étranger.  Je suis Darius.  Soyons bons voisins.  Un somptueux repas vous attend.  Venez.</Text>
+			<Text>Bienvenue en Perse, Ã©tranger.  Je suis Darius.  Soyons bons voisins.  Un somptueux repas vous attend.  Venez.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ELIZABETH_FIRSTGREETING_5">
-			<Text>L'Angleterre vous accueille à bras ouverts, grand chef. Je suis la reine Élisabeth.  Comment pouvons-nous vous aider ?</Text>
+			<Text>L'Angleterre vous accueille Ã  bras ouverts, grand chef. Je suis la reine Ã‰lisabeth.  Comment pouvons-nous vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ELIZABETH_FIRSTGREETING_6">
-			<Text>Quelle sublime rencontre !  Vous serez j'en suis convaincue très utile à l'Angleterre.</Text>
+			<Text>Quelle sublime rencontre !  Vous serez j'en suis convaincue trÃ¨s utile Ã  l'Angleterre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ELIZABETH_FIRSTGREETING_7">
-			<Text>Très rafraîchissant de voir un nouveau visage en ce monde.  Je suis Élisabeth 1ère, reine de la puissante Angleterre.</Text>
+			<Text>TrÃ¨s rafraÃ®chissant de voir un nouveau visage en ce monde.  Je suis Ã‰lisabeth 1Ã¨re, reine de la puissante Angleterre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_GANDHI_FIRSTGREETING_4">
-			<Text>Salutations, mon égal !  Chantons ensemble et vénérons tout ce que vous représentez.  Nous sommes semblables, soyez-en donc très honoré !</Text>
+			<Text>Salutations, mon Ã©gal !  Chantons ensemble et vÃ©nÃ©rons tout ce que vous reprÃ©sentez.  Nous sommes semblables, soyez-en donc trÃ¨s honorÃ© !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_GANDHI_FIRSTGREETING_5">
-			<Text>Je vous salue, mystérieux émissaire.  Êtes-vous venu répandre un message de paix en ce monde ?</Text>
+			<Text>Je vous salue, mystÃ©rieux Ã©missaire.  ÃŠtes-vous venu rÃ©pandre un message de paix en ce monde ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_GANDHI_FIRSTGREETING_6">
-			<Text>Salutations.  Je suis Gandhi, de la paisible république d'Inde.  J'espère que vous êtes un peuple rassembleur, avec des principes forts de justice.</Text>
+			<Text>Salutations.  Je suis Gandhi, de la paisible rÃ©publique d'Inde.  J'espÃ¨re que vous Ãªtes un peuple rassembleur, avec des principes forts de justice.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HARUN_FIRSTGREETING_4">
-			<Text>Par la grâce de tout ce qui est glorieux, moi, Hârûn ar-Rachîd, vous souhaite la bienvenue en Arabie.</Text>
+			<Text>Par la grÃ¢ce de tout ce qui est glorieux, moi, HÃ¢rÃ»n ar-RachÃ®d, vous souhaite la bienvenue en Arabie.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HARUN_FIRSTGREETING_5">
-			<Text>Je vous en prie, venez vous asseoir ici.  Je suis Hârûn ar-Rachîd, et l'Histoire éternellement se remémorera cette rencontre.</Text>
+			<Text>Je vous en prie, venez vous asseoir ici.  Je suis HÃ¢rÃ»n ar-RachÃ®d, et l'Histoire Ã©ternellement se remÃ©morera cette rencontre.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HARUN_FIRSTGREETING_6">
-			<Text>Bienvenue en Arabie, grand chef.  Mon nom est Hârûn ar-Rachîd.  Que vais-je représenter pour vous sur votre carte du ciel ?</Text>
+			<Text>Bienvenue en Arabie, grand chef.  Mon nom est HÃ¢rÃ»n ar-RachÃ®d.  Que vais-je reprÃ©senter pour vous sur votre carte du ciel ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HIAWATHA_FIRSTGREETING_4">
-			<Text>Les Esprits ont prédit votre arrivée, grand chef.</Text>
+			<Text>Les Esprits ont prÃ©dit votre arrivÃ©e, grand chef.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HIAWATHA_FIRSTGREETING_5">
-			<Text>Salutations.  Je suis Hiawatha, leader des redoutables Iroquois. J'espère que vous partagez notre amour pour la nature.</Text>
+			<Text>Salutations.  Je suis Hiawatha, leader des redoutables Iroquois. J'espÃ¨re que vous partagez notre amour pour la nature.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_HIAWATHA_FIRSTGREETING_6">
-			<Text>Je vous salue, étranger !  Le majestueux Oranda, notre entité abstraite spirituelle, m'a révélé, lors d'un songe récent, votre arrivée parmi nous.  Bienvenue.</Text>
+			<Text>Je vous salue, Ã©tranger !  Le majestueux Oranda, notre entitÃ© abstraite spirituelle, m'a rÃ©vÃ©lÃ©, lors d'un songe rÃ©cent, votre arrivÃ©e parmi nous.  Bienvenue.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_MONTEZUMA_FIRSTGREETING_5">
-			<Text>Ah!  Qui êtes-vous et pourquoi osez-vous vous présenter devant le puissant Moctezuma ?</Text>
+			<Text>Ah!  Qui Ãªtes-vous et pourquoi osez-vous vous prÃ©senter devant le puissant Moctezuma ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_MONTEZUMA_FIRSTGREETING_6">
-			<Text>Je suis Moctezuma, leader des robustes Aztèques.  Et vous ?  Vous êtes juste un de mes nombreux sujets.</Text>
+			<Text>Je suis Moctezuma, leader des robustes AztÃ¨ques.  Et vous ?  Vous Ãªtes juste un de mes nombreux sujets.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_MONTEZUMA_FIRSTGREETING_7">
-			<Text>Méfiez-vous, étranger.  Il y a toujours des sacrifices humains qui doivent être faits pour obtenir la faveur des dieux.  Comportez-vous bien, une banale mais très pertinente suggestion.</Text>
+			<Text>MÃ©fiez-vous, Ã©tranger.  Il y a toujours des sacrifices humains qui doivent Ãªtre faits pour obtenir la faveur des dieux.  Comportez-vous bien, une banale mais trÃ¨s pertinente suggestion.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_MONTEZUMA_FIRSTGREETING_8">
-			<Text>Voulez-vous vous allier avec le puissant Moctezuma, étranger ?  Envoyez-moi vos faibles, forts, femmes et enfants.  Nous ferons couler le sang tout en implorant nos idoles sacrées.</Text>
+			<Text>Voulez-vous vous allier avec le puissant Moctezuma, Ã©tranger ?  Envoyez-moi vos faibles, forts, femmes et enfants.  Nous ferons couler le sang tout en implorant nos idoles sacrÃ©es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_NAPOLEON_FIRSTGREETING_5">
-			<Text>La France vous accueille, étranger.  Je suis Napoléon, un général craint dans le monde entier.  Demeurez donc un de nos alliés..</Text>
+			<Text>La France vous accueille, Ã©tranger.  Je suis NapolÃ©on, un gÃ©nÃ©ral craint dans le monde entier.  Demeurez donc un de nos alliÃ©s..</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_NAPOLEON_FIRSTGREETING_6">
-			<Text>Mes salutations, cher ami.  Je suis Napoléon Bonaparte, de France.  Mon peuple ne vascillera jamais devant l'adversité, gardez cela à l'esprit.</Text>
+			<Text>Mes salutations, cher ami.  Je suis NapolÃ©on Bonaparte, de France.  Mon peuple ne vascillera jamais devant l'adversitÃ©, gardez cela Ã  l'esprit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_NAPOLEON_FIRSTGREETING_7">
-			<Text>Salutations.  Je suis Napoléon, et mon peuple ne connaît pas la peur.  Le monde pour moi est un grand échiquier, et j'y applique mes plus récentes stratégies militaires.  La politesse est donc un atout dans votre manche lors de nos rencontres.</Text>
+			<Text>Salutations.  Je suis NapolÃ©on, et mon peuple ne connaÃ®t pas la peur.  Le monde pour moi est un grand Ã©chiquier, et j'y applique mes plus rÃ©centes stratÃ©gies militaires.  La politesse est donc un atout dans votre manche lors de nos rencontres.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_LEADER_NAPOLEON_TRIBUTE_NO_ANGRY"/>
 			<Set Text="Comment osez-vous exiger un tribut de ma part ?"/>
 		</Update>
 		<Row Tag="TXT_KEY_LEADER_NAPOLEON_DECLAREWAR_4">
-			<Text>Oh, je suis sûr que vous avez entendu !  Mes armées vont se précipiter et vous détruire une fois pour toutes !</Text>
+			<Text>Oh, je suis sÃ»r que vous avez entendu !  Mes armÃ©es vont se prÃ©cipiter et vous dÃ©truire une fois pour toutes !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ODA_FIRSTGREETING_4">
-			<Text>Je vous salue, grand chef.  Je souhaite que vos aptitudes égalent les miennes.  Toujours vaincre m'ennuie.</Text>
+			<Text>Je vous salue, grand chef.  Je souhaite que vos aptitudes Ã©galent les miennes.  Toujours vaincre m'ennuie.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ODA_FIRSTGREETING_5">
-			<Text>Bienvenue au Japon.  Je suis Nobunaga Oda.  Demeurez un fidèle compagnon, ou un adversaire digne.</Text>
+			<Text>Bienvenue au Japon.  Je suis Nobunaga Oda.  Demeurez un fidÃ¨le compagnon, ou un adversaire digne.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_ODA_FIRSTGREETING_6">
-			<Text>Je suis Nobunaga Oda, et je vous souhaite la bienvenue au grand empire du Japon.  Puisse votre séjour être paisible et agréable.</Text>
+			<Text>Je suis Nobunaga Oda, et je vous souhaite la bienvenue au grand empire du Japon.  Puisse votre sÃ©jour Ãªtre paisible et agrÃ©able.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMESSES_FIRSTGREETING_4">
-			<Text>Salutations, mortel.  Je suis Ramsès le Grand, pharaon de la glorieuse Égypte.  Êtes-vous venu vous incliner devant ma transcendance ?</Text>
+			<Text>Salutations, mortel.  Je suis RamsÃ¨s le Grand, pharaon de la glorieuse Ã‰gypte.  ÃŠtes-vous venu vous incliner devant ma transcendance ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMESSES_FIRSTGREETING_5">
-			<Text>Je suis Ramsès, et vous êtes présentement en contact avec une divinité infinie.</Text>
+			<Text>Je suis RamsÃ¨s, et vous Ãªtes prÃ©sentement en contact avec une divinitÃ© infinie.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMKHAMHAENG_FIRSTGREETING_4">
-			<Text>Bienvenue au Siam, étranger !  Je suis Ramkhamhaeng, qui règne sur ce glorieux peuple !</Text>
+			<Text>Bienvenue au Siam, Ã©tranger !  Je suis Ramkhamhaeng, qui rÃ¨gne sur ce glorieux peuple !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMKHAMHAENG_FIRSTGREETING_5">
-			<Text>Je vous salue, grand chef !  Bienvenue au Siam.  Vous êtes libre de visiter mon jardin quand bon vous semble.</Text>
+			<Text>Je vous salue, grand chef !  Bienvenue au Siam.  Vous Ãªtes libre de visiter mon jardin quand bon vous semble.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_RAMKHAMHAENG_FIRSTGREETING_6">
 			<Text>Salutations !  Bienvenue au Siam.  Soyez averti, ceux qui sont cruels sans raison ne sont pas les bienvenus sur mes terres.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_SULEIMAN_FIRSTGREETING_4">
-			<Text>Je vous salue, étranger !  J'espère que vous serez un leader méritant !</Text>
+			<Text>Je vous salue, Ã©tranger !  J'espÃ¨re que vous serez un leader mÃ©ritant !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_SULEIMAN_FIRSTGREETING_5">
-			<Text>Je vous salue, grand chef !  Bienvenue dans ma cour.  Je suis Soliman le Magnifique, chef incontesté de l'empire Ottoman.</Text>
+			<Text>Je vous salue, grand chef !  Bienvenue dans ma cour.  Je suis Soliman le Magnifique, chef incontestÃ© de l'empire Ottoman.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_SULEIMAN_FIRSTGREETING_6">
 			<Text>Bienvenue dans l'empire Ottoman, digne chef.  Je suis heureux de croiser votre chemin.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WASHINGTON_FIRSTGREETING_4">
-			<Text>L'Amérique vous accueille avec joie, cher ami.  J'espère que vous êtes un dirigeant prônant la liberté tout en menant son peuple vers la prospérité.</Text>
+			<Text>L'AmÃ©rique vous accueille avec joie, cher ami.  J'espÃ¨re que vous Ãªtes un dirigeant prÃ´nant la libertÃ© tout en menant son peuple vers la prospÃ©ritÃ©.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WASHINGTON_FIRSTGREETING_5">
-			<Text>Bienvenue aux États-Unis, étranger.  Je suis George Washington, suprême souverain du monde libre.  Comment pouvons-nous vous aider ?</Text>
+			<Text>Bienvenue aux Ã‰tats-Unis, Ã©tranger.  Je suis George Washington, suprÃªme souverain du monde libre.  Comment pouvons-nous vous aider ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WASHINGTON_FIRSTGREETING_6">
-			<Text>Bonjour, cher leader.  Bienvenue en Amérique, terre de liberté et domicile du brave.  Maintenant, dites-moi, que recherchez-vous sur nos terres ?</Text>
+			<Text>Bonjour, cher leader.  Bienvenue en AmÃ©rique, terre de libertÃ© et domicile du brave.  Maintenant, dites-moi, que recherchez-vous sur nos terres ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WUZETIAN_FIRSTGREETING_4">
 			<Text>Salutations.  Je suis Wu Zetian, de la Chine.  Comment mon peuple peut-il vous aider aujourd'hui ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WUZETIAN_FIRSTGREETING_5">
-			<Text>Cette rencontre sera célébrée par nos descendants pour les siècles à venir.  Bienvenue en Chine, étranger !</Text>
+			<Text>Cette rencontre sera cÃ©lÃ©brÃ©e par nos descendants pour les siÃ¨cles Ã  venir.  Bienvenue en Chine, Ã©tranger !</Text>
 		</Row>
 		<Row Tag="TXT_KEY_LEADER_WUZETIAN_FIRSTGREETING_6">
-			<Text>Salutations !  Mon peuple est très puissant et productif.  J'espère qu'il n'y aura aucune grande muraille entre nous.</Text>
+			<Text>Salutations !  Mon peuple est trÃ¨s puissant et productif.  J'espÃ¨re qu'il n'y aura aucune grande muraille entre nous.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LUXURY_TRADE_3">
 			<Text>Nos gens exigent un style de vie somptueux.  Partagez-vous cet avis ?</Text>
@@ -837,73 +837,73 @@
 			<Text>Acceptez cette entente, et nos sujets n'en seront que plus heureux.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LUXURY_TRADE_5">
-			<Text>Il est temps pour nous d'échanger nos ressources de luxe et offrir ainsi une vie meilleure à nos gens.</Text>
+			<Text>Il est temps pour nous d'Ã©changer nos ressources de luxe et offrir ainsi une vie meilleure Ã  nos gens.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HUMAN_DOF_SO_AI_DENOUNCE_3">
-			<Text>Premièrement, j'ai dû traiter avec {1_CivName}, maintenant avec vous ? Pathétique.  Vous êtes tous les deux la raison pour laquelle ce monde semble être une ruche remplie de scélérats.</Text>
+			<Text>PremiÃ¨rement, j'ai dÃ» traiter avec {1_CivName}, maintenant avec vous ? PathÃ©tique.  Vous Ãªtes tous les deux la raison pour laquelle ce monde semble Ãªtre une ruche remplie de scÃ©lÃ©rats.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HUMAN_DOF_SO_AI_DENOUNCE_4">
-			<Text>Tiens donc.  Il semble que vous et {1_CivName} êtes alliés.  C'est bien, parce que je vais vous écraser tous les deux sous le poids de mon empire.</Text>
+			<Text>Tiens donc.  Il semble que vous et {1_CivName} Ãªtes alliÃ©s.  C'est bien, parce que je vais vous Ã©craser tous les deux sous le poids de mon empire.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_EXPANSION_3">
-			<Text>Je suis désolé, mais vous devez ralentir le rythme de progression de vos frontières.  À trop vouloir étendre votre influence, vous apeurez un brin ma population.  Calmez vos ardeurs, d'accord ?</Text>
+			<Text>Je suis dÃ©solÃ©, mais vous devez ralentir le rythme de progression de vos frontiÃ¨res.  Ã€ trop vouloir Ã©tendre votre influence, vous apeurez un brin ma population.  Calmez vos ardeurs, d'accord ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_PLOT_BUYING_3">
-			<Text>Gaspillez votre argent pour des terres sans valeur.  Vous ne pourrez pas les protéger contre les animaux sauvages, encore moins vos ennemis.</Text>
+			<Text>Gaspillez votre argent pour des terres sans valeur.  Vous ne pourrez pas les protÃ©ger contre les animaux sauvages, encore moins vos ennemis.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_PLOT_BUYING_3">
-			<Text>Il me semble que vous avez fait l'achat de terrains beaucoup trop rapidement.  Mes sujets n'apprécient pas ce genre de comportement.  Cessez vos actions afin d'apaiser les tensions entre nous.</Text>
+			<Text>Il me semble que vous avez fait l'achat de terrains beaucoup trop rapidement.  Mes sujets n'apprÃ©cient pas ce genre de comportement.  Cessez vos actions afin d'apaiser les tensions entre nous.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_14">
-			<Text>Pourquoi êtes-vous venu ici ?  Pour mendier la paix ?  Non !  Mes armées vont envoyer sous terre vos cités.  Partez maintenant...</Text>
+			<Text>Pourquoi Ãªtes-vous venu ici ?  Pour mendier la paix ?  Non !  Mes armÃ©es vont envoyer sous terre vos citÃ©s.  Partez maintenant...</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_15">
-			<Text>Je ne cesserai jamais jusqu'à ce que toute méchanceté ait disparue.</Text>
+			<Text>Je ne cesserai jamais jusqu'Ã  ce que toute mÃ©chancetÃ© ait disparue.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_16">
-			<Text>Fermez-la.  Cette guerre doit continuer jusqu'à ce que je sois prêt à vous accorder la miséricorde.</Text>
+			<Text>Fermez-la.  Cette guerre doit continuer jusqu'Ã  ce que je sois prÃªt Ã  vous accorder la misÃ©ricorde.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_15">
 			<Text>Je vous salue, mon ami.  De quoi avez-vous besoin ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_16">
-			<Text>Heureux de vous revoir.  Êtes-vous ici pour faire une transaction ?</Text>
+			<Text>Heureux de vous revoir.  ÃŠtes-vous ici pour faire une transaction ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_17">
 			<Text>C'est formidable de revoir un ami.  De quel sujet allons-nous discuter aujourd'hui ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_6">
-			<Text>J'écoute.</Text>
+			<Text>J'Ã©coute.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_7">
-			<Text>Alors?  Écoutons votre proposition.</Text>
+			<Text>Alors?  Ã‰coutons votre proposition.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_3">
-			<Text>Je suis désolé, mais je ne crois pas que cette transaction puisse fonctionner.</Text>
+			<Text>Je suis dÃ©solÃ©, mais je ne crois pas que cette transaction puisse fonctionner.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_4">
-			<Text>Il ne semble pas y avoir une façon logique de conclure cette transaction.</Text>
+			<Text>Il ne semble pas y avoir une faÃ§on logique de conclure cette transaction.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_5">
-			<Text>Je suis désolé, mais je ne vois rien d'équitable dans cette transaction.</Text>
+			<Text>Je suis dÃ©solÃ©, mais je ne vois rien d'Ã©quitable dans cette transaction.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_6">
-			<Text>Désolé.  Cette transaction ne peut tout simplement pas aboutir.</Text>
+			<Text>DÃ©solÃ©.  Cette transaction ne peut tout simplement pas aboutir.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_4">
-			<Text>C'est le mieux que vous puissiez offrir ?  Vous me prenez pour qui, un crétin ?</Text>
+			<Text>C'est le mieux que vous puissiez offrir ?  Vous me prenez pour qui, un crÃ©tin ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_5">
-			<Text>Allez, vous devez faire mieux pour obtenir un échange valable et le voir se concrétiser.</Text>
+			<Text>Allez, vous devez faire mieux pour obtenir un Ã©change valable et le voir se concrÃ©tiser.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_6">
-			<Text>Je ne veux pas répandre la honte sur mon peuple de par une transaction aussi scandaleuse.  Vous devez faire mieux.</Text>
+			<Text>Je ne veux pas rÃ©pandre la honte sur mon peuple de par une transaction aussi scandaleuse.  Vous devez faire mieux.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_4">
 			<Text>Je ne peux accepter cette offre.  Mettez-en plus sur la table.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_5">
-			<Text>Cet accord n'est pas bon pour mes intérêts.  Offrez plus et nous concluerons la transaction.</Text>
+			<Text>Cet accord n'est pas bon pour mes intÃ©rÃªts.  Offrez plus et nous concluerons la transaction.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_6">
 			<Text>Vous devez offrir un peu plus pour que cette transaction fonctionne.  Actuellement, ce n'est pas du tout acceptable.</Text>
@@ -912,43 +912,43 @@
 			<Text>Cette transaction ne fera pas de nous de grands amis.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_HUMAN_CONCESSIONS_4">
-			<Text>Nous n'oublierons pas de sitôt cette transaction, vous avez ma parole.</Text>
+			<Text>Nous n'oublierons pas de sitÃ´t cette transaction, vous avez ma parole.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_4">
-			<Text>Transaction conclue.  Puissions-nous continuer à brasser des affaires longtemps.</Text>
+			<Text>Transaction conclue.  Puissions-nous continuer Ã  brasser des affaires longtemps.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_5">
-			<Text>Les termes sont fixés.  C'est un accord très équitable.</Text>
+			<Text>Les termes sont fixÃ©s.  C'est un accord trÃ¨s Ã©quitable.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_6">
-			<Text>Je suis d'accord avec cette offre.  Elle est juste pour les deux parties impliquées.</Text>
+			<Text>Je suis d'accord avec cette offre.  Elle est juste pour les deux parties impliquÃ©es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_4">
-			<Text>Je ne peux refuser cette généreuse offre de votre part.  Merci.</Text>
+			<Text>Je ne peux refuser cette gÃ©nÃ©reuse offre de votre part.  Merci.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_5">
-			<Text>Vous avez sacrifié vos biens pour favoriser la relation entre nous.  Vous avez toute mon admiration.</Text>
+			<Text>Vous avez sacrifiÃ© vos biens pour favoriser la relation entre nous.  Vous avez toute mon admiration.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_6">
-			<Text>Votre générosité n'est pas passée inaperçue.  Merci beaucoup.</Text>
+			<Text>Votre gÃ©nÃ©rositÃ© n'est pas passÃ©e inaperÃ§ue.  Merci beaucoup.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_7">
-			<Text>Nous nous rappellerons de cette transaction pour de nombreuses années à venir.  Merci d'être si généreux.</Text>
+			<Text>Nous nous rappellerons de cette transaction pour de nombreuses annÃ©es Ã  venir.  Merci d'Ãªtre si gÃ©nÃ©reux.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_3">
-			<Text>Allons-nous ouvrir nos frontières afin de faciliter les échanges entre nous ?</Text>
+			<Text>Allons-nous ouvrir nos frontiÃ¨res afin de faciliter les Ã©changes entre nous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_4">
-			<Text>Je pense que c'est dans notre intérêt, comme toutes les nations civilisées de ce monde, d'ouvrir nos frontières et de laisser notre amitié se développer.  Qu'en dites-vous ?</Text>
+			<Text>Je pense que c'est dans notre intÃ©rÃªt, comme toutes les nations civilisÃ©es de ce monde, d'ouvrir nos frontiÃ¨res et de laisser notre amitiÃ© se dÃ©velopper.  Qu'en dites-vous ?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_5">
-			<Text>Ouvrons nos frontières l'un à l'autre.  Cela augmentera notre amitié.</Text>
+			<Text>Ouvrons nos frontiÃ¨res l'un Ã  l'autre.  Cela augmentera notre amitiÃ©.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DEMAND_2">
-			<Text>Soyons réalistes.  Vous avez quelque chose que je désire, et si vous refusez de me le donner, soyez assuré que mes troupes militaires iront frapper à votre porte.</Text>
+			<Text>Soyons rÃ©alistes.  Vous avez quelque chose que je dÃ©sire, et si vous refusez de me le donner, soyez assurÃ© que mes troupes militaires iront frapper Ã  votre porte.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_GENERIC_DEMAND_3">
-			<Text>Donnez-moi ce que je veux, et vos femmes et enfants demeureront en sécurité.  Cela semble être une bonne affaire, vous ne pensez pas ?</Text>
+			<Text>Donnez-moi ce que je veux, et vos femmes et enfants demeureront en sÃ©curitÃ©.  Cela semble Ãªtre une bonne affaire, vous ne pensez pas ?</Text>
 		</Row>
 	</Language_fr_FR>
 </GameData>
