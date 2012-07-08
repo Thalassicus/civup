@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated by Toys®Us -->
+<GameData>
+	<Language_fr_FR>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>Protégé par:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>D'autres civilisations peuvent prendre la décision de protéger une Cité-État.  Déclarer la guerre à cette dernière aura pour effet d'inciter ses protecteurs à faire de même avec vous.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_CONNECTED" />
+			<Set Text="La ville a [ICON_TRADE] une route commerciale avec la [ICON_CAPITAL] Capitale." />
+		</Update>
+		<Row Tag="TXT_KEY_CITY_CONNECTED_RAILROAD">
+			<Text>La ville a [ICON_CONNECTED] une voie ferrée commerciale avec la [ICON_CAPITAL] Capitale.</Text>
+		</Row>		
+	</Language_fr_FR>
+</GameData>

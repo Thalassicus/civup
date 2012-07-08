@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation by Toys®Us -->
+<GameData>
+	<Language_fr_FR>
+		<Update>
+			<Where Tag="TXT_KEY_IMPROVEMENT_TRADING_POST" />
+			<Set Text="Village" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT" />
+			<Set Text="Un village est une communauté avec une population allant de quelques centaines à quelques milliers de personnes.  Ces petites colonies s'ajoutent à l'économie globale de votre société." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADINGPOST" />
+			<Set Text="Village" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_ADV_QUEST" />
+			<Set Text="Est-ce que le village procure de l'or ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_HEADING3_BODY" />
+			<Set Text="Construisez un village sur une case pour augmenter son rendement en or." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_HEADING3_TITLE" />
+			<Set Text="Le village" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORKERS_TRADINGPOST_HEADING3_BODY" />
+			<Set Text="Le village augmente la production d'une case de 1 or.  Il n'a pas accès à une ressource.[NEWLINE]Technologie requise: Piège[NEWLINE]Durée de la construction: 5 Tours[NEWLINE]Peut être érigé sur: Toutes les cases, sauf la glace." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Liberté de pensée[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science sur les villages.[NEWLINE]+17% [ICON_RESEARCH] Science provenant des universités." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_TRADING_POST" />
+			<Set Text="Construisez un [LINK=IMPROVEMENT_TRADING_POST]village[\LINK]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_GOLD_REC" />
+			<Set Text="Augmentera la quantité [ICON_GOLD] d'or que procure cette case, stimulant du même coup le montant d'argent que vous aurez à dépenser." />
+		</Update>		
+	</Language_fr_FR>
+</GameData>

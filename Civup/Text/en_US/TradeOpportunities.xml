@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_DO_REFRESH" >
+			<Text>Refresh</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_STATUS" >
+			<Text>Trade</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESOURCE">
+			<Text>{1_iconstring} {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_FROM">
+			<Text>{1_iconstring} Buy {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_TO">
+			<Text>{1_iconstring} Sell {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_DEMANDED_BY" >
+			<Text>Demanded By</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POSSIBLE_DEALS" >
+			<Text>{1_iconstring} [COLOR_POSITIVE_TEXT]{2_num}[ENDCOLOR] possible {3_type}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CIV_STATUS" >
+			<Text>{1_status}[NEWLINE]{1_era}[NEWLINE]{2_Num} Score</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_RATE" >
+			<Text>Rate</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CLICK_TO_TRADE" >
+			<Text>Click to Trade[COLOR_POSITIVE_TEXT][ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LASTS_TURNS" >
+			<Text>Lasts {1_num} turns.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_BORDER_AGREEMENT" >
+			<Text>[COLOR_YIELD_GOLD]Mutual Open Borders[ENDCOLOR][NEWLINE]1% of the combined gross income of both players adds to your [ICON_GOLD] Gold rate (2% if Allied).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_YES_TT" >
+			<Text>[COLOR_YIELD_GOLD]Propose mutual open borders[ENDCOLOR][NEWLINE]1% of the combined gross income of both players adds to your [ICON_GOLD] Gold rate (2% if Allied).[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_NO_TT" >
+			<Text>Mutual open borders active.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_US_TT" >
+			<Text>They gave us open borders.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_THEM_TT" >
+			<Text>We gave them open borders.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESEARCH_AGREEMENT" >
+			<Text>[COLOR_RESEARCH_STORED]Research Agreement[ENDCOLOR][NEWLINE]3% of the combined research of both players adds to your [ICON_RESEARCH] Science rate (6% if Allied).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_YES_TT" >
+			<Text>[COLOR_RESEARCH_STORED]Propose Research Agreement[ENDCOLOR][NEWLINE]3% of the combined research of both players adds to your [ICON_RESEARCH] Science rate (6% if Allied).[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_NO_TT" >
+			<Text>Research Agreement active.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DEFENSIVE_PACT" >
+			<Text>[COLOR_CITY_BROWN]Defensive Pact[ENDCOLOR][NEWLINE]If an outsider declares war on either player, both players declare war on the outsider.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_YES_TT" >
+			<Text>[COLOR_CITY_BROWN]Propose Defensive Pact[ENDCOLOR][NEWLINE]If an outsider declares war on either player, both players declare war on the outsider.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_NO_TT" >
+			<Text>Defensive Pact active.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_GOLD_STORED" >
+			<Text>Gold Stored</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_GOLD_PROFIT" >
+			<Text>Gold Profit</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DEAL_ALLIANCE" >
+			<Text>[COLOR_GREEN]Ally[ENDCOLOR][NEWLINE]Doubles income from Mutual Open Borders and Research Agreements, and promotes friendly relations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT" >
+			<Text>[COLOR_GREEN]Propose Alliance[ENDCOLOR][NEWLINE]Doubles income from Mutual Open Borders and Research Agreements, and promotes friendly relations.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_NO_TT" >
+			<Text>We are allied.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_US" >
+			<Text>[COLOR_ORANGE]They denounced us[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_THEM" >
+			<Text>[COLOR_ORANGE]We denounced them[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_BOTH" >
+			<Text>[COLOR_NEGATIVE_TEXT]We denounced them[NEWLINE]They denounced us[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_AT_WAR_LARGE" >
+			<Text>[COLOR_NEGATIVE_TEXT]- AT WAR -[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_PEACE_TREATY" >
+			<Text>Peace Treaty</Text>
+		</Row>	
+		
+
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS" >
+			<Text>City States</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_CITY_STATE" >
+			<Text>City State</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_ALLIED_WITH" >
+			<Text>Allied With</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTED_BY" >
+			<Text>Protected By</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUESTS" >
+			<Text>Quest(s)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE" >
+			<Text>Influence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
+			<Text>War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_GOLD" >
+			<Text>Gift Gold</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECT_TT" >
+			<Text>{1} is protected by[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_PROTECT_TT" >
+			<Text>{1} is protected by nobody</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_TT" >
+			<Text>{1} has requested you to[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_QUEST_TT" >
+			<Text>{1} currently has no requests</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_WAR_WITH_PLAYERS">
+			<Text>Fight {1_PlayerNames}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_BARBARIANS">
+			<Text>Kill Barbarians</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_ROUTE">
+			<Text>Construct Road</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CAMP">
+			<Text>Destroy Encampment</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONNECT_RESOURCE">
+			<Text>Connect {1_ResourceName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONSTRUCT_WONDER">
+			<Text>Build {1_WonderName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_GREAT_PERSON">
+			<Text>Attract {1_UnitName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CITY_STATE">
+			<Text>Destroy {1_CityStateName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_PLAYER">
+			<Text>Find {1_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_NATURAL_WONDER">
+			<Text>Find Natural Wonder</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PEACE_TT" >
+			<Text>At war, may make peace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR_TT" >
+			<Text>At war, peace blocked</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT" >
+			<Text>{1_Num}[ICON_GOLD] for [COLOR_POSITIVE_TEXT]+{2_Num} Influence[ENDCOLOR]</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

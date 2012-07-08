@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/31/2011 12:12:44 PM -->
+<GameData>
+	<Language_en_US>
+		<!-- Improved Events -->
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_GROWTH_2">
+			<Text>The City of {1_CityName} now has {2_Pop} [ICON_CITIZEN] Citizens! The new Citizen will automatically work the land near the City for additional [ICON_FOOD] Food, [ICON_PRODUCTION] Production or [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CITY_GROWTH_2">
+			<Text>{1_CityName} has grown!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_TILE">
+			<Text>The City of {1_CityName} has claimed a new tile for [ICON_CITIZEN] to work on!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CITY_TILE">
+			<Text>{1_CityName} has claimed a new tile!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_EMPIRE_TILE">
+			<Text>New tile claimed!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EMPIRE_TILE">
+			<Text>A new tile was claimed by your empire. It isn't workable by any cities, however.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CNOTIFICATION_CITY_GROWTH">
+			<Text>Improved Events - City Growth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CNOTIFICATION_CITY_GROWTH_OPTION">
+			<Text>[ICON_FOOD] City Growth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CNOTIFICATION_CULTURE_GROWTH">
+			<Text>Improved Events - Culture Spread</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CNOTIFICATION_CULTURE_GROWTH_OPTION">
+			<Text>[ICON_CULTURE] Culture Spread</Text>
+		</Row>
+
+		<!-- Notification Options -->
+		<Row Tag="TXT_KEY_DISMISS_NOTIFICATION_OPTION">
+			<Text>DISMISS NOTIFICATION</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DENUNCIATION_EXPIRED_OPTION">
+			<Text>[ICON_INFLUENCE] Denunciation Expired</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_FRIENDSHIP_EXPIRED_OPTION">
+			<Text>[ICON_INFLUENCE] DoF Expired</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_MINOR_QUEST_OPTION">
+			<Text>[ICON_CITY_STATE] City State Quest</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_MINOR_OPTION">
+			<Text>[ICON_CITY_STATE] City State Generic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_WAR_OPTION">
+			<Text>[ICON_WAR] War Declared - Others</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_WAR_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_WAR] War Declared - You</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CAPITAL_LOST_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_RAZING] Capital Lost - You</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_MET_MINOR_OPTION">
+			<Text>[ICON_CITY_STATE] Met City State</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_STARVING_OPTION">
+			<Text>[ICON_HAPPINESS_3] City Starving</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_ENEMY_IN_TERRITORY_OPTION">
+			<Text>[ICON_WAR] Enemy in Territory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_GOODY_OPTION">
+			<Text>[ICON_FLOWER] Ruins Discovered</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PROJECT_COMPLETED_OPTION">
+			<Text>[ICON_PRODUCTION] Project Completed</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_GOLDEN_AGE_ENDED_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_GOLDEN_AGE] Golden Age Ended</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_TRADE_AGREEMENT_OPTION">
+			<Text>[ICON_GOLD] Deal Expired - Trade Agreement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_RESEARCH_AGREEMENT_OPTION">
+			<Text>[ICON_GOLD] Deal Expired - Research Agreement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_DEFENSIVE_PACT_OPTION">
+			<Text>[ICON_GOLD] Deal Expired - Defensive Pact</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_BARBARIAN_OPTION">
+			<Text>[ICON_PIRATE] Barbarian Encampment</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_OPEN_BORDERS_OPTION">
+			<Text>[ICON_GOLD] Deal Expired - Open Borders</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_VICTORY_OPTION">
+			<Text>[ICON_TEAM_1] Game Victory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_GOLDEN_AGE] Great Person Born</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_TECH_AWARD_OPTION">
+			<Text>[ICON_RESEARCH] Tech Discovered</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DIPLOMACY_DECLARATION_OPTION">
+			<Text>[ICON_INFLUENCE] Diplomacy Declaration</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_UNIT_DIED_OPTION">
+			<Text>[ICON_WAR] Unit Died</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_DEAL_OPTION">
+			<Text>[ICON_GOLD] Player Deal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_DEAL_RECEIVED_OPTION">
+			<Text>[ICON_GOLD] Player Deal - Received</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_DEAL_RESOLVED_OPTION">
+			<Text>[ICON_GOLD] Player Deal - Resolved</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_WONDER_BEATEN_OPTION">
+			<Text>[ICON_PRODUCTION] Wonder Completed - Beaten</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_RANGE_ATTACK_OPTION">
+			<Text>[ICON_RANGE_STRENGTH] City Can Attack</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_WONDER_COMPLETED_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_PRODUCTION] Wonder Completed - You</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_GROWTH_OPTION">
+			<Text>[ICON_CITIZEN] City Growth (to 5 Pop)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_RESOURCE_OPTION">
+			<Text>[ICON_GOLD] Deal Expired - Resource</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_LOST_OPTION">
+			<Text>[ICON_RAZING] City Lost</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CAPITAL_LOST_OPTION">
+			<Text>[ICON_RAZING] Capital Lost - Others</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CAPITAL_RECOVERED_OPTION">
+			<Text>[ICON_CAPITAL] Capital Retaken</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DISCOVERED_STRATEGIC_RESOURCE_OPTION">
+			<Text>[ICON_RES_IRON] Strategic Resource Found</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DISCOVERED_LUXURY_RESOURCE_OPTION">
+			<Text>[ICON_RES_GEMS] Luxury Resource Found</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEMAND_RESOURCE_OPTION">
+			<Text>[ICON_RES_GEMS] WLKD Resource Demand</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PLAYER_KILLED_OPTION">
+			<Text>[ICON_RAZING] Player Eliminated</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PEACE_OPTION">
+			<Text>[ICON_PEACE] Peace Treaty- Others</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_PEACE_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_PEACE] Peace Treaty - You</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_REBELS_OPTION">
+			<Text>[ICON_RESISTANCE] Rebellion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_OPTION">
+			<Text>[ICON_GOLD] Deal Expired - GPT</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_WONDER_COMPLETED_OPTION">
+			<Text>[ICON_PRODUCTION] Wonder Completed - Other</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER_OPTION">
+			<Text>[ICON_GOLDEN_AGE] Golden Age Begins</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EXPLORATION_RACE_OPTION">
+			<Text>[ICON_FLOWER] Natural Wonder Discovered</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

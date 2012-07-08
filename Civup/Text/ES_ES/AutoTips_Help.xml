@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/21/2011 10:08:37 AM -->
+<GameData>
+	<Language_ES_ES>
+		<Update>
+			<Where Tag="TXT_KEY_WONDER_HIMEJI_CASTLE_HELP" />
+			<Set Text="+25% [ICON_STRENGTH] Strength in friendly territory" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_GREAT_LIGHTHOUSE_HELP" />
+			<Set Text="+1 [ICON_MOVES] Movement and +1 Sight for Ships" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MORALE_HELP" />
+			<Set Text="+15% [ICON_STRENGTH] Strength" />
+		</Update>
+	</Language_ES_ES>
+</GameData>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/10/2010 5:35:38 PM -->
+<GameData>
+	<Missions>
+		<Row>
+			<Type>MISSION_DISCOVER_ME</Type>
+			<Description>TXT_KEY_MISSION_DISCOVER_ME</Description>
+			<Help>TXT_KEY_MISSION_DISCOVER_ME_HELP</Help>
+			<DisabledHelp>TXT_KEY_MISSION_DISCOVER_ME_DISABLED_HELP</DisabledHelp>
+			<EntityEventType>ENTITY_EVENT_GREAT_EVENT</EntityEventType>
+			<Time>25</Time>
+			<Target>0</Target>
+			<Build>0</Build>
+			<Sound>0</Sound>
+			<HotKey/>
+			<AltDown>0</AltDown>
+			<ShiftDown>0</ShiftDown>
+			<CtrlDown>0</CtrlDown>
+			<HotKeyPriority>0</HotKeyPriority>
+			<HotKeyAlt/>
+			<AltDownAlt>0</AltDownAlt>
+			<ShiftDownAlt>0</ShiftDownAlt>
+			<CtrlDownAlt>0</CtrlDownAlt>
+			<HotKeyPriorityAlt>0</HotKeyPriorityAlt>
+			<OrderPriority>200</OrderPriority>
+			<Visible>1</Visible>
+			<IconIndex>50</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Missions>
+	<!-- Below is some XML code to tell the custom mission handler that the mission should be added to the GameInfoActions -->
+	<Table name="CustomMissions">
+		<Column name="Type" type="text" reference="Missions(Type)"/>
+	</Table>
+	<CustomMissions>
+		<Row>
+			<Type>MISSION_DISCOVER_ME</Type>
+		</Row>
+	</CustomMissions>
+</GameData>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation by Toys®Us -->
+<GameData>
+	<Language_fr_FR>
+		<Row Tag="TXT_KEY_DO_REFRESH" >
+			<Text>Rafraîchir</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_STATUS" >
+			<Text>Commerce</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESOURCE">
+			<Text>{1_iconstring} {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_FROM">
+			<Text>{1_iconstring} Achète {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_TO">
+			<Text>{1_iconstring} Vend {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_DEMANDED_BY" >
+			<Text>Demandé par</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POSSIBLE_DEALS" >
+			<Text>{1_iconstring} [COLOR_POSITIVE_TEXT]{2_num}[ENDCOLOR] possible {3_type}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CIV_STATUS" >
+			<Text>{1_status}[NEWLINE]{1_era}[NEWLINE]{2_Num} Score</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_RATE" >
+			<Text>Taux</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CLICK_TO_TRADE" >
+			<Text>Cliquez pour échanger[COLOR_POSITIVE_TEXT][ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LASTS_TURNS" >
+			<Text>Dure {1_num} tours.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_BORDER_AGREEMENT" >
+			<Text>[COLOR_YIELD_GOLD]Libre passage mutuel[ENDCOLOR][NEWLINE]1% du revenu brut combiné des deux joueurs s'ajoute à votre [ICON_GOLD] Taux de l'or (2% si allié).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_YES_TT" >
+			<Text>[COLOR_YIELD_GOLD]Proposer le libre passage mutuel[ENDCOLOR][NEWLINE]1% du revenu brut combiné des deux joueurs s'ajoute à votre [ICON_GOLD] Taux de l'or (2% si Allié).[NEWLINE][NEWLINE]Dure {1_num} tours.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_NO_TT" >
+			<Text>Libre passage mutuel en cours.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_US_TT" >
+			<Text>Ils nous accordent le libre passage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_THEM_TT" >
+			<Text>Nous leur accordons le libre passage.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESEARCH_AGREEMENT" >
+			<Text>[COLOR_RESEARCH_STORED]Accord de recherche[ENDCOLOR][NEWLINE]3% du revenu brut combiné des deux joueurs s'ajoute à votre [ICON_RESEARCH] Taux de Science (6% si Allié).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_YES_TT" >
+			<Text>[COLOR_RESEARCH_STORED]Proposer un accord de recherche[ENDCOLOR][NEWLINE]3% du revenu brut combiné des deux joueurs s'ajoute à votre [ICON_RESEARCH] Taux de Science (6% si Allié).[NEWLINE][NEWLINE]Dure {1_num} tours.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_NO_TT" >
+			<Text>Accord de recherche en cours.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DEFENSIVE_PACT" >
+			<Text>[COLOR_CITY_BROWN]Pacte de défense[ENDCOLOR][NEWLINE]Si une civilisation déclare la guerre à un des deux joueurs liés par un tel pacte, ensemble ils uniront leurs forces contre cet envahisseur.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_YES_TT" >
+			<Text>[COLOR_CITY_BROWN]Proposer un pacte de défense[ENDCOLOR][NEWLINE]Si une civilisation déclare la guerre à un des deux joueurs liés par un tel pacte, ensemble ils uniront leurs forces contre cet envahisseur.[NEWLINE][NEWLINE]Dure {1_num} tours.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_NO_TT" >
+			<Text>Pacte de défense en cours.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_GOLD_STORED" >
+			<Text>Or stocké</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_GOLD_PROFIT" >
+			<Text>Profit en or</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DEAL_ALLIANCE" >
+			<Text>[COLOR_GREEN]Allié[ENDCOLOR][NEWLINE]Double les revenus des accords de libre passage et de recherche, en plus de promouvoir les relations amicales.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT" >
+			<Text>[COLOR_GREEN]Proposer une alliance[ENDCOLOR][NEWLINE]Double les revenus des accords de libre passage et de recherche, en plus de promouvoir les relations amicales.[NEWLINE][NEWLINE]Dure {1_num} tours.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_NO_TT" >
+			<Text>Nous sommes alliés.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_US" >
+			<Text>[COLOR_ORANGE]Ils nous ont dénoncé[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_THEM" >
+			<Text>[COLOR_ORANGE]Nous les avons dénoncé[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_BOTH" >
+			<Text>[COLOR_NEGATIVE_TEXT]Nous les avons dénoncé[NEWLINE]Ils nous ont dénoncé[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_AT_WAR_LARGE" >
+			<Text>[COLOR_NEGATIVE_TEXT]- EN GUERRE -[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_PEACE_TREATY" >
+			<Text>Traité de paix</Text>
+		</Row>	
+		
+
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS" >
+			<Text>Cités-États</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_CITY_STATE" >
+			<Text>Cité-État</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_ALLIED_WITH" >
+			<Text>Allié avec</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTED_BY" >
+			<Text>Protégé par</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUESTS" >
+			<Text>Quête(s)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE" >
+			<Text>Influence</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
+			<Text>Guerre</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_GOLD" >
+			<Text>Or en cadeau</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECT_TT" >
+			<Text>{1} est protégé par[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_PROTECT_TT" >
+			<Text>{1} n'est pas protégé</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_TT" >
+			<Text>{1} vous a demandé de[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_QUEST_TT" >
+			<Text>{1} n'a pas de requêtes actuellement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_WAR_WITH_PLAYERS">
+			<Text>Combattre {1_PlayerNames}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_BARBARIANS">
+			<Text>Tuer les barbares</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_ROUTE">
+			<Text>Construire une route</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CAMP">
+			<Text>Détruire le campement</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONNECT_RESOURCE">
+			<Text>Relier {1_ResourceName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONSTRUCT_WONDER">
+			<Text>Construire {1_WonderName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_GREAT_PERSON">
+			<Text>Attirer {1_UnitName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CITY_STATE">
+			<Text>Détruire {1_CityStateName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_PLAYER">
+			<Text>Trouver {1_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_NATURAL_WONDER">
+			<Text>Trouver une Merveille Naturelle</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PEACE_TT" >
+			<Text>En guerre, peut faire la paix</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR_TT" >
+			<Text>En guerre, paix impossible</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT" >
+			<Text>{1_Num}[ICON_GOLD] pour [COLOR_POSITIVE_TEXT]+{2_Num} Influence[ENDCOLOR]</Text>
+		</Row>
+	</Language_fr_FR>
+</GameData>

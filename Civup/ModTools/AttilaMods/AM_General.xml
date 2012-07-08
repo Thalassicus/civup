@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Defines>
+		<Row Name="TOOLTIP_MAX_CITIES_PER_GP" >
+			<Value>5</Value>
+		</Row>
+	</Defines>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_HELP_CAPS"/>
+			<Set Text="?"/>
+		</Update>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation by Toys®Us -->
+<GameData>
+	<Language_fr_FR>
+		<!--
+				Promotion Trees
+		-->
+		<Row Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK" >
+			<Text>Arbre des promotions</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK_TT" >
+			<Text>Affiche l'arbre des promotions pour facilement voir celles disponibles pour un type de combat</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_OPEN_TREE_FOR_UNIT_TT" >
+			<Text>Affiche l'arbre des promotions pour facilement voir celles que cette unité possède ou peut obtenir</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_SIZE" >
+			<Text>Petit</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_EARNT" >
+			<Text>Mérité</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_EARNT_TT" >
+			<Text>Promotions déjà acquises par cette unité (à l'exclusion des attributs et Merveilles)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_AVAILABLE" >
+			<Text>Disponible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_AVAILABLE_TT" >
+			<Text>Promotions disponibles pour l'unité</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_NOT_AVAILABLE" >
+			<Text>Pas encore disponible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT" >
+			<Text>Promotions qui ne sont pas encore disponibles pour l'unité</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_GROUP_UNIT" >
+			<Text>Unité</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_CLASS" >
+			<Text>Type de combat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_ALL" >
+			<Text>Promotions</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_ALL_TT" >
+			<Text>Promotions qui améliorent les compétences de combat (les bonus sont cumulatifs)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_BASE" >
+			<Text>Promotions de base</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_BASE_TT" >
+			<Text>Promotions qui améliorent les compétences de combat de base (les bonus sont cumulatifs)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_DEPENDANT" >
+			<Text>Promotions avancées</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_DEPENDANT_TT" >
+			<Text>Promotions qui procurent des compétences additionnelles</Text>
+		</Row>
+		
+		<!--
+				Upgrade Trees
+		-->
+		<Row Tag="TXT_KEY_UPGRADE_DIPLO_CORNER_HOOK" >
+			<Text>Tableau des améliorations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_DIPLO_CORNER_HOOK_TT" >
+			<Text>Affiche le tableau des améliorations pour facilement voir celles disponibles pour un type de combat</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_OPEN_TREE_FOR_UNIT_TT" >
+			<Text>Affiche le tableau des améliorations pour facilement voir l'évolution possible de cette unité</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_SIZE" >
+			<Text>Petit</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_GROUP_UNIT" >
+			<Text>Unité</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_GROUP_CLASS" >
+			<Text>Type de combat</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_MOVES" >
+			<Text>Mouvements: {1_Num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_COMBAT" >
+			<Text>Force: {1_Num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_RANGED" >
+			<Text>Force à distance: {1_Num} à {2_Num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_UPGRADE_COST" >
+			<Text>[ICON_GOLD] {1_Num} pour améliorer</Text>
+		</Row>
+	</Language_fr_FR>
+</GameData>

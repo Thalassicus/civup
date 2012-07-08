@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b70b6abe-edac-4563-9751-03248d2f895a" version="13">
+  <Properties>
+    <Name>Attila Mods</Name>
+    <Teaser>Useful UI-only mods for 1.0.1.135</Teaser>
+    <Description>Features:[NEWLINE]
+[ICON_BULLET]Click gold icon to display Economic Info[NEWLINE]
+[ICON_BULLET]Display turns left for Tech, Policy, Golden Age in tooltip[NEWLINE]
+[ICON_BULLET]No plot info above minimap[NEWLINE]
+[ICON_BULLET]Open tech tree if Next Turn is blocked by Research or Free Tech[NEWLINE]
+[ICON_BULLET]Display luxury resources on top panel and tooltip[NEWLINE]
+[ICON_BULLET]Display turns left in current trades, not duration[NEWLINE]
+[ICON_BULLET]12/24 hour clock[NEWLINE]
+[ICON_BULLET]Great People info and tooltip[NEWLINE]
+[ICON_BULLET]Changed HELP to question mark[NEWLINE]
+[NEWLINE]
+Homepage:[NEWLINE]http://forums.civfanatics.com/showthread.php?t=387164[NEWLINE]</Description>
+    <Authors>AttilaTheHun</Authors>
+    <SpecialThanks>Modders everywhere</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=387164</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="00C67042623C0DB5CAC1D302A1E582D9" import="1">UI/InGame/Popups/SocialPolicyPopup.lua</File>
+    <File md5="C0E3DF247FF532EE94357CD10FD5521A" import="1">UI/InGame/TopPanel.lua</File>
+    <File md5="460186F2657B1B029DE0448DF9385F46" import="1">UI/InGame/TopPanel.xml</File>
+    <File md5="876A448D3AFE6F6465680241E4EA97F5" import="1">UI/InGame/TopPanel_Clock.lua</File>
+    <File md5="CF410CA5481EFC1FFFF0210E5CD2F912" import="1">UI/InGame/Popups/DiploCurrentDeals.lua</File>
+    <File md5="3D166E0816F0C1D2578A8C62D4B5C38B" import="1">UI/InGame/WorldView/ActionInfoPanel.lua</File>
+    <File md5="23DB65BDA2742B05FDF3BDA9E87DCB3E" import="1">UI/InGame/WorldView/PlotHelpText.lua</File>
+    <File md5="DB8D69631C04751FE280005EBDE91FB3" import="1">UI/InGame/WorldView/PlotHelpText.xml</File>
+    <File md5="FFA466990324607868C28F1C27745653" import="1">UI/InGame/WorldView/TradeLogic.lua</File>
+    <File md5="C76A26ADEC58B47B6388BF64024AAF5D" import="1">XML/GPColors.xml</File>
+    <File md5="4ABFBF22FE73670B761311F71673AEF2" import="1">XML/Shorter Text.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GPColors.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Shorter Text.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

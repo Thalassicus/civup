@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/30/2010 3:22:22 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>Protected By:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>Other civilizations may choose to protect a city-state. Declaring war on that city-state will cause its protectors to declare war on you in return.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_CONNECTED" />
+			<Set Text="City has a [ICON_TRADE] Road Trade Route with the [ICON_CAPITAL] Capital!" />
+		</Update>
+		<Row Tag="TXT_KEY_CITY_CONNECTED_RAILROAD">
+			<Text>City has a [ICON_CONNECTED] Railroad Trade Route with the [ICON_CAPITAL] Capital!</Text>
+		</Row>		
+	</Language_en_US>
+</GameData>

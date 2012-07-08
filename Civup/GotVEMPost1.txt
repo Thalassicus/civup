@@ -1,0 +1,45 @@
+[CENTER][URL="http://forums.civfanatics.com/attachment.php?attachmentid=305361&stc=1&d=1320173041"][SIZE=5]Download Game 3[/SIZE][/URL]
+[/CENTER]
+
+[LIST]
+[*][URL="http://forums.civfanatics.com/showthread.php?p=10847473#post10847473"] About the GotVEM competition.[/URL]
+[*][URL="http://forums.civfanatics.com/showthread.php?p=11004547#post11004547"]Early game discussion[/URL] (pre-Renaissance).
+[*][URL="http://forums.civfanatics.com/showthread.php?p=11004552#post11004552"]Late game discussion[/URL] & post final victory save.
+[/LIST]
+
+This thread is to discuss  strategies ahead of time for the Game 3 start location. Please [B]DO NOT[/B]  post details here after you start. Two spoiler threads will  be opened to discuss games in progress.
+
+
+[CENTER][SIZE=5][B]Game 3 Start Location[/B][/SIZE]
+
+[IMG]http://forums.civfanatics.com/attachment.php?attachmentid=304811&stc=1&d=1319220684[/IMG] [IMG]http://forums.civfanatics.com/attachment.php?attachmentid=304812&stc=1&d=1319220674[/IMG]
+
+[I](3-tile range revealed for better first-turn strategizing.)[/I]
+[/CENTER]
+
+[LIST]
+[*]King difficulty.
+[*]Normal speed.
+[*]Normal map size (8 players).
+[*]Modified Perfect World map script.
+[*]Default advanced game options.
+[*]Any victory type allowed except Time.
+[*][B]Darius of Persia:[/B]
+[LIST]
+[*]Units move +1:c5moves: faster during :c5goldenage: Golden Ages.
+[*]Satrap's Court replaces Markets, giving 200:c5goldenage: + 3:c5goldenage:/turn Golden Age points.
+[*]Immortal replaces Spearman, with +2:c5strength: and faster healing.
+[/LIST]
+ 
+[/LIST]
+
+No paid DLCs will be used for this game. Before the game starts, take these 2 simple steps to temporarily disable any paid DLCs you have:
+
+[LIST=1]
+[*]On your Windows desktop, create a new folder "[B]DLC - Backup[/B]."
+[*]Move all paid DLCs* [B]to the backup folder[/B] from:
+C:\Games\Steam\steamapps\common\sid meier's civilization v\Assets\DLC
+[/LIST]
+[I]*The Shared folder and DLC_01 (free Mongolia pack) must remain installed.[/I]
+
+The [B][URL="http://forums.civfanatics.com/showthread.php?p=9941991#post9941991"]Perfect World[/URL][/B] map script by [URL="http://forums.civfanatics.com/member.php?u=121433"]cephalo[/URL] uses fractal altitude and wind patterns to create Earth-like terrain. For VEM I modified this script to generate isles and volcanic island chains. I also adjusted the balance of rough and open terrain to achieve approximately the same ratio as vanilla (the default Perfect World script favors rough terrain).

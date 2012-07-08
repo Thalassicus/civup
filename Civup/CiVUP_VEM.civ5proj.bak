@@ -1,0 +1,2494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{4746fd17-873e-40e4-b531-63afb3f7f235}</ProjectGuid>
+    <Name>Unofficial Patch and Vanilla Enhanced</Name>
+    <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
+    <ModVersion>134</ModVersion>
+    <Stability>Stable</Stability>
+    <Teaser>[COLOR_CYAN]   Try the highly successful project for Civ 5!</Teaser>
+    <Description>Includes the [COLOR_CYAN]Civ V Unofficial Patch[/COLOR] and [COLOR_CYAN]Vanilla Enhanced[/COLOR]. (Previously Thal's Balance)[NEWLINE][NEWLINE]
+[ICON_BULLET] CiVUP - Civ V Unofficial Patch[NEWLINE]
+Fixes hundreds of bugs, missing information, and critical problems with the game and its user interface, with a focus on minimal gameplay impact like "BTS Unaltered Gameplay" from Civ 4.[NEWLINE][NEWLINE]
+[ICON_BULLET] VEM - Vanilla Enhanced Mod[NEWLINE]
+Very close to vanilla while providing more challenging gameplay decisions, where everything has a useful and interesting purpose. Most balance adjustments in Firaxis patches originated here.[NEWLINE][NEWLINE]
+To use only CiVUP add an "_" underscore to the VEM folder name, and VEM is disabled. Please view the readme in the mod folder, which includes important information about using Civ 5 mods.[COLOR_BLACK] fun challenge balance ui modding tools thal mod combined BUFFY bug bat bull</Description>
+    <Authors>[COLOR_CYAN]Thalassicus</Authors>
+    <SpecialThanks>Please view the readme in the mod folder before playing.</SpecialThanks>
+    <Categories>$Categories$</Categories>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Mod Template</AssemblyName>
+    <RootNamespace>Mod Template</RootNamespace>
+    <Homepage>http://civmodding.wordpress.com/</Homepage>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Options.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/YieldLibrary/YL_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/AttilaMods/AM_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/FreeResearchBalance/XMLTableUpdate.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Barbarians/VEB_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_Replacements.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Diplomacy/VED_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/VEP_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Research/VER_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/VET_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/VET_NaturalWonders.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_Maintenance.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/AutoTips/AT_General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_ArmiesClasses.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_Compatibility.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_PromotionSwap.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_Promotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_TooltipPriorities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/Icons/CiVUP_Icons.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/AttilaMods/AM_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/AutoTips/AT_BuildingStats.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/CapitalRailroadBoost/Railyard.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/FreeResearchBalance/CostIncreases.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/FreeResearchBalance/GreatPeople.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/FreeResearchBalance/Missions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Triggers/T_Outcomes.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Triggers/T_Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/VEM.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/Icons/VEA_Icons.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_AI.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_CityDefenses.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_PromotionSwap.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_Promotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_Submarines.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_Units.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_Upgrades.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Barbarians/VEB_Civilization.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Barbarians/VEB_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Barbarians/VEB_Units.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Culture.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Food.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Gold.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Happiness.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Other.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Production.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Science.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/Icons/VEC_Icons.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_AI.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_NationalWonders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_SpecialistsandGP.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_Wonders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/DLCs_LOOKHERE/BDLC_Polynesia_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Diplomacy/GlobalDiplomacyAIDefines.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Diplomacy/VED_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_Flavors.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_LandmarkArtTypes.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_LandmarkArt.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_Personalities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_Warfare.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/VEP_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Commerce.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Enlightenment.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Freedom.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Honor.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Liberty.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Nationalism.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Order.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Patronage.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Piety.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Policies/Trees/VEP_Tradition.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Research/VER_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/VET_GPImprovements.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/VET_General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/VET_NaturalWonders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Triggers/VETR_Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/AIAttackForces.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/CIV5AIMilitaryStrategies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/GlobalAIDefines.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/GrandStrategy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/HandicapInfos.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/PolicyFlavors.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/en_US/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/en_US/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/en_US/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/CopaseticUITweaks.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/CopaseticUITweaks.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/CopaseticUITweaks.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/CopaseticUITweaks.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/CopaseticUITweaks.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/Core.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/Core.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/Core.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/Core.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/DE_DE/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/en_US/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/RU_RU/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/FlagPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/FlagPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/FlagPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/FlagPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/FlagPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/ES_ES/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/FR_FR/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/IT_IT/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/JA_JP/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Text/PL_PL/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Armies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Armies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Armies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Armies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Armies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Armies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/ES_ES/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Barbarians.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Cities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Cities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Cities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Cities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Cities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Cities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/ES_ES/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/DE_DE/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/ES_ES/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Leaders.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Policies.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/DE_DE/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/ES_ES/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Research.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/Terrain.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/Terrain.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/Terrain.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/Terrain.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/Terrain.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/Terrain.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/DE_DE/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/en_US/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/ES_ES/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/FR_FR/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/IT_IT/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/JA_JP/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/PL_PL/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Text/RU_RU/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_Scaling.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_QuickCombat.sql</FileName>
+      </Action>
+    </ModActions>
+    <ModContent>
+      <Content>
+        <Type>NotificationAddin</Type>
+        <Name>VEA_Events.lua</Name>
+        <Description>VEA_Events.lua</Description>
+        <FileName>VEM_VanillaEnhancedMod/Armies/VEA_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>VEB_Events.lua</Name>
+        <Description>VEB_Events.lua</Description>
+        <FileName>VEM_VanillaEnhancedMod/Barbarians/VEB_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>VEC_General</Name>
+        <Description>VEC_General</Description>
+        <FileName>VEM_VanillaEnhancedMod/Cities/VEC_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>VEL_Events.lua</Name>
+        <Description>VEL_Events.lua</Description>
+        <FileName>VEM_VanillaEnhancedMod/Leaders/VEL_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>VEP_Script</Name>
+        <Description>VEP_Script</Description>
+        <FileName>VEM_VanillaEnhancedMod/Policies/VEP_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>VET_Events</Name>
+        <Description>VET_Events</Description>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/VET_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>VETR_Events.lua</Name>
+        <Description>VETR_Events.lua</Description>
+        <FileName>VEM_VanillaEnhancedMod/Triggers/VETR_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>CustomMissionHandler.lua</Name>
+        <Description>CustomMissionHandler.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/FreeResearchBalance/CustomMissionHandler.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>DiscoverMission</Name>
+        <Description>DiscoverMission</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/FreeResearchBalance/DiscoverMission.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>MiniMapPanel_addin.lua</Name>
+        <Description>MiniMapPanel_addin.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/FlagPromotions/MiniMapPanel_addin.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>OptionsScreen.lua</Name>
+        <Description>OptionsScreen.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/FlagPromotions/OptionsScreen.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>YL_EventRegistration.lua</Name>
+        <Description>YL_EventRegistration.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/YieldLibrary/YL_EventRegistration.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>CiVUP_Events.lua</Name>
+        <Description>CiVUP_Events.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/Core/CiVUP_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>TriggerPopup.lua</Name>
+        <Description>TriggerPopup.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/Triggers/TriggerPopup.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>TU_Initialize.lua</Name>
+        <Description>TU_Initialize.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/ThalUtilities/TU_Initialize.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>WWGD_Events.lua</Name>
+        <Description>WWGD_Events.lua</Description>
+        <FileName>VEM_VanillaEnhancedMod/WWGD/WWGD_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>DiploCornerAddin</Type>
+        <Name>NotificationOptions_DiploCornerHook.lua</Name>
+        <Description>NotificationOptions_DiploCornerHook.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/CustomNotifications/NotificationOptions_DiploCornerHook.lua</FileName>
+      </Content>
+      <Content>
+        <Type>NotificationAddin</Type>
+        <Name>ImprovedEvents.lua</Name>
+        <Description>ImprovedEvents.lua</Description>
+        <FileName>CiVUP_CivVUnofficialPatch/CustomNotifications/ImprovedEvents.lua</FileName>
+      </Content>
+      <Content>
+        <Type>MapScript</Type>
+        <Name>PerfectWorld3.1</Name>
+        <Description>PerfectWorldbyRich"cephalo"Marinaccio</Description>
+        <FileName>VEM_VanillaEnhancedMod/Terrain/PerfectWorld3.lua</FileName>
+      </Content>
+    </ModContent>
+    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ModProperties>
+      <Property>
+        <Name>DisableLoadGameOption</Name>
+        <Description>1</Description>
+      </Property>
+    </ModProperties>
+    <SupportsHotSeat>true</SupportsHotSeat>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="CiVUP_CivVUnofficialPatch/AutoTips/AT_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_Events.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_Promotions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/CiVUP_Icons.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/NewPromos16.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/NewPromos256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/NewPromos32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/NewPromos45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/NewPromos64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_TooltipPriorities.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/promotions128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/ResourceTooltipGenerator.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CsebExtendedPlotMouseover/CEPM_Common.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CsebExtendedPlotMouseover/CEPM_CommonPlotHelpers.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CsebExtendedPlotMouseover/PlotHelpManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CsebExtendedPlotMouseover/_PlotHelpManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/AnnexCityPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/CityList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/CityStateDiploPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/CityStateGreetingPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/CityView.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/CityView.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/CityView_small.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/LiberateMinorPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/ProductionPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/PuppetCityPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Cities/WonderPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/ActionInfoPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/DiploCurrentDeals.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/GenericPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/PlotHelpText.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/PlotHelpText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/SocialPolicyPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/SocialPolicyPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/TopPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/TopPanel.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/TopPanel_Clock.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/TradeLogic.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/TutorialPopupScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/WhosWinningPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/WorldView.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechAwardPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechAwardPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechButtonInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechHelpInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Techs/TechTree.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/civ5artdefines_unitmembers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/civ5artdefines_unitmembertemplates.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/EnemyUnitPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/EnemyUnitPanel.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/EnemyUnitPanel_small.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/fx_triggers_warrior.ftsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/MilitaryOverview.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Units/UnitPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/Core/TU_City.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/Core/TU_Misc.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/Core/TU_Player.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/Core/TU_Plot.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/Core/TU_Unit.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/YieldLibrary/YL_EventRegistration.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/YieldLibrary/YieldLibrary.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/YieldLibrary/YL_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Compatibility.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/VanguardPromos16.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/VanguardPromos256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/VanguardPromos32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/VanguardPromos45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Icons/VanguardPromos64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AutoTips/AT_BuildingStats.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_QuickCombat.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/Audio2DScripts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/CivilopediaScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/LeaderHeadRoot.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/ModsSinglePlayer.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/ImprovedEvents.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/ImprovedEvents.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/NotificationOptions.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/NotificationOptions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/NotificationOptions_DiploCornerHook.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Triggers/T_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Triggers/TriggerPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Triggers/TriggerPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Triggers/T_Outcomes.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Triggers/T_Triggers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ExtraDiplomacyText/readme.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/DE_DE/AutoTips_Help.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/DE_DE/AutoTips_Tips.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/en_US/AutoTips_Help.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/en_US/AutoTips_Tips.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/ES_ES/AutoTips_Help.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/ES_ES/AutoTips_Tips.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/FR_FR/AutoTips_Help.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/FR_FR/AutoTips_Tips.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/RU_RU/AutoTips_Help.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Text/RU_RU/AutoTips_Tips.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/TU_LoadSave.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/TU_LuaLogger.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/TU_LuaEvents.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/TU_Utils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Core\Cities\CityStateDiploPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Core\Misc\GameSetupScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Core\Misc\SelectDifficulty.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\FlagPromotions\FP_EventRegistration.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\CopaseticUITweaks.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\Core.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\CsebExtendedPlotMouseover.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\CustomNotifications.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\ExtraDiplomacyText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\FlagPromotions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\FreeResearchBalance.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\Triggers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\Text\en_US\YieldLibrary.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch\ThalUtilities\TU_Initialize.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="README.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Link_FeaturesandTips.url">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Link_ModForum.url">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Link_QuickCombat.url">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Link_ReportBug.url">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Link_Translations.url">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Options.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Barbarians/VEB_Civilization.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Barbarians/VEB_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Barbarians/VEB_Units.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Barbarians/VEB_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_Scaling.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Icons/VEC_Icons.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_Maintenance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Leaders/VEL_Personalities.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Leaders/VEL_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Leaders/VEL_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Policies/VEP_Events.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Policies/VEP_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/AssignStartingPlots.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/VET_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AlpacaMods/DiploCorner.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AlpacaMods/DiploCorner.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AlpacaMods/AlpacaUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/HoverInfo/Readme.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AutoTips/InfoTooltipInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_Initialize.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/ThalUtilities/ThalsUtilities.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AttilaMods/AM_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/AttilaMods/AM_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/FP_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/MiniMapPanel_addin.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/MiniMapPanel_addin.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/ModUserData.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/OptionsScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/OptionsScreen.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/UnitFlagManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/UnitFlagManager.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FlagPromotions/UnitFlagManager_addin.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FreeResearchBalance/XMLTableUpdate.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/CustomNotification.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CustomNotifications/NotificationPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/EconomicGeneralInfo.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/Misc/VictoryProgress.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_Core.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/Core/CiVUP_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CopaseticUITweaks/CityBannerManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CopaseticUITweaks/CityBannerManager.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CopaseticUITweaks/DiploRelationships.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CopaseticUITweaks/DiploRelationships.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CopaseticUITweaks/FeatureFinder.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CopaseticUITweaks/InGame.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FreeResearchBalance/CustomMissionHandler.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FreeResearchBalance/DiscoverMission.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FreeResearchBalance/GreatPeople.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/FreeResearchBalance/Missions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_AI.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_AI.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_Events.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Leaders/VEL_Flavors.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_NationalWonders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_SpecialistsandGP.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/VEC_Wonders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Culture.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Food.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Gold.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Happiness.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Other.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Production.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Cities/Buildings/VEC_Science.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_Promotions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_Units.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_Upgrades.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/VEA_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Diplomacy/VED_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Diplomacy/VED_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Leaders/VEL_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Leaders/VEL_Replacements.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Policies/VEP_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Policies/VEP_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Research/VER_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Research/VER_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/VET_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/VET_NaturalWonders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/ContinentsPlus.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/IslandMaker.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/PangaeaPlus.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/CapitalRailroadBoost/Railyard.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CiVUP_CivVUnofficialPatch/SaveUtils/SaveUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/AIAttackForces.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/DiscussionDialog.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/DiscussionDialog.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/PolicyFlavors.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/HandicapInfos.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/GrandStrategy.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Link_CiVUP_VEM_Website.url">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/WWGD_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/VEA_Icons.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/vanguardflagatlas.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/VEM_NewUnits128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/VEM_NewUnits256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/VEM_NewUnits45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/VEM_NewUnits64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Armies/Icons/VEM_NewUnits80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/FeatureGenerator.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Diplomacy/GlobalDiplomacyAIDefines.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Triggers/VETR_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Terrain/PerfectWorld3.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/VEM.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/CIV5AIMilitaryStrategies.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/WWGD/GlobalAIDefines.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Armies.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Barbarians.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Cities.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Diplomacy.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Triggers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Leaders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Policies.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Research.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Text/en_US/Terrain.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod/Triggers/VETR_Triggers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Barbarians\VEB_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Cities\Icons\VEM_Buildings128.DDS">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Cities\Icons\VEM_Buildings214.DDS">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Cities\Icons\VEM_Buildings256.DDS">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Cities\Icons\VEM_Buildings45.DDS">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Cities\Icons\VEM_Buildings64.DDS">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Cities\Icons\VEM_Buildings80.DDS">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Nationalism.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Commerce.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Enlightenment.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Freedom.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Honor.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Liberty.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Order.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Patronage.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Piety.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Policies\Trees\VEP_Tradition.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Terrain\VET_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="VEM_VanillaEnhancedMod\Text\en_US\WWGD.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CiVUP_CivVUnofficialPatch\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\AlpacaMods\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\AttilaMods\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\AutoTips\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\CapitalRailroadBoost\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\CopaseticUITweaks\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\Icons\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\Icons\AutoTips\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\Misc" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\Cities" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\Units" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Core\Techs" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\CsebExtendedPlotMouseover\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\CustomNotifications\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\ThalUtilities\Core" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Triggers" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\ExtraDiplomacyText\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\FlagPromotions\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\FreeResearchBalance\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\HoverInfo\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\SaveUtils\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\DE_DE" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\en_US" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\ES_ES" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\FR_FR" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\IT_IT" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\JA_JP" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\PL_PL" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\Text\RU_RU" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\ThalUtilities\" />
+    <Folder Include="CiVUP_CivVUnofficialPatch\YieldLibrary\" />
+    <Folder Include="VEM_VanillaEnhancedMod\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Armies\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Armies\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Armies\Icons\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Barbarians\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Cities\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Cities\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Cities\Buildings\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Cities\Buildings\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Cities\Icons\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Diplomacy\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Diplomacy\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Policies\Trees" />
+    <Folder Include="VEM_VanillaEnhancedMod\Triggers" />
+    <Folder Include="VEM_VanillaEnhancedMod\Leaders\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Leaders\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Policies\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Research\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Research\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Terrain\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Terrain\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\DE_DE\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\en_US" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\ES_ES\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\FR_FR\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\IT_IT\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\JA_JP\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\PL_PL\" />
+    <Folder Include="VEM_VanillaEnhancedMod\Text\RU_RU\" />
+    <Folder Include="VEM_VanillaEnhancedMod\WWGD\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

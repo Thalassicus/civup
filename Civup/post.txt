@@ -1,0 +1,21 @@
+revised policy trees:
+
+
+
+[SPOILER][QUOTE]I would reduce the food and happiness bonuses (eg: -1/3 unhappiness per specialist, -0.75 food consumed per specialist) without weakening the others.[/QUOTE]
+[QUOTE=Thalassicus][B]Oct 18[/B], 2011, 06:34 PM
+Altering the :c5food::c5angry: specialist effects is not possible without the game core only Firaxis has access to.
+[/QUOTE]
+[QUOTE=Thalassicus;10977248][B]Oct 19[/B], 2011, 09:03 AM
+Altering the effects of the :c5food::c5angry: specialist policies requires the game core only Firaxis has access to.[/QUOTE]
+The situation is unchanged from the previous 2 times you requested this. I'm not a part of Firaxis... you're asking the impossible of me. :confused:
+----------
+I anticipated and answered these questions:
+[QUOTE]You assume the existence of a policy effect and then find a place to put it.  Why?[/QUOTE]
+[QUOTE=Thalassicus;10984886]The policy adjustments I've made recently were simple XML value and prerequisite changes with a low chance for major bugs. Replacing policies with new effects is more complicated, and generally requires writing new lua code. I like a week or two of testing to eliminate bugs after such significant lua changes. This beta cycle ends in just 3 days, so we'll explore ideas like you propose in the next cycle. :thumbsup:[/QUOTE]
+----------
+[QUOTE]No one is suggesting reducing the requirement to 5 trees without accompanying balance changes.  The shift would go to 5 trees but the cost of later policies would be increased, to keep the cost of a cultural victory roughly the same.[/QUOTE]
+[QUOTE=Thalassicus;10984886]Increasing culture costs by a linear value wouldn't work because it'd reduce options for non-culture games. Reducing the linear value and increasing the exponent would be hard to balance, and change the game too much for my preferences, since we'd get policies very quickly at the start of the game.[/QUOTE]
+----------
+[QUOTE]A better solution is to minimize the need for policies that are of radically situational importance.[/QUOTE]
+Every policy is of situational importance, and what is a "radical" amount cannot be empirically verified. It depends on preferences and playstyles.[/SPOILER]

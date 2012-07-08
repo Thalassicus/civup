@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation by Toys®Us -->
+<GameData>
+	<Language_fr_FR>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_SORRY" />
+			<Set Text="Nous sommes désolés que cela ait creusé un écart entre nous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEAL" />
+			<Set Text="Ne vous souciez pas du passé.  Passons à l'étape suivante." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_OKAY" />
+			<Set Text="Très bien." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_YOULL_PAY" />
+			<Set Text="Vous paierez pour cela en temps voulu." />
+		</Update>
+		<!--First Greeting from leaders that don't have their own file yet-->
+		<!-- Misc stuff -->
+		<Update>
+			<Where Tag="TXT_KEY_DIPLOMACY_ANYTHING_ELSE" />
+			<Set Text="Autre chose ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLOMACY_DISCUSS_WHAT" />
+			<Set Text="De quoi voulez-vous discuter ?" />
+		</Update>
+		<!-- Human repeats an action too much, gets the following responses -->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TOO_MUCH" />
+			<Set Text="..." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TRADE_1" />
+			<Set Text="Pourquoi faire des promenades interminables ?  Faites une offre sérieuse." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TRADE_2" />
+			<Set Text="Je vous ai déjà dit de ne faire qu'une offre équitable." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TRADE_3" />
+			<Set Text="Vous faites des offres tout en sachant que je vais les refuser ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_REPEAT_1" />
+			<Set Text="L'histoire ne se répète pas, mais je dois admettre que l'ensemble rime." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_REPEAT_2" />
+			<Set Text="Je viens de me perdre dans mes pensées.  Ce n'était pas un endroit familier." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_REPEAT_1" />
+			<Set Text="Partez ou je vais vous narguer à nouveau." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_REPEAT_2" />
+			<Set Text="S'il y a une chose que je ne peux pas endurer, ce sont les gens qui rampent." />
+		</Update>
+		<!-- Greetings -->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_1" />
+			<Set Text="Voici les règles, si vous ne les aimez pas... j'en ai d'autres." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_2" />
+			<Set Text="Le désir d'avoir des amis est rapidement envisageable, mais l'amitié est un fruit qui mature lentement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_3" />
+			<Set Text="Là où le vin abonde, la douleur et l'inquiétude ont des ailes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_4" />
+			<Set Text="Il ne peut y avoir une autre crise la semaine prochaine.  Mon horaire est déjà très chargé." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_1" />
+			<Set Text="Chacun a besoin de croire en quelque chose.   Ma foi m'indique que je vais avoir plus de rhum." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_3" />
+			<Set Text="De quoi aimeriez-vous discuter ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_4" />
+			<Set Text="Qu'est-ce qui vous amène aujourd'hui ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_5" />
+			<Set Text="Continuez." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_6" />
+			<Set Text="Laissez-nous amorcer les discussions." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_1" />
+			<Set Text="Si l'ignorance est une bénédiction, vous devez être extatique." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_2" />
+			<Set Text="Je peux être votre meilleur ami ou votre pire ennemi.  Vous semblez privilégier la seconde option." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_3" />
+			<Set Text="Surprenez-moi, dites quelque chose d'intelligent." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_4" />
+			<Set Text="La prochaine fois que je vous vois, rappelez-moi de ne pas vous adresser la parole." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_5" />
+			<Set Text="Je n'oublie jamais un visage, mais dans votre cas, je vais faire une exception." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_1" />
+			<Set Text="Je n'ai pas peur de la Mort, je veux juste y assister lorsque cela se produit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_2" />
+			<Set Text="Je suis prêt à rencontrer mon Créateur.  Qu'Il soit prêt à me rencontrer, c'est autre chose." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_1" />
+			<Set Text="Un oeil pour oeil rend le monde entier aveugle.  Serait-ce le moment de cesser cette guerre ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_2" />
+			<Set Text="Je ne veux pas mourir pour mes convictions, car je pourrais avoir tort.  Discutons un cessez-le-feu." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_3" />
+			<Set Text="Je ne veux pas la paix qui surpasse la compréhension, je veux la compréhension qui enfante la paix." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_1" />
+			<Set Text="C'est juste une petite blessure." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_2" />
+			<Set Text="Vous êtes toujours vivant ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_3" />
+			<Set Text="Que vas-tu faire ?  M'arroser de ton sang ?" />
+		</Update>
+		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_4">
+			<Text>Les rapports faisant état de ma mort étaient grandement exagérés.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_RESEARCH_AGREEMENT_1" />
+			<Set Text="Mes salutations.  Le progrès avance concernant l'accord de recherche ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_BROKEN_MILITARY_PROMISE_1" />
+			<Set Text="Que vient faire ici une personne aussi pitoyable que vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_WITH_1" />
+			<Set Text="C'est toujours un plaisir que de travailler avec vous.  Quel bon vent vous amène ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_1" />
+			<Set Text="Le vilain {1_ThirdPlayerName:textkey} est un mal de tête constant. Êtes-vous d'accord ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_2" />
+			<Set Text="Mes salutations.  J'espère que nous pourrons en finir avec {1_ThirdPlayerName:textkey} une fois pour toutes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_3" />
+			<Set Text="De nouveaux plans pour faire face à {1_ThirdPlayerName:textkey}?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_1" />
+			<Set Text="L'argument sera de courte durée avec {1_ThirdPlayerName:textkey}. J'en ai le pressentiment." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_2" />
+			<Set Text="J'espère que vous souhaitez la chute de {1_ThirdPlayerName:textkey} autant que moi-même." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_3" />
+			<Set Text="Bientôt, {1_ThirdPlayerName:textkey} ne sera qu'un souvenir." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_1" />
+			<Set Text="Votre petite guerre évolue bien ?  Je n'assisterai pas à vos funérailles, mais j'enverrai une charmante lettre mentionnant que je les approuve." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HUMAN_AT_WAR_1" />
+			<Set Text="Bonne chance dans votre conflit actuel.  Que puis-je faire pour vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_MILITARY_1" />
+			<Set Text="Je vois vos forces militaires près de mes frontières.  Êtes-vous ici pour me menacer bêtement ou me faire perdre mon temps ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_MILITARY_1" />
+			<Set Text="Le déploiement de votre armée m'inquiète un peu.  Retirez-vous afin de favoriser la paix.  Maintenant, de quoi voulez-vous parler ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_1" />
+			<Set Text="La propagation de vos villes est semblable à la Peste qui infecte ce monde.  J'attend avec impatience le remède à ce Mal." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_EXPANSION_1" />
+			<Set Text="Tandis que j'en ai l'opportunité, je dois mentionner que votre expansion a inquiété plusieurs de mes fonctionnaires.  J'espère que cela ne causera pas de problèmes.  De quoi voulez-vous discuter ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_PLOT_BUYING_1" />
+			<Set Text="Tout ce vol de terrains au sein de votre Empire met en évidence votre cupidité.  Vous savez pourtant qu'éventuellement nous en aurons autant sinon plus, correct ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_PLOT_BUYING_1" />
+			<Set Text="Votre tendance à acheter des terres voisines aux nôtres nous interpelle.  Afin d'améliorer nos relations futures, je vous conseille la prudence dans cette affaire.  Maintenant que le sujet est éventé, qu'est-ce qui vous amène ici aujourd'hui ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_MILITARY_1" />
+			<Set Text="J'ai entendu beaucoup de récits narrant les exploits de votre puissante armée.  Les despotes de ce monde devraient avec sagesse vous craindre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_ECONOMY_1" />
+			<Set Text="Votre empire est célèbre pour sa très forte économie.  Peut-être qu'un jour vous ressentirez le besoin de partager vos secrets avec un ami ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_FEW_CITIES" />
+			<Set Text="Tiens, nous parlions justement de vous.  Que de mauvaises choses, je vous l'assure." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_SMALL_ARMY" />
+			<Set Text="Votre armée est la risée de ce monde.  Mais ne vous laissez pas abattre, je suis sûr qu'une personne vous sortira de la misère bientôt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_IS_WARMONGER" />
+			<Set Text="Ah, le sanguinaire qui montre son visage.  Qu'est-ce qu'il peut bien me vouloir ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_BY_AI_1" />
+			<Set Text="Toi ?  Que me veux-tu ?  Je n'entretiens plus aucune relation avec des personnes de ton genre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_BY_AI_2" />
+			<Set Text="Et qu'est-ce que tu songes à faire ici ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_AI_1" />
+			<Set Text="Oh, j'ai compris.  Maintenant, vous vous sentez apte à discuter, hmmm ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_AI_2" />
+			<Set Text="Vous avez le toupet de revenir après les choses que vous avez dites ?  Faites ça vite, car l'envie de vous renvoyer sans ménagement ne me manque pas.." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_OUR_DOF_WITH_ENEMY_OF_AI_1" />
+			<Set Text="Qu'y a-t-il ?  Je n'ai pas beaucoup de temps à consacrer avec des gens qui entretiennent des relations avec {1_PlayerName}." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_OUR_DOF_WITH_FRIEND_OF_AI_1" />
+			<Set Text="Ah, salut !  Je suis toujours heureux de parler avec un ami de {1_PlayerName}." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_FRIEND_OF_AI_1" />
+			<Set Text="Oh, c'est vous.  Je vais être honnête, je déteste ceux qui insultent {1_PlayerName}." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_ENEMY_OF_AI_1" />
+			<Set Text="Ah, mes salutations.  J'adore m'entretenir avec d'autres leaders qui partagent mon aversion pour {1_PlayerName}." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_DOF_1" />
+			<Set Text="Je suis désolé, mais comme nous nous connaissons depuis peu, je ne me sens pas à l'aise d'agir de la sorte.  Peut-être pourrions-nous en discuter plus tard ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_DOF_2" />
+			<Set Text="Donnez-moi le temps d'apprendre à vous connaître.  Je n'ai pas besoin d'un ami qui m'imite constamment; l'ombre de moi-même fait beaucoup mieux." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_AI_DENOUNCE_REQUEST_1" />
+			<Set Text="Mon ami, j'ai une minime requête à vous soumettre.  Ma relation avec {1_CivName} s'est détériorée, et en dénonçant cet empire, vous m'accorderiez du même coup votre soutien.  Qu'en dites-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_AI_WAR_REQUEST_1" />
+			<Set Text="Mon ami, ma situation est catastrophique.  L'heure de la guerre a sonné avec {1_CivName}, et j'implore votre aide sur le champ de bataille.  Je peux compter sur vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_NOT_HONORED_1" />
+			<Set Text="Pathétique.  Donc, maintenant, vous dévoilez vos vraies couleurs.  Le monde l'apprendra bien assez vite ![NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_NOT_HONORED_2" />
+			<Set Text="Donc, voilà le genre d'allié que vous êtes en réalité.  Les autres dirigeants vont entendre parler de votre trahison.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCING_FRIEND_1" />
+			<Set Text="J'en ai assez de vous.  Les autres chefs de nation vont apprendre que travailler avec vous est une erreur à ne pas faire.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCING_FRIEND_2" />
+			<Set Text="Bon, c'est assez !  Informer tous les autres de vos actions maladives est un devoir en soi.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_1" />
+			<Set Text="C'est de cette manière que vous agissez ?  Très bien, je n'oublierai pas de sitôt cet affront." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_2" />
+			<Set Text="Votre réputation est souillée de par un geste aussi insensé." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_3" />
+			<Set Text="Vous avez fait une erreur stupide.  Cet incident ne sera pas oublié." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_4" />
+			<Set Text="J'ai eu le sentiment de perdre mon temps avec vous.  Cependant, je n'aurais jamais imaginé les choses en venir à cela." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOFED_FRIEND_1" />
+			<Set Text="Ah, j'ai remarqué que vous êtes devenu allié avec {1_CivName}. J'en suis très heureux.  Je suis moi-même en bon terme avec eux." />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_2">
+			<Text>Quiconque est allié avec {1_CivName} est l'un de mes amis.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_3">
+			<Text>Vous êtes allié avec {1_CivName} aussi ?  Vous avez pris une sage décision.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_4">
+			<Text>Je vois que vous êtes devenu allié avec mon ami proche, {1_CivName}.  De grandes choses vont en découler, j'en ai l'intuition.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOFED_ENEMY_1" />
+			<Set Text="Je vous recommande de ne pas avoir trop de rapports rapprochés avec {1_CivName}.  Si cest le cas, nous aurons peut-être de la difficulté à nous entendre." />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_ENEMY_2">
+			<Text>Savourez le somptueux dîner célébrant votre alliance avec {1_CivName}.  Par contre, lors de leur départ, n'oubliez pas de répertorier l'argenterie, car on ne sait jamais.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_ENEMY_3">
+			<Text>L'ami de mon ennemi risque de devenir l'un de mes opposants.  Gardez cela à l'esprit lors de votre alliance avec {1_CivName}.</Text>
+		</Row>		
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCED_FRIEND_1" />
+			<Set Text="Je voudrais que vous sachiez que {1_CivName} et moi-même avons travaillé ensemble dans le passé, et j'ai le plus grand respect pour eux.  Prenez-en acte." />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_FRIEND_2">
+			<Text>Comment pouvez-vous mentir aussi effrontément à propos de {1_CivName} ?  Vous n'avez aucune retenue ?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_FRIEND_3">
+			<Text>Lorsque vous crachez au visage de {1_CivName}, vous attisez les vents de la guerre.</Text>
+		</Row>		
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCED_ENEMY_1" />
+			<Set Text="Heureux d'apprendre que d'autres en ce monde partagent mon dégoût envers {1_CivName}.  C'est clair, on ne peut leur faire confiance." />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_ENEMY_2">
+			<Text>Un jour peut-être pas si lointain, {1_CivName} sera balayé comme de la vulgaire poussière vers les tréfonds de l'Histoire.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_ENEMY_3">
+			<Text>Aujourd'hui, nous giflons le visage de {1_CivName}; l'année prochaine, nous danserons sur leur tombeau.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOF_SO_AI_DOF_1" />
+			<Set Text="Je n'ai pu m'empêcher de constater que vous êtes devenus amis avec {1_CivName}.  J'ai fait la même chose.  Peut-être que cette alliance de fortune conduira à de grandes choses dans l'avenir ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCE_SO_AI_DENOUNCE_1" />
+			<Set Text="Je partage vos convictions, à savoir que {1_CivName} ne cause que des problèmes aux empires civilisés de ce monde.  Peut-être que la combinaison de nos dénonciations suffira à leur donner une leçon bien méritée ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOF_SO_AI_DENOUNCE_1" />
+			<Set Text="Tiens donc, voilà que la vermine se reproduit.  Maintenant, je dois m'occuper de vous et {1_CivName} ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCE_SO_AI_DOF_1" />
+			<Set Text="Ceux avec qui vous ne vous entendez pas sont dignes de mon amitié.  Saluez {1_CivName} de ma part." />
+		</Update>
+		<!-- Generic Diplo Text -->
+		<Update>
+			<Where Tag="TXT_KEY_HOSTILE_AGGRESSIVE_MILITARY_WARNING_1" />
+			<Set Text="Je vois votre armée près de mon empire.  Si vous désirez attaquer, alors venez.  Ne vous cachez pas dans l'ombre comme un enfant." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AGGRESSIVE_MILITARY_WARNING_1" />
+			<Set Text="Un grand nombre de vos unités sont à proximité de mes frontières.  J'exige que vous les déplaciez ailleurs afin de ne pas apeurer inutilement mes citoyens." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_KILLED_PROTECTED_CITY_STATE_1" />
+			<Set Text="Votre parole ne vaut rien il me semble, comme le démontre la conquête de {@1_MinorCivName}.  Comportement méprisable.  Le monde aura vent de vos crimes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_ATTACKED_PROTECTED_CITY_STATE_1" />
+			<Set Text="Votre agression flagrante contre {@1_MinorCivName} n'est pas passée inaperçue.  Vous devrez faire face à de sérieuses conséquences si vous continuez l'assaut." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_SERIOUS_WARNING_1" />
+			<Set Text="Vos efforts d'expansion sont une insulte.  Sachez qu'il y aura des conséquences à ceci." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_1"/>
+			<Set Text="La proximité de nos nations est à l'origine de tensions qui perturbent la population.  Ne construisez plus de nouvelles villes près de nos frontières afin que nous puissions continuer de travailler en harmonie." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_2"/>
+			<Set Text="Plus nos empires se rapprochent, plus mon désir de coopérer avec vous diminue.  J'exige que vous cessiez de vous établir près de mes frontières, à moins que votre souhait soit que je réagisse négativement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_3"/>
+			<Set Text="Constatant que les frontières de nos nations se rapprochent chaque année, ma chaleur envers vous refroidit.  Persister à établir de nouvelles villes à proximité de mon territoire souverain pourrait causer un tort irréparable." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_4"/>
+			<Set Text="Nous avons découvert un ancien document qui prouve que plusieurs terres entre ici et votre Capitale nous appartiennent.  Si vous développez plus loin votre expansion, notre gloire n'en sera que plus grande lorsque nous reprendrons possession de nos biens." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_BROKEN_PROMISE_1" />
+			<Set Text="Vous nous aviez promis de ne pas vous établir trop près de nos terres.  Mensonges !  Sachez qu'il y aura des conséquences à tout cela." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_SERIOUS_WARNING_1" />
+			<Set Text="Vos achats éhontés de territoires près de nos frontières sont une insulte.  J'aurais espéré avoir un meilleur voisin." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_WARNING_1" />
+			<Set Text="Votre achat d'un terrain dans mon voisinage a sonné l'alarme.  J'aime mieux tout de suite vous prévenir afin que la situation ne s'aggrave pas." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_BROKEN_PROMISE_1" />
+			<Set Text="Vous aviez promis de ne plus acheter de terres près des nôtres, mais vous avez manqué à votre parole.  Je ne prend pas cet affront à la légère." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_BROKEN_PROMISE_2" />
+			<Set Text="Je suis terriblement navré de constater que vous continuez d'acheter des terres près de mon territoire.  J'aurais espéré avoir affaire à un chef de file un peu plus honorable." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_1" />
+			<Set Text="J'ai pensé que vous aimeriez savoir que j'avais lancé une invasion contre l'une de vos Cités-États.  Un excellent ajout à l'ensemble de mes propriétés." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_2" />
+			<Set Text="Mon Dieu !  Je viens d'attaquer l'un de vos petits amis il me semble.  Ferez-vous quelque chose à ce sujet ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_1" />
+			<Set Text="Nous avons peut-être attaqué une Cité-État avec laquelle vous avez eu des relations dans le passé.  Notre but n'est pas d'être en conflit avec vous.  Croyez-moi, nous n'avions pas le choix de faire autrement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_2" />
+			<Set Text="Nous avons été dans l'obligation d'attaquer une Cité-État alliée avec vous.  Je vous l'assure, ce n'était pas délibéré.  En espérant vivement que cela ne nuise pas à nos relations." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_1" />
+			<Set Text="Acquérir un réel ami demande beaucoup de temps.  J'aimerais former une alliance, et informer les autres empires du lien qui unit nos peuples.  Qu'en dites-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_2" />
+			<Set Text="Il est important pour nos amis de croire que nous sommes vraiment sincères.  Conséquemment, voulez-vous vous allier avec nous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_3" />
+			<Set Text="Qui a dit que rien n'est impossible ?  Alors, formons une alliance ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_4" />
+			<Set Text="Le travail d'équipe nous permet de blâmer quelqu'un d'autre.  Allons-nous annoncer au monde que nous sommes des alliés ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCE_1" />
+			<Set Text="Je ne vous veux aucun mal, mais il aurait mieux valu pour vous de ne jamais voir le jour.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCE_2" />
+			<Set Text="La fin peut justifier les moyens aussi longtemps qu'il y a quelque chose qui de même la justifie.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCE_3" />
+			<Set Text="Je préfère trahir le monde que de laisser le monde me trahir.[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]Nous avons été dénoncés publiquement !  Note: Nous ne sommes pas en guerre.[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_REQUEST_1" />
+			<Set Text="Mes désaccords avec {1_PlayerName:textkey} sont devenus trop lourds à porter.  La solution ne se trouve que sur un champ de bataille.  Mon ami, voulez-vous vous joindre à moi ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_REQUEST_2" />
+			<Set Text="{1_PlayerName:textkey} est devenu une nuisance que seule la guerre peut contrer.  Je cherche des alliés, est-ce que je peux vous compter parmi eux ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_REQUEST_3" />
+			<Set Text="{1_PlayerName:textkey} est une menace pour la stabilité de ce monde.  Le temps est venu d'en finir une fois pour toutes.  Voulez-vous m'assister dans mes efforts ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_TIME_1" />
+			<Set Text="L'heure de la guerre contre {1_PlayerName:textkey} est venue." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOW_UNFORGIVABLE_1" />
+			<Set Text="Vos actions sont impardonnables.  Il ne peut y avoir de réconciliation entre nos deux nations." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOW_ENEMY_1" />
+			<Set Text="Compte tenu des circonstances, je n'ai pas le choix, je dois assumer que vous êtes un ennemi.  Il me faut donc prendre les moyens nécessaires pour protéger mes intérêts." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_COMPLIMENT_1" />
+			<Set Text="Je voudrais que vous sachiez que j'accorde beaucoup de valeur à notre amitié, tout en souhaitant qu'elle demeure forte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_BOOT_KISSING_1" />
+			<Set Text="Il est clair pour tous que vous êtes un dirigeant sage et puissant.  Ayez aussi de la compassion envers ceux qui comme moi sont faibles." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_BOOT_KISSING_2" />
+			<Set Text="Très Vénérable, mon espoir est que vous serviez de parangon pour les leaders de moindre importance comme moi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_1" />
+			<Set Text="Votre comportement extrêmement agressif n'est pas passé inaperçu. Si vous continuez, cela conduira finalement à votre perte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_2" />
+			<Set Text="C'est clair, vous êtes une brute peu civilisée.  Je dois vous avertir, vos actions commencent à attirer l'attention." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_3" />
+			<Set Text="Votre bellicisme est un sujet populaire ces jours-ci.  Mieux vaut surveiller vos arrières." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_4" />
+			<Set Text="Vous commencez à attirer un peu l'attention. Ce n'est pas une bonne chose, croyez-moi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_MINOR_CIV_COMPETITION_1" />
+			<Set Text="Vous entretenez des liens légèrement amicaux avec {1_MinorCivName:textkey}.  Comme vous semblez ne pas être au courant, cet empire est au sein de ma sphère d'influence, et je préfère que vous vous teniez à l'écart." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_MINOR_CIV_COMPETITION_2" />
+			<Set Text="J'ai pris connaissance de votre relation avec {1_MinorCivName:textkey}. Bien que cela soit agréable, il serait préférable que vous compreniez que leur protection ne regarde que nous.  Cela éviterait que nous ayons à nous marcher sur les orteils." />
+		</Update>
+		<!--Insults-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_1" />
+			<Set Text="Je n'y peux rien, vous me faites tellement pitié.  Rien de bon n'en ressortira il me semble." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_2" />
+			<Set Text="Ah, c'est toujours agréable de revoir ma Cité-État favorite." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_3" />
+			<Set Text="Je n'en peux plus de voir votre visage.  Mon espoir est qu'un jour vous disparaissiez pour de bon." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_4" />
+			<Set Text="Ah, c'est vous.  Mes excuses.  Je vous confonds avec les barbares de temps à autre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_MILITARY_1" />
+			<Set Text="Votre armée me paraît faiblarde.  Je vous conjure d'être sur vos gardes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_MILITARY_2" />
+			<Set Text="Avec à votre disposition une armée aussi ridicule, cela me surprend que vous n'ayez pas succombé à une invasion barbare." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_NUKE_1" />
+			<Set Text="Nos prises de position sont soutenues pas des armes nucléaires !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_BULLY_1" />
+			<Set Text="C'est une vraie honte que de constater qu'en ce monde, certains leaders ont du plaisir à s'en prendre aux plus faibles.  N'êtes-vous pas d'accord ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_UNHAPPINESS_1" />
+			<Set Text="Je peux entendre les lamentations de ton peuple se frayer un chemin jusqu'à mon empire.  Si vous ne vous penchez pas sur ce problème bientôt, vos gens pourraient bien tout simplement faire leurs valises et s'établir ailleurs." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_UNHAPPINESS_2" />
+			<Set Text="De voir tant de gens malheureux, c'est un choc pour moi que de constater que vous êtes toujours leur chef." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_CITIES_1" />
+			<Set Text="Votre empire me semble bien frêle.  Avez-vous oublié d'élargir vos frontières ou alors vous êtes incompétent ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_POPULATION_1" />
+			<Set Text="De nombreux voyageurs nous ont dit que votre économie était en piteux état.  Si vous me suppliez un brin, je pourrais consentir à vous aider.  OK.  J'admet que ce sera non plutôt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_CULTURE_1" />
+			<Set Text="Quel triste spectacle... votre civilisation est tellement dépourvue de culture.  Que faites-vous de toutes vos journées, briser des cailloux ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_CULTURE_2" />
+			<Set Text="Selon la rumeur, votre culture est tellement risible que même les barbares se débarrassent de vos terres." />
+		</Update>
+		<!--Public Declarations-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLARATION_PROTECT_CITY_STATE_1" />
+			<Set Text="{2_MajorCivName:textkey} protège dorénavant {1_MinorCivName:textkey}. Quiconque attaque cette Cité-État commet une action très grave pouvant mener à la guerre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLARATION_ABANDON_CITY_STATE_1" />
+			<Set Text="{2_MajorCivName:textkey} revient sur sa décision et ne protège plus {1_MinorCivName:textkey}." />
+		</Update>
+		<!--Human is asking the AI for something-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_NO_1" />
+			<Set Text="Je l'ai déjà dit, et je déteste me répéter.  La réponse est toujours... non" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_YES_1" />
+			<Set Text="Très bien.  J'accepte de ne pas m'établir près de votre empire, pour le moment du moins.  Peut-être à l'avenir serez-vous un voisin plus accommodant ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_YES_2" />
+			<Set Text="Ainsi soit-il.  Je ne m'installerai pas près de vos terres.  À l'évidence, coopérer est la moindre de vos intentions." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_1" />
+			<Set Text="Totalement inacceptable.  Étant souverain, je peux ériger mes villes comme bon me semble.  Cette offense ne sera pas oubliée, croyez-moi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_2" />
+			<Set Text="Vous osez m'insulter de cette manière ?  Je ne suis pas prêt de l'oublier." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_3" />
+			<Set Text="Comment osez-vous ?  Vous me croyez être une personne sans volonté ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_4" />
+			<Set Text="Hors de question.  Vous avez besoin de rafraîchir votre diplomatie, mon ami." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_1" />
+			<Set Text="Cela fonctionnera je pense.  Puisse une forte amitié mener à l'épanouissement de nos empires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_2" />
+			<Set Text="Une excellente idée.  Que notre alliance soit un exemple pour le monde." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_3" />
+			<Set Text="Je suis heureux d'accepter.  Que nos empires prospèrent en toute amitié." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLINE_1" />
+			<Set Text="Je dois refuser." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLINE_2" />
+			<Set Text="Désolé, mais c'est non.  Peut-être une autre fois." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLINE_3" />
+			<Set Text="Je crains qu'un tel arrangement ne soit pas dans le meilleur de mes intérêts, alors je dois refuser." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_AGAINST_SOMEONE_YES_1" />
+			<Set Text="C'est d'accord.  Donnons le meilleur de nous-mêmes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_COOP_WAR_YES_1" />
+			<Set Text="Cela m'apparaît comme une excellente stratégie.  Il nous faut l'appliquer sur un champ de bataille." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_COOP_WAR_SOON_1" />
+			<Set Text="Cela me semble une offre intéressante.  J'accepte.  Cependant, je dois effectuer des préparatifs, donc attendez 10 tours.  Je reviendrai aussitôt prêt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_YES_1" />
+			<Set Text="Très bien.  Je donne le meilleur de moi-même afin de maintenir la paix sur mes terres." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_YES_2" />
+			<Set Text="Je ferai ce qu'il faut pour maintenir la paix." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_YES_3" />
+			<Set Text="Très bien. Mais sachez que vous empoisonnez votre réputation avec des requêtes comme celle-ci." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_1" />
+			<Set Text="S'il vous plaît.  Vous n'êtes pas en mesure de faire de telles demandes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_2" />
+			<Set Text="Soyez d'abord en mesure de mettre vos menaces à exécution." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_3" />
+			<Set Text="Vous ne dupez personne.  Je n'ai rien à craindre de vous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_4" />
+			<Set Text="Laissez-moi rire.  Vous n'êtes pas assez fort pour exiger de telles choses." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_1" />
+			<Set Text="Vous osez m'insulter de cette manière ?  Si vous désirez quelque chose avec autant d'empressement, venez donc le chercher vous-mêmes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_2" />
+			<Set Text="Vous devrez le prendre sur mon cadavre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_3" />
+			<Set Text="Si vous désirez quelque chose, venez le chercher." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_4" />
+			<Set Text="Inacceptable." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_5" />
+			<Set Text="Ne soyez pas stupide." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_MUCH_1" />
+			<Set Text="Vous demandez beaucoup trop.  Je n'ai pas l'intention de faire basculer ma nation dans la pauvreté afin de satisfaire votre cupidité." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_MUCH_2" />
+			<Set Text="Non, j'ai ma dignité, et je refuse de faire preuve d'autant de bonté." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_MUCH_3" />
+			<Set Text="Votre désir de dépouiller mes terres de ses richesses dépasse le simple bon sens.  N'exigez pas autant." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_SOON_1" />
+			<Set Text="Déjà ?  Et vous me menacez à nouveau ?  Je refuse vos demandes, bête immonde." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_SOON_2" />
+			<Set Text="Exiger encore aussi rapidement ?  La cupidité est un vice, vous ne le saviez pas ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_SOON_3" />
+			<Set Text="Vous demandez encore les fruits du labeur des autres ?  Votre avarice est légendaire.  Je ne cèderai pas à vos caprices." />
+		</Update>
+		<!--Deal Offers and related-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOT_DOT_DOT" />
+			<Set Text="..." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_1" />
+			<Set Text="J'écoute votre offre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_2" />
+			<Set Text="Que proposez-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_OFFER_1" />
+			<Set Text="Le temps est venu de mettre fin à cette guerre.  Que pensez-vous de cet arrangement ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_OFFER_2" />
+			<Set Text="Rien ne justifie la poursuite du conflit.  Accueillons la paix à nouveau." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_OFFER_3" />
+			<Set Text="La guerre ne doit pas définir qui nous sommes.  Le temps est venu de faire la paix." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DEMAND_1" />
+			<Set Text="Mes goûts sont très simples.  Je ne suis satisfait qu'avec ce qu'il y a de mieux.  Acceptez mes exigences, ou affrontez mes forces sur le champ de bataille." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REQUEST_ITEM_1" />
+			<Set Text="Un véritable ami est là lorsque nous sommes dans le pétrin.  Je demande votre assistance." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REQUEST_ITEM_2" />
+			<Set Text="L'honnêteté est la meilleure politique, couplée bien sûr avec de l'argent.  Je demande votre aide." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REQUEST_ITEM_3" />
+			<Set Text="Pouvez-vous aider un ami dans le besoin ?  Faites une bonne action.  Certains alors seront comblés, les autres étonnés !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GIFT_ITEM_1" />
+			<Set Text="S'il vous plaît, acceptez ce cadeau, grand chef.  Puisse notre amitié durer éternellement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GIFT_ITEM_2" />
+			<Set Text="Les amis doivent se soutenir mutuellement afin de relever les défis que ce monde pose.  S'il vous plaît, acceptez ce cadeau, grand chef." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_LUXURY_TRADE_1" />
+			<Set Text="Vous possédez une ressource de luxe qui me conviendrait.  Que pensez-vous de cette offre ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_1" />
+			<Set Text="Pour notre intérêt mutuel, je crois qu'il serait bon d'allouer le libre passage entre nos deux grands empires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_2" />
+			<Set Text="L'ouverture de nos frontières réciproques ne peut servir qu'à consolider notre amitié." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OPEN_BORDERS_OFFER_1" />
+			<Set Text="Je voudrais négocier un passage au travers de votre territoire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PLAN_RESEARCH_AGREEMENT_1" />
+			<Set Text="Je voudrais établir un accord de recherhe avec votre grande nation.  Pour ce faire, nous devrons débourser chacun 150 [ICON_GOLD].  Qu'en pensez-vous ?[NEWLINE][NEWLINE](Accepter ne créera pas tout de suite cet accord)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RESEARCH_AGREEMENT_OFFER_1" />
+			<Set Text="Un accord de recherche favoriserait nettement notre amitié." />
+		</Update>
+		<!--Trade Dialogue-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_1" />
+			<Set Text="Votre offre est généreuse.  J'accepte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_2" />
+			<Set Text="J'accepte gracieusement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_3" />
+			<Set Text="Je ne pourrai jamais égaler une telle générosité.  Notre bonne volonté en est la récompense." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_1" />
+			<Set Text="Cette transaction est acceptable." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_2" />
+			<Set Text="Proposons une date pour la cérémonie consacrant la signature." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_3" />
+			<Set Text="Notre visage exprime tout." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_AI_DEMAND_1" />
+			<Set Text="C'est un plaisir que de brasser des affaires avec vous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_AI_DEMAND_2" />
+			<Set Text="Que c'est agréable lorsque des voisins réussissent à s'entendre si bien." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_HUMAN_CONCESSIONS_1" />
+			<Set Text="OK.  Je crois que cet accord contribuera à rétablir notre amitié." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_HUMAN_CONCESSIONS_2" />
+			<Set Text="Votre générosité est appréciée." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_1" />
+			<Set Text="Comment pouvez-vous offrir ces termes avec un visage aussi impassible ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_2" />
+			<Set Text="Vous devez faire mieux que ça." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_3" />
+			<Set Text="Si vous essayez d'être amusant, vous échouez lamentablement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_1" />
+			<Set Text="Si j'étais d'accord avec vous, nous aurions tort tous les deux." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_2" />
+			<Set Text="J'ai eu une soirée merveilleuse, mais cela ne vous aidera pas." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_3" />
+			<Set Text="Je ne peux contenter qu'une personne par jour.  Oublions votre cas pour aujourd'hui.  Et dire que demain ne paraît guère mieux." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_DEAL_UNCHANGED_1" />
+			<Set Text="Telle qu'elle sur la table, cette transaction est valable." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_DEAL_UNCHANGED_2" />
+			<Set Text="Cette transaction me semble correcte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_DEAL_UNCHANGED_3" />
+			<Set Text="À mes yeux, tout semble OK." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_AI_MAKES_OFFER_1" />
+			<Set Text="J'obtiens ce que je veux, ou je change mon idée." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_AI_MAKES_OFFER_2" />
+			<Set Text="L'argent est la racine de tous mes biens." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_AI_MAKES_OFFER_3" />
+			<Set Text="J'ai des principes, et si vous ne les aimez pas... sachez que j'en ai d'autres." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_1" />
+			<Set Text="Je suis désolé, mais je ne vois pas comment on pourrait s'entendre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_2" />
+			<Set Text="Cela ne fonctionnera jamais." />
+		</Update>
+		<!-- AI Attacked by another player -->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_1" />
+			<Set Text="Vous avez toujours eu tort dans chacune de vos actions, incluant celle-ci." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_2" />
+			<Set Text="Vus êtes pathétique.  Dire que j'en suis surpris serait mentir." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_3" />
+			<Set Text="La mort est héréditaire.  La vôtre viendra bientôt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_4" />
+			<Set Text="Vous êtes clairement inapte à diriger un royaume, même le plus minuscule de tous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_5" />
+			<Set Text="Ne voyez pas la mort comme une fin.  Considérez-la plutôt comme un moyen efficace de réduire vos dépenses." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_1" />
+			<Set Text="Je ne pourrai peut-être pas réduire à néant le malin en vous,  mais j'aurai tout essayé." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_2" />
+			<Set Text="Compte tenu des circontances, vous détruire sera une très douce victoire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_3" />
+			<Set Text="Détruisez-moi si vous le pouvez.  Je vous promets cependant de livrer fière bataille." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_4" />
+			<Set Text="Ainsi soit-il.  Mes armées se battront jusqu'à la mort contre vos forces diaboliques." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_5" />
+			<Set Text="Pour toujours, on se rappellera de vous comme un prédateur qui se nourrissait de faiblesse." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_1" />
+			<Set Text="Vous pensez pouvoir me vaincre ?  Pauvre fou.  Jouons à ce jeu alors." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_2" />
+			<Set Text="Vos armée sont les bienvenues.  Venez et appréciez le spectace de leur destruction." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_3" />
+			<Set Text="M'attaquer était une erreur.  Je vais vous montrer bientôt pourquoi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_4" />
+			<Set Text="Me déclarer la guerre était une grave erreur de jugement de votre part.  Ceci dit, je n'hésiterai pas à vous le faire regretter." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_5" />
+			<Set Text="Je n'hésiterai pas à vous punir pour un tel acte de folie." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_6" />
+			<Set Text="Parfait.  Cela me donne une excellente occasion d'enfin vous détruire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_7" />
+			<Set Text="Pauvre imbécile.  Je vais maintenant vous écraser sans pitié." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_1" />
+			<Set Text="Si vous voulez combattre, je ne vais certainement pas faire marche arrière." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_2" />
+			<Set Text="Échanger des coups avec vous me fera un plaisir certain.  Assurez-vous de combattre convenablement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_3" />
+			<Set Text="Ce sera plaisant.  Je suis rempli d'extase à chaque fois que je défais une personne comme vous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_4" />
+			<Set Text="Très bien.  Que le tourbillon de la mort nous enveloppe tous les deux." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_EXCITED_1" />
+			<Set Text="Ce n'est peut-être pas le moment idéal pour nous de croiser le fer, mais l'opportunité de vous affaiblir un brin en vaut le coup." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_EXCITED_1" />
+			<Set Text="Hahaha. Bien, je ne vais pas remettre en question votre décision, mais il me semble que vous avez fait une grosse erreur." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_1" />
+			<Set Text="Vos agissements me remplissent de tristesse.  Il y a sûrement un endroit spécifique en Enfer pour des personnes comme vous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_2" />
+			<Set Text="Vous nous attaqueriez de cette façon ?  Votre orgueil ne connaît pas de limites. J'espère un jour que vous serez jugé pour cela." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_3" />
+			<Set Text="Profiter d'une faiblesse de l'autre n'est pas nécessaire à la poursuite de la victoire.  Vous connaissez sûrement un meilleur moyen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_4" />
+			<Set Text="Comment pouvez-vous faire une telle chose ?  Disparaissez de ma vue, vil pesonnage." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_BETRAYED_1" />
+			<Set Text="Abuser de la confiance de quelqu'un est un geste profondément misérable.  Tout le monde aura écho de votre trahison." />
+		</Update>
+		<!-- AI Declaring War-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_GENERIC_1" />
+			<Set Text="Vous êtes sur le chemin de la destruction." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_GENERIC_2" />
+			<Set Text="Vos chances de survie sont nulles." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_GENERIC_3" />
+			<Set Text="Vous ne serez bientôt qu'un souvenir ici-bas." />
+		</Update>
+		<Row Tag="TXT_KEY_GENERIC_DOW_GENERIC_4">
+			<Text>Ne voyez pas la mort comme une fin.  Considérez-la plutôt comme un moyen efficace de réduire vos dépenses.</Text>			
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_MILITARY_PROMISE_BROKEN_1" />
+			<Set Text="Vous avez manqué à votre parole.  Ne vous méprenez pas, le monde aura vent de votre trahison." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_LAND_1" />
+			<Set Text="Toutes vos villes nous appartiennent." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_LAND_2" />
+			<Set Text="Vous êtes trop près pour apporter un quelconque réconfort.  Mon empire a besoin de beaucoup plus d'espace vital." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_LAND_3" />
+			<Set Text="Nous ne ferons plus de requête concernant cette terre.  Nous allons tout simplement en prendre possession sans négocier." />
+		</Update>		
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_1" />
+			<Set Text="Ce monde est destiné à être le mien.  Il est temps pour moi de vous montrer ce que cela signifie." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_2" />
+			<Set Text="Le destin a fait de moi celui qui va unifier cette planète divisée." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_3" />
+			<Set Text="L'Histoire me décochera sûrement un large sourire lorsque je vous aurai éliminé, ainsi que toute cette vermine qui m'entoure." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_4" />
+			<Set Text="Je vais être honnête avec vous: j'ai l'intention d'écraser tous ceux qui croiseront mon chemin." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_5" />
+			<Set Text="Vous êtes simplement le tremplin me propulsant vers une domination totale de ce monde." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_6" />
+			<Set Text="Le temps est venu de mettre à exécution mon ultime plan de conquête.  Il est temps pour vous de mourir, ainsi que le reste de ces fous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_1" />
+			<Set Text="L'avantage est de mon côté.  Je vais maintenant vous détruire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_2" />
+			<Set Text="L'attente a assez durée.  Il y a une faille dans votre défense, et je vais en tirer avantage." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_3" />
+			<Set Text="J'attend cette journée depuis longtemps.  Le moment serait bien choisi de mettre de l'ordre dans vos affaires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_4" />
+			<Set Text="Voilà ma chance.  Je vais vous mettre en déroute et ainsi faire un pas de plus vers la victoire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_5" />
+			<Set Text="Le destin n'est pas de votre côté.  Se mettre en travers de mon chemin avec une telle faiblesse est une erreur que vous ne regretterez pas longtemps." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_6" />
+			<Set Text="La situation actuelle ne peut pas être ignorée.  C'est maintenant ou jamais." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_7" />
+			<Set Text="Je ne peux ignorer cette chance d'éliminer un concurrent potentiel." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_8" />
+			<Set Text="Face à votre faiblesse, je vous présente à l'avance toutes mes excuses." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_1" />
+			<Set Text="Malgré que la tâche soit impossible à réaliser, je suis contraint de trouver un moyen de vous détruire.  Je vays y parvenir ou mourir en essayant." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_2" />
+			<Set Text="Vous êtes fort, c'est évident.  Je vais, cependant, trouver un moyen de vous battre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_3" />
+			<Set Text="Vous êtes un scélérat sans égal.  Chaque fibre de mon être sait pertinemment que je dois vous détruire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_4" />
+			<Set Text="Votre puissance est inégalée, mais je vais trouver un moyen de vous battre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_5" />
+			<Set Text="Il est temps de s'affronter maintenant.  Les chances sont contre moi, mais je trouverai tout de même un point faible me permettant de vous anéantir." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_6" />
+			<Set Text="Votre force incroyable ne me dissuadera pas de trouver un moyen de vous vaincre.  Puisse la chance me sourire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_7" />
+			<Set Text="Bien que je ne le souhaite pas, l'unique occasion de peut-être vous battre s'offre à moi.  Rendez-vous sur le champ de bataille." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_8" />
+			<Set Text="Je vais perdre la bataille, c'est évident.  De toute manière, si je recule, ce ne sera que pour remettre l'inévitable à plus tard." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_1" />
+			<Set Text="Les vrais amis donnent un coup de poignard les yeux dans les yeux." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_2" />
+			<Set Text="J'ai bien peur que vous ne deveniez l'ex-président du club des bien-portants." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_3" />
+			<Set Text="Poignarder dans le dos est tellement cruel.  Devons-nous dire plutôt que j'interprète dorénavant différemment notre supposée amitié ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_4" />
+			<Set Text="Je dois admettre que je ne vous ai jamais vraiment aimé.  Je suis un traître, mais je ne me considère pas comme tel.  Le temps est venu pour vous de mourir." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WEAK_BETRAYAL_1" />
+			<Set Text="Les chances sont contre moi, mais je ne vois pas d'autre alternative que de révéler mes pratiques trompeuses.  Que Dieu maintenant vienne en aide à mes armées." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_REGRET_1" />
+			<Set Text="Dans une vie antérieure, nous avons été sûrement de bons amis.  Malheureusement, ce n'est pas le cas maintenant.  Je vous souhaite donc la meilleure des chances." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_REGRET_2" />
+			<Set Text="Mon ami, je crains ne pas avoir d'autre choix que de briser les liens nous unissant et ensuite tirer mon epée.  J'espère que vous me pardonnerez un jour cet affront." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_REGRET_3" />
+			<Set Text="Je ne peux pas croire que nous en sommes arrivés là.  C'est avec une grande tristesse que je dois vous informer que notre amitié tire à sa fin." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WAR_DEMAND_REFUSED_1" />
+			<Set Text="Ainsi soit-il.  Mes armées plutôt vont l'extraire de vos terres." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WAR_DEMAND_REFUSED_2" />
+			<Set Text="Tout le gâteau s'est volatilisé, et vous demeurez serein ?" />
+		</Update>
+		<!--AI Responses to a human peace offer-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_1" />
+			<Set Text="Quelle est votre offre ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_2" />
+			<Set Text="Que suggérez-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_3" />
+			<Set Text="Quel est le prix pour obtenir la paix ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_MADE_BY_HUMAN_GRACIOUS_1" />
+			<Set Text="Je suis heureux d'entrevoir la fin de ce conflit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_MADE_BY_HUMAN_GRACIOUS_2" />
+			<Set Text="C'est un privilège que d'assister au dénouement de cette terrible guerre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_NO_PEACE_1" />
+			<Set Text="Il ne peut y avoir de paix.  Peut-être un autre jour." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_NO_PEACE_2" />
+			<Set Text="Ce n'est pas le moment de négocier." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_NO_PEACE_3" />
+			<Set Text="Nous avons encore des affaires à régler." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TOO_SOON_NO_PEACE_1" />
+			<Set Text="Vous blaguez, n'est-ce pas ?" />
+		</Update>
+		<!--AI Responses to a discussion mode topics-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_1" />
+			<Set Text="Excellent." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_2" />
+			<Set Text="Merveilleux." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_3" />
+			<Set Text="Je suis heureux d'entendre cela." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_4" />
+			<Set Text="C'est agréable que de l'entendre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_1" />
+			<Set Text="Vous avez mes remerciements." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_2" />
+			<Set Text="Vous êtes vraiment un grand leader." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_3" />
+			<Set Text="L'Histoire se souviendra longtemps de vos exploits." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_DISAPPOINTED_1" />
+			<Set Text="C'est une honte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_DISAPPOINTED_2" />
+			<Set Text="Peut-être une autre fois alors." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_DISAPPOINTED_3" />
+			<Set Text="C'est vraiment désappointant." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_SO_BE_IT_1" />
+			<Set Text="Qu'il en soit ainsi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_SO_BE_IT_2" />
+			<Set Text="Vous serez donc responsable des conséquences." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_SO_BE_IT_3" />
+			<Set Text="Vous regretterez cela." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_1" />
+			<Set Text="Pour la libération de ces gens captifs, vous avez ma gratitude." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_2" />
+			<Set Text="Je vous en suis très reconnaissant, mon peuple aussi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_3" />
+			<Set Text="Merci infiniment.  Que cela soit inscrit dans nos mémoires comme un moment historique qui a permis à nos deux peuples de se rapprocher." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_CULTURE_BOMBED_1" />
+			<Set Text="Comment osez-vous ?  Sachez qu'il y aura des conséquences." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_CULTURE_BOMBED_2" />
+			<Set Text="Si votre but est de provoquer la guerre, laissez-moi vous dire que vous vous y prenez très bien." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_1" />
+			<Set Text="Bien.  Au moins, vous êtes honnête.  Mais c'et peut-être l'unique trait positif de votre personnalité." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_GOOD_1" />
+			<Set Text="Une réalité difficile à croire." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_AGGRESSIVE_MILITARY_WARNING_BAD_1" />
+			<Set Text="C'est ce que je craignais." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_AGGRESSIVE_MILITARY_WARNING_GOOD_1" />
+			<Set Text="J'espère seulement que c'est effectivement le cas." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_WE_ATTACKED_MINOR_BAD_1" />
+			<Set Text="Nous verrons à ce sujet." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_WE_ATTACKED_MINOR_GOOD_1" />
+			<Set Text="Oui, c'est vrai." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WE_ATTACKED_MINOR_BAD_1" />
+			<Set Text="Je reste convaincu d'avoir pris la meilleure décision pour mon peuple et la nation entière." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_1" />
+			<Set Text="On ne peut pas vous faire entendre raison.  Quel gâchis." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_2" />
+			<Set Text="Je n'ai plus vraiment de relation avec des gens comme vous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_3" />
+			<Set Text="Vous nous décevez." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_4" />
+			<Set Text="Vous savez, cela ne peut que créer de la tension entre nous." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_ATTACKED_MINOR_GOOD_1" />
+			<Set Text="Très bien.  Je vais faire un suivi de la situation." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_KILLED_MINOR_GOOD_1" />
+			<Set Text="Et que suggérez-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_SERIOUS_EXPANSION_WARNING_GOOD_1" />
+			<Set Text="Et que suggérez-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_EXPANSION_WARNING_GOOD_1" />
+			<Set Text="Excellent.  J'espère que nous pourrons continuer à trouver un terrain commun." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_SERIOUS_PLOT_BUYING_WARNING_GOOD_1" />
+			<Set Text="Et que suggérez-vous ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_PLOT_BUYING_WARNING_GOOD_1" />
+			<Set Text="Excellent.  J'espère que nous pourrons continuer à trouver un terrain commun." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OUR_WORDS_ARE_BACKED" />
+			<Set Text="Nos prises de position sont soutenues pas des armes nucléaires !" />
+		</Update>
+	</Language_fr_FR>
+</GameData>

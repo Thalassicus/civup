@@ -1,0 +1,48 @@
+[SIZE=4][COLOR=DarkGreen][B]GotVEM[/B][/COLOR][/SIZE]
+
+[B]What is the "GotVEM"?[/B]
+The GotVEM is the "[B]G[/B]ame [B]o[/B]f [B]t[/B]he Month for [B]VEM[/B]." The Game of the Month concept started over 10 years ago with  the Civilization 2 GOTM - which is still running.
+
+The Game Of The Month is a [B]friendly[/B] single-player competition.  A  starting save file is posted, and players download and play it.  They  post write-ups describing how their games progressed, the strategies  they used, what they learned and what they felt they did well.  This is a  great way for new players to ask questions and learn strategies to  improve their games.
+
+
+[B]How do I join?[/B]  
+To join, all you need is:
+
+[LIST]
+[*]A copy of Civ5 patched to the latest version.
+[*]The Vanilla Enhanced and CivWillard mods installed.
+[*]A Civilization Fanatics Center membership (login) account.
+[/LIST]
+Once the  competition is up-and-running, save files will be posted on or around  the first of each month.  Download it, play it, and be sure to submit it  before the end of the month.
+
+
+[B]What are the rules?[/B]
+The rules are fairly simple:  Play fairly.
+
+This means that you play within the spirit of the competition.  As it is  a friendly competition, we like to believe that there is no real  incentive to cheat - but unfortunately, people do.  Any persons found to  be cheating will have their games removed, and there is a strong  possibility that they will be banned from participating in the future.
+
+Cheating includes (and is not limited to):
+[LIST=1]
+[*]Playing  the game multiple times and submitting the best effort (or even playing  to get knowledge of the map, the replaying then starting the game  again).
+[*]Using any sort of programs to edit the game or save files.
+[*]Altering the XML or using other mods that give you an unfair advantage.
+[*]Reloading an earlier save-file and replaying turns in a different  way.  The only time you may reload a save file is to start a new play  session, and [I]you must use the save file from the [B]end[/B] of your previous session[/I].
+[/LIST]
+
+Please note that some people believe that reloading (in particular)  isn't serious cheating.  We, however, consider it to be and have zero  tolerance on it.  Please also be aware that if you do it, we [B]can[/B] detect it, and we [B]will[/B] act on it.
+
+Also, if in doubt, ask.  If you think you have found a new loop-hole or  exploit, then we strongly suggest that you ask as to its legallity  before you use it.  The aim of the competition is [I]not[/I] to see who  can exploit the rules, and as such, we reserve the right to disqualify  submissions based on exploits that are discovered later.
+
+
+[B]So - how is it run?[/B]
+The actual format will vary over time as we get feedback from the players.  But the basic format is as follows:
+[LIST=1]
+[*][B]Pre-game Discussion Thread:[/B]   A few days before the end of the month, the starting screenshot is  posted, along with the map script details, difficulty etc.  This allows  people to discuss strategies based on the initial information.
+[*][B]Game release:[/B]  On or around the first of the month, the game  is released.  At this point, people are allowed to download and play it,  but once they've started playing it, they should not post any info on  it anywhere except the [B]Spoiler Threads[/B] ....
+[*][B]Spoiler Threads[/B]:  A number of spoiler threads are normally  opened in which people discuss what happened in their games -  strategies, other civs, resources, game play and the like.  The spoilers  are spread to cover different periods of the game.  The reason for this  is so that people can contribute throughout the month - people who have  completed the early part of the game can still contribute without having  to worry that in reading the thread they'll see where the modern-age  resources are (for example).  The first spoiler is normally opened on or  around the 5th of the month.
+[*][B]Results:[/B]  We aim to have the results posted within 7-10 days following the completion of the game (the end of the month).
+[/LIST]
+
+[B]What are we playing for?[/B]
+Generally, you are playing for your own enjoyment, and perhaps to  improve your game.  In the GotVEM, we offer recognition for first,  second and third place; awards for the fastest finish in each particular  victory type, as well as recognition for the lowest scores in each  victory type (and a couple of consolation awards for the highest &  lowest scoring defeats).

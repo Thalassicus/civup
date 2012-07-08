@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d8cd8785-3eb5-4194-b0b0-a9b3b45270ad" version="2.1">
+  <Properties>
+    <Name>Free-Research Balance Mod</Name>
+    <Stability>Beta</Stability>
+    <Teaser>A small mod that extract's Alpaca's Great Scientist mechanic change from his Play With Me mod.</Teaser>
+    <Description>A small mod that extract's Alpaca's Great Scientist mechanic change from his PlayWithMe mod.
+Great Scientists yield a limited number of beakers, in general enough to complete a tech until mid-Renaissance but not after. Beakers are determined by number of techs, so deep beelines may not allow complete bulbs even before that; one goal is to help promote wide teching as well as to nerf GSs.
+*Scales with map size, difficulty and game speed, but not advanced starts.
+*Ten turn cooldown between GS bulbs.
+*Excess beakers do not overflow.
+*Formula: ((.35x)^2.55)+450 where x is number of technologies researched.
+*Research Agreement costs significantly raised: Ancient=200, Classical=300, Medieval=450, Renaissance=600, Industrial=800, Modern=1000, Future=1250.</Description>
+    <Authors>Seek</Authors>
+    <SpecialThanks>Alpaca, Gazebo and Thalassicus</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F0997CE527AAFA5203233D68BF892C99" import="1">ActionIcons.lua</File>
+    <File md5="BE7F281C7006ACFBC79AF1F083E5CFB8" import="0">CostIncreases.xml</File>
+    <File md5="12D0D9DE021FDCDFEE267E87E3B31B89" import="1">CustomMissionHandler.lua</File>
+    <File md5="8D7DD525FEB13E8AA855F98CB6A57C08" import="1">DiscoverMission.lua</File>
+    <File md5="51A27E2F8DEDE2BD55E0C67DAA3B8D7F" import="0">GP_Texts.xml</File>
+    <File md5="5C60B4638EA78E44A3EFE7A0D34B67E8" import="0">GreatPeople.xml</File>
+    <File md5="155E43834C7767803378678E974CD312" import="1">lib.lua</File>
+    <File md5="F8A572ABCCC0B4BFBD022B8F4301D23B" import="0">Missions.xml</File>
+    <File md5="0AAD33E5847E715469D845A0052C94F2" import="1">SaveUtils.lua</File>
+    <File md5="7C3F55B5E6B4AF7C8075C6BEB10B4D22" import="1">UnitPanel.lua</File>
+    <File md5="36167195FE9B2AA584FCDC9587BA0C74" import="1">XMLTableUpdate.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XMLTableUpdate.sql</UpdateDatabase>
+      <UpdateDatabase>GP_Texts.xml</UpdateDatabase>
+      <UpdateDatabase>GreatPeople.xml</UpdateDatabase>
+      <UpdateDatabase>DiscoverMission.lua</UpdateDatabase>
+      <UpdateDatabase>lib.lua</UpdateDatabase>
+      <UpdateDatabase>CustomMissionHandler.lua</UpdateDatabase>
+      <UpdateDatabase>Missions.xml</UpdateDatabase>
+      <UpdateDatabase>UnitPanel.lua</UpdateDatabase>
+      <UpdateDatabase>ActionIcons.lua</UpdateDatabase>
+      <UpdateDatabase>SaveUtils.lua</UpdateDatabase>
+      <UpdateDatabase>CostIncreases.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="CustomMissionHandler.lua">
+      <Name>CustomMissionHandler</Name>
+      <Description>CustomMissionHandler</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="DiscoverMission.lua">
+      <Name>DiscoverMission</Name>
+      <Description>DiscoverMission</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

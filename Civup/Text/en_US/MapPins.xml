@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MAPPINS_CONTEXT_EDIT">
+			<Text>Edit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_CONTEXT_MOVE">
+			<Text>Move</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_CONTEXT_DELETE">
+			<Text>Delete</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_POPUP_EDIT_TITLE">
+			<Text>Enter the pin details</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_POPUP_DELETE_TITLE">
+			<Text>Delete this pin?</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TT">
+			<Text>Click to view, right-click to edit, shift-right-click to delete</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TYPE">
+			<Text>Type</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_SORT_TYPE">
+			<Text>Sort by type</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TEXT">
+			<Text>Notes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_SORT_TEXT">
+			<Text>Sort by notes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TOGGLE_TT">
+			<Text>Show/Hide pins</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TERRAIN_MAP_PINS_ADV_QUEST">
+			<Text>How can I make notes on the map?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_BODY">
+			<Text>Map pins enable you to add notes to the maps (both in main and strategic views).[NEWLINE][NEWLINE]Press Control-X and then click on the map to place one or more pins.  Press Control-X again to return to normal map mode.[NEWLINE][NEWLINE]Hover over a pin to read its note.  Right-click the pin to edit, move or delete it.[NEWLINE][NEWLINE]Press Shift-X to toggle all pins on or off.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_TITLE">
+			<Text>Map Pins</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

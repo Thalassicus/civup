@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="44311931-9c7a-4f55-b465-7dc8d814e24d" version="3">
+  <Properties>
+    <Name>FlagPromotions</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Yet another mod adding promotion icons near flag, based on xienwolf's FlagPromotion mod</Teaser>
+    <Description>adds promotion icons near flag.
+This is a very improved version of xienwolf's FlagPromotion mod</Description>
+    <Authors>Erendir</Authors>
+    <SpecialThanks>xienwolf</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=389192</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1b24c4e652f39e2065080864523bd97d" import="1">XML/promotions128.dds</File>
+    <File md5="4e31a7e4c85fd935668829062140690a" import="1">XML/iconatlastexture.xml</File>
+    <File md5="A7ABD53EEBEB195EF3EDB8525EF241C8" import="0">Lua/MiniMapPanel_addin.lua</File>
+    <File md5="761E56D02605FE225B260763A1EAF6B5" import="1">Lua/MiniMapPanel_addin.xml</File>
+    <File md5="A162317A72C4E8E0AC0CE58664B6AD20" import="1">Lua/ModUserData.lua</File>
+    <File md5="94871B1B51E15BE36D78AD4B593A56A8" import="0">Lua/OptionsScreen.xml</File>
+    <File md5="52477DC42D059D84E978A7364E331EED" import="1">Lua/UnitFlagManager.lua</File>
+    <File md5="2AC1D9E3CA86CF7E86E90734D8F5F78B" import="1">Lua/UnitFlagManager.xml</File>
+    <File md5="47F904E5E9FDB920A5A887EC0C18D986" import="1">Lua/UnitFlagManager_addin.lua</File>
+    <File md5="364EAA1C83E3134DCEF69EDA392803ED" import="0">Lua/OptionsScreen.lua</File>
+    <File md5="B68971823E0FCAB6D5980DB2F2A948EE" import="0">XML/NewText/GameText.xml</File>
+    <File md5="76fd13539fc36770192dee22d674684e" import="1">Lua/UnitPanel.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/NewText/GameText.xml</UpdateDatabase>
+      <UpdateDatabase>XML/iconatlastexture.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/MiniMapPanel_addin.lua">
+      <Name>MiniMapPanel_addin</Name>
+      <Description>Adds new elements to the MiniMapPanel</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

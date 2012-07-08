@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- Created by ModBuddy on 12/30/2010 12:45:50 PM -->
+<GameData>
+	<Units>
+		<Update>
+			<Where Type="UNIT_SCIENTIST"/>
+			<Set FreeBeakersBase="0"
+				 FreeBeakersCoefficient="0"
+				 FreeBeakersExponent="0"
+				 FreeBeakersCooldownTurns="0"
+				 FreeBeakersVisibleDivisor="5"
+				 />
+			<!--
+				 The formula used is
+				 science = FreeBeakersBase + (FreeBeakersCoefficient*n)^FreeBeakersExponent
+				 where n is the number of researched techs
+			-->
+		</Update>
+	</Units>
+</GameData>

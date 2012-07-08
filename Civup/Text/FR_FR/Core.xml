@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation by Toys®Us -->
+<GameData>
+	<Language_fr_FR>
+		<Row Tag="TXT_KEY_PER_TURN">
+			<Text>par tour</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_DEFENSE">
+			<Text>[COLOR_POSITIVE_TEXT]Défense Mod[ENDCOLOR] : {1}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_YIELDS_ACTUAL">
+			<Text>[COLOR_POSITIVE_TEXT]Rendements[ENDCOLOR] : {1}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_YIELDS_WITHOUTFEATURE">
+			<Text>[COLOR_YELLOW]sans {1}[ENDCOLOR] : {2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_YIELDS_WITHIMPROVEMENT">
+			<Text>[COLOR_YELLOW]Avec {1}[ENDCOLOR] : {2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_VIEW">
+			<Text>Vue</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AI_GOLD">
+			<Text>AI Handicap Or</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AI_PRODUCTION">
+			<Text>AI Handicap Production</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AI_SCIENCE">
+			<Text>AI Handicap Science</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AI_CULTURE">
+			<Text>AI Handicap Culture</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_GOLD_TILE_MAINT" />
+			<Set Text="{1_Num} consacré à l'entretien des routes et voies ferrées." />
+		</Update>
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_MINOR_QUEST_BLOCKING" />
+			<Set Text="PROCHAINE ACTION" />
+		</Update>
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_MISSION_HURRY_PRODUCTION_HELP" />
+			<Set Text="Procure (300 + 30 * [ICON_CITIZEN] Population) [ICON_PRODUCTION] Production actuelle de la ville.  to the city's current effort.  Cela consume le Personnage Illustre." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_CITIZEN_ALLOCATION" />
+			<Set Text="Objectif de travail" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_SPECIAL_TEXT" />
+			<Set Text="Spécialistes" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_DISABLE_START_BIAS" />
+			<Set Text="Désactive les préférences de départ" />
+		</Update>
+		<Row Tag="TXT_KEY_REQUIRES">
+			<Text>Requiert</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONUMENT">
+			<Text>Monument</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONASTERY">
+			<Text>Monastère</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_EXPERIENCE">
+			<Text>Expérience</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_SUBMARINE">
+			<Text>Unités sous-marines</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>Archers montés</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNITCOMBAT_MELEE"/>
+			<Set Text="Unités de combat rapproché"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNITCOMBAT_RECON" />
+			<Set Text="Unités de reconnaissance" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_SUPPLY_REACHED_TOOLTIP"/>
+			<Set Text="Votre empire peut supporter {1_Num} unités militaires terrestres.  Vous dépassez cette limite de [COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR], ce qui diminue la [ICON_PRODUCTION] Production de ces unités dans vos villes de [COLOR_NEGATIVE_TEXT]{3_Num}%[ENDCOLOR]."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_CAMEL_ARCHER"/>
+			<Set Text="Unité de combat à distance rapide.  D'origine arabe, n'a aucune vulnérabilité face au piquier, contrairement au cavalier."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRADITION_TITLE"/>
+			<Set Text="Souverain {1_PlayerName:textkey} de {2_CivName:textkey}"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_FROM_US"/>
+			<Set Text="L'entente durant laquelle nous avons procuré de [ICON_GOLD] l'Or chaque tour à {1_CivName:textkey} est terminée."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_TO_US"/>
+			<Set Text="L'entente durant laquelle {1_CivName:textkey} nous a procuré de [ICON_GOLD] l'Or est terminée."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_SPAIN_CONQUISTADOR_HELP"/>
+			<Set Text="Unité exclusive aux Espagnols. Le conquistador a +2 de champ de vision et aucune pénalité contre les villes, and no penalty against cities, contrairement au chevalier."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Culture.[NEWLINE]+1 [ICON_CULTURE] Culture par Moai adjacent.[NEWLINE][ICON_LOCKED] Doit être près la côte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Culture.[NEWLINE]+1 [ICON_CULTURE] Culture par Moai adjacent.[NEWLINE][ICON_LOCKED] Doit être près la côte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLYNESIAN_SCENARIO_BUILD_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Culture.[NEWLINE]+1 [ICON_CULTURE] Culture par Moai adjacent.[NEWLINE][ICON_LOCKED] Doit être près la côte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MANDATE_OF_HEAVEN_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Mandat du Ciel[ENDCOLOR][NEWLINE]50% du surplus du [ICON_HAPPINESS_1] Bonheur s'ajoute à la [ICON_CULTURE] Culture." />
+		</Update>
+		<Row Tag="TXT_KEY_BUILDING_VICEROY">
+			<Text>Vice-roi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VICEROY_HELP">
+			<Text>Supervise les états fantoches et les villes occupées.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PUPPET_MODIFIER">
+			<Text>Gardien</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PUPPET_MODIFIER_HELP">
+			<Text>Garde un état fantoche.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FREEDOM_FINISHER">
+			<Text>Modulateur de Liberté</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE">
+			<Text>Peut avoir un palais de justice</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE_HELP">
+			<Text>Solution d'un bug avec les palais de justice.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCIENCE_BONUS">
+			<Text>Bonus de science</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCIENCE_BONUS_HELP">
+			<Text>Chaque réseau national 1[ICON_HAPPINESS_1] se converti en 1%[ICON_RESEARCH] dans la [ICON_CAPITAL] Capitale.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCIENCE_PENALTY">
+			<Text>Bonus de science</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SCIENCE_PENALTY_HELP">
+			<Text>Chaque réseau national 1[ICON_HAPPINESS_4] se converti en -1%[ICON_RESEARCH] dans la [ICON_CAPITAL] Capitale.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_19" />
+			<Set Text="Les États-Unis ne sont plus la seule superpuissance dans le monde.  Ils partagent maintenant ce titre avec la Chine.  Ce pays tente de se relever des nombreux excès économiques de la fin du 20e siècle, en plus de bannir les fantômes de l'esclavage et du racisme qui les hantent toujours.  Cette nation possède encore de nombreuses ressources en plus du capital humain.  Conséquemment, ils peuvent encore jouer un rôle déterminant dans le siècle à venir." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_LEADERS_HARUN_TEXT_3" />
+			<Set Text="Au début du règne de Haroun, la capitale était Bagdad.  La ville était un centre des arts, de science et de religion, avec beaucoup de beaux bâtiments.  Haroun a fondé la Maison de la Sagesse, une bibliothèque et centre de recherche qui a recueilli et traduit les écrits scientifiques de textes perses, indiens, grecs et romains." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT" />
+			<Set Text="Une terrasse de culture est une surface horizontale aménagée sur un terrain en pente pour faciliter l'écoulement des eaux de ruissellement et leur infiltration dans le sol, pour lutter contre l'érosion et permettre la mise en culture du terrain.  Elle se pratique dans des régions de moyenne montagne soit pour lutter contre l'érosion des sols, soit pour permettre l'irrigation par inondation. On peut en distinguer deux grands types -- les rizières et les autres types de cultures." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TEXT" />
+			<Set Text="[ICON_CITIZEN]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_FOOD_TEXT" />
+			<Set Text="[ICON_FOOD]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_PROD_TEXT" />
+			<Set Text="[ICON_PRODUCTION]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_GOLD_TEXT" />
+			<Set Text="[ICON_GOLD]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TEXT" />
+			<Set Text="[ICON_RESEARCH]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TEXT" />
+			<Set Text="[ICON_CULTURE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TEXT" />
+			<Set Text="[ICON_GREAT_PEOPLE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_FAITH_TEXT" />
+			<Set Text="[ICON_PEACE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" />
+			<Set Text="[ICON_LOCKED]" />
+		</Update>
+		<Row Tag="TXT_KEY_TRAIT_YIELD_FROM_CONSTRUCTION">
+			<Text>{1_city} acquis [COLOR_POSITIVE_TEXT]+{2_yield} {3_yieldstring}[ENDCOLOR] du bâtiment {4_building}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_HAPPINESS_TERRAIN">
+			<Text>{1_Num} du terrain.</Text>
+		</Row>
+
+
+		<!-- 
+				Desert Caravans
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS"
+			Text="Caravanes du désert"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_HELP"
+			Text="[ICON_GOLD] Or: +5% dans toutes les villes pour chaque ressource de luxe."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY"
+			Text="Les caravanes du désert augmentent l'or de l'empire provenant des ressources de luxe.."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA"
+			Text="Une caravane est un convoi de marchandises ou groupe de personnes voyageant ensemble, essentiellement dans le cadre d'une expédition commerciale.  Les caravanes ont été utilisées principalement dans les zones désertiques et tout au long de la route de la soie, où le voyage en groupe permettait de s'aider et de se défendre contre les bandits."
+		/>
+
+
+		<!--
+				Citystates 
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_CITY_STATE_BARB_QUEST_LONG" />
+			<Set Text="[ICON_CITY_STATE] {1_CivName:textkey} désire être débarrassé de ces barbares." />
+		</Update>
+		<Row Tag="TXT_KEY_POP_CSTATE_IMPROVE_RESOURCES">
+			<Text>Améliore les ressources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POP_CSTATE_IMPROVE_RESOURCES_TT">
+			<Text>Payez {1_num} [ICON_GOLD] Or à une Cité-Etat alliée pour immédiatement arranger toutes les ressources exportables pillées ou non améliorées qu'elle contrôle.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POP_CSTATE_YIELDS">
+			<Text>Rendements:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_STATE_YIELDS_TT">
+			<Text>Rendements qu'une Cité-Etat vous procure.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_RESOURCES" />
+			<Set Text="Exportations:" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_CULTURE_BONUS"/>
+			<Set Text="Vous recevez de la [COLOR_POSITIVE_TEXT][ICON_CULTURE] Culture[ENDCOLOR] d'eux dans toutes vos villes."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_FOOD_BONUS"/>
+			<Set Text="Vous recevez de la [COLOR_POSITIVE_TEXT][ICON_FOOD] Nourriture[ENDCOLOR] d'eux dans toutes vos villes."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_MILITARY_BONUS"/>
+			<Set Text="Ils vous envoient de [COLOR_POSITIVE_TEXT]nouvelles unités militaires[ENDCOLOR] de temps à autre."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_BASE" />
+			<Set Text="[ICON_INFLUENCE] L'influence envers {1_CivName:textkey} s'est accrue à un point tel que vous êtes maintenant des [COLOR_POSITIVE_TEXT]AMIS[ENDCOLOR].[NEWLINE][NEWLINE]{2_DetailsString} Ils vous accordent aussi le libre passage.." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_CULTURE" />
+			<Set Text="En tant que Cité-État [COLOR_POSITIVE_TEXT]Culturelle[ENDCOLOR], vous recevez des oeuvres d'art rares, ce qui augmente la [ICON_CULTURE] de vos villes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MILITARISTIC" />
+			<Set Text="En tant que Cité-État [COLOR_POSITIVE_TEXT]Militaire[ENDCOLOR], vous recevrez occasionnellement des unités militaires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MARITIME" />
+			<Set Text="En tant que Cité-État [COLOR_POSITIVE_TEXT]Maritime[ENDCOLOR], ils expédieront de la [ICON_FOOD] Nourriture vers vos villes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_FRIENDS_LOST_BASE" />
+			<Set Text="[ICON_INFLUENCE] L'influence envers {1_CivName:textkey} a diminué à un point tel que vous n'êtes plus des [COLOR_POSITIVE_TEXT]AMIS[ENDCOLOR]...[NEWLINE][NEWLINE]{2_DetailsString} De plus, le libre passage vous est maintenant interdit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_CULTURE" />
+			<Set Text="(Perte de [ICON_CULTURE] Culture dans vos villes)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_FRIENDS_MILITARISTIC" />
+			<Set Text="Vous ne recevrez plus d'unités militaires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_MARITIME" />
+			<Set Text="(Perte de [ICON_FOOD] Nourriture dans vos villes)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE" />
+			<Set Text="[ICON_INFLUENCE] L'influence envers {2_MinorCivName:textkey} s'est accrue à un point tel que vous êtes maintenant des [COLOR_POSITIVE_TEXT]ALLIÉS[ENDCOLOR].[NEWLINE][NEWLINE]{3_DetailsString}[NEWLINE][NEWLINE]{1_ResourceDetailsString}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE_PASSED" />
+			<Set Text="[ICON_INFLUENCE] L'influence envers {3_MinorCivName:textkey} s'est accrue à un point tel que vous avez [COLOR_POSITIVE_TEXT]supplanté {1_CivName:textkey} en tant qu'ALLIÉ[ENDCOLOR].[NEWLINE][NEWLINE]{4_DetailsString}[NEWLINE][NEWLINE]{2_ResourceDetailsString}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_CULTURE" />
+			<Set Text="En tant que Cité-État [COLOR_POSITIVE_TEXT]Culturelle[ENDCOLOR], vous recevez des oeuvres d'art rares, ce qui augmente la [ICON_CULTURE] de vos villes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MILITARISTIC" />
+			<Set Text="En tant que Cité-État [COLOR_POSITIVE_TEXT]Militaire[ENDCOLOR], vous recevrez occasionnellement des unités militaires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MARITIME" />
+			<Set Text="En tant que Cité-État [COLOR_POSITIVE_TEXT]Maritime[ENDCOLOR], ils expédient maintenant de grandes quantités de [ICON_FOOD] Nourriture vers vos villes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_LOST" />
+			<Set Text="[ICON_INFLUENCE] L'influence envers {1_CivName:textkey} a diminué à un point tel que vous n'êtes plus des [COLOR_POSITIVE_TEXT]ALLIÉS[ENDCOLOR].[NEWLINE][NEWLINE]{2_DetailsString}[NEWLINE][NEWLINE]Ainsi, ils ne vous accordent plus de ressources stratégiques ou de luxe." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_PASSED" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]{1_CivName:textkey}[ENDCOLOR] a maintenant plus [ICON_INFLUENCE] d'Influence envers {2_MinorCivName:textkey} que vous, ce qui fait d'eux le [COLOR_NEGATIVE_TEXT]Nouvel Allié[ENDCOLOR] de la Cité-État ![NEWLINE][NEWLINE]{3_DetailsString}[NEWLINE][NEWLINE]Ainsi, ils ne vous accordent plus de ressources stratégiques ou de luxe." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_ALLIES_MILITARISTIC" />
+			<Set Text="Vous recevrez un peu moins d'unités militaires." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_STATE_MARITIME_TT" />
+			<Set Text="Une bienveillante Cité-État [COLOR_POSITIVE_TEXT]Maritime[ENDCOLOR] donnera de la [ICON_FOOD] Nourriture à vos villes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_STATUS_TT" />
+			<Set Text="[ICON_INFLUENCE] Actuellement {1_statusType}: {2_statusText} {3_rate}" />
+		</Update>
+		<Row Tag="TXT_KEY_DIPLO_STATUS_OTHER_TT" >
+			<Text>[ICON_STAR] Rival ({1_civName}): {2_statusText} [ICON_INFLUENCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DIPLO_STATUS_MILITARISTIC_REWARD_TT" >
+			<Text>[ICON_STRENGTH] Unité militaire: {1_remaining} tours ({2_current}/{3_threshold}{4_rate})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DIPLO_STATUS_GREAT_PERSON_REWARD_TT" >
+			<Text>[ICON_GREAT_PEOPLE] Personnage Illustre: {1_remaining} tours ({2_current}/{3_threshold}{4_rate})</Text>
+		</Row>
+		
+		
+		
+		<!--
+				Units 
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_SIAMESE_WARELEPHANT" />
+			<Set Text="Éléphant de Naresuan" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SIAMESE_WARELEPHANT" />
+			<Set Text="Unité militaire du Siam vulnérable au piquier.  Les éléphants ne requièrent pas de ressources, ont un avantage contre les unités montées, et ont plus de [ICON_STRENGTH] force que les chevaliers." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_SIAMESEWARELEPHANT_TEXT" />
+			<Set Text="Au Siam, l'éléphant de guerre était très précieux.  Trois personnes y montaient, le conducteur sur le cou pour se battre, un autre au milieu pour lui passer les armes et un dernier à l'arrière comme conducteur." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_SIAMESE_WARELEPHANT_STRATEGY" />
+			<Set Text="L'unité exclusive du Siam, plus lente que le chevalier, mais beaucoup plus puissante.  Peut se déplacer après l'attaque.  Équipée de lances, avec un avantage significatif contre les autres unités montées." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_NUCLEAR_SUBMARINE" />
+			<Set Text="Sous-marin nucléaire" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_NUCLEAR_SUBMARINE" />
+			<Set Text="Spécialisé dans la défaite de sous-marins réguliers. Peut transporter 2 missiles.  Détectables par les destroyers, sous-marins et toute autre unité située à une case de distance." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AIRPOWER_AIRBASES_HEADING2_BODY" />
+			<Set Text="Les unités aériennes ne se déplacent pas comme les unités terrestres et navales, elles doivent avoir une base dans une ville alliée.  Un porte-avions peut servir aussi de base aux chasseurs et à certains bombardiers.  Les missiles peuvent être basés dans les villes, les sous-marins nucléaires et les croiseurs lance-missiles.  Les unités aériennes ne peuvent embarquer.[NEWLINE][NEWLINE]Les unités antiaériennes et les hélicoptères n'ont pas besoin d'une base.  Ils se déplacent comme les autres unités, et peuvent embarquer." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AIRPOWER_ALLMISSILES_HEADING4_BODY" />
+			<Set Text="Les missiles peuvent être basés dans les villes, les sous-marins nucléaires et les croiseurs lance-missiles." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AIRPOWER_NUCMISSILES_HEADING2_BODY" />
+			<Set Text="La bombe atomique fait des dégâts considérables, par contre les missiles nucléaires sont vraiment dévastateurs.  Dans le rayon de l'explosion, toutes les unités sont détruites, et le dommage dans les ville encore plus grand.  Les missiles nucléaires peuvent rayer une ville de la carte complètement (Note - La Capitale ne peut être détruite de cette manière).[NEWLINE][NEWLINE]Les missiles peuvent être stationnés sur les sous-marins nucléaires ou croiseurs lance-missiles, mais pas les porte-avions." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AIRPOWER_NUCSUBMARINE_ADV_QUEST" />
+			<Set Text="Quelles unités aériennes peuvent être basées sur un sous-marin nucléaire ?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AIRPOWER_NUCSUBMARINE_HEADING4_BODY" />
+			<Set Text="Un sous-marin nucléaire peut transporter jusqu'à deux missiles de n'importe lequel type." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AIRPOWER_NUCSUBMARINE_HEADING4_TITLE" />
+			<Set Text="Sous-marin nucléaire" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_MISSLECRUISER_TEXT" />
+			<Set Text="Un croiseur est un navire de guerre, aujourd'hui, le plus puissant et le plus grand des bâtiments de combat, exception faite des porte-avions.  Actuellement, seules l'US Navy et la marine russe possèdent des croiseurs." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_NUCLEARSUBMARINE_HEADING" />
+			<Set Text="Sous-marin nucléaire" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_UNITS_MODERN_NUCLEARSUBMARINE_TEXT" />
+			<Set Text="Dotés d'une très grande autonomie et d'un niveau de discrétion inégalé, ces sous-marins constituent une pièce maîtresse de la force de dissuasion.  Ils sont l'aboutissement de nombreuses années d'études et de développement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_HEADING1_BODY" />
+			<Set Text="L'or, l'or !  Vous pouvez l'utiliser pour bâtir une armée, payer un réseau de voies ferrées, acheter des bâtiments, des Merveilles, l'amitié d'une Cité-État ou soudoyer l'ennemi.[NEWLINE]C'est peut-être vrai que l'argent ne peut acheter l'amour, mais un sous-marin nucléaire, oui, ce qui n'est pas si mal." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_COMPUTERS_HELP" />
+			<Set Text="Vous permet de construire le [COLOR_POSITIVE_TEXT]Sous-marin Nucléaire[ENDCOLOR], un vaisseau invisible pour toutes les unités à l'exception des destroyers et autres sous-marins.  Permet aussi de construire le [COLOR_POSITIVE_TEXT]Lance-missiles SAM Mobile[ENDCOLOR], une unité rapide qui sert à neutraliser les avions ennemis." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_GUIDED_MISSILE_STRATEGY" />
+			<Set Text="Arme à utilisation unique qui explose en touchant la cible.  Le missile guidé peut être basé dans une ville alliée, un sous-marin nucléaire ou un croiseur lance-missiles.  Il peut se déplacer d'une base à l'autre, attaquer une unité ou une ville." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_NUCLEAR_SUBMARINE_STRATEGY" />
+			<Set Text="Le sous-marin nucléaire est invisible pour quasiment toutes les unités.  Plus important encore, il peut transporter des missiles nucléaires ou guidés." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_NUCLEAR_MISSILE" />
+			<Set Text="Inflige des dommages immenses aux villes et détruit toutes les unités dans le rayon de l'explosion.  Peut être stationné sur un sous-marin nucléaire et un croiseur lance-missiles.[NEWLINE][NEWLINE]Projet Manhattan requis et deux ressources en uranium." />
+		</Update>
+		
+		
+		
+		
+		<!--
+				Resources
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS"
+			Text="Bonheur"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP"
+			Text="Bonheur incluant les effets Vanilla Enhanced mod."
+		/>
+		
+		<Row Tag="TXT_KEY_RES_IMPORTED">
+			<Text>{1_num} Importé</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_CITYSTATES">
+			<Text>{1_num} de[ICON_CITY_STATE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_EXPORTED">
+			<Text>{1_num} Exporté</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_USED">
+			<Text>{1_num} Utilisé</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_SURPLUS">
+			<Text>{1_num} Surplus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_MOVES">
+			<Text>{1_num}[ICON_MOVES]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_EXPERIENCE">
+			<Text>{1_num}/{2_num}[ICON_WAR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_HEALTH">
+			<Text>[COLOR_NEGATIVE_TEXT]{1_num} HP[ENDCOLOR]</Text>
+		</Row>
+		
+		
+		
+		<!--
+				Promotions
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UPANEL_UNIT_PROMOTED" />
+			<Set Text="CHOISIR LA PROMOTION" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NO_DEFENSIVE_BONUSES" />
+			<Set Text="Pas de bonus de défense - Colline/Forêt" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT">
+			<Text>Nouvelle unité</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_50">
+			<Text>-50% Pénalité sur la défense</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_50_HELP">
+			<Text>-50% Pénalité sur la défense</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_POWER">
+			<Text>Puissance du désert</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_COMMAND">
+			<Text>Unités de soutien</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_CIVILIAN">
+			<Text>Unités civiles</Text>
+		</Row>
+		<Row
+			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED"
+			Text="Double la vitesse de travail"
+		/>
+		<Row
+			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED_HELP"
+			Text="Construit les améliorations +100% plus vite"
+		/>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_OLIGARCHY_HELP" />
+			<Set Text="+33% de [ICON_STRENGTH] Force en territoire allié"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_HIMEJI_CASTLE_HELP" />
+			<Set Text="+15% de [ICON_STRENGTH] Force en territoire allié"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WOODSMAN_HELP" />
+			<Set Text="Se déplace plus vite dans la [COLOR_POSITIVE_TEXT]Forêt et la Jungle[ENDCOLOR]"/>
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_POWER_HELP">
+			<Text>Se déplace plus vite dans le [COLOR_POSITIVE_TEXT]Désert[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARCTIC_POWER">
+			<Text>Puissance de l'Arctique</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARCTIC_POWER_HELP">
+			<Text>Se déplace plus vite dans la [COLOR_POSITIVE_TEXT]Neige et la Toundra[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HILL_FIGHTER">
+			<Text>Hill Patrouilleur</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HILL_FIGHTER_HELP">
+			<Text>Se déplace plus vite dans les [COLOR_POSITIVE_TEXT]Collines[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHALANX">
+			<Text>Phalanx</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHALANX_HELP">
+			<Text>+50% vs les unités [COLOR_POSITIVE_TEXT]Montées[ENDCOLOR] et de [COLOR_POSITIVE_TEXT]Combat Rapproché[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GOLDEN">
+			<Text>D'or</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GOLDEN_HELP">
+			<Text>[ICON_GOLDEN_AGE] Le combat procure des points de l'Âge d'Or</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_1">
+			<Text>AI Handicap I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_1_HELP">
+			<Text>+1 Champ de vision[NEWLINE]+10% Expérience[NEWLINE]+10% vs Villes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_2">
+			<Text>AI Handicap II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_2_HELP">
+			<Text>+2 Champ de vision[NEWLINE]+25% Expérience[NEWLINE]+25% vs Villes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP">
+			<Text>AI Handicap</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_HELP">
+			<Text>+2 Champ de vision[NEWLINE]+50% vs Villes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MERCENARY">
+			<Text>Mercenaire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MERCENARY_HELP">
+			<Text>-50% Coût de l'amélioration</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_50"/>
+			<Set Text="Pénalité sur la défense (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY"/>
+			<Set Text="Pénalité vs Unité mountée (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED"/>
+			<Set Text="Pénalité sur l'attaque terrestre (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED_HELP"/>
+			<Set Text="-50% de force lors d'une attaque contre les unités terrestres et navales"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER"/>
+			<Set Text="Bonus vs Hélicoptères (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_FIGHTER"/>
+			<Set Text="Bonus vs Chasseurs (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NAVAL_PENALTY"/>
+			<Set Text="Pénalité lors d'une attaque contre les unités navales (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_TANK"/>
+			<Set Text="Bonus vs Blindés (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NO_DEFENSIVE_BONUSES"/>
+			<Set Text="Aucun bonus pour la défense"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_FOREIGN_LANDS"/>
+			<Set Text="Bonus en terres étrangères (20)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SUPPLY_HELP"/>
+                        <Set Text="Peut se soigner [COLOR_POSITIVE_TEXT]à l'extérieur d'un Territoire Allié[ENDCOLOR]. 2 HP de guérison par tour."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_STATUE_ZEUS_HELP"/>
+			<Set Text="+15% de [ICON_STRENGTH] Force lors de l'attaque des villes"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WOODSMAN_HELP"/>
+			<Set Text="Mouvement plus rapide à travers la [COLOR_POSITIVE_TEXT]Forêt et la Jungle[ENDCOLOR]."/>
+		</Update>
+		
+		
+
+		<!--
+				Damage Text
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_MISC_ENEMY_UNIT_WITHDRAW" />
+			<Set Text="Un {@1_EnUName} ([COLOR_POSITIVE_TEXT]{2_Num}[ENDCOLOR] dommage) a attaqué votre {@3_UnitName} ([COLOR_NEGATIVE_TEXT]{4_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_ENEMY_UNIT_WITHDRAW_CITY" />
+			<Set Text="Un {@1_EnUName} ([COLOR_POSITIVE_TEXT]{2_Num}[ENDCOLOR] dommage) a attaqué {@3_CityName} ([COLOR_NEGATIVE_TEXT]{4_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_AIR_UNIT_HURT" />
+			<Set Text="Votre {@1_UnitName} a été [COLOR_NEGATIVE_TEXT]intercepté[ENDCOLOR] par un {@2_EnUName}! ({3}% Dommage)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ARE_ATTACKED_BY_AIR" />
+			<Set Text="Votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{3_Num}[ENDCOLOR] dommage) a été bombardé par un {@2_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ARE_ATTACKED_BY_AIR_AND_DEATH" />
+			<Set Text="Votre {@1_UnitName} a été [COLOR_NEGATIVE_TEXT]détruit[ENDCOLOR] suite au bombardement d'un {@2_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ARE_ATTACKED_BY_CITY" />
+			<Set Text="Votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{3_Num}[ENDCOLOR] dommage) a été bombardé par la ville de {@2_CityName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ATTACK_BY_AIR" />
+			<Set Text="Votre {@1_UnitName} a bombardé un {@2_EnUName} ! ([COLOR_POSITIVE_TEXT]{3_Damage}[ENDCOLOR] dommage)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ATTACK_BY_AIR_AND_DEATH" />
+			<Set Text="Votre {@1_UnitName} a bombardé un {@2_EnUName} et l'a [COLOR_POSITIVE_TEXT]détruit[ENDCOLOR] !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_CITY_WAS_CAPTURED" />
+			<Set Text="En se défendant, votre ville de {@1_CityName} a été [COLOR_NEGATIVE_TEXT]capturée[ENDCOLOR] par {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {@3_owner_adjective}} {@2_EnUName} ([COLOR_POSITIVE_TEXT]{4_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_DEFENSES_REDUCED_TO" />
+			<Set Text="Vos défenses dans la ville de {@1_CityName} ont été réduites à [COLOR_NEGATIVE_TEXT]{2_Num}%[ENDCOLOR] par {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {3_UnitName}} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_HURT_ENEMY_AIR" />
+			<Set Text="Votre {@1_UnitName} a intercepté {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {4_owner_adjective}} {@2_EnUName} ! ([COLOR_POSITIVE_TEXT]{3}%[ENDCOLOR] Dommage)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_KILLED_ENEMY_UNIT" />
+			<Set Text="En se défendant, votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{4_Num}[ENDCOLOR] dommage) [COLOR_POSITIVE_TEXT]a détruit[ENDCOLOR] {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {@5_owner_adjective}} {@4_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_KILLED_ENEMY_UNIT_CITY" />
+			<Set Text="En se défendant, votre ville de {@1_CityName} ([COLOR_NEGATIVE_TEXT]{4_Num}[ENDCOLOR] dommage) [COLOR_POSITIVE_TEXT]a détruit[ENDCOLOR] {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {@4_owner_adjective}} {3_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_REDUCE_CITY_DEFENSES" />
+			<Set Text="Votre {@1_UnitName} a réduit les défenses de {@2_CityName} à [COLOR_POSITIVE_TEXT]{3_NewVal}%[ENDCOLOR] !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_SHOT_DOWN_ENEMY" />
+			<Set Text="Votre {@1_UnitName} a [COLOR_POSITIVE_TEXT]abattu[ENDCOLOR] {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {3_owner_civ}} {@2_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_CAPTURED_ENEMY_CITY" />
+			<Set Text="Votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] dommage) [COLOR_POSITIVE_TEXT]a capturé[ENDCOLOR] la ville de {@3_CityName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_DESTROYED_ENEMY" />
+			<Set Text="Votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] dommage) [COLOR_POSITIVE_TEXT]a défait[ENDCOLOR] un {@3_UnitName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_DIED_ATTACKING" />
+			<Set Text="Votre {@1_UnitName} [COLOR_NEGATIVE_TEXT]a été détruit[ENDCOLOR] en attaquant un {@2_EnUName} ([COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_DIED_ATTACKING_CITY" />
+			<Set Text="Votre {@1_UnitName} [COLOR_NEGATIVE_TEXT]a été détruit[ENDCOLOR] en attaquant la ville de {@2_EnUName} ([COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_RANSOM_KILL_BY_BARBARIANS" />
+			<Set Text="Les barbares ont [COLOR_NEGATIVE_TEXT]détruit[ENDCOLOR] votre {@1_UnitName} parce que vous avez refusé de payer la somme d'argent exigée !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_SHOT_DOWN" />
+			<Set Text="Votre {@1_UnitName} a été [COLOR_NEGATIVE_TEXT]abattu[ENDCOLOR] par un {@2_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_SURRENDER" />
+			<Set Text="Votre {@1_EnUName} [COLOR_NEGATIVE_TEXT]a abandonné[ENDCOLOR] face à {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {@2_Adjective}} {@3_UnitName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_WAS_DESTROYED" />
+			<Set Text="En se défendant, votre {@1_UnitName} a été [COLOR_NEGATIVE_TEXT]détruit[ENDCOLOR] par {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {@3_owner_adjective}} {@2_EnUName} ([COLOR_POSITIVE_TEXT]{4_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_WAS_DESTROYED_UNKNOWN" />
+			<Set Text="En se défendant, votre {@1_UnitName} a été [COLOR_NEGATIVE_TEXT]détruit[ENDCOLOR] par un {@2_EnUName} camouflé ([COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_WAS_DESTROYED_ATTRITION" />
+			<Set Text="Votre {@1_UnitName} a été [COLOR_NEGATIVE_TEXT]détruite[ENDCOLOR] par usure !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_WITHDRAW" />
+			<Set Text="Votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] dommage) a attaqué un {@3_EnUName} ([COLOR_POSITIVE_TEXT]{4_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_WITHDRAW_CITY" />
+			<Set Text="Votre {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] dommage) a attaqué la ville de {@3_CityName} ([COLOR_POSITIVE_TEXT]{4_Num}[ENDCOLOR] dommage) !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOUR_CITY_ATTACKED_BY_AIR" />
+			<Set Text="Votre ville de {@1_CityName} ([COLOR_NEGATIVE_TEXT]{3_Num}[ENDCOLOR] dommage) a été bombardé par un {@2_EnUName} !" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOUR_CITY_RANGE_ATTACK" />
+			<Set Text="{@1_Name} a bombardé un {@2_EnUName}! ([COLOR_POSITIVE_TEXT]{3_Damage}[ENDCOLOR] dommage)" />
+		</Update>
+	</Language_fr_FR>
+</GameData>
