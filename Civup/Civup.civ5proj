@@ -5,7 +5,7 @@
     <ProjectGuid>{4746fd17-873e-40e4-b531-63afb3f7f235}</ProjectGuid>
     <Name>Civ V Unofficial Patch (Beta)</Name>
     <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
-    <ModVersion>14</ModVersion>
+    <ModVersion>16</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>[COLOR_CYAN]   by Thalassicus[NEWLINE][ENDCOLOR]   Fixes problems with the interface, and provides extensive modding tools.</Teaser>
     <Description>The most influential community project for Civ V returns for Gods and Kings!
