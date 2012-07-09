@@ -49,6 +49,11 @@ Whoward69
 Whys – Utility to store data in savegame files.
 Wolfi (Delta187) – German translations.
 X–Worf – Map Pins German translation.
+yche2990 - Simplified Chinese translations.
 
-Thalassicus – Anything not listed above.
-
+Thalassicus
+	Project lead.
+	Programming for AutoTips, MT_Core, YieldLibrary, and Triggers.
+	Promotion flag icon artwork.
+	Marketing.
+	Anything else not credited earlier.
