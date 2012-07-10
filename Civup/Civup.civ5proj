@@ -3,18 +3,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{4746fd17-873e-40e4-b531-63afb3f7f235}</ProjectGuid>
-    <Name>Civ V Unofficial Patch (Beta)</Name>
+    <Name>Civ V Unofficial Patch (GK)</Name>
     <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
-    <ModVersion>16</ModVersion>
+    <ModVersion>18</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>[COLOR_CYAN]   by Thalassicus[NEWLINE][ENDCOLOR]   Fixes problems with the interface, and provides extensive modding tools.</Teaser>
     <Description>The most influential community project for Civ V returns for Gods and Kings!
 
-Civup focuses on fixing bugs, improving the interface, and expanding modding tools with minimal gameplay impact. It follows the tradition of unofficial patches like Civ 4 BTS Unaltered Gameplay and the Skyrim Unofficial Patch. Civup is a collaboration of work from 26 mod authors and an incredible community of forumgoers on CivFanatics.com.
+Civup focuses on fixing bugs in the expansion, improving the interface, and expanding modding tools with minimal gameplay impact. It follows the footsteps of unofficial patches like Civ 4 BTS Unaltered Gameplay and the Skyrim Unofficial Patch. Civup is a collaboration of work from 26 mod authors and an incredible community of forumgoers on CivFanatics.com.
 
-Forum: http://forums.civfanatics.com/forumdisplay.php?f=429
 Website: http://civmodding.wordpress.com/features
+Credits: http://civmodding.wordpress.com/credits
+Forum: http://forums.civfanatics.com/forumdisplay.php?f=429
 Bugs: http://forums.civfanatics.com/showthread.php?p=10221327#post10221327
+
+NOTE: Do *not* have this installed without Gods and Kings. It is only compatible with the expansion. The non-expansion vanilla version is here: http://steamcommunity.com/sharedfiles/filedetails/?id=78295051
 
 Please view the readme in the mod folder, which includes important information about using Civ 5 mods. Modders can easily use the tools in Civup within your own mod by including Civup as a dependency in ModBuddy project associations.
 
@@ -41,16 +44,7 @@ Modding Support
 - Lua events detecting when policies are acquired, buildings constructed or destroyed, and other important events.
 - Save and load functions for players, units, and cities.
 - Alpaca’s DiploCorner and CustomMission addins.
-- An extensive library of useful utility functions for modders.
-
-
-== NOTES ==
-
-This is currently a beta test version. The expansion and pre-expansion game use different interface files, so it's impractical for mods to be compatible with both. I’m focusing on the G&amp;K version for now. Once the G&amp;K version is working decently I will go back and make the vanilla version compatible with the June 14th vanilla patch.
-
-1. G&amp;K version of the unofficial patch (civup).
-2. Non-G&amp;K version of civup/vem.
-3. G&amp;K version of vem.</Description>
+- An extensive library of useful utility functions for modders.</Description>
     <Authors>[COLOR_CYAN]Thalassicus</Authors>
     <SpecialThanks>Check out the readme in the mod folder.</SpecialThanks>
     <Categories>$Categories$</Categories>
@@ -231,6 +225,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/AttilaMods.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
@@ -267,6 +266,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/AutoTips_Tips.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -311,6 +315,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/AutoTips_Help.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
@@ -347,6 +356,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/CopaseticUITweaks.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -391,6 +405,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/Core.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/CustomNotifications.xml</FileName>
       </Action>
       <Action>
@@ -427,6 +446,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/CustomNotifications.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -471,6 +495,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/ExtraDiplomacyText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/Diplomacy.xml</FileName>
       </Action>
       <Action>
@@ -507,6 +536,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/Diplomacy.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -551,6 +585,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/CsebExtendedPlotMouseover.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/Triggers.xml</FileName>
       </Action>
       <Action>
@@ -587,6 +626,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/Triggers.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/Triggers.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -631,6 +675,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/UnitTrees.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/Villages.xml</FileName>
       </Action>
       <Action>
@@ -667,6 +716,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/Villages.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -711,6 +765,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/WWGD.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/FlagPromotions.xml</FileName>
       </Action>
       <Action>
@@ -751,6 +810,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/FlagPromotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Text/DE_DE/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
@@ -782,6 +846,16 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/PL_PL/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/RU_RU/FreeResearchBalance.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -821,7 +895,17 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/UITradeOpportunities.xml</FileName>
+        <FileName>Text/RU_RU/MapPins.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/MapPins.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/DE_DE/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -831,32 +915,37 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/UITradeOpportunities.xml</FileName>
+        <FileName>Text/ES_ES/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/UITradeOpportunities.xml</FileName>
+        <FileName>Text/FR_FR/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/UITradeOpportunities.xml</FileName>
+        <FileName>Text/IT_IT/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/UITradeOpportunities.xml</FileName>
+        <FileName>Text/JA_JP/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/UITradeOpportunities.xml</FileName>
+        <FileName>Text/PL_PL/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/FreeResearchBalance.xml</FileName>
+        <FileName>Text/RU_RU/TradeOpportunities.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/TradeOpportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -897,6 +986,11 @@ This is currently a beta test version. The expansion and pre-expansion game use 
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Text/RU_RU/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/ZH_CN/YieldLibrary.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1955,6 +2049,70 @@ This is currently a beta test version. The expansion and pre-expansion game use 
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Text\ZH_CN\AutoTips_Help.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\AutoTips_Tips.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\CopaseticUITweaks.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\Core.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\CsebExtendedPlotMouseover.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\CustomNotifications.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\Diplomacy.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\ExtraDiplomacyText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\FlagPromotions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\FreeResearchBalance.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\MapPins.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\TradeOpportunities.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\Triggers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\UnitTrees.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\Villages.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\ZH_CN\YieldLibrary.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="TunerMods\Map.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2013,6 +2171,7 @@ This is currently a beta test version. The expansion and pre-expansion game use 
     <Folder Include="Text\JA_JP" />
     <Folder Include="Text\PL_PL" />
     <Folder Include="Text\RU_RU" />
+    <Folder Include="Text\ZH_CN" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
