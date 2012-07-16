@@ -97,6 +97,11 @@ Type text,
 Value variant default 0
 );
 
+CREATE TABLE IF NOT EXISTS Language_zh_CN  (
+Tag text,
+Text text
+);
+
 CREATE TABLE IF NOT EXISTS Personalities (
 Type text
 );

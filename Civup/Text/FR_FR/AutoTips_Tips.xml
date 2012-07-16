@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysUs -->
 <GameData>
 	<Language_fr_FR>
 		<!--
@@ -9,10 +9,10 @@
 			<Text>[ICON_GOLD] Entretien: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_UNIT_HURRY_COST_MODIFIER">
-			<Text>[ICON_GOLD] Coût: {1_num}x</Text>
+			<Text>[ICON_GOLD] Co&#251;t: {1_num}x</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_UNIT_OBSOLETE_TECH">
-			<Text>[ICON_PIRATE] Obsolète: {1_techName}</Text>
+			<Text>[ICON_PIRATE] Obsol&#232;te: {1_techName}</Text>
 		</Row>
 
 
@@ -20,13 +20,13 @@
 				Buildings
 		-->
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_COST">
-			<Text>[ICON_PRODUCTION] Coût: {1_num}</Text>
+			<Text>[ICON_PRODUCTION] Co&#251;t: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NUM_CITY_COST_MOD">
-			<Text>[ICON_PRODUCTION] Coût: {2_sign}{1_num} pour chaque ville</Text>
+			<Text>[ICON_PRODUCTION] Co&#251;t: {2_sign}{1_num} pour chaque ville</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_POP_COST_MOD">
-			<Text>[ICON_PRODUCTION] Coût par [ICON_CITIZEN] Citoyen: {2_sign}{1_num}</Text>
+			<Text>[ICON_PRODUCTION] Co&#251;t par [ICON_CITIZEN] Citoyen: {2_sign}{1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLD_MAINTENANCE">
 			<Text>[ICON_GOLD] Entretien: {1_num}</Text>
@@ -59,7 +59,7 @@
 			<Text>[ICON_FOOD] Nourriture: {2_sign}{1_num} sur mer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FOOD_FROM_RIVERS">
-			<Text>[ICON_FOOD] Nourriture: {2_sign}{1_num} sur les rivières</Text>
+			<Text>[ICON_FOOD] Nourriture: {2_sign}{1_num} sur les rivi&#232;res</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FOOD_FROM_FEATURES">
 			<Text>[ICON_FOOD] Nourriture: {2_sign}{1_num} sur {3_FeatureString}</Text>
@@ -74,7 +74,7 @@
 			<Text>[ICON_FOOD] Nourriture: {2_sign}{1_num} des {3_SpecialistString} dans toutes les villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FOOD_KEPT">
-			<Text>[ICON_FOOD] Nourriture stockée: {1_num}%</Text>
+			<Text>[ICON_FOOD] Nourriture stock&#233;e: {1_num}%</Text>
 		</Row>
 		
 		<!-- Production -->
@@ -96,28 +96,28 @@
 			<Text>[ICON_PRODUCTION] Production en surplus: {2_sign}{1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MILITARY_PRODUCTION_MODIFIER">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unités militaires</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unit&#233;s militaires</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_DOMAIN_PRODUCTION_MODIFIER_LAND">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unités terrestres</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unit&#233;s terrestres</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_DOMAIN_PRODUCTION_MODIFIER_SEA">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unités navales</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unit&#233;s navales</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_DOMAIN_PRODUCTION_MODIFIER_AIR">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unités aériennes</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les unit&#233;s a&#233;riennes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_COMBAT_PRODUCTION_MODIFIER">
 			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour {3_type}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_BUILDING_PRODUCTION_MODIFIER">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les bâtiments</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les b&#226;timents</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_WONDER_PRODUCTION_MODIFIER">
 			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les Merveilles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SPACE_PRODUCTION_MODIFIER">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les pièces de vaisseau spatial</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num}% pour les pi&#232;ces de vaisseau spatial</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION_PER_POP">
 			<Text>[ICON_PRODUCTION] Production par [ICON_CITIZEN] Citoyen: {1_num}</Text>
@@ -129,7 +129,7 @@
 			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} sur mer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION_FROM_RIVERS">
-			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} sur les rivières</Text>
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} sur les rivi&#232;res</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION_FROM_FEATURES">
 			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} sur {3_FeatureString}</Text>
@@ -172,7 +172,7 @@
 			<Text>[ICON_GOLD] Or: {2_sign}{1_num} sur mer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLD_FROM_RIVERS">
-			<Text>[ICON_GOLD] Or: {2_sign}{1_num} sur les rivières</Text>
+			<Text>[ICON_GOLD] Or: {2_sign}{1_num} sur les rivi&#232;res</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLD_FROM_FEATURES">
 			<Text>[ICON_GOLD] Or: {2_sign}{1_num} sur {3_FeatureString}</Text>
@@ -190,7 +190,7 @@
 			<Text>[ICON_GOLD] Bonus d'or d'un personnage illustre: {2_sign}{1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HURRY_MODIFIER">
-			<Text>[ICON_GOLD] Coûts d'achat: {2_sign}{1_num}% dans toutes les villes</Text>
+			<Text>[ICON_GOLD] Co&#251;ts d'achat: {2_sign}{1_num}% dans toutes les villes</Text>
 		</Row>
 		
 		<!-- Science -->
@@ -221,7 +221,7 @@
 			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} sur mer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SCIENCE_FROM_RIVERS">
-			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} sur les rivières</Text>
+			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} sur les rivi&#232;res</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SCIENCE_FROM_FEATURES">
 			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} sur {3_FeatureString}</Text>
@@ -246,7 +246,7 @@
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE" />
-			<Set Text="[ICON_CULTURE] Culture instantanée: {2_sign}{1_num}" />
+			<Set Text="[ICON_CULTURE] Culture instantan&#233;e: {2_sign}{1_num}" />
 		</Update>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE_GLOBAL">
 			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num}% dans toutes les villes</Text>
@@ -267,7 +267,7 @@
 			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} sur mer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE_FROM_RIVERS">
-			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} sur les rivières</Text>
+			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} sur les rivi&#232;res</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE_FROM_FEATURES">
 			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} sur {3_FeatureString}</Text>
@@ -289,7 +289,7 @@
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH" />
-			<Set Text="[ICON_PEACE] Foi instantanée: {2_sign}{1_num}" />
+			<Set Text="[ICON_PEACE] Foi instantan&#233;e: {2_sign}{1_num}" />
 		</Update>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH_GLOBAL">
 			<Text>[ICON_PEACE] Foi: {2_sign}{1_num}% dans toutes les villes</Text>
@@ -310,7 +310,7 @@
 			<Text>[ICON_PEACE] Foi: {2_sign}{1_num} sur mer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH_FROM_RIVERS">
-			<Text>[ICON_PEACE] Foi: {2_sign}{1_num} sur les rivières</Text>
+			<Text>[ICON_PEACE] Foi: {2_sign}{1_num} sur les rivi&#232;res</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH_FROM_FEATURES">
 			<Text>[ICON_PEACE] Foi: {2_sign}{1_num} sur {3_FeatureString}</Text>
@@ -359,38 +359,38 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_UNHAPPINESS_MODIFIER">
-			<Text>{2_sign}{1_num}% [ICON_HAPPINESS_4] Mécontentement produit par la [ICON_CITIZEN] Population dans des villes non occupées.</Text>
+			<Text>{2_sign}{1_num}% [ICON_HAPPINESS_4] M&#233;contentement produit par la [ICON_CITIZEN] Population dans des villes non occup&#233;es.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NO_OCCUPIED_UNHAPPINESS">
 			<Text>[ICON_OCCUPIED] Fin de l'occupation dans cette ville</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NO_OCCUPIED_UNHAPPINESS_EXTRA">
-			<Text>[ICON_OCCUPIED] Les villes occupées et [ICON_PUPPET] fantoches ont un rendement -25% plus bas qu'une ville normale.</Text>
+			<Text>[ICON_OCCUPIED] Les villes occup&#233;es et [ICON_PUPPET] fantoches ont un rendement -25% plus bas qu'une ville normale.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_PRODUCTION_BUILDING_DEFENSE" />
-			<Set Text="[ICON_STRENGTH] Défense: {1_num}" />
+			<Set Text="[ICON_STRENGTH] D&#233;fense: {1_num}" />
 		</Update>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GLOBAL_DEFENSE_MOD">
-			<Text>[ICON_STRENGTH] Défense: {2_sign}{1_num}% dans toutes les villes</Text>
+			<Text>[ICON_STRENGTH] D&#233;fense: {2_sign}{1_num}% dans toutes les villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXPERIENCE">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} pour toutes les unités</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} pour toutes les unit&#233;s</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXPERIENCE_LAND">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} pour les unités terrestres</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} pour les unit&#233;s terrestres</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXPERIENCE_SEA">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} pour les unités navales</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} pour les unit&#233;s navales</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXPERIENCE_AIR">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} pour les unités aériennes</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} pour les unit&#233;s a&#233;riennes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GLOBAL_EXPERIENCE">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} dans toutes les villes</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} dans toutes les villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXPERIENCE_PER_TURN">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} par tour dans cette ville</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} par tour dans cette ville</Text>
 		</Row>
 
 
@@ -398,10 +398,10 @@
 			<Text>{1_name}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FREE_PROMOTION_ALL_COMBAT_UNITS">
-			<Text>Chaque unité: {1_name}</Text>
+			<Text>Chaque unit&#233;: {1_name}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRAINED_FREE_PROMOTION">
-			<Text>[ICON_WAR] Unités entraînées ici: {1_name}</Text>
+			<Text>[ICON_WAR] Unit&#233;s entra&#238;n&#233;es ici: {1_name}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FREE_UNITS">
 			<Text>[ICON_TEAM_2] Sans frais {3_type}s: {1_num}</Text>
@@ -416,40 +416,40 @@
 			<Text>[ICON_CAPITAL] Capitale</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CAPITAL_EXTRA">
-			<Text>Un réseau continu de [ICON_CONNECTED] voies ferrées ou de cases d'eau vers la [ICON_CAPITAL] Capitale procure [ICON_GOLD].[NEWLINE][NEWLINE]Un réseau continu de [ICON_CONNECTED] voies ferrées ou de cases d'eau vers la [ICON_CAPITAL] Capitale procure +25% [ICON_PRODUCTION] (requiert la technologie Voies Ferrées).[NEWLINE][NEWLINE]Une [ICON_CONNECTED] route commerciale peut seulement se propager entre l'eau et la terre à l'aide d'un Port.</Text>
+			<Text>Un r&#233;seau continu de [ICON_CONNECTED] voies ferr&#233;es ou de cases d'eau vers la [ICON_CAPITAL] Capitale procure [ICON_GOLD].[NEWLINE][NEWLINE]Un r&#233;seau continu de [ICON_CONNECTED] voies ferr&#233;es ou de cases d'eau vers la [ICON_CAPITAL] Capitale procure +25% [ICON_PRODUCTION] (requiert la technologie Voies Ferr&#233;es).[NEWLINE][NEWLINE]Une [ICON_CONNECTED] route commerciale peut seulement se propager entre l'eau et la terre &#224; l'aide d'un Port.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLDEN_AGE">
-			<Text>[ICON_GOLDEN_AGE] Déclenche un Âge d'Or</Text>
+			<Text>[ICON_GOLDEN_AGE] D&#233;clenche un &#194;ge d'Or</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MAP_CENTERING">
 			<Text>[ICON_BULLET] Centre la carte du Monde</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ALLOWS_WATER_ROUTES">
-			<Text>[ICON_CONNECTED] Relie l'eau à la terre pour les routes commerciales</Text>
+			<Text>[ICON_CONNECTED] Relie l'eau &#224; la terre pour les routes commerciales</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ALLOWS_WATER_ROUTES_EXTRA">
-			<Text>Clic droit pour obtenir des détails sur les routes commerciales.</Text>
+			<Text>Clic droit pour obtenir des d&#233;tails sur les routes commerciales.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_LUXURIES">
-			<Text>[ICON_CONNECTED] Double les ressources de luxe près de la ville</Text>
+			<Text>[ICON_CONNECTED] Double les ressources de luxe pr&#232;s de la ville</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_DIPLOMATIC_VOTING">
-			<Text>[ICON_OMEGA] [COLOR_POSITIVE_TEXT]Déclenche le vote pour la Victoire Diplomatique![/COLOR]</Text>
+			<Text>[ICON_OMEGA] [COLOR_POSITIVE_TEXT]D&#233;clenche le vote pour la Victoire Diplomatique![/COLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HURRY_COST_MODIFIER">
 			<Text>[ICON_GOLD] Achat: {1_num}x</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GREAT_GENERAL_RATE_MODIFIER">
-			<Text>[ICON_WAR] Taux du Général Illustre: {2_sign}{1_num}%</Text>
+			<Text>[ICON_WAR] Taux du G&#233;n&#233;ral Illustre: {2_sign}{1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLDEN_AGE_MODIFIER">
-			<Text>[ICON_GOLDEN_AGE] Âges d'Or: {2_sign}{1_num}% durée</Text>
+			<Text>[ICON_GOLDEN_AGE] &#194;ges d'Or: {2_sign}{1_num}% dur&#233;e</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_UNIT_UPGRADE_COST_MOD">
-			<Text>[ICON_WAR] Coût de l'amélioration: {2_sign}{1_num}% pour toutes les unités</Text>
+			<Text>[ICON_WAR] Co&#251;t de l'am&#233;lioration: {2_sign}{1_num}% pour toutes les unit&#233;s</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CITY_COUNT_UNHAPPINESS_MOD">
-			<Text>[ICON_HAPPINESS_4] {2_sign}{1_num}% Mécontentement par rapport au nombre de villes</Text>
+			<Text>[ICON_HAPPINESS_4] {2_sign}{1_num}% M&#233;contentement par rapport au nombre de villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_WORKER_SPEED_MODIFIER">
 			<Text>[ICON_TRADE_WHITE] Vitesse de travail de l'ouvrier: {2_sign}{1_num}%</Text>
@@ -461,19 +461,19 @@
 			<Text>[ICON_RESISTANCE] Les ennemis pillent un bonus d'or: {2_sign}{1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_POLICY_COST_MODIFIER">
-			<Text>[ICON_CULTURE] Coût de la culture des doctrines: {2_sign}{1_num}%</Text>
+			<Text>[ICON_CULTURE] Co&#251;t de la culture des doctrines: {2_sign}{1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PLOT_CULTURE_COST_MODIFIER">
-			<Text>[ICON_CULTURE] Coût de croissance des frontières: {2_sign}{1_num}%</Text>
+			<Text>[ICON_CULTURE] Co&#251;t de croissance des fronti&#232;res: {2_sign}{1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GLOBAL_PLOT_CULTURE_COST_MODIFIER">
-			<Text>[ICON_CULTURE] Coût de croissance des frontières: {2_sign}{1_num}% dans toutes les villes</Text>
+			<Text>[ICON_CULTURE] Co&#251;t de croissance des fronti&#232;res: {2_sign}{1_num}% dans toutes les villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PLOT_BUY_COST_MODIFIER">
-			<Text>[ICON_CULTURE] Coût d'achat de terrain: {2_sign}{1_num}%</Text>
+			<Text>[ICON_CULTURE] Co&#251;t d'achat de terrain: {2_sign}{1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GLOBAL_PLOT_BUY_COST_MODIFIER">
-			<Text>[ICON_CULTURE] Coût d'achat de terrain: {2_sign}{1_num}% dans toutes les villes</Text>
+			<Text>[ICON_CULTURE] Co&#251;t d'achat de terrain: {2_sign}{1_num}% dans toutes les villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_POPULATION_CHANGE">
 			<Text>[ICON_CITIZEN] Population: {2_sign}{1_num}</Text>
@@ -488,45 +488,48 @@
 			<Text>[ICON_TEAM_6] Doctrines sociales gratuites: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_BORDER_OBSTACLE">
-			<Text>[ICON_MOVES] Ralenti les ennemis en territoire allié</Text>
+			<Text>[ICON_MOVES] Ralenti les ennemis en territoire alli&#233;</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_AIR_MODIFIER">
-			<Text>[ICON_RANGE_STRENGTH] Dommage: {2_sign}{1_num}% des unités aériennes</Text>
+			<Text>[ICON_RANGE_STRENGTH] Dommage: {2_sign}{1_num}% des unit&#233;s a&#233;riennes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NUKE_MODIFIER">
-			<Text>[ICON_RANGE_STRENGTH] Dommage: {2_sign}{1_num}% des armes nucléaires</Text>
+			<Text>[ICON_RANGE_STRENGTH] Dommage: {2_sign}{1_num}% des armes nucl&#233;aires</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FREE_BUILDING">
-			<Text>[ICON_TEAM_9] Bâtiment gratuit: {1_name}</Text>
+			<Text>[ICON_TEAM_9] B&#226;timent gratuit: {1_name}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FREE_BUILDING_THIS_CITY">
-			<Text>[ICON_TEAM_9] Bâtiment gratuit: {1_name}</Text>
+			<Text>[ICON_TEAM_9] B&#226;timent gratuit: {1_name}</Text>
 		</Row>
 
 
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_WATER">
-			<Text>[ICON_LOCKED] Doit être près de la côte.</Text>
+			<Text>[ICON_LOCKED] Doit &#234;tre pr&#232;s de la c&#244;te.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_RIVER">
-			<Text>[ICON_LOCKED] Doit être sur une rivière.</Text>
+			<Text>[ICON_LOCKED] Doit &#234;tre sur une rivi&#232;re.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FRESH_WATER">
-			<Text>[ICON_LOCKED] Doit être près d'une rivière ou d'un lac.</Text>
+			<Text>[ICON_LOCKED] Doit &#234;tre pr&#232;s d'une rivi&#232;re ou d'un lac.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MOUNTAIN">
-			<Text>[ICON_LOCKED] Doit être près d'une montagne.</Text>
+			<Text>[ICON_LOCKED] Doit &#234;tre pr&#232;s d'une montagne.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NEARBY_TERRAIN_REQUIRED">
-			<Text>[ICON_LOCKED] Doit être sur ou près de {1_type}.</Text>
+			<Text>[ICON_LOCKED] Doit &#234;tre sur ou pr&#232;s de {1_type}.</Text>
+		</Row>
+                <Row Tag="TXT_KEY_PRODUCTION_BUILDING_PROHIBITED_CITY_TERRAIN">
+			<Text>[ICON_LOCKED] Ne doit pas &#234;tre sur {1_text}.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NEARBY_MOUNTAIN_REQUIRED">
-			<Text>[ICON_LOCKED] Distance de 2 cases maximum requise d'une montagne dans les frontières culturelles.</Text>
+			<Text>[ICON_LOCKED] Distance de 2 cases maximum requise d'une montagne dans les fronti&#232;res culturelles.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HILL">
-			<Text>[ICON_LOCKED] Doit être sur une colline.</Text>
+			<Text>[ICON_LOCKED] Doit &#234;tre sur une colline.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FLAT">
-			<Text>[ICON_LOCKED] Ne doit pas être sur une colline.</Text>
+			<Text>[ICON_LOCKED] Ne doit pas &#234;tre sur une colline.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_REQUIRES_BUILDING">
 			<Text>[ICON_LOCKED] Requiert: {1_type}</Text>
@@ -538,10 +541,10 @@
 			<Text>[ICON_LOCKED] Requiert: {1_type} dans {2_num}% de villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_REQUIRES_NEAR_ALL">
-			<Text>[ICON_LOCKED] Requiert tout près: {1_resourceList}</Text>
+			<Text>[ICON_LOCKED] Requiert tout pr&#232;s: {1_resourceList}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_REQUIRES_NEAR_ANY">
-			<Text>[ICON_LOCKED] Requiert toute proximité: {1_resourceList}</Text>
+			<Text>[ICON_LOCKED] Requiert toute proximit&#233;: {1_resourceList}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_REQUIRES_RESOURCE_CONSUMPTION">
 			<Text>[ICON_LOCKED] Utilise: {1_resourceList}</Text>
@@ -551,53 +554,53 @@
 			<Set Text="[ICON_LOCKED] Utilise:" />
 		</Update>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_OBSOLETE_TECH">
-			<Text>[ICON_PIRATE] Obsolète: {1_techName}</Text>
+			<Text>[ICON_PIRATE] Obsol&#232;te: {1_techName}</Text>
 		</Row>
 		
 		<!--
 				New
 		-->
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HEAL_RATE_CHANGE">
-			<Text>[ICON_PLUS] Taux de guérison: {1_num}</Text>
+			<Text>[ICON_PLUS] Taux de gu&#233;rison: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MINOR_FRIENDSHIP_CHANGE">
-			<Text>[ICON_INFLUENCE] Influence: +{1_num}% avec toutes les Cités-États</Text>
+			<Text>[ICON_INFLUENCE] Influence: +{1_num}% avec toutes les Cit&#233;s-&#201;tats</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MINOR_FRIENDSHIP_FLAT_CHANGE">
-			<Text>[ICON_INFLUENCE] Influence: +{1_num} avec toutes les Cités-États</Text>
+			<Text>[ICON_INFLUENCE] Influence: +{1_num} avec toutes les Cit&#233;s-&#201;tats</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_REQUIRES_TECH">
 			<Text>[ICON_LOCKED] Requiert: {1_type}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXPERIENCE_COMBAT">
-			<Text>[ICON_WAR] Expérience: {2_sign}{1_num} pour {3_type}</Text>
+			<Text>[ICON_WAR] Exp&#233;rience: {2_sign}{1_num} pour {3_type}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_INSTANT_BORDER_RADIUS">
-			<Text>[ICON_CULTURE] Expansion de la frontière: {1_num} case de distance</Text>
+			<Text>[ICON_CULTURE] Expansion de la fronti&#232;re: {1_num} case de distance</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GLOBAL_INSTANT_BORDER_RADIUS">
-			<Text>[ICON_CULTURE] Expansion de la frontière: {1_num} dans toutes les villes</Text>
+			<Text>[ICON_CULTURE] Expansion de la fronti&#232;re: {1_num} dans toutes les villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MOUNTAIN_IMPROVEMENT">
-			<Text>[ICON_TRADE_WHITE] Améliore une montagne</Text>
+			<Text>[ICON_TRADE_WHITE] Am&#233;liore une montagne</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CITY_CAPTURE_CULTURE">
-			<Text>[ICON_CULTURE] Culture pillée des villes conquises</Text>
+			<Text>[ICON_CULTURE] Culture pill&#233;e des villes conquises</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GREAT_GENERAL_RATE_CHANGE">
-			<Text>[ICON_GREAT_PEOPLE] Points du Général Illustre: {1_type}</Text>
+			<Text>[ICON_GREAT_PEOPLE] Points du G&#233;n&#233;ral Illustre: {1_type}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_TRADE_DEAL_MODIFIER">
 			<Text>[ICON_TRADE] Bonus d'un accord commercial: {2_sign}{1_type}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_INSTANT_HAPPINESS">
-			<Text>[ICON_GOLDEN_AGE] Points d'Âge d'Or instantanés: {1_num}</Text>
+			<Text>[ICON_GOLDEN_AGE] Points d'&#194;ge d'Or instantan&#233;s: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLDEN_AGE_POINTS">
-			<Text>[ICON_GOLDEN_AGE] Points d'Âge d'Or: {1_num}</Text>
+			<Text>[ICON_GOLDEN_AGE] Points d'&#194;ge d'Or: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ALREADY_BUILT">
-			<Text>[ICON_LOCKED] Déjà construit</Text>
+			<Text>[ICON_LOCKED] D&#233;j&#224; construit</Text>
 		</Row>
 
                 <!--
@@ -613,13 +616,13 @@
 			<Text>[ICON_BULLET] Obstacle frontalier: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NUKE_IMMUNE">
-			<Text>[ICON_BULLET] Résiste aux armes nucléaires: {1_num}</Text>
+			<Text>[ICON_BULLET] R&#233;siste aux armes nucl&#233;aires: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_AFFECT_SPIES_NOW">
 			<Text>[ICON_BULLET] Affecte les espions maintenant: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_UNLOCKED_BY_BELIEF">
-			<Text>[ICON_BULLET] Débloqué par la croyance: {1_num}</Text>
+			<Text>[ICON_BULLET] D&#233;bloqu&#233; par la croyance: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MIN_AREA_SIZE">
 			<Text>[ICON_LOCKED] Taille de la zone minimale: {1_num}</Text>
@@ -631,10 +634,10 @@
 			<Text>[ICON_LOCKED] Requiert le niveau: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_AIRLIFT">
-			<Text>[ICON_BULLET] Transport aérien</Text>
+			<Text>[ICON_BULLET] Transport a&#233;rien</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_NUKE_EXPLOSION_RAND">
-			<Text>[ICON_BULLET] Peut causer une explosion nucléaire</Text>
+			<Text>[ICON_BULLET] Peut causer une explosion nucl&#233;aire</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ALLOWS_RANGE_STRIKE">
 			<Text>[ICON_BULLET] Permet d'attaquer les villes</Text>
@@ -643,10 +646,10 @@
 			<Text>[ICON_BULLET] Espionnage: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_CITY_HIT_POINTS">
-			<Text>[ICON_BULLET] Santé de la ville: {2_sign}{1_num}</Text>
+			<Text>[ICON_BULLET] Sant&#233; de la ville: {2_sign}{1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_MISSIONARY_SPREADS">
-			<Text>[ICON_BULLET] Propagation supplémentaire du missionnaire: {1_num}</Text>
+			<Text>[ICON_BULLET] Propagation suppl&#233;mentaire du missionnaire: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ESPIONAGE_MODIFIER">
 			<Text>[ICON_BULLET] Espionnage: {2_sign}{1_num}%</Text>
@@ -661,16 +664,13 @@
 			<Text>[ICON_BULLET] Rang de l'espion: {2_sign}{1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_INSTANT_SPY_RANK_CHANGE">
-			<Text>[ICON_BULLET] Rang de l'espion instantané: {2_sign}{1_num}</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PROHIBITED_CITY_TERRAIN">
-			<Text>[ICON_BULLET] Terrain interdit: {1_text}</Text>
+			<Text>[ICON_BULLET] Rang de l'espion instantan&#233;: {2_sign}{1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_REPLACEMENT_BUILDING_CLASS">
-			<Text>[ICON_BULLET] Remplace un bâtiment: {1_text}</Text>
+			<Text>[ICON_BULLET] Remplace un b&#226;timent: {1_text}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SPECIALIST_EXTRA_CULTURE">
-			<Text>[ICON_BULLET] Spécialiste Extra Culture: {1_num}</Text>
+			<Text>[ICON_BULLET] Sp&#233;cialiste Extra Culture: {1_num}</Text>
 		</Row>
 	</Language_fr_FR>
 </GameData>

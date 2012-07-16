@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_zh_CN>
+		<Row Tag="TXT_KEY_SORT_BY_TRAIT" >
+			<Text>按特性排序</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_CS_NAME" >
+			<Text>按城邦名字排序</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_CS_ALLY" >
+			<Text>按城邦关系排序</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_INFLUENCE" >
+			<Text>按城邦影响力排序</Text>
+		</Row>
+		
+
+		<Row Tag="TXT_KEY_DO_REFRESH" >
+			<Text>刷新</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_STATUS" >
+			<Text>交易</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESOURCE">
+			<Text>{1_iconstring}{2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_FROM">
+			<Text>{1_iconstring}购买{2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_TO">
+			<Text>{1_iconstring}销售{2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_DEMANDED_BY" >
+			<Text>被要求</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POSSIBLE_DEALS" >
+			<Text>{1_iconstring}[COLOR_POSITIVE_TEXT]{2_num}[ENDCOLOR]可以提出{3_type}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CIV_STATUS" >
+			<Text>{1_status}[NEWLINE]{1_era}[NEWLINE]分数{2_Num}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_RATE" >
+			<Text>速率</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CLICK_TO_TRADE" >
+			<Text>[COLOR_POSITIVE_TEXT]点击查看交易情况[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LASTS_TURNS" >
+			<Text>剩余{1_num}回合</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_BORDER_AGREEMENT" >
+			<Text>[COLOR_YIELD_GOLD]开放边境协议[ENDCOLOR][NEWLINE]1%的双方玩家累积总收入可以增加到你的[ICON_GOLD]每回合金钱（友谊声明后为2%）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_YES_TT" >
+			<Text>[COLOR_YIELD_GOLD]提出开放边境协议[ENDCOLOR][NEWLINE]1%的双方玩家累积总收入可以增加到你的[ICON_GOLD]每回合金钱（友谊声明后为2%）[NEWLINE][NEWLINE]剩余{1_num}回合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_NO_TT" >
+			<Text>开放边境协议生效</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_US_TT" >
+			<Text>他们允许我们过境</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_THEM_TT" >
+			<Text>我们允许他们过境</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESEARCH_AGREEMENT" >
+			<Text>[COLOR_RESEARCH_STORED]科研协定[ENDCOLOR][NEWLINE]3%的双方玩家累积总科研可以增加到你的[ICON_RESEARCH]每回合科研（友谊声明后为6%）</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_YES_TT" >
+			<Text>[COLOR_RESEARCH_STORED]提出科研协定[ENDCOLOR][NEWLINE]3%的双方玩家累积总科研可以增加到你的[ICON_RESEARCH]每回合科研（友谊声明后为6%）[NEWLINE][NEWLINE]剩余{1_num}回合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_NO_TT" >
+			<Text>科研协定生效</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DEFENSIVE_PACT" >
+			<Text>[COLOR_CITY_BROWN]防御协定[ENDCOLOR][NEWLINE]假如第三方对任何玩家宣战，两个玩家会同时向第三方宣战</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_YES_TT" >
+			<Text>[COLOR_CITY_BROWN]提出防御协定[ENDCOLOR][NEWLINE]假如第三方对任何玩家宣战，两个玩家会同时向第三方宣战[NEWLINE][NEWLINE]剩余{1_num}回合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_NO_TT" >
+			<Text>防御协定生效</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_GOLD_STORED" >
+			<Text>金钱储备</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_GOLD_PROFIT" >
+			<Text>金钱收益</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DEAL_ALLIANCE" >
+			<Text>[COLOR_GREEN]友谊声明[ENDCOLOR][NEWLINE]开放边境协议和科研协定所获得的好处双倍，双方友谊关系提升</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT" >
+			<Text>[COLOR_GREEN]提出友谊声明[ENDCOLOR][NEWLINE]开放边境协议和科研协定所获得的好处双倍，双方友谊关系提升[NEWLINE][NEWLINE]剩余{1_num}回合</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_NO_TT" >
+			<Text>我们已经声明友谊</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_US" >
+			<Text>[COLOR_ORANGE]他们谴责了我们[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_THEM" >
+			<Text>[COLOR_ORANGE]我们谴责了他们[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_BOTH" >
+			<Text>[COLOR_NEGATIVE_TEXT]我们谴责了他们[NEWLINE]他们谴责了我们[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_AT_WAR_LARGE" >
+			<Text>[COLOR_NEGATIVE_TEXT]- 战争状态 -[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_PEACE_TREATY" >
+			<Text>和平协议</Text>
+		</Row>	
+		
+
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS" >
+			<Text>城邦</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_CITY_STATE" >
+			<Text>城邦</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_ALLIED_WITH" >
+			<Text>盟友</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTED_BY" >
+			<Text>受保护</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUESTS" >
+			<Text>任务</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE" >
+			<Text>影响力</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
+			<Text>宣战</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_GOLD" >
+			<Text>赠送金钱</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECT_TT" >
+			<Text>{1}获得保护[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_PROTECT_TT" >
+			<Text>{1}没有任何保护者</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_TT" >
+			<Text>{1}要求我们[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_QUEST_TT" >
+			<Text>{1}没有任何要求</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_WAR_WITH_PLAYERS">
+			<Text>教训{1_PlayerNames}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_BARBARIANS">
+			<Text>杀死蛮族</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_ROUTE">
+			<Text>建造道路</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CAMP">
+			<Text>摧毁蛮族营地</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONNECT_RESOURCE">
+			<Text>连接{1_ResourceName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONSTRUCT_WONDER">
+			<Text>建造{1_WonderName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_GREAT_PERSON">
+			<Text>产生{1_UnitName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CITY_STATE">
+			<Text>消灭{1_CityStateName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_PLAYER">
+			<Text>找到{1_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_NATURAL_WONDER">
+			<Text>发现自然奇观</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PEACE_TT" >
+			<Text>战争中，可能和解</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR_TT" >
+			<Text>战争中，无法和解</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT" >
+			<Text>{1_Num}[ICON_GOLD]获得[COLOR_POSITIVE_TEXT]+{2_Num}影响力[ENDCOLOR]</Text>
+		</Row>
+	</Language_zh_CN>
+</GameData>

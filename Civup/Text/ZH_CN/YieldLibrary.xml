@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_zh_CN>
+		<!--
+				Yield Breakdown Tooltip
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_CULTURE_WONDER_BONUS" />
+			<Set Text="+{1_Num}% 来自世界级奇观" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CULTURE_CITY_MOD" />
+			<Set Text="+{1_Num}% 来自城市" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CULTURE_PLAYER_MOD" />
+			<Set Text="+{1_Num}% 来自文明" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOOD_USAGE" />
+			<Set Text="([COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR][ICON_CITIZEN]市民消耗)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_CAPITAL" />
+			<Set Text="[NEWLINE][ICON_BULLET][ICON_CAPITAL]首都修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_UNHAPPY" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4]不满修正: {1_Num}%[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_WLTKD" />
+			<Set Text="[NEWLINE][ICON_BULLET]我们爱领袖日修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_FOOD_CONVERSION" />
+			<Set Text="[NEWLINE][ICON_BULLET]来自额外的[ICON_FOOD]食物: +{1_Num}[ICON_PRODUCTION]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_RAILROAD_CONNECTION" />
+			<Set Text="[NEWLINE][ICON_BULLET]铁路连接修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_DOMAIN" />
+			<Set Text="[NEWLINE][ICON_BULLET]单位领域修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_COMBAT_TYPE" />
+			<Set Text="[NEWLINE][ICON_BULLET]单位战斗类型修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_MILITARY" />
+			<Set Text="[NEWLINE][ICON_BULLET]军事单位修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_WITH_BUILDING" />
+			<Set Text="[NEWLINE][ICON_BULLET]{2_BuildingName}修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_CITY" />
+			<Set Text="[NEWLINE][ICON_BULLET]城市级修正(奇观): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(奇观): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_LOCAL_RES" />
+			<Set Text="[NEWLINE][ICON_BULLET]奇观修正({2_ResourceName}): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_CITY" />
+			<Set Text="[NEWLINE][ICON_BULLET]建筑修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]特质修正([ICON_CAPITAL]首都建筑): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SPACE" />
+			<Set Text="[NEWLINE][ICON_BULLET]太空飞船修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_SUPPLY" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(单位维持): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_MILITARY_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(军事单位): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SETTLER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(移民): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_SETTLER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]首都修正(移民): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_RELIGION_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(宗教建筑): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_COBMAT_CLASS_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(单位战斗类型): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]特质修正(单位类型): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]特质修正(建筑): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_POLICY" />
+			<Set Text="[NEWLINE][ICON_BULLET]政策修正(奇观): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_POLICY" />
+			<Set Text="[NEWLINE][ICON_BULLET]政策修正(建筑): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WORLD_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(世界级奇观): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_TEAM_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(组队级奇观){1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_NATIONAL_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(国家级奇观): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_POLICY_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]政策全文明修正(建筑): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SPACE_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(太空飞船): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SPECIALIST_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]全文明修正(专业人员): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD" />
+			<Set Text="[NEWLINE][ICON_BULLET]城市级修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_RESOURCES" />
+			<Set Text="[NEWLINE][ICON_BULLET]城市级修正(资源): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
+			<Set Text="[NEWLINE][ICON_BULLET]城市级修正(快乐): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_AREA" />
+			<Set Text="[NEWLINE][ICON_BULLET]城市级修正(地域): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]杂项玩家修正: {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_CAPITAL" />
+			<Set Text="[NEWLINE][ICON_BULLET]城市级修正([ICON_CAPITAL]首都): {1_Num}%" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_GOLDEN_AGE" />
+			<Set Text="[NEWLINE][ICON_BULLET]黄金时代修正: {1_Num}%" />
+		</Update>
+		
+		
+		<!--
+				Misc
+		-->
+		
+		<Row Tag="TXT_KEY_YIELD_BREAKDOWN">
+			<Text>[{1_color}]{2_stored}[ENDCOLOR]/[{1_color}]{3_needed}[ENDCOLOR] (每回合[{1_color}]+{4_rate}[ENDCOLOR]) {5_icon} {6_desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_LAW" >
+			<Text>法律</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_TOPIC_POPULATION" >
+			<Text>人口</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_CS_MILITARY" >
+			<Text>点 (每回合) </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PER_CITY">
+			<Text>(每座城市)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPLIT_AMONG_CITIES">
+			<Text>分散在你的各城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MILITARY_UNIT_REWARDS">
+			<Text>军事单位</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_HAPPINESS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR][ICON_RESEARCH] 来自{1_Num}[ICON_HAPPINESS_1]快乐"/>
+		</Update>
+		<Row Tag="TXT_KEY_TP_SCIENCE_FROM_UNHAPPINESS" >
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-{1_Num}%[ENDCOLOR][ICON_RESEARCH] 来自{1_Num}[ICON_HAPPINESS_4]不满</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FOR_FREE">
+			<Text>{1_Num}免费</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_OPEN_BORDERS">
+			<Text>{1_Num}来自开放边境协议</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_HAPPINESS_DIFFICULTY_LEVEL"/>
+			<Set Text="{1_Num}来自所选难度"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_RESEARCH_AGREEMENTS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR][ICON_RESEARCH] 来自科研协定"/>
+		</Update>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_LUXURIES">
+			<Text>{1_Num}来自奢侈品资源</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_POLICIES">
+			<Text>{1_Num}来自社会政策</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_POLICIES">
+			<Text>{1_Num}{2_icon} 来自社会政策</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_TRAITS">
+			<Text>{1_Num}{2_icon} 来自特质</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_PROCESSES">
+			<Text>{1_Num}{2_IconString} 来自转化</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_MINOR_CIVS">
+			<Text>{1_num}{2_icon} 来自城邦</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_FOCUS" >
+			<Text>{2_icon}城类型修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_POPULATION" >
+			<Text>[ICON_CITIZEN]城人口修正: {1_num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_NOT_CONNECTED" >
+			<Text>[ICON_CONNECTED]城无道路修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RAZING" >
+			<Text>[ICON_RAZING]城摧毁修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RESISTANCE" >
+			<Text>[ICON_RESISTANCE]城抵抗修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_PUPPET" >
+			<Text>[ICON_PUPPET]城傀儡修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_OCCUPIED" >
+			<Text>[ICON_OCCUPIED]城占领修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_BLOCKADED" >
+			<Text>[ICON_BLOCKADED]城封锁修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_CAPITAL" >
+			<Text>[ICON_CAPITAL]城首都修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID" >
+			<Text>[ICON_MUSHROOM]城避免增长修正: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID_MANY" >
+			<Text>(超过{1_num}%的城市正避免增长)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_WEIGHT_TOTAL" >
+			<Text>{1_num}(城市)/{2_num}(文明) = {4_num}{5_icon}的{3_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_USAGE" >
+			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR]消耗)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_SURPLUS" >
+			<Text>{1_num}{2_icon}盈余</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_OTHER_YIELDS">
+			<Text>({1_num}{2_icon} + {3_num}{4_icon} {5_yieldstring})</Text>
+		</Row>
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER"/>
+			<Set Text="[NEWLINE][ICON_BULLET]社会政策修正: {1_num}%"/>
+		</Update>
+		-->
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_SETTLER_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]社会政策修正(移民): {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]社会政策修正: {1_Num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]建筑修正: {1_Num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]建筑修正([ICON_CAPITAL]首都建筑): {1_Num}%"/>
+		</Update>
+		<Row Tag="TXT_KEY_YIELD_MOD_GLOBAL_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]其他城市建筑修正: {1_Num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4]不满修正: {1_Num}%[ENDCOLOR]"/>
+		</Update>
+		<Row Tag="TXT_KEY_TP_YIELD_FOR_FREE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]{2_icon} 免费</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_CITIES">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]{2_icon} 来自城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_POLICIES">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]{2_icon} 来自社会政策</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_MINORS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]{2_icon} 来自城邦</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_HAPPINESS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]{2_icon} 来自额外的[ICON_HAPPINESS_1]快乐</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_RESEARCH_AGREEMENTS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR]{2_icon} 来自和其他玩家的科研协定</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE" />
+			<Set Text="全国的[ICON_RESEARCH]科研点数正投向当前的研究项目。"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NEXT_POLICY_TURN_LABEL" />
+			<Set Text="还需要{1_Num: number #}回合才能采纳新的社会政策"/>
+		</Update>
+	</Language_zh_CN>
+</GameData>

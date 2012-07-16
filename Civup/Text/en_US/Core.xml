@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_en_US>
+		<Row Tag="TXT_KEY_NEXT_GOLDEN_AGE_TURN_LABEL">
+			<Text>{1} turns left until the next [ICON_GOLDEN_AGE] Golden Age</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOGGLE_CLOCK_FORMAT">
+			<Text>Click to toggle 12/24 hour clock.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SAVE_DEBUG_OUTPUT">
+			<Text>Save debug information to lua.log</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEALS_BORDER">
+			<Text>border deals</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEALS_RESEARCH">
+			<Text>research deals</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEALS_DEFENSE">
+			<Text>defense pacts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEALS_ALLIANCE">
+			<Text>alliances</Text>
+		</Row>
+		
+
 		<Row Tag="TXT_KEY_PER_TURN">
 			<Text>per turn</Text>
 		</Row>
@@ -244,7 +267,7 @@
 			<Text>Improve Resources</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POP_CSTATE_IMPROVE_RESOURCES_TT">
-			<Text>Pay {1_num} [ICON_GOLD] Gold to a City-State Ally to immediately improve any unimproved or pillaged exportable resources the City-State controls.</Text>
+			<Text>Pay {1_num} [ICON_GOLD] Gold to a City-State ally to immediately improve any unimproved or pillaged exportable resources the City-State controls.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POP_CSTATE_YIELDS">
 			<Text>Yields:</Text>
@@ -493,7 +516,7 @@
 			<Text>New Unit</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT_HELP">
-			<Text></Text>
+			<Text>New Unit</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_50">
 			<Text>-50% Penalty on Defense</Text>

@@ -328,7 +328,7 @@
 			<Text>Any ally of {1_CivName} is a friend of mine.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_3">
-			<Text>Are you an Ally with {1_CivName}, too? You have made a wise decision.</Text>
+			<Text>Are you an ally with {1_CivName}, too? You have made a wise decision.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_4">
 			<Text>I see you've become Allies with my close friend, {1_CivName}. I foresee great things happening.</Text>
@@ -458,7 +458,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_2" />
-			<Set Text="It is important for our friends to believe we are unreservedly frank with them, and important to friendship that we are not. Would you care to Ally with us?" />
+			<Set Text="It is important for our friends to believe we are unreservedly frank with them, and important to friendship that we are not. Would you care to ally with us?" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_3" />

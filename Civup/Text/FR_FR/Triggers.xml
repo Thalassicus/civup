@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysUs -->
 <GameData>
 	<Language_fr_FR>
 		<Row Tag="TXT_KEY_USER_EVENT_OPTION_SELECT">
-			<Text>Sélection</Text>
+			<Text>S&#233;lection</Text>
 		</Row>
 		<Row Tag="TXT_KEY_USER_EVENT_OPTION_OK">
 			<Text>OK</Text>
@@ -15,10 +15,10 @@
 			<Text>Une ville distante</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DISTANT_UNIT">
-			<Text>Une unité distante</Text>
+			<Text>Une unit&#233; distante</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TRIGGER_YIELD_COST">
-			<Text>{1_iconstring} Coût: {2_sign}{3_num}</Text>
+			<Text>{1_iconstring} Co&#251;t: {2_sign}{3_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TRIGGER_YIELD_PER_TURN">
 			<Text>{1_iconstring} {2_yieldname}: {3_sign}{4_yield}</Text>

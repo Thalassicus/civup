@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_zh_CN>
+		<Row Tag="TXT_KEY_USER_EVENT_OPTION_SELECT">
+			<Text>选择</Text>
+		</Row>
+		<Row Tag="TXT_KEY_USER_EVENT_OPTION_OK">
+			<Text>好</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_DISTANT_PLAYER">
+			<Text>一个尚未遇见的玩家</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DISTANT_CITY">
+			<Text>一座遥远的城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DISTANT_UNIT">
+			<Text>遥远的单位</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_YIELD_COST">
+			<Text>{1_iconstring}花费: {2_sign}{3_num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_YIELD_PER_TURN">
+			<Text>{1_iconstring}{2_yieldname}: {3_sign}{4_yield}</Text>
+		</Row>
+	</Language_zh_CN>
+</GameData>

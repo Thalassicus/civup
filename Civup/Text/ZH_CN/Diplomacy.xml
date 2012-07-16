@@ -1,0 +1,1372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_zh_CN>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_SORRY" />
+			<Set Text="抱歉，这让我们产生了分歧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEAL" />
+			<Set Text="忘了它吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_OKAY" />
+			<Set Text="好吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_YOULL_PAY" />
+			<Set Text="你迟早会为此付出代价的。" />
+		</Update>
+		<!--First Greeting from leaders that don't have their own file yet-->
+		<!-- Misc stuff -->
+		<Update>
+			<Where Tag="TXT_KEY_DIPLOMACY_ANYTHING_ELSE" />
+			<Set Text="还有什么事？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLOMACY_DISCUSS_WHAT" />
+			<Set Text="你想谈什么？" />
+		</Update>
+		<!-- Human repeats an action too much, gets the following responses -->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TOO_MUCH" />
+			<Set Text="……" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TRADE_1" />
+			<Set Text="我不是已经说了你应该做得更好吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TRADE_2" />
+			<Set Text="我已经告诉你了，你要花点心思提出一个公平的交易。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_TRADE_3" />
+			<Set Text="你是不是故意提些我不能接受的交易？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_REPEAT_1" />
+			<Set Text="历史虽然无法重复，但却很有韵味。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_REPEAT_2" />
+			<Set Text="我刚刚走神了，你一定是很喜欢和我说话是吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_REPEAT_1" />
+			<Set Text="除了对我说废话，你还应去干点更有意义的事情。或者，你真没有什么事可干了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_REPEAT_2" />
+			<Set Text="有件事我绝对无法忍受，那就是子民正卑躬屈膝。" />
+		</Update>
+		<!-- Greetings -->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_1" />
+			<Set Text="这些是我的原则，假如你不喜欢，那么我还有些别的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_2" />
+			<Set Text="想交朋友很容易，但友谊就像慢慢成熟的果实。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_3" />
+			<Set Text="美酒可以带走一切痛苦和不安。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_POLITE_HELLO_4" />
+			<Set Text="下周不会有危机。因为我的日程表已经排满。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_1" />
+			<Set Text="每个人都应该有信仰。我的信仰就是我想要更多美酒。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_3" />
+			<Set Text="你想谈点什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_4" />
+			<Set Text="今天来干什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_5" />
+			<Set Text="请说吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_NEUTRAL_HELLO_6" />
+			<Set Text="让我们开始吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_1" />
+			<Set Text="假如无知是一种幸福，那么你现在一定正感觉狂喜。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_2" />
+			<Set Text="我可以成为你最好的朋友或最糟的敌人。有看起来想要后者。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_3" />
+			<Set Text="真可怕，你不能放聪明点吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_4" />
+			<Set Text="下次见到你的时候，请提醒我别跟你说话。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HELLO_5" />
+			<Set Text="我从没有忘记过一张脸，但对你我很愿意破例一次。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_1" />
+			<Set Text="我虽然不恐惧死亡，但当它真发生了我希望并不是我。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DESTRUCTION_LOOMS_2" />
+			<Set Text="我已经准备好见我的造物主。但我的造物主是否也准备了我的最后审判是另一问题。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_1" />
+			<Set Text="以眼还眼，世界只会更盲目活着。是否到了该结束这场战争的时候了？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_2" />
+			<Set Text="因为我知道什么是错误，我不会在我的信仰面前死亡。让我们和谈吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_WANTS_PEACE_3" />
+			<Set Text="我不希望和平后才能带来理解，我要的是理解带来的和平。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_1" />
+			<Set Text="来祈求仁慈吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_2" />
+			<Set Text="你还没丧生吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_3" />
+			<Set Text="你来干吗，想勒索我？" />
+		</Update>
+		<Row Tag="TXT_KEY_GENERIC_GREETING_AT_WAR_HOSTILE_4">
+			<Text>我的死亡报告被作假了。</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_RESEARCH_AGREEMENT_1" />
+			<Set Text="你好。合作研究进展的如何了？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_BROKEN_MILITARY_PROMISE_1" />
+			<Set Text="有什么事能让像你这样可耻的人来这里？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_WITH_1" />
+			<Set Text="和你一起工作总是很愉快。什么风把你吹来了？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_1" />
+			<Set Text="邪恶的{1_ThirdPlayerName:textkey}实在是令人头疼。你同意吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_2" />
+			<Set Text="你好。我的愿望是我们能尽快地彻底地搞定{1_ThirdPlayerName:textkey}。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_WORKING_AGAINST_3" />
+			<Set Text="有什么新计划去对付{1_ThirdPlayerName:textkey}吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_1" />
+			<Set Text="用不了多久，我们就会搞定{1_ThirdPlayerName:textkey}了。我能感觉到。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_2" />
+			<Set Text="我希望你和我一样希望{1_ThirdPlayerName:textkey}倒台。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_COOP_WAR_3" />
+			<Set Text="不久以后我们就能干净彻底地搞定{1_ThirdPlayerName:textkey}。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_AT_WAR_1" />
+			<Set Text="你的小小战争进行的如何？我不会去参加你的葬礼，但我会寄封措辞华丽的信件给你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HUMAN_AT_WAR_1" />
+			<Set Text="希望你在目前的冲突中保持好运。我能为你做什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_MILITARY_1" />
+			<Set Text="我看见你的军事力量到我的边界了。你是想愚蠢地威胁我还是想浪费我的时间？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_MILITARY_1" />
+			<Set Text="你的军事布置令我不安。我建议你为了未来的和平撤军。现在，你想说些什么吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_EXPANSION_1" />
+			<Set Text="你的城市和人民的扩张就像是瘟疫传染着大地。我不希望看到一个令人沮丧的未来。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_EXPANSION_1" />
+			<Set Text="既然有了这个机会，我想提醒一下你的扩张已经让我的官员们感到担心了。我希望将来不会造成任何麻烦。你想讨论什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_AGGRESSIVE_PLOT_BUYING_1" />
+			<Set Text="你那靠偷窃领土所建立的帝国彰显着你的贪婪。你知道总有一天会遭到报应的，对吧？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_AGGRESSIVE_PLOT_BUYING_1" />
+			<Set Text="最近你在我们领土附近圈占土地的趋势令人担心。为了我们未来的友谊，我建议你关注下这个事情。现在不说其他的，你来这里干什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_MILITARY_1" />
+			<Set Text="关于你的强大军力我早有耳闻。全世界的恶棍应该惧怕你的力量。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_FRIENDLY_STRONG_ECONOMY_1" />
+			<Set Text="你的帝国因强盛的经济而著名。或许某天你会想和朋友分享下成功的秘密？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_FEW_CITIES" />
+			<Set Text="一个小家伙来了，我们刚刚正在谈论你。都是坏事，我保证。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_SMALL_ARMY" />
+			<Set Text="只是你我之间说说，你的军队可是世界级的笑柄。但是你也别太担心，我肯定会有人帮你脱离苦海的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_HOSTILE_HUMAN_IS_WARMONGER" />
+			<Set Text="啊，嗜血者来了。想跟我谈些什么事情啊？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_BY_AI_1" />
+			<Set Text="你？你想要什么？我不想再和你这样的人打交道。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_BY_AI_2" />
+			<Set Text="你到这里来干什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_AI_1" />
+			<Set Text="啊，好吧。现在你想谈谈了，嗯？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_AI_2" />
+			<Set Text="你对我说了那些话以后还有脸再来？在我把你扔出去前快点表明你的来意。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_OUR_DOF_WITH_ENEMY_OF_AI_1" />
+			<Set Text="什么？我没有多少时间与同{1_PlayerName}做朋友的人打交道。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_OUR_DOF_WITH_FRIEND_OF_AI_1" />
+			<Set Text="啊，你好。我一向很乐于接待{1_PlayerName}的朋友。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_FRIEND_OF_AI_1" />
+			<Set Text="哦，是你。我坦白告诉你，我不喜欢那些侮辱{1_PlayerName}的人。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GREETING_DENOUNCED_ENEMY_OF_AI_1" />
+			<Set Text="啊，你好。我一向乐于接待敌视{1_PlayerName}的领袖。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_DOF_1" />
+			<Set Text="很抱歉，但是我们相互认识对方的时间还不够长。也许我们可以以后再讨论这件事。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_DOF_2" />
+			<Set Text="给我更多时间来了解你吧。我不需要一个朋友当我在变他也跟着变，当我点头他也跟着点头；我的影子可以做的更好。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_AI_DENOUNCE_REQUEST_1" />
+			<Set Text="朋友，我有重要的事情要谈。我们与{1_CivName}的关系破裂了，我希望你能对其进行公开谴责。你说呢？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_AI_WAR_REQUEST_1" />
+			<Set Text="我现在所处的情况非常严重，我的朋友。对{1_CivName}的战争已经开始，我需要你加入我的阵营，你说呢？(将立即宣战)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_NOT_HONORED_1" />
+			<Set Text="太可悲了。你终于显露出了本性。整个世界都会知晓你的背信弃义。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DOF_NOT_HONORED_2" />
+			<Set Text="这就是你所理解的盟约？全世界的领袖们都将知晓你的背信弃义。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCING_FRIEND_1" />
+			<Set Text="我受够你了。我听说其他领袖也都不愿同你合作。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCING_FRIEND_2" />
+			<Set Text="好吧，我受够了。早该向所有人公布你的恶行了。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_1" />
+			<Set Text="就这样？很好。我不会忘记这件事的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_2" />
+			<Set Text="你的声誉将因这愚蠢行为而严重受损。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_3" />
+			<Set Text="你犯下了愚蠢的错误。我不会忘记这件事的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESPONSE_TO_BEING_DENOUNCED_4" />
+			<Set Text="我发现跟你交往是浪费时间。不过我确实没想到你会来这一手。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOFED_FRIEND_1" />
+			<Set Text="啊，我注意到你公开声明了与{1_CivName}的友谊。我很高兴，我和他们的关系非常好。" />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_2">
+			<Text>任何{1_CivName}的盟友都是我的朋友。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_3">
+			<Text>你是{1_CivName}的盟友吗？你做了非常正确的决定。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_FRIEND_4">
+			<Text>我能看到你已经成为了我的亲密朋友{1_CivName}的盟友。我可以预见好事就快来了。</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOFED_ENEMY_1" />
+			<Set Text="我建议你不要和{1_CivName}走得太近。否则……我们之间可能会发生问题。" />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_ENEMY_2">
+			<Text>请享用国宴来祝贺你成为{1_CivName}的盟友-但等他们走后得数下餐具的数量。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DOFED_ENEMY_3">
+			<Text>我敌人的朋友也许会成为我的敌人。请在成为{1_CivName}盟友后时刻记得这句话。</Text>
+		</Row>		
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCED_FRIEND_1" />
+			<Set Text="我要告诉你{1_CivName}和我合作得很好，我非常尊敬他们。你必须了解这一点。" />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_FRIEND_2">
+			<Text>你怎么能如此诽谤{1_CivName}，你有没有一点点底线？</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_FRIEND_3">
+			<Text>当你向{1_CivName}的脸上唾吐，你正在向战争风暴唾吐。</Text>
+		</Row>		
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCED_ENEMY_1" />
+			<Set Text="很高兴获知还有别人也和我一样讨厌{1_CivName}。他们确实是不可信赖的。" />
+		</Update>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_ENEMY_2">
+			<Text>终于等到{1_CivName}被扫到历史的废纸篓的日子了。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HUMAN_DENOUNCED_ENEMY_3">
+			<Text>今天我们打了{1_CivName}的脸；明年我们在他们的坟上跳舞。</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOF_SO_AI_DOF_1" />
+			<Set Text="我注意到你和{1_CivName}的友谊声明。我也做了同样的事。也许将来我们能有更进一步的合作？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCE_SO_AI_DENOUNCE_1" />
+			<Set Text="我和你一样认为{1_CivName}只会给世界带来麻烦。也许我们的公开谴责能给他们一个教训。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DOF_SO_AI_DENOUNCE_1" />
+			<Set Text="很好，灾害在蔓延。现在我需要同时对付你和{1_CivName}？我必须给他们一个教训。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HUMAN_DENOUNCE_SO_AI_DOF_1" />
+			<Set Text="你的任何敌人都是我的朋友。请代我向{1_CivName}致敬。" />
+		</Update>
+		<!-- Generic Diplo Text -->
+		<Update>
+			<Where Tag="TXT_KEY_HOSTILE_AGGRESSIVE_MILITARY_WARNING_1" />
+			<Set Text="我看见你的军团大量聚集在我帝国附近。如果你想打尽管来，别像个孩子一样藏在阴影里。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_AGGRESSIVE_MILITARY_WARNING_1" />
+			<Set Text="你有很多单位在我的边界，这引起了我的注意。我请求你把他们调到其他地方去，避免我的国民过度紧张。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_KILLED_PROTECTED_CITY_STATE_1" />
+			<Set Text="看来你说过的话一钱不值，就像你对{@1_MinorCivName}的占领所显示的那样。多么可耻。整个世界都会了解你的罪行。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_ATTACKED_PROTECTED_CITY_STATE_1" />
+			<Set Text="你对{@1_MinorCivName}的野蛮侵略不可能不被人知道。如果你继续进攻你将面对严重的后果。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_SERIOUS_WARNING_1" />
+			<Set Text="你的扩张行为对我国是一种冒犯。你要知道那会导致严重的后果。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_1"/>
+			<Set Text="我们两国间的距离让我们的人民很紧张。停止在我旁边设立新的城市才能让我们继续和谐相处。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_2"/>
+			<Set Text="自从我们国家的边境越来越近，我和你合作的愿望也越来越小。我要求你停止在我边境设立城市，不然我会采取行动。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_3"/>
+			<Set Text="自从我们国家的边境逐年邻近，我对你的态度正在降温。在我的主权领土旁设立新城市会导致我们的关系无法修复。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_WARNING_4"/>
+			<Set Text="我们发现了一个古老的关于土地边境的纠纷。假如你们继续扩张到我们的属地，它会激励我们战士的荣耀来粉碎你们！" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_EXPANSION_BROKEN_PROMISE_1" />
+			<Set Text="你有关不在我国领土附近扩张的保证就是一句空话。这会导致严重的后果。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_SERIOUS_WARNING_1" />
+			<Set Text="你圈占我国附近大片土地的进攻性行为是对我们的冒犯。我真心希望你会是一个好邻居。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_WARNING_1" />
+			<Set Text="你圈占邻近我国的土地导致了某些紧张情绪。我提醒你不要让事态进一步恶化了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_BROKEN_PROMISE_1" />
+			<Set Text="那么看起来你告诉我们你的帝国会停止圈占邻近我国土地的时候是在说谎。这种侮辱我不会轻易忍受的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PLOT_BUYING_BROKEN_PROMISE_2" />
+			<Set Text="我非常失望，你并没有中止在我国领土附近圈占土地。我希望你会是一个值得尊敬的领袖。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_1" />
+			<Set Text="我想你可能已知道我对你的小宠物发动侵略了。那儿的土地和资源能给我不错的补充。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HOSTILE_WE_ATTACKED_YOUR_MINOR_2" />
+			<Set Text="啊呀，好像我对你们的小朋友发动了进攻。在乎那样吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_1" />
+			<Set Text="我已经注意到了我对和你曾有过关系的城邦发动了进攻。虽然和你的帝国过不去不是我的目的，但是我相信这个行动是必要的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WE_ATTACKED_YOUR_MINOR_2" />
+			<Set Text="我了解到了我的帝国对你们的一个友好城邦发动了进攻。我保证，这不是我的目的，希望这不会使我们有间隔。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_1" />
+			<Set Text="在这个世界上真正的朋友是很难得的。我希望公开发布一份友谊声明，向别国表明我们之间坚固的纽带。你说呢？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_2" />
+			<Set Text="非常重要让我们朋友相信我们亲密无间。你愿意公开发布一份友谊声明吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_3" />
+			<Set Text="什么都有可能发生。我们好多年没有做什么了。让我们公开发布一份友谊声明吧？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_4" />
+			<Set Text="团队合作可以让我们找到替罪羔羊。那么，让我们公开发布一份友谊声明吧？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCE_1" />
+			<Set Text="虽然我不想你遭殃，但是如果你根本不存在那该有多好。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCE_2" />
+			<Set Text="只要结局合理，那么结局可以宽容任何手段。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DENOUNCE_3" />
+			<Set Text="宁我负人，毋人负我。[NEWLINE][NEWLINE]([COLOR_WARNING_TEXT]他们公开谴责我们！注意：这并不意味着开战。[ENDCOLOR])" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_REQUEST_1" />
+			<Set Text="我与{1_PlayerName:textkey}之间的分歧已经大到无法忍受，必须上战场才能解决了。你愿意加入我吗，朋友？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_REQUEST_2" />
+			<Set Text="{1_PlayerName:textkey}是一个大麻烦，只能通过战争解决了。我需要寻找盟友——我能指望你吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_REQUEST_3" />
+			<Set Text="{1_PlayerName:textkey}是世界稳定的威胁。是一次性解决事情的时候了。你愿意加入我吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_COOP_WAR_TIME_1" />
+			<Set Text="对抗{1_PlayerName:textkey}的战争已经来临。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOW_UNFORGIVABLE_1" />
+			<Set Text="你的行为无法原谅。我们两个国家永远无法和解。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOW_ENEMY_1" />
+			<Set Text="根据目前情况，我不得不将你作为我的敌人。因此，我会采取一切手段确保我的利益。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_COMPLIMENT_1" />
+			<Set Text="我想告诉你我珍惜我们的友谊，并希望它能变的更加牢固。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_BOOT_KISSING_1" />
+			<Set Text="很清楚你是一个睿智并强大的统治者。我请求你也能对像我这样的弱者保有同情。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_BOOT_KISSING_2" />
+			<Set Text="噢，伟大的人，我的希望是你能永远成为强者的楷模和像我一样的次要领导者的良行标准。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_1" />
+			<Set Text="你的侵略行为不可能不被注意。如果你继续下去，最终会导致你灭亡。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_2" />
+			<Set Text="显然，你还是一个没有开化的野蛮人。 我必须要警告你，你的所作所为已经开始引人注意了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_3" />
+			<Set Text="你已经因为你的好战而臭名远扬了。你最好自己小心点。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WARMONGER_4" />
+			<Set Text="你的所作所为已经开始引人注意了。这不是什么好事。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_MINOR_CIV_COMPETITION_1" />
+			<Set Text="我注意到你试图同{1_MinorCivName:textkey}建立友谊了。你可能还不清楚，他们属于我的势力范围，我希望你离他们远点。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_MINOR_CIV_COMPETITION_2" />
+			<Set Text="我注意到你正与{1_MinorCivName:textkey}发展关系。这没有问题，但你最好把他们的保护权留给我们。我可不希望我们不小心踩到对方的脚趾头。" />
+		</Update>
+		<!--Insults-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_1" />
+			<Set Text="我已经注意到你实在是个可怜虫。我能给予你的只有无限的同情。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_2" />
+			<Set Text="啊，最令我高兴的事就是又能看到我最喜爱的小城邦了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_3" />
+			<Set Text="我看见你就烦，我最大的愿望就是再也不用看到你的脸。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_GENERIC_4" />
+			<Set Text="哈哈，是你呀。不好意思。有时候我会把你和那些讨厌的野蛮人搞混。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_MILITARY_1" />
+			<Set Text="我想你应该知道你的军力有点弱小。你最好小心一点。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_MILITARY_2" />
+			<Set Text="凭借这么孱弱的兵力，你的帝国居然抵挡住了蛮族入侵，真是令人惊奇呀。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_NUKE_1" />
+			<Set Text="我们的立场有核武器的支持！" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_BULLY_1" />
+			<Set Text="世上就是有那么一些领袖为了取乐而去欺凌弱小，真是可耻至极。你同意吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_UNHAPPINESS_1" />
+			<Set Text="你的人民的痛苦哀号远远传到了我的耳朵里。如果你还不尽快采取行动，他们将会背起行囊移民到真正的文明国度去。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_UNHAPPINESS_2" />
+			<Set Text="人民如此不快乐，他们居然还继续追随你这个所谓的领袖，实在是令我吃惊。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_CITIES_1" />
+			<Set Text="我注意到你的帝国相当弱小。难道你忘记了拓展领土，还是你有其他的难言之隐？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_POPULATION_1" />
+			<Set Text="旅行者们已经告诉了我你的帝国那衰颓的经济。如果你求我，我可能会帮你一把。好吧，实际上，我是不会帮你的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_CULTURE_1" />
+			<Set Text="一幅多么悲惨的画面啊……你的帝国是如此落后。你的市民们整天都在做什么，是在洗煤球吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_INSULT_CULTURE_2" />
+			<Set Text="据说连野蛮人都看不上你那可笑而又落后的文明。" />
+		</Update>
+		<!--Public Declarations-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLARATION_PROTECT_CITY_STATE_1" />
+			<Set Text="{2_MajorCivName:textkey}向世界宣布它现在正保护着{1_MinorCivName:textkey}。进攻这城邦会对双边关系造成严重的打击，甚至可能引起战争。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLARATION_ABANDON_CITY_STATE_1" />
+			<Set Text="{2_MajorCivName:textkey}已经撤销了对{1_MinorCivName:textkey}的保护。" />
+		</Update>
+		<!--Human is asking the AI for something-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REPEAT_NO_1" />
+			<Set Text="这事早已谈论过了。答案始终是不。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_YES_1" />
+			<Set Text="很好。我同意尽量避免定居在你的帝国附近。也许以后你会是一个更好客的邻居。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_YES_2" />
+			<Set Text="那就这样吧。我不会在你的帝国周围定居的。看来合作不是你的强项。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_1" />
+			<Set Text="真是令人难以接受。我贵为一国之主，我有权决定在任何我喜欢的地方定居。这次冒犯行为我是不会忘记的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_2" />
+			<Set Text="你竟然敢以如此的态度来羞辱我？我是不会忘记的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_3" />
+			<Set Text="你怎么敢这样？你相信我会成为一个意志薄弱的人？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DONT_SETTLE_NO_4" />
+			<Set Text="不可能。你需要改善一下你的外交政策，我的朋友。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_1" />
+			<Set Text="这很好。希望双方稳固的友谊能会使我们的帝国都走向富强。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_2" />
+			<Set Text="好主意。愿我们的联盟成为全世界羡慕的对象。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_WITH_US_YES_3" />
+			<Set Text="我很乐于接受。愿我们的帝国在我们的友谊下繁荣昌盛。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLINE_1" />
+			<Set Text="我必须拒绝。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLINE_2" />
+			<Set Text="对不起，这件事不行。以后再说吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DECLINE_3" />
+			<Set Text="恐怕这样的安排不符合我的最大利益，所以我必须拒绝。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WORK_AGAINST_SOMEONE_YES_1" />
+			<Set Text="就这么定了。让我们大展身手吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_COOP_WAR_YES_1" />
+			<Set Text="那听起来是一个明智的行动。让我们共赴疆场并肩作战吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_COOP_WAR_SOON_1" />
+			<Set Text="确实是个诱人的提议。我接受了。但是我的帝国还没有准备好，先等我十个回合吧。我会在我准备好了之后再来找你商议。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_YES_1" />
+			<Set Text="很好，我会竭尽全力去做任何事，只要能使我的国土保持和平。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_YES_2" />
+			<Set Text="我会尽一切可能去维护和平。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_YES_3" />
+			<Set Text="好吧。不过你的所作所为都在破坏你的好名声。你这样做值得么。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_1" />
+			<Set Text="你没有资格提出这样的要求。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_2" />
+			<Set Text="你应该意识到你并没有能力兑现你的威胁。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_3" />
+			<Set Text="你骗不了任何人。我没什么可害怕的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_WEAK_4" />
+			<Set Text="哈哈，你还没有强到能对我提出这样的要求。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_1" />
+			<Set Text="你竟然敢以如此的态度来羞辱我？如果你真的想要动手那就尽管来吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_2" />
+			<Set Text="想要的话，除非先杀死我。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_3" />
+			<Set Text="如果你真的想要动手那就尽管来好了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_4" />
+			<Set Text="这是不可接受的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_HOSTILE_5" />
+			<Set Text="别做傻事。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_MUCH_1" />
+			<Set Text="你要求得太多了。我不会为了满足你的贪欲而令我的国民陷于贫困。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_MUCH_2" />
+			<Set Text="不，我有我的尊严，我拒绝轻易交出这么多财富。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_MUCH_3" />
+			<Set Text="你想把我的国家掠夺得一干二净，这真是忍无可忍。别索取这么多。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_SOON_1" />
+			<Set Text="你又来威胁我？我拒绝你的要求，你这只贪婪的畜牲。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_SOON_2" />
+			<Set Text="你这么快又饿了？你知道贪婪是一种罪恶。领袖大人……" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_DEMAND_REFUSE_TOO_SOON_3" />
+			<Set Text="你又来索取别人的劳动成果了？你的贪婪都变成传奇了。我不会屈服的。" />
+		</Update>
+		<!--Deal Offers and related-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOT_DOT_DOT" />
+			<Set Text="……" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_1" />
+			<Set Text="让我听听你的提议。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_LETS_HEAR_IT_2" />
+			<Set Text="你有什么建议？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_OFFER_1" />
+			<Set Text="是时候来终止这场战争了。你觉得这个提议如何？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_OFFER_2" />
+			<Set Text="这场冲突再持续下去毫无意义。让我们和平相处吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_OFFER_3" />
+			<Set Text="我们不应该在战争中迷失自我。是时候恢复和平了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DEMAND_1" />
+			<Set Text="我的胃口很小，我对所有最好的东西都会感到满足。如果你不肯把它交给我，我将不得不用暴力来夺取。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REQUEST_ITEM_1" />
+			<Set Text="不幸的是，事情发展的不是那么好。你能给你的老朋友分点什么吗？当一切好起来以后，我当会涌泉相报的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REQUEST_ITEM_2" />
+			<Set Text="假如有钱，诚信当然是最好的政策。尽管这样做我很为难，但是我需要你的帮助，我的朋友。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_REQUEST_ITEM_3" />
+			<Set Text="你强大的力量足以作为所有其他帝国的典范。我请求你对不幸者表现得慷慨一些。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GIFT_ITEM_1" />
+			<Set Text="请接受这一点礼物。愿我们的友谊长存。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_GIFT_ITEM_2" />
+			<Set Text="朋友相当互相帮助，共同克服命运的挑战。请接受这个礼物，伟大的领袖。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_LUXURY_TRADE_1" />
+			<Set Text="你有我所需要的奢侈资源。你觉得这个提议怎么样？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_1" />
+			<Set Text="我相信我们两国彼此开放自由通行符合我们的共同利益。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OPEN_BORDERS_EXCHANGE_2" />
+			<Set Text="相互开放我们的边界可以使我们之间的友谊进一步稳固。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OPEN_BORDERS_OFFER_1" />
+			<Set Text="我想谈谈开放通往你们领土的商路的事宜。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PLAN_RESEARCH_AGREEMENT_1" />
+			<Set Text="我考虑同贵国进行合作研究。这需要双方各支出150[ICON_GOLD]。你觉得怎么样？[NEWLINE][NEWLINE]（接受此提议暂时不会达成合作研究协议）" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RESEARCH_AGREEMENT_OFFER_1" />
+			<Set Text="我觉得合作研究协议会是一个双赢的举措，能够进一步加强我们的友谊。" />
+		</Update>
+		<!--Trade Dialogue-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_1" />
+			<Set Text="你的提议十分慷慨大方，我接受了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_2" />
+			<Set Text="我很高兴接受。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_GENEROUS_3" />
+			<Set Text="我无法形容你的慷慨。你们带来了无与伦比的信誉。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_1" />
+			<Set Text="这交易不错。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_2" />
+			<Set Text="让我们确定签署典礼的日期吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_3" />
+			<Set Text="难道我会不想做这个交易？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_AI_DEMAND_1" />
+			<Set Text="和你做生意真是太好了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_AI_DEMAND_2" />
+			<Set Text="当邻里能够和谐相处真是太美妙了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_HUMAN_CONCESSIONS_1" />
+			<Set Text="同意。我觉得这个协议会重塑我们之间的友谊。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_HUMAN_CONCESSIONS_2" />
+			<Set Text="你真是慷慨大方啊。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_1" />
+			<Set Text="你怎么能用如此从容的表情来提议这样的条款？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_2" />
+			<Set Text="你必须提出更好的条款。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_UNACCEPTABLE_3" />
+			<Set Text="如果你想证明你的幽默，那么你完全一败涂地。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_1" />
+			<Set Text="假如我选择同意，那么我们都错得离谱。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_2" />
+			<Set Text="今晚本来完美无缺，但肯定不是和你交易。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_REJECT_INSULTING_3" />
+			<Set Text="每天我只能让一个人开心。今天不是你。明天可能也不太像。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_DEAL_UNCHANGED_1" />
+			<Set Text="这笔交易看起来不错，实施起来一定也不错。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_DEAL_UNCHANGED_2" />
+			<Set Text="这笔交易看起来很不错。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_DEAL_UNCHANGED_3" />
+			<Set Text="看起来很不错。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_AI_MAKES_OFFER_1" />
+			<Set Text="我要么拿到我想要的，要么你让我改变主意。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_AI_MAKES_OFFER_2" />
+			<Set Text="金钱是我所有财富的基础。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_AI_MAKES_OFFER_3" />
+			<Set Text="你觉得这个怎么样？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_1" />
+			<Set Text="不好意思，我觉得这笔交易行不通。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TRADE_NO_DEAL_POSSIBLE_2" />
+			<Set Text="这根本行不通。" />
+		</Update>
+		<!-- AI Attacked by another player -->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_1" />
+			<Set Text="你这蠢货，你犯了一辈子的错误还包括了这个。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_2" />
+			<Set Text="你真是可怜。我很想说我对此表示惊讶——虽然这只是一个谎言。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_3" />
+			<Set Text="死亡是天生的。你的死期到了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_4" />
+			<Set Text="很明显，你就根本不适合成为一个统治者，即使是统治一个最可悲的国家。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_HOSTILE_5" />
+			<Set Text="不要以为死亡意味着终结。你应该把它当成一种降低你花费的有效手段。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_1" />
+			<Set Text="我可能无法战胜你的邪恶，但是我仍然会努力。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_2" />
+			<Set Text="鉴于这种情况，消灭你将会是一个皆大欢喜的结局。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_3" />
+			<Set Text="如果你能的话，就来灭了我吧。我可以向你保证，我并不是那么容易被击败。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_4" />
+			<Set Text="就那样吧。我的军队会和你那些邪恶的渣滓血战到底。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_HOSTILE_5" />
+			<Set Text="你将作为一名恃强凌弱的恶棍而遗臭万年。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_1" />
+			<Set Text="你真的以为你能够击败我？蠢货，很好。让我们来玩玩。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_2" />
+			<Set Text="你的军队将尽情享受毁灭的感觉。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_3" />
+			<Set Text="攻击我是一个错误。很快我就会告诉你为什么。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_4" />
+			<Set Text="宣战对于你来说是一个严重的错误。有句话是这么说的，我将会立刻让你对于你的所作所为感到后悔。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_5" />
+			<Set Text="我会立刻让你意识到你这么做有多愚蠢。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_6" />
+			<Set Text="很好，我们开始吧。这真是一个天赐的机会，我借此来消灭你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_HOSTILE_7" />
+			<Set Text="你真是个可怜的蠢货。我将会毫不留情的灭掉你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_1" />
+			<Set Text="如果你真的想开战，我不会让你失望的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_2" />
+			<Set Text="与你交手真是我的一大乐趣啊，你准备好了吗？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_3" />
+			<Set Text="这一定会很有趣。我总是沉迷于击败像你这样的人。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_EXCITED_4" />
+			<Set Text="很好，死亡的漩涡将会把我们吞没。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_WEAK_EXCITED_1" />
+			<Set Text="尽管现在不是决斗的完美时刻，但能利用这个机会在你的身上留下些伤痕倒是值得的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_STRONG_EXCITED_1" />
+			<Set Text="哈哈，我不想质疑你的决定，不过在我看来你好像犯了一个大错误。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_1" />
+			<Set Text="你的所作所为令我感到悲伤……地狱一定会为象你这样的人保留一个特别席位。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_2" />
+			<Set Text="你就想这样攻击我们？你真是趾高气扬。我相信总有一天你会为此受到惩罚的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_3" />
+			<Set Text="乘人之危的行为是不道德的。你应该知道还有更好方式去追求胜利吧？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_SAD_4" />
+			<Set Text="你怎么能做这样的事情？滚开，你这个邪恶的生物。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_BETRAYED_1" />
+			<Set Text="随意利用别人的信任是无耻的。每个人都会了解你的背叛行为。" />
+		</Update>
+		<!-- AI Declaring War-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_GENERIC_1" />
+			<Set Text="你走在毁灭的道路上。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_GENERIC_2" />
+			<Set Text="你没有存活机会。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_GENERIC_3" />
+			<Set Text="你下一秒就会死亡。" />
+		</Update>
+		<Row Tag="TXT_KEY_GENERIC_DOW_GENERIC_4">
+			<Text>我有种感觉，咱俩迟早会在战场上见面的。我们会知道谁是胜者的。</Text>			
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_ATTACKED_MILITARY_PROMISE_BROKEN_1" />
+			<Set Text="你不能信守诺言。如果不出意外，整个世界都会知道你的背叛的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_LAND_1" />
+			<Set Text="我们的相邻令我们注定会成为敌人。让我们看看最终谁能存活下来。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_LAND_2" />
+			<Set Text="你的扩张挤着我了；我的帝国需要更多的生存空间。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_LAND_3" />
+			<Set Text="我们不再问你要求土地，我们自己会来拿。" />
+		</Update>		
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_1" />
+			<Set Text="这个世界注定将会是我的。现在是时候来向你展示这一切了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_2" />
+			<Set Text="我已经受过命运的洗礼，我将会为这四分五裂的星球带来统一。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_3" />
+			<Set Text="历史将会对我报以微笑，我将消灭那些像你这样的害虫们。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_4" />
+			<Set Text="我对你实话实说——我打算把你和其他人一起消灭光。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_5" />
+			<Set Text="你只不过是我称霸世界之路上一颗小小的绊脚石而已。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WORLD_CONQUEST_6" />
+			<Set Text="是时候启动我的宏伟计划了。也是时候让你象其他那些傻瓜一样去死了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_1" />
+			<Set Text="我已经占据有利地位。我现在就将消灭你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_2" />
+			<Set Text="我等待这一天很久了。我已经发现你防守的破绽，我将会善加利用以占据优势。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_3" />
+			<Set Text="我等这一天已经很久了，现在是将有关你的问题彻底搞定的最佳时机。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_4" />
+			<Set Text="现在是属于我的时刻。我将击败你，在胜利之路上更进一步。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_5" />
+			<Set Text="命运没有站在你那边——像你这样弱小的势力竟敢阻挡我前进的道路，你很快就会后悔了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_6" />
+			<Set Text="决定命运的时候到了。机不可失，时不再来。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_7" />
+			<Set Text="我不会放过这个消灭潜在竞争对手的好时机。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_OPPORTUNITY_8" />
+			<Set Text="你的羸弱给我提供了一个好机会。对此我表示歉意。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_1" />
+			<Set Text="我面临的任务也许十分艰巨，但我总会找到消灭你的办法。我将奋战到底。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_2" />
+			<Set Text="显然你很强大。然而我一定会找到击败你的办法。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_3" />
+			<Set Text="你是最坏的恶棍。我已下定百分之百的决心要消灭你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_4" />
+			<Set Text="也许你是难以匹敌的，但是我一定会找到消灭你的办法。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_5" />
+			<Set Text="已经到了下定决心的时刻。虽然优势不在我这一边，但是我会想尽办法消灭你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_6" />
+			<Set Text="你的强大力量并不能削弱我的战斗意志。愿命运对我微笑。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_7" />
+			<Set Text="虽然我并不希望如此，但恐怕这是我击败你的唯一机会。我们战场上见吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_DESPERATE_8" />
+			<Set Text="毁灭也许会是我最终的命运，但是如果我选择退让，同样也不可能避免失败。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_1" />
+			<Set Text="真正的朋友会从正面捅你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_2" />
+			<Set Text="你的弱点就是我的机会。你错在曾经相信了我。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_3" />
+			<Set Text="“背信弃义”这个词太不好听了。不妨说我决定“重新解读”我们之间的友谊，如何？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_BETRAYAL_4" />
+			<Set Text="实话告诉你，我从来都没有喜欢过你。现在没有必要再假装下去了。在这一小段交谈结束后，你的死期就将到来。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_WEAK_BETRAYAL_1" />
+			<Set Text="虽然时机并不成熟，但我别无选择，必须立刻撕破伪装展开行动。现在我只能为我军的胜利而祈祷。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_REGRET_1" />
+			<Set Text="我想信在前世或来生咱们可能成为朋友。不幸的是，现在就是现在。祝你的军队好运。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_REGRET_2" />
+			<Set Text="我的朋友，除了撕破脸皮决一死战，我想我别无选择。我希望你有一天能够原谅我。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_DOW_REGRET_3" />
+			<Set Text="我简直不敢相信会走到这一步，但这确实已经发生了。我怀着沉痛的心情通知你，我们的友谊已经走到了尽头。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WAR_DEMAND_REFUSED_1" />
+			<Set Text="就这样吧。我的军队会在你的国土上得到他们想要的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WAR_DEMAND_REFUSED_2" />
+			<Set Text="因为你的错误。我打算消灭你。没有蛋糕了。反正你不在乎？" />
+		</Update>
+		<!--AI Responses to a human peace offer-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_1" />
+			<Set Text="你有什么提议？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_2" />
+			<Set Text="你想建议什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_WHAT_WILL_HUMAN_OFFER_3" />
+			<Set Text="和平的代价是什么？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_MADE_BY_HUMAN_GRACIOUS_1" />
+			<Set Text="我很高兴看到了冲突的结束。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_PEACE_MADE_BY_HUMAN_GRACIOUS_2" />
+			<Set Text="能够目睹这场可怕战争的结束真是令人高兴。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_NO_PEACE_1" />
+			<Set Text="现在不会有和平的。以后再说吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_NO_PEACE_2" />
+			<Set Text="现在还不是和谈的时候。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_NO_PEACE_3" />
+			<Set Text="我们还有些事情要解决。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_TOO_SOON_NO_PEACE_1" />
+			<Set Text="你在开玩笑，对吗？" />
+		</Update>
+		<!--AI Responses to a discussion mode topics-->
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_1" />
+			<Set Text="棒极了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_2" />
+			<Set Text="太好了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_3" />
+			<Set Text="我很高兴听到这些。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_PLEASED_4" />
+			<Set Text="真是好消息啊。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_1" />
+			<Set Text="我谢谢你。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_2" />
+			<Set Text="你真是一位伟大的领袖。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_THANKFUL_3" />
+			<Set Text="你将会名留青史。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_DISAPPOINTED_1" />
+			<Set Text="真是可惜。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_DISAPPOINTED_2" />
+			<Set Text="也许下次吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_DISAPPOINTED_3" />
+			<Set Text="真是太令人失望了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_SO_BE_IT_1" />
+			<Set Text="那就这样吧。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_SO_BE_IT_2" />
+			<Set Text="那么你要为一切后果承担责任。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_SO_BE_IT_3" />
+			<Set Text="你会后悔的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_1" />
+			<Set Text="我感谢你解救了这些被俘者。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_2" />
+			<Set Text="感谢你对我的人民所做的一切。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_RETURNED_CIVILIAN_3" />
+			<Set Text="谢谢你。这一历史性事件将使我们两国的关系更为紧密。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_CULTURE_BOMBED_1" />
+			<Set Text="你怎么敢这样？这会让你付出代价的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_CULTURE_BOMBED_2" />
+			<Set Text="如果你这么做是想挑起战争的话，那你做得真好。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_BAD_1" />
+			<Set Text="嗯，至少你是诚实的。不过这也许是你唯一的优点了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_AGGRESSIVE_MILITARY_WARNING_GOOD_1" />
+			<Set Text="像那么一回事。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_AGGRESSIVE_MILITARY_WARNING_BAD_1" />
+			<Set Text="这正是我所担心的。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_AGGRESSIVE_MILITARY_WARNING_GOOD_1" />
+			<Set Text="我只希望确实如此。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_WE_ATTACKED_MINOR_BAD_1" />
+			<Set Text="我们将保持关注。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HOSTILE_WE_ATTACKED_MINOR_GOOD_1" />
+			<Set Text="是的，就是这样。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_WE_ATTACKED_MINOR_BAD_1" />
+			<Set Text="我仍然坚信，我的决定符合我的国家和人民的最大利益。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_1" />
+			<Set Text="看来你不能理性的对待这件事情，真是可惜啊。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_2" />
+			<Set Text="我跟你们这种人再也没有瓜葛了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_3" />
+			<Set Text="你太令我们失望了。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_RESPONSE_BAD_4" />
+			<Set Text="你知道的，这只会加剧我们两国的紧张关系。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_ATTACKED_MINOR_GOOD_1" />
+			<Set Text="很好，我将继续观察事态发展。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_KILLED_MINOR_GOOD_1" />
+			<Set Text="你有何建议？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_SERIOUS_EXPANSION_WARNING_GOOD_1" />
+			<Set Text="你有何建议？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_EXPANSION_WARNING_GOOD_1" />
+			<Set Text="非常好，我希望我们能够继续携手共进。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_SERIOUS_PLOT_BUYING_WARNING_GOOD_1" />
+			<Set Text="你有何建议？" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_HUMAN_PLOT_BUYING_WARNING_GOOD_1" />
+			<Set Text="非常好，我希望我们能够继续携手共进。" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GENERIC_OUR_WORDS_ARE_BACKED" />
+			<Set Text="我们的立场有核武器的支持！" />
+		</Update>
+	</Language_zh_CN>
+</GameData>

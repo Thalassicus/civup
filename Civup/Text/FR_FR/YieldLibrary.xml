@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysUs -->
 <GameData>
 	<Language_fr_FR>
 		<!--
@@ -19,7 +19,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_FOOD_USAGE" />
-			<Set Text="([COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] consommé par les [ICON_CITIZEN] Citoyens)" />
+			<Set Text="([COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] consomm&#233; par les [ICON_CITIZEN] Citoyens)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_FOODMOD_PLAYER" />
@@ -31,11 +31,11 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_FOODMOD_UNHAPPY" />
-			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]{1_Num}%[ENDCOLOR] du [ICON_HAPPINESS_4] Mécontentement" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]{1_Num}%[ENDCOLOR] du [ICON_HAPPINESS_4] M&#233;contentement" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_FOODMOD_WLTKD" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% de la Fête du Roi" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% de la F&#234;te du Roi" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_FOOD_CONVERSION" />
@@ -47,7 +47,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_UNIT_DOMAIN" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% type d'unité" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% type d'unit&#233;" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_UNIT_COMBAT_TYPE" />
@@ -55,7 +55,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_MILITARY" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les unités militaires" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les unit&#233;s militaires" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_UNIT_WITH_BUILDING" />
@@ -75,11 +75,11 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_BUILDING_CITY" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les bâtiments" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les b&#226;timents" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% des bâtiments dans la [ICON_CAPITAL] Capitale (Trait)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% des b&#226;timents dans la [ICON_CAPITAL] Capitale (Trait)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_SPACE" />
@@ -87,11 +87,11 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_UNIT_SUPPLY" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour le ravitaillement des unités (Empire)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour le ravitaillement des unit&#233;s (Empire)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_MILITARY_PLAYER" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les unités militaires (Empire)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les unit&#233;s militaires (Empire)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_SETTLER_PLAYER" />
@@ -103,7 +103,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_RELIGION_PLAYER" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les bâtiments religieux (Empire)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les b&#226;timents religieux (Empire)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_UNIT_COBMAT_CLASS_PLAYER" />
@@ -111,11 +111,11 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_UNIT_TRAIT" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour le type d'unité (Trait)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour le type d'unit&#233; (Trait)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_BUILDING_TRAIT" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les bâtiments (Trait)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les b&#226;timents (Trait)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_WONDER_POLICY" />
@@ -123,7 +123,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_BUILDING_POLICY" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les bâtiments (Doctrine)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les b&#226;timents (Doctrine)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_WORLD_WONDER_PLAYER" />
@@ -131,7 +131,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_TEAM_WONDER_PLAYER" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les Merveilles en Équipe (Empire)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les Merveilles en &#201;quipe (Empire)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_NATIONAL_WONDER_PLAYER" />
@@ -139,7 +139,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_BUILDING_POLICY_PLAYER" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les bâtiments (Doctrine Empire Mod)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les b&#226;timents (Doctrine Empire Mod)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_SPACE_PLAYER" />
@@ -147,7 +147,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_SPECIALIST_PLAYER" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les spécialistes (Empire)" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% pour les sp&#233;cialistes (Empire)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_YIELD" />
@@ -175,7 +175,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_YIELD_GOLDEN_AGE" />
-			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% d'un Âge d'Or" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% d'un &#194;ge d'Or" />
 		</Update>
 		
 		
@@ -199,17 +199,17 @@
 			<Text>par ville</Text>
 		</Row>
 		<Row Tag="TXT_KEY_SPLIT_AMONG_CITIES">
-			<Text>répartir entre vos villes</Text>
+			<Text>r&#233;partir entre vos villes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MILITARY_UNIT_REWARDS">
-			<Text>Unité Militaire</Text>
+			<Text>Unit&#233; Militaire</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_HAPPINESS"/>
 			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR] [ICON_RESEARCH] de {1_Num} [ICON_HAPPINESS_1] Bonheur."/>
 		</Update>
 		<Row Tag="TXT_KEY_TP_SCIENCE_FROM_UNHAPPINESS" >
-			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-{1_Num}%[ENDCOLOR] [ICON_RESEARCH] de {1_Num} [ICON_HAPPINESS_4] Mécontentement.</Text>
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-{1_Num}%[ENDCOLOR] [ICON_RESEARCH] de {1_Num} [ICON_HAPPINESS_4] M&#233;contentement.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TP_GOLD_FOR_FREE">
 			<Text>{1_Num} sans frais.</Text>
@@ -238,10 +238,10 @@
 			<Text>{1_Num} {2_icon} des traits</Text>
 		</Row>
 		<Row Tag="TXT_KEY_YIELD_FROM_PROCESSES">
-			<Text>{1_Num} {2_IconString} de la procédure</Text>
+			<Text>{1_Num} {2_IconString} de la proc&#233;dure</Text>
 		</Row>
 		<Row Tag="TXT_KEY_YIELD_FROM_MINOR_CIVS">
-			<Text>{1_num} {2_icon} des Cités-États</Text>
+			<Text>{1_num} {2_icon} des Cit&#233;s-&#201;tats</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_FOCUS" >
 			<Text>{2_icon} Objectif de travail de la ville: {1_num}%</Text>
@@ -250,37 +250,37 @@
 			<Text>[ICON_CITIZEN] Population: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_NOT_CONNECTED" >
-			<Text>[ICON_CONNECTED] Déconnecté: {1_num}%</Text>
+			<Text>[ICON_CONNECTED] D&#233;connect&#233;: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RAZING" >
 			<Text>[ICON_RAZING] Razer: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RESISTANCE" >
-			<Text>[ICON_RESISTANCE] Résistance: {1_num}%</Text>
+			<Text>[ICON_RESISTANCE] R&#233;sistance: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_PUPPET" >
 			<Text>[ICON_PUPPET] Fantoche: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_OCCUPIED" >
-			<Text>[ICON_OCCUPIED] Occupé: {1_num}%</Text>
+			<Text>[ICON_OCCUPIED] Occup&#233;: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_BLOCKADED" >
-			<Text>[ICON_BLOCKADED] Bloqué: {1_num}%</Text>
+			<Text>[ICON_BLOCKADED] Bloqu&#233;: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_CAPITAL" >
 			<Text>[ICON_CAPITAL] Capitale: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID" >
-			<Text>[ICON_MUSHROOM] Éviter la croissance: {1_num}%</Text>
+			<Text>[ICON_MUSHROOM] &#201;viter la croissance: {1_num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID_MANY" >
-			<Text>(Plus de {1_num}% des villes à éviter)</Text>
+			<Text>(Plus de {1_num}% des villes &#224; &#233;viter)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_WEIGHT_TOTAL" >
 			<Text>{1_num} (ville) / {2_num} (empire) = {3_num}% de {4_num}{5_icon}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_YIELD_USAGE" >
-			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR] consommé)</Text>
+			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR] consomm&#233;)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_YIELD_SURPLUS" >
 			<Text>{1_num} {2_icon} Surplus</Text>
@@ -301,18 +301,18 @@
 			<Text>[NEWLINE][ICON_BULLET]Modificateur de doctrine: {1_Num}%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODMOD_YIELD_BUILDINGS">
-			<Text>[NEWLINE][ICON_BULLET]Modificateur de bâtiment: {1_Num}%</Text>
+			<Text>[NEWLINE][ICON_BULLET]Modificateur de b&#226;timent: {1_Num}%</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
-			<Set Text="[NEWLINE][ICON_BULLET]Modificateur de bâtiment dans la [ICON_CAPITAL] Capitale: {1_Num}%"/>
+			<Set Text="[NEWLINE][ICON_BULLET]Modificateur de b&#226;timent dans la [ICON_CAPITAL] Capitale: {1_Num}%"/>
 		</Update>
 		<Row Tag="TXT_KEY_YIELD_MOD_GLOBAL_BUILDINGS">
-			<Text>[NEWLINE][ICON_BULLET]Bâtiments dans les autres villes: {1_Num}%</Text>
+			<Text>[NEWLINE][ICON_BULLET]B&#226;timents dans les autres villes: {1_Num}%</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
-			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4] Modificateur de mécontentement: {1_Num}%[ENDCOLOR]"/>
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4] Modificateur de m&#233;contentement: {1_Num}%[ENDCOLOR]"/>
 		</Update>
 		<Row Tag="TXT_KEY_TP_YIELD_FOR_FREE">
 			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} sans frais.</Text>
@@ -324,7 +324,7 @@
 			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} des doctrines</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TP_YIELD_FROM_MINORS">
-			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} des Cités-États.</Text>
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} des Cit&#233;s-&#201;tats.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TP_YIELD_FROM_HAPPINESS">
 			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} du surplus de [ICON_HAPPINESS_1] Bonheur.</Text>
@@ -334,7 +334,7 @@
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_TP_SCIENCE" />
-			<Set Text="[ICON_RESEARCH] Science générée à l'échelle de l'empire consacrée au projet de recherche actuel."/>
+			<Set Text="[ICON_RESEARCH] Science g&#233;n&#233;r&#233;e &#224; l'&#233;chelle de l'empire consacr&#233;e au projet de recherche actuel."/>
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NEXT_POLICY_TURN_LABEL" />

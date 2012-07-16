@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translation by Toys®Us -->
+<!-- Translation by ToysUs -->
 <GameData>
 	<Language_fr_FR>
 		<!--
@@ -13,7 +13,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMO_OPEN_TREE_FOR_UNIT_TT" >
-			<Text>Affiche l'arbre des promotions pour facilement voir celles que cette unité possède ou peut obtenir</Text>
+			<Text>Affiche l'arbre des promotions pour facilement voir celles que cette unit&#233; poss&#232;de ou peut obtenir</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMO_SIZE" >
@@ -21,26 +21,26 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMO_EARNT" >
-			<Text>Mérité</Text>
+			<Text>M&#233;rit&#233;</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_EARNT_TT" >
-			<Text>Promotions déjà acquises par cette unité (à l'exclusion des attributs et Merveilles)</Text>
+			<Text>Promotions d&#233;j&#224; acquises par cette unit&#233; (&#224; l'exclusion des attributs et Merveilles)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_AVAILABLE" >
 			<Text>Disponible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_AVAILABLE_TT" >
-			<Text>Promotions disponibles pour l'unité</Text>
+			<Text>Promotions disponibles pour l'unit&#233;</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_NOT_AVAILABLE" >
 			<Text>Pas encore disponible</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT" >
-			<Text>Promotions qui ne sont pas encore disponibles pour l'unité</Text>
+			<Text>Promotions qui ne sont pas encore disponibles pour l'unit&#233;</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMO_GROUP_UNIT" >
-			<Text>Unité</Text>
+			<Text>Unit&#233;</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_GROUP_CLASS" >
 			<Text>Type de combat</Text>
@@ -49,33 +49,33 @@
 			<Text>Promotions</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_GROUP_ALL_TT" >
-			<Text>Promotions qui améliorent les compétences de combat (les bonus sont cumulatifs)</Text>
+			<Text>Promotions qui am&#233;liorent les comp&#233;tences de combat (les bonus sont cumulatifs)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_GROUP_BASE" >
 			<Text>Promotions de base</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_GROUP_BASE_TT" >
-			<Text>Promotions qui améliorent les compétences de combat de base (les bonus sont cumulatifs)</Text>
+			<Text>Promotions qui am&#233;liorent les comp&#233;tences de combat de base (les bonus sont cumulatifs)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_GROUP_DEPENDANT" >
-			<Text>Promotions avancées</Text>
+			<Text>Promotions avanc&#233;es</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMO_GROUP_DEPENDANT_TT" >
-			<Text>Promotions qui procurent des compétences additionnelles</Text>
+			<Text>Promotions qui procurent des comp&#233;tences additionnelles</Text>
 		</Row>
 		
 		<!--
 				Upgrade Trees
 		-->
 		<Row Tag="TXT_KEY_UPGRADE_DIPLO_CORNER_HOOK" >
-			<Text>Tableau des améliorations</Text>
+			<Text>Tableau des am&#233;liorations</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UPGRADE_DIPLO_CORNER_HOOK_TT" >
-			<Text>Affiche le tableau des améliorations pour facilement voir celles disponibles pour un type de combat</Text>
+			<Text>Affiche le tableau des am&#233;liorations pour facilement voir celles disponibles pour un type de combat</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UPGRADE_OPEN_TREE_FOR_UNIT_TT" >
-			<Text>Affiche le tableau des améliorations pour facilement voir l'évolution possible de cette unité</Text>
+			<Text>Affiche le tableau des am&#233;liorations pour facilement voir l'&#233;volution possible de cette unit&#233;</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UPGRADE_SIZE" >
@@ -83,7 +83,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UPGRADE_GROUP_UNIT" >
-			<Text>Unité</Text>
+			<Text>Unit&#233;</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UPGRADE_GROUP_CLASS" >
 			<Text>Type de combat</Text>
@@ -96,10 +96,10 @@
 			<Text>Force: {1_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UPGRADE_UNIT_RANGED" >
-			<Text>Force à distance: {1_Num} à {2_Num}</Text>
+			<Text>Force &#224; distance: {1_Num} &#224; {2_Num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UPGRADE_UNIT_UPGRADE_COST" >
-			<Text>[ICON_GOLD] {1_Num} pour améliorer</Text>
+			<Text>[ICON_GOLD] {1_Num} pour am&#233;liorer</Text>
 		</Row>
 	</Language_fr_FR>
 </GameData>

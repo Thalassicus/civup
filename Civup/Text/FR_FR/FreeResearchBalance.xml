@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Translated by Toys®Us -->
+<!-- Translated by ToysUs -->
 <GameData>
 	<Language_fr_FR>
 		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME">
 			<Text>Recherche d'une technologie</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_HELP">
-			<Text>Ajoutez {1_num} [ICON_RESEARCH] Science à votre [COLOR_POSITIVE_TEXT]présente[ENDCOLOR] recherche d'une technologie, avec [COLOR_NEGATIVE_TEXT]aucun débordement[ENDCOLOR] vers la prochaine technologie.</Text>
+			<Text>Ajoutez {1_num} [ICON_RESEARCH] Science � votre [COLOR_POSITIVE_TEXT]pr&#233;sente[ENDCOLOR] recherche d'une technologie, avec [COLOR_NEGATIVE_TEXT]aucun d&#233;bordement[ENDCOLOR] vers la prochaine technologie.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_DISABLED_HELP">
-			<Text>Impossible de générer plus de recherche pour {1_num} tours.</Text>
+			<Text>Impossible de g&#233;n&#233;rer plus de recherche pour {1_num} tours.</Text>
 		</Row>
 	</Language_fr_FR>
 </GameData>

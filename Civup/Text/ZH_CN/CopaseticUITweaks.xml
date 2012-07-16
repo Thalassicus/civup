@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/30/2010 3:22:22 PM -->
+<GameData>
+	<Language_zh_CN>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>获得保护:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>其他文明可能会选择保护该城邦。对该城邦宣战会导致它的保护者对你宣战。</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_CONNECTED" />
+			<Set Text="城市获得一条[ICON_TRADE]连接首都[ICON_CAPITAL]的商路！" />
+		</Update>
+		<Row Tag="TXT_KEY_CITY_CONNECTED_RAILROAD">
+			<Text>城市获得一条[ICON_CONNECTED]连接首都[ICON_CAPITAL]的铁路商路！</Text>
+		</Row>		
+	</Language_zh_CN>
+</GameData>

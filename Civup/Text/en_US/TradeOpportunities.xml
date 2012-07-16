@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_en_US>
+		<Row Tag="TXT_KEY_SORT_BY_TRAIT" >
+			<Text>Sort by Trait</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_CS_NAME" >
+			<Text>Sort by City State Name</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_CS_ALLY" >
+			<Text>Sort by City State Ally</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_INFLUENCE" >
+			<Text>Sort by Influence</Text>
+		</Row>
+		
+
 		<Row Tag="TXT_KEY_DO_REFRESH" >
 			<Text>Refresh</Text>
 		</Row>

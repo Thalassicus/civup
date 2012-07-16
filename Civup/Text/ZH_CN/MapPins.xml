@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_zh_CN>
+		<Row Tag="TXT_KEY_MAPPINS_CONTEXT_EDIT">
+			<Text>编辑</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_CONTEXT_MOVE">
+			<Text>移动</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_CONTEXT_DELETE">
+			<Text>删除</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_POPUP_EDIT_TITLE">
+			<Text>输入指针详情</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_POPUP_DELETE_TITLE">
+			<Text>删除这个指针？</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TT">
+			<Text>点击左键查看，右键编辑，按着shift点击右键删除</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TYPE">
+			<Text>种类</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_SORT_TYPE">
+			<Text>按种类排序</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TEXT">
+			<Text>笔记</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_SORT_TEXT">
+			<Text>按笔记排序</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAPPINS_LIST_TOGGLE_TT">
+			<Text>显示/隐藏指针</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TERRAIN_MAP_PINS_ADV_QUEST">
+			<Text>我该如何在地图上做笔记？</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_BODY">
+			<Text>地图指针允许你给地图添加笔记（可在主界面和战略界面）。[NEWLINE][NEWLINE]按住Ctrl-X再点击地图来放置一个或多个指针。再按Ctrl-X回到普通地图模式。[NEWLINE][NEWLINE]鼠标移动到指针来查看笔记。右键点击指针来编辑，移动或删除笔记。[NEWLINE][NEWLINE]按Shift-X来切换所有指针开关。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TERRAIN_MAP_PINS_HEADING3_TITLE">
+			<Text>地图指针</Text>
+		</Row>
+	</Language_zh_CN>
+</GameData>
