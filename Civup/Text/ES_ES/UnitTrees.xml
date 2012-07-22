@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ES_ES>
+		<!--
+				Promotion Trees
+		-->
+		<Row Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK" >
+			<Text>Arbol de Promocion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK_TT" >
+			<Text>Muestra el &#225;rbol de la Promoci&#243;n para ver f&#225;cilmente qu&#233; promociones est&#225;n disponibles para una clase de combate (reconocimiento, naval, Cuerpo a cuerpo, asedio, etc)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_OPEN_TREE_FOR_UNIT_TT" >
+			<Text>Muestra el &#225;rbol de la Promoci&#243;n para ver f&#225;cilmente que esta unidad cuenta con promociones y est&#225;n disponibles</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_SIZE" >
+			<Text>Peque&#241;o</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_EARNT" >
+			<Text>Promociones Obtenidas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_EARNT_TT" >
+			<Text>las promociones ganadas por la unidad (Sin incluir habilidades especiales y aquellas obtenidas por las maravillas)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_AVAILABLE" >
+			<Text>Disponible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_AVAILABLE_TT" >
+			<Text>Promociones que pueden ser elegidas para la unidad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_NOT_AVAILABLE" >
+			<Text>Aun No Disponible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT" >
+			<Text>Promociones que a&#250;n no est&#225;n disponibles para la unidad</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMO_GROUP_UNIT" >
+			<Text>Unidad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_CLASS" >
+			<Text>Clase de combate</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_ALL" >
+			<Text>Promociones</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_ALL_TT" >
+			<Text>Promociones que mejoran las habilidades de combate (bonus acumulativo)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_BASE" >
+			<Text>Promociones Basicas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_BASE_TT" >
+			<Text>Promociones que mejoran las habilidades basicas de combate  (bonus acumulativo)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_DEPENDANT" >
+			<Text>Promociones Avanzadas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMO_GROUP_DEPENDANT_TT" >
+			<Text>Promociones que proveen habilidades adicionales</Text>
+		</Row>
+		
+		<!--
+				Upgrade Trees
+		-->
+		<Row Tag="TXT_KEY_UPGRADE_DIPLO_CORNER_HOOK" >
+			<Text>Arbol de Actualizacion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_DIPLO_CORNER_HOOK_TT" >
+			<Text>Muestra el &#225;rbol actualizacion para ver f&#225;cilmente qu&#233; promociones est&#225;n disponibles para una clase de combate (reconocimiento, naval, Cuerpo a cuerpo, asedio, etc)</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_OPEN_TREE_FOR_UNIT_TT" >
+			<Text>Muestra el arbol de actualizacion para ver facilmente el camino de actualizacion de esta unidad</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_SIZE" >
+			<Text>Peque&#241;o</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_GROUP_UNIT" >
+			<Text>Unidad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_GROUP_CLASS" >
+			<Text>Clase de Combate</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_MOVES" >
+			<Text>Movimientos: {1_Num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_COMBAT" >
+			<Text>Fuerza: {1_Num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_RANGED" >
+			<Text>Fuerza a distancia: {1_Num} a {2_Num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UPGRADE_UNIT_UPGRADE_COST" >
+			<Text>[ICON_GOLD] {1_Num} para actualizar</Text>
+		</Row>
+	</Language_ES_ES>
+</GameData>

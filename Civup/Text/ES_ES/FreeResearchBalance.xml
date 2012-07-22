@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/30/2010 12:48:34 PM -->
+<GameData>
+	<Language_ES_ES>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME">
+			<Text>Investigacion de Tecnologia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_HELP">
+			<Text>A&#241;ade {1_num} [ICON_RESEARCH] Ciencia a tu [COLOR_POSITIVE_TEXT]currently[ENDCOLOR] investigacion tecnologica, sin [COLOR_NEGATIVE_TEXT]repercutir[ENDCOLOR] en la proxima tecnologia.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_DISABLED_HELP">
+			<Text>No se puede generar mas investigacion durante {1_num} turnos.</Text>
+		</Row>
+	</Language_ES_ES>
+</GameData>

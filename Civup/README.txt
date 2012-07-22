@@ -3,7 +3,7 @@ Greetings!
 The "Options" file contains additional settings (same folder as this readme).
 
 Please check out the website at:
-http://civmodding.wordpress.com
+http://civmodding.wordpress.com/features
 
 For questions, comments, or concerns, drop by the forum at:
 http://forums.civfanatics.com/forumdisplay.php?f=429

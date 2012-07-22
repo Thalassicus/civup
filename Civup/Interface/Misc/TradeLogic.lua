@@ -1274,10 +1274,12 @@ function ResetDisplay()
 				strDisabledTT = strDisabledTT .. Locale.ConvertTextKey( "TXT_KEY_DIPLO_BOTH_NEED_EMBASSY_TT" ) ;
 				bEmptyTT = false;
 			end
+			--[[
 			if (not g_pUs:IsDoF(g_iThem) or not g_pThem:IsDoF(g_iUs)) then
 				strDisabledTT = strDisabledTT .. Locale.ConvertTextKey( "TXT_KEY_DIPLO_NEED_DOF_TT" ) ;
 				bEmptyTT = false;
 			end
+			--]]
 			if (Players[g_iUs]:GetGold() < iCost or Players[g_iThem]:GetGold() < iCost or bEmptyTT) then
 				strDisabledTT = strDisabledTT .. Locale.ConvertTextKey( "TXT_KEY_DIPLO_RESCH_AGREEMENT_NO_AGREEMENT" ) ;
 			end
@@ -1361,7 +1363,7 @@ function ResetDisplay()
     ---------------------------------------------------------------------------------- 
 
 	if ( Controls.UsPocketDoF ~= nil and Controls.ThemPocketDoF ~= nil) then
-		if (g_bPVPTrade) then	-- Only PvP trade, with the AI there is a dedicated interface for this trade.
+		if g_bPVPTrade then	-- Only PvP trade, with the AI there is a dedicated interface for this trade.
 		
 			strTooltip = Locale.ConvertTextKey("TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT");
 		

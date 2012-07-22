@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ES_ES>
+		<Update>
+			<Where Tag="TXT_KEY_IMPROVEMENT_TRADING_POST" />
+			<Set Text="Village" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT" />
+			<Set Text="A village is a clustered human settlement or community with a population ranging from a few hundred to a few thousands. These small settlements add to your society's economy." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADINGPOST" />
+			<Set Text="Village" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_ADV_QUEST" />
+			<Set Text="Does the village provide gold?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_HEADING3_BODY" />
+			<Set Text="Construct a village improvement in a tile to increase its gold output." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_HEADING3_TITLE" />
+			<Set Text="The Village" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORKERS_TRADINGPOST_HEADING3_BODY" />
+			<Set Text="The Village increases output of a tile by 1 gold. It doesn't access a resource.[NEWLINE]Technology Required: Trapping[NEWLINE]Construction Time: 5 Turns[NEWLINE]May Be Constructed On: Any land tile but ice" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science on Villages.[NEWLINE]+17% [ICON_RESEARCH] Science from Universities." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_TRADING_POST" />
+			<Set Text="Construct a [LINK=IMPROVEMENT_TRADING_POST]Village[\LINK]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_GOLD_REC" />
+			<Set Text="It will increase the amount of [ICON_GOLD] Gold provided by this tile, boosting the amount of money we will have to spend!" />
+		</Update>		
+	</Language_ES_ES>
+</GameData>

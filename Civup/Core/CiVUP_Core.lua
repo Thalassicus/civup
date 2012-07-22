@@ -3,9 +3,13 @@
 -- DateCreated: 12/21/2010 10:00:43 AM
 --------------------------------------------------------------
 
-include("YieldLibrary.lua")
-
 --print("INFO   Loading CiVUP_Core.lua")
+
+if GameInfo.Units[1].PopCostMod == nil then
+	print("FATAL  'Civup - General.sql' did not load!")
+end
+
+include("YieldLibrary.lua")
 
 if Game == nil then
 	return
@@ -13,10 +17,6 @@ end
 
 local log = Events.LuaLogger:New()
 log:SetLevel("INFO")
-
-if GameInfo.Units[1].PopCostMod == nil then
-	log:Fatal("'Civup - General.sql' did not load!")
-end
 
 ---------------------------------------------------------------------
 -- LuaEvents.PrintDebug()
@@ -147,3 +147,5 @@ function LuaEvents.PrintDebug()
 	text = string.format("%s\n%s%s", text, header, cityText)
 	log:Info(text)
 end
+
+--print("INFO   Done    CiVUP_Core.lua")

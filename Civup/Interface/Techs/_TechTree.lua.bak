@@ -8,9 +8,9 @@ g_UseSmallIcons = true;
 
 include("TechButtonInclude");
 include("TechHelpInclude");
-include("TutorialPopupScreen");
 
 local m_PopupInfo = nil;
+local stealingTechTargetPlayerID = -1;
 
 local g_PipeManager = InstanceManager:new( "TechPipeInstance", "TechPipeIcon", Controls.TechTreeScrollPanel );
 local g_EraManager = InstanceManager:new( "EraBlockInstance", "EraBlock", Controls.EraStack );
@@ -434,8 +434,14 @@ end
 
 function TechSelected( eTech, iDiscover)
 	--print("eTech:"..tostring(eTech));
+	print("stealingTechTargetPlayerID: " .. stealingTechTargetPlayerID);
+	print("player:GetNumFreeTechs(): " ..  player:GetNumFreeTechs());
 	if eTech > -1 then
-   		Network.SendResearch(eTech, player:GetNumFreeTechs(), UIManager:GetShift());
+		if (stealingTechTargetPlayerID ~= -1) then
+			Network.SendResearch(eTech, 0, stealingTechTargetPlayerID, UIManager:GetShift());
+		else
+	   		Network.SendResearch(eTech, player:GetNumFreeTechs(), -1, UIManager:GetShift());
+		end
    	end
 end
 
@@ -501,6 +507,12 @@ function OnDisplay( popupInfo )
 
 	m_PopupInfo = popupInfo;
 
+	--[[
+	print("popupInfo.Data1: " .. popupInfo.Data1);
+	print("popupInfo.Data2: " .. popupInfo.Data2);
+	print("popupInfo.Data3: " .. popupInfo.Data3);
+	--]]
+
     g_isOpen = true;
     if not g_NeedsFullRefresh then
 		g_NeedsFullRefresh = g_NeedsFullRefreshOnOpen;
@@ -518,10 +530,10 @@ function OnDisplay( popupInfo )
         UIManager:QueuePopup( ContextPtr, PopupPriority.TechTree );
     end
     
+    stealingTechTargetPlayerID = popupInfo.Data2;
+    
 	Events.SerialEventGameMessagePopupShown(m_PopupInfo);
-	
-	--OpenAdvisorPopup(ButtonPopupTypes.BUTTONPOPUP_TECH_TREE);
-	
+		
   	RefreshDisplay();
   	
 end
@@ -529,20 +541,21 @@ Events.SerialEventGameMessagePopup.Add( OnDisplay );
 
 function RefreshDisplay()
 
+	--print("REFRESHING TECH DISPLAY");
 	for tech in GameInfo.Technologies() do
 		RefreshDisplayOfSpecificTech( tech );
 	end
 	
 	-- update the era panels
 	local highestEra = 0;
-	for thisEra = 0, 6, 1  do
+	for thisEra = 0, 7, 1  do
 		if eraColumns[thisEra] then
 			if eraColumns[thisEra].researched == true then
 				highestEra = thisEra;
 			end
 		end
 	end
-	for thisEra = 0, 6, 1  do
+	for thisEra = 0, 7, 1  do
 		local thisEraBlockInstance = eraBlocks[thisEra];
 		if thisEra < highestEra then
 			thisEraBlockInstance.OldBar:SetHide( false );
@@ -572,6 +585,28 @@ function RefreshDisplayOfSpecificTech( tech )
   	local numFreeTechs = player:GetNumFreeTechs();
  	local researchTurnsLeft = player:GetYieldTurns(YieldTypes.YIELD_SCIENCE, techID);
  	local turnText = tostring( researchTurnsLeft ).." "..turnsString;
+	local isAllowedToStealTech = false;
+	local isAllowedToGetTechFree = false;
+	
+	-- Espionage - stealing a tech!
+ 	if stealingTechTargetPlayerID ~= -1 then
+ 		if player:CanResearch( techID ) then
+			opponentPlayer = Players[stealingTechTargetPlayerID];
+			local opponentTeam = Teams[opponentPlayer:GetTeam()];
+			if (opponentTeam:IsHasTech(techID)) then
+				isAllowedToStealTech = true;
+			end
+		end
+	end
+	
+	-- Choosing a free tech - extra conditions may apply
+	if (numFreeTechs > 0) then
+		if (player:CanResearchForFree(techID)) then
+			isAllowedToGetTechFree = true;
+		end
+	end
+ 	
+ 	local potentiallyBlockedFromStealing = (stealingTechTargetPlayerID ~= -1) and ((not isAllowedToStealTech) or player:GetNumTechsToSteal(stealingTechTargetPlayerID) <= 0);
  	
  	-- Rebuild the small buttons if needed
  	if (g_NeedsFullRefresh) then
@@ -616,17 +651,17 @@ function RefreshDisplayOfSpecificTech( tech )
 			AddCallbackToSmallButtons( thisTechButton, maxSmallButtons, -1, 0, Mouse.eLClick, TechSelected );
  		end
  		
- 	elseif player:GetCurrentResearch() == techID then -- the player is currently researching this one
+ 	elseif player:GetCurrentResearch() == techID and (not potentiallyBlockedFromStealing) then -- the player is currently researching this one
  		thisTechButton.AlreadyResearched:SetHide( true );
  		thisTechButton.Available:SetHide( true );
  		thisTechButton.Unavailable:SetHide( true );
 		thisTechButton.Locked:SetHide( true );
 		-- deal with free tech
-		if player:GetNumFreeTechs() > 0 then
+		if (isAllowedToGetTechFree) or (stealingTechTargetPlayerID ~= -1 and isAllowedToStealTech) then
   			thisTechButton.FreeTech:SetHide( false );
  			thisTechButton.CurrentlyResearching:SetHide( true );
 			-- update number of turns to research
- 			if 	player:GetYieldRate(YieldTypes.YIELD_SCIENCE) > 0 then
+ 			if 	player:GetYieldRate(YieldTypes.YIELD_SCIENCE) > 0 and stealingTechTargetPlayerID == -1 then
   				thisTechButton.FreeTurns:SetText( turnText );
   				thisTechButton.FreeTurns:SetHide( false );
   			else
@@ -662,17 +697,17 @@ function RefreshDisplayOfSpecificTech( tech )
 		end
  		-- update advisor icon if needed
  		--thisTechButton.AdvisorIcon:SetHide( true );
- 	elseif (player:CanResearch( techID ) and not scienceDisabled) then -- the player research this one right now if he wants
+ 	elseif (player:CanResearch( techID ) and not scienceDisabled and (not potentiallyBlockedFromStealing)) then -- the player research this one right now if he wants
  		thisTechButton.AlreadyResearched:SetHide( true );
  		thisTechButton.CurrentlyResearching:SetHide( true );
  		thisTechButton.Unavailable:SetHide( true );
 		thisTechButton.Locked:SetHide( true );
  		-- deal with free 		
-		if player:GetNumFreeTechs() > 0 then
+		if (isAllowedToGetTechFree)  or (stealingTechTargetPlayerID ~= -1 and isAllowedToStealTech) then
  			thisTechButton.FreeTech:SetHide( false );
  			thisTechButton.Available:SetHide( true );
 			-- update number of turns to research
- 			if 	player:GetYieldRate(YieldTypes.YIELD_SCIENCE) > 0 then
+ 			if 	player:GetYieldRate(YieldTypes.YIELD_SCIENCE) > 0 and stealingTechTargetPlayerID == -1 then
   				thisTechButton.FreeTurns:SetText( turnText );
   				thisTechButton.FreeTurns:SetHide( false );
   			else

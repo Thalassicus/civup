@@ -302,8 +302,8 @@ end
 function City_GetBaseYieldFromMinorCivs(city, yieldID)
 	local player = Players[city:GetOwner()]
 	local yield = 0
-	if player:IsMinorCiv() then
-		return yield
+	if player:IsMinorCiv() or yieldID == YieldTypes.YIELD_FAITH then
+		return 0
 	end
 	if Civup.ENABLE_DISTRIBUTED_MINOR_CIV_YIELDS then
 		yield = player:GetYieldsFromCitystates()[yieldID]
@@ -1335,7 +1335,11 @@ function PlayerClass.GetYieldRate(player, yieldID, skipGlobalMods)
 		end
 		return yield
 	elseif yieldID == YieldTypes.YIELD_FAITH then
-		return player:GetTotalFaithPerTurn()
+		if not player:IsMinorCiv() then
+			yield = yield + player:GetTotalFaithPerTurn()
+			yield = yield + player:GetYieldsFromCitystates()[yieldID]
+		end
+		return yield
 	elseif yieldID == YieldTypes.YIELD_HAPPINESS then
 		yield = yield + player:GetExcessHappiness()
 		for city in player:Cities() do
@@ -1978,9 +1982,9 @@ function PlayerClass.GetYieldsFromCitystates(player, doUpdate)
 		if not (player:GetNumCities() == 0 or player:IsMinorCiv() or player:IsBarbarian()) then
 			for minorCivID,minorCiv in pairs(Players) do
 				if minorCiv:IsAliveCiv() and minorCiv:IsMinorCiv() then
-					local traitType = minorCiv:GetMinorCivTrait()
+					local traitID = minorCiv:GetMinorCivTrait()
 					local friendLevel = minorCiv:GetMinorCivFriendshipLevelWithMajor(player:GetID())
-					for yieldID,yield in pairs(player:GetCitystateYields(traitType, friendLevel)) do
+					for yieldID,yield in pairs(player:GetCitystateYields(traitID, friendLevel)) do
 						MapModData.VEM.MinorCivRewards[playerID].Total[yieldID] = MapModData.VEM.MinorCivRewards[playerID].Total[yieldID] + yield
 					end
 					--log:Debug("friendLevel with %s = %i", minorCiv:GetName(), friendLevel)
@@ -2011,7 +2015,7 @@ function PlayerClass.GetFinalCitystateYield(player, yieldID)
 	return csYield
 end
 
-function PlayerClass.GetCitystateYields(player, traitType, friendLevel)
+function PlayerClass.GetCitystateYields(player, traitID, friendLevel)
 	local yields = {}
 	local query = ""
 	if friendLevel <= 0 then
@@ -2024,7 +2028,7 @@ function PlayerClass.GetCitystateYields(player, traitType, friendLevel)
 	
 	query = string.format("FriendLevel = '%s'", friendLevel)
 	for traitInfo in GameInfo.MinorCivTrait_Yields(query) do
-		if GameInfo.MinorCivTraits[traitInfo.TraitType].ID == traitType then
+		if GameInfo.MinorCivTraits[traitInfo.TraitType].ID == traitID then
 			local yieldID = GameInfo.Yields[traitInfo.YieldType].ID
 			yields[yieldID].Base = yields[yieldID].Base + traitInfo.Yield
 			yields[yieldID].PerEra = yields[yieldID].PerEra + traitInfo.YieldPerEra
@@ -2039,16 +2043,20 @@ function PlayerClass.GetCitystateYields(player, traitType, friendLevel)
 		end
 	end
 
+	--log:Trace("GetCitystateYields(%s, %s, %s)", player:GetName(), GameInfo.MinorCivTraits[traitID].Type, friendLevel)
 	for yieldID, yield in pairs(yields) do
 		if yield.Base == 0 and yield.PerEra == 0 then
 			yields[yieldID] = 0
 		else
 			yields[yieldID] = yield.Base + yield.PerEra * (1 + player:GetCurrentEra())
 			local numCities = player:GetNumCities()
+			--[[
 			if yieldID ~= YieldTypes.YIELD_CS_MILITARY and numCities < 4 then
 				yields[yieldID] = (1 - 0.2*(4-numCities)) * yields[yieldID]
 			end
+			--]]
 			yields[yieldID] = math.ceil(yields[yieldID] * (1 + player:GetTraitInfo().CityStateBonusModifier / 100))
+			--log:Trace("yields[%s] = %s", GameInfo.Yields[yieldID].Type, yields[yieldID])
 		end
 	end
 	return yields

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ES_ES>
+		<Row Tag="TXT_KEY_SORT_BY_TRAIT" >
+			<Text>Ordenar por Tratado</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_CS_NAME" >
+			<Text>Ordenar por Nombre de Ciudad-Estado</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_CS_ALLY" >
+			<Text>Ordenar por Ciudad-Estado Aliado</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SORT_BY_INFLUENCE" >
+			<Text>Ordenar por Influencia</Text>
+		</Row>
+		
+
+		<Row Tag="TXT_KEY_DO_REFRESH" >
+			<Text>Actualizar</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_STATUS" >
+			<Text>Comercio</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESOURCE">
+			<Text>{1_iconstring} {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_FROM">
+			<Text>{1_iconstring} Compra {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_TO">
+			<Text>{1_iconstring} Vende {2_resource}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_DEMANDED_BY" >
+			<Text>Denunciado por</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POSSIBLE_DEALS" >
+			<Text>{1_iconstring} [COLOR_POSITIVE_TEXT]{2_num}[ENDCOLOR] posible {3_type}.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CIV_STATUS" >
+			<Text>{1_status}[NEWLINE]{1_era}[NEWLINE]{2_Num} Puntos</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_RATE" >
+			<Text>Tasa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CLICK_TO_TRADE" >
+			<Text>Click para comerciar[COLOR_POSITIVE_TEXT][ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LASTS_TURNS" >
+			<Text>Ultimos {1_num} turnos.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_BORDER_AGREEMENT" >
+			<Text>[COLOR_YIELD_GOLD]Apertura de Fronteras Comunes[ENDCOLOR][NEWLINE]1% de los ingresos brutos combinados de ambos jugadores se suma a tu [ICON_GOLD] tasa de Oro (2% Si es Aliado).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_YES_TT" >
+			<Text>[COLOR_YIELD_GOLD]Proponer la apertura de fronteras comunes[ENDCOLOR][NEWLINE]1% de los ingresos brutos combinados de ambos jugadores se suma a tu [ICON_GOLD] tasa de Oro (2% Si es Aliado).[NEWLINE][NEWLINE]Ultimos {1_num} turnos.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_NO_TT" >
+			<Text>Apertura de fronteras comunes Activo.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_US_TT" >
+			<Text>Ellos nos han abierto las fronteras.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_THEM_TT" >
+			<Text>Les hemos abiertos nuestras fronteras.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_RESEARCH_AGREEMENT" >
+			<Text>[COLOR_RESEARCH_STORED]Tratado de investigacion[ENDCOLOR][NEWLINE]3% de la investigacion combinada de ambos jugadores se a&#241;aden a tu [ICON_RESEARCH] tasa de Ciencia (6% si es Aliado).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_YES_TT" >
+			<Text>[COLOR_RESEARCH_STORED]Proponer tratado de investigacion[ENDCOLOR][NEWLINE]3% de la investigacion combinada de ambos jugadores se a&#241;aden a tu [ICON_RESEARCH] tasa de Ciencia (6% si es Aliado).[NEWLINE][NEWLINE]Ultimos {1_num} turnos.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_RA_NO_TT" >
+			<Text>Tratado de investigacion Activo.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DEFENSIVE_PACT" >
+			<Text>[COLOR_CITY_BROWN]Tratado de defensa[ENDCOLOR][NEWLINE]Si un tercero declara la guerra a cualquiera de los jugadores, ambos jugadores declararan la guerra a los terceros.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_YES_TT" >
+			<Text>[COLOR_CITY_BROWN]Proponer tratado de defensa[ENDCOLOR][NEWLINE]Si un tercero declara la guerra a cualquiera de los jugadores, ambos jugadores declararan la guerra a los terceros.[NEWLINE][NEWLINE]Ultimos {1_num} turnos.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_DEFENSE_NO_TT" >
+			<Text>Tratado de defensa Activo.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_GOLD_STORED" >
+			<Text>Oro Almacenado</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_GOLD_PROFIT" >
+			<Text>Ganancia de Oro</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DEAL_ALLIANCE" >
+			<Text>[COLOR_GREEN]Alianza[ENDCOLOR][NEWLINE]Duplica los ingresos por Fronteras Abiertas, Acuerdos de Investigaci&#243;n, y promueve las relaciones de amistad.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT" >
+			<Text>[COLOR_GREEN]Proponer Alianza[ENDCOLOR][NEWLINE]Duplica los ingresos por Fronteras Abiertas, Acuerdos de Investigaci&#243;n, y promueve las relaciones de amistad.[NEWLINE][NEWLINE]Ultimos {1_num} turnos.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_NO_TT" >
+			<Text>Estamos aliados.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_US" >
+			<Text>[COLOR_ORANGE]Nos denunci&#243;[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_THEM" >
+			<Text>[COLOR_ORANGE]Los denunciamos[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_DENOUNCED_BOTH" >
+			<Text>[COLOR_NEGATIVE_TEXT]Hemos denunciado[NEWLINE]Nos denunci&#243;[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_AT_WAR_LARGE" >
+			<Text>[COLOR_NEGATIVE_TEXT]- EN GUERRA -[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_PEACE_TREATY" >
+			<Text>Tratado de Paz</Text>
+		</Row>	
+		
+
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS" >
+			<Text>Ciudades-Estados</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_CITY_STATE" >
+			<Text>Ciudad Estado</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_ALLIED_WITH" >
+			<Text>Aliado con</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECTED_BY" >
+			<Text>Protegido por</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUESTS" >
+			<Text>Quest(s)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_INFLUENCE" >
+			<Text>Influencia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR" >
+			<Text>Guerra</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_GOLD" >
+			<Text>Regalar Oro</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PROTECT_TT" >
+			<Text>{1} es protegido por[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_PROTECT_TT" >
+			<Text>{1} no esta bajo proteccion</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_TT" >
+			<Text>{1} te ha solicitado para[NEWLINE]{2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_NO_QUEST_TT" >
+			<Text>{1} actualmente no hay quest</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_WAR_WITH_PLAYERS">
+			<Text>Combate {1_PlayerNames}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_BARBARIANS">
+			<Text>Mata a los b&#225;rbaros</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_ROUTE">
+			<Text>Construir Carretera</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CAMP">
+			<Text>Destruir Campamento</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONNECT_RESOURCE">
+			<Text>Conecta {1_ResourceName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_CONSTRUCT_WONDER">
+			<Text>Construye {1_WonderName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_GREAT_PERSON">
+			<Text>Haz que aparezca {1_UnitName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_KILL_CITY_STATE">
+			<Text>Destruye {1_CityStateName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_PLAYER">
+			<Text>Busca {1_CivName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_QUEST_FIND_NATURAL_WONDER">
+			<Text>Busca una Maravilla Natural</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_PEACE_TT" >
+			<Text>En la guerra, puede proponer la paz</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DO_CS_STATUS_WAR_TT" >
+			<Text>En la guerra, paz bloqueada</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT" >
+			<Text>{1_Num}[ICON_GOLD] por [COLOR_POSITIVE_TEXT]+{2_Num} Influencia[ENDCOLOR]</Text>
+		</Row>
+	</Language_ES_ES>
+</GameData>

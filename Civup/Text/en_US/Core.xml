@@ -270,15 +270,37 @@
 			<Text>Pay {1_num} [ICON_GOLD] Gold to a City-State ally to immediately improve any unimproved or pillaged exportable resources the City-State controls.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POP_CSTATE_YIELDS">
-			<Text>Yields:</Text>
+			<Text>YIELDS:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITY_STATE_YIELDS_TT">
 			<Text>Yields the citystate is giving you.</Text>
 		</Row>
 		<Update>
-			<Where Tag="TXT_KEY_POP_CSTATE_RESOURCES" />
-			<Set Text="Exports:" />
+			<Where Tag="TXT_KEY_POP_CSTATE_QUESTS" />
+			<Set Text="QUESTS:" />
 		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_ALLIED_WITH" />
+			<Set Text="ALLY:" />
+		</Update>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>PROTECTORS:</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_RESOURCES" />
+			<Set Text="EXPORTS:" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_TRAIT" />
+			<Set Text="TRAIT:" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POP_CSTATE_PERSONALITY" />
+			<Set Text="PERSONALITY:" />
+		</Update>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>Other civilizations may choose to protect a city-state. Declaring war on that city-state will cause its protectors to declare war on you in return.</Text>
+		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_CSTATE_CULTURE_BONUS"/>
 			<Set Text="You are receiving [COLOR_POSITIVE_TEXT][ICON_CULTURE] Culture[ENDCOLOR] from them in all your cities."/>
@@ -457,6 +479,25 @@
 		<Update>
 			<Where Tag="TXT_KEY_UNIT_HELP_NUCLEAR_MISSILE" />
 			<Set Text="Unleash nuclear destruction upon your foes. Does immense damage to Cities and destroys any Unit caught in the blast radius. May be stationed on Missile Cruisers and Missile Subs.[NEWLINE][NEWLINE]Requires Manhattan Project and two Uranium resources." />
+		</Update>
+
+
+
+
+		<!--
+				Buildings
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FLOATING_GARDENS_DESC" />
+			<Set Text="Chinampa" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FOATING_GARDENS_STRATEGY" />
+			<Set Text="The Chinampa is the Aztec unique building, replacing the Watermill. It increases the city's food output, and should be built if the city is near a lake or river." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FLOATING_GARDENS_PEDIA" />
+			<Set Text="A Chinampa is a small artificial island constructed on a freshwater lake in order to increase the land available for agriculture. The lake irrigates the island and provides it with fresh organic material, resulting in an incredibly fertile growing environment. The Aztecs were masters of this form of agriculture, and the 'Floating Gardens of Xochimilco' remain famous today." />
 		</Update>
 		
 		

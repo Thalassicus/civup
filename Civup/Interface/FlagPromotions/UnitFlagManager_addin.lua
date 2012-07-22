@@ -234,7 +234,7 @@ function OnNewUnitRefresh( playerID, unitID, hexVec, unitType, cultureType, civI
 	if flag then
 		flag:UpdatePromotions()
 	else
-		log:Fatal( string.format( "Flag not found for OnNewUnitRefresh: Player[%i] Unit[%i]", playerID, unitID ) )
+		log:Warn( string.format( "Flag not found for OnNewUnitRefresh: Player[%i] Unit[%i]", playerID, unitID ) )
 	end
 end
 Events.SerialEventUnitCreated.Add( OnNewUnitRefresh )

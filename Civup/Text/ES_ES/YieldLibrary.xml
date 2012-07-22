@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ES_ES>
+		<!--
+				Yield Breakdown Tooltip
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_CULTURE_WONDER_BONUS" />
+			<Set Text="+{1_Num}% Por tener una maravilla" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CULTURE_CITY_MOD" />
+			<Set Text="+{1_Num}% por Ciudad" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CULTURE_PLAYER_MOD" />
+			<Set Text="+{1_Num}% por Imperio" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOOD_USAGE" />
+			<Set Text="([COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_Num}[ENDCOLOR] comido por [ICON_CITIZEN] Citizens)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Imperio" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_CAPITAL" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% para [ICON_CAPITAL] Capital" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_UNHAPPY" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]{1_Num}%[ENDCOLOR] de [ICON_HAPPINESS_4] Infelicidad" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_FOODMOD_WLTKD" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Nosotros Amamos el Dia del Rey" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_FOOD_CONVERSION" />
+			<Set Text="[NEWLINE][ICON_BULLET]+{1_Num} [ICON_PRODUCTION] por exceso de [ICON_FOOD] Alimento" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_RAILROAD_CONNECTION" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num} por conexion con Ferrocarril" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_DOMAIN" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% for Unit Domain" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_COMBAT_TYPE" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Clase de Combate" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_MILITARY" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Unidades Militares" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_WITH_BUILDING" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por {2_BuildingName}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_CITY" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas (Ciudad)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_LOCAL_RES" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas ({2_ResourceName})" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_CITY" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Edificios" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por edificios en la [ICON_CAPITAL] Capital (Trait)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SPACE" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Estacion Espacial (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_SUPPLY" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por unidad de Supply (Empire)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_MILITARY_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Unidades Militares (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SETTLER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Colonos (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_SETTLER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Colonos (Capital)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_RELIGION_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Construcciones Religiosas (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_COBMAT_CLASS_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Clase de Combate (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_UNIT_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Tipo de Unidad (Trait)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Edificios (Trait)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WONDER_POLICY" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas (Politica)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_POLICY" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Edificios (Politica)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_WORLD_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas Mundiales (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_TEAM_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas de Equipo (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_NATIONAL_WONDER_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Maravillas Nacionales (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_BUILDING_POLICY_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Construcciones (Mod politica de imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SPACE_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Nave Espacial (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_SPECIALIST_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Especialistas (Imperio)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por ciudades" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_RESOURCES" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Recursos" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Felicidad" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_AREA" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Area" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Misc" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_CAPITAL" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por la [ICON_CAPITAL] Capital" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_GOLDEN_AGE" />
+			<Set Text="[NEWLINE][ICON_BULLET]{1_Num}% por Edad de Oro" />
+		</Update>
+		
+		
+		<!--
+				Misc
+		-->
+		
+		<Row Tag="TXT_KEY_YIELD_BREAKDOWN">
+			<Text>[{1_color}]{2_stored}[ENDCOLOR]/[{1_color}]{3_needed}[ENDCOLOR] ([{1_color}]+{4_rate}[ENDCOLOR] por turno) {5_icon} {6_desc}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_LAW" >
+			<Text>Ley</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_TOPIC_POPULATION" >
+			<Text>Ciudadano</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_CS_MILITARY" >
+			<Text>puntos por turno</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PER_CITY">
+			<Text>por ciudad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPLIT_AMONG_CITIES">
+			<Text>Dividido entre tus ciudades</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MILITARY_UNIT_REWARDS">
+			<Text>Unidad Militar</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_HAPPINESS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}%[ENDCOLOR] [ICON_RESEARCH] por {1_Num} [ICON_HAPPINESS_1] Felicidad."/>
+		</Update>
+		<Row Tag="TXT_KEY_TP_SCIENCE_FROM_UNHAPPINESS" >
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]-{1_Num}%[ENDCOLOR] [ICON_RESEARCH] por {1_Num} [ICON_HAPPINESS_4] Infelicidad.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FOR_FREE">
+			<Text>{1_Num} gratis.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_OPEN_BORDERS">
+			<Text>{1_Num} por Apertura de Fronteras con otros lideres.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_HAPPINESS_DIFFICULTY_LEVEL"/>
+			<Set Text="{1_Num} gratis."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_RESEARCH_AGREEMENTS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_RESEARCH] por Tratado de Investigacion."/>
+		</Update>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_LUXURIES">
+			<Text>{1_Num} por Recursos de Lujo.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_POLICIES">
+			<Text>{1_Num} por Politicas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_POLICIES">
+			<Text>{1_Num} {2_icon} por Politicas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_TRAITS">
+			<Text>{1_Num} {2_icon} por Tratos</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_PROCESSES">
+			<Text>{1_Num} {2_IconString} from Process</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_MINOR_CIVS">
+			<Text>{1_num} {2_icon} por Ciudades-Estados</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_FOCUS" >
+			<Text>{2_icon} Trabajadores: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_POPULATION" >
+			<Text>[ICON_CITIZEN] Poblacion: {1_num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_NOT_CONNECTED" >
+			<Text>[ICON_CONNECTED] No conectado: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RAZING" >
+			<Text>[ICON_RAZING] Arrasado: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RESISTANCE" >
+			<Text>[ICON_RESISTANCE] Resistencia: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_PUPPET" >
+			<Text>[ICON_PUPPET] Titere: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_OCCUPIED" >
+			<Text>[ICON_OCCUPIED] Ocupado: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_BLOCKADED" >
+			<Text>[ICON_BLOCKADED] Bloqueado: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_CAPITAL" >
+			<Text>[ICON_CAPITAL] Capital: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID" >
+			<Text>[ICON_MUSHROOM] Evitar Crecimiento: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID_MANY" >
+			<Text>(Evitar crecimiento de mas del {1_num}% en las ciudades)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_WEIGHT_TOTAL" >
+			<Text>{1_num} (city) / {2_num} (empire) = {3_num}% de {4_num}{5_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_USAGE" >
+			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR] consumido)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_SURPLUS" >
+			<Text>{1_num} {2_icon} Superavit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_OTHER_YIELDS">
+			<Text>({1_num} {2_icon} + {3_num} {4_icon} {5_yieldstring})</Text>
+		</Row>
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER"/>
+			<Set Text="[NEWLINE][ICON_BULLET]Policy Modifier: {1_num}%"/>
+		</Update>
+		-->
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_SETTLER_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Politicas para Colonos: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Politicas: {1_Num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Edificios: {1_Num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]Modificador de edificios en la [ICON_CAPITAL] Capital: {1_Num}%"/>
+		</Update>
+		<Row Tag="TXT_KEY_YIELD_MOD_GLOBAL_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]Edificios en otras ciudades: {1_Num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4] Modificador de Infelicidad: {1_Num}%[ENDCOLOR]"/>
+		</Update>
+		<Row Tag="TXT_KEY_TP_YIELD_FOR_FREE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} gratis.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_CITIES">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por Ciudades.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_POLICIES">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por Politicas.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_MINORS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por Ciudades-Estados.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_HAPPINESS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por exceso de [ICON_HAPPINESS_1] Felicidad.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_YIELD_FROM_RESEARCH_AGREEMENTS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por tratado de Investigacion con otros jugadores.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE" />
+			<Set Text="[ICON_RESEARCH] Science being produced empire-wide towards the current research project."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NEXT_POLICY_TURN_LABEL" />
+			<Set Text="{1_Num: number #} Turno(s) hasta la siguiente politica"/>
+		</Update>
+	</Language_ES_ES>
+</GameData>

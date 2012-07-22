@@ -53,6 +53,23 @@
 			<Text>Lasts {1_num} turns.</Text>
 		</Row>
 
+		
+		<Row Tag="TXT_KEY_DEAL_EMBASSY_AGREEMENT" >
+			<Text>[COLOR_YIELD_GOLD]Embassy[ENDCOLOR][NEWLINE]Allows Open Borders, Research Agreements, and Defensive Pacts. Reveals the player's Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_EMBASSY_YES_TT" >
+			<Text>[COLOR_YIELD_GOLD]Propose an embassy[ENDCOLOR][NEWLINE]]Allows Open Borders, Research Agreements, and Defensive Pacts. Reveals the player's Capital.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_EMBASSY_NO_TT" >
+			<Text>We both have embassies.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_EMBASSY_US_TT" >
+			<Text>We have an embassy in their capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DEAL_STATUS_EMBASSY_THEM_TT" >
+			<Text>They have an embassy in our capital.</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_DEAL_BORDER_AGREEMENT" >
 			<Text>[COLOR_YIELD_GOLD]Mutual Open Borders[ENDCOLOR][NEWLINE]1% of the combined gross income of both players adds to your [ICON_GOLD] Gold rate (2% if Allied).</Text>
 		</Row>

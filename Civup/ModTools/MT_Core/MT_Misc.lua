@@ -222,7 +222,10 @@ function UI_StartDeal(arg)
 		--log:Debug("resID=%s resNum=%s", resID, resNum)
 		deal:AddResourceTrade(toPlayerID, resID, resNum, dealDuration)
 	end
-	if agreement == "OpenBorders" then
+	if agreement == "Embassy" then
+		deal:AddAllowEmbassy(fromPlayerID, dealDuration)
+		deal:AddAllowEmbassy(toPlayerID, dealDuration)
+	elseif agreement == "OpenBorders" then
 		deal:AddOpenBorders(fromPlayerID, dealDuration)
 		deal:AddOpenBorders(toPlayerID, dealDuration)
 	elseif agreement == "DefensePact" then
@@ -231,6 +234,9 @@ function UI_StartDeal(arg)
 	elseif agreement == "ResearchAgreement" then
 		deal:AddResearchAgreement(fromPlayerID, dealDuration)
 		deal:AddResearchAgreement(toPlayerID, dealDuration)
+	elseif agreement == "Alliance" then
+		deal:AddDeclarationOfFriendship(fromPlayerID, dealDuration)
+		deal:AddDeclarationOfFriendship(toPlayerID, dealDuration)
 	end
 	
 	UI.DoEqualizeDealWithHuman()

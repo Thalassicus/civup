@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ES_ES>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_IMPROVEMENTS_REQUIRED_FOR_RESOURCE">
+			<Text>(Con {1})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_IMPROVEMENT_UNDER_CONSTRUCTION">
+			<Text>[COLOR_YELLOW]{1} ([ENDCOLOR][COLOR_POSITIVE_TEXT]{2}[ENDCOLOR][COLOR_YELLOW])[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_DEFENSE">
+			<Text>Defensa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_DEFENSE_BLOCK_SIMPLE">
+			<Text>[COLOR_POSITIVE_TEXT]Defensa Mod[ENDCOLOR] : {1}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_YIELDS_ACTUAL">
+			<Text>[COLOR_POSITIVE_TEXT]Rendimientos[ENDCOLOR] : {1}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_YIELDS_WITHOUTFEATURE">
+			<Text>{2} [COLOR_YELLOW]sin {1}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_YIELDS_WITHIMPROVEMENT">
+			<Text>{2} [COLOR_YELLOW]con {1}[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_HELP_PRESS_FOR_MORE">
+			<Text>[COLOR_GREY](pulsa ALT para ver mas)[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_DEFENSE_BLOCK_PLUS">
+			<Text>Defensa Mod : [COLOR_GREEN]+{1}%[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CSB_PLOTROLL_LABEL_DEFENSE_BLOCK_MINUS">
+			<Text>Defensa Mod : [COLOR_RED]{1}%[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PLOTROLL_REQUIRES_TECH_TO_USE" />
+			<Set Text="[COLOR_WARNING_TEXT]({@1_TechName} para comerciar)[ENDCOLOR]" />
+		</Update>
+	</Language_ES_ES>
+</GameData>

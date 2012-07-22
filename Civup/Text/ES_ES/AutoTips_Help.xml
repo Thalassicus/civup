@@ -4,15 +4,15 @@
 	<Language_ES_ES>
 		<Update>
 			<Where Tag="TXT_KEY_WONDER_HIMEJI_CASTLE_HELP" />
-			<Set Text="+25% [ICON_STRENGTH] Strength in friendly territory" />
+			<Set Text="+25% de [ICON_STRENGTH] Fuerza en territorio aliado" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTION_GREAT_LIGHTHOUSE_HELP" />
-			<Set Text="+1 [ICON_MOVES] Movement and +1 Sight for Ships" />
+			<Set Text="+1 [ICON_MOVES] Movimiento y +1 al Campo de Visi&#243;n para unidades mar&#237;timas" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTION_MORALE_HELP" />
-			<Set Text="+15% [ICON_STRENGTH] Strength" />
+			<Set Text="+15% de [ICON_STRENGTH] Fuerza" />
 		</Update>
 	</Language_ES_ES>
 </GameData>

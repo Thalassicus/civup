@@ -5,7 +5,7 @@
 
 include("MT_LuaLogger.lua")
 local log = Events.LuaLogger:New()
-log:SetLevel("WARN")
+log:SetLevel("INFO")
 
 
 PlayerClass = getmetatable(Players[0]).__index
@@ -84,6 +84,7 @@ end
 function PlayerClass.GetPossibleDeals(player)
 	local playerID = player:GetID()
 	local deals = {
+		{icon="[ICON_CAPITAL]", name="embassies", num=0},
 		{icon="[ICON_TRADE]", name="border deals", num=0},
 		{icon="[ICON_RESEARCH]", name="research deals", num=0},
 		{icon="[ICON_STRENGTH]", name="defense pacts", num=0},
@@ -92,21 +93,30 @@ function PlayerClass.GetPossibleDeals(player)
 	local deal = UI.GetScratchDeal()
 	for targetPlayerID, targetPlayer in pairs(Players) do
 		if targetPlayer:IsAliveCiv() and targetPlayerID ~= playerID and not targetPlayer:IsMinorCiv() and targetPlayer:IsAtPeace(player) then
+			if deal:IsPossibleToTradeItem(targetPlayerID, playerID, TradeableItems.TRADE_ITEM_ALLOW_EMBASSY, Game.GetDealDuration()) then
+				log:Debug("%15s embassy", targetPlayer:GetName())
+				deals[1].num = deals[1].num + 1
+			end
 			if deal:IsPossibleToTradeItem(targetPlayerID, playerID, TradeableItems.TRADE_ITEM_OPEN_BORDERS, Game.GetDealDuration()) then
 				log:Debug("%15s border deal", targetPlayer:GetName())
-				deals[1].num = deals[1].num + 1
+				deals[2].num = deals[2].num + 1
 			end
 			if deal:IsPossibleToTradeItem(targetPlayerID, playerID, TradeableItems.TRADE_ITEM_RESEARCH_AGREEMENT, Game.GetDealDuration()) then
 				log:Debug("%15s research deal", targetPlayer:GetName())
-				deals[2].num = deals[2].num + 1
+				deals[3].num = deals[3].num + 1
 			end
 			if deal:IsPossibleToTradeItem(targetPlayerID, playerID, TradeableItems.TRADE_ITEM_DEFENSIVE_PACT, Game.GetDealDuration()) then
 				log:Debug("%15s defense deal", targetPlayer:GetName())
-				deals[3].num = deals[3].num + 1
-			end
-			if not targetPlayer:IsDoF(playerID) and not targetPlayer:IsDoFMessageTooSoon(playerID) then
-				log:Debug("%15s alliance", targetPlayer:GetName())
 				deals[4].num = deals[4].num + 1
+			end
+			if player:IsHuman() and targetPlayer:IsHuman() then
+				if deal:IsPossibleToTradeItem(targetPlayerID, playerID, TradeableItems.TRADE_ITEM_DECLARATION_OF_FRIENDSHIP, Game.GetDealDuration()) then
+					log:Debug("%15s alliance", targetPlayer:GetName())
+					deals[5].num = deals[5].num + 1
+				end
+			elseif (not targetPlayer:IsDoF(playerID) and not targetPlayer:IsDoFMessageTooSoon(playerID)) then
+				log:Debug("%15s alliance", targetPlayer:GetName())
+				deals[5].num = deals[5].num + 1
 			end
 		end
 	end
@@ -369,13 +379,14 @@ function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
 	local query				= ""
 	local activePlayerID	= Game.GetActivePlayer()
 	local activePlayer		= Players[activePlayerID]
-	local traitType			= minorCiv:GetMinorCivTrait()
+	local traitID			= minorCiv:GetMinorCivTrait()
 	local friendLevel		= minorCiv:GetMinorCivFriendshipLevelWithMajor(activePlayerID)
 	local yieldValue		= 0
 	if friendLevel <= 0 then
 		return false
 	end
-	local yieldList = activePlayer:GetCitystateYields(traitType, friendLevel)
+	local yieldList = activePlayer:GetCitystateYields(traitID, friendLevel)
+	--log:Trace("GetCitystateYields(%s, %s) = %s", GameInfo.MinorCivTraits[traitID].Type, friendLevel, yieldList)
 	for yieldInfo in GameInfo.Yields() do
 		yieldID = yieldInfo.ID
 		local yieldName = ""
@@ -469,7 +480,7 @@ function PlayerClass.GetCitystateThresholdString(minorCiv)
 		return ""
 	end
 	
-	local traitType 	= minorCiv:GetMinorCivTrait()
+	local traitID 		= minorCiv:GetMinorCivTrait()
 	local yieldType		= nil
 	local yieldStored	= 0
 	local yieldNeeded	= 0
@@ -477,7 +488,7 @@ function PlayerClass.GetCitystateThresholdString(minorCiv)
 	local turnsLeft		= "-"
 	
 	--print("GetCitystateThresholdString")
-	if Civup.MINOR_CIV_MILITARISTIC_REWARD_NEEDED ~= 0 and traitType == MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC then
+	if Civup.MINOR_CIV_MILITARISTIC_REWARD_NEEDED ~= 0 and traitID == MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC then
 		yieldType		= YieldTypes.YIELD_CS_MILITARY
 		yieldStored		= activePlayer:GetYieldStored(yieldType)
 		yieldNeeded		= activePlayer:GetYieldNeeded(yieldType)

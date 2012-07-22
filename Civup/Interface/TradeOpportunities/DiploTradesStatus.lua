@@ -22,8 +22,9 @@ for _, resInfo in ipairs(resourceList) do
 	numResources = numResources + 1
 end
 
-local defaultWidth = Game.Round(500 / numResources)
-local stackOffset = 910 - (defaultWidth * (numResources + 5) + 100)
+local windowWidth = 1000
+local defaultWidth = Game.Round((windowWidth-460) / numResources)
+local stackOffset = (windowWidth-80) - (defaultWidth * (numResources + 5) + 100)
 
 
 function ShowHideHandler(bIsHide, bIsInit)
@@ -54,6 +55,7 @@ function InitLabels()
 	end
 	
 	AddButton(controlTable.MainStack)
+	AddButton(controlTable.MainStack, "[ICON_CAPITAL]", "TXT_KEY_DEAL_EMBASSY_AGREEMENT")
 	AddButton(controlTable.MainStack, "[ICON_TRADE]", "TXT_KEY_DEAL_BORDER_AGREEMENT")
 	AddButton(controlTable.MainStack, "[ICON_RESEARCH]", "TXT_KEY_DEAL_RESEARCH_AGREEMENT")
 	AddButton(controlTable.MainStack, "[ICON_STRENGTH]", "TXT_KEY_DEAL_DEFENSIVE_PACT")
@@ -219,14 +221,14 @@ end
 
 function GetCivControl(im, playerID, bCanTrade)
 	local player			= Players[playerID]
-	local iTeam				= player:GetTeam()
-	local pTeam				= Teams[iTeam]
-	local pCivInfo			= GameInfo.Civilizations[player:GetCivilizationType()]
+	local themTeamID		= player:GetTeam()
+	local themTeam			= Teams[themTeamID]
+	local themCivInfo		= GameInfo.Civilizations[player:GetCivilizationType()]
 	local activePlayerID	= Game.GetActivePlayer()
 	local activePlayer		= Players[activePlayerID]
-	local iActiveTeam		= activePlayer:GetTeam()
-	local activeTeam		= Teams[iActiveTeam]
-	local bIsActivePlayer	= (activePlayerID == playerID)
+	local activeTeamID		= activePlayer:GetTeam()
+	local activeTeam		= Teams[activeTeamID]
+	local isActivePlayer	= (activePlayerID == playerID)
 	local isAtWar			= player:IsAtWar(activePlayer)	
 	
 	local pDeal				= UI.GetScratchDeal()
@@ -239,7 +241,7 @@ function GetCivControl(im, playerID, bCanTrade)
 	local statusColor		= "[COLOR_WHITE]"
 	local statusTip			= ""
 	
-	if bIsActivePlayer then
+	if isActivePlayer then
 		controlTable.CivName:SetText(Locale.ConvertTextKey("TXT_KEY_YOU"))
 	elseif player:IsHuman() then
 		controlTable.CivName:SetText(Locale.TruncateString(player:GetNickName(), 20, true))
@@ -264,7 +266,7 @@ function GetCivControl(im, playerID, bCanTrade)
 			statusIcon	= "[ICON_TEAM_8]"
 			statusColor	= "[COLOR_MENU_BLUE]"			
 			statusTip	= "TXT_KEY_DEAL_STATUS_ALLIANCE_NO_TT"
-		elseif pTeam:IsForcePeace(iActiveTeam) then
+		elseif themTeam:IsForcePeace(activeTeamID) then
 			statusIcon	= "[ICON_TEAM_1]"
 			statusTip	= "TXT_KEY_DEAL_PEACE_TREATY"
 		else
@@ -328,13 +330,14 @@ function GetCivControl(im, playerID, bCanTrade)
 		button.Label:SetAnchor("C,C")
 	else
 		for _, resInfo in ipairs(resourceList) do
-			PopulateResourceInstance(controlTable.MainStack, player, resInfo, bIsActivePlayer)
+			PopulateResourceInstance(controlTable.MainStack, player, resInfo, isActivePlayer)
 		end
 	end
 	
 	AddButton(controlTable.MainStack)	
 	
-	if bIsActivePlayer then
+	if isActivePlayer then
+		AddButton(controlTable.MainStack)
 		AddButton(controlTable.MainStack)
 		AddButton(controlTable.MainStack)
 		AddButton(controlTable.MainStack)
@@ -345,15 +348,54 @@ function GetCivControl(im, playerID, bCanTrade)
 		AddButton(controlTable.MainStack)
 		AddButton(controlTable.MainStack)
 		AddButton(controlTable.MainStack)
-	else
-		if pTeam:IsAllowsOpenBordersToTeam(iActiveTeam) and activeTeam:IsAllowsOpenBordersToTeam(iTeam) then
+		AddButton(controlTable.MainStack)
+	else		
+		if themTeam:HasEmbassyAtTeam(activeTeamID) and activeTeam:HasEmbassyAtTeam(themTeamID) then 
+			turnsLeft = dealList[TradeableItems.TRADE_ITEM_ALLOW_EMBASSY][playerID][1].finalTurn - Game.GetGameTurn()
+			AddButton(
+				controlTable.MainStack, 
+				turnsLeft,
+				string.format("%s[NEWLINE][NEWLINE]%s %s", Locale.ConvertTextKey("TXT_KEY_DEAL_EMBASSY_AGREEMENT"), turnsLeft, Locale.ConvertTextKey("TXT_KEY_VP_TURNS"))
+			)
+		elseif themTeam:HasEmbassyAtTeam(activeTeamID) then
+			AddButton(
+				controlTable.MainStack, "[ICON_BLOCKADED]", "TXT_KEY_DEAL_STATUS_EMBASSY_US_TT",
+				function() UI_StartDeal{
+					fromPlayerID = Game.GetActivePlayer(), 
+					toPlayerID = player:GetID(),
+					agreement = "Embassy"
+				} end
+			)
+		elseif activeTeam:HasEmbassyAtTeam(themTeamID) then
+			AddButton(
+				controlTable.MainStack, "[ICON_BLOCKADED]", "TXT_KEY_DEAL_STATUS_EMBASSY_THEM_TT",
+				function() UI_StartDeal{
+					fromPlayerID = Game.GetActivePlayer(), 
+					toPlayerID = player:GetID(),
+					agreement = "Embassy"
+				} end
+			)
+		elseif pDeal:IsPossibleToTradeItem(playerID, activePlayerID, TradeableItems.TRADE_ITEM_ALLOW_EMBASSY, Game.GetDealDuration()) then
+			AddButton(
+				controlTable.MainStack, "[ICON_PLUS]", Locale.ConvertTextKey("TXT_KEY_DEAL_STATUS_EMBASSY_YES_TT", Game.GetDealDuration()),
+				function() UI_StartDeal{
+					fromPlayerID = Game.GetActivePlayer(), 
+					toPlayerID = player:GetID(),
+					agreement = "Embassy"
+				} end
+			)
+		else
+			AddButton(controlTable.MainStack)
+		end
+
+		if themTeam:IsAllowsOpenBordersToTeam(activeTeamID) and activeTeam:IsAllowsOpenBordersToTeam(themTeamID) then
 			turnsLeft = dealList[TradeableItems.TRADE_ITEM_OPEN_BORDERS][playerID][1].finalTurn - Game.GetGameTurn()
 			AddButton(
 				controlTable.MainStack, 
 				turnsLeft,
 				string.format("%s[NEWLINE][NEWLINE]%s %s", Locale.ConvertTextKey("TXT_KEY_DEAL_BORDER_AGREEMENT"), turnsLeft, Locale.ConvertTextKey("TXT_KEY_VP_TURNS"))
 			)
-		elseif pTeam:IsAllowsOpenBordersToTeam(iActiveTeam) then
+		elseif themTeam:IsAllowsOpenBordersToTeam(activeTeamID) then
 			AddButton(
 				controlTable.MainStack, "[ICON_BLOCKADED]", "TXT_KEY_DEAL_STATUS_BORDERS_US_TT",
 				function() UI_StartDeal{
@@ -362,7 +404,7 @@ function GetCivControl(im, playerID, bCanTrade)
 					agreement = "OpenBorders"
 				} end
 			)
-		elseif activeTeam:IsAllowsOpenBordersToTeam(iTeam) then
+		elseif activeTeam:IsAllowsOpenBordersToTeam(themTeamID) then
 			AddButton(
 				controlTable.MainStack, "[ICON_BLOCKADED]", "TXT_KEY_DEAL_STATUS_BORDERS_THEM_TT",
 				function() UI_StartDeal{
@@ -384,7 +426,7 @@ function GetCivControl(im, playerID, bCanTrade)
 			AddButton(controlTable.MainStack)
 		end
 		
-		if pTeam:IsHasResearchAgreement(iActiveTeam) then
+		if themTeam:IsHasResearchAgreement(activeTeamID) then
 			turnsLeft = dealList[TradeableItems.TRADE_ITEM_RESEARCH_AGREEMENT][playerID][1].finalTurn - Game.GetGameTurn()
 			AddButton(controlTable.MainStack,
 				turnsLeft,
@@ -403,7 +445,7 @@ function GetCivControl(im, playerID, bCanTrade)
 			AddButton(controlTable.MainStack)
 		end	
 		
-		if pTeam:IsDefensivePact(iActiveTeam) then
+		if themTeam:IsDefensivePact(activeTeamID) then
 			turnsLeft = dealList[TradeableItems.TRADE_ITEM_DEFENSIVE_PACT][playerID][1].finalTurn - Game.GetGameTurn()
 			AddButton(controlTable.MainStack,
 				turnsLeft,
@@ -424,7 +466,19 @@ function GetCivControl(im, playerID, bCanTrade)
 		if player:IsDoF(activePlayerID) then
 			button = AddButton(controlTable.MainStack, "[ICON_TEAM_8]", "TXT_KEY_DEAL_ALLIANCE", OnCivSelected)
 			button.Button:SetVoid1(playerID)
-		elseif not player:IsDoFMessageTooSoon(activePlayerID) then
+		elseif player:IsHuman() and targetPlayer:IsHuman() then
+			if pDeal:IsPossibleToTradeItem(playerID, activePlayerID, TradeableItems.TRADE_ITEM_DECLARATION_OF_FRIENDSHIP, Game.GetDealDuration()) then
+				AddButton(controlTable.MainStack, "[ICON_PLUS]", Locale.ConvertTextKey("TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT", Game.GetDealDuration()),
+					function() UI_StartDeal{
+						fromPlayerID = Game.GetActivePlayer(), 
+						toPlayerID = player:GetID(),
+						agreement = "Alliance"
+					} end
+				)
+			else
+				AddButton(controlTable.MainStack)
+			end
+		elseif (not targetPlayer:IsDoF(playerID) and not targetPlayer:IsDoFMessageTooSoon(playerID)) then
 			button = AddButton(controlTable.MainStack, "[ICON_PLUS]", Locale.ConvertTextKey("TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT", Game.GetDealDuration()), OnCivSelected)
 			button.Button:SetVoid1(playerID)
 		else
