@@ -22,6 +22,19 @@
 		<Row Tag="TXT_KEY_DEALS_ALLIANCE">
 			<Text>alliances</Text>
 		</Row>
+		<Row Tag="TXT_KEY_SPECIALIST_GENERAL">
+			<Text>General</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_BUILDING_TRADE_CONNECTION_HELP">
+			<Text>Works around a bug (right-click for details).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TRADE_CONNECTION">
+			<Text>Railroad Connection</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TRADE_CONNECTION_STRATEGY">
+			<Text>This free building fixes a bug (the capital does not connect to the trade network connected to the capital, a logical paradox).[NEWLINE][NEWLINE]An unbroken [ICON_CONNECTED] route of roads, railroads, or water tiles to the [ICON_CAPITAL] Capital provides [ICON_GOLD].[NEWLINE][NEWLINE]An unbroken [ICON_CONNECTED] route of railroads or water tiles to the [ICON_CAPITAL] Capital provides +25% [ICON_PRODUCTION] (requires Railroads technology).[NEWLINE][NEWLINE]A [ICON_CONNECTED] trade route can only cross between water and land tiles at a Harbor.</Text>
+		</Row>
 		
 
 		<Row Tag="TXT_KEY_PER_TURN">
@@ -385,7 +398,10 @@
 			<Where Tag="TXT_KEY_DIPLO_STATUS_TT" />
 			<Set Text="[ICON_INFLUENCE] Currently {1_statusType}: {2_statusText} {3_rate}" />
 		</Update>
-		<Row Tag="TXT_KEY_DIPLO_STATUS_OTHER_TT" >
+		<Row Tag="TXT_KEY_DIPLO_INFLUENCE_TT" >
+			<Text>[ICON_INFLUENCE] Influence: {1_statusType} {2_statusText} {3_rate}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DIPLO_INFLUENCE_RIVAL_TT" >
 			<Text>[ICON_STAR] Rival ({1_civName}): {2_statusText} [ICON_INFLUENCE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DIPLO_STATUS_MILITARISTIC_REWARD_TT" >
@@ -393,6 +409,15 @@
 		</Row>
 		<Row Tag="TXT_KEY_DIPLO_STATUS_GREAT_PERSON_REWARD_TT" >
 			<Text>[ICON_GREAT_PEOPLE] Great Person: {1_remaining} turns ({2_current}/{3_threshold}{4_rate})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DIPLO_STATUS_TRIBUTE_TT" >
+			<Text>[ICON_RESISTANCE] Tribute:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POSSIBLE" >
+			<Text>Possible</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOT_POSSIBLE" >
+			<Text>Not Possible</Text>
 		</Row>
 		
 		
@@ -499,6 +524,33 @@
 			<Where Tag="TXT_KEY_BUILDING_FLOATING_GARDENS_PEDIA" />
 			<Set Text="A Chinampa is a small artificial island constructed on a freshwater lake in order to increase the land available for agriculture. The lake irrigates the island and provides it with fresh organic material, resulting in an incredibly fertile growing environment. The Aztecs were masters of this form of agriculture, and the 'Floating Gardens of Xochimilco' remain famous today." />
 		</Update>
+		<Row Tag="TXT_KEY_BUILDING_BLAST_FURNACE">
+			<Text>Blast Furnace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BLAST_FURNACE_STRATEGY">
+			<Text>The Blast Furnace increases the production of a city when training units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BLAST_FURNACE_PEDIA">
+			<Text>A blast furnace is used for smelting metals, generally iron. Fuel and ore are continuously supplied through the top of the furnace, while air is blown into the bottom of the chamber, so the chemical reactions take place throughout the furnace as the material moves downward.[NEWLINE][NEWLINE]Blast furnaces were invented in China and commonplace by 400 BCE, spreading to Europe by 1500 CE. Iron was essential to military success when the State of Qin had unified China in 221 BCE, and Chinese iron smelters of this era employed an average workforce of over two hundred men. By 1000 CE the Song Dynasty iron industry made a remarkable switch of resources from charcoal to bituminous coal in casting iron and steel, sparing thousands of acres of woodland from felling.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMITHY">
+			<Text>Smithy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMITHY_STRATEGY">
+			<Text>The Smithy increases the production of a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMITHY_PEDIA">
+			<Text>A smithy is a place where a blacksmith works metal by heating and hammering, usually iron or steel. The Hittites first developed the smelting of iron ores around 1500 BCE. They seem to have maintained a near monopoly on the knowledge of iron production for several hundred years, but when their empire collapsed during the Eastern Mediterranean upheavals around 1200 BCE, the knowledge spread in all directions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FOUNDRY">
+			<Text>Foundry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FOUNDRY_STRATEGY">
+			<Text>The Foundry National Wonder greatly increases a city's production. A civilization must have a Blast Furnace in 75% of its cities before it can construct a Foundry.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FOUNDRY_PEDIA">
+			<Text>A foundry is a place for large-scale production of metal castings. Metals are cast into shapes by melting them into a liquid, pouring the metal in a mold, and removing the mold material or casting after the metal has solidified as it cools. The most common metals processed are aluminum and cast iron.</Text>
+		</Row>
 		
 		
 		

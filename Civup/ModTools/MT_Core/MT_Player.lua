@@ -48,14 +48,30 @@ end
 ---------------------------------------------------------------------
 -- player:GetDeals()
 --
+DealTypes = {
+	[TradeableItems.TRADE_ITEM_PEACE_TREATY]				= "TRADE_ITEM_PEACE_TREATY",
+	[TradeableItems.TRADE_ITEM_OPEN_BORDERS]				= "TRADE_ITEM_OPEN_BORDERS",
+	[TradeableItems.TRADE_ITEM_RESEARCH_AGREEMENT]			= "TRADE_ITEM_RESEARCH_AGREEMENT",
+	[TradeableItems.TRADE_ITEM_DEFENSIVE_PACT]				= "TRADE_ITEM_DEFENSIVE_PACT",
+	[TradeableItems.TRADE_ITEM_DECLARATION_OF_FRIENDSHIP]	= "TRADE_ITEM_DECLARATION_OF_FRIENDSHIP",
+	[TradeableItems.TRADE_ITEM_ALLOW_EMBASSY]				= "TRADE_ITEM_ALLOW_EMBASSY",
+	[TradeableItems.TRADE_ITEM_THIRD_PARTY_PEACE]			= "TRADE_ITEM_THIRD_PARTY_PEACE",
+	[TradeableItems.TRADE_ITEM_THIRD_PARTY_WAR]				= "TRADE_ITEM_THIRD_PARTY_WAR",
+	[TradeableItems.TRADE_ITEM_CITIES]						= "TRADE_ITEM_CITIES",
+	[TradeableItems.TRADE_ITEM_RESOURCES]					= "TRADE_ITEM_RESOURCES",
+	[TradeableItems.TRADE_ITEM_GOLD]						= "TRADE_ITEM_GOLD",
+	[TradeableItems.TRADE_ITEM_GOLD_PER_TURN]				= "TRADE_ITEM_GOLD_PER_TURN"
+}
+
 function PlayerClass.GetDeals(player)
+	local activePlayerID = Game.GetActivePlayer()
 	local playerID = player:GetID()
 	local deal = UI.GetScratchDeal()
-	local dealList = {}
+	local dealTable = {}
 	for index, name in ipairs(TradeableItems) do
-		dealList[index] = {}
+		dealTable[index] = {}
 		for playerID, player in pairs(Players) do
-			dealList[index][playerID] = {}
+			dealTable[index][playerID] = {}
 		end
 	end
 
@@ -64,18 +80,70 @@ function PlayerClass.GetDeals(player)
 	    for dealID = 0, numDeals - 1 do
 			UI.LoadCurrentDeal(playerID, dealID)
 			deal:ResetIterator()
-			local itemType, duration, finalTurn, data1, data2, fromPlayerID = deal:GetNextItem()			
-			while itemType do
-				--log:Debug("activePlayerID=%s fromPlayer=%s", Game.GetActivePlayer(), Players[fromPlayerID])
-				--log:Debug("itemType=%s duration=%s finalTurn=%s data1=%s data2=%s fromPlayerID=%s", itemType, duration, finalTurn, data1, data2, fromPlayerID)
-				dealList[itemType] = dealList[itemType] or {}
-				dealList[itemType][fromPlayerID] = dealList[itemType][fromPlayerID] or {}
-				table.insert(dealList[itemType][fromPlayerID], {duration=duration, finalTurn=finalTurn, data1=data1, data2=data2, fromPlayerID=fromPlayerID})
-				itemType, duration, finalTurn, data1, data2, fromPlayerID = deal:GetNextItem()
+			local itemID, duration, finalTurn, data1, data2, fromPlayerID = deal:GetNextItem()
+			local priority, iconString, help, toPlayerID
+			while itemID do
+				--log:Debug("activePlayerID=%s fromPlayer=%s", Game.GetActivePlayer(), Players[fromPlayerID]:GetName())
+				--log:Debug("itemID=%s duration=%s finalTurn=%s data1=%s data2=%s fromPlayerID=%s", itemID, duration, finalTurn, data1, data2, fromPlayerID)
+				
+				local dealInfo	= DealTypes[itemID]
+				
+				if dealInfo and GameInfo.Deals[dealInfo] then
+					dealInfo	= GameInfo.Deals[dealInfo]
+					priority	= dealInfo.Priority
+					iconString	= dealInfo.IconString
+					help		= dealInfo.Help
+				else
+					priority	= 99
+					iconString	= string.format("[%s]", itemID)
+					help		= iconString					
+				end
+				
+				if itemID == TradeableItems.TRADE_ITEM_RESOURCES then
+					iconString = data2 .. GameInfo.Resources[data1].IconString
+					help = iconString .. " " .. Locale.ConvertTextKey(GameInfo.Resources[data1].Description)
+				elseif itemID == TradeableItems.TRADE_ITEM_CITIES then
+					local plot = pPlotMap.GetPlot( data1, data2 )
+					if plot and plot:GetPlotCity() then
+						iconString = string.format("City(%s)", plot:GetPlotCity():GetName())
+						help = iconString
+					end
+					data1, data2 = nil, nil
+				end
+				
+				if duration and duration > 0 then
+					iconString	= string.format("%s(%s)", iconString, duration)
+					help		= string.format("%s(%s)", iconString, duration)
+				end
+				if data1 and data1 ~= 0 then
+					iconString	= string.format("%s 1[%s]", iconString, data1)
+					help		= string.format("%s 1[%s]", iconString, data1)
+				end
+				if data2 and data2 ~= 0  then
+					iconString	= string.format("%s 2[%s]", iconString, data2)
+					help		= string.format("%s 2[%s]", iconString, data2)
+				end
+				
+				dealTable[itemID] = dealTable[itemID] or {}
+				dealTable[itemID][fromPlayerID] = dealTable[itemID][fromPlayerID] or {}
+				
+				table.insert( dealTable[itemID][fromPlayerID], {
+					duration		= duration, 
+					finalTurn		= finalTurn, 
+					data1			= data1, 
+					data2			= data2, 
+					fromPlayerID	= fromPlayerID,
+					toPlayerID		= (fromPlayerID == activePlayerID) and playerID or activePlayerID,
+					priority		= priority,
+					iconString		= iconString,
+					help			= help
+				})
+				
+				itemID, duration, finalTurn, data1, data2, fromPlayerID = deal:GetNextItem()
 			end
 		end
 	end
-	return dealList
+	return dealTable
 end
 
 ---------------------------------------------------------------------
@@ -372,6 +440,71 @@ function PlayerClass.GetUniqueBuildingID(player, classType)
 end
 
 ------------------------------------------------------------------
+--
+function PlayerClass.GetExportColor(minorCiv, resID, resImproved, resNear)
+	local activePlayerID = Game.GetActivePlayer()
+	local allyID = minorCiv:GetAlly()
+	if allyID == activePlayerID then
+		-- allied
+		if resImproved == resNear then
+			return "[COLOR_POSITIVE_TEXT]"
+		else
+			return "[COLOR_WHITE]"
+		end
+	elseif (not resID) or (minorCiv:GetNumResourceTotal(resID, false) > 0) then
+		if allyID and allyID ~= -1 then
+			-- rival ally
+			if minorCiv:GetMinorCivFriendshipWithMajor(activePlayerID) >= GameDefines.FRIENDSHIP_THRESHOLD_ALLIES then
+				return "[COLOR_NEGATIVE_TEXT]"
+			else
+				return "[COLOR_PLAYER_ORANGE_TEXT]"
+			end
+		else
+			-- no ally
+			return "[COLOR_YELLOW]"
+		end
+	end
+	return "[COLOR_GREY]"
+end
+
+------------------------------------------------------------------
+--
+function PlayerClass.GetNearbyResources(minorCiv)
+	local minorCivID = minorCiv:GetID()
+	local capital = minorCiv:GetCapitalCity()
+	local resList = {}
+	
+	if capital then
+		local centerX = capital:GetX();
+		local centerY = capital:GetY();
+		local radius = 5;
+		local closeRange = 2;
+		for x = -radius, radius, 1 do
+			for y = -radius, radius, 1 do
+				local tarPlot = Map.GetPlotXY(centerX, centerY, x, y);
+				if tarPlot ~= nil then
+					local ownerID = tarPlot:GetOwner();
+					if (ownerID == minorCivID or ownerID == -1) then
+						local plotX = tarPlot:GetX();
+						local plotY = tarPlot:GetY();
+						local plotDistance = Map.PlotDistance(centerX, centerY, plotX, plotY);
+						if plotDistance <= radius and (plotDistance <= closeRange or ownerID == minorCivID) then
+							local resID = tarPlot:GetResourceType(Game.GetActiveTeam());
+							if resID ~= -1 and Game.GetResourceUsageType(resID) ~= ResourceUsageTypes.RESOURCEUSAGE_BONUS then
+								resList[resID] = (resList[resID] or 0) + tarPlot:GetNumResource()
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	return resList
+end
+
+
+------------------------------------------------------------------
 -- minorCiv:GetMinorYieldString(showDetails)
 --
 function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
@@ -381,7 +514,7 @@ function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
 	local activePlayer		= Players[activePlayerID]
 	local traitID			= minorCiv:GetMinorCivTrait()
 	local friendLevel		= minorCiv:GetMinorCivFriendshipLevelWithMajor(activePlayerID)
-	local yieldValue		= 0
+	local yieldColor		= minorCiv:GetExportColor()
 	if friendLevel <= 0 then
 		return false
 	end
@@ -390,24 +523,17 @@ function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
 	for yieldInfo in GameInfo.Yields() do
 		yieldID = yieldInfo.ID
 		local yieldName = ""
+		local yield = 0
 		if showDetails then
 			yieldName = Locale.ConvertTextKey(yieldInfo.Description) .. " "
 		end
-		if yieldID == YieldTypes.YIELD_SCIENCE then
-			if friendLevel >= 2 then
-				for policyInfo in GameInfo.Policies("MinorScienceAllies = 1") do
-					if activePlayer:HasPolicy(policyInfo.ID) then
-						if showDetails then
-							yieldName = yieldName .. "[NEWLINE]"
-						end
-						yieldString = string.format(
-							"%s%s[COLOR_POSITIVE_TEXT]%s[ENDCOLOR] %s",
-							yieldString,
-							yieldInfo.IconString,
-							Game.Round(0.25 * minorCiv:GetYieldRate(yieldID)),
-							yieldName
-						)
+		if yieldID == YieldTypes.YIELD_SCIENCE and friendLevel >= 2 then
+			for policyInfo in GameInfo.Policies("MinorScienceAllies = 1") do
+				if activePlayer:HasPolicy(policyInfo.ID) then
+					if showDetails then
+						yieldName = yieldName .. "[NEWLINE]"
 					end
+					yield = yield + Game.Round(0.25 * minorCiv:GetYieldRate(yieldID))
 				end
 			end
 		elseif yieldID == YieldTypes.YIELD_HAPPINESS then
@@ -417,13 +543,7 @@ function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
 					if showDetails then
 						yieldName = yieldName .. "[NEWLINE]"
 					end
-					yieldString = string.format(
-						"%s%s[COLOR_POSITIVE_TEXT]%s[ENDCOLOR] %s",
-						yieldString,
-						yieldInfo.IconString,
-						row.Yield, 
-						yieldName
-					)
+					yield = yield + row.Yield
 				end
 			end
 		elseif yieldID == YieldTypes.YIELD_PRODUCTION then
@@ -433,32 +553,27 @@ function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
 					if showDetails then
 						yieldName = string.format("%s(%s)[NEWLINE]", yieldName, Locale.ConvertTextKey("TXT_KEY_PER_CITY"))
 					end
-					yieldString = string.format(
-						"%s%s[COLOR_POSITIVE_TEXT]%s[ENDCOLOR] %s",
-						yieldString,
-						yieldInfo.IconString,
-						row.Yield, 
-						yieldName
-					)
+					yield = yield + row.Yield
 				end
 			end
-		elseif yieldList[yieldID] > 0 and (not showDetails
-											or yieldID == YieldTypes.YIELD_FOOD
-											or yieldID == YieldTypes.YIELD_CULTURE
-											or yieldID == YieldTypes.YIELD_EXPERIENCE
-											) then
+		end
+		if yieldList[yieldID] > 0 and yieldID ~= YieldTypes.YIELD_CS_MILITARY then
 			if showDetails then
 				if yieldID == YieldTypes.YIELD_EXPERIENCE then
 					yieldName = string.format("%s(%s)[NEWLINE]", yieldName, Locale.ConvertTextKey("TXT_KEY_MILITARY_UNIT_REWARDS"))
-				else
+				elseif yieldID == YieldTypes.YIELD_FOOD or yieldID == YieldTypes.YIELD_CULTURE then
 					yieldName = string.format("%s(%s)[NEWLINE]", yieldName, Locale.ConvertTextKey("TXT_KEY_SPLIT_AMONG_CITIES"))
 				end
 			end
+			yield = yield + yieldList[yieldID]
+		end
+		if yield > 0 then
 			yieldString = string.format(
-				"%s%s[COLOR_POSITIVE_TEXT]%s[ENDCOLOR] %s",
+				"%s%s%s%s[ENDCOLOR] %s",
 				yieldString,
 				yieldInfo.IconString,
-				yieldList[yieldID], 
+				yieldColor,
+				yield,
 				yieldName
 			)
 		end

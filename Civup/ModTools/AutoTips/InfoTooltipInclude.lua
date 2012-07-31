@@ -853,7 +853,7 @@ function GetHelpTextForUnit(iUnitID, bIncludeRequirementsInfo)
 	
 	-- AI Flavor Debug
 	if Civup.SHOW_AI_UNIT_PRIORITIES == 1 then
-		strHelpText = strHelpText .. "[NEWLINE]----------------[NEWLINE]AI Priorites:"
+		strHelpText = strHelpText .. "[NEWLINE]----------------[NEWLINE]AI Priorites (debug info):"
 		for flavorInfo in GameInfo.Unit_Flavors(string.format("UnitType = '%s'", pUnitInfo.Type)) do
 			strHelpText = strHelpText .. string.format("[NEWLINE]%s %s", flavorInfo.Flavor, Locale.ToLower(string.gsub(flavorInfo.FlavorType, "FLAVOR_", "")));
 		end
@@ -903,7 +903,7 @@ function GetHelpTextForBuilding(iBuildingID, bExcludeName, bExcludeHeader, bNoMa
 	
 	-- AI Flavor Debug
 	if Civup.SHOW_AI_BUILDING_PRIORITIES == 1 then
-		strText = strText .. "[NEWLINE]----------------[NEWLINE]AI Priorites:"
+		strText = strText .. "[NEWLINE]----------------[NEWLINE]AI Priorites (debug info):"
 		for flavorInfo in GameInfo.Building_Flavors(string.format("BuildingType = '%s'", buildingInfo.Type)) do
 			strText = strText .. string.format("[NEWLINE]%s %s", flavorInfo.Flavor, Locale.ToLower(string.gsub(flavorInfo.FlavorType, "FLAVOR_", "")));
 		end

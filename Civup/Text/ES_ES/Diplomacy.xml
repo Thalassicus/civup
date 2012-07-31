@@ -837,10 +837,12 @@
 			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_2" />
 			<Set Text="Let's set a date for the signing ceremony." />
 		</Update>
+		<!--
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_ACCEPTABLE_3" />
 			<Set Text="Does this face look bovvered?" />
 		</Update>
+		-->
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_TRADE_ACCEPT_AI_DEMAND_1" />
 			<Set Text="Pleasure doing business with you." />

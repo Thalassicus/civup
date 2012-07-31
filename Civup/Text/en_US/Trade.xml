@@ -55,10 +55,10 @@
 
 		
 		<Row Tag="TXT_KEY_DEAL_EMBASSY_AGREEMENT" >
-			<Text>[COLOR_YIELD_GOLD]Embassy[ENDCOLOR][NEWLINE]Allows Open Borders, Research Agreements, and Defensive Pacts. Reveals the player's Capital.</Text>
+			<Text>[COLOR_YIELD_GOLD]Embassy[ENDCOLOR][NEWLINE]Allows Open Borders, Research Agreements, and Defensive Pacts. Also reveals Capitals.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_EMBASSY_YES_TT" >
-			<Text>[COLOR_YIELD_GOLD]Propose an embassy[ENDCOLOR][NEWLINE]]Allows Open Borders, Research Agreements, and Defensive Pacts. Reveals the player's Capital.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+			<Text>[COLOR_YIELD_GOLD]Propose Embassies[ENDCOLOR][NEWLINE]Allows Open Borders, Research Agreements, and Defensive Pacts. Also reveals Capitals.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_EMBASSY_NO_TT" >
 			<Text>We both have embassies.</Text>
@@ -71,10 +71,10 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_DEAL_BORDER_AGREEMENT" >
-			<Text>[COLOR_YIELD_GOLD]Mutual Open Borders[ENDCOLOR][NEWLINE]1% of the combined gross income of both players adds to your [ICON_GOLD] Gold rate (2% if Allied).</Text>
+			<Text>[COLOR_YIELD_GOLD]Mutual Open Borders[ENDCOLOR][NEWLINE]Allows units to pass through each other's territory.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_YES_TT" >
-			<Text>[COLOR_YIELD_GOLD]Propose mutual open borders[ENDCOLOR][NEWLINE]1% of the combined gross income of both players adds to your [ICON_GOLD] Gold rate (2% if Allied).[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+			<Text>[COLOR_YIELD_GOLD]Propose mutual open borders[ENDCOLOR][NEWLINE]Allows units to pass through each other's territory.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_BORDERS_NO_TT" >
 			<Text>Mutual open borders active.</Text>
@@ -87,10 +87,10 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_DEAL_RESEARCH_AGREEMENT" >
-			<Text>[COLOR_RESEARCH_STORED]Research Agreement[ENDCOLOR][NEWLINE]3% of the combined research of both players adds to your [ICON_RESEARCH] Science rate (6% if Allied).</Text>
+			<Text>[COLOR_RESEARCH_STORED]Research Agreement[ENDCOLOR][NEWLINE]At the end of the agreement, you recieve [ICON_RESEARCH] Science equal to 50% of the median cost of technologies you can research.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_RA_YES_TT" >
-			<Text>[COLOR_RESEARCH_STORED]Propose Research Agreement[ENDCOLOR][NEWLINE]3% of the combined research of both players adds to your [ICON_RESEARCH] Science rate (6% if Allied).[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+			<Text>[COLOR_RESEARCH_STORED]Propose Research Agreement[ENDCOLOR][NEWLINE]At the end of the agreement, you recieve [ICON_RESEARCH] Science equal to 50% of the median cost of technologies you can research.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_RA_NO_TT" >
 			<Text>Research Agreement active.</Text>
@@ -114,10 +114,10 @@
 		</Row>
 		
 		<Row Tag="TXT_KEY_DEAL_ALLIANCE" >
-			<Text>[COLOR_GREEN]Ally[ENDCOLOR][NEWLINE]Doubles income from Mutual Open Borders and Research Agreements, and promotes friendly relations.</Text>
+			<Text>[COLOR_GREEN]Ally[ENDCOLOR][NEWLINE]Promotes friendly relations.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_YES_TT" >
-			<Text>[COLOR_GREEN]Propose Alliance[ENDCOLOR][NEWLINE]Doubles income from Mutual Open Borders and Research Agreements, and promotes friendly relations.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+			<Text>[COLOR_GREEN]Propose Alliance[ENDCOLOR][NEWLINE]Promotes friendly relations.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_ALLIANCE_NO_TT" >
 			<Text>We are allied.</Text>

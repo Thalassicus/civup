@@ -7,8 +7,8 @@
 		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,255,200,255" ID="HappinessString" ToolTipType="TooltipTypeTopPanel"/>
 		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,255,255,255" ID="GoldenAgeString" ToolTipType="TooltipTypeTopPanel"/>
 		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,255,200,255" ID="CultureString" ToolTipType="TooltipTypeTopPanel"/>
-		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,0,255,255" ID="GreatPeopleString" ToolTipType="TooltipTypeTopPanel"/>
 		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,255,200,255"  ID="FaithString" ToolTipType="TooltipTypeTopPanel"/>
+		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,0,255,255" ID="GreatPeopleString" ToolTipType="TooltipTypeTopPanel"/>
 		<TextButton Anchor="C,T" String="UI didnt load! See http://bit.ly/bugreporting for help." ColorLayer0="255,0,255,255" ID="ResourceString" ToolTipType="TooltipTypeTopPanel"/>
 		<!--<TextButton Anchor="C,C" String="TXT_KEY_UNIT_SUPPLY_REACHED" ID="UnitSupplyString" Hidden="1"/>-->
 		<Image Anchor="C,T" Offset="0,-3" Texture="assets\UI\Art\WorldView\OverSupplyLimit.dds" Size="20.20" ID="UnitSupplyString"/>

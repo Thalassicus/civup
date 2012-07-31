@@ -974,6 +974,7 @@ local bOkayToProcess = true;
 --------------------------------------------------------------------------------
 Events.PromotionEarned = Events.PromotionEarned or function(unit, promotionType) end
 Events.UnitUpgraded = Events.UnitUpgraded or function(unit) end
+LuaEvents.UnitActionButtonClicked = LuaEvents.UnitActionButtonClicked or function(action) end
 
 function OnUnitActionClicked( action )
 	if bOkayToProcess then
@@ -1004,7 +1005,8 @@ function OnUnitActionClicked( action )
 		else
 			Game.HandleAction( action );
 		end
-		--/alpaca
+		--/alpaca		
+		LuaEvents.UnitActionButtonClicked( action );
     end
 end
 

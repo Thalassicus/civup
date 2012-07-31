@@ -24,6 +24,7 @@ function GetGPList(activePlayer)
 			if (gpEntry.progress > 0) or (gpEntry.perTurn > 0) then
 				gpEntry.pCity			= pCity;
 				gpEntry.specialistInfo	= pSpecialistInfo;
+				gpEntry.specialistName	= Locale.ConvertTextKey(pSpecialistInfo.Description);
 				gpEntry.name			= Locale.ConvertTextKey(GameInfo.UnitClasses[pSpecialistInfo.GreatPeopleUnitClass].Description);
 				gpEntry.Color			= GameInfo.UnitClasses[pSpecialistInfo.GreatPeopleUnitClass].Color;
 				gpEntry.icon			= GameInfo.UnitClasses[pSpecialistInfo.GreatPeopleUnitClass].IconString;
@@ -287,11 +288,11 @@ function UpdateData()
 		local bestGP = GPList[1]
 		if bestGP and bestGP.perTurn > 0 then
 			bestGPCity = bestGP.pCity
-			strTooltip = strTooltip .. "[ICON_GREAT_PEOPLE][COLOR:" .. bestGP.Color .. "]" .. bestGP.name
+			strTooltip = strTooltip .. "[ICON_GREAT_PEOPLE][COLOR:" .. bestGP.Color .. "]" .. bestGP.specialistName
 			strTooltip = strTooltip ..  " (" .. bestGP.turnsRemaining .. ")[ENDCOLOR]"
 		else
 			bestGPCity = nil
-			gpName = Locale.ConvertTextKey(GameInfo.UnitClasses.UNITCLASS_GREAT_GENERAL.Description)
+			gpName = Locale.ConvertTextKey("TXT_KEY_SPECIALIST_GENERAL")
 			gpColor = Locale.ConvertTextKey(GameInfo.UnitClasses.UNITCLASS_GREAT_GENERAL.Color)
 			strTooltip =  "[ICON_GREAT_PEOPLE]"..gpName .. " (" .. activePlayer:GetCombatExperience() .."/" .. activePlayer:GreatGeneralThreshold() .. ")"
 		end

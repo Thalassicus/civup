@@ -66,7 +66,7 @@ PopupLayouts[ButtonPopupTypes.BUTTONPOPUP_CITY_CAPTURED] = function(popupInfo)
 		AddButton(buttonText, OnLiberateClicked, strToolTip);
 	end
 	
-	--[[ Initialize 'Annex' button.
+	-- Initialize 'Annex' button.
 	local OnCaptureClicked = function()
 		Network.SendDoTask(cityID, TaskTypes.TASK_ANNEX_PUPPET, -1, -1, false, false, false, false);
 		newCity:ChooseProduction();

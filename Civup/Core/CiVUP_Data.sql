@@ -182,9 +182,6 @@ WHERE CombatClass = 'UNITCOMBAT_ARCHER' AND Class NOT IN (
 	'UNITCLASS_MACHINE_GUN'
 );
 
-UPDATE Technologies
-SET Help = NULL;
-
 INSERT INTO Building_ResourceYieldChanges
 	(BuildingType, ResourceType, YieldType, Yield)
 SELECT DISTINCT

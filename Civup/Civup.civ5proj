@@ -5,45 +5,45 @@
     <ProjectGuid>{4746fd17-873e-40e4-b531-63afb3f7f235}</ProjectGuid>
     <Name>Civ V Unofficial Patch (GK)</Name>
     <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
-    <ModVersion>23</ModVersion>
+    <ModVersion>26</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>[COLOR_CYAN]   by Thalassicus[NEWLINE][ENDCOLOR]   Fixes problems with the interface, and provides extensive modding tools.</Teaser>
-    <Description>The most influential community project for Civ V returns for Gods and Kings!
-
-Civup focuses on fixing bugs in the expansion, improving the interface, and expanding modding tools with minimal gameplay impact. It follows the footsteps of unofficial patches like Civ 4 BTS Unaltered Gameplay and the Skyrim Unofficial Patch. Civup is a collaboration of work from 26 mod authors and an incredible community of forumgoers on CivFanatics.com.
-
-Website: http://civmodding.wordpress.com/features
-Credits: http://civmodding.wordpress.com/credits
-Forum: http://forums.civfanatics.com/forumdisplay.php?f=429
-Bugs: http://forums.civfanatics.com/showthread.php?p=10221327#post10221327
-
-NOTE: Do *not* have this installed without Gods and Kings. It is only compatible with the expansion. The non-expansion vanilla version is here: http://steamcommunity.com/sharedfiles/filedetails/?id=78295051
-
-Please view the readme in the mod folder, which includes important information about using Civ 5 mods. Modders can easily use the tools in Civup within your own mod by including Civup as a dependency in ModBuddy project associations.
-
-
-== KEY FEATURES ==
-
-General
-- Icons show unit promotions over unit flags, right on the main map!
-- An expanded Resource List contains useful at-a-glance information.
-- Everything on the top bar is clickable to see detailed info breakdowns.
-- Copasetic’s enhanced city banner information shows turns until border expansion.
-- Whoward69's invaluable Trade and Citystate tabs on the diplomacy screen are the main hub for diplomacy.
-- CsebMod and Adam Watkins’ mods display extra information on the main map tooltip.
-- Improved citystate screens show better details about exports, and display who’s protecting citystates.
-- Sneaks’ improved City View display consolidates specialists into one convenient box.
-- A small icon on citystate banners shows the ally of the citystate at a glance.
-
-Modding Support
-- Building tooltips form automatically by reading the game data files, removing the need to manually write each one by hand. This saves hundreds of hours of work for modders. The system is extendible for building attributes added in mods.
-- A lua message logger based on Java’s log4j provides dramatically easier debugging.
-- Yield functions combined into a better-organized library, with the capability to add, remove, and change most sources of yields in the game.
-- Production lists sorted by category, so items added in mods appear in their proper location.
-- Lua events to check players, units, cities or plots at the start or end of each turn. These loop through each category just once per turn to improve efficiency, and removes the need for multiple loops in multiple files.
-- Lua events detecting when policies are acquired, buildings constructed or destroyed, and other important events.
-- Save and load functions for players, units, and cities.
-- Alpaca’s DiploCorner and CustomMission addins.
+    <Teaser>[COLOR_CYAN]   by Thalassicus[NEWLINE][ENDCOLOR]   Improves the interface, and adds tools for mods.</Teaser>
+    <Description>The most influential community project for Civ V returns for Gods and Kings![NEWLINE]
+[NEWLINE]
+Civup focuses on fixing bugs in the expansion, improving the interface, and expanding modding tools with minimal gameplay impact. It follows the footsteps of unofficial patches like Civ 4 BTS Unaltered Gameplay and the Skyrim Unofficial Patch. Civup is a collaboration of work from 26 mod authors and an incredible community of forumgoers on CivFanatics.com.[NEWLINE]
+[NEWLINE]
+Website: http://civmodding.wordpress.com/features[NEWLINE]
+Credits: http://civmodding.wordpress.com/credits[NEWLINE]
+Forum: http://forums.civfanatics.com/forumdisplay.php?f=429[NEWLINE]
+Bugs: http://forums.civfanatics.com/showthread.php?p=10221327#post10221327[NEWLINE]
+[NEWLINE]
+NOTE: Do *not* have this installed without Gods and Kings. It is only compatible with the expansion. The non-expansion vanilla version is here: http://steamcommunity.com/sharedfiles/filedetails/?id=78295051[NEWLINE]
+[NEWLINE]
+Please view the readme in the mod folder, which includes important information about using Civ 5 mods. Modders can easily use the tools in Civup within your own mod by including Civup as a dependency in ModBuddy project associations.[NEWLINE]
+[NEWLINE]
+[NEWLINE]
+== KEY FEATURES ==[NEWLINE]
+[NEWLINE]
+General[NEWLINE]
+- Icons show unit promotions over unit flags, right on the main map![NEWLINE]
+- An expanded Resource List contains useful at-a-glance information.[NEWLINE]
+- Everything on the top bar is clickable to see detailed info breakdowns.[NEWLINE]
+- Copasetic’s enhanced city banner information shows turns until border expansion.[NEWLINE]
+- Whoward69's invaluable Trade and Citystate tabs on the diplomacy screen are the main hub for diplomacy.[NEWLINE]
+- CsebMod and Adam Watkins’ mods display extra information on the main map tooltip.[NEWLINE]
+- Improved citystate screens show better details about exports, and display who’s protecting citystates.[NEWLINE]
+- Sneaks’ improved City View display consolidates specialists into one convenient box.[NEWLINE]
+- A small icon on citystate banners shows the ally of the citystate at a glance.[NEWLINE]
+[NEWLINE]
+Modding Support[NEWLINE]
+- Building tooltips form automatically by reading the game data files, removing the need to manually write each one by hand. This saves hundreds of hours of work for modders. The system is extendible for building attributes added in mods.[NEWLINE]
+- A lua message logger based on Java’s log4j provides dramatically easier debugging.[NEWLINE]
+- Yield functions combined into a better-organized library, with the capability to add, remove, and change most sources of yields in the game.[NEWLINE]
+- Production lists sorted by category, so items added in mods appear in their proper location.[NEWLINE]
+- Lua events to check players, units, cities or plots at the start or end of each turn. These loop through each category just once per turn to improve efficiency, and removes the need for multiple loops in multiple files.[NEWLINE]
+- Lua events detecting when policies are acquired, buildings constructed or destroyed, and other important events.[NEWLINE]
+- Save and load functions for players, units, and cities.[NEWLINE]
+- Alpaca’s DiploCorner and CustomMission addins.[NEWLINE]
 - An extensive library of useful utility functions for modders.</Description>
     <Authors>[COLOR_CYAN]Thalassicus</Authors>
     <SpecialThanks>Check out the readme in the mod folder.</SpecialThanks>
@@ -60,7 +60,7 @@ Modding Support
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_General.sql</FileName>
+        <FileName>Core/CiVUP_Data.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -70,7 +70,12 @@ Modding Support
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_General.xml</FileName>
+        <FileName>Core/CiVUP_Data.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Interface/Interface_Data.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -166,6 +171,11 @@ Modding Support
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Interface/UnitTrees/UIUpgradeTree.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Interface/Trade/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -905,47 +915,47 @@ Modding Support
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/TradeOpportunities.xml</FileName>
+        <FileName>Text/DE_DE/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/TradeOpportunities.xml</FileName>
+        <FileName>Text/en_US/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/TradeOpportunities.xml</FileName>
+        <FileName>Text/ES_ES/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/TradeOpportunities.xml</FileName>
+        <FileName>Text/FR_FR/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/TradeOpportunities.xml</FileName>
+        <FileName>Text/IT_IT/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/TradeOpportunities.xml</FileName>
+        <FileName>Text/JA_JP/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/TradeOpportunities.xml</FileName>
+        <FileName>Text/PL_PL/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/TradeOpportunities.xml</FileName>
+        <FileName>Text/RU_RU/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/TradeOpportunities.xml</FileName>
+        <FileName>Text/ZH_CN/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1129,6 +1139,10 @@ Modding Support
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="BugFixes\CapitalTradeFix.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Core/CiVUP_Core.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -1141,11 +1155,11 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Core/CiVUP_General.sql">
+    <Content Include="Core\CiVUP_Data.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Core/CiVUP_General.xml">
+    <Content Include="Core\CiVUP_Data.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1173,6 +1187,14 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Interface\Cities\CityBannerManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Interface\Cities\CityBannerManager.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Interface\Cities\CityStateDiploPopup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -1181,9 +1203,29 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface\TradeOpportunities\DiploGlobalRelationships.lua">
+    <Content Include="Interface\Cities\CityStateStatusHelper.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Interface\Interface_Data.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Interface\Misc\InGame.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Interface\Trade\DiploCurrentDeals.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Interface\Trade\DiploGlobalRelationships.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Interface\Trade\Trade.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="NoChildGloves\FrontEnd.lua">
       <SubType>Lua</SubType>
@@ -1253,21 +1295,9 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/CopaseticUITweaks/CityBannerManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/CopaseticUITweaks/CityBannerManager.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Interface/CopaseticUITweaks/FeatureFinder.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/CopaseticUITweaks/InGame.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Interface/CsebExtendedPlotMouseover/CEPM_Common.lua">
       <SubType>Lua</SubType>
@@ -1453,10 +1483,6 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/Misc/DiploCurrentDeals.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Interface/Misc/DiploList.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -1557,27 +1583,27 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/TradeOpportunities/DiploCityStatesStatus.lua">
+    <Content Include="Interface\Trade\DiploCityStatesStatus.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/TradeOpportunities/DiploCityStatesStatus.xml">
+    <Content Include="Interface\Trade\DiploCityStatesStatus.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/TradeOpportunities/DiploOverview.lua">
+    <Content Include="Interface\Trade\DiploOverview.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/TradeOpportunities/DiploOverview.xml">
+    <Content Include="Interface\Trade\DiploOverview.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/TradeOpportunities/DiploTradesStatus.lua">
+    <Content Include="Interface/Trade/DiploTradesStatus.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/TradeOpportunities/DiploTradesStatus.xml">
+    <Content Include="Interface/Trade/DiploTradesStatus.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1961,7 +1987,7 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/en_US/TradeOpportunities.xml">
+    <Content Include="Text/en_US/Trade.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2041,7 +2067,7 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text\ES_ES\TradeOpportunities.xml">
+    <Content Include="Text\ES_ES\Trade.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2097,7 +2123,7 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text\FR_FR\TradeOpportunities.xml">
+    <Content Include="Text\FR_FR\Trade.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2161,7 +2187,7 @@ Modding Support
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text\ZH_CN\TradeOpportunities.xml">
+    <Content Include="Text\ZH_CN\Trade.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2200,6 +2226,7 @@ Modding Support
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="BugFixes" />
     <Folder Include="NoChildGloves" />
     <Folder Include="Interface" />
     <Folder Include="Interface\Cities\" />
@@ -2213,7 +2240,7 @@ Modding Support
     <Folder Include="Interface\MapPins\" />
     <Folder Include="Interface\Misc\" />
     <Folder Include="Interface\Techs\" />
-    <Folder Include="Interface\TradeOpportunities\" />
+    <Folder Include="Interface\Trade\" />
     <Folder Include="Interface\Units\" />
     <Folder Include="Interface\UnitTrees\" />
     <Folder Include="Interface\UnitTrees\Utilities\" />
