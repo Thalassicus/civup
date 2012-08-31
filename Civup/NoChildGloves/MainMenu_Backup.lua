@@ -62,8 +62,7 @@ Controls.MultiplayerButton:RegisterCallback( Mouse.eLClick, MultiplayerClick );
 -- Mods button handler
 -------------------------------------------------
 function ModsButtonClick()
-	--UIManager:QueuePopup( Controls.ModsEULAScreen, PopupPriority.ModsEULAScreen );
-    UIManager:QueuePopup( Controls.ModsBrowser, PopupPriority.ModsBrowserScreen );
+    UIManager:QueuePopup( Controls.ModsEULAScreen, PopupPriority.ModsEULAScreen );
 end
 Controls.ModsButton:RegisterCallback( Mouse.eLClick, ModsButtonClick );
 

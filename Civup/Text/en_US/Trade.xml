@@ -14,6 +14,19 @@
 			<Text>Sort by Influence</Text>
 		</Row>
 		
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT"/>
+			<Set Text="Doubles income from [ICON_RESEARCH] Research Agreements with this leader.[NEWLINE][NEWLINE]An alliance promotes friendly diplomacy and deters outside aggressors. Allies may request diplomatic or economic assistance, and failure to support your ally may upset them."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_OPEN_BORDERS_TT" />
+			<Set Text="With [COLOR_YIELD_GOLD]mutual open borders[/COLOR], both players can pass through the other's territory.[NEWLINE][NEWLINE](Lasts {1_Num} turns.)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_TT"/>
+			<Set Text="[ICON_GOLD] Cost: {1_cost}[NEWLINE][NEWLINE]4% of the combined research of both players adds to your [ICON_RESEARCH] Science at the end of the agreement (8% if Allied).[NEWLINE][NEWLINE](Lasts {2_turns} turns.)"/>
+		</Update>
+		
 
 		<Row Tag="TXT_KEY_DO_REFRESH" >
 			<Text>Refresh</Text>
@@ -87,10 +100,10 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_DEAL_RESEARCH_AGREEMENT" >
-			<Text>[COLOR_RESEARCH_STORED]Research Agreement[ENDCOLOR][NEWLINE]At the end of the agreement, you recieve [ICON_RESEARCH] Science equal to 50% of the median cost of technologies you can research.</Text>
+			<Text>[COLOR_RESEARCH_STORED]Research Agreement[ENDCOLOR][NEWLINE]4% of the combined research of both players adds to your [ICON_RESEARCH] Science at the end of the agreement (8% if Allied).</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_RA_YES_TT" >
-			<Text>[COLOR_RESEARCH_STORED]Propose Research Agreement[ENDCOLOR][NEWLINE]At the end of the agreement, you recieve [ICON_RESEARCH] Science equal to 50% of the median cost of technologies you can research.[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
+			<Text>[COLOR_RESEARCH_STORED]Propose Research Agreement[ENDCOLOR][NEWLINE]4% of the combined research of both players adds to your [ICON_RESEARCH] Science at the end of the agreement (8% if Allied).[NEWLINE][NEWLINE]Lasts {1_num} turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DEAL_STATUS_RA_NO_TT" >
 			<Text>Research Agreement active.</Text>

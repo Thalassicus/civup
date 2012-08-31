@@ -67,14 +67,39 @@
 		<Column name="FlavorType" type="text"/>
 		<Column name="NumCities" type="integer" default="0"/>
 	</Table>
+	<Table name="Policy_FreeUnitFlavor">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="FlavorType" type="text"/>
+		<Column name="Count" type="integer" default="0"/>
+	</Table>
+	<Table name="Policy_InstantYield">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="YieldType" type="text" />
+		<Column name="Yield" type="integer" notnull="true"/>
+	</Table>
+	<Table name="Policy_InstantYieldEra">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="YieldType" type="text" />
+		<Column name="Yield" type="integer" notnull="true"/>
+	</Table>
+	<Table name="Policy_InstantYieldTurns">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="YieldType" type="text" />
+		<Column name="Turns" type="integer" notnull="true"/>
+	</Table>
 	<Table name="Policy_PlayerYieldModifiers">
 		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
 		<Column name="YieldType" type="text" />
-		<Column name="YieldMod" type="integer" default="0"/>
+		<Column name="YieldMod" type="integer" notnull="true"/>
 	</Table>
 	<Table name="Policy_SpecialistYieldChanges">
 		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
 		<Column name="SpecialistType" type="text" reference="Specialists(Type)"/>
+		<Column name="YieldType" type="text" reference="Yields(Type)"/>
+		<Column name="Yield" type="integer" notnull="true"/>
+	</Table>
+	<Table name="Policy_ReligiousCityYieldChanges">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
 		<Column name="YieldType" type="text" reference="Yields(Type)"/>
 		<Column name="Yield" type="integer" notnull="true"/>
 	</Table>
@@ -194,16 +219,40 @@
 	</Trait_MovesChangeUnitCombats>
 	<Units>
 		<Update>
-			<Where Class="UNITCLASS_NUCLEAR_SUBMARINE"/>
+			<Where Class="UNITCLASS_SUBMARINE"/>
 			<Set CombatClass="UNITCOMBAT_SUBMARINE"/>
 		</Update>
 		<Update>
-			<Where Class="UNITCLASS_SUBMARINE"/>
+			<Where Class="UNITCLASS_NUCLEAR_SUBMARINE"/>
 			<Set CombatClass="UNITCOMBAT_SUBMARINE"/>
 		</Update>
 		<Update>
 			<Where Type="UNIT_MONGOLIAN_KESHIK"/>
 			<Set Moves="4"/>
+		</Update>
+		<Update>
+			<Where Type="UNIT_MUSKETMAN"/>
+			<Set Description="TXT_KEY_UNIT_ARQUEBUSIER"
+				 Help="TXT_KEY_UNIT_ARQUEBUSIER_HELP"
+				 Strategy="TXT_KEY_UNIT_ARQUEBUSIER_STRATEGY"
+				 Civilopedia="TXT_KEY_UNIT_ARQUEBUSIER_PEDIA"
+				 />
+		</Update>
+		<Update>
+			<Where Type="UNIT_RIFLEMAN"/>
+			<Set Description="TXT_KEY_UNIT_MUSKETMAN"
+				 Help="TXT_KEY_UNIT_HELP_MUSKETMAN"
+				 Strategy="TXT_KEY_UNIT_MUSKETMAN_STRATEGY"
+				 Civilopedia="TXT_KEY_CIVILOPEDIA_UNITS_MEDIEVAL_MUSKETMAN_TEXT"
+				 />
+		</Update>
+		<Update>
+			<Where Type="UNIT_GREAT_WAR_INFANTRY"/>
+			<Set Description="TXT_KEY_UNIT_RIFLEMAN"
+				 Help="TXT_KEY_UNIT_HELP_RIFLEMAN"
+				 Strategy="TXT_KEY_UNIT_RIFLEMAN_STRATEGY"
+				 Civilopedia="TXT_KEY_CIVILOPEDIA_UNITS_RENAISSANCE_RIFLEMEN_TEXT"
+				 />
 		</Update>
 	</Units>
 	<UnitPromotions>
@@ -223,6 +272,7 @@
 			<Where Type="BUILDING_HARBOR" />
 			<Set Strategy="TXT_KEY_PRODUCTION_BUILDING_CAPITAL_EXTRA" />
 		</Update>
+		<!--
 		<Update>
 			<Where BuildingClass="BUILDINGCLASS_COURTHOUSE" />
 			<Set NoOccupiedUnhappiness="0"
@@ -230,6 +280,7 @@
 				 OnlyAI="true"
 				 />
 		</Update>
+		-->
 		<Update>
 			<Where Type="BUILDING_WINDMILL" />
 			<Set Description="TXT_KEY_BUILDING_WORKSHOP"
@@ -264,10 +315,12 @@
 		</Update>
 	</Buildings>
 	<Building_ClassesNeededInCity>
+		<!--
 		<Row>
 			<BuildingType>BUILDING_COURTHOUSE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CAN_BUILD_COURTHOUSE</BuildingClassType>
 		</Row>
+		-->
 	</Building_ClassesNeededInCity>
 	<Flavors>
 		<Update><Where Type="FLAVOR_OFFENSE"/>			<Set PurchasePriority="10"/></Update>
@@ -288,6 +341,7 @@
 		<Update><Where Type="FLAVOR_CULTURE"/>			<Set PurchasePriority="10"/></Update>
 		<Update><Where Type="FLAVOR_HAPPINESS"/>		<Set PurchasePriority="10"/></Update>
 		<Update><Where Type="FLAVOR_GREAT_PEOPLE"/>		<Set PurchasePriority="10"/></Update>
+		<Update><Where Type="FLAVOR_RELIGION"/>			<Set PurchasePriority="10"/></Update>
 		<Update><Where Type="FLAVOR_DIPLOMACY"/>		<Set PurchasePriority="100"/></Update>
 	</Flavors>
 
@@ -329,7 +383,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 		<Row>
 			<Type>BUILDING_SCIENCE_PENALTY</Type>
@@ -347,7 +401,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 	</Buildings>
 	<Building_YieldModifiers>
@@ -370,20 +424,27 @@
 	-->
 	<BuildingClasses>
 		<Row>
-			<Type>BUILDINGCLASS_LUXURY_SURPLUS_HAPPINESS</Type>
-			<DefaultBuilding>BUILDING_EXTRA_HAPPINESS</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_EXTRA_HAPPINESS</Description>
+			<Type>BUILDINGCLASS_HAPPINESS_GLOBAL</Type>
+			<DefaultBuilding>BUILDING_HAPPINESS_GLOBAL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_HAPPINESS_GLOBAL</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+			<NoLimit>true</NoLimit>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_HAPPINESS_LOCAL</Type>
+			<DefaultBuilding>BUILDING_HAPPINESS_LOCAL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_HAPPINESS_LOCAL</Description>
 			<MaxPlayerInstances>0</MaxPlayerInstances>
 			<NoLimit>true</NoLimit>
 		</Row>
 	</BuildingClasses>
 	<Buildings>
 		<Row>
-			<Type>BUILDING_EXTRA_HAPPINESS</Type>
-			<BuildingClass>BUILDINGCLASS_LUXURY_SURPLUS_HAPPINESS</BuildingClass>
+			<Type>BUILDING_HAPPINESS_GLOBAL</Type>
+			<BuildingClass>BUILDINGCLASS_HAPPINESS_GLOBAL</BuildingClass>
 			<Cost>0</Cost>
-			<Description>TXT_KEY_BUILDING_EXTRA_HAPPINESS</Description>
-			<Help>TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP</Help>
+			<Description>TXT_KEY_BUILDING_HAPPINESS_GLOBAL</Description>
+			<Help>TXT_KEY_BUILDING_HAPPINESS_GLOBAL_HELP</Help>
 			<AlwaysShowHelp>true</AlwaysShowHelp>
 			<ArtDefineTag>PALACE</ArtDefineTag>
 			<UnmoddedHappiness>1</UnmoddedHappiness>
@@ -393,7 +454,26 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>1</IsVisible>
+		</Row>
+	</Buildings>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_HAPPINESS_LOCAL</Type>
+			<BuildingClass>BUILDINGCLASS_HAPPINESS_LOCAL</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_HAPPINESS_LOCAL</Description>
+			<Help>TXT_KEY_BUILDING_HAPPINESS_LOCAL_HELP</Help>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<Happiness>1</Happiness>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<IsVisible>1</IsVisible>
 		</Row>
 	</Buildings>
 
@@ -446,7 +526,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 		<Row>
 			<Type>BUILDING_AI_PRODUCTION</Type>
@@ -461,7 +541,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 		<Row>
 			<Type>BUILDING_AI_SCIENCE</Type>
@@ -476,7 +556,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 		<Row>
 			<Type>BUILDING_AI_CULTURE</Type>
@@ -491,7 +571,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 	</Buildings>
 
@@ -559,7 +639,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
-			<IsVisible>false</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 	</Buildings>
 	<Building_GlobalYieldModifiers>
@@ -610,7 +690,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>19</PortraitIndex>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 		<Row>
 			<Type>BUILDING_PUPPET_MODIFIER</Type>
@@ -625,7 +705,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>19</PortraitIndex>
-			<IsVisible>true</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 		<Row>
 			<Type>BUILDING_CAN_BUILD_COURTHOUSE</Type>
@@ -640,7 +720,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>19</PortraitIndex>
-			<IsVisible>false</IsVisible>
+			<IsVisible>0</IsVisible>
 		</Row>
 	</Buildings>
 </GameData>

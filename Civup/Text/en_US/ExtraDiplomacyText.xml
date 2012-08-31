@@ -503,10 +503,6 @@
 			<Set Text="Shall we form an Alliance?" />
 		</Update>
 		<Update>
-			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT"/>
-			<Set Text="An Alliance promotes friendly diplomacy and deters outside aggressors. Allies may request diplomatic or economic assistance, and failure to support your ally may upset them."/>
-		</Update>
-		<Update>
 			<Where Tag="TXT_KEY_DEC_FRIENDSHIP_1" />
 			<Set Text="It is hard to find worthy friends in this world. I'd like to form an Alliance, informing the other empires of the bond between our peoples. What do you say?" />
 		</Update>

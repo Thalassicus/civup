@@ -30,6 +30,7 @@ Delgar – Created several Opportunities.
 Dmitry – Russian translations for CiVUP.
 Erindir, XIenwolf and Kael – Flag promotions based on their work.
 Gedemon – Map Pins hotseat testing.
+Moriboe – Great Works mod component.
 mystikx21 – Extensive help with documenation wiki and GEM data updates.
 Putmalk – Extra Diplomacy Text.
 Seek

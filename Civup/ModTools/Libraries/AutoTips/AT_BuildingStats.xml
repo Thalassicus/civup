@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Table name="BuildingFields">
+		<Column name="Order" type="integer" primarykey="true" autoincrement="true"/>
+		<Column name="Type" type="text" notnull="true" unique="true"/>
+		<Column name="Value" type="text" />
+	</Table>
+	<BuildingFields>
+		<Row><Order>1</Order><Type>Name</Type>				<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>Cost</Type>								<Value>GetDefaultBuildingFieldData</Value></Row>
+		<!--<Row><Type>FaithCost</Type>							<Value>GetDefaultBuildingFieldData</Value></Row>-->
+		<Row><Type>NumCityCostMod</Type>					<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>PopCostMod</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>HurryCostModifier</Type>					<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>GoldMaintenance</Type>					<Value>GetDefaultBuildingFieldData</Value></Row>
+
+		<Row><Type>FoodChange</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>FoodPerPop</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_YieldChangesPerPop) / 100 </Value></Row>
+		<Row><Type>FoodFromLakes</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_LakePlotYieldChanges)</Value></Row>
+		<Row><Type>FoodFromSea</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_SeaPlotYieldChanges)</Value></Row>
+		<Row><Type>FoodFromRivers</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_RiverPlotYieldChanges)</Value></Row>
+		<Row><Type>FoodFromTerrain</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TerrainYieldChanges)</Value></Row>
+		<Row><Type>FoodFromFeatures</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FeatureYieldChanges)</Value></Row>
+		<Row><Type>FoodFromResources</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>FoodFromTech</Type>						<Value>data_BuildingFields.EnhancedYieldTech</Value></Row>
+		<Row><Type>FoodFromSpecialists</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<!--<Row><Type>Food</Type>								<Value>data_BuildingFields.Food</Value></Row>-->
+		<Row><Type>FoodMod</Type>							<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>FoodGlobal</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_GlobalYieldModifiers)</Value></Row>
+		<Row><Type>FoodSurplus</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FOOD"}, GameInfo.Building_YieldSurplusModifiers)</Value></Row>
+		<Row><Type>FoodKept</Type>							<Value>data_BuildingFields.FoodKept</Value></Row>
+		<Row><Type>PopulationChange</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_POPULATION", TraitType=Players[Game.GetActivePlayer()]:GetTraitInfo().Type}, GameInfo.Trait_YieldFromConstruction)</Value></Row>
+
+		<Row><Type>ProductionChange</Type>					<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>ProductionPerPop</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_YieldChangesPerPop) / 100 </Value></Row>
+		<Row><Type>ProductionFromLakes</Type>				<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_LakePlotYieldChanges)</Value></Row>
+		<Row><Type>ProductionFromSea</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_SeaPlotYieldChanges)</Value></Row>
+		<Row><Type>ProductionFromRivers</Type>				<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_RiverPlotYieldChanges)</Value></Row>
+		<Row><Type>ProductionFromTerrain</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TerrainYieldChanges)</Value></Row>
+		<Row><Type>ProductionFromFeatures</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FeatureYieldChanges)</Value></Row>
+		<Row><Type>ProductionFromResources</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>ProductionFromTech</Type>				<Value>data_BuildingFields.EnhancedYieldTech</Value></Row>
+		<Row><Type>ProductionFromSpecialists</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<!--<Row><Type>Production</Type>					<Value>data_BuildingFields.Production</Value></Row>-->
+		<Row><Type>ProductionMod</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>ProductionGlobal</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_GlobalYieldModifiers)</Value></Row>
+		<Row><Type>ProductionSurplus</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_PRODUCTION"}, GameInfo.Building_YieldSurplusModifiers)</Value></Row>
+		<Row><Type>MilitaryProductionModifier</Type>		<Value>data_BuildingFields.MilitaryProductionModifier</Value></Row>
+		<Row><Type>DomainProductionModifierLand</Type>		<Value>Game.GetValue("Modifier", {BuildingType=data_BuildingFields.Type, DomainType="DOMAIN_LAND"}, GameInfo.Building_DomainProductionModifiers)</Value></Row>
+		<Row><Type>DomainProductionModifierSea</Type>		<Value>Game.GetValue("Modifier", {BuildingType=data_BuildingFields.Type, DomainType="DOMAIN_SEA"}, GameInfo.Building_DomainProductionModifiers)</Value></Row>
+		<Row><Type>DomainProductionModifierAir</Type>		<Value>Game.GetValue("Modifier", {BuildingType=data_BuildingFields.Type, DomainType="DOMAIN_AIR"}, GameInfo.Building_DomainProductionModifiers)</Value></Row>
+		<Row><Type>CombatProductionModifier</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_UnitCombatProductionModifiers)</Value></Row>
+		<Row><Type>BuildingProductionModifier</Type>		<Value>data_BuildingFields.BuildingProductionModifier</Value></Row>
+		<Row><Type>WonderProductionModifier</Type>			<Value>data_BuildingFields.WonderProductionModifier</Value></Row>
+		<Row><Type>SpaceProductionModifier</Type>			<Value>data_BuildingFields.SpaceProductionModifier</Value></Row>
+		
+		<Row><Type>GoldChange</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>GoldPerPop</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_YieldChangesPerPop) / 100 </Value></Row>
+		<Row><Type>GoldFromLakes</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_LakePlotYieldChanges)</Value></Row>
+		<Row><Type>GoldFromSea</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_SeaPlotYieldChanges)</Value></Row>
+		<Row><Type>GoldFromRivers</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_RiverPlotYieldChanges)</Value></Row>
+		<Row><Type>GoldFromTerrain</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TerrainYieldChanges)</Value></Row>
+		<Row><Type>GoldFromFeatures</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FeatureYieldChanges)</Value></Row>
+		<Row><Type>GoldFromResources</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>GoldFromTech</Type>						<Value>data_BuildingFields.EnhancedYieldTech</Value></Row>
+		<Row><Type>GoldFromSpecialists</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<Row><Type>Gold</Type>								<Value>data_BuildingFields.Gold</Value></Row>
+		<Row><Type>GoldMod</Type>							<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>GoldGlobal</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_GlobalYieldModifiers)</Value></Row>
+		<Row><Type>GoldSurplus</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_GOLD"}, GameInfo.Building_YieldSurplusModifiers)</Value></Row>
+		<Row><Type>TradeRouteModifier</Type>				<Value>data_BuildingFields.TradeRouteModifier</Value></Row>
+		<Row><Type>GreatPersonExpendGold</Type>				<Value>data_BuildingFields.GreatPersonExpendGold</Value>	</Row>
+		<Row><Type>HurryModifier</Type>						<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_HurryModifiers)</Value></Row>
+		
+		<Row><Type>ScienceChange</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>SciencePerPop</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_YieldChangesPerPop) / 100</Value></Row>
+		<Row><Type>ScienceFromLakes</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_LakePlotYieldChanges)</Value></Row>
+		<Row><Type>ScienceFromSea</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_SeaPlotYieldChanges)</Value></Row>
+		<Row><Type>ScienceFromRivers</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_RiverPlotYieldChanges)</Value></Row>
+		<Row><Type>ScienceFromTerrain</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TerrainYieldChanges)</Value></Row>
+		<Row><Type>ScienceFromFeatures</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FeatureYieldChanges)</Value></Row>
+		<Row><Type>ScienceFromResources</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>ScienceFromTech</Type>					<Value>data_BuildingFields.EnhancedYieldTech</Value></Row>
+		<Row><Type>ScienceFromSpecialists</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<!--<Row><Type>Science</Type>						<Value>data_BuildingFields.Science</Value></Row>-->
+		<Row><Type>ScienceMod</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>ScienceGlobal</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_GlobalYieldModifiers)</Value></Row>
+		<Row><Type>ScienceSurplus</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_SCIENCE"}, GameInfo.Building_YieldSurplusModifiers)</Value></Row>
+		<Row><Type>MedianTechPercentChange</Type>			<Value>data_BuildingFields.MedianTechPercentChange * 2</Value></Row>
+
+		<Row><Type>CultureChange</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>CulturePerPop</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_YieldChangesPerPop) / 100</Value></Row>
+		<Row><Type>CultureFromLakes</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_LakePlotYieldChanges)</Value></Row>
+		<Row><Type>CultureFromSea</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_SeaPlotYieldChanges)</Value></Row>
+		<Row><Type>CultureFromRivers</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_RiverPlotYieldChanges)</Value></Row>
+		<Row><Type>CultureFromTerrain</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TerrainYieldChanges)</Value></Row>
+		<Row><Type>CultureFromFeatures</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FeatureYieldChanges)</Value></Row>
+		<Row><Type>CultureFromResources</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>CultureFromTech</Type>					<Value>data_BuildingFields.EnhancedYieldTech</Value></Row>
+		<Row><Type>CultureFromSpecialists</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<!--<Row><Type>Culture</Type>						<Value>data_BuildingFields.Culture</Value></Row>-->
+		<Row><Type>CultureMod</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>CultureGlobal</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_GlobalYieldModifiers)</Value></Row>
+		<Row><Type>CultureSurplus</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_YieldSurplusModifiers)</Value></Row>
+
+		<Row><Type>FaithChange</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>FaithPerPop</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_YieldChangesPerPop) / 100</Value></Row>
+		<Row><Type>FaithFromLakes</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_LakePlotYieldChanges)</Value></Row>
+		<Row><Type>FaithFromSea</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_SeaPlotYieldChanges)</Value></Row>
+		<Row><Type>FaithFromRivers</Type>					<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_RiverPlotYieldChanges)</Value></Row>
+		<Row><Type>FaithFromTerrain</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TerrainYieldChanges)</Value></Row>
+		<Row><Type>FaithFromFeatures</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FeatureYieldChanges)</Value></Row>
+		<Row><Type>FaithFromResources</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>FaithFromTech</Type>						<Value>data_BuildingFields.EnhancedYieldTech</Value></Row>
+		<Row><Type>FaithFromSpecialists</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<!--<Row><Type>Faith</Type>							<Value>data_BuildingFields.Faith</Value></Row>-->
+		<Row><Type>FaithMod</Type>							<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>FaithGlobal</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_GlobalYieldModifiers)</Value></Row>
+		<Row><Type>FaithSurplus</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_FAITH"}, GameInfo.Building_YieldSurplusModifiers)</Value></Row>
+		
+		<!--
+		<Row><Type>Culture</Type>							<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>CulturePerPop</Type>						<Value>Game.GetValue("Yield", {BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_YieldChangesPerPop) / 100</Value></Row>
+		<Row><Type>CultureFromResources</Type>				<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceYieldChanges)</Value></Row>
+		<Row><Type>CultureFromSpecialists</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type, YieldType="YIELD_CULTURE"}, GameInfo.Building_SpecialistYieldChanges)</Value></Row>
+		<Row><Type>CultureRateModifier</Type>				<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>GlobalCultureRateModifier</Type>			<Value>data_BuildingFields.GlobalCultureRateModifier</Value></Row>
+		<Row><Type>CityCaptureCulture</Type>				<Value>data_BuildingFields.CityCaptureCulture</Value></Row>
+		-->
+
+		<Row><Type>TradeDealModifier</Type>					<Value>data_BuildingFields.TradeDealModifier</Value></Row>
+		<Row><Type>GreatPeopleRateModifier</Type>			<Value>data_BuildingFields.GreatPeopleRateModifier</Value></Row>
+		<Row><Type>GlobalGreatPeopleRateModifier</Type>		<Value>data_BuildingFields.GlobalGreatPeopleRateModifier</Value></Row>
+		<Row><Type>SpecialistType</Type>					<Value>data_BuildingFields.SpecialistType</Value></Row>
+		<Row><Type>GreatGeneralRateChange</Type>			<Value>data_BuildingFields.GreatGeneralRateChange</Value>	</Row>
+		<Row><Type>UnmoddedHappiness</Type>					<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>Happiness</Type>							<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>HappinessPerCity</Type>					<Value>data_BuildingFields.HappinessPerCity</Value></Row>
+		<Row><Type>HappinessPerXPolicies</Type>				<Value>data_BuildingFields.HappinessPerXPolicies</Value></Row>
+		<Row><Type>UnhappinessModifier</Type>				<Value>data_BuildingFields.UnhappinessModifier</Value>		</Row>
+		<Row><Type>NoOccupiedUnhappiness</Type>				<Value>data_BuildingFields.NoOccupiedUnhappinessFixed</Value></Row>
+		<Row><Type>InstantHappiness</Type>					<Value>data_BuildingFields.InstantHappiness</Value></Row>
+		<Row><Type>GoldenAgePoints</Type>					<Value>data_BuildingFields.GoldenAgePoints</Value></Row>
+		<Row><Type>Experience</Type>						<Value>data_BuildingFields.Experience</Value></Row>
+		<Row><Type>ExperienceLand</Type>					<Value>Game.GetValue("Experience", {BuildingType=data_BuildingFields.Type, DomainType="DOMAIN_LAND"}, GameInfo.Building_DomainFreeExperiences)</Value></Row>
+		<Row><Type>ExperienceSea</Type>						<Value>Game.GetValue("Experience", {BuildingType=data_BuildingFields.Type, DomainType="DOMAIN_SEA"}, GameInfo.Building_DomainFreeExperiences)</Value></Row>
+		<Row><Type>ExperienceAir</Type>						<Value>Game.GetValue("Experience", {BuildingType=data_BuildingFields.Type, DomainType="DOMAIN_AIR"}, GameInfo.Building_DomainFreeExperiences)</Value></Row>
+		<Row><Type>ExperienceCombat</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_UnitCombatFreeExperiences)</Value></Row>
+		<Row><Type>ExperiencePerTurn</Type>					<Value>data_BuildingFields.ExperiencePerTurn</Value></Row>		
+		<Row><Type>GlobalExperience</Type>					<Value>data_BuildingFields.GlobalExperience</Value></Row>
+		<Row><Type>Defense</Type>							<Value>data_BuildingFields.Defense / 100</Value></Row>
+		<Row><Type>GlobalDefenseMod</Type>					<Value>data_BuildingFields.GlobalDefenseMod</Value></Row>
+		<Row><Type>ExtraCityHitPoints</Type>				<Value>data_BuildingFields.ExtraCityHitPoints</Value></Row>
+		<Row><Type>AirModifier</Type>						<Value>data_BuildingFields.AirModifier</Value></Row>
+		<Row><Type>NukeModifier</Type>						<Value>data_BuildingFields.NukeModifier</Value></Row>
+		<!--<Row><Type>NukeImmune</Type>					<Value>data_BuildingFields.NukeImmune</Value></Row>-->
+		
+		<!-- Special Abilities -->
+		<Row><Type>Capital</Type>							<Value>data_BuildingFields.Capital</Value></Row>
+		<Row><Type>GoldenAge</Type>							<Value>data_BuildingFields.GoldenAge</Value></Row>
+		<Row><Type>FreeGreatPeople</Type>					<Value>data_BuildingFields.FreeGreatPeople</Value></Row>
+		<Row><Type>FreeUnits</Type>							<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_FreeUnits)</Value></Row>
+		<Row><Type>FreeBuildingThisCity</Type>				<Value>data_BuildingFields.FreeBuildingThisCity and Locale.ConvertTextKey(GameInfo.BuildingClasses[data_BuildingFields.FreeBuildingThisCity].Description) or false</Value></Row>
+		<Row><Type>FreeBuilding</Type>						<Value>data_BuildingFields.FreeBuilding and Locale.ConvertTextKey(GameInfo.BuildingClasses[data_BuildingFields.FreeBuilding].Description) or false</Value></Row>
+		<Row><Type>TrainedFreePromotion</Type>				<Value>data_BuildingFields.TrainedFreePromotion and Locale.ConvertTextKey(GameInfo.UnitPromotions[data_BuildingFields.TrainedFreePromotion].Help) or false</Value></Row>
+		<Row><Type>MapCentering</Type>						<Value>data_BuildingFields.MapCentering</Value></Row>
+		<Row><Type>AllowsWaterRoutes</Type>					<Value>data_BuildingFields.AllowsWaterRoutes</Value></Row>
+		<Row><Type>ExtraLuxuries</Type>						<Value>data_BuildingFields.ExtraLuxuries</Value></Row>
+		<Row><Type>DiplomaticVoting</Type>					<Value>data_BuildingFields.DiplomaticVoting</Value></Row>
+		<Row><Type>GreatGeneralRateModifier</Type>			<Value>data_BuildingFields.GreatGeneralRateModifier</Value></Row>
+		<Row><Type>GoldenAgeModifier</Type>					<Value>data_BuildingFields.GoldenAgeModifier</Value></Row>
+		<Row><Type>UnitUpgradeCostMod</Type>				<Value>data_BuildingFields.UnitUpgradeCostMod</Value></Row>
+		<Row><Type>CityCountUnhappinessMod</Type>			<Value>data_BuildingFields.CityCountUnhappinessMod</Value></Row>
+		<Row><Type>WorkerSpeedModifier</Type>				<Value>data_BuildingFields.WorkerSpeedModifier</Value></Row>
+		<Row><Type>CapturePlunderModifier</Type>			<Value>data_BuildingFields.CapturePlunderModifier</Value></Row>
+		<Row><Type>PolicyCostModifier</Type>				<Value>data_BuildingFields.PolicyCostModifier</Value></Row>
+		<Row><Type>InstantBorderRadius</Type>				<Value>data_BuildingFields.InstantBorderRadius</Value></Row>
+		<Row><Type>GlobalInstantBorderRadius</Type>			<Value>data_BuildingFields.GlobalInstantBorderRadius</Value></Row>
+		<Row><Type>PlotCultureCostModifier</Type>			<Value>data_BuildingFields.PlotCultureCostModifier</Value></Row>
+		<Row><Type>PlotBuyCostModifier</Type>				<Value>data_BuildingFields.PlotBuyCostModifier</Value></Row>
+		<Row><Type>GlobalPlotCultureCostModifier</Type>		<Value>data_BuildingFields.GlobalPlotCultureCostModifier</Value></Row>
+		<Row><Type>GlobalPlotBuyCostModifier</Type>			<Value>data_BuildingFields.GlobalPlotBuyCostModifier</Value></Row>
+
+		<Row><Type>FoundsReligion</Type>					<Value>data_BuildingFields.FoundsReligion</Value></Row>
+		<Row><Type>IsReligious</Type>						<Value>data_BuildingFields.IsReligious</Value></Row>
+		<!--<Row><Type>AffectSpiesNow</Type>					<Value>data_BuildingFields.AffectSpiesNow</Value></Row>-->
+		<Row><Type>UnlockedByBelief</Type>					<Value>data_BuildingFields.UnlockedByBelief</Value></Row>
+		<Row><Type>Airlift</Type>							<Value>data_BuildingFields.Airlift</Value></Row>
+		<Row><Type>NukeExplosionRand</Type>					<Value>data_BuildingFields.NukeExplosionRand</Value></Row>
+		<!--<Row><Type>AllowsRangeStrike</Type>					<Value>data_BuildingFields.AllowsRangeStrike</Value></Row>-->
+		<!--<Row><Type>Espionage</Type>							<Value>data_BuildingFields.Espionage</Value></Row>-->
+		<Row><Type>ExtraMissionarySpreads</Type>			<Value>data_BuildingFields.ExtraMissionarySpreads</Value></Row>
+		<Row><Type>EspionageModifier</Type>					<Value>data_BuildingFields.EspionageModifier</Value></Row>
+		<Row><Type>GlobalEspionageModifier</Type>			<Value>data_BuildingFields.GlobalEspionageModifier</Value></Row>
+		<Row><Type>ExtraSpies</Type>						<Value>data_BuildingFields.ExtraSpies</Value></Row>
+		<Row><Type>SpyRankChange</Type>						<Value>data_BuildingFields.SpyRankChange</Value></Row>
+		<Row><Type>InstantSpyRankChange</Type>				<Value>data_BuildingFields.InstantSpyRankChange</Value></Row>
+		<Row><Type>ProhibitedCityTerrain</Type>				<Value>data_BuildingFields.ProhibitedCityTerrain</Value></Row>
+		<Row><Type>ReplacementBuildingClass</Type>			<Value>data_BuildingFields.ReplacementBuildingClass</Value></Row>
+		<Row><Type>SpecialistExtraCulture</Type>			<Value>data_BuildingFields.SpecialistExtraCulture</Value></Row>		
+
+		<Row><Type>GlobalPopulationChange</Type>			<Value>data_BuildingFields.GlobalPopulationChange</Value></Row>
+		<Row><Type>TechShare</Type>							<Value>data_BuildingFields.TechShare</Value></Row>
+		<Row><Type>FreeTechs</Type>							<Value>data_BuildingFields.FreeTechs</Value></Row>
+		<Row><Type>FreePolicies</Type>						<Value>data_BuildingFields.FreePolicies</Value></Row>
+		<Row><Type>MinorFriendshipChange</Type>				<Value>data_BuildingFields.MinorFriendshipChange</Value></Row>
+		<Row><Type>MinorFriendshipFlatChange</Type>			<Value>data_BuildingFields.MinorFriendshipFlatChange</Value>	</Row>
+		<Row><Type>VictoryPoints</Type>						<Value>data_BuildingFields.VictoryPoints</Value></Row>
+		<Row><Type>BorderObstacle</Type>					<Value>data_BuildingFields.BorderObstacle</Value></Row>
+		<Row><Type>PlayerBorderObstacle</Type>				<Value>data_BuildingFields.PlayerBorderObstacle</Value></Row>
+		<Row><Type>HealRateChange</Type>					<Value>data_BuildingFields.HealRateChange</Value></Row>
+		<Row><Type>MountainImprovement</Type>				<Value>data_BuildingFields.MountainImprovement and Locale.ConvertTextKey(GameInfo.Improvements[data_BuildingFields.MountainImprovement].Description) or false</Value></Row>
+		<Row><Type>FreePromotion</Type>						<Value>data_BuildingFields.FreePromotion and Locale.ConvertTextKey(GameInfo.UnitPromotions[data_BuildingFields.FreePromotion].Help) or false</Value></Row>
+		<Row><Type>FreePromotionAllCombatUnits</Type>		<Value>data_BuildingFields.FreePromotionAllCombatUnits and Locale.ConvertTextKey(GameInfo.UnitPromotions[data_BuildingFields.FreePromotionAllCombatUnits].Help) or false</Value></Row>
+
+		<!-- Requirements -->
+		<Row><Type>NearbyTerrainRequired</Type>				<Value>data_BuildingFields.NearbyTerrainRequired</Value></Row>
+		<Row><Type>Water</Type>								<Value>data_BuildingFields.Water</Value></Row>
+		<Row><Type>River</Type>								<Value>data_BuildingFields.River</Value></Row>
+		<Row><Type>FreshWater</Type>						<Value>data_BuildingFields.FreshWater and (data_BuildingFields.BuildingClass ~= "BUILDINGCLASS_GARDEN")</Value></Row>
+		<Row><Type>Mountain</Type>							<Value>data_BuildingFields.Mountain</Value></Row>
+		<Row><Type>NearbyMountainRequired</Type>			<Value>data_BuildingFields.NearbyMountainRequired</Value></Row>
+		<Row><Type>Hill</Type>								<Value>data_BuildingFields.Hill</Value></Row>
+		<Row><Type>Flat</Type>								<Value>data_BuildingFields.Flat</Value></Row>
+		<Row><Type>RequiresTech</Type>						<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_TechAndPrereqs)</Value></Row>
+		<Row><Type>RequiresBuilding</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ClassesNeededInCity) and not data_BuildingFields.OnlyAI</Value></Row>
+		<Row><Type>RequiresBuildingInCities</Type>			<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_PrereqBuildingClasses)</Value></Row>
+		<Row><Type>RequiresBuildingInPercentCities</Type>	<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_PrereqBuildingClassesPercentage)</Value></Row>
+		<Row><Type>RequiresNearAll</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_LocalResourceAnds)</Value></Row>
+		<Row><Type>RequiresNearAny</Type>					<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_LocalResourceOrs)</Value></Row>
+		<Row><Type>RequiresResourceConsumption</Type>		<Value>Game.HasValue({BuildingType=data_BuildingFields.Type}, GameInfo.Building_ResourceQuantityRequirements)</Value></Row>
+		<Row><Type>ObsoleteTech</Type>						<Value>data_BuildingFields.ObsoleteTech and Locale.ConvertTextKey(GameInfo.Technologies[data_BuildingFields.ObsoleteTech].Description)</Value></Row>
+		<Row><Type>AlreadyBuilt</Type>						<Value>GetDefaultBuildingFieldData</Value></Row>
+		<Row><Type>MinAreaSize</Type>						<Value>(data_BuildingFields.MinAreaSize ~= -1) and data_BuildingFields.MinAreaSize</Value></Row>
+		<Row><Type>CitiesPrereq</Type>						<Value>data_BuildingFields.CitiesPrereq</Value></Row>
+		<Row><Type>LevelPrereq</Type>						<Value>data_BuildingFields.LevelPrereq</Value></Row>
+	</BuildingFields>
+</GameData>

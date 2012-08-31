@@ -72,21 +72,22 @@ WHERE Name = 'MIN_CITY_RANGE';
 
 
 /*
-On unit tooltips, show the weight the AI gives to training that unit.
-1 = display the priorities
-0 = hide the priorities
+These add information to tooltips about how important the AI considers
+building specific units/buildings and choosing particular policies/techs.
+1 = display priorities
+0 = hide priorities
 */
 INSERT INTO Civup (Type, Value)
-VALUES ('SHOW_AI_UNIT_PRIORITIES', 0);
+VALUES ('SHOW_AI_PRIORITY_UNITS', 0);
 
-
-/*
-On building/wonder tooltips, show the weight the AI gives to building that structure.
-1 = display the priorities
-0 = hide the priorities
-*/
 INSERT INTO Civup (Type, Value)
-VALUES ('SHOW_AI_BUILDING_PRIORITIES', 0);
+VALUES ('SHOW_AI_PRIORITY_BUILDINGS', 0);
+
+INSERT INTO Civup (Type, Value)
+VALUES ('SHOW_AI_PRIORITY_POLICIES', 0);
+
+INSERT INTO Civup (Type, Value)
+VALUES ('SHOW_AI_PRIORITY_TECHS', 0);
 
 
 /*

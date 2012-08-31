@@ -25,6 +25,87 @@
 		<Row Tag="TXT_KEY_SPECIALIST_GENERAL">
 			<Text>General</Text>
 		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_OPSCREEN_TOOLTIP_1_TIMER_LENGTH" />
+			<Set Text="Terrain Tooltip Delay: {1_Num} seconds" />
+		</Update>
+		<Row Tag="TXT_KEY_TECH_PROMOTION_DOMAIN">
+			<Text>{1_domain}[NEWLINE]{3_promoHelp}</Text>
+		</Row>
+		
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_DEITY_HELP" />
+			<Set Text="I am one with the universe." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_IMMORTAL_HELP" />
+			<Set Text="I would survive a zombie apocalypse." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_EMPEROR_HELP" />
+			<Set Text="Test my limits." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_KING_HELP" />
+			<Set Text="Give me a challenge." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_PRINCE_HELP" />
+			<Set Text="The gloves are coming off." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_WARLORD_HELP" />
+			<Set Text="Let me relax." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_CHIEFTAIN_HELP" />
+			<Set Text="Let me try new things." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_HANDICAP_SETTLER_HELP" />
+			<Set Text="Let me learn the game." />
+		</Update>
+
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_POLICY_SAVING" />
+			<Set Text="No Policy Saving" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_POLICY_SAVING_HELP" />
+			<Set Text="Players must pick Social Policies immediately when available." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TP_CULTURE_CITY_COST" />
+			<Set Text="Peaceful expansion speeds up your policy rate, and warfare slows it down. " />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_CANNOT_UNLOCK" />
+			<Set Text="[ICON_LOCKED] This Policy is locked right now." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK" />
+			<Set Text="[ICON_LOCKED] This Policy Tree is locked right now." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK_CULTURE" />
+			<Set Text="[NEWLINE][ICON_LOCKED] You need {1_Num}[ICON_CULTURE] Culture to spend." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK_ERA" />
+			<Set Text="[NEWLINE][ICON_LOCKED] You need to be in the {1_EraString:textkey}." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_UNLOCK_SPEND" />
+			<Set Text="[COLOR_POSITIVE_TEXT]This Policy Tree can be unlocked![ENDCOLOR][NEWLINE]Click here to spend {1_Num}[ICON_CULTURE] Culture and open this Social Policy Tree." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_BLOCKED" />
+			<Set Text="[NEWLINE][ICON_LOCKED] Inactive because there are other branches you have chosen which block its effects.[NEWLINE] Click here to switch." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_SOCIALPOLICY_GAINING_HEADING2_BODY" />
+			<Set Text="You can choose to adopt and unlock a social policy once you have gained enough culture points: the first one becomes available once you acquire 100 culture points, with the subsequent ones costing a little bit more. The cost of each Policy increases the more you adopt. To see how much culture you currently have and when the next policy will become available, hover your mouse over the Culture icon on the Status Bar. You can read more about accruing culture in the Culture section.[NEWLINE][NEWLINE]Once you have enough culture, a notification will alert you on your turn. Click on the Social Policies icon in the top right corner (located next to your advisors) to bring up the Social Policies Pane. If you don't wish to select a Policy that turn, you may right-click the notification to dismiss it. (The game will not remind you again though, so this can be risky.) Here you can choose to adopt a new branch or unlock a new policy within an unlocked branch. To view all the available policies (and not just the ones you've unlocked), click on the Advanced View toggle at the bottom of the pane.[NEWLINE][NEWLINE]When you have acquired the requisite amount of culture, click on the &quot;Adopt Policy&quot; button to open up the chosen branch for exploration - you must first spend points to adopt the branch before unlocking any of the individual policies. Each branch adoption will give you some benefit immediately, with the individual policies within each providing more bonuses of the same nature.[NEWLINE][NEWLINE]Some branches may not be unlocked and active at the same time, and many branches only become available once a later era has been reached." />
+		</Update>
 		
 		<Row Tag="TXT_KEY_BUILDING_TRADE_CONNECTION_HELP">
 			<Text>Works around a bug (right-click for details).</Text>
@@ -35,7 +116,6 @@
 		<Row Tag="TXT_KEY_BUILDING_TRADE_CONNECTION_STRATEGY">
 			<Text>This free building fixes a bug (the capital does not connect to the trade network connected to the capital, a logical paradox).[NEWLINE][NEWLINE]An unbroken [ICON_CONNECTED] route of roads, railroads, or water tiles to the [ICON_CAPITAL] Capital provides [ICON_GOLD].[NEWLINE][NEWLINE]An unbroken [ICON_CONNECTED] route of railroads or water tiles to the [ICON_CAPITAL] Capital provides +25% [ICON_PRODUCTION] (requires Railroads technology).[NEWLINE][NEWLINE]A [ICON_CONNECTED] trade route can only cross between water and land tiles at a Harbor.</Text>
 		</Row>
-		
 
 		<Row Tag="TXT_KEY_PER_TURN">
 			<Text>per turn</Text>
@@ -286,7 +366,7 @@
 			<Text>YIELDS:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITY_STATE_YIELDS_TT">
-			<Text>Yields the citystate is giving you.</Text>
+			<Text>If a player becomes the [COLOR_POSITIVE_TEXT]Ally[ENDCOLOR] of this City-State, these are the Yields the player will receive.</Text>
 		</Row>
 		<Update>
 			<Where Tag="TXT_KEY_POP_CSTATE_QUESTS" />
@@ -343,6 +423,14 @@
 			<Set Text="As a [COLOR_POSITIVE_TEXT]Maritime[ENDCOLOR] City-State, they will export [ICON_FOOD] Food to your cities." />
 		</Update>
 		<Update>
+			<Where Name="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MERCANTILE" />
+			<Set Text="As a [COLOR_POSITIVE_TEXT]Mercantile[ENDCOLOR] City-State, their markets offer exotic [ICON_HAPPINESS_1] Happiness goods to your people!)" />
+		</Update>
+		<Update>
+			<Where Name="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_RELIGIOUS" />
+			<Set Text="As a [COLOR_POSITIVE_TEXT]Religious[ENDCOLOR] City-State, they share their knowledge of [ICON_PEACE] Faith rituals with you!" />
+		</Update>
+		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_FRIENDS_LOST_BASE" />
 			<Set Text="[ICON_INFLUENCE] Influence over {1_CivName:textkey} has decreased to the point where you are no longer [COLOR_POSITIVE_TEXT]FRIENDS[ENDCOLOR]...[NEWLINE][NEWLINE]{2_DetailsString} Also, your Units no longer have permission to move through their territory." />
 		</Update>
@@ -357,6 +445,14 @@
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_MARITIME" />
 			<Set Text="(Lost [ICON_FOOD] Food in your cities)" />
+		</Update>
+		<Update>
+			<Where Name="TXT_KEY_NOTIFICATION_MINOR_LOST_MERCANTILE" />
+			<Set Text="(Lost [ICON_HAPPINESS_1] Happiness)" />
+		</Update>
+		<Update>
+			<Where Name="TXT_KEY_NOTIFICATION_MINOR_LOST_RELIGIOUS" />
+			<Set Text="(Lost [ICON_PEACE] Faith)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE" />
@@ -377,6 +473,14 @@
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MARITIME" />
 			<Set Text="As a [COLOR_POSITIVE_TEXT]Maritime[ENDCOLOR] City-State, they now make large [ICON_FOOD] Food exports to your cities." />
+		</Update>
+		<Update>
+			<Where Name="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MERCANTILE" />
+			<Set Text="As a [COLOR_POSITIVE_TEXT]Mercantile[ENDCOLOR] City-State, their markets spread trade of exotic ICON_HAPPINESS_1] Happiness goods across your empire!" />
+		</Update>
+		<Update>
+			<Where Name="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_RELIGIOUS" />
+			<Set Text="As a [COLOR_POSITIVE_TEXT]Religious[ENDCOLOR] City-State, they give you their most treasured [ICON_PEACE] Faith relics!" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_LOST" />
@@ -411,7 +515,7 @@
 			<Text>[ICON_GREAT_PEOPLE] Great Person: {1_remaining} turns ({2_current}/{3_threshold}{4_rate})</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DIPLO_STATUS_TRIBUTE_TT" >
-			<Text>[ICON_RESISTANCE] Tribute:</Text>
+			<Text>[ICON_RESISTANCE] Tribute: {1_possible}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POSSIBLE" >
 			<Text>Possible</Text>
@@ -419,6 +523,20 @@
 		<Row Tag="TXT_KEY_NOT_POSSIBLE" >
 			<Text>Not Possible</Text>
 		</Row>
+		
+		
+		
+		<!--
+				Techs 
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_TECH_RIFLING_TITLE" />
+			<Set Text="Smokeless Powder" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_RIFLING_DESC" />
+			<Set Text="The invention of smokeless powder revolutionized military weapons and tactics. Older forms of gunpowder (called black powder) produced large quantities of solid soot. This smoke fouled barrels, prevented accurate shooting, and made it difficult for commanders to give orders through the battlefield haze. Smokeless powder literally cleared the way for tactics focused on accuracy, breech loading firearms, and autoloading firearms with many moving parts." />
+		</Update>
 		
 		
 		
@@ -442,12 +560,48 @@
 			<Set Text="This is the Siamese unique unit, replacing the Knight. The Chang Suek unit is slower than a Knight but it is more powerful. Like the Knight the Chang Suek can move after attacking. Equipped with spears, the Chang Suek gets a significant combat bonus when attacking other mounted units." />
 		</Update>
 		<Update>
+			<Where Tag="TXT_KEY_UNIT_CAVALRY" />
+			<Set Text="Dragoon" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_CAVALRY" />
+			<Set Text="Powerful mounted Unit of the Industrial Era." />
+		</Update>
+		<Row Tag="TXT_KEY_UNIT_ARQUEBUSIER">
+			<Text>Arquebusier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ARQUEBUSIER_HELP">
+			<Text>First gunpowder Unit of the game. Fairly cheap and powerful.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ARQUEBUSIER_STRATEGY">
+			<Text>The Arquebusier is the first gunpowder unit in the game. It is inexpensive, and does not require Iron, unlike the Longswordsman and earlier soldier units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ARQUEBUSIER_PEDIA">
+			<Text>The arquebus is an early muzzle-loaded firearm used in the 15th to 17th centuries. It has a matchlock, unlike its predecessor the hand cannon. It is a smoothbore firearm like its successor the musket, and a forerunner of the rifle and other longarm firearms.[NEWLINE][NEWLINE]As a low-velocity firearm, the arquebus was used against enemies who were often partially or fully protected by steel-plate armour. Plate armour worn upon the torso was standard in European combat from about 1400 until the middle of the 17th century. Good suits of plate would usually stop an arquebus ball at long range. However, at close range, it was possible to pierce even heavy cavalry armour. This led to changes in armour usage, such as the three-quarter plate, and finally the retirement of plate armour from most types of infantry.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MUSKETMAN" />
+			<Set Text="Versatile gunpowder unit of the early Industrial era." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_MUSKETMAN_STRATEGY" />
+			<Set Text="The Musketman is a gunpowder unit of the early Industrial era, and it replaces all of the older foot-soldier types - Longswordsmen, Pikemen, and the like. It is inexpensive and versatile, capable of effectively attacking all targets." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_LANCER" />
+			<Set Text="Mounted Unit faster and more powerful than the Knight." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SIPAHI" />
+			<Set Text="Mounted Unit unique to the Ottomans, faster and more powerful than the Knight. Sipahi have higher speed and sight range than the Lancer it replaces." />
+		</Update>
+		<Update>
 			<Where Tag="TXT_KEY_UNIT_NUCLEAR_SUBMARINE" />
 			<Set Text="Missile Sub" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_UNIT_HELP_NUCLEAR_SUBMARINE" />
-			<Set Text="Specialized in defeating regular Submarines. Can carry 2 Missiles. Missile Subs are only visible to Destroyers, Submarines, and units within 1 tile range." />
+			<Set Text="Specialized in defeating regular Submarines. Can carry 3 Missiles. Missile Subs are only visible to Destroyers, Submarines, and units within 1 tile range." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_AIRPOWER_AIRBASES_HEADING2_BODY" />
@@ -551,6 +705,14 @@
 		<Row Tag="TXT_KEY_BUILDING_FOUNDRY_PEDIA">
 			<Text>A foundry is a place for large-scale production of metal castings. Metals are cast into shapes by melting them into a liquid, pouring the metal in a mold, and removing the mold material or casting after the metal has solidified as it cools. The most common metals processed are aluminum and cast iron.</Text>
 		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_COFFEE_HOUSE_STRATEGY" />
+			<Set Text="The Coffee House is a Renaissance-era building unique to Austria, replacing the Workshop. It increases the city's [ICON_PRODUCTION] Production and speed at which [ICON_GREAT_PEOPLE] Great People are generated by 25%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WONDER_PETRA_HELP" />
+			<Set Text="+1 [ICON_FOOD][ICON_PRODUCTION][ICON_GOLD] Food, Production, and Gold for desert tiles (but not flood plains)." />
+		</Update>
 		
 		
 		
@@ -559,12 +721,20 @@
 				Resources
 		-->
 		<Row
-			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS"
-			Text="Happiness"
+			Tag="TXT_KEY_BUILDING_HAPPINESS_GLOBAL"
+			Text="Global Happiness"
 		/>
 		<Row
-			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP"
-			Text="Happiness from VEM effects."
+			Tag="TXT_KEY_BUILDING_HAPPINESS_GLOBAL_HELP"
+			Text="Happiness from mod effects."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_HAPPINESS_LOCAL"
+			Text="Local Happiness"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_HAPPINESS_LOCAL_HELP"
+			Text="Happiness limited by population in this city."
 		/>
 		
 		<Row Tag="TXT_KEY_RES_IMPORTED">
@@ -597,6 +767,16 @@
 		<!--
 				Promotions
 		-->
+		<Row Tag="TXT_KEY_PROMOTION_FREE_UPGRADES">
+			<Text>Free Upgrades</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FREE_UPGRADES_HELP">
+			<Text>Free Upgrades</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MARCH_HELP" />
+			<Set Text="Attacking and moving do not prevent healing." />
+		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_UPANEL_UNIT_PROMOTED" />
 			<Set Text="CHOOSE PROMOTION" />
@@ -626,14 +806,6 @@
 		<Row Tag="TXT_KEY_UNITCOMBAT_CIVILIAN">
 			<Text>Civilian Units</Text>
 		</Row>
-		<Row
-			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED"
-			Text="Double work speed"
-		/>
-		<Row
-			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED_HELP"
-			Text="Builds improvements +100% faster"
-		/>
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTION_OLIGARCHY_HELP" />
 			<Set Text="+33% [ICON_STRENGTH] Strength in friendly territory"/>
@@ -660,18 +832,6 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HILL_FIGHTER_HELP">
 			<Text>Moves faster in [COLOR_POSITIVE_TEXT]Hills[ENDCOLOR]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_PHALANX">
-			<Text>Phalanx</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_PHALANX_HELP">
-			<Text>+50% vs [COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Soldier[ENDCOLOR] units.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_GOLDEN">
-			<Text>Golden</Text>
-		</Row>
-		<Row Tag="TXT_KEY_PROMOTION_GOLDEN_HELP">
-			<Text>[ICON_GOLDEN_AGE] Golden Age points from combat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_1">
 			<Text>AI Handicap I</Text>
@@ -747,7 +907,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_PROMOTION_WOODSMAN_HELP"/>
-			<Set Text="Faster movement through [COLOR_POSITIVE_TEXT]Forests and Jungle[ENDCOLOR]."/>
+			<Set Text="Moves faster in [COLOR_POSITIVE_TEXT]Forests and Jungle[ENDCOLOR]."/>
 		</Update>
 		
 		

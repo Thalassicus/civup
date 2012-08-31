@@ -363,7 +363,7 @@
 			<Where Tag="TXT_KEY_DIPLO_STATUS_TT" />
 			<Set Text="[ICON_INFLUENCE] Actualmente {1_statusType}: {2_statusText} {3_rate}" />
 		</Update>
-		<Row Tag="TXT_KEY_DIPLO_STATUS_OTHER_TT">
+		<Row Tag="TXT_KEY_DIPLO_INFLUENCE_RIVAL_TT">
 			<Text>[ICON_STAR] Rival ({1_civName}): {2_statusText} [ICON_INFLUENCE]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_DIPLO_STATUS_MILITARISTIC_REWARD_TT">
@@ -466,11 +466,11 @@
 				Recursos
 		-->
 		<Row
-			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS"
+			Tag="TXT_KEY_BUILDING_HAPPINESS_GLOBAL"
 			Text="Felicidad"
 		/>
 		<Row
-			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP"
+			Tag="TXT_KEY_BUILDING_HAPPINESS_GLOBAL_HELP"
 			Text="Felicidad, incluyendo los efectos de Vanilla Enhanced Mod."
 		/>
 

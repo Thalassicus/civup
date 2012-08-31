@@ -812,11 +812,11 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_PLAN_RESEARCH_AGREEMENT_1" />
-			<Set Text="I would like to lay plans for establishing a Research Agreement with your great nation. Doing so would require each of us to spend 150 [ICON_GOLD]. What do you think?[NEWLINE][NEWLINE](Agreeing will not form a Research Agreement yet)" />
+			<Set Text="I would like to lay plans for establishing a Research Agreement with your great nation. Doing so would require each of us to spend [ICON_GOLD] Gold. What do you think?[NEWLINE][NEWLINE](Agreeing will not form a Research Agreement yet)" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_GENERIC_RESEARCH_AGREEMENT_OFFER_1" />
-			<Set Text="I feel that a Research Agreement is a mutually beneficial arrangement that would help serve to cement our Friendship." />
+			<Set Text="I feel that a Research Agreement is a mutually beneficial arrangement that would help serve to cement our alliance." />
 		</Update>
 		<!--Trade Dialogue-->
 		<Update>

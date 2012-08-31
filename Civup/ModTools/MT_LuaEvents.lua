@@ -48,7 +48,7 @@ include("MT_Unit.lua")
 include("MT_Misc.lua")
 
 local log = Events.LuaLogger:New()
-log:SetLevel("INFO")
+log:SetLevel("WARN")
 
 local startAITurnTime = nil
 
@@ -396,7 +396,9 @@ Events.PolicyAdopted = Events.PolicyAdopted or function(policyID, isPolicy)
 	if not isPolicy then
 		policyID = GameInfo.Policies[GameInfo.PolicyBranchTypes[policyID].FreePolicy].ID
 	end
-	LuaEvents.PolicyAdopted(Players[Game.GetActivePlayer()], policyID)
+	local playerID = Game.GetActivePlayer()
+	MapModData.VEM.HasPolicy[playerID][policyID] = true
+	LuaEvents.PolicyAdopted(Players[playerID], policyID)
 end
 
 if not MapModData.VEM.HasPolicy then
@@ -588,6 +590,9 @@ function LuaEvents.CheckActiveBuildingStatus()
 		if not Map_GetCity(plotID) then
 			MapModData.buildingsAlive[plotID] = nil
 		end
+	end
+	if not MapModData.VEM.FreeFlavorBuilding then
+		return
 	end
 	for flavorInfo in GameInfo.Flavors() do
 		for plotID, data in pairs(MapModData.VEM.FreeFlavorBuilding[flavorInfo.Type]) do

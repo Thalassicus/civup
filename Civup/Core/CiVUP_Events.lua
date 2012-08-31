@@ -7,7 +7,7 @@ include("CiVUP_Core.lua")
 include("CustomNotification.lua")
 
 local log = Events.LuaLogger:New()
-log:SetLevel("INFO")
+log:SetLevel("WARN")
 
 --local store = Events.SavegameData:New()
 --store:SetModName("Civup")
@@ -17,6 +17,7 @@ LuaEvents.NotificationAddin({name = "CapturedCityLoot", type = "CNOTIFICATION_CA
 LuaEvents.NotificationAddin({name = "CityGrowth", type = "CNOTIFICATION_CITY_GROWTH"})
 
 if not UI:IsLoadedGame() then
+	OptionsManager.SetTooltip1Seconds_Cached(0)
 	for optionInfo in GameInfo.GameOptions() do
 		if optionInfo.Reverse then
 			Game.SetOption(optionInfo.ID, not Game.IsOption(optionInfo.ID))
@@ -140,6 +141,7 @@ function UpdatePuppetOccupyStatus(city, player, isForced)
 		player = Players[city:GetOwner()]
 	end
 	
+	--[[
 	if isForced then
 		log:Info("UpdatePuppetOccupyStatus %15s's %15s isForced=%s", player:GetName(), city:GetName(), isForced)
 	end
@@ -184,6 +186,7 @@ function UpdatePuppetOccupyStatus(city, player, isForced)
 	elseif city:IsHasBuilding(happinessModID) then
 		city:SetNumRealBuilding(happinessModID, 0)
 	end
+	--]]
 
 end
 
@@ -557,13 +560,18 @@ function UnitCreatedChecks( playerID,
 		end
 	end
 
+	for promoInfo in GameInfo.Technology_DomainPromotion{DomainType = unitInfo.Domain} do
+		if player:HasTech(promoInfo.TechType) then
+			unit:SetHasPromotion(GameInfo.UnitPromotions[promoInfo.PromotionType].ID, true)
+		end
+	end
+
 	if not military then
 		return
 	end
-	for traitInfo in GameInfo.Trait_FreeExperience_Domains() do
-		if (traitInfo.TraitType == playerTrait.Type) and (traitInfo.DomainType == unitInfo.Domain) then
-			unit:ChangeExperience(traitInfo.Experience)
-		end
+
+	for traitInfo in GameInfo.Trait_FreeExperience_Domains{DomainType = unitInfo.Domain, TraitType == playerTrait.Type} do
+		unit:ChangeExperience(traitInfo.Experience)
 	end
 
 	for policyInfo in GameInfo.Policies("GlobalExperience <> 0") do
@@ -687,41 +695,73 @@ LuaEvents.CityCaptureBonuses.Add( DoCityCaptureBonuses )
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-function CheckAdoptedPolicyEffects(player, policyID)
-	if not policyID then
-		log:Error("CheckAdoptedPolicyEffects policyID=%s", policyID)
-		return nil
-	end
-	local policyInfo = GameInfo.Policies[policyID]
-	log:Info("CheckAdoptedPolicyEffects %s %s", player:GetName(), policyInfo.Type)
-	CheckPolicyExperience(player, policyInfo)
-	CheckPolicyBorderObstacle(player, policyInfo)
-	CheckPolicyInfluence(player, policyInfo)
-	--[[
-	else
-		for policyInfo in GameInfo.Policies() do
-			if player:HasPolicy(policyInfo.ID) then
-				--log:Debug("CheckAdoptedPolicyEffects %s %s", player:GetName(), policyInfo.Type)
-				CheckPolicyBorderObstacle(player, policyInfo)
-				if not player:IsHuman() then
-					CheckPolicyExperience(player, policyInfo)
-					CheckPolicyInfluence(player, policyInfo)
+function CheckPerTurnTechEffects(player)
+	log:Debug("CheckPerTurnTechEffects %s", player:GetName())	
+	for promoInfo in GameInfo.Technology_DomainPromotion() do
+		if player:HasTech(promoInfo.TechType) then
+			for unit in player:Units() do
+				local promoID = GameInfo.UnitPromotions[promoInfo.PromotionType].ID
+				if not unit:IsHasPromotion(promoID) and (promoInfo.DomainType == GameInfo.Units[unit:GetUnitType()].Domain) then
+					unit:SetHasPromotion(promoID, true)
 				end
 			end
 		end
 	end
-		--]]
-	CheckFreeBuildings(player, policyID)
 end
-LuaEvents.PolicyAdopted.Add( CheckAdoptedPolicyEffects )
+LuaEvents.ActivePlayerTurnStart_Player.Add( CheckPerTurnTechEffects )
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+function DoPolicyEffects(player, policyID)
+	if not policyID then
+		log:Error("DoPolicyEffects policyID=%s", policyID)
+		return nil
+	end
+	local policyInfo = GameInfo.Policies[policyID]
+	log:Debug("DoPolicyEffects %s %s", player:GetName(), policyInfo.Type)
+	DoPolicyExperience(player, policyInfo)
+	DoPolicyBorderObstacle(player, policyInfo)
+	DoPolicyInfluence(player, policyInfo)
+	DoPolicyFreeUnits(player, policyID)
+	DoPolicyFreeBuildings(player, policyID)
+	DoPolicyInstantYield(player, policyID)
+end
+LuaEvents.PolicyAdopted.Add( DoPolicyEffects )
 
 function CheckPerTurnPolicyEffects(player)
-	CheckFreeBuildings(player)
+	DoPolicyFreeBuildings(player)
 end
 LuaEvents.ActivePlayerTurnStart_Player.Add( CheckPerTurnPolicyEffects )
 	
-function CheckFreeBuildings(player, policyID)
-	--log:Info("CheckFreeBuildings")
+function DoPolicyFreeUnits(player, policyID)
+	--log:Info("DoPolicyFreeUnits")
+	local playerID = player:GetID()
+	local city = player:GetCapitalCity()
+	
+	for row in GameInfo.Policy_FreeUnitFlavor() do
+		local policyInfo = GameInfo.Policies[row.PolicyType]
+		local flavorType = row.FlavorType
+		if policyID == policyInfo.ID then
+			local itemID, unitFlavor = Game.GetMaximum(City_GetUnitsOfFlavor(city, flavorType))
+			if player:IsHuman() then
+				log:Debug("%45s has      %s", player:GetName(), policyInfo.Type)
+				log:Debug("%45s best     %s unit: %s", city:GetName(), flavorType, (itemID ~= -1) and GameInfo.Units[itemID].Type or "None Available")
+			end		
+			if itemID ~= -1 then
+				for i=1, row.Count do
+					player:InitUnitType(itemID, city:Plot(), City_GetUnitExperience(city, itemID))
+					if player:IsHuman() then
+						log:Debug("%45s recieved unit", " ", " ")
+					end
+				end
+			end
+		end
+	end
+end
+	
+function DoPolicyFreeBuildings(player, policyID)
+	--log:Info("DoPolicyFreeBuildings")
 	local playerID = player:GetID()
 	local cityList = nil
 	for row in GameInfo.Policy_FreeBuildingFlavor() do
@@ -771,7 +811,7 @@ function CheckFreeBuildings(player, policyID)
 	end
 end
 
-function CheckPolicyExperience(player, policyInfo)
+function DoPolicyExperience(player, policyInfo)
 	if not policyInfo.FreeExperience then
 		return
 	end
@@ -782,7 +822,7 @@ function CheckPolicyExperience(player, policyInfo)
 	end
 end
 
-function CheckPolicyBorderObstacle(player, policyInfo)
+function DoPolicyBorderObstacle(player, policyInfo)
 	local activateBorderTech = GameInfo.Buildings.BUILDING_GREAT_WALL.ObsoleteTech
 	if not policyInfo.BorderObstacle or (not player:HasTech(activateBorderTech) and player:HasBuilding("BUILDING_GREAT_WALL")) then
 		return
@@ -794,7 +834,7 @@ function CheckPolicyBorderObstacle(player, policyInfo)
 	end
 end
 
-function CheckPolicyInfluence(player, policyInfo)
+function DoPolicyInfluence(player, policyInfo)
 	local playerID = player:GetID()
 	local influence = policyInfo.MinorInfluence
 	local minInfluence = policyInfo.MinorFriendshipMinimum
@@ -814,6 +854,56 @@ function CheckPolicyInfluence(player, policyInfo)
 		end
 	end
 end
+
+function DoPolicyInstantYield(player, policyID)
+	local policyType = GameInfo.Policies[policyID].Type
+	log:Debug("DoPolicyInstantYield %s %s", player:GetName(), policyType)
+	
+	for info in GameInfo.Policy_InstantYield{PolicyType = policyType} do
+		log:Debug("DoPolicyInstantYield %s %s * %s", info.YieldType, info.Yield, Game.GetSpeedYieldMod(YieldTypes[info.YieldType]))
+		player:ChangeYieldStored(YieldTypes[info.YieldType], info.Yield * Game.GetSpeedYieldMod(YieldTypes[info.YieldType]))
+		if info.YieldType == "YIELD_GOLD" then
+			Events.AudioPlay2DSound("AS2D_INTERFACE_CITY_SCREEN_PURCHASE")
+		end
+	end
+	for info in GameInfo.Policy_InstantYieldEra{PolicyType = policyType} do
+		log:Debug("%s * %s * %s", info.Yield, 1+player:GetCurrentEra(), Game.GetSpeedYieldMod(YieldTypes[info.YieldType]))
+		player:ChangeYieldStored(YieldTypes[info.YieldType], info.Yield * (1+player:GetCurrentEra()) * Game.GetSpeedYieldMod(YieldTypes[info.YieldType]))
+		if info.YieldType == "YIELD_GOLD" then
+			Events.AudioPlay2DSound("AS2D_INTERFACE_CITY_SCREEN_PURCHASE")
+		end
+	end
+
+	for info in GameInfo.Policy_InstantYieldTurns{PolicyType = policyType} do
+		if Game.Contains(globalYieldTypes, info.YieldType) then
+			local baseYieldRate = math.max(0, player:GetBaseYieldRate(YieldTypes[info.YieldType]))
+			player:ChangeYieldStored(YieldTypes[info.YieldType], info.Turns * baseYieldRate)
+			if info.YieldType == "YIELD_GOLD" then
+				Events.AudioPlay2DSound("AS2D_INTERFACE_CITY_SCREEN_PURCHASE")
+			end
+		elseif Game.Contains(localYieldTypes, info.YieldType) then
+			local yieldID = YieldTypes[info.YieldType]
+			for city in player:Cities() do
+				local baseMod = City_GetBaseYieldRateModifier(city, yieldID)
+				local baseYieldRate = City_GetBaseYieldRate(city, yieldID) * (1 + baseMod/100)
+				city:ChangeYieldStored(yieldID, info.Turns * baseYieldRate)
+			end
+		end
+	end
+end
+
+local globalYieldTypes = {
+	"YIELD_GOLD",
+	"YIELD_SCIENCE",
+	"YIELD_FAITH",
+	"YIELD_HAPPINESS"
+}
+
+local localYieldTypes = {
+	"YIELD_FOOD",
+	"YIELD_PRODUCTION",
+	"YIELD_CULTURE"
+}
 
 if not MapModData.VEM.FreeFlavorBuilding then
 	MapModData.VEM.FreeFlavorBuilding = {}

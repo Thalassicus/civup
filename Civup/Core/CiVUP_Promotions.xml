@@ -22,6 +22,10 @@
 			<Set PromotionCategory="Melee" />
 		</Update>
 		<Update>
+			<Where Type="UNITCOMBAT_MACHINE_GUN" />
+			<Set PromotionCategory="Machine" />
+		</Update>
+		<Update>
 			<Where Type="UNITCOMBAT_ARCHER" />
 			<Set PromotionCategory="Ranged" />
 		</Update>
@@ -38,8 +42,12 @@
 			<Set PromotionCategory="Vanguard" />
 		</Update>
 		<Update>
+			<Where Type="UNITCOMBAT_NAVALMELEE" />
+			<Set PromotionCategory="NavalMelee" />
+		</Update>
+		<Update>
 			<Where Type="UNITCOMBAT_NAVALRANGED" />
-			<Set PromotionCategory="Naval" />
+			<Set PromotionCategory="NavalRanged" />
 		</Update>
 		<Update>
 			<Where Type="UNITCOMBAT_SUBMARINE" />
@@ -123,18 +131,6 @@
 			<Set PortraitIndex="23" />
 		</Update>
 		<Row>
-			<Type>PROMOTION_DOUBLE_WORK_SPEED</Type>
-			<Description>TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED</Description>
-			<PediaEntry>TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED</PediaEntry>
-			<Help>TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<LostWithUpgrade>true</LostWithUpgrade>
-			<CannotBeChosen>true</CannotBeChosen>
-			<PortraitIndex>59</PortraitIndex>
-			<IconAtlas>ABILITY_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-		</Row>
-		<Row>
 			<Type>PROMOTION_HILL_FIGHTER</Type>
 			<Description>TXT_KEY_PROMOTION_HILL_FIGHTER</Description>
 			<PediaEntry>TXT_KEY_PROMOTION_HILL_FIGHTER</PediaEntry>
@@ -216,7 +212,37 @@
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>NONE</PediaType>
 		</Row>
+		<Row>
+			<Type>PROMOTION_FREE_UPGRADES</Type>
+			<Description>TXT_KEY_PROMOTION_FREE_UPGRADES</Description>
+			<Help>TXT_KEY_PROMOTION_FREE_UPGRADES_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<UpgradeDiscount>100</UpgradeDiscount>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>NULL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FREE_UPGRADES</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_IGNORE_TERRAIN_COST_NOUPGRADE</Type>
+			<Description>TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST</Description>
+			<Help>TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<IgnoreTerrainCost>true</IgnoreTerrainCost>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_IGNORE_TERRAIN_COST</PediaEntry>
+		</Row>
 	</UnitPromotions>
+	<Unit_FreePromotions>
+		<Update>
+			<Where UnitType="UNIT_SCOUT" PromotionType="PROMOTION_IGNORE_TERRAIN_COST" />
+			<Set PromotionType="PROMOTION_IGNORE_TERRAIN_COST_NOUPGRADE" />
+		</Update>
+	</Unit_FreePromotions>
 	<UnitPromotions_Terrains>
 		<Row>
 			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>

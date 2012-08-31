@@ -48,7 +48,8 @@ local CategoryCityStates = 11;
 local CategoryTerrain = 12;
 local CategoryResources = 13;
 local CategoryImprovements = 14;
-local numCategories = 14;
+local CategoryBeliefs = 15;
+local numCategories = 15;
 
 local selectedCategory = CategoryHomePage;
 local CivilopediaCategory = {};
@@ -184,6 +185,7 @@ CivilopediaCategory[CategoryCityStates].buttonTexture = "Assets/UI/Art/Civiloped
 CivilopediaCategory[CategoryTerrain].buttonTexture = "Assets/UI/Art/Civilopedia/CivilopediaTopButtonsTerrian.dds";
 CivilopediaCategory[CategoryResources].buttonTexture = "Assets/UI/Art/Civilopedia/CivilopediaTopButtonsResourcesImprovements.dds";
 CivilopediaCategory[CategoryImprovements].buttonTexture = "Assets/UI/Art/Civilopedia/CivilopediaTopButtonsImprovements.dds";
+CivilopediaCategory[CategoryBeliefs].buttonTexture = "CivilopediaTopButtonsReligion.dds";
 
 CivilopediaCategory[CategoryHomePage].labelString = Locale.ConvertTextKey( "TXT_KEY_PEDIA_CATEGORY_1_LABEL" );
 CivilopediaCategory[CategoryGameConcepts].labelString = Locale.ConvertTextKey( "TXT_KEY_PEDIA_CATEGORY_2_LABEL" );
@@ -199,6 +201,7 @@ CivilopediaCategory[CategoryCityStates].labelString = Locale.ConvertTextKey( "TX
 CivilopediaCategory[CategoryTerrain].labelString = Locale.ConvertTextKey( "TXT_KEY_PEDIA_CATEGORY_12_LABEL" );
 CivilopediaCategory[CategoryResources].labelString = Locale.ConvertTextKey( "TXT_KEY_PEDIA_CATEGORY_13_LABEL" );
 CivilopediaCategory[CategoryImprovements].labelString = Locale.ConvertTextKey( "TXT_KEY_PEDIA_CATEGORY_14_LABEL" );
+CivilopediaCategory[CategoryBeliefs].labelString = Locale.Lookup("TXT_KEY_PEDIA_CATEGORY_15_LABEL");
 
 CivilopediaCategory[CategoryHomePage].PopulateList = function()
 	sortedList[CategoryHomePage] = {};
@@ -253,6 +256,8 @@ CivilopediaCategory[CategoryGameConcepts].PopulateList = function()
 		HEADER_RUBARB = 19,
 		HEADER_UNITS = 20,
 		HEADER_VICTORY = 21,
+		HEADER_ESPIONAGE = 22,
+		HEADER_RELIGION = 23,
 	}
 	
 	-- Create table.
@@ -425,77 +430,75 @@ end
 
 CivilopediaCategory[CategoryUnits].PopulateList = function()
 	-- add the instances of the unit entries
-	
 	sortedList[CategoryUnits] = {};
+
+	function AddArticle(categoryID, entryID, unit)	
+		local article = {};
+		local name = Locale.ConvertTextKey( unit.Description )
+		article.entryName = name;
+		article.entryID = unit.ID;
+		article.entryCategory = CategoryUnits;
+		article.tooltipTextureOffset, article.tooltipTexture = IconLookup( unit.PortraitIndex, buttonSize, unit.IconAtlas );				
+		if not article.tooltipTextureOffset then
+			article.tooltipTexture = defaultErrorTextureSheet;
+			article.tooltipTextureOffset = nullOffset;
+		end				
+		
+		sortedList[CategoryUnits][categoryID][entryID] = article;
+		
+		-- index by various keys
+		searchableList[Locale.ToLower(name)] = article;
+		searchableTextKeyList[unit.Description] = article;
+		categorizedList[(CategoryUnits * absurdlyLargeNumTopicsInCategory) + unit.ID] = article;
+	end
+	
+	local sectionID = 0;
+	
+	-- Add units which cost faith to a "Faith" category first.
+	if(Game == nil or not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		local faithUnits = {};
+		sortedList[CategoryUnits][0] = {};
+		local tableid = 1;
+		for unit in DB.Query("SELECT Units.ID, Units.Description, Units.PortraitIndex, Units.IconAtlas From Units where FaithCost > 0 and not RequiresFaithPurchaseEnabled and ShowInPedia == 1") do
+			AddArticle(0, tableid, unit);
+			tableid = tableid + 1;
+		end
+		sectionID = sectionID + 1;
+	end
 	
 	-- for each era
+	local sql = [[
+		SELECT Units.ID, Units.Description, Units.PortraitIndex, Units.IconAtlas 
+		FROM Units INNER JOIN Technologies on PreReqTech = Technologies.Type 
+		WHERE (Units.FaithCost = 0 or RequiresFaithPurchaseEnabled) and Units.ShowInPedia = 1 and Technologies.Era = ?;]];
+						
+	local UnitsByEra = DB.CreateQuery(sql);
+	
 	for era in GameInfo.Eras() do
 	
-		local eraID = era.ID;
+		local eraID = era.ID + sectionID;
 	
 		sortedList[CategoryUnits][eraID] = {};
 		local tableid = 1;
 	
-		-- for each tech in this era
- 		for tech in GameInfo.Technologies("Era = '" .. era.Type .. "'") do
- 			-- for each unit that requires this tech
-			for unit in GameInfo.Units("PrereqTech = '" .. tech.Type .. "'") do
-				if unit.ShowInPedia then
- 					local article = {};
- 					local name = Locale.ConvertTextKey( unit.Description )
- 					article.entryName = name;
- 					article.entryID = unit.ID;
-					article.entryCategory = CategoryUnits;
-					article.tooltipTextureOffset, article.tooltipTexture = IconLookup( unit.PortraitIndex, buttonSize, unit.IconAtlas );				
-					if not article.tooltipTextureOffset then
-						article.tooltipTexture = defaultErrorTextureSheet;
-						article.tooltipTextureOffset = nullOffset;
-					end				
-					
-					sortedList[CategoryUnits][eraID][tableid] = article;
-					tableid = tableid + 1;
-					
-					-- index by various keys
-					searchableList[Locale.ToLower(name)] = article;
-					searchableTextKeyList[unit.Description] = article;
-					categorizedList[(CategoryUnits * absurdlyLargeNumTopicsInCategory) + unit.ID] = article;
-				end
-			end
+		for unit in UnitsByEra(era.Type) do
+			AddArticle(eraID, tableid, unit);
+			tableid = tableid + 1;
 		end
-		
+			
 		-- put in all of the units that do not have tech requirements in the Ancient Era for lack of a better place
-		if eraID == 0 then
-			for unit in GameInfo.Units() do
-				if unit.PrereqTech == nil and unit.Special == nil then
- 					if unit.ShowInPedia then
-						local article = {};
- 						local name = Locale.ConvertTextKey( unit.Description )
- 						article.entryName = name;
- 						article.entryID = unit.ID;
-						article.entryCategory = CategoryUnits;
-						article.tooltipTextureOffset, article.tooltipTexture = IconLookup( unit.PortraitIndex, buttonSize, unit.IconAtlas );				
-						if not article.tooltipTextureOffset then
-							article.tooltipTexture = defaultErrorTextureSheet;
-							article.tooltipTextureOffset = nullOffset;
-						end				
-						
-						sortedList[CategoryUnits][eraID][tableid] = article;
-						tableid = tableid + 1;
-						
-						-- index by various keys
-						searchableList[Locale.ToLower(name)] = article;
-						searchableTextKeyList[unit.Description] = article;
-						categorizedList[(CategoryUnits * absurdlyLargeNumTopicsInCategory) + unit.ID] = article;
-					end
-				end
+		if(eraID == 1) then
+			for unit in DB.Query("SELECT Units.ID, Units.Description, Units.PortraitIndex, Units.IconAtlas From Units where PreReqTech is NULL and Special is NULL and (Units.FaithCost = 0 or RequiresFaithPurchaseEnabled) and Units.ShowInPedia = 1") do
+				AddArticle(eraID, tableid, unit);
+				tableid = tableid + 1;
 			end
-		end
-
-		-- sort this list alphabetically by localized name
-		table.sort(sortedList[CategoryUnits][eraID], Alphabetically);
-	
+		end	
 	end
-		
+	
+	-- sort this list alphabetically by localized name
+	for k,v in pairs(sortedList[CategoryUnits]) do
+		table.sort(v, Alphabetically);
+	end	
 end
 
 
@@ -684,79 +687,80 @@ CivilopediaCategory[CategoryBuildings].PopulateList = function()
 	
 	sortedList[CategoryBuildings] = {};
 	
+	function AddArticle(categoryID, entryID, building)
+		local article = {};
+		local name = Locale.ConvertTextKey( building.Description )
+		article.entryName = name;
+		article.entryID = building.ID;
+		article.entryCategory = CategoryBuildings;
+		article.tooltipTextureOffset, article.tooltipTexture = IconLookup( building.PortraitIndex, buttonSize, building.IconAtlas );				
+		if not article.tooltipTextureOffset then
+			article.tooltipTexture = defaultErrorTextureSheet;
+			article.tooltipTextureOffset = nullOffset;
+		end				
+		
+		sortedList[CategoryBuildings][categoryID][entryID] = article;
+		
+		-- index by various keys
+		searchableList[Locale.ToLower(name)] = article;
+		searchableTextKeyList[building.Description] = article;
+		categorizedList[(CategoryBuildings * absurdlyLargeNumTopicsInCategory) + building.ID] = article;
+	end
+	
+	local sectionID = 0;
+	
+	if(Game == nil or not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		--Add Faith Buildings first
+		sortedList[CategoryBuildings][sectionID] = {};
+		local tableid = 1;
+		for building in DB.Query("SELECT Buildings.ID, Buildings.Description, Buildings.PortraitIndex, Buildings.IconAtlas from Buildings inner join  BuildingClasses on Buildings.BuildingClass = BuildingClasses.Type where FaithCost > 0 and BuildingClasses.MaxGlobalInstances < 0 and BuildingClasses.MaxPlayerInstances <> 1 and BuildingClasses.MaxTeamInstances < 0;") do
+			AddArticle(0, tableid, building);
+			tableid = tableid + 1;
+		end
+		sectionID = sectionID + 1;
+	end
+	
+	local sql = [[
+		SELECT Buildings.ID, Buildings.Description, Buildings.PortraitIndex, Buildings.IconAtlas 
+		FROM Buildings 
+		INNER JOIN BuildingClasses ON Buildings.BuildingClass = BuildingClasses.Type 
+		INNER JOIN Technologies ON Buildings.PrereqTech = Technologies.Type 
+		WHERE FaithCost == 0 AND BuildingClasses.MaxGlobalInstances < 0 AND BuildingClasses.MaxPlayerInstances <> 1 AND BuildingClasses.MaxTeamInstances < 0 AND Technologies.Era = ?;]];
+	
+	local BuildingsByEra = DB.CreateQuery(sql);
+	
+	
 	-- for each era
 	for era in GameInfo.Eras() do
 	
-		local eraID = era.ID;
+		local eraID = era.ID + sectionID;
 	
 		sortedList[CategoryBuildings][eraID] = {};
 		local tableid = 1;
-	
-		-- for each tech in this era
- 		for tech in GameInfo.Technologies("Era = '" .. era.Type .. "'") do
- 			-- for each building that requires this tech
-			for building in GameInfo.Buildings("PrereqTech = '" .. tech.Type .. "'") do
-			
-				-- exclude wonders etc.				
-				local thisBuildingClass = GameInfo.BuildingClasses[building.BuildingClass];
-				if building.IsVisible and thisBuildingClass.MaxGlobalInstances < 0 and thisBuildingClass.MaxPlayerInstances < 0 and thisBuildingClass.MaxTeamInstances < 0 then
- 					local article = {};
- 					local name = Locale.ConvertTextKey( building.Description )
- 					article.entryName = name;
- 					article.entryID = building.ID;
-					article.entryCategory = CategoryBuildings;
-					article.tooltipTextureOffset, article.tooltipTexture = IconLookup( building.PortraitIndex, buttonSize, building.IconAtlas );				
-					if not article.tooltipTextureOffset then
-						article.tooltipTexture = defaultErrorTextureSheet;
-						article.tooltipTextureOffset = nullOffset;
-					end				
-					
-					sortedList[CategoryBuildings][eraID][tableid] = article;
-					tableid = tableid + 1;
-					
-					-- index by various keys
-					searchableList[Locale.ToLower(name)] = article;
-					searchableTextKeyList[building.Description] = article;
-					categorizedList[(CategoryBuildings * absurdlyLargeNumTopicsInCategory) + building.ID] = article;
-				end
-			end
-		end
 		
+		for building in BuildingsByEra(era.Type) do
+			AddArticle(eraID, tableid, building);
+			tableid = tableid + 1;
+		end
+	
 		-- put in all of the buildings that do not have tech requirements in the Ancient Era for lack of a better place
-		if eraID == 0 then
-			for building in GameInfo.Buildings() do
-				if building.PrereqTech == nil then
-					-- exclude wonders etc.				
-					local thisBuildingClass = GameInfo.BuildingClasses[building.BuildingClass];
-					if thisBuildingClass.MaxGlobalInstances < 0 and thisBuildingClass.MaxPlayerInstances < 0 and thisBuildingClass.MaxTeamInstances < 0 then
- 						local article = {};
- 						local name = Locale.ConvertTextKey( building.Description )
- 						article.entryName = name;
- 						article.entryID = building.ID;
-						article.entryCategory = CategoryBuildings;
-						article.tooltipTextureOffset, article.tooltipTexture = IconLookup( building.PortraitIndex, buttonSize, building.IconAtlas );				
-						if not article.tooltipTextureOffset then
-							article.tooltipTexture = defaultErrorTextureSheet;
-							article.tooltipTextureOffset = nullOffset;
-						end				
-							
-						sortedList[CategoryBuildings][eraID][tableid] = article;
-						tableid = tableid + 1;
-						
-						-- index by various keys
-						searchableList[Locale.ToLower(name)] = article;
-						searchableTextKeyList[building.Description] = article;
-						categorizedList[(CategoryBuildings * absurdlyLargeNumTopicsInCategory) + building.ID] = article;
-					end
-				end
+		if(eraID == 1) then
+			local sql = [[
+				SELECT Buildings.ID, Buildings.Description, Buildings.PortraitIndex, Buildings.IconAtlas 
+				FROM Buildings 
+				INNER JOIN BuildingClasses ON Buildings.BuildingClass = BuildingClasses.Type 
+				WHERE Buildings.PrereqTech IS NULL AND Buildings.FaithCost == 0 AND BuildingClasses.MaxGlobalInstances < 0 AND BuildingClasses.MaxPlayerInstances <> 1 AND BuildingClasses.MaxTeamInstances < 0;]];
+		
+			for building in DB.Query(sql) do
+				AddArticle(eraID, tableid, building);
+				tableid = tableid + 1;
 			end
 		end
-
-		-- sort this list alphabetically by localized name
-		table.sort(sortedList[CategoryBuildings][eraID], Alphabetically);
-	
 	end
 		
+	for k,v in pairs(sortedList[CategoryBuildings]) do
+		table.sort(v, Alphabetically);
+	end
 end
 
 
@@ -772,7 +776,7 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 	for building in GameInfo.Buildings() do	
 		-- exclude wonders etc.				
 		local thisBuildingClass = GameInfo.BuildingClasses[building.BuildingClass];
-		if thisBuildingClass.MaxGlobalInstances > 0  then
+		if building.IsVisible and thisBuildingClass.MaxGlobalInstances > 0  then
 			local article = {};
 			local name = Locale.ConvertTextKey( building.Description )
 			article.entryName = name;
@@ -803,7 +807,7 @@ CivilopediaCategory[CategoryWonders].PopulateList = function()
 
 	for building in GameInfo.Buildings() do	
 		local thisBuildingClass = GameInfo.BuildingClasses[building.BuildingClass];
-		if thisBuildingClass.MaxPlayerInstances > 0  then
+		if thisBuildingClass.MaxPlayerInstances == 1 then
 			local article = {};
 			local name = Locale.ConvertTextKey( building.Description )
 			article.entryName = name;
@@ -1283,22 +1287,89 @@ CivilopediaCategory[CategoryImprovements].PopulateList = function()
 			
 end
 
+CivilopediaCategory[CategoryBeliefs].PopulateList = function()
+	
+	sortedList[CategoryBeliefs] = {};
+	
+	do
+		local section = {};
+		for religion in GameInfo.Religions("Type <> 'RELIGION_PANTHEON'") do
+	 		
+			-- add a tech entry to a list (localized name, tag, etc.)
+			local article = {};
+			local name = Locale.ConvertTextKey(religion.Description)
+			article.entryName = name;
+			article.entryID = {"Religions", religion.ID};
+			article.entryCategory = CategoryBeliefs;			
+			
+			table.insert(section, article);
+			
+			-- index by various keys
+			searchableList[Locale.ToLower(name)] = article;
+			searchableTextKeyList[religion.Description] = article;
+			categorizedList[(CategoryBeliefs * absurdlyLargeNumTopicsInCategory) + religion.ID] = article;
+		end
+		
+		-- sort this list alphabetically by localized name
+		table.sort(section, Alphabetically);
+		table.insert(sortedList[CategoryBeliefs], section);
+	end
+	
+	-- for each type of resource
+	local sectionConditions = {
+		"Pantheon = 1",
+		"Founder = 1",
+		"Follower = 1",
+		"Enhancer = 1"
+	};
+	
+	local numReligions = #GameInfo.Religions;
+	for i,condition in ipairs(sectionConditions) do
+		
+		local section = {};
+	
+ 		for belief in GameInfo.Beliefs(condition) do
+ 		
+			-- add a tech entry to a list (localized name, tag, etc.)
+ 			local article = {};
+ 			local name = Locale.ConvertTextKey( belief.ShortDescription )
+ 			article.entryName = name;
+ 			article.entryID = {"Beliefs", belief.ID};
+			article.entryCategory = CategoryBeliefs;			
+			
+			table.insert(section, article);
+			
+			-- index by various keys
+			searchableList[Locale.ToLower(name)] = article;
+			searchableTextKeyList[belief.ShortDescription] = article;
+			categorizedList[(CategoryBeliefs * absurdlyLargeNumTopicsInCategory) + numReligions + belief.ID] = article;
+		end
+
+		-- sort this list alphabetically by localized name
+		table.sort(section, Alphabetically);
+		table.insert(sortedList[CategoryBeliefs], section);
+	
+	end			
+end
+
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
 function ResizeEtc()
 	Controls.ListOfArticles:CalculateSize();
-	Controls.ListOfArticles:ReprocessAnchoring();
 	Controls.WideStack:CalculateSize();
-	Controls.WideStack:ReprocessAnchoring();
 	Controls.FFTextStack:CalculateSize();
-	Controls.FFTextStack:ReprocessAnchoring();
 	Controls.NarrowStack:CalculateSize();
-	Controls.NarrowStack:ReprocessAnchoring();
-	Controls.SuperWideStack:CalculateSize();
-	Controls.SuperWideStack:ReprocessAnchoring();
 	Controls.BBTextStack:CalculateSize();
+	Controls.SuperWideStack:CalculateSize();
 	Controls.BBTextStack:ReprocessAnchoring();
+	Controls.WideStack:ReprocessAnchoring();
+	Controls.FFTextStack:ReprocessAnchoring();
+	Controls.NarrowStack:ReprocessAnchoring();
+	Controls.ListOfArticles:ReprocessAnchoring();
+	Controls.SuperWideStack:ReprocessAnchoring();
+
+
 	Controls.ScrollPanel:CalculateInternalSize();
 	Controls.LeftScrollPanel:CalculateInternalSize();
 end
@@ -1740,6 +1811,31 @@ CivilopediaCategory[CategoryImprovements].DisplayHomePage = function()
 	ResizeEtc();
 end;
 
+CivilopediaCategory[CategoryBeliefs].DisplayHomePage = function()
+	ClearArticle();
+	Controls.ArticleID:SetText( Locale.ConvertTextKey( "TXT_KEY_PEDIA_BELIEFS_PAGE_LABEL" ));	
+	
+	Controls.Portrait:SetTexture("Religion256.dds");
+	Controls.Portrait:SetTextureOffsetVal(0,0);
+	Controls.Portrait:SetHide(false);
+	
+	Controls.PortraitFrame:SetHide(false);
+	
+	UpdateTextBlock( Locale.ConvertTextKey( "TXT_KEY_PEDIA_BELIEFS_HOMEPAGE_BLURB" ), Controls.HomePageBlurbLabel, Controls.HomePageBlurbInnerFrame, Controls.HomePageBlurbFrame );
+	
+	g_BBTextManager:ResetInstances();
+			
+	--Basic Sectional Infos	
+	local thisBBTextInstance = g_BBTextManager:GetInstance();
+	if thisBBTextInstance then
+		thisBBTextInstance.BBTextHeader:SetText( Locale.ConvertTextKey( "TXT_KEY_PEDIA_BELIEFS_HOMEPAGE_LABEL1" ));
+		UpdateSuperWideTextBlock( Locale.ConvertTextKey( "TXT_KEY_PEDIA_BELIEFS_HOMEPAGE_TEXT1" ), thisBBTextInstance.BBTextLabel, thisBBTextInstance.BBTextInnerFrame, thisBBTextInstance.BBTextFrame );
+	end	
+	Controls.BBTextStack:SetHide( false );
+	ResizeEtc();
+end;
+
+
 
 --------------------------------------------------------------------------------------------------------
 -- a few handy-dandy helper functions
@@ -1894,6 +1990,11 @@ CivilopediaCategory[CategoryHomePage].SelectArticle = function( pageID, shouldAd
 		SetSelectedCategory(CategoryImprovements);
 		end
 		CivilopediaCategory[CategoryImprovements].DisplayHomePage() ;
+	elseif pageID == CategoryBeliefs then
+		if selectedCategory ~= pageID then
+			SetSelectedCategory(pageID);
+		end
+		CivilopediaCategory[pageID].DisplayHomePage();
 	else
 		print("couldn't find category home page");
 	end
@@ -2089,7 +2190,7 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 				thisBuildingInstance.UnlockedBuildingButton:SetToolTipString( Locale.ConvertTextKey( thisBuildingInfo.Description ) );
 				thisBuildingInstance.UnlockedBuildingButton:SetVoids( thisBuildingInfo.ID, addToList );
 				local thisBuildingClass = GameInfo.BuildingClasses[thisBuildingInfo.BuildingClass];
-				if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances > 0 or thisBuildingClass.MaxTeamInstances > 0 then
+				if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances == 1 or thisBuildingClass.MaxTeamInstances > 0 then
 					thisBuildingInstance.UnlockedBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryWonders].SelectArticle );
 				else
 					thisBuildingInstance.UnlockedBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBuildings].SelectArticle );
@@ -2251,6 +2352,14 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 			numAbilities = numAbilities + 1;
 		end
 	
+		if thisTech.AllowEmbassyTradingAllowed then
+			if numAbilities > 0 then
+				abilitiesString = abilitiesString .. "[NEWLINE]";
+			end
+			abilitiesString = abilitiesString .. Locale.ConvertTextKey( "TXT_KEY_ABLTY_ALLOW_EMBASSY_STRING" );
+			numAbilities = numAbilities + 1;
+		end
+	
 		if thisTech.OpenBordersTradingAllowed then
 			if numAbilities > 0 then
 				 abilitiesString = abilitiesString .. "[NEWLINE]";
@@ -2345,20 +2454,41 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 		-- update the cost
 		Controls.CostFrame:SetHide( false );
 		
+		local costString = "";
+		
 		local cost = thisUnit.Cost;
+		
+		local faithCost = thisUnit.FaithCost;
+		
+		if(Game and not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+			faithCost = Game.GetFaithCost(unitID);
+		end
+		
 		if(Game ~= nil) then
 			cost = Players[Game.GetActivePlayer()]:GetUnitProductionNeeded( unitID );
 		end
 		
-		if(cost > 0) then
-			Controls.CostLabel:SetText( tostring(cost).." [ICON_PRODUCTION]" );
+		if(cost == 1 and faithCost > 0) then
+			costString = tostring(faithCost) .. " [ICON_PEACE]";
+			
+		elseif(cost > 0 and faithCost > 0) then
+			costString = Locale.Lookup("TXT_KEY_PEDIA_A_OR_B", tostring(cost) .. " [ICON_PRODUCTION]", tostring(faithCost) .. " [ICON_PEACE");
 		else
-			Controls.CostLabel:SetText( Locale.ConvertTextKey( "TXT_KEY_FREE" ) );
-			if(thisUnit.Type == "UNIT_SETTLER") then
-				Controls.CostFrame:SetHide(true);
+			if(cost > 0) then
+				costString = tostring(cost) .. " [ICON_PRODUCTION]";
+			elseif(faithCost > 0) then
+				costString = tostring(faithCost) .. " [ICON_PEACE]";
+			else
+				costString = Locale.Lookup("TXT_KEY_FREE");
+				
+				if(thisUnit.Type == "UNIT_SETTLER") then
+					Controls.CostFrame:SetHide(true);
+				end
 			end
 		end
-	
+				
+		Controls.CostLabel:SetText(costString);
+		
 		-- update the Combat value
 		local combat = thisUnit.Combat;
 		if combat > 0 then
@@ -2745,17 +2875,35 @@ function SelectBuildingOrWonderArticle( buildingID )
 		
 		-- update the cost
 		Controls.CostFrame:SetHide( false );
+		local costString = "";
+		
 		local cost = thisBuilding.Cost;
+		local faithCost = thisBuilding.FaithCost;
+		
+		if(Game and Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+			faithCost = 0;
+		end
+		
 		if(Game ~= nil) then
 			cost = Players[Game.GetActivePlayer()]:GetBuildingProductionNeeded( buildingID );
 		end
 		
-		if(cost > 0) then
-			Controls.CostLabel:SetText( tostring(cost).." [ICON_PRODUCTION]" );
+		if(cost == 1 and faithCost > 0) then
+			costString = tostring(faithCost) .. " [ICON_PEACE]";
+		elseif(cost > 0 and faithCost > 0) then
+			costString = Locale.Lookup("TXT_KEY_PEDIA_A_OR_B", tostring(cost) .. " [ICON_PRODUCTION]", tostring(faithCost) .. " [ICON_PEACE");
 		else
-			Controls.CostLabel:SetText( Locale.ConvertTextKey( "TXT_KEY_FREE" ) );
+			if(cost > 0) then
+				costString = tostring(cost).. " [ICON_PRODUCTION]";
+			elseif(faithCost > 0) then
+				costString = tostring(faithCost) .. " [ICON_PEACE]";
+			else
+				costString = Locale.Lookup("TXT_KEY_FREE");
+			end
 		end
-
+		
+		Controls.CostLabel:SetText(costString);
+		
 		-- update the maintenance
 		local perTurnCost = thisBuilding.GoldMaintenance;
 		if perTurnCost > 0 then
@@ -2777,20 +2925,6 @@ function SelectBuildingOrWonderArticle( buildingID )
 			Controls.UnmoddedHappinessFrame:SetHide( false );
 		end
 
-		-- update the Culture
-		local iCulture = thisBuilding.Culture;
-		if iCulture > 0 then
-			Controls.CultureLabel:SetText( tostring(iCulture).." [ICON_CULTURE]" );
-			Controls.CultureFrame:SetHide( false );
-		end
-
-		-- update the Defense
-		local iDefense = thisBuilding.Defense;
-		if iDefense > 0 then
-			Controls.DefenseLabel:SetText( tostring(iDefense / 100).." [ICON_STRENGTH]" );
-			Controls.DefenseFrame:SetHide( false );
-		end
-		
 		local GetBuildingYieldChange = function(buildingID, yieldType)
 			if(Game ~= nil) then
 				return Game.GetBuildingYieldChange(buildingID, YieldTypes[yieldType]);
@@ -2804,6 +2938,39 @@ function SelectBuildingOrWonderArticle( buildingID )
 				return yieldModifier;
 			end
 		
+		end
+
+		-- update the Culture
+		local iCulture = GetBuildingYieldChange(buildingID, "YIELD_CULTURE");
+		if iCulture > 0 then
+			Controls.CultureLabel:SetText( tostring(iCulture).." [ICON_CULTURE]" );
+			Controls.CultureFrame:SetHide( false );
+		end
+
+		-- update the Faith
+		local iFaith = GetBuildingYieldChange(buildingID, "YIELD_FAITH");
+		if iFaith > 0 then
+			Controls.FaithLabel:SetText( tostring(iFaith).." [ICON_PEACE]" );
+			Controls.FaithFrame:SetHide( false );
+		end
+
+		-- update the Defense
+		local defenseEntries = {};
+		local iDefense = thisBuilding.Defense;
+		if iDefense > 0 then
+			table.insert(defenseEntries, tostring(iDefense / 100).." [ICON_STRENGTH]");
+		end
+		
+		local iExtraHitPoints = thisBuilding.ExtraCityHitPoints;
+		if(iExtraHitPoints > 0) then
+			table.insert(defenseEntries, Locale.Lookup("TXT_KEY_PEDIA_DEFENSE_HITPOINTS", iExtraHitPoints));
+		end
+		
+		if(#defenseEntries > 0) then
+			Controls.DefenseLabel:SetText(table.concat(defenseEntries, ", "));
+			Controls.DefenseFrame:SetHide(false);
+		else
+			Controls.DefenseFrame:SetHide(true);
 		end
 		
 		local GetBuildingYieldModifier = function(buildingID, yieldType)
@@ -2962,7 +3129,7 @@ function SelectBuildingOrWonderArticle( buildingID )
 						thisBuildingInstance.RequiredBuildingButton:SetToolTipString( Locale.ConvertTextKey( thisBuildingInfo.Description ) );
 						thisBuildingInstance.RequiredBuildingButton:SetVoids( thisBuildingInfo.ID, addToList );
 						local thisBuildingClass = GameInfo.BuildingClasses[thisBuildingInfo.BuildingClass];
-						if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances > 0 or thisBuildingClass.MaxTeamInstances > 0 then
+						if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances == 1 or thisBuildingClass.MaxTeamInstances > 0 then
 							thisBuildingInstance.RequiredBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryWonders].SelectArticle );
 						else
 							thisBuildingInstance.RequiredBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBuildings].SelectArticle );
@@ -3214,7 +3381,7 @@ CivilopediaCategory[CategoryWonders].SelectArticle = function( wonderID, shouldA
 							thisBuildingInstance.RequiredBuildingButton:SetToolTipString( Locale.ConvertTextKey( thisBuildingInfo.Description ) );
 							thisBuildingInstance.RequiredBuildingButton:SetVoids( thisBuildingInfo.ID, addToList );
 							local thisBuildingClass = GameInfo.BuildingClasses[thisBuildingInfo.BuildingClass];
-							if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances > 0 or thisBuildingClass.MaxTeamInstances > 0 then
+							if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances == 1 or thisBuildingClass.MaxTeamInstances > 0 then
 								thisBuildingInstance.RequiredBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryWonders].SelectArticle );
 							else
 								thisBuildingInstance.RequiredBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBuildings].SelectArticle );
@@ -3567,7 +3734,7 @@ CivilopediaCategory[CategoryCivilizations].SelectArticle = function( rawCivID, s
 								thisBuildingInstance.UniqueBuildingButton:SetToolTipString( Locale.ConvertTextKey( thisBuildingInfo.Description ) );
 								thisBuildingInstance.UniqueBuildingButton:SetVoids( thisBuildingInfo.ID, addToList );
 								local thisBuildingClass = GameInfo.BuildingClasses[thisBuildingInfo.BuildingClass];
-								if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances > 0 or thisBuildingClass.MaxTeamInstances > 0 then
+								if thisBuildingClass.MaxGlobalInstances > 0 or thisBuildingClass.MaxPlayerInstances == 1 or thisBuildingClass.MaxTeamInstances > 0 then
 									thisBuildingInstance.UniqueBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryWonders].SelectArticle );
 								else
 									thisBuildingInstance.UniqueBuildingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBuildings].SelectArticle );
@@ -4051,12 +4218,6 @@ CivilopediaCategory[CategoryTerrain].SelectArticle = function( rawTerrainID, sho
 					yieldString = yieldString..tostring(row.Yield).." ";
 					yieldString = yieldString..GameInfo.Yields[row.YieldType].IconString.." ";
 				end				
-				-- add culture since it is a quasi-yield (meaning it should have been a yield, IMHO)
-				if thisFeature.Culture and thisFeature.Culture ~= 0 then
-					numYields = numYields + 1;
-					yieldString = yieldString.." ";
-					yieldString = yieldString..tostring(thisFeature.Culture).."[ICON_CULTURE]".." ";
-				end
 				-- add happiness since it is a quasi-yield
 				if thisFeature.InBorderHappiness and thisFeature.InBorderHappiness ~= 0 then
 					numYields = numYields + 1;
@@ -4291,7 +4452,11 @@ CivilopediaCategory[CategoryResources].SelectArticle = function( resourceID, sho
 			end
 			UpdateButtonFrame( buttonAdded, Controls.ImprovementsInnerFrame, Controls.ImprovementsFrame );	 	  
 			
-			
+			-- game info
+			if (thisResource.Help) then
+				UpdateTextBlock( Locale.ConvertTextKey( thisResource.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+			end
+
 			-- generic text
 			if (thisResource.Civilopedia) then
 				UpdateTextBlock( Locale.ConvertTextKey( thisResource.Civilopedia ), Controls.HistoryLabel, Controls.HistoryInnerFrame, Controls.HistoryFrame );
@@ -4379,12 +4544,6 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 					yieldString = yieldString.."+";
 				end
 				yieldString = yieldString..tostring(row.Yield)..GameInfo.Yields[row.YieldType].IconString.." ";
-			end
-			-- add culture since it is a quasi-yield (meaning it should have been a yield, IMHO)
-			if thisImprovement.Culture ~= 0 then
-				numYields = numYields + 1;
-				yieldString = yieldString.."+";
-				yieldString = yieldString..tostring(thisImprovement.Culture).."[ICON_CULTURE]";
 			end
 			if numYields == 0 then
 				Controls.YieldLabel:SetText( Locale.ConvertTextKey( "TXT_KEY_PEDIA_NO_YIELD" ) );
@@ -4565,6 +4724,68 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 			Controls.RelatedImagesFrame:SetHide( true );
 		end
 	end
+
+	ResizeEtc();
+end
+
+CivilopediaCategory[CategoryBeliefs].SelectArticle = function(entryID, shouldAddToList)
+	if selectedCategory ~= CategoryBeliefs then
+		SetSelectedCategory(CategoryBeliefs);
+	end
+	
+	ClearArticle();
+	
+	local offset = 0;
+	if(entryID[1] == "Beliefs") then
+		offset = #GameInfo.Religions;
+	end
+	
+	offset = offset + entryID[2];
+	
+	if shouldAddToList == addToList then
+		currentTopic = currentTopic + 1;
+		listOfTopicsViewed[currentTopic] = categorizedList[(CategoryBeliefs * absurdlyLargeNumTopicsInCategory) + offset];
+		for i = currentTopic + 1, endTopic, 1 do
+			listOfTopicsViewed[i] = nil;
+		end
+		endTopic = currentTopic;
+	end
+	
+	if (entryID ~= nil) then
+	
+		local t = entryID[1];
+		local id = entryID[2];
+		
+		if(t == "Religions") then
+		
+			local thisReligion = GameInfo[t][id];
+		
+			if (thisReligion ~= nil) then
+			
+				-- update the name	
+				Controls.ArticleID:LocalizeAndSetText(thisReligion.Description);
+				
+				-- update the summary
+				if (thisReligion.Civilopedia ~= nil) then
+					UpdateTextBlock( Locale.ConvertTextKey( thisReligion.Civilopedia ), Controls.SummaryLabel, Controls.SummaryInnerFrame, Controls.SummaryFrame );
+				end		
+			end
+		
+		else
+			local thisBelief = GameInfo[t][id];
+		
+			if (thisBelief ~= nil) then
+			
+				-- update the name
+				Controls.ArticleID:LocalizeAndSetText(thisBelief.ShortDescription);
+				
+				-- update the summary
+				if (thisBelief.Description ~= nil) then
+					UpdateTextBlock( Locale.ConvertTextKey( thisBelief.Description ), Controls.SummaryLabel, Controls.SummaryInnerFrame, Controls.SummaryFrame );
+				end		
+			end
+		end
+	end	
 
 	ResizeEtc();
 
@@ -4764,30 +4985,25 @@ CivilopediaCategory[CategoryUnits].SelectHeading = function( selectedEraID, dumm
 		otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
 	end
 
-	for era in GameInfo.Eras() do
-	
-		local eraID = era.ID;
-		-- add an era header
+	function PopulateHeaderAndItems(categoryID, headingName)
 		local thisEraInstance = g_ListHeadingManager:GetInstance();
 		if thisEraInstance then
 			sortOrder = sortOrder + 1;
-			if sortedList[CategoryUnits][eraID].headingOpen then
-				local textString = "TXT_KEY_ERA_"..tostring( eraID );
-				local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( textString );
+			if sortedList[CategoryUnits][categoryID].headingOpen then
+				local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( headingName );
 				thisEraInstance.ListHeadingLabel:SetText( localizedLabel );
 			else
-				local textString = "TXT_KEY_ERA_"..tostring( eraID );
-				local localizedLabel = "[ICON_PLUS] "..Locale.ConvertTextKey( textString );
+				local localizedLabel = "[ICON_PLUS] "..Locale.ConvertTextKey( headingName );
 				thisEraInstance.ListHeadingLabel:SetText( localizedLabel );
 			end
-			thisEraInstance.ListHeadingButton:SetVoids( eraID, 0 );
+			thisEraInstance.ListHeadingButton:SetVoids( categoryID, 0 );
 			thisEraInstance.ListHeadingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryUnits].SelectHeading );
 			otherSortedList[tostring( thisEraInstance.ListHeadingButton )] = sortOrder;
 		end	
 		
 		-- for each element of the sorted list		
-		if sortedList[CategoryUnits][eraID].headingOpen then
-			for i, v in ipairs(sortedList[CategoryUnits][eraID]) do
+		if sortedList[CategoryUnits][categoryID].headingOpen then
+			for i, v in ipairs(sortedList[CategoryUnits][categoryID]) do
 				local thisListInstance = g_ListItemManager:GetInstance();
 				if thisListInstance then
 					sortOrder = sortOrder + 1;
@@ -4799,7 +5015,20 @@ CivilopediaCategory[CategoryUnits].SelectHeading = function( selectedEraID, dumm
 				end
 			end
 		end
+	end
+	
+	
+	local sectionID = 0;
+	if(Game == nil or not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		PopulateHeaderAndItems(sectionID, "TXT_KEY_PEDIA_RELIGIOUS");
+		sectionID = sectionID + 1;
+	end
 
+	for era in GameInfo.Eras() do	
+		local eraID = era.ID;
+		local headingName = "TXT_KEY_ERA_"..tostring(eraID);
+		PopulateHeaderAndItems(sectionID, headingName);
+		sectionID = sectionID + 1;
 	end	
 	
 	Controls.ListOfArticles:SortChildren( SortFunction );
@@ -4887,31 +5116,28 @@ CivilopediaCategory[CategoryBuildings].SelectHeading = function( selectedEraID, 
 		thisListInstance.ListItemButton:SetToolTipCallback( TipHandler );
 		otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
 	end
-
-	for era in GameInfo.Eras() do
 	
-		local eraID = era.ID;
+	function PopulateAndAdd(categoryID, headingName)
+	
 		-- add an era header
 		local thisEraInstance = g_ListHeadingManager:GetInstance();
 		if thisEraInstance then
 			sortOrder = sortOrder + 1;
-			if sortedList[CategoryBuildings][eraID].headingOpen then
-				local textString = "TXT_KEY_ERA_"..tostring( eraID );
-				local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( textString );
+			if sortedList[CategoryBuildings][categoryID].headingOpen then
+				local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey(headingName);
 				thisEraInstance.ListHeadingLabel:SetText( localizedLabel );
 			else
-				local textString = "TXT_KEY_ERA_"..tostring( eraID );
-				local localizedLabel = "[ICON_PLUS] "..Locale.ConvertTextKey( textString );
+				local localizedLabel = "[ICON_PLUS] "..Locale.ConvertTextKey(headingName);
 				thisEraInstance.ListHeadingLabel:SetText( localizedLabel );
 			end
-			thisEraInstance.ListHeadingButton:SetVoids( eraID, 0 );
+			thisEraInstance.ListHeadingButton:SetVoids( categoryID, 0 );
 			thisEraInstance.ListHeadingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBuildings].SelectHeading );
 			otherSortedList[tostring( thisEraInstance.ListHeadingButton )] = sortOrder;
 		end	
 		
 		-- for each element of the sorted list		
-		if sortedList[CategoryBuildings][eraID].headingOpen then
-			for i, v in ipairs(sortedList[CategoryBuildings][eraID]) do
+		if sortedList[CategoryBuildings][categoryID].headingOpen then
+			for i, v in ipairs(sortedList[CategoryBuildings][categoryID]) do
 				local thisListInstance = g_ListItemManager:GetInstance();
 				if thisListInstance then
 					sortOrder = sortOrder + 1;
@@ -4923,7 +5149,19 @@ CivilopediaCategory[CategoryBuildings].SelectHeading = function( selectedEraID, 
 				end
 			end
 		end
+	end
 
+	local sectionID = 0;
+	if(Game == nil or not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		PopulateAndAdd(sectionID, "TXT_KEY_PEDIA_RELIGIOUS");
+		sectionID = sectionID + 1;
+	end
+
+	for era in GameInfo.Eras() do
+		local eraID = era.ID;
+		local headingName = "TXT_KEY_ERA_"..tostring(eraID);
+		PopulateAndAdd(sectionID, headingName);
+		sectionID = sectionID + 1;
 	end	
 	
 	Controls.ListOfArticles:SortChildren( SortFunction );
@@ -5380,6 +5618,67 @@ CivilopediaCategory[CategoryImprovements].SelectHeading = function( selectedSect
 	ResizeEtc();
 end
 
+CivilopediaCategory[CategoryBeliefs].SelectHeading = function( selectedSectionID, dummy )
+	g_ListHeadingManager:ResetInstances();
+	g_ListItemManager:ResetInstances();
+
+	sortedList[CategoryBeliefs][selectedSectionID].headingOpen = not sortedList[CategoryBeliefs][selectedSectionID].headingOpen; -- ain't lua great
+	
+	local sortOrder = 0;
+	otherSortedList = {};
+
+	-- put in a home page before the first section
+	local thisListInstance = g_ListItemManager:GetInstance();
+	if thisListInstance then
+		sortOrder = sortOrder + 1;
+		thisListInstance.ListItemLabel:SetText( Locale.ConvertTextKey( "TXT_KEY_PEDIA_BELIEFS_PAGE_LABEL" ));
+		thisListInstance.ListItemButton:SetVoids( homePageOfCategoryID, addToList );
+		thisListInstance.ListItemButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBeliefs].buttonClicked );
+		thisListInstance.ListItemButton:SetToolTipCallback( TipHandler );
+		otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
+	end
+
+	for section = 1, 5, 1 do	
+		-- add a section header
+		local thisHeaderInstance = g_ListHeadingManager:GetInstance();
+		if thisHeaderInstance then
+			sortOrder = sortOrder + 1;
+			if sortedList[CategoryBeliefs][section].headingOpen then
+				local textString = "TXT_KEY_PEDIA_BELIEFS_CATEGORY_"..tostring( section );
+				local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( textString );
+				thisHeaderInstance.ListHeadingLabel:SetText( localizedLabel );
+			else
+				local textString = "TXT_KEY_PEDIA_BELIEFS_CATEGORY_"..tostring( section );
+				local localizedLabel = "[ICON_PLUS] "..Locale.ConvertTextKey( textString );
+				thisHeaderInstance.ListHeadingLabel:SetText( localizedLabel );
+			end
+			thisHeaderInstance.ListHeadingButton:SetVoids( section, 0 );
+			thisHeaderInstance.ListHeadingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBeliefs].SelectHeading );
+			otherSortedList[tostring( thisHeaderInstance.ListHeadingButton )] = sortOrder;
+		end	
+		
+		-- for each element of the sorted list		
+		if sortedList[CategoryBeliefs][section].headingOpen then
+			for i, v in ipairs(sortedList[CategoryBeliefs][section]) do
+				local thisListInstance = g_ListItemManager:GetInstance();
+				if thisListInstance then
+					sortOrder = sortOrder + 1;
+					thisListInstance.ListItemLabel:SetText( v.entryName );
+					thisListInstance.ListItemButton:SetVoids(0, addToList );
+					thisListInstance.ListItemButton:RegisterCallback( Mouse.eLClick, function(dummy, shouldAddToList) CivilopediaCategory[CategoryBeliefs].SelectArticle(v.entryID, shouldAddToList); end);
+					thisListInstance.ListItemButton:SetToolTipCallback( TipHandler )
+					otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
+				end
+			end
+		end
+
+	end	
+	
+	Controls.ListOfArticles:SortChildren( SortFunction );
+	ResizeEtc();
+		
+end
+
 
 ----------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -5561,25 +5860,24 @@ CivilopediaCategory[CategoryUnits].DisplayList = function()
 		thisListInstance.ListItemButton:SetToolTipCallback( TipHandler );
 		otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
 	end
-
-	for era in GameInfo.Eras() do
 	
-		local eraID = era.ID;
+	function PopulateAndAdd(categoryID, headingName)
+		
 		-- add an era header
 		local thisEraInstance = g_ListHeadingManager:GetInstance();
 		if thisEraInstance then
-			sortedList[CategoryUnits][eraID].headingOpen = true; -- ain't lua great
+			sortedList[CategoryUnits][categoryID].headingOpen = true; -- ain't lua great
 			sortOrder = sortOrder + 1;
-			local textString = "TXT_KEY_ERA_"..tostring( eraID );
-			local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( textString );
+
+			local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey(headingName);
 			thisEraInstance.ListHeadingLabel:SetText( localizedLabel );
-			thisEraInstance.ListHeadingButton:SetVoids( eraID, 0 );
+			thisEraInstance.ListHeadingButton:SetVoids( categoryID, 0 );
 			thisEraInstance.ListHeadingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryUnits].SelectHeading );
 			otherSortedList[tostring( thisEraInstance.ListHeadingButton )] = sortOrder;
 		end	
 		
 		-- for each element of the sorted list		
-		for i, v in ipairs(sortedList[CategoryUnits][eraID]) do
+		for i, v in ipairs(sortedList[CategoryUnits][categoryID]) do
 			-- add a unit entry
 			local thisUnitInstance = g_ListItemManager:GetInstance();
 			if thisUnitInstance then
@@ -5591,7 +5889,20 @@ CivilopediaCategory[CategoryUnits].DisplayList = function()
 				otherSortedList[tostring( thisUnitInstance.ListItemButton )] = sortOrder;
 			end
 		end
+	end
+	
+	local sectionID = 0;
+	
+	if(Game == nil or not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		PopulateAndAdd(0, "TXT_KEY_PEDIA_RELIGIOUS");
+		sectionID = sectionID + 1;
+	end
 
+	for era in GameInfo.Eras() do
+		local eraID = era.ID;
+		local headingName = "TXT_KEY_ERA_"..tostring( eraID );
+		
+		PopulateAndAdd(eraID + sectionID, headingName);
 	end	
 	
 	Controls.ListOfArticles:SortChildren( SortFunction );
@@ -5671,25 +5982,21 @@ CivilopediaCategory[CategoryBuildings].DisplayList = function()
 		thisListInstance.ListItemButton:SetToolTipCallback( TipHandler );
 		otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
 	end
-
-	for era in GameInfo.Eras() do
 	
-		local eraID = era.ID;
-		-- add an era header
+	function PopulateAndAdd(categoryID, headingName)
 		local thisEraInstance = g_ListHeadingManager:GetInstance();
 		if thisEraInstance then
-			sortedList[CategoryBuildings][eraID].headingOpen = true; -- ain't lua great
+			sortedList[CategoryBuildings][categoryID].headingOpen = true; -- ain't lua great
 			sortOrder = sortOrder + 1;
-			local textString = "TXT_KEY_ERA_"..tostring( eraID );
-			local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( textString );
+			local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey(headingName);
 			thisEraInstance.ListHeadingLabel:SetText( localizedLabel );
-			thisEraInstance.ListHeadingButton:SetVoids( eraID, 0 );
+			thisEraInstance.ListHeadingButton:SetVoids( categoryID, 0 );
 			thisEraInstance.ListHeadingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBuildings].SelectHeading );
 			otherSortedList[tostring( thisEraInstance.ListHeadingButton )] = sortOrder;
 		end	
 		
 		-- for each element of the sorted list		
-		for i, v in ipairs(sortedList[CategoryBuildings][eraID]) do
+		for i, v in ipairs(sortedList[CategoryBuildings][categoryID]) do
 			-- add an entry
 			local thisListInstance = g_ListItemManager:GetInstance();
 			if thisListInstance then
@@ -5701,7 +6008,19 @@ CivilopediaCategory[CategoryBuildings].DisplayList = function()
 				otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
 			end
 		end
+	end
+	
+	local sectionID = 0;
+	
+	if(Game == nil or not Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		PopulateAndAdd(0, "TXT_KEY_PEDIA_RELIGIOUS");
+		sectionID = sectionID + 1;
+	end
 
+	for era in GameInfo.Eras() do
+		local eraID = era.ID;
+		local headingName = "TXT_KEY_ERA_"..tostring( eraID );
+		PopulateAndAdd(eraID + sectionID, headingName);
 	end	
 	
 	Controls.ListOfArticles:SortChildren( SortFunction );
@@ -6124,6 +6443,59 @@ CivilopediaCategory[CategoryImprovements].DisplayList = function()
 
 end
 
+CivilopediaCategory[CategoryBeliefs].DisplayList = function()
+	g_ListHeadingManager:ResetInstances();
+	g_ListItemManager:ResetInstances();
+
+	local sortOrder = 0;
+	otherSortedList = {};
+	
+	-- put in a home page before the first section
+	local thisListInstance = g_ListItemManager:GetInstance();
+	if thisListInstance then
+		sortOrder = sortOrder + 1;
+		thisListInstance.ListItemLabel:SetText( Locale.ConvertTextKey( "TXT_KEY_PEDIA_BELIEFS_PAGE_LABEL" ));
+		thisListInstance.ListItemButton:SetVoids( homePageOfCategoryID, addToList );
+		thisListInstance.ListItemButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBeliefs].buttonClicked );
+		thisListInstance.ListItemButton:SetToolTipCallback( TipHandler );
+		otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
+	end
+
+	for section = 1, 5, 1 do	
+		local thisHeaderInstance = g_ListHeadingManager:GetInstance();
+		if thisHeaderInstance then
+			sortedList[CategoryBeliefs][section].headingOpen = true; -- ain't lua great
+			sortOrder = sortOrder + 1;
+			local textString = "TXT_KEY_PEDIA_BELIEFS_CATEGORY_"..tostring( section );
+			local localizedLabel = "[ICON_MINUS] "..Locale.ConvertTextKey( textString );
+			thisHeaderInstance.ListHeadingLabel:SetText( localizedLabel );
+			thisHeaderInstance.ListHeadingButton:SetVoids( section, 0 );
+			thisHeaderInstance.ListHeadingButton:RegisterCallback( Mouse.eLClick, CivilopediaCategory[CategoryBeliefs].SelectHeading );
+			otherSortedList[tostring( thisHeaderInstance.ListHeadingButton )] = sortOrder;
+		end	
+		
+		-- for each element of the sorted list		
+		for i, v in ipairs(sortedList[CategoryBeliefs][section]) do
+			-- add a unit entry
+			local thisListInstance = g_ListItemManager:GetInstance();
+			if thisListInstance then
+				sortOrder = sortOrder + 1;
+				thisListInstance.ListItemLabel:SetText( v.entryName );
+				thisListInstance.ListItemButton:SetVoids( v.entryID[2], addToList );
+				thisListInstance.ListItemButton:RegisterCallback( Mouse.eLClick, function(dummy, shouldAddToList) CivilopediaCategory[CategoryBeliefs].SelectArticle(v.entryID, shouldAddToList); end);
+				thisListInstance.ListItemButton:SetToolTipCallback( TipHandler )
+				otherSortedList[tostring( thisListInstance.ListItemButton )] = sortOrder;
+			end
+		end
+
+	end	
+	
+	Controls.ListOfArticles:SortChildren( SortFunction );
+	ResizeEtc();
+
+end
+
+
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
@@ -6135,6 +6507,7 @@ function ClearArticle()
 	Controls.HappinessFrame:SetHide( true );
 	Controls.UnmoddedHappinessFrame:SetHide( true );
 	Controls.CultureFrame:SetHide( true );
+	Controls.FaithFrame:SetHide( true );
 	Controls.DefenseFrame:SetHide( true );
 	Controls.FoodFrame:SetHide( true );
 	Controls.GoldChangeFrame:SetHide( true );

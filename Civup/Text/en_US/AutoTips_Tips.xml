@@ -60,6 +60,9 @@
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FOOD_FROM_RIVERS">
 			<Text>[ICON_FOOD] Food: {2_sign}{1_num} on River Tiles</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FOOD_FROM_TERRAIN">
+			<Text>[ICON_FOOD] Food: {2_sign}{1_num} on {3_TerrainString}</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FOOD_FROM_FEATURES">
 			<Text>[ICON_FOOD] Food: {2_sign}{1_num} on {3_FeatureString}</Text>
 		</Row>
@@ -130,6 +133,9 @@
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION_FROM_RIVERS">
 			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} on River Tiles</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION_FROM_TERRAIN">
+			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} on {3_TerrainString}</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_PRODUCTION_FROM_FEATURES">
 			<Text>[ICON_PRODUCTION] Production: {2_sign}{1_num} on {3_FeatureString}</Text>
 		</Row>
@@ -172,6 +178,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLD_FROM_RIVERS">
 			<Text>[ICON_GOLD] Gold: {2_sign}{1_num} on River Tiles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLD_FROM_TERRAIN">
+			<Text>[ICON_GOLD] Gold: {2_sign}{1_num} on {3_TerrainString}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GOLD_FROM_FEATURES">
 			<Text>[ICON_GOLD] Gold: {2_sign}{1_num} on {3_FeatureString}</Text>
@@ -222,6 +231,9 @@
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SCIENCE_FROM_RIVERS">
 			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} on River Tiles</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SCIENCE_FROM_TERRAIN">
+			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} on {3_TerrainString}</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_SCIENCE_FROM_FEATURES">
 			<Text>[ICON_RESEARCH] Science: {2_sign}{1_num} on {3_FeatureString}</Text>
 		</Row>
@@ -268,6 +280,9 @@
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE_FROM_RIVERS">
 			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} on River Tiles</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE_FROM_TERRAIN">
+			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} on {3_TerrainString}</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_CULTURE_FROM_FEATURES">
 			<Text>[ICON_CULTURE] Culture: {2_sign}{1_num} on {3_FeatureString}</Text>
 		</Row>
@@ -311,6 +326,9 @@
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH_FROM_RIVERS">
 			<Text>[ICON_PEACE] Faith: {2_sign}{1_num} on River Tiles</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH_FROM_TERRAIN">
+			<Text>[ICON_PEACE] Faith: {2_sign}{1_num} on {3_TerrainString}</Text>
+		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_FAITH_FROM_FEATURES">
 			<Text>[ICON_PEACE] Faith: {2_sign}{1_num} on {3_FeatureString}</Text>
 		</Row>
@@ -348,7 +366,7 @@
 			<Set Text="[ICON_HAPPINESS_1] Happiness: {1_num}" />
 		</Update>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_EXTRA">
-			<Text>Cannot provide more [ICON_HAPPINESS_1] Happiness than there are [ICON_CITIZEN] Citizens in a city.</Text>
+			<Text>A city cannot create more [ICON_HAPPINESS_1] Happiness than its [ICON_CITIZEN] Population.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_HAPPINESS_PER_CITY">
 			<Text>[ICON_HAPPINESS_1] Happiness: {1_num} per City</Text>
@@ -621,7 +639,7 @@
 			<Text>[ICON_BULLET] Affect Spies Now: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_UNLOCKED_BY_BELIEF">
-			<Text>[ICON_BULLET] Unlocked by Belief: {1_num}</Text>
+			<Text>[ICON_LOCKED] Unlocked by Belief</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_MIN_AREA_SIZE">
 			<Text>[ICON_LOCKED] Minimum Area Size: {1_num}</Text>
@@ -651,10 +669,10 @@
 			<Text>[ICON_BULLET] Extra Missionary Spreads: {1_num}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_ESPIONAGE_MODIFIER">
-			<Text>[ICON_BULLET] Espionage: {2_sign}{1_num}%</Text>
+			<Text>[ICON_BULLET] Enemy Spies: {2_sign}{1_num}% in this city</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_GLOBAL_ESPIONAGE_MODIFIER">
-			<Text>[ICON_BULLET] Espionage: {2_sign}{1_num}%</Text>
+			<Text>[ICON_BULLET] Enemy Spies: {2_sign}{1_num}% in all cities</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PRODUCTION_BUILDING_EXTRA_SPIES">
 			<Text>[ICON_BULLET] Extra Spies: {1_num}</Text>

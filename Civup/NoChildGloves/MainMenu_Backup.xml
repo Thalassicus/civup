@@ -162,8 +162,7 @@
 
     <LuaContext FileName="Assets/UI/FrontEnd/SinglePlayer" ID="SinglePlayerScreen" Hidden="1"/>
     <LuaContext FileName="Assets/UI/FrontEnd/Multiplayer/MultiplayerSelect" ID="MultiplayerSelectScreen" Hidden="1"/>
-    <!--<LuaContext FileName="Assets/UI/FrontEnd/Modding/EULA" ID="ModsEULAScreen" Hidden="1" />-->
-    <LuaContext FileName="Assets/UI/FrontEnd/Modding/ModsBrowser" ID="ModsBrowser" Hidden="1" DeferLoad="1" />
+    <LuaContext FileName="Assets/UI/FrontEnd/Modding/EULA" ID="ModsEULAScreen" Hidden="1" />
 
     <LuaContext FileName="Assets/UI/FrontEnd/OtherMenu" ID="Other" Hidden="1" />
     <LuaContext FileName="Assets/UI/FrontEnd/Multiplayer/JoiningRoom" ID="JoinScreen" Hidden="1" />
