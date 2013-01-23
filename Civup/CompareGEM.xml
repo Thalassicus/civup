@@ -1,0 +1,446 @@
+<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_1">
+<Text>Bombardment I</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_1_HELP">
+<Text>[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Sea[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_2">
+<Text>Bombardment II</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_2_HELP">
+<Text>[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Sea[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_3">
+<Text>Bombardment III</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_3_HELP">
+<Text>[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Sea[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_SIEGE_1_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Cities[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_SIEGE_2_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Cities[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_SIEGE_3_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Cities[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AMBUSH_1_HELP" />
+<Set Text="[ICON_STRENGTH] +25% Strength vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Vanguard[ENDCOLOR][COLOR_LIGHT_GREY], [ENDCOLOR][COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Armor[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AMBUSH_2_HELP" />
+<Set Text="[ICON_STRENGTH] +25% Strength vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Vanguard[ENDCOLOR][COLOR_LIGHT_GREY], [ENDCOLOR][COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Armor[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_AIR" />
+<Set Text="Bonus vs Air (50)" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_ANTI_AIR_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Air[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ANTI_CAVALRY">
+<Text>Bonus vs Dragoons (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ANTI_CAVALRY_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Dragoons[ENDCOLOR][COLOR_LIGHT_GREY]</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER" />
+<Set Text="Bonus vs Helicopters (50)" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Helicopters[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_I" />
+<Set Text="Bonus vs Mounted (25)" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_I_HELP" />
+<Set Text="[ICON_STRENGTH] +25% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_II" />
+<Set Text="Bonus vs Mounted (50)" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP" />
+<Set Text="[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_SUBMARINE_I" />
+<Set Text="Attack vs Submarines (25)" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_ANTI_SUBMARINE_I_HELP">
+<Text>[ICON_STRENGTH] +25% [ENDCOLOR][COLOR_POSITIVE_TEXT]Attack[ENDCOLOR][COLOR_LIGHT_GREY] vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR][COLOR_LIGHT_GREY]</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ANTI_TANK" />
+<Set Text="Bonus vs Tanks (50)" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_ANTI_TANK_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Tanks[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ASTRONOMY">
+<Text>Astronomy</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ASTRONOMY_HELP">
+<Text>[ICON_MOVES] Can traverse [ENDCOLOR][COLOR_POSITIVE_TEXT]Ice[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ATTACK_BONUS_I">
+<Text>Bonus on Attack (25)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ATTACK_BONUS_I_HELP">
+<Text>[ICON_STRENGTH] +25% [ENDCOLOR][COLOR_POSITIVE_TEXT]Attack[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ATTACK_BONUS_II">
+<Text>Bonus on Attack (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_ATTACK_BONUS_II_HELP">
+<Text>[ICON_STRENGTH] +50% [ENDCOLOR][COLOR_POSITIVE_TEXT]Attack[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BLITZ_HELP" />
+<Set Text="[ICON_WAR] Can attack twice." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOMBARDMENT_1_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOMBARDMENT_2_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOMBARDMENT_3_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_CAMARADERIE">
+<Text>Camaraderie</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_CAMARADERIE_HELP">
+<Text>[ICON_STRENGTH] +15% Combat Strength when adjacent to a friendly Unit</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CAN_MOVE_AFTER_ATTACKING" />
+<Set Text="Attacks Use 1 [ICON_MOVES] Move." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS">
+<Text>Bonus vs Capital Ships (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Battleships[ENDCOLOR][COLOR_LIGHT_GREY].[NEWLINE][ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Missile Cruisers[ENDCOLOR][COLOR_LIGHT_GREY].[NEWLINE][ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Carriers[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CHARGE_HELP" />
+<Set Text="[ICON_MOVES] +1 Movement.[NEWLINE][ICON_STRENGTH] +20% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Wounded[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_CITY_BONUS_II">
+<Text>Bonus vs Cities (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_CITY_BONUS_II_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Cities[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE" />
+<Set Text="Bonus vs Cities (25)" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE_HELP" />
+<Set Text="[ICON_STRENGTH] +25% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Cities[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_1" />
+<Set Text="Merchant Raider I" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_1_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Port Cities[ENDCOLOR][COLOR_LIGHT_GREY].[NEWLINE][ICON_GOLD]Steal gold equal to 33% of damage dealt to ports." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_2" />
+<Set Text="Merchant Raider II" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_2_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Port Cities[ENDCOLOR][COLOR_LIGHT_GREY].[NEWLINE][ICON_GOLD]Steal gold equal to 33% of damage dealt to ports." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_3" />
+<Set Text="Merchant Raider III" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_3_HELP" />
+<Set Text="[ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Port Cities[ENDCOLOR][COLOR_LIGHT_GREY].[NEWLINE][ICON_GOLD]Steal gold equal to 34% of damage dealt to ports." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COVER_1_HELP" />
+<Set Text="[ICON_STRENGTH] +25% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COVER_2_HELP" />
+<Set Text="[ICON_STRENGTH] +50% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_COVER_PENALTY">
+<Text>Penalty vs Ranged (10)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_COVER_PENALTY_HELP">
+<Text>[ICON_STRENGTH] -10% [ENDCOLOR][COLOR_NEGATIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] against all [ENDCOLOR][COLOR_NEGATIVE_TEXT]Ranged Attacks[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_COVER_PENALTY_PEDIA">
+<Text>-10% vs [ENDCOLOR][COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR][COLOR_LIGHT_GREY]</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_DEFENSE_1">
+<Text>Bonus on Defense (25)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_DEFENSE_1_HELP">
+<Text>[ICON_STRENGTH] +25% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_DEFENSE_2">
+<Text>Bonus on Defense (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_DEFENSE_2_HELP">
+<Text>[ICON_STRENGTH] +50% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY" />
+<Set Text="Penalty on Defense (25)" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP" />
+<Set Text="[ICON_STRENGTH] -25% [ENDCOLOR][COLOR_NEGATIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY]" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED_HELP"Text="Builds improvements +100% faster"/>
+<Row Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED"Text="Double work speed"/>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FORMATION_1" />
+<Set Text="Formation" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FORMATION_1_HELP" />
+<Set Text="[ICON_STRENGTH] +35% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Armored[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_GAIN_EXPERIENCE_HELP" />
+<Set Text="[ICON_WAR] Earns experience 50% faster." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_GOLDEN">
+<Text>Golden</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GOLDEN_HELP">
+<Text>[ICON_GOLDEN_AGE] Golden Age points from combat</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_1">
+<Text>Guerrilla I</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_1_HELP">
+<Text>[ICON_STRENGTH] +15% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] on Rough Terrain.[NEWLINE][ICON_PLUS] +1 Sight</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_2">
+<Text>Guerrilla II</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_2_HELP">
+<Text>[ICON_STRENGTH] +15% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] on Rough Terrain.[NEWLINE][ICON_MOVES] +1 Movement</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_3">
+<Text>Guerrilla III</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_3_HELP">
+<Text>[ICON_STRENGTH] +20% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] on Rough Terrain.[NEWLINE][ICON_PLUS] +1 Sight</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_HOVERING_UNIT" />
+<Set Text="All Terrain" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_HOVERING_UNIT_HELP" />
+<Set Text="[ICON_MOVES] Can traverse [ENDCOLOR][COLOR_POSITIVE_TEXT]Mountains[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_INTERCEPTION">
+<Text>Interception</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_INTERCEPTION_HELP">
+<Text>[ICON_BULLET] 100% chance to intercept [ENDCOLOR][COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR][COLOR_LIGHT_GREY]</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP">
+<Text>[ICON_MOVES] Ignores cultural borders.[NEWLINE][ICON_BULLET] Can only be seen by units with Sonar or 1 tile away.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_LAND_BONUS_II">
+<Text>Bonus vs Land (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_LAND_BONUS_II_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_LAND_PENALTY_II">
+<Text>Penalty vs Land (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_LAND_PENALTY_II_HELP">
+<Text>[ICON_STRENGTH] -50% [ICON_STRENGTH] vs [ENDCOLOR][COLOR_NEGATIVE_TEXT]Land[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MARCH_HELP" />
+<Set Text="[ICON_MOVES] Attacking and moving do not prevent healing." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MEDIC_HELP" />
+<Set Text="[ICON_BULLET] [ENDCOLOR][COLOR_POSITIVE_TEXT]+10 Healing[ENDCOLOR][COLOR_LIGHT_GREY] for units within 1 tile." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MORALE_HELP" />
+<Set Text="[ICON_STRENGTH] +20% Strength." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_NAVAL_RECON_1">
+<Text>Naval Recon I</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_NAVAL_RECON_1_HELP">
+<Text>[ICON_PLUS] +1 Sight.[NEWLINE][ICON_BULLET] Can [ENDCOLOR][COLOR_POSITIVE_TEXT]heal[ENDCOLOR][COLOR_LIGHT_GREY] outside friendly territory.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_NAVAL_RECON_2">
+<Text>Naval Recon II</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_NAVAL_RECON_2_HELP">
+<Text>[ICON_MOVES] +1 Movement.[NEWLINE][ICON_MOVES] Attempts to [ENDCOLOR][COLOR_POSITIVE_TEXT]withdraw[ENDCOLOR][COLOR_LIGHT_GREY] from melee combat.</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_PARTIAL_HEAL_IF_DESTROY_ENEMY" />
+<Set Text="[ICON_BULLET] Heals 25 Damage If Kills a Unit." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_PHALANX">
+<Text>Phalanx</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_PHALANX_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR][COLOR_LIGHT_GREY] and [ENDCOLOR][COLOR_POSITIVE_TEXT]Soldier[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_RANGED_BLITZ_HELP">
+<Text>[ICON_WAR] Can attack twice at 75% [ICON_RANGED_STRENGTH] ranged strength.</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_RANGED_DEFENSE_II">
+<Text>Defense vs Ranged (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_RANGED_DEFENSE_II_HELP">
+<Text>[ICON_STRENGTH] +50% Defense vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Ranged Units[ENDCOLOR][COLOR_LIGHT_GREY].</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_1" />
+<Set Text="Recon I" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_1_HELP" />
+<Set Text="[ICON_PLUS] +1 Sight.[NEWLINE][ICON_MOVES] Ignores terrain cost." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_2" />
+<Set Text="Recon II" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_2_HELP" />
+<Set Text="[ICON_MOVES] +1 Movement.[NEWLINE][ICON_MOVES] Attempts to [ENDCOLOR][COLOR_POSITIVE_TEXT]withdraw[ENDCOLOR][COLOR_LIGHT_GREY] from melee combat." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_3" />
+<Set Text="Recon III" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_SEA_BONUS_II">
+<Text>Bonus vs Sea (50)</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_SEA_BONUS_II_HELP">
+<Text>[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Sea[ENDCOLOR][COLOR_LIGHT_GREY] units.</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE" />
+<Set Text="Sonar" />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE_HELP">
+<Text>[ICON_BULLET] Can see [ENDCOLOR][COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR][COLOR_LIGHT_GREY]</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SIEGE_HELP" />
+<Set Text="[ICON_STRENGTH] +50% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Cities[ENDCOLOR][COLOR_LIGHT_GREY].[NEWLINE][ICON_STRENGTH] +30% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR][COLOR_LIGHT_GREY]." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_SKIRMISH">
+<Text>Skirmish</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_SKIRMISH_HELP">
+<Text>[ICON_MOVES] Attempts to withdraw from melee or embarked combat</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_SUPPRESSION">
+<Text>Suppression</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_SUPPRESSION_HELP">
+<Text>[ICON_STRENGTH] +35% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Vanguard[ENDCOLOR][COLOR_LIGHT_GREY] units</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_1" />
+<Set Text="Survivalist" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_1_HELP" />
+<Set Text="[ICON_BULLET] +20 [ENDCOLOR][COLOR_POSITIVE_TEXT]healing[ENDCOLOR][COLOR_LIGHT_GREY] outside friendly territory.[NEWLINE][ICON_MOVES] No Movement Cost to Pillage." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_TARGETING_1_HELP" />
+<Set Text="[ICON_PLUS] +1 Sight.[NEWLINE][ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Naval[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_TARGETING_2_HELP" />
+<Set Text="[ICON_MOVES] +1 Movement.[NEWLINE][ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Naval[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_TARGETING_3_HELP" />
+<Set Text="[ICON_PLUS] +1 Sight.[NEWLINE][ICON_STRENGTH] +15% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Naval[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Row Tag="TXT_KEY_PROMOTION_TRENCHES_1">
+<Text>Trenches I</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_TRENCHES_1_HELP">
+<Text>[ICON_STRENGTH] +15% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] on Open Terrain.[NEWLINE][ICON_PLUS] +1 Sight</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_TRENCHES_2">
+<Text>Trenches II</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_TRENCHES_2_HELP">
+<Text>[ICON_STRENGTH] +15% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] on Open Terrain.[NEWLINE][ICON_MOVES] +1 Movement</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_TRENCHES_3">
+<Text>Trenches III</Text>
+</Row>
+<Row Tag="TXT_KEY_PROMOTION_TRENCHES_3_HELP">
+<Text>[ICON_STRENGTH] +20% [ENDCOLOR][COLOR_POSITIVE_TEXT]Defense[ENDCOLOR][COLOR_LIGHT_GREY] on Open Terrain.[NEWLINE][ICON_PLUS] +1 Sight</Text>
+</Row>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_VOLLEY_HELP" />
+<Set Text="[ICON_STRENGTH] +30% vs [ENDCOLOR][COLOR_POSITIVE_TEXT]Fortified[ENDCOLOR][COLOR_LIGHT_GREY] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_GATLINGGUN_STRATEGY" />
+<Set Text="The Gatling Gun is a mid-game non-siege ranged unit. It is much more powerful than earlier ranged units like the Crossbowman. It has only a one-hex range, but still can deal significant damage to other units without being hurt itself. Put Gatling Guns in your cities for defense." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_HELP_CHARIOR_ARCHER" />
+<Set Text="A fast mounted archer whose attacks take 1 move. Chariots are not vulnerable to spearmen, unlike Horsemen." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_HELP_GATLINGGUN" />
+<Set Text="Defensive soldier of the Industrial Era." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_HELP_LONGSWORDSMAN" />
+<Set Text="Medieval soldier with a bonus against Cities." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_HELP_MACHINE_GUN" />
+<Set Text="Defensive soldier of the Modern Era." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_HELP_SWORDSMAN" />
+<Set Text="Classical soldier with a bonus against Cities." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_UNIT_MACHINE_GUN_STRATEGY" />
+<Set Text="The Machine Gun is the last ranged land non-siege unit. It is more powerful than earlier ranged units. Like the Gatling Gun it has only a one-hex range, but still can deal significant damage to other units without being hurt itself. It is vulnerable to melee attack. Put Machine Guns in your cities for defense." />
+</Update>

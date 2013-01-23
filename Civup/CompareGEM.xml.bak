@@ -1,0 +1,388 @@
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ACCURACY_1_HELP" />
+<Set Text="+15% [ICON_RANGE_STRENGTH] attacking [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain.[NEWLINE](NO Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ACCURACY_2_HELP" />
+<Set Text="+15% [ICON_RANGE_STRENGTH] attacking [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain.[NEWLINE](NO Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ACCURACY_3_HELP" />
+<Set Text="+15% [ICON_RANGE_STRENGTH] attacking [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain.[NEWLINE](NO Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_AMBUSH_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_RECON_HELP" />
+<Set Text="6 tiles in every direction always visible" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_SIEGE_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_SIEGE_2_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_SIEGE_3_HELP" />
+<Set Text="+34% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AIR_TARGETING_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Naval[ENDCOLOR] units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AMBUSH_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_AMBUSH_2_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BARRAGE_1_HELP" />
+<Set Text="+15% [ICON_RANGE_STRENGTH] attacking [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain.[NEWLINE](Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BARRAGE_2_HELP" />
+<Set Text="+15% [ICON_RANGE_STRENGTH] attacking [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain.[NEWLINE](Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BARRAGE_3_HELP" />
+<Set Text="+15% [ICON_RANGE_STRENGTH] attacking [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain.[NEWLINE](Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BLITZ_HELP" />
+<Set Text="Can attack twice."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_1_HELP" />
+<Set Text="+15% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Ships[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_2_HELP" />
+<Set Text="+15% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Ships[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_3_HELP" />
+<Set Text="+15% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Ships[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOMBARDMENT_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOMBARDMENT_2_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_BOMBARDMENT_3_HELP" />
+<Set Text="+34% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CHARGE_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Wounded Units[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CITY_ASSUALT_HELP" />
+<Set Text="+300% vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE_HELP" />
+<Set Text="+200% vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_1_HELP" />
+<Set Text="+20% [ICON_STRENGTH] attack vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Steal gold equal to 33% of the damage inflicted on a city."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_2_HELP" />
+<Set Text="+20% [ICON_STRENGTH] attack vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Steal gold equal to 33% of the damage inflicted on a city."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COASTAL_RAIDER_3_HELP" />
+<Set Text="+20% [ICON_STRENGTH] attack vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Steal gold equal to 34% of the damage inflicted on a city."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COVER_1_HELP" />
+<Set Text="+33% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] vs [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_COVER_2_HELP" />
+<Set Text="+33% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR] vs [COLOR_POSITIVE_TEXT]Ranged Attacks[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DEFEND_NEAR_CAPITAL_HELP" />
+<Set Text="+30% in the [COLOR_POSITIVE_TEXT]Capital[ENDCOLOR]; bonus falls off as the unit gets further away."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP" />
+<Set Text="-33% [COLOR_NEGATIVE_TEXT]Defense[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DEFENSIVE_EMBARKATION_HELP" />
+<Set Text="Can embark onto [COLOR_POSITIVE_TEXT]Water Tiles[ENDCOLOR].[NEWLINE]Embarked units defend at double strength."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DISCIPLINE_HELP" />
+<Set Text="+15% [ICON_STRENGTH] when adjacent to a friendly Unit."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DOGFIGHTING_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] stronger [COLOR_POSITIVE_TEXT]Air Sweeps[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DOGFIGHTING_2_HELP" />
+<Set Text="+33% [ICON_STRENGTH] stronger [COLOR_POSITIVE_TEXT]Air Sweeps[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DOGFIGHTING_3_HELP" />
+<Set Text="+34% [ICON_STRENGTH] stronger [COLOR_POSITIVE_TEXT]Air Sweeps[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DRILL_1_HELP" />
+<Set Text="+15% [ICON_STRENGTH] in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain.[NEWLINE](Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DRILL_2_HELP" />
+<Set Text="+15% [ICON_STRENGTH] in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain.[NEWLINE](Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_DRILL_3_HELP" />
+<Set Text="+15% [ICON_STRENGTH] in [COLOR_POSITIVE_TEXT]ROUGH[ENDCOLOR] Terrain.[NEWLINE](Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_EMBARKATION_HELP" />
+<Set Text="Can embark onto [COLOR_POSITIVE_TEXT]Water Tiles[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_EMBARKED_SIGHT_HELP" />
+<Set Text="+1 Sight Range when [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR]"/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FAST_ADMIRAL_HELP" />
+<Set Text="+2 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FAST_GENERAL_HELP" />
+<Set Text="+2 [ICON_MOVES] [COLOR_POSITIVE_TEXT]Movement[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FEARED_ELEPHANT_HELP" />
+<Set Text="-10% [ICON_STRENGTH] strength of adjacent enemy units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FLANK_ATTACK_BONUS_HELP" />
+<Set Text="+50% [ICON_STRENGTH] when [COLOR_POSITIVE_TEXT]Flanking[ENDCOLOR]"/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FORMATION_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR] units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_FORMATION_2_HELP" />
+<Set Text="+33% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Mounted[ENDCOLOR] units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_GENERAL_STACKING_HELP" />
+<Set Text="+15% with [COLOR_POSITIVE_TEXT]Great General[ENDCOLOR] in same tile."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_GREAT_ADMIRAL_HELP" />
+<Set Text="Improves combat effectiveness of nearby Ships."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_GREAT_GENERAL_HELP" />
+<Set Text="Improves combat effectiveness of nearby land units."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_HEAL_IF_DESTROY_ENEMY_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]Heals 50 Damage[ENDCOLOR] when kills a Non-Barbarian unit."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_HEAL_INSTANTLY_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]Heal this Unit[ENDCOLOR] 50 HP. Doing so will [COLOR_POSITIVE_TEXT]Consume this Opportunity[ENDCOLOR] to choose a Promotion."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_HOVERING_UNIT_HELP" />
+<Set Text="Can pass over Mountains, but takes damage if ending its turn on a Mountain."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_INTERCEPTION_1_HELP" />
+<Set Text="+33% [ICON_STRENGTH] stronger [COLOR_POSITIVE_TEXT]Interceptions[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_INTERCEPTION_2_HELP" />
+<Set Text="+33% [ICON_STRENGTH] stronger [COLOR_POSITIVE_TEXT]Interceptions[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_INTERCEPTION_3_HELP" />
+<Set Text="+34% [ICON_STRENGTH] stronger [COLOR_POSITIVE_TEXT]Interceptions[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_JAGUAR_HELP" />
+<Set Text="+33% in [COLOR_POSITIVE_TEXT]Forest/Jungle[ENDCOLOR]"/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MEDIC_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]+5 Healing[ENDCOLOR] per turn for units in adjacent tiles."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MOBILITY_HELP" />
+<Set Text="+1 Movement." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MORALE_HELP" />
+<Set Text="+15% [ICON_STRENGTH] Strength" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_NATIONALISM_HELP" />
+<Set Text="+25% attack bonus in friendly territory" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_NAVAL_TRADITION_HELP" />
+<Set Text="+1 [ICON_MOVES] Movement and +1 Sight" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MEDIC_II_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]+5 Healing[ENDCOLOR] per turn for units in adjacent tiles.[NEWLINE][COLOR_POSITIVE_TEXT]+5 Healing[ENDCOLOR] per turn for this unit when [COLOR_POSITIVE_TEXT]Outside of Friendly Territory[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MOHAWK_HELP" />
+<Set Text="+33% in [COLOR_POSITIVE_TEXT]Forest/Jungle[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_MOVEMENT_TO_GENERAL_HELP" />
+<Set Text="Great General moves at rate of this unit if they start the turn stacked."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_NATIONALISM_HELP" />
+<Set Text="+15% [ICON_STRENGTH] [COLOR_POSITIVE_TEXT]Attack[ENDCOLOR] in friendly territory."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_NAVAL_BONUS_HELP" />
+<Set Text="Bonus vs Naval (50)"/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_ONLY_ATTACKS_CITIES_HELP" />
+<Set Text="Unit may not attack units, only cities."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_PRIZE_SHIPS_HELP" />
+<Set Text="Defeated enemy Ships may join your side."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_2_HELP" />
+<Set Text="+1 Sight Range."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SCOUTING_3_HELP" />
+<Set Text="+1 Movement."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SENTRY_HELP" />
+<Set Text="+1 Sight Range"/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SHOCK_1_HELP" />
+<Set Text="+15% [ICON_STRENGTH] in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain.[NEWLINE](NO Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SHOCK_2_HELP" />
+<Set Text="+15% [ICON_STRENGTH] in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain.[NEWLINE](NO Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SHOCK_3_HELP" />
+<Set Text="+15% [ICON_STRENGTH] in [COLOR_POSITIVE_TEXT]OPEN[ENDCOLOR] Terrain.[NEWLINE](NO Hills, Forest or Jungle)."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SIEGE_HELP" />
+<Set Text="+50% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SIGHT_PENALTY_HELP" />
+<Set Text="-1 Visibility Range" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SORTIE_HELP" />
+<Set Text="1 extra [COLOR_POSITIVE_TEXT]Interception[ENDCOLOR] may be made per turn" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SPAWN_GENERALS_I_HELP" />
+<Set Text="Combat Likely To Create Great Generals" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SPAWN_GENERALS_II_HELP" />
+<Set Text="Combat Very Likely To Create Great Generals" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_STRONGER_VS_DAMAGED_HELP" />
+<Set Text="+50% vs [COLOR_POSITIVE_TEXT]Wounded[ENDCOLOR] units." />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SUPPLY_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]+15 Healing[ENDCOLOR] per turn.[NEWLINE]May heal [COLOR_POSITIVE_TEXT]Outside Friendly Territory[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_1_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]+5 healing per turn[ENDCOLOR] outside of friendly territory.[NEWLINE]+25% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_2_HELP" />
+<Set Text="[COLOR_POSITIVE_TEXT]+5 healing per turn[ENDCOLOR] outside of friendly territory.[NEWLINE]+25% [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_3_HELP" />
+<Set Text="Unit will [COLOR_POSITIVE_TEXT]Heal Every Turn[ENDCOLOR], even if it performs an action.  Unit will attempt to withdraw when faced with a melee attack."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_TARGETING_1_HELP" />
+<Set Text="+15% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Ships[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_TARGETING_2_HELP" />
+<Set Text="+15% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Ships[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_TARGETING_3_HELP" />
+<Set Text="+15% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Ships[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_UNWELCOME_EVANGELIST_HELP" />
+<Set Text="Can enter rival territory without open borders but loses 25% of original religious strength for each turn they end on such a tile. Unit is eliminated when religious strength is 0."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_VOLLEY_HELP" />
+<Set Text="+50% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]."/>
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_WOODSMAN_HELP" />
+<Set Text="Double movement rate [COLOR_POSITIVE_TEXT]Through Forest and Jungle[ENDCOLOR]" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_XTRA_MOVES_I_HELP" />
+<Set Text="1 Extra Movement" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_XTRA_SIGHT_I_HELP" />
+<Set Text="1 Extra Sight" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_XTRA_SIGHT_II_HELP" />
+<Set Text="2 Extra Sight" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_XTRA_SIGHT_III_HELP" />
+<Set Text="3 Extra Sight" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_XTRA_SIGHT_IV_HELP" />
+<Set Text="4 Extra Sight" />
+</Update>
+<Update>
+<Where Tag="TXT_KEY_PROMOTION_WAR_CANOES_HELP" />
+<Set Text="+100% [ICON_STRENGTH] when [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR][NEWLINE]+1 Sight Range when [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR]"/>
+</Update>

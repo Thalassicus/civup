@@ -3,34 +3,19 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{4746fd17-873e-40e4-b531-63afb3f7f235}</ProjectGuid>
-    <Name>Civ V Unofficial Patch v2.0.41 (GK)</Name>
+    <Name>Civ V Unofficial Patch v2.4.1 (GK)</Name>
     <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
-    <ModVersion>41</ModVersion>
+    <ModVersion>1</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>[COLOR_CYAN]   by Thalassicus[NEWLINE][ENDCOLOR]   Improves the interface, and adds tools for mods.</Teaser>
-    <Description>The most influential community project for Civ V returns for Gods and Kings!
-[NEWLINE]
-[NEWLINE]Civup focuses on fixing bugs in the expansion, improving the interface, and expanding modding tools with minimal gameplay impact. It follows the footsteps of unofficial patches like Civ 4 BTS Unaltered Gameplay and the Skyrim Unofficial Patch. Civup is a collaboration of work from 26 mod authors and an incredible community of forumgoers on CivFanatics.com.
-[NEWLINE]
-[NEWLINE]If you encounter problems, try the things on the checklist: http://tinyurl.com/civ5checklist
-[NEWLINE]
-[NEWLINE]Features: http://communitas.wikia.com/wiki/Civup
-[NEWLINE]Discuss: http://tinyurl.com/communitas-mod
-[NEWLINE]Bugs: http://tinyurl.com/civupbug
-[NEWLINE]News: http://civmodding.wordpress.com
-[NEWLINE]Credits: http://civmodding.wordpress.com/credits
-[NEWLINE]
-[NEWLINE]NOTE: Do *not* have this installed without Gods and Kings. It is only compatible with the expansion. The non-expansion vanilla version is here: http://steamcommunity.com/sharedfiles/filedetails/?id=78295051
-[NEWLINE]
-[NEWLINE]Please view the readme in the mod folder, which includes important information about using Civ 5 mods. Modders can easily use the tools in Civup within your own mod by including Civup as a dependency in ModBuddy project associations.
-[NEWLINE]</Description>
+    <Teaser>[COLOR_CYAN]   by Thalassicus[NEWLINE][ENDCOLOR]   More intuitive interface and mod tools.</Teaser>
+    <Description>I believe things should be intuitive to use. Civup does this for the Civ 5 interface. It adds more useful information for players, and greatly expands tools for modders. There are as few gameplay changes as possible. Civup follows the footsteps of unofficial patches like Civ 4 BTS Unaltered Gameplay and the Skyrim Unofficial Patch. If you believe in these goals, try this expansion pack![NEWLINE][NEWLINE][NEWLINE]This is part of the Civ V: Communitas Expansion Pack. If you want to discuss the project, or you encounter a problem while playing, please visit the Discuss or Bugs links below. It's impractical to track multiple topics of conversation in the Workshop comments. Thank you![NEWLINE][NEWLINE]Features: communitas.wikia.com[NEWLINE]Discuss: forums.civfanatics.com/forumdisplay.php?f=429[NEWLINE]Bugs: bit.ly/bugreporting[NEWLINE]News: civmodding.wordpress.com[NEWLINE]Credits: civmodding.wordpress.com/credits[NEWLINE][NEWLINE][NEWLINE]The Communitas Expansion Pack is a collaboration of work from 38 main authors and an incredible community of forumgoers on CivFanatics.com. You can see the other parts of CEP here:[NEWLINE][NEWLINE]http://steamcommunity.com/id/thalassicus/myworkshopfiles[NEWLINE][NEWLINE][NEWLINE][NEWLINE]Please view the readme in the Civup folder, which includes important information about using Civ 5 mods. Modders can easily use the tools in Civup within your own project by including Civup as a dependency in ModBuddy project associations.[NEWLINE][NEWLINE]NOTE: Exit to the main menu to load or start games. Loading or regenerating the map within an active game breaks all mods which use lua code.[NEWLINE][NEWLINE]REQUIRES: Gods and Kings Expansion. This project is only compatible with the expansion. The non-expansion vanilla version is here: steamcommunity.com/sharedfiles/filedetails/?id=78295051</Description>
     <Authors>[COLOR_CYAN]Thalassicus</Authors>
     <SpecialThanks>Check out the readme in the mod folder.</SpecialThanks>
     <Categories>$Categories$</Categories>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
-    <SupportsMultiplayer>false</SupportsMultiplayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>Mod Template</AssemblyName>
     <RootNamespace>Mod Template</RootNamespace>
@@ -39,67 +24,82 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_Start.sql</FileName>
+        <FileName>1_Core_Roots/Start/Civup_AlterTables.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Options.sql</FileName>
+        <FileName>Civup_Options.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_Data.xml</FileName>
+        <FileName>1_Core_Roots/Start/Civup_Misc.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Interface_Data.sql</FileName>
+        <FileName>1_Core_Roots/Start/Civup_Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/YieldLibrary/YL_General.xml</FileName>
+        <FileName>4_Text_Bark/Language_Start.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/AttilaMods/AM_General.sql</FileName>
+        <FileName>1_Core_Roots/CiVUP_Data.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/FreeResearchBalance/XMLTableUpdate.sql</FileName>
+        <FileName>3_Interface_Branches/Interface_Data.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/AutoTips/AT_General.sql</FileName>
+        <FileName>2_ModTools_Trunk/YieldLibrary/YL_General.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_ArmiesClasses.xml</FileName>
+        <FileName>2_ModTools_Trunk/AttilaMods/AM_General.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_Compatibility.xml</FileName>
+        <FileName>2_ModTools_Trunk/FreeResearchBalance/XMLTableUpdate.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_PromotionSwap.xml</FileName>
+        <FileName>2_ModTools_Trunk/AutoTips/AT_General.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_Promotions.xml</FileName>
+        <FileName>Roots_Core/CiVUP_ArmiesClasses.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_TooltipPriorities.xml</FileName>
+        <FileName>Roots_Core/CiVUP_Compatibility.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Roots_Core/CiVUP_PromotionSwap.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1_Core_Roots/CiVUP_Promotions.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1_Core_Roots/CiVUP_TooltipPriorities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -109,892 +109,942 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Overrides/Icons/CiVUP_Icons.xml</FileName>
+        <FileName>3_Interface_Branches/Icons/CiVUP_Icons.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/AttilaMods/AM_General.xml</FileName>
+        <FileName>2_ModTools_Trunk/AttilaMods/AM_General.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/AutoTips/AT_BuildingStats.xml</FileName>
+        <FileName>2_ModTools_Trunk/AutoTips/AT_BuildingStats.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/FreeResearchBalance/CostIncreases.xml</FileName>
+        <FileName>2_ModTools_Trunk/FreeResearchBalance/CostIncreases.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/FreeResearchBalance/GreatPeople.xml</FileName>
+        <FileName>2_ModTools_Trunk/FreeResearchBalance/GreatPeople.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/FreeResearchBalance/Missions.xml</FileName>
+        <FileName>2_ModTools_Trunk/FreeResearchBalance/Missions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Mods/MapPins/FlagIcons.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/MapPins/FlagIcons.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Mods/MapPins/UIMapPins.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/MapPins/UIMapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Mods/UnitTrees/UIPromotionTree.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/UnitTrees/UIPromotionTree.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Mods/UnitTrees/UIUpgradeTree.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/UnitTrees/UIUpgradeTree.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Mods/Trade/Trade.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/Trade/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Interface/Overrides/Villages/V_General.xml</FileName>
+        <FileName>3_Interface_Branches/Villages/V_General.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/Opportunities/Opp_Outcomes.xml</FileName>
+        <FileName>2_ModTools_Trunk/Opportunities/Opp_Outcomes.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>ModTools/Libraries/Opportunities/Opp_Triggers.xml</FileName>
+        <FileName>2_ModTools_Trunk/Opportunities/Opp_Triggers.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/en_US/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/AttilaMods.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/en_US/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/AutoTips_Tips.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/en_US/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/AutoTips_Help.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/en_US/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/CopaseticUITweaks.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/Core.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/Core.xml</FileName>
+        <FileName>4_Text_Bark/en_US/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/Core.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/Core.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/Core.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/Core.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/Core.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/Core.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/Core.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Core.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/en_US/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Promotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/en_US/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/CustomNotifications.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/en_US/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/ExtraDiplomacyText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/en_US/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Diplomacy.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/en_US/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/CsebExtendedPlotMouseover.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/en_US/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Opportunities.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/Villages.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/Villages.xml</FileName>
+        <FileName>4_Text_Bark/en_US/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/Villages.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/Villages.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/Villages.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/Villages.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/Villages.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/Villages.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/Villages.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/UnitTrees.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/en_US/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Villages.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/en_US/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/WWGD.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/en_US/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/FlagPromotions.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/en_US/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/FreeResearchBalance.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/Trade.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/Trade.xml</FileName>
+        <FileName>4_Text_Bark/en_US/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/Trade.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/Trade.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/Trade.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/Trade.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/Trade.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/Trade.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/Trade.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/MapPins.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/DE_DE/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/en_US/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/en_US/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ES_ES/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/FR_FR/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/IT_IT/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/JA_JP/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/PL_PL/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/RU_RU/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Text/ZH_CN/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Trade.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_PromotionOrder.sql</FileName>
+        <FileName>4_Text_Bark/DE_DE/YieldLibrary.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Core/CiVUP_QuickCombat.sql</FileName>
+        <FileName>4_Text_Bark/en_US/YieldLibrary.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/ES_ES/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/FR_FR/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/IT_IT/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/JA_JP/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/PL_PL/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/RU_RU/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/ZH_CN/YieldLibrary.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1_Core_Roots/CiVUP_PromotionOrder.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>1_Core_Roots/CiVUP_QuickCombat.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>4_Text_Bark/Language_End.sql</FileName>
       </Action>
     </ModActions>
     <ModContent>
@@ -1002,91 +1052,103 @@
         <Type>InGameUIAddin</Type>
         <Name>MapPins.xml</Name>
         <Description />
-        <FileName>Interface/Mods/MapPins/MapPins.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/MapPins/MapPins.xml</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>CustomMissionHandler.lua</Name>
         <Description />
-        <FileName>ModTools/Libraries/FreeResearchBalance/CustomMissionHandler.lua</FileName>
+        <FileName>2_ModTools_Trunk/FreeResearchBalance/CustomMissionHandler.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>DiscoverMission</Name>
         <Description />
-        <FileName>ModTools/Libraries/FreeResearchBalance/DiscoverMission.lua</FileName>
+        <FileName>2_ModTools_Trunk/FreeResearchBalance/DiscoverMission.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>MiniMapPanel_addin.lua</Name>
         <Description />
-        <FileName>Interface/Mods/FlagPromotions/MiniMapPanel_addin.lua</FileName>
+        <FileName>3_Interface_Branches/_Mods/CityLimits/CityLimits.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>MiniMapPanel_addin.lua</Name>
+        <Description />
+        <FileName>3_Interface_Branches/_Mods/FlagPromotions/MiniMapPanel_addin.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>OptionsScreen.lua</Name>
         <Description />
-        <FileName>Interface/Mods/FlagPromotions/OptionsScreen.lua</FileName>
+        <FileName>3_Interface_Branches/_Mods/FlagPromotions/OptionsScreen.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>PromotionTree</Name>
         <Description />
-        <FileName>Interface/Mods/UnitTrees/PromotionTree.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/UnitTrees/PromotionTree.xml</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>PromotionTree</Name>
         <Description />
-        <FileName>Interface/Mods/UnitTrees/UpgradeTree.xml</FileName>
+        <FileName>3_Interface_Branches/_Mods/UnitTrees/UpgradeTree.xml</FileName>
       </Content>
       <Content>
-        <Type>_DiploCornerAddin</Type>
+        <Type>DiploCornerAddin</Type>
         <Name>PromotionTree_DiploCornerHook.lua</Name>
         <Description />
-        <FileName>Interface/Mods/UnitTrees/PromotionTree_DiploCornerHook.lua</FileName>
+        <FileName>3_Interface_Branches/_Mods/UnitTrees/PromotionTree_DiploCornerHook.lua</FileName>
       </Content>
       <Content>
-        <Type>_DiploCornerAddin</Type>
+        <Type>DiploCornerAddin</Type>
         <Name>UpgradeTree_DiploCornerHook.lua</Name>
         <Description />
-        <FileName>Interface/Mods/UnitTrees/UpgradeTree_DiploCornerHook.lua</FileName>
+        <FileName>3_Interface_Branches/_Mods/UnitTrees/UpgradeTree_DiploCornerHook.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>YL_EventRegistration.lua</Name>
         <Description />
-        <FileName>ModTools/Libraries/YieldLibrary/YL_EventRegistration.lua</FileName>
+        <FileName>2_ModTools_Trunk/YieldLibrary/YL_EventRegistration.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>CiVUP_Events.lua</Name>
         <Description />
-        <FileName>Core/CiVUP_Events.lua</FileName>
+        <FileName>1_Core_Roots/CiVUP_Events.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>AT_Init.lua</Name>
+        <Description />
+        <FileName>2_ModTools_Trunk/AutoTips/AT_Init.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>OppPopup.lua</Name>
         <Description />
-        <FileName>ModTools/Libraries/Opportunities/OppPopup.lua</FileName>
+        <FileName>2_ModTools_Trunk/Opportunities/OppPopup.lua</FileName>
       </Content>
       <Content>
         <Type>InGameUIAddin</Type>
         <Name>MU_Initialize.lua</Name>
         <Description />
-        <FileName>ModTools/MT_Initialize.lua</FileName>
+        <FileName>2_ModTools_Trunk/MT_Initialize.lua</FileName>
       </Content>
       <Content>
-        <Type>_DiploCornerAddin</Type>
+        <Type>DiploCornerAddin</Type>
         <Name>NotificationOptions_DiploCornerHook.lua</Name>
         <Description />
-        <FileName>ModTools/Libraries/CustomNotifications/NotificationOptions_DiploCornerHook.lua</FileName>
+        <FileName>2_ModTools_Trunk/CustomNotifications/NotificationOptions_DiploCornerHook.lua</FileName>
       </Content>
       <Content>
         <Type>NotificationAddin</Type>
         <Name>ImprovedEvents.lua</Name>
         <Description />
-        <FileName>ModTools/Libraries/CustomNotifications/ImprovedEvents.lua</FileName>
+        <FileName>2_ModTools_Trunk/CustomNotifications/ImprovedEvents.lua</FileName>
       </Content>
     </ModContent>
     <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
@@ -1098,7 +1160,15 @@
       </Property>
     </ModProperties>
     <SupportsHotSeat>true</SupportsHotSeat>
-    <ModReferences />
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>City-State Diplomacy Mod</Name>
+        <Id>abaa043a-f851-4c61-bd18-52d480862cd0</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
     <ModBlockers>
     </ModBlockers>
     <ModDependencies>
@@ -1123,567 +1193,1447 @@
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="1_Core_Roots/CiVUP_Core.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_Data.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_Events.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_Initialize.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_PromotionOrder.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_Promotions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_QuickCombat.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/CiVUP_TooltipPriorities.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots/Compatibility.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots\Start\Civup_AlterTables.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots\Start\Civup_Misc.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots\Start\Civup_Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/_ClassMethods/MT_City.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/_ClassMethods/MT_Misc.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/_ClassMethods/MT_Player.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/_ClassMethods/MT_Plot.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/_ClassMethods/MT_Unit.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AlpacaMods/AlpacaUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AlpacaMods/DiploCorner.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AlpacaMods/DiploCorner.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AttilaMods/AM_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AttilaMods/AM_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AutoTips/AT_BuildingStats.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AutoTips/AT_General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AutoTips/AT_Init.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/AutoTips/InfoTooltipInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/CustomNotification.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/ImprovedEvents.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/ImprovedEvents.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/NotificationOptions_DiploCornerHook.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/NotificationOptions.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/NotificationOptions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/CustomNotifications/NotificationPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/FreeResearchBalance/CustomMissionHandler.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/FreeResearchBalance/DiscoverMission.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/FreeResearchBalance/GreatPeople.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/FreeResearchBalance/Missions.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/FreeResearchBalance/XMLTableUpdate.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/InGame.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/ModTools.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/MT_Initialize.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/MT_LoadSave.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/MT_LuaEvents.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/MT_LuaLogger.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/MT_Utils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/Opportunities/Opp_Events.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/Opportunities/Opp_Outcomes.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/Opportunities/Opp_Triggers.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/Opportunities/OppPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/Opportunities/OppPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/SaveUtils/SaveUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/YieldLibrary/YieldLibrary.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/YieldLibrary/YL_EventRegistration.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk/YieldLibrary/YL_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="2_ModTools_Trunk\YieldLibrary\YieldIconManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/CityLimits/CityLimits.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/CopaseticUITweaks/FeatureFinder.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/CsebExtendedPlotMouseover/CEPM_Common.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/CsebExtendedPlotMouseover/CEPM_CommonPlotHelpers.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/CsebExtendedPlotMouseover/PlotHelpManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/ExtraDiplomacyText/readme.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/FP_EventRegistration.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/FP_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/MiniMapPanel_addin.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/MiniMapPanel_addin.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/ModUserData.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/OptionsScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/OptionsScreen.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/UnitFlagManager_addin.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/UnitFlagManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/FlagPromotions/UnitFlagManager.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictCivRelations.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictCivRelations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictHooks.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictHooks.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictInit.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictLib.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Global Relations/InfoAddictScreen.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/HoverInfo/Readme.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/FlagIcons.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/InfoCorner.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/InfoCorner.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/MapPins.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/MapPins.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/MapPinsList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/MapPinsList.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/MapPins/UIMapPins.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploCityStatesStatus.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploCityStatesStatus.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploCurrentDeals.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploGlobalRelationships.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploOverview.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploOverview.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploTradesStatus.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/DiploTradesStatus.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/Trade/Trade.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/PromotionTree_DiploCornerHook.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/PromotionTree.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/PromotionTree.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/PromotionUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/UIPromotionTree.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/UIUpgradeTree.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/UpgradeTree_DiploCornerHook.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/UpgradeTree.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/UpgradeTree.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/ButtonManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/ControlUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/DebugPrint.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/GroupManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/NodeUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/PipeManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/_Mods/UnitTrees/Utilities/UpgradeUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/AnnexCityPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/CityBannerManager.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/CityBannerManager.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/CityList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/CityView_small.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/CityView.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/CityView.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/ProductionPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Cities/PuppetCityPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/CityStateDiploPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/CityStateDiploPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/CityStateStatusHelper.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/DiploList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/DiploList.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/DiscussionDialog.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/LeaderHeadRoot.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/LiberateMinorPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Diplomacy/MoodTooltips.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/CiVUP_Icons.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/civupfonticons.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/CivupFontIcons.ggxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/NewPromos16.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/NewPromos256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/NewPromos32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/NewPromos45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/NewPromos64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/promotions128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/Unknown32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/VanguardPromos16.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/VanguardPromos256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/VanguardPromos32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/VanguardPromos45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Icons/VanguardPromos64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Interface_Data.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/ActionInfoPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/Audio2DScripts.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/CivilopediaScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/Demographics.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/EconomicGeneralInfo.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/GameSetupScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/GenericPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/InGame.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/PlotHelpText.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/PlotHelpText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/ReligionOverview.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/ResourceTooltipGenerator.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/SelectDifficulty.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/SocialPolicyPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/SocialPolicyPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/TradeLogic.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/WhosWinningPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/WonderPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Misc/WonderPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechAwardPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechAwardPopup.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechButtonInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechHelpInclude.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechPopup.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Techs/TechTree.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/TopPanel_Clock.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/TopPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/TopPanel.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/EnemyUnitPanel_small.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/EnemyUnitPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/EnemyUnitPanel.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/fx_triggers_warrior.ftsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/MilitaryOverview.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/UnitPanel_small.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/UnitPanel.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Units/UnitPanel.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/hb_med_trading_post_decal_d.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/hb_med_trading_post_decal_h.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/med_trading_post_decal_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/med_trading_post_decal_h.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/med_trading_post_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/mod_trading_post_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/pl_med_trading_post.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/pl_mod_trading_post_diff.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches/Villages/V_General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches\Icons\YieldAtlas_Civup.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\en_US\YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ES_ES/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/DE_DE/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\FR_FR\InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/FR_FR/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/IT_IT/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/JA_JP/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/PL_PL/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/RU_RU/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/AutoTips_Help.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/AutoTips_Tips.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/CopaseticUITweaks.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/Core.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/CsebExtendedPlotMouseover.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/CustomNotifications.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/Diplomacy.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/ExtraDiplomacyText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/FlagPromotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/FreeResearchBalance.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/InfoAddictText.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/MapPins.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/Opportunities.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/Promotions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/Trade.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/UnitTrees.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/Villages.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark/ZH_CN/YieldLibrary.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\Language_End.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="4_Text_Bark\Language_Start.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="BugFixes/CapitalTradeFix.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Core/CiVUP_Core.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_Events.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_Events.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_Start.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_Data.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_Initialize.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_PromotionOrder.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_Promotions.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_QuickCombat.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/CiVUP_TooltipPriorities.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Core/Compatibility.txt">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityBannerManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityBannerManager.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityStateDiploPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityStateDiploPopup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityStateStatusHelper.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Interface_Data.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/CivilopediaScreen.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/InGame.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploCurrentDeals.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploGlobalRelationships.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/Trade.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="NoChildGloves/MainMenu.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/_CityStateDiploPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/_CityStateDiploPopup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/_CityStateGreetingPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/_WonderPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/AnnexCityPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityList.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityView_small.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityView.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/CityView.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/LiberateMinorPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/_ProductionPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Cities/PuppetCityPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/CopaseticUITweaks/_DiploRelationships.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/CopaseticUITweaks/_DiploRelationships.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/CopaseticUITweaks/FeatureFinder.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/CsebExtendedPlotMouseover/CEPM_Common.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/CsebExtendedPlotMouseover/CEPM_CommonPlotHelpers.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/CsebExtendedPlotMouseover/PlotHelpManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/FP_EventRegistration.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/FP_General.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/MiniMapPanel_addin.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/MiniMapPanel_addin.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/ModUserData.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/OptionsScreen.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/OptionsScreen.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/UnitFlagManager_addin.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/UnitFlagManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/FlagPromotions/UnitFlagManager.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/HoverInfo/Readme.txt">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/CiVUP_Icons.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/NewPromos16.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/NewPromos256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/NewPromos32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/NewPromos45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/NewPromos64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/promotions128.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/Unknown32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/VanguardPromos16.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/VanguardPromos256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/VanguardPromos32.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/VanguardPromos45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Icons/VanguardPromos64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/FlagIcons.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/InfoCorner.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/InfoCorner.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/MapPins.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/MapPins.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/MapPinsList.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/MapPinsList.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/MapPins/UIMapPins.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/_CivilopediaScreen.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/_ModsSinglePlayer.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/_TutorialPopupScreen.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/_VictoryProgress.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/WonderPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/WonderPopup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/_YieldIconManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/ActionInfoPanel.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/Audio2DScripts.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/_DebugMenu.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/Demographics.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/DiploList.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/DiploList.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/EconomicGeneralInfo.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/GameSetupScreen.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/GenericPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/LeaderHeadRoot.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/PlotHelpText.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/PlotHelpText.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/ResourceTooltipGenerator.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/SelectDifficulty.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/SocialPolicyPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/SocialPolicyPopup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/TopPanel_Clock.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/TopPanel.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/TopPanel.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/TradeLogic.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/WhosWinningPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Misc/WorldView.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface\Overrides\Techs\TechPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Techs/TechTree.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Techs/TechAwardPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Techs/TechAwardPopup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Techs/TechButtonInclude.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Techs/TechHelpInclude.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Techs/TechPanel.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploCityStatesStatus.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploCityStatesStatus.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploOverview.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploOverview.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploTradesStatus.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/Trade/DiploTradesStatus.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/EnemyUnitPanel_small.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/EnemyUnitPanel.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/EnemyUnitPanel.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/fx_triggers_warrior.ftsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/MilitaryOverview.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/UnitPanel_small.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/UnitPanel.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Units/UnitPanel.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/PromotionTree_DiploCornerHook.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/PromotionTree.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/PromotionTree.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/PromotionUtils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/UIPromotionTree.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/UIUpgradeTree.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/UpgradeTree_DiploCornerHook.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/UpgradeTree.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/UpgradeTree.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/ButtonManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/ControlUtils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/DebugPrint.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/GroupManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/NodeUtils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/PipeManager.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/UnitTrees/Utilities/UpgradeUtils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Mods/ExtraDiplomacyText/readme.txt">
+    <Content Include="Civup_Language.xls">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1707,215 +2657,23 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="ModTools/Libraries/FreeResearchBalance/CustomMissionHandler.lua">
+    <Content Include="NoChildGloves/MainMenu.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="ModTools/Libraries/FreeResearchBalance/DiscoverMission.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/FreeResearchBalance/GreatPeople.xml">
+    <Content Include="NoChildGloves/MainMenu_Backup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="ModTools/Libraries/FreeResearchBalance/Missions.xml">
+    <Content Include="NoChildGloves/MainMenu_Backup.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="ModTools/Libraries/FreeResearchBalance/XMLTableUpdate.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/hb_med_trading_post_decal_d.dds">
+    <Content Include="NoChildGloves/MainMenu.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Interface/Overrides/Villages/hb_med_trading_post_decal_h.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/med_trading_post_decal_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/med_trading_post_decal_h.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/med_trading_post_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/mod_trading_post_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/pl_med_trading_post.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/pl_mod_trading_post_diff.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Interface/Overrides/Villages/V_General.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AlpacaMods/_DiploCorner.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AlpacaMods/_DiploCorner.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AlpacaMods/AlpacaUtils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AttilaMods/AM_General.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AttilaMods/AM_General.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AutoTips/AT_BuildingStats.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AutoTips/AT_General.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/AutoTips/InfoTooltipInclude.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Classes/MT_City.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Classes/MT_Misc.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Classes/MT_Player.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Classes/MT_Plot.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Classes/MT_Unit.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/CustomNotification.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/ImprovedEvents.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/ImprovedEvents.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/NotificationOptions_DiploCornerHook.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/NotificationOptions.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/NotificationOptions.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/CustomNotifications/NotificationPanel.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/ModTools.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/MT_Initialize.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/MT_LoadSave.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/MT_LuaEvents.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/MT_LuaLogger.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/MT_Utils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/SaveUtils/SaveUtils.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools\Libraries\Opportunities\Opp_Events.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools\Libraries\Opportunities\Opp_Outcomes.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools\Libraries\Opportunities\Opp_Triggers.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools\Libraries\Opportunities\OppPopup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools\Libraries\Opportunities\OppPopup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/YieldLibrary/YieldLibrary.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/YieldLibrary/YL_EventRegistration.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="ModTools/Libraries/YieldLibrary/YL_General.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="NoChildGloves\MainMenu.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="NoChildGloves\MainMenu_Backup.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="NoChildGloves\MainMenu_Backup.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Options.sql">
+    <Content Include="Civup_Options.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1923,345 +2681,90 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/DE_DE/AutoTips_Help.xml">
+    <Content Include="TunerMods/DebugFolder/Active Player.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/DE_DE/AutoTips_Tips.xml">
+    <Content Include="TunerMods/DebugFolder/DefaultPanels.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/DE_DE/MapPins.xml">
+    <Content Include="TunerMods/DebugFolder/Game.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/en_US/AutoTips_Help.xml">
+    <Content Include="TunerMods/DebugFolder/Map.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/en_US/AutoTips_Tips.xml">
+    <Content Include="TunerMods/DebugFolder/Players.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/en_US/CopaseticUITweaks.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/Core.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/CsebExtendedPlotMouseover.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/CustomNotifications.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/Diplomacy.xml">
+    <Content Include="TunerMods/DebugFolder/Selected City.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Text/en_US/ExtraDiplomacyText.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/FlagPromotions.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/FreeResearchBalance.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/MapPins.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/Trade.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/Opportunities.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/UnitTrees.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/Villages.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/en_US/YieldLibrary.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/AutoTips_Help.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/AutoTips_Tips.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/AutoTips_Help.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/AutoTips_Tips.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/RU_RU/AutoTips_Help.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/RU_RU/AutoTips_Tips.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/CopaseticUITweaks.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/Core.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/CsebExtendedPlotMouseover.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/CustomNotifications.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/Diplomacy.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/ExtraDiplomacyText.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/FlagPromotions.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/FreeResearchBalance.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/MapPins.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/Trade.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/Opportunities.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/UnitTrees.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/Villages.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ES_ES/YieldLibrary.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/CopaseticUITweaks.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/Core.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/CsebExtendedPlotMouseover.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/CustomNotifications.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/Diplomacy.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/ExtraDiplomacyText.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/FlagPromotions.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/FreeResearchBalance.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/MapPins.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/Trade.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/Opportunities.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/UnitTrees.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/Villages.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/FR_FR/YieldLibrary.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/AutoTips_Help.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/AutoTips_Tips.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/CopaseticUITweaks.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/Core.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/CsebExtendedPlotMouseover.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/CustomNotifications.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/Diplomacy.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/ExtraDiplomacyText.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/FlagPromotions.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/FreeResearchBalance.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/MapPins.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/Trade.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/Opportunities.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/UnitTrees.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/Villages.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Text/ZH_CN/YieldLibrary.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="TunerMods/Map.ltp">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="TunerMods/Selected City.ltp">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="TunerMods/Selected Unit.ltp">
+    <Content Include="TunerMods/DebugFolder/Selected Unit.ltp">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="TunerMods/WorldView.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
+    <Folder Include="1_Core_Roots" />
+    <Folder Include="1_Core_Roots\Start" />
+    <Folder Include="2_ModTools_Trunk\_ClassMethods" />
+    <Folder Include="3_Interface_Branches\_Mods\CityLimits" />
+    <Folder Include="3_Interface_Branches\_Mods\Global Relations" />
+    <Folder Include="3_Interface_Branches\Diplomacy" />
     <Folder Include="BugFixes" />
-    <Folder Include="Interface\Mods\" />
-    <Folder Include="Interface\Overrides\" />
-    <Folder Include="ModTools\Libraries\" />
+    <Folder Include="3_Interface_Branches\_Mods" />
+    <Folder Include="3_Interface_Branches" />
+    <Folder Include="2_ModTools_Trunk" />
     <Folder Include="NoChildGloves" />
-    <Folder Include="Interface" />
-    <Folder Include="Interface\Overrides\Cities\" />
-    <Folder Include="Interface\Mods\CopaseticUITweaks\" />
-    <Folder Include="Interface\Mods\CsebExtendedPlotMouseover\" />
-    <Folder Include="Interface\Mods\ExtraDiplomacyText\" />
-    <Folder Include="Interface\Mods\FlagPromotions\" />
-    <Folder Include="Interface\Mods\HoverInfo\" />
-    <Folder Include="Interface\Overrides\Icons\" />
-    <Folder Include="Interface\Mods\MapPins" />
-    <Folder Include="Interface\Mods\MapPins\" />
-    <Folder Include="Interface\Overrides\Misc\" />
-    <Folder Include="Interface\Overrides\Techs\" />
-    <Folder Include="Interface\Mods\Trade\" />
-    <Folder Include="Interface\Overrides\Units\" />
-    <Folder Include="Interface\Mods\UnitTrees\" />
-    <Folder Include="Interface\Mods\UnitTrees\Utilities\" />
-    <Folder Include="Interface\Overrides\Villages\" />
-    <Folder Include="ModTools" />
-    <Folder Include="ModTools\Libraries\AutoTips\" />
-    <Folder Include="ModTools\Libraries\AlpacaMods\" />
-    <Folder Include="ModTools\Libraries\AttilaMods\" />
-    <Folder Include="ModTools\Libraries\AutoTips\" />
-    <Folder Include="ModTools\Classes" />
-    <Folder Include="ModTools\Libraries\CustomNotifications\" />
-    <Folder Include="ModTools\Libraries\FreeResearchBalance\" />
-    <Folder Include="ModTools\Libraries\SaveUtils\" />
-    <Folder Include="ModTools\Libraries\Opportunities\" />
-    <Folder Include="ModTools\Libraries\YieldLibrary\" />
+    <Folder Include="3_Interface_Branches" />
+    <Folder Include="3_Interface_Branches\Cities" />
+    <Folder Include="3_Interface_Branches\_Mods\CopaseticUITweaks" />
+    <Folder Include="3_Interface_Branches\_Mods\CsebExtendedPlotMouseover" />
+    <Folder Include="3_Interface_Branches\_Mods\ExtraDiplomacyText" />
+    <Folder Include="3_Interface_Branches\_Mods\FlagPromotions" />
+    <Folder Include="3_Interface_Branches\_Mods\HoverInfo" />
+    <Folder Include="3_Interface_Branches\Icons" />
+    <Folder Include="3_Interface_Branches\_Mods\MapPins" />
+    <Folder Include="3_Interface_Branches\Misc" />
+    <Folder Include="3_Interface_Branches\Techs" />
+    <Folder Include="3_Interface_Branches\_Mods\Trade" />
+    <Folder Include="3_Interface_Branches\Units" />
+    <Folder Include="3_Interface_Branches\_Mods\UnitTrees" />
+    <Folder Include="3_Interface_Branches\_Mods\UnitTrees\Utilities" />
+    <Folder Include="3_Interface_Branches\Villages" />
+    <Folder Include="2_ModTools_Trunk" />
+    <Folder Include="2_ModTools_Trunk\AutoTips" />
+    <Folder Include="2_ModTools_Trunk\AlpacaMods" />
+    <Folder Include="2_ModTools_Trunk\AttilaMods" />
+    <Folder Include="2_ModTools_Trunk\AutoTips\" />
+    <Folder Include="2_ModTools_Trunk" />
+    <Folder Include="2_ModTools_Trunk\CustomNotifications" />
+    <Folder Include="2_ModTools_Trunk\FreeResearchBalance" />
+    <Folder Include="2_ModTools_Trunk\SaveUtils" />
+    <Folder Include="2_ModTools_Trunk\Opportunities" />
+    <Folder Include="2_ModTools_Trunk\YieldLibrary" />
     <Folder Include="TunerMods" />
-    <Folder Include="Text" />
-    <Folder Include="Text\DE_DE" />
-    <Folder Include="Text\en_US" />
-    <Folder Include="Text\ES_ES" />
-    <Folder Include="Text\FR_FR" />
-    <Folder Include="Text\IT_IT" />
-    <Folder Include="Text\JA_JP" />
-    <Folder Include="Text\PL_PL" />
-    <Folder Include="Text\RU_RU" />
-    <Folder Include="Text\ZH_CN" />
+    <Folder Include="4_Text_Bark" />
+    <Folder Include="4_Text_Bark\DE_DE" />
+    <Folder Include="4_Text_Bark\en_US" />
+    <Folder Include="4_Text_Bark\ES_ES" />
+    <Folder Include="4_Text_Bark\FR_FR" />
+    <Folder Include="4_Text_Bark\IT_IT" />
+    <Folder Include="4_Text_Bark\JA_JP" />
+    <Folder Include="4_Text_Bark\PL_PL" />
+    <Folder Include="4_Text_Bark\RU_RU" />
+    <Folder Include="4_Text_Bark\ZH_CN" />
+    <Folder Include="TunerMods\DebugFolder" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Created on 9-10-2010 -->
 <GameData>
+	<!-- Created on 9-10-2010
 	<BuildingClasses>
 		<Row>
 			<Type>BUILDINGCLASS_TRADE_CONNECTION</Type>
@@ -46,7 +46,6 @@
 	</Building_ClassesNeededInCity>
 
 	<Building_Flavors>
-		<!-- Free bugfix, so build this right away! -->
 		<Row>
 			<BuildingType>BUILDING_TRADE_CONNECTION</BuildingType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
@@ -183,4 +182,5 @@
 			<Flavor>100</Flavor>
 		</Row>
 	</Building_Flavors>
+-->
 </GameData>

@@ -110,7 +110,15 @@ function( wParam, lParam )
 		return true;
 	elseif ( wParam == Keys.VK_ESCAPE and InStrategicView() ) then
 		ToggleStrategicView();
-        return true;
+		return true;
+	elseif ( wParam == Keys.X and UIManager:GetControl() ) then
+		--print("Control-X detected, activating the pin-board");
+		LuaEvents.MapPins_Show()
+		return true;
+	elseif ( wParam == Keys.X and UIManager:GetShift() ) then
+		--print("Shift-X detected, toggling pin visibility");
+		LuaEvents.MapPins_Toggle()
+		return true;
 	end
 end
 
@@ -187,6 +195,40 @@ g_UnitPlopper =
 	end
 }
 
+g_PlotPlopper =
+{
+	PlotType = -1,
+	
+	Plop =
+	function(plot)
+		if (g_PlotPlopper.PlotType ~= -1) then
+			plot:SetPlotType(g_PlotPlopper.PlotType, true, true);
+		end
+	end,
+	
+	Deplop =
+	function(plot)
+		plot:SetPlotType(PlotTypes.PLOT_LAND, true, true);
+	end
+}
+
+g_TerrainPlopper =
+{
+	TerrainType = -1,
+	
+	Plop =
+	function(plot)
+		if (g_TerrainPlopper.TerrainType ~= -1) then
+			plot:SetTerrainType(g_TerrainPlopper.TerrainType, true, true);
+		end
+	end,
+	
+	Deplop =
+	function(plot)
+		plot:SetTerrainType(TerrainTypes.TERRAIN_OCEAN, true, true);
+	end
+}
+
 g_FeaturePlopper =
 {
 	FeatureType = -1,
@@ -194,13 +236,13 @@ g_FeaturePlopper =
 	Plop =
 	function(plot)
 		if (g_FeaturePlopper.FeatureType ~= -1) then
-			plot:SetFeatureType(g_FeaturePlopper.FeatureType, -1);
+			plot:SetFeatureType(g_FeaturePlopper.FeatureType, -1, true);
 		end
 	end,
 	
 	Deplop =
 	function(plot)
-		plot:SetFeatureType(-1);
+		plot:SetFeatureType(FeatureTypes.NO_FEATURE, -1, true);
 	end
 }
 
@@ -681,19 +723,6 @@ function MovementRButtonUp( wParam, lParam )
 			end
 		end
 
-		-- Garrison in a city
-		local city = plot:GetPlotCity();
-		if (city and city:GetOwner() == pHeadSelectedUnit:GetOwner() and pHeadSelectedUnit:IsCanAttack()) then
-			local cityOwner = Players[city:GetOwner()];			
-			if (not cityOwner:IsMinorCiv() and city:GetGarrisonedUnit() == nil and pHeadSelectedUnit:GetDomainType() == DomainTypes.DOMAIN_LAND) then
-				--print("Garrison attempt");
-				Game.SelectionListGameNetMessage(GameMessageTypes.GAMEMESSAGE_PUSH_MISSION, MissionTypes.MISSION_GARRISON, plotX, plotY, 0, false, bShift);
-				UI.SetInterfaceMode(InterfaceModeTypes.INTERFACEMODE_SELECTION);
-				Events.ClearHexHighlights();
-				return true;				
-			end
-		end
-
 		-- No visible enemy to bombard, just move
 		--print("bBombardEnemy check");
 		if bBombardEnemy == false then
@@ -725,14 +754,11 @@ function EjectHandler( wParam, lParam )
 	local returnValue = false;
 		
 	if (unit ~= nil) then
-		local unitPlot = unit:GetPlot();
-		if (unitPlot ~= nil) then
-			local city = unitPlot:GetPlotCity();
-			if (city ~= nil) then
-				if UI.CanPlaceUnitAt(unit, unitPlot, plot) then
-					--Network.SendCityEjectGarrisonChoice(city:GetID(), plotX, plotY);
-					returnValue =  true;					
-				end
+		local city = unitPlot:GetPlotCity();
+		if (city ~= nil) then
+			if UI.CanPlaceUnitAt(unit, plot) then
+				--Network.SendCityEjectGarrisonChoice(city:GetID(), plotX, plotY);
+				returnValue =  true;					
 			end
 		end
 	end
@@ -743,7 +769,6 @@ function EjectHandler( wParam, lParam )
 end
 InterfaceModeMessageHandler[InterfaceModeTypes.INTERFACEMODE_PLACE_UNIT][MouseEvents.LButtonUp] = EjectHandler;
 InterfaceModeMessageHandler[InterfaceModeTypes.INTERFACEMODE_PLACE_UNIT][MouseEvents.RButtonUp] = EjectHandler;
-
 
 DefaultMessageHandler[MouseEvents.RButtonUp] =
 function( wParam, lParam )
@@ -837,3 +862,16 @@ function OnActivePlayerChanged(iActivePlayer, iPrevActivePlayer)
 	end
 end
 Events.GameplaySetActivePlayer.Add(OnActivePlayerChanged);
+
+-------------------------------------------------
+function OnMultiplayerGameAbandoned(eReason)
+	local popupInfo = 
+	{
+		Type  = ButtonPopupTypes.BUTTONPOPUP_KICKED,
+		Data1 = eReason
+	};
+
+	Events.SerialEventGameMessagePopup(popupInfo);
+    UI.SetInterfaceMode(InterfaceModeTypes.INTERFACEMODE_SELECTION);
+end
+Events.MultiplayerGameAbandoned.Add( OnMultiplayerGameAbandoned );

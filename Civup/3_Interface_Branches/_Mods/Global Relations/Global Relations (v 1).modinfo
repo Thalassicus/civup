@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="55b74e57-9a4b-4bb1-a514-a00f0646c359" version="1">
+  <Properties>
+    <Name>Global Relations</Name>
+    <Stability>Beta</Stability>
+    <Teaser>A light version of the InfoAddict mod by robk that only presents the relations wheel.</Teaser>
+    <Description>If you feel that robk's masterpiece gives too much information, this is for you. Global relations is entirely based on robk's Infoaddict v.19, but only shows the information that is available to the player in the base game:
+
++ Only the relations wheel is shown: no data, no graphs, the same political Fog of War as in the base game
++ Within the relations wheel, only the elements that can be seen or deducted by the player are shown: all political stances and treaties except for Defensive Pact, economic treaties that affect the human, plus all Research Agreements (anounced in the base game as a message icon).
+
+I hope you enjoy it as much as I do.
+
+All credits to robk. I am just using scissors. ;)</Description>
+    <Authors>Aristos</Authors>
+    <SpecialThanks>Robk</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="AB1F3CE3A32D9EFED565BD7ED58BD82E" import="1">Lua/InfoAddictCivRelations.lua</File>
+    <File md5="0300E592FFAB1741ED83F76500B0A992" import="1">Lua/InfoAddictHooks.lua</File>
+    <File md5="8A734028D5F0D08CF4C572C745C5B63E" import="1">Lua/InfoAddictInit.lua</File>
+    <File md5="68C8815B251A200546CAAE5FF0169C6C" import="1">Lua/InfoAddictLib.lua</File>
+    <File md5="5632D6593B25DD95365CA8A987B52686" import="1">Lua/InfoAddictScreen.lua</File>
+    <File md5="31B8B7639C14DB08B852B7F87A991345" import="1">XML/InfoAddictCivRelations.xml</File>
+    <File md5="D8DB592AF64F00C025330E60704D0402" import="1">XML/InfoAddictHooks.xml</File>
+    <File md5="0CCF330964608ED08862379ACB8CF967" import="1">XML/InfoAddictScreen.xml</File>
+    <File md5="CD0E73BBD6042C6F3EC3A8433AE3B8A3" import="1">XML/InfoAddictText_DE.xml</File>
+    <File md5="DFA010B5763489DFE2585C67BE3EB5EB" import="1">XML/InfoAddictText_EN.xml</File>
+    <File md5="3679A065BD0E48210371E22D8FF63FEA" import="1">XML/InfoAddictText_ES.xml</File>
+    <File md5="2A60918CA71C810A573DDA9BD31AB7A1" import="1">XML/InfoAddictText_FR.xml</File>
+    <File md5="FAFB1702E128C6B522517C46A7B73DE0" import="1">XML/InfoAddictText_RU.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/InfoAddictText_EN.xml</UpdateDatabase>
+      <UpdateDatabase>XML/InfoAddictText_DE.xml</UpdateDatabase>
+      <UpdateDatabase>XML/InfoAddictText_ES.xml</UpdateDatabase>
+      <UpdateDatabase>XML/InfoAddictText_FR.xml</UpdateDatabase>
+      <UpdateDatabase>XML/InfoAddictText_RU.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/InfoAddictInit.lua">
+      <Name>init</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
