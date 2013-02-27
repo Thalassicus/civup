@@ -115,6 +115,7 @@ function GiveCSNewYields(player)
 					table.insert(availableIDs, unitInfo.ID)
 				end
 			end
+
 			local newUnitID		= availableIDs[1 + Map.Rand(#availableIDs, "InitUnitFromList")]
 			local capitalPlot	= capitalCity:Plot()
 			local newUnit		= player:InitUnitType(newUnitID, capitalPlot)
@@ -279,12 +280,12 @@ function BuildingCreated(player, city, buildingID)
 	
 	query = string.format("ID = '%s' AND InstantHappiness != 0", buildingID)
 	for info in GameInfo.Buildings(query) do
-		player:ChangeYieldStored(YieldTypes.YIELD_HAPPINESS, info.InstantHappiness)
+		player:ChangeYieldStored(YieldTypes.YIELD_HAPPINESS_NATIONAL, info.InstantHappiness)
 	end
 	
 	query = string.format("BuildingType = '%s'", buildingInfo.Type)
-	for info in GameInfo.Building_InstantYield(query) do
-		player:ChangeYieldStored(GameInfo.Yields[info.YieldType].ID, info.Yield)
+	for info in GameInfo.Building_YieldInstant(query) do
+		City_ChangeYieldStored(city, GameInfo.Yields[info.YieldType].ID, info.Yield)
 	end
 
 	local borderExpand = buildingInfo.InstantBorderRadius
@@ -337,7 +338,7 @@ function BuildingCreated(player, city, buildingID)
 	end
 	
 	query = string.format("BuildingType = '%s'", buildingInfo.Type)
-	for info in GameInfo.Building_PlotsYieldChanges(query) do
+	for info in GameInfo.Building_PlotYieldChanges(query) do
 		local nearbyPlots = Plot_GetPlotsInCircle(plot, 0, 3)
 		for _,adjPlot in pairs(nearbyPlots) do
 			local adjPlotID = Plot_GetID(adjPlot)
@@ -783,7 +784,7 @@ function DoPolicyEffects(player, policyID)
 	DoPolicyFreeBuildingFlavors(player, policyID)
 	DoPolicyInstantYield(player, policyID)
 end
-LuaEvents.PolicyAdopted.Add( DoPolicyEffects )
+LuaEvents.NewPolicy.Add( DoPolicyEffects )
 
 function CheckPerTurnPolicyEffects(player)
 	DoPolicyFreeBuildingClasses(player)
@@ -986,13 +987,13 @@ function DoPolicyInstantYield(player, policyID)
 	end
 
 	for info in GameInfo.Policy_InstantYieldTurns{PolicyType = policyType} do
-		if Game.Contains(globalYieldTypes, info.YieldType) then
+		if Game.Contains(nationalYieldTypes, info.YieldType) then
 			local baseYieldRate = math.max(0, player:GetBaseYieldRate(YieldTypes[info.YieldType]))
 			player:ChangeYieldStored(YieldTypes[info.YieldType], info.Turns * baseYieldRate)
 			if info.YieldType == "YIELD_GOLD" and Game.GetActivePlayer() == player:GetID() then
 				Events.AudioPlay2DSound("AS2D_INTERFACE_CITY_SCREEN_PURCHASE")
 			end
-		elseif Game.Contains(localYieldTypes, info.YieldType) then
+		elseif Game.Contains(cityYieldTypes, info.YieldType) then
 			local yieldID = YieldTypes[info.YieldType]
 			for city in player:Cities() do
 				local baseMod = City_GetBaseYieldRateModifier(city, yieldID)
@@ -1003,17 +1004,18 @@ function DoPolicyInstantYield(player, policyID)
 	end
 end
 
-local globalYieldTypes = {
+local nationalYieldTypes = {
 	"YIELD_GOLD",
 	"YIELD_SCIENCE",
 	"YIELD_FAITH",
-	"YIELD_HAPPINESS"
+	"YIELD_HAPPINESS_NATIONAL"
 }
 
-local localYieldTypes = {
+local cityYieldTypes = {
 	"YIELD_FOOD",
 	"YIELD_PRODUCTION",
-	"YIELD_CULTURE"
+	"YIELD_CULTURE",
+	"YIELD_HAPPINESS_CITY"
 }
 
 if not MapModData.Civup.FreeFlavorBuilding then
@@ -1327,9 +1329,8 @@ LuaEvents.ActivePlayerTurnStart_Unit.Add(CheckForAILevelup)
 ---------------------------------------------------------------------
 
 function FixTechNotificationBug(hexPos, playerID, cityID, cultureType, eraType, continent, populationSize, size, fowState)
-	local city = Map.GetPlot(ToGridFromHex(hexPos.x, hexPos.y)):GetPlotCity()
 	local player = Players[playerID]
-	if player:IsHuman() and city == player:GetCapitalCity() then
+	if player:IsHuman() and player:GetNumCities() <= 1 then
 		log:Debug("Show choose tech notification")
 		player:ChooseTech(0, Locale.ConvertTextKey("TXT_KEY_MISC_WHAT_TO_RESEARCH_NEXT"), GameInfo.Technologies.TECH_AGRICULTURE.ID)
 	end
@@ -1375,9 +1376,11 @@ LuaEvents.ActivePlayerTurnStart_Turn.Add(
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
+--[[
 function ChooseTech(hexPos, playerID, cityID, cultureType, eraType, continent, populationSize, size, fowState)
 	if playerID == Game.GetActivePlayer() and Players[playerID]:GetNumCities() <= 1 then
 		Events.OpenInfoCorner(InfoCornerID.Tech)
 	end
 end
 LuaEvents.NewCity.Add(ChooseTech)
+--]]

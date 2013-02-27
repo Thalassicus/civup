@@ -144,10 +144,20 @@
 				 />
 		</Update>
 		<Row>
-			<Type>YIELD_HAPPINESS</Type>
-			<Description>TXT_KEY_TOPIC_HAPPINESS</Description>
+			<Type>YIELD_HAPPINESS_CITY</Type>
+			<Description>TXT_KEY_HAPPINESS_CITY</Description>
 			<IconString>[ICON_HAPPINESS_1]</IconString>
 			<IsTileYield>1</IsTileYield>
+			<TileTexture>YieldAtlas_Civup.dds</TileTexture>
+			<MinCity>0</MinCity>
+			<AIWeightPercent>500</AIWeightPercent>
+			<Color>COLOR_YIELD_GOLD</Color>
+		</Row>
+		<Row>
+			<Type>YIELD_HAPPINESS_NATIONAL</Type>
+			<Description>TXT_KEY_HAPPINESS_NATIONAL</Description>
+			<IconString>[ICON_HAPPINESS_1]</IconString>
+			<IsTileYield>0</IsTileYield>
 			<TileTexture>YieldAtlas_Civup.dds</TileTexture>
 			<MinCity>0</MinCity>
 			<AIWeightPercent>500</AIWeightPercent>
@@ -217,7 +227,7 @@
 		<Row><YieldType>YIELD_SCIENCE</YieldType>          <FlavorType>FLAVOR_SCIENCE</FlavorType>           <Flavor>8</Flavor></Row>
 		<Row><YieldType>YIELD_CULTURE</YieldType>          <FlavorType>FLAVOR_CULTURE</FlavorType>           <Flavor>8</Flavor></Row>
 		<Row><YieldType>YIELD_FAITH</YieldType>            <FlavorType>FLAVOR_RELIGION</FlavorType>          <Flavor>8</Flavor></Row>
-		<Row><YieldType>YIELD_HAPPINESS</YieldType>        <FlavorType>FLAVOR_HAPPINESS</FlavorType>         <Flavor>8</Flavor></Row>
+		<Row><YieldType>YIELD_HAPPINESS_CITY</YieldType>        <FlavorType>FLAVOR_HAPPINESS</FlavorType>         <Flavor>8</Flavor></Row>
 		<Row><YieldType>YIELD_GREAT_PEOPLE</YieldType>     <FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>      <Flavor>8</Flavor></Row>
 		<Row><YieldType>YIELD_EXPERIENCE</YieldType>       <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType> <Flavor>8</Flavor></Row>
 		<Row><YieldType>YIELD_CS_MILITARY</YieldType>      <FlavorType>FLAVOR_DIPLOMACY</FlavorType>         <Flavor>8</Flavor></Row>

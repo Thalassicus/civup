@@ -9,11 +9,11 @@ TimeFormats[12] = "%I:%M";
 TimeFormats[24] = "%H:%M";
 
 
-ModID		= "ddbb4126-9f1a-4f02-be52-28e1578e9389";
+ModID		= "01127f62-3896-4897-b169-ecab445786cd";
 ModVersion	= Modding.GetActivatedModVersion(ModID) or 2;
 ModUserData = Modding.OpenUserData(ModID, ModVersion);
 
-local CurrentTimeFormatIndex = ModUserData.GetValue("TimeFormat") or 12;			
+local CurrentTimeFormatIndex = ModUserData.GetValue("TimeFormat") or 12;
 
 ContextPtr:SetUpdate(function ()
 	local computersystime = os.date(TimeFormats[CurrentTimeFormatIndex]);

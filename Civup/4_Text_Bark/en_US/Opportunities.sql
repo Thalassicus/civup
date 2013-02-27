@@ -1,4 +1,4 @@
--- EN_US/Opportunities.sql
+--· EN_US/Opportunities.sql
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_USER_EVENT_OPTION_SELECT', 'Select', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_USER_EVENT_OPTION_OK', 'OK', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_DISTANT_PLAYER', 'an unmet player', '', '');

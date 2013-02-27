@@ -302,7 +302,7 @@ end</SetFunction>
 		pCity = UI:GetHeadSelectedCity();
 	end
 	if (pCity ~= nil) then
-   return GameDefines.MAX_CITY_HIT_POINTS - pCity:GetDamage();
+   return pCity:GetMaxHitPoints() - pCity:GetDamage();
 	else
 		return "-";
 	end
@@ -317,7 +317,7 @@ end</GetFunction>
 		pCity = UI:GetHeadSelectedCity();
 	end
 	if (pCity ~= nil) then
-   pCity:SetDamage(GameDefines.MAX_CITY_HIT_POINTS - value);
+   pCity:SetDamage(pCity:GetMaxHitPoints() - value);
 	end
 end</SetFunction>
       <Location>

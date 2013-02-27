@@ -1,5 +1,4 @@
 if GameInfo.Civup.SHOW_CITY_LIMITS.Value ~= 1 then
-	print("GameInfo.Civup.SHOW_CITY_LIMITS.Value = "..GameInfo.Civup.SHOW_CITY_LIMITS.Value)
 	return
 end
 

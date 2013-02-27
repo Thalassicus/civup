@@ -21,9 +21,13 @@ function GetHelpTextForTech( iTechID, bShowProgress )
 	end
 	
 	-- Power
-	if Civup.SHOW_POWER_FOR_TECHS == 1 then
+	if Civup.SHOW_GOOD_FOR_TECHS == 1 then
 		helpText = helpText .. "[NEWLINE]----------------";
-		helpText = helpText .. Game.GetFlavors("Technology_Flavors", "TechType", techInfo.Type, 8)
+		if Civup.SHOW_GOOD_FOR_AI_NUMBERS == 1 then
+			helpText = helpText .. Game.GetFlavors("Technology_Flavors", "TechType", techInfo.Type, 8)
+		else
+			helpText = helpText .. Game.GetFlavors("Technology_Flavors_Human", "TechType", techInfo.Type, 8)
+		end
 	end
 	helpText = helpText .. "[NEWLINE]-------------------------";
 	helpText = helpText .. "[NEWLINE]";

@@ -1,4 +1,4 @@
--- EN_US/CsebExtendedPlotMouseover.sql
+--· EN_US/CsebExtendedPlotMouseover.sql
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CSB_PLOTROLL_IMPROVEMENTS_REQUIRED_FOR_RESOURCE', '(with {1})', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CSB_PLOTROLL_IMPROVEMENT_UNDER_CONSTRUCTION', '[COLOR_YELLOW]{1} ([ENDCOLOR][COLOR_POSITIVE_TEXT]{2}[ENDCOLOR][COLOR_YELLOW])[ENDCOLOR]', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CSB_PLOTROLL_LABEL_DEFENSE', 'Defense', '', '');

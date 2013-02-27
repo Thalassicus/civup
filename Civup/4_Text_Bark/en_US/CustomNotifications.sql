@@ -1,4 +1,4 @@
--- EN_US/CustomNotifications.sql
+--· EN_US/CustomNotifications.sql
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_NOTIFICATION_POPUP_PLOT', 'Left-click on this message to open popup. Middle-click to center on the plot. Right-click to dismiss.', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_NOTIFICATION_POPUP_MISC', 'Left-click on this message to open popup. Right-click to dismiss.', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_NOTIFICATION_CENTER_CITY', 'Left-click on this message to center the screen on the city. Middle-click to open its city view. Right-click to dismiss.', '', '');

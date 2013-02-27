@@ -145,7 +145,14 @@ function ProductionSelected( ePurchaseEnum, iData)
 	local player = city:GetOwner();
     Events.SpecificCityInfoDirty( player, cityID, CityUpdateTypes.CITY_UPDATE_TYPE_BANNER);
     Events.SpecificCityInfoDirty( player, cityID, CityUpdateTypes.CITY_UPDATE_TYPE_PRODUCTION);
+	--LuaEvents.DirtyYieldCachePlayer(player)
 	LuaEvents.DirtyYieldCacheCity(city)
+	--[[
+	for yieldType, yieldID in pairs(YieldTypes) do
+		City_GetYieldRate(city, yieldID)
+	end
+	--]]
+
  
 	if not g_append and g_IsProductionMode then 
 		OnClose();
@@ -668,7 +675,7 @@ function UpdateWindow( city )
 			Controls.ProductionPortrait:SetHide( false );
 			
 			-- Info for this thing
-			local helpText = GetHelpTextForBuilding(buildingProduction, false, false, false, city)
+			local helpText = GetBuildingTip{buildingID=buildingProduction, buildingCity=city}
 			if helpText then
 				strToolTip = Locale.ConvertTextKey(helpText) .. "[NEWLINE][NEWLINE]" .. strToolTip;
 			else
@@ -1090,9 +1097,7 @@ function AddProductionButton( itemID, description, orderType, turnsLeft, column,
 			
 			-- Tooltip
 			if (bBuilding) then
-				local bExcludeName = false;
-				local bExcludeHeader = false;
-				strToolTip = GetHelpTextForBuilding(itemID, bExcludeName, bExcludeHeader, false, city);
+				strToolTip = GetBuildingTip{buildingID=itemID, buildingCity=city};
 			else
 				local bIncludeRequirementsInfo = false;
 				strToolTip = GetHelpTextForProject(itemID, bIncludeRequirementsInfo);

@@ -3,14 +3,14 @@
 -- Based on work by: Hipfot, Skodkim, Spatzimaus, and VeyDer
 --------------------------------------------------------------
 
-local startClockTime = os.clock()
-
 include("InstanceManager");
 include("IconSupport");
 include("FLuaVector");
 include("GameplayUtilities");
 include("CiVUP_Core.lua");
 include("Opp_Events.lua");
+
+local startClockTime = os.clock()
 
 local log = Events.LuaLogger:New()
 log:SetLevel("INFO")
@@ -139,7 +139,7 @@ function DoTriggerPopup(player, trigID, targetID)
 						if tarHex then
 							Events.GameplayFX(tarHex.x, tarHex.y, -1)
 						end
-						Events.GameplayAlertMessage(message)						
+						Events.GameplayAlertMessage(message)
 						Controls.Background:SetHide(true)
 						player:ChangeYieldStored(YieldTypes.YIELD_GOLD, -1 * outCost)
 						assert(loadstring("return "..outInfo.Action))()(playerID, trigID, targetID, outID)
@@ -196,7 +196,7 @@ function DoTriggerPopup(player, trigID, targetID)
 		--log:Trace("AI triggering outcome : triggerID=%s outID=%s action=%s", trigID, outID, GameInfo.Outcomes[outID].Action)
 		--log:Debug(message)
 		
-		log:Info("%15s %20s %3s/%-4s spent for %s", "AIPurchase", player:GetName(), outCost, player:GetYieldStored(YieldTypes.YIELD_GOLD), outInfo.Type)
+		log:Info("%-15s %20s %3s/%-4s PAID for opportunity          %s", "AIPurchase", player:GetName(), outCost, player:GetYieldStored(YieldTypes.YIELD_GOLD), outInfo.Type)
 		player:ChangeYieldStored(YieldTypes.YIELD_GOLD, -1 * outCost)
 		assert(loadstring("return " .. outInfo.Action))(playerID, trigID, outID, targetID)
 		Events.GameplayAlertMessage(message)

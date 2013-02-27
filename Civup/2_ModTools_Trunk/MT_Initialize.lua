@@ -18,6 +18,7 @@ end
 	--print("MapModData.Civup.MT_Initialized")
 
 	LuaEvents.MT_Initialize()
+	Game.CivupLoadGame()
 	
 	Events.ActivePlayerTurnStart			.Add(OnTurnStart)
 	Events.ActivePlayerTurnEnd				.Add(OnTurnEnd)

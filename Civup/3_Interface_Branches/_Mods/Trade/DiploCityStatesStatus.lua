@@ -307,7 +307,7 @@ function setGoldGiftIcons(controlTable, pCs, pPlayer)
   local bWar = pTeam:IsAtWar(pCs:GetTeam())
 
   -- Small Gold
-  if (Civup.USING_CSD ~= 1 and not bWar and iPlayerGold >= iGoldGiftSmall) then
+  if (Civup.DISABLE_GOLD_GIFTS ~= 1 and not bWar and iPlayerGold >= iGoldGiftSmall) then
     controlTable.CsGiftSmall:SetHide(false)
     controlTable.CsGiftSmall:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT", iGoldGiftSmall, pCs:GetFriendshipFromGoldGift(iPlayer, iGoldGiftSmall)))
 
@@ -319,7 +319,7 @@ function setGoldGiftIcons(controlTable, pCs, pPlayer)
   end
 
   -- Medium Gold
-  if (Civup.USING_CSD ~= 1 and not bWar and iPlayerGold >= iGoldGiftMedium) then
+  if (Civup.DISABLE_GOLD_GIFTS ~= 1 and not bWar and iPlayerGold >= iGoldGiftMedium) then
     controlTable.CsGiftMedium:SetHide(false)
     controlTable.CsGiftMedium:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT", iGoldGiftMedium, pCs:GetFriendshipFromGoldGift(iPlayer, iGoldGiftMedium)))
 
@@ -331,7 +331,7 @@ function setGoldGiftIcons(controlTable, pCs, pPlayer)
   end
 
   -- Large Gold
-  if (Civup.USING_CSD ~= 1 and not bWar and iPlayerGold >= iGoldGiftLarge) then
+  if (Civup.DISABLE_GOLD_GIFTS ~= 1 and not bWar and iPlayerGold >= iGoldGiftLarge) then
     controlTable.CsGiftLarge:SetHide(false)
     controlTable.CsGiftLarge:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_DO_CS_STATUS_GIFT_INFLUENCE_TT", iGoldGiftLarge, pCs:GetFriendshipFromGoldGift(iPlayer, iGoldGiftLarge)))
 

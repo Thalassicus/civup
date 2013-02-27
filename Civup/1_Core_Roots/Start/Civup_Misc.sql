@@ -113,14 +113,14 @@ UPDATE Buildings SET GlobalCultureRateModifier = 0;
 
 /*
 INSERT INTO Belief_BuildingClassYieldChanges	(BeliefType, BuildingClassType, YieldType, YieldChange)
-SELECT DISTINCT									BeliefType, BuildingClassType, 'YIELD_HAPPINESS', Happiness
+SELECT DISTINCT									BeliefType, BuildingClassType, 'YIELD_HAPPINESS_CITY', Happiness
 FROM Belief_BuildingClassHappiness;
 DELETE FROM Belief_BuildingClassHappiness;
 */
 
 /*
 INSERT INTO Building_YieldChanges			(BuildingType, YieldType, Yield)
-SELECT DISTINCT								Type, 'YIELD_HAPPINESS', Happiness
+SELECT DISTINCT								Type, 'YIELD_HAPPINESS_CITY', Happiness
 FROM Buildings								WHERE Happiness <> 0;
 UPDATE Buildings SET Happiness = 0;
 */
@@ -135,6 +135,7 @@ INSERT INTO Flavors (Type) VALUES ('FLAVOR_SIEGE');
 INSERT INTO Flavors (Type) VALUES ('FLAVOR_ANTI_MOBILE');
 INSERT INTO Flavors (Type) VALUES ('FLAVOR_NAVAL_BOMBARDMENT');
 INSERT INTO Flavors (Type) VALUES ('FLAVOR_HEALING');
+INSERT INTO Flavors (Type) VALUES ('FLAVOR_PILLAGE');
 INSERT INTO Flavors (Type) VALUES ('FLAVOR_VANGUARD');
 
 INSERT INTO Leader_Flavors (LeaderType, FlavorType, Flavor)
@@ -158,6 +159,28 @@ FROM Leader_Flavors offense, Flavors flavor
 WHERE offense.FlavorType = 'FLAVOR_NAVAL' AND flavor.Type IN (
 	'FLAVOR_NAVAL_BOMBARDMENT'		
 );
+
+
+--
+-- Misc
+--
+
+UPDATE HurryInfos SET YieldType = 'YIELD_'||SUBSTR(Type, 7);
+
+UPDATE Defines SET Value=1 WHERE Name='QUEST_DISABLED_INVEST' AND EXISTS 
+(SELECT Value FROM Civup WHERE Type='DISABLE_GOLD_GIFTS' AND Value=1);
+
+UPDATE Civilizations SET DawnOfManAudio = "" WHERE EXISTS 
+(SELECT Value FROM Civup WHERE Type='PLAY_SPEECH_START' AND Value=0);
+
+UPDATE Buildings SET WonderSplashAudio = "" WHERE EXISTS 
+(SELECT Value FROM Civup WHERE Type='PLAY_SPEECH_WONDERS' AND Value=0);
+
+UPDATE Technologies SET AudioIntroHeader = "" WHERE EXISTS 
+(SELECT Value FROM Civup WHERE Type='PLAY_SPEECH_TECHS' AND Value=0);
+
+UPDATE Technologies SET AudioIntro = "" WHERE EXISTS 
+(SELECT Value FROM Civup WHERE Type='PLAY_SPEECH_TECHS' AND Value=0);
 
 
 --

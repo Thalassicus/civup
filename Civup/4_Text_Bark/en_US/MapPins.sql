@@ -1,4 +1,4 @@
--- EN_US/MapPins.sql
+--· EN_US/MapPins.sql
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_MAPPINS_CONTEXT_EDIT', 'Edit', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_MAPPINS_CONTEXT_MOVE', 'Move', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_MAPPINS_CONTEXT_DELETE', 'Delete', '', '');

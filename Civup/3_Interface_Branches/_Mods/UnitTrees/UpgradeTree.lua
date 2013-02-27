@@ -188,6 +188,7 @@ function PlaceEras(eras)
 end
 
 function PlaceEra(iEra, iColumns)
+  if not era then return end	
   local era = GameInfo.Eras[iEra]
   dprint("Era: %s for %i columns", era.Type, iColumns)
 

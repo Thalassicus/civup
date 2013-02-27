@@ -246,11 +246,37 @@
 			<Help>TXT_KEY_PROMOTION_EMBARKED_DEFENSE_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
 			<EmbarkDefenseModifier>100</EmbarkDefenseModifier>
 			<PortraitIndex>59</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_EMBARKED_DEFENSE</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_NATIONAL_PROTECTION</Type>
+			<Description>TXT_KEY_PROMOTION_NATIONAL_PROTECTION</Description>
+			<Help>TXT_KEY_PROMOTION_NATIONALISM_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<FriendlyLandsAttackModifier>15</FriendlyLandsAttackModifier>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_NATIONAL_PROTECTION</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_MOUNTAINEER</Type>
+			<Description>TXT_KEY_PROMOTION_MOUNTAINEER</Description>
+			<Help>TXT_KEY_PROMOTION_MOUNTAINEER_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CanMoveAllTerrain>true</CanMoveAllTerrain>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MOUNTAINEER</PediaEntry>
 		</Row>
 	</UnitPromotions>
 	<Unit_FreePromotions>

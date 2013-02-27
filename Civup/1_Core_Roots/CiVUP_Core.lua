@@ -83,14 +83,44 @@ function LuaEvents.PrintDebug()
 		text = string.format("%s%14s %10.3f\n", text, "Total", MapModData.Civup.EndTurnTimes.Total / turnTime)
 	end
 
+	text = string.format("%s\n\n========= Player Yield Rates =========\n\n", text)
+	local header = string.format(
+		"%5s %5s %5s %5s %5s %-20s %-1s\n",
+		"Gold",
+		"Cul",
+		"Sci",
+		"Faith",
+		"Happy",
+		"Player",
+		"Handicap"
+	)
+	text = text .. header
+	for playerID = 0, GameDefines.MAX_CIV_PLAYERS-1, 1 do
+		local player = Players[playerID];
+		if player:IsEverAlive() and player:GetNumCities() > 0 then
+			text = string.format(
+				"%s%5s %5s %5s %5s %5s %-20s %-1s\n",
+				text,
+				Game.Round(player:GetYieldRate(YieldTypes.YIELD_GOLD)),
+				Game.Round(player:GetYieldRate(YieldTypes.YIELD_CULTURE)),
+				Game.Round(player:GetYieldRate(YieldTypes.YIELD_SCIENCE)),
+				Game.Round(player:GetYieldRate(YieldTypes.YIELD_FAITH)),
+				Game.Round(player:GetYieldRate(YieldTypes.YIELD_HAPPINESS_NATIONAL)),
+				player:GetName(),
+				GameInfo.HandicapInfos[player:GetHandicapType()].Type
+			)
+		end
+	end
+
 	text = string.format("%s\n\n========== City Yield Rates ==========\n\n", text)
 	local header = string.format(
-		"%5s %5s %5s %5s %5s %5s %5s %-20s %-1s\n",
+		"%5s %5s %5s %5s %5s %5s %5s %5s %-20s %-1s\n",
 		"Food",
-		"Prod",
 		"Gold",
-		"Sci",
+		"Prod",
 		"Cul",
+		"Sci",
+		"Faith",
 		"AI",
 		"Pop",
 		"Player",
@@ -104,6 +134,7 @@ function LuaEvents.PrintDebug()
 			local totalYield = {}
 			local totalAIBonus = 0
 			local totalCount = 0
+			
 			for city in player:Cities() do
 				totalCount = totalCount + 1
 				for yieldInfo in GameInfo.Yields() do
@@ -112,13 +143,14 @@ function LuaEvents.PrintDebug()
 				totalYield[YieldTypes.YIELD_POPULATION] = (totalYield[YieldTypes.YIELD_POPULATION] or 0) + city:GetPopulation()
 				totalAIBonus = totalAIBonus + City_GetNumBuilding(city, GameInfo.Buildings.BUILDING_AI_PRODUCTION.ID)
 				cityText = string.format(
-					"%s%5s %5s %5s %5s %5s %5s %5s %-20s %-1s\n",
+					"%s%5s %5s %5s %5s %5s %5s %5s %5s %-20s %-1s\n",
 					cityText,
 					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_FOOD)),
-					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_PRODUCTION)),
 					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_GOLD)),
-					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_SCIENCE)),
+					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_PRODUCTION)),
 					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_CULTURE)),
+					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_SCIENCE)),
+					Game.Round(City_GetYieldRate(city, YieldTypes.YIELD_FAITH)),
 					City_GetNumBuilding(city, GameInfo.Buildings.BUILDING_AI_PRODUCTION.ID),
 					city:GetPopulation(),
 					player:GetName(),
@@ -128,13 +160,14 @@ function LuaEvents.PrintDebug()
 			
 			if totalCount ~= 0 then
 				text = string.format(
-					"%s%5s %5s %5s %5s %5s %5s %5s %-20s %-1s\n",
+					"%s%5s %5s %5s %5s %5s %5s %5s %5s %-20s %-1s\n",
 					text,
 					Game.Round(totalYield[YieldTypes.YIELD_FOOD] / totalCount),
-					Game.Round(totalYield[YieldTypes.YIELD_PRODUCTION] / totalCount),
 					Game.Round(totalYield[YieldTypes.YIELD_GOLD] / totalCount),
-					Game.Round(totalYield[YieldTypes.YIELD_SCIENCE] / totalCount),
+					Game.Round(totalYield[YieldTypes.YIELD_PRODUCTION] / totalCount),
 					Game.Round(totalYield[YieldTypes.YIELD_CULTURE] / totalCount),
+					Game.Round(totalYield[YieldTypes.YIELD_SCIENCE] / totalCount),
+					Game.Round(totalYield[YieldTypes.YIELD_FAITH] / totalCount),
 					Game.Round(totalAIBonus / totalCount),
 					Game.Round(totalYield[YieldTypes.YIELD_POPULATION] / totalCount),
 					player:GetName(),

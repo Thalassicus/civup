@@ -456,7 +456,7 @@ function OnDisplay()
 		end
 		--]]
 		
-		Controls.GiveButton:SetHide(Civup.USING_CSD == 1);
+		Controls.GiveButton:SetHide(false);
 		Controls.TakeButton:SetHide(false);
 		Controls.PeaceButton:SetHide(true);
 		Controls.WarButton:SetHide(false);
@@ -806,47 +806,53 @@ function PopulateGiftChoices()
 	local activePlayerID = Game.GetActivePlayer();
 	local activePlayer = Players[activePlayerID];
 	
-	-- Small Gold
-	local iNumGoldPlayerHas = activePlayer:GetGold();
-	
-	iGold = iGoldGiftSmall;
-	iLowestGold = iGold;
-	iFriendshipAmount = pPlayer:GetFriendshipFromGoldGift(activePlayerID, iGold);
-	local buttonText = Locale.ConvertTextKey("TXT_KEY_POPUP_MINOR_GOLD_GIFT_AMOUNT", iGold, iFriendshipAmount);
-	if (iNumGoldPlayerHas < iGold) then
-		buttonText = "[COLOR_WARNING_TEXT]" .. buttonText .. "[ENDCOLOR]";
-		Controls.SmallGiftAnim:SetHide(true);
+	if Civup.USING_CSD == 1 then
+		Controls.SmallGiftButton:SetHide(true)
+		Controls.MediumGiftButton:SetHide(true)
+		Controls.LargeGiftButton:SetHide(true)
 	else
-		Controls.SmallGiftAnim:SetHide(false);
+		-- Small Gold
+		local iNumGoldPlayerHas = activePlayer:GetGold();
+		
+		iGold = iGoldGiftSmall;
+		iLowestGold = iGold;
+		iFriendshipAmount = pPlayer:GetFriendshipFromGoldGift(activePlayerID, iGold);
+		local buttonText = Locale.ConvertTextKey("TXT_KEY_POPUP_MINOR_GOLD_GIFT_AMOUNT", iGold, iFriendshipAmount);
+		if (iNumGoldPlayerHas < iGold) then
+			buttonText = "[COLOR_WARNING_TEXT]" .. buttonText .. "[ENDCOLOR]";
+			Controls.SmallGiftAnim:SetHide(true);
+		else
+			Controls.SmallGiftAnim:SetHide(false);
+		end
+		Controls.SmallGift:SetText(buttonText);
+		SetButtonSize(Controls.SmallGift, Controls.SmallGiftButton, Controls.SmallGiftAnim, Controls.SmallGiftButtonHL);
+		
+		-- Medium Gold
+		iGold = iGoldGiftMedium;
+		iFriendshipAmount = pPlayer:GetFriendshipFromGoldGift(activePlayerID, iGold);
+		local buttonText = Locale.ConvertTextKey("TXT_KEY_POPUP_MINOR_GOLD_GIFT_AMOUNT", iGold, iFriendshipAmount);
+		if (iNumGoldPlayerHas < iGold) then
+			buttonText = "[COLOR_WARNING_TEXT]" .. buttonText .. "[ENDCOLOR]";
+			Controls.MediumGiftAnim:SetHide(true);
+		else
+			Controls.MediumGiftAnim:SetHide(false);
+		end
+		Controls.MediumGift:SetText(buttonText);
+		SetButtonSize(Controls.MediumGift, Controls.MediumGiftButton, Controls.MediumGiftAnim, Controls.MediumGiftButtonHL);
+		
+		-- Large Gold
+		iGold = iGoldGiftLarge;
+		iFriendshipAmount = pPlayer:GetFriendshipFromGoldGift(activePlayerID, iGold);
+		local buttonText = Locale.ConvertTextKey("TXT_KEY_POPUP_MINOR_GOLD_GIFT_AMOUNT", iGold, iFriendshipAmount);
+		if (iNumGoldPlayerHas < iGold) then
+			buttonText = "[COLOR_WARNING_TEXT]" .. buttonText .. "[ENDCOLOR]";
+			Controls.LargeGiftAnim:SetHide(true);
+		else
+			Controls.LargeGiftAnim:SetHide(false);
+		end
+		Controls.LargeGift:SetText(buttonText);
+		SetButtonSize(Controls.LargeGift, Controls.LargeGiftButton, Controls.LargeGiftAnim, Controls.LargeGiftButtonHL);
 	end
-	Controls.SmallGift:SetText(buttonText);
-	SetButtonSize(Controls.SmallGift, Controls.SmallGiftButton, Controls.SmallGiftAnim, Controls.SmallGiftButtonHL);
-	
-	-- Medium Gold
-	iGold = iGoldGiftMedium;
-	iFriendshipAmount = pPlayer:GetFriendshipFromGoldGift(activePlayerID, iGold);
-	local buttonText = Locale.ConvertTextKey("TXT_KEY_POPUP_MINOR_GOLD_GIFT_AMOUNT", iGold, iFriendshipAmount);
-	if (iNumGoldPlayerHas < iGold) then
-		buttonText = "[COLOR_WARNING_TEXT]" .. buttonText .. "[ENDCOLOR]";
-		Controls.MediumGiftAnim:SetHide(true);
-	else
-		Controls.MediumGiftAnim:SetHide(false);
-	end
-	Controls.MediumGift:SetText(buttonText);
-	SetButtonSize(Controls.MediumGift, Controls.MediumGiftButton, Controls.MediumGiftAnim, Controls.MediumGiftButtonHL);
-	
-	-- Large Gold
-	iGold = iGoldGiftLarge;
-	iFriendshipAmount = pPlayer:GetFriendshipFromGoldGift(activePlayerID, iGold);
-	local buttonText = Locale.ConvertTextKey("TXT_KEY_POPUP_MINOR_GOLD_GIFT_AMOUNT", iGold, iFriendshipAmount);
-	if (iNumGoldPlayerHas < iGold) then
-		buttonText = "[COLOR_WARNING_TEXT]" .. buttonText .. "[ENDCOLOR]";
-		Controls.LargeGiftAnim:SetHide(true);
-	else
-		Controls.LargeGiftAnim:SetHide(false);
-	end
-	Controls.LargeGift:SetText(buttonText);
-	SetButtonSize(Controls.LargeGift, Controls.LargeGiftButton, Controls.LargeGiftAnim, Controls.LargeGiftButtonHL);
 	
 	-- Unit
 	SetButtonSize(Controls.UnitGift, Controls.UnitGiftButton, Controls.UnitGiftAnim, Controls.UnitGiftButtonHL);

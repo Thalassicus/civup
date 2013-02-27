@@ -1,4 +1,4 @@
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Scott Lewis (Firaxis Games) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Anton Strenger (Firaxis Games) -->
 <Context Font="TwCenMT20" ColorSet="Beige_Black_Alpha" FontStyle="Shadow">
 	<Container Size="Full,Full" ID="PlotButtonContainer"/>
 	<Image Anchor="L,C" Offset="0,0" Texture="assets\UI\Art\WorldView\1920_LeftSide.DDS" Size="100.1200"/>
@@ -29,18 +29,31 @@
 			</Box>
 		</Stack>
 		<Stack Anchor="L,T" Offset="37,210" Size="0,0" StackGrowth="Bottom" Padding="0">
-			<!-- Production Info -->
-			<Box Offset="0,0" Anchor="L,T" Size="240,32" Color="255,255,255,0" ID="ProdBox">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_PRODUCTION]"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_PROD_TEXT" Color0="Production.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow"/>
-				<Label ID="ProdPerTurnLabel" Anchor="R,C" String="" Color0="Production.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow"/>
-				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="240,1"/>
+			<!-- Happy info -->
+			<Box Offset="0,0" Anchor="L,T" Size="240,32" Color="255,255,255,0" ID="HappinessCityBox">
+				<Label Anchor="L,C" Offset="6,0" String="[ICON_HAPPINESS_1]"/>
+				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_HAPPINESS_CITY" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT20" FontStyle="Shadow"/>
+				<Label ID="HappinessCityLabel" Anchor="R,C" String="" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT20" FontStyle="Shadow"/>
+				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
+			</Box>
+			<Box Offset="0,0" Anchor="L,T" Size="240,32" Color="255,255,255,0" ID="HappinessNationalBox">
+				<Label Anchor="L,C" Offset="6,0" String="[ICON_HAPPINESS_1]"/>
+				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_HAPPINESS_NATIONAL" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT20" FontStyle="Shadow"/>
+				<Label ID="HappinessNationalLabel" Anchor="R,C" String="" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT20" FontStyle="Shadow"/>
+				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
 			</Box>
 			<!-- Gold Info -->
 			<Box Offset="0,0" Anchor="L,T" Size="240,32" Color="255,255,255,0" ID="GoldBox">
 				<Label Anchor="L,C" Offset="6,0" String="[ICON_GOLD]"/>
 				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_GOLD_TEXT" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow"/>
 				<Label ID="GoldPerTurnLabel" Anchor="R,C" String="" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow"/>
+				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="240,1"/>
+			</Box>
+			<!-- Production Info -->
+			<Box Offset="0,0" Anchor="L,T" Size="240,32" Color="255,255,255,0" ID="ProdBox">
+				<Label Anchor="L,C" Offset="6,0" String="[ICON_PRODUCTION]"/>
+				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_PROD_TEXT" Color0="Production.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow"/>
+				<Label ID="ProdPerTurnLabel" Anchor="R,C" String="" Color0="Production.255" Color1="0.0.0.128" Color2="255.255.200.255" Font="TwCenMT22" FontStyle="Shadow"/>
 				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="240,1"/>
 			</Box>
 			<!-- Science Info -->
@@ -328,13 +341,13 @@
 					<Box Offset="0,0" Anchor="L,T" Size="254,64" Color="255,255,255,0" ToolTip=" " Hidden="0" ID="WorkerManagementSizeBox">
 						<Stack Anchor="L,T" Offset="0,0" Size="64,64" StackGrowth="Right" Padding="-5" ID="WorkerManagementRightBox" Hidden="0">
 							<RadioButton ID="BalancedFocusButton" String="[ICON_CITIZEN]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="1" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TT"/>
-							<RadioButton ID="FoodFocusButton" String="[ICON_FOOD]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FOOD_TT"/>
-							<RadioButton ID="ProductionFocusButton" String="[ICON_PRODUCTION]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_PROD_TT"/>
-							<RadioButton ID="GoldFocusButton" String="[ICON_GOLD]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GOLD_TT"/>
-							<RadioButton ID="ResearchFocusButton" String="[ICON_RESEARCH]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TT"/>
-							<RadioButton ID="CultureFocusButton" String="[ICON_CULTURE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TT"/>
 							<RadioButton ID="GPFocusButton" String="[ICON_GREAT_PEOPLE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TT"/>
+							<RadioButton ID="FoodFocusButton" String="[ICON_FOOD]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FOOD_TT"/>
+							<RadioButton ID="GoldFocusButton" String="[ICON_GOLD]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GOLD_TT"/>
+							<RadioButton ID="ProductionFocusButton" String="[ICON_PRODUCTION]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_PROD_TT"/>
+							<RadioButton ID="ResearchFocusButton" String="[ICON_RESEARCH]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TT"/>
 							<RadioButton ID="FaithFocusButton" String="[ICON_PEACE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FAITH_TT"/>
+							<RadioButton ID="CultureFocusButton" String="[ICON_CULTURE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TT"/>
 							<CheckBox Style="SquareCheck" ID="AvoidGrowthButton" String="[ICON_LOCKED]" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" ToolTip="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TT"/>
 						</Stack>
 					</Box>

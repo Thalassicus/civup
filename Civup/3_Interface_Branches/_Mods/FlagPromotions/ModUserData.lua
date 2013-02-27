@@ -116,6 +116,8 @@ default_ignoredPromotion["PROMOTION_WOODSMAN"] 				= false --barbarians
 default_ignoredPromotion["PROMOTION_BOMBARDMENT_1"]			= false --
 default_ignoredPromotion["PROMOTION_BOMBARDMENT_2"]			= false --
 default_ignoredPromotion["PROMOTION_BOMBARDMENT_3"]			= false --
+default_ignoredPromotion["PROMOTION_BLITZ"]					= false --
+default_ignoredPromotion["PROMOTION_LOGISTICS"]				= false --
 default_ignoredPromotion["PROMOTION_EXTRA_MOVES_I"]			= false --
 
 	
@@ -127,7 +129,6 @@ function updateIgnoredPromotions()
     for promotion in GameInfo.UnitPromotions() do
 		local id = promotion.ID
 		ignorePromotion[id] = default_ignoredPromotion[promotion.Type]
-		--[[
 		if Civup.USE_FLAG_PROMOTION_DEFAULTS == 1 then
 			ignorePromotion[id] = default_ignoredPromotion[promotion.Type]
 		else
@@ -140,7 +141,6 @@ function updateIgnoredPromotions()
 			end
 			ignorePromotion[id]=ignore
 		end
-		--]]
     end
 end
 

@@ -1,1 +1,1 @@
--- EN_US/AutoTips_Help.sql
+--· EN_US/AutoTips_Help.sql

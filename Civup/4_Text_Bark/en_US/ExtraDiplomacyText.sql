@@ -1,4 +1,4 @@
--- EN_US/ExtraDiplomacyText.sql
+--· EN_US/ExtraDiplomacyText.sql
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_GENERIC_GREETING_POLITE_HELLO_5', 'Pleasure to see you again, friend. How can I help you?', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_GENERIC_GREETING_POLITE_HELLO_6', 'You are always welcome here, friend. What is on your mind?', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_GENERIC_GREETING_POLITE_HELLO_7', 'Hello, my friend. I hope you have come to benefit both our great nations?', '', '');

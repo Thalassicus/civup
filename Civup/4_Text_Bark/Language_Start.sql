@@ -1,4 +1,4 @@
--- Insert SQL Rules Here 
+--
 
 DELETE FROM Civup_Language_DE_DE;
 DELETE FROM Civup_Language_EN_US;

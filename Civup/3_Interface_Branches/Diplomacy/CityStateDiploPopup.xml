@@ -152,7 +152,7 @@
 					</Button>
 
 					<!-- WAR BUTTON -->
-					<Button Size="500,32" Anchor="C,C" Offset="0,0" ID="WarButton">
+					<Button Size="500,32" Anchor="C,C" Offset="0,0" ID="WarButton" ToolTip="TXT_KEY_CITYSTATE_CAPTURE_BONUS">
 						<Label ID="WarLabel" Anchor="C,C" Offset="0,0" String="TXT_KEY_POP_CSTATE_DECLARE_WAR"/>
 						<Image Anchor="C,B" Offset="0,0" Texture="bar500x2.dds" Size="500.1"/>
 						<ShowOnMouseOver>
@@ -362,7 +362,7 @@
 			<Stack Anchor="C,B" Offset="0,80" Padding="24" StackGrowth="Bottom">
 
 				<!-- Yes Button  -->
-				<GridButton Style="BaseButton" ID="YesWar" Size="400,42" Anchor="C,T" Offset="0,0" Hidden="0">
+				<GridButton Style="BaseButton" ID="YesWar" Size="400,42" Anchor="C,T" Offset="0,0" Hidden="0" ToolTip="TXT_KEY_CITYSTATE_CAPTURE_BONUS">
 					<Label Anchor="C,C" Offset="0,0" String="TXT_KEY_YES_BUTTON" ColorSet="Beige_Black" Font="TwCenMT24" FontStyle="Shadow"/>
 				</GridButton>
 

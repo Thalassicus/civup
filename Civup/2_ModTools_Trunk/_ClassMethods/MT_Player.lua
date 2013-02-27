@@ -18,7 +18,6 @@ function PlayerClass.CanFoundFaith(player)
 	return (player:CanCreatePantheon(false) and not player:HasCreatedPantheon())
 		or (Game.GetNumReligionsStillToFound() > 0 and not player:HasCreatedReligion())
 end
-
 ---------------------------------------------------------------------
 --[[ player:GetBuildingAddonLevel(buildingID) usage example:
 
@@ -552,7 +551,7 @@ function PlayerClass.GetMinorYieldString(minorCiv, showDetails)
 					yield = yield + Game.Round(0.25 * minorCiv:GetYieldRate(yieldID))
 				end
 			end
-		elseif yieldID == YieldTypes.YIELD_HAPPINESS then
+		elseif yieldID == YieldTypes.YIELD_HAPPINESS_NATIONAL then
 			query = string.format("FriendLevel = %s AND YieldType = '%s'", friendLevel, yieldInfo.Type)
 			for row in GameInfo.Policy_MinorCivBonuses(query) do
 				if activePlayer:HasPolicy(GameInfo.Policies[row.PolicyType].ID) then
@@ -842,11 +841,17 @@ end
 ]]
 
 function PlayerClass.IsMilitaristicLeader(player)
+	if player:IsMinorCiv() then
+		return player:GetMinorCivTrait() == MinorCivTraitTypes.MINOR_CIV_TRAIT_MILITARISTIC
+	end
 	local personality = player:GetPersonalityInfo().Type
 	return (personality == "PERSONALITY_CONQUEROR" or personality == "PERSONALITY_COALITION")
 end
 
 function PlayerClass.IsReligiousLeader(player)
+	if player:IsMinorCiv() then
+		return false
+	end
 	local leaderInfo = GameInfo.Leaders[player:GetLeaderType()]
 	for row in GameInfo.Leader_Flavors{LeaderType = leaderInfo.Type, FlavorType = "FLAVOR_RELIGION"} do
 		return row.Flavor >= 7
@@ -856,7 +861,7 @@ end
 
 function PlayerClass.IsAtWarWithHuman(player)
 	for otherPlayerID, otherPlayer in pairs(Players) do
-		if player:IsAtWar(otherPlayer) and otherPlayer:IsHuman() then
+		if otherPlayer:IsAliveCiv() and player:IsAtWar(otherPlayer) and otherPlayer:IsHuman() then
 			return true
 		end
 	end
@@ -865,7 +870,7 @@ end
 
 function PlayerClass.IsAtWarWithAny(player)
 	for otherPlayerID, otherPlayer in pairs(Players) do
-		if player:IsAtWar(otherPlayer) then
+		if otherPlayer:IsAliveCiv() and player:IsAtWar(otherPlayer) then
 			return true
 		end
 	end

@@ -201,7 +201,7 @@ function UpdateData()
 	if (Game.IsOption(GameOptionTypes.GAMEOPTION_NO_HAPPINESS)) then
 		strHappiness = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_HAPPINESS_OFF");
 	else
-		local iHappiness = Game.Round(activePlayer:GetYieldRate(YieldTypes.YIELD_HAPPINESS));
+		local iHappiness = activePlayer:GetExcessHappiness()--Game.Round(activePlayer:GetYieldRate(YieldTypes.YIELD_HAPPINESS_NATIONAL));
 		local tHappinessTextColor;
 
 		-- Empire is Happiness
@@ -263,7 +263,7 @@ function UpdateData()
 		if yieldNeeded == 0 or yieldNeeded == math.huge then
 			strFaithStr = string.format("[ICON_PEACE][%s]%s[ENDCOLOR]", GameInfo.Yields.YIELD_FAITH.Color, activePlayer:GetYieldStored(YieldTypes.YIELD_FAITH))
 		else
-			strFaithStr = string.format("[ICON_PEACE][%s]%s (%s)[ENDCOLOR]", GameInfo.Yields.YIELD_FAITH.Color, activePlayer:GetYieldStored(YieldTypes.YIELD_FAITH), activePlayer:GetYieldTurns(YieldTypes.YIELD_FAITH))
+			strFaithStr = string.format("[ICON_PEACE][%s]%s/%s[ENDCOLOR]", GameInfo.Yields.YIELD_FAITH.Color, activePlayer:GetYieldStored(YieldTypes.YIELD_FAITH), activePlayer:GetYieldNeeded(YieldTypes.YIELD_FAITH))
 		end
 	end
 	Controls.FaithString:SetText(strFaithStr);
@@ -737,18 +737,22 @@ function HappinessTipHandler( control )
 	local activePlayer = Players[activePlayerID];
 	local activeTeam = Teams[activePlayer:GetTeam()];
 	local city = UI.GetHeadSelectedCity();	
-	local yieldID = YieldTypes.YIELD_HAPPINESS;
-
-	local iHappiness = Game.Round(activePlayer:GetYieldRate(yieldID));	
-	local iTotalHappiness = iHappiness + activePlayer:GetUnhappiness();
+	
+	local yieldID = ""
+	
+	yieldID = YieldTypes.YIELD_HAPPINESS_CITY;
+	local iTerrainHappiness = activePlayer:GetYieldFromTerrain(yieldID);
+	local iCityHappiness = activePlayer:GetYieldFromBuildings(yieldID);
+	local iGarrisonedUnitsHappiness = 0 --activePlayer:GetHappinessFromGarrisonedUnits();	
+	
+	yieldID = YieldTypes.YIELD_HAPPINESS_NATIONAL;
+	local iHappiness = activePlayer:GetExcessHappiness()--Game.Round(activePlayer:GetYieldRate(yieldID));	
+	local iTotalHappiness = activePlayer:GetHappiness();
 	local iPoliciesHappiness = activePlayer:GetHappinessFromPolicies();
 	local iCitystatesHappiness = activePlayer:GetYieldsFromCitystates()[yieldID];
 	local iResourcesHappiness = activePlayer:GetHappinessFromResources() + activePlayer:GetYieldFromSurplusResources(yieldID);
 	local iExtraLuxuryHappiness = activePlayer:GetExtraHappinessPerLuxury();
-	local iTerrainHappiness = activePlayer:GetYieldFromTerrain(yieldID);
-	local iCityHappiness = activePlayer:GetHappinessFromCities() - iTerrainHappiness;
 	local iNationalBuildingHappiness = activePlayer:GetHappinessFromBuildings();
-	local iGarrisonedUnitsHappiness = 0 --activePlayer:GetHappinessFromGarrisonedUnits();
 	local iTradeRouteHappiness = activePlayer:GetHappinessFromTradeRoutes();
 	local iReligionHappiness = activePlayer:GetHappinessFromReligion();
 	local iNaturalWonderHappiness = activePlayer:GetHappinessFromNaturalWonders();
@@ -946,7 +950,7 @@ function GoldenAgeTipHandler( control )
 	if (activePlayer:GetGoldenAgeTurns() > 0) then
 		strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_GOLDEN_AGE_NOW", activePlayer:GetGoldenAgeTurns());
 	else
-		local iHappiness = Game.Round(activePlayer:GetYieldRate(YieldTypes.YIELD_HAPPINESS));
+		local iHappiness = Game.Round(activePlayer:GetYieldRate(YieldTypes.YIELD_HAPPINESS_NATIONAL));
 
 --AttlaMod+
 --Display turns left until next Golden Age (from salaminizer)

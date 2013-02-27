@@ -129,7 +129,7 @@ Controls.ScrollPanel:CalculateInternalSize();
 Controls.LeftScrollPanel:CalculateInternalSize();
 
 function SetSelectedCategory( thisCategory )
-	print("SetSelectedCategory("..tostring(thisCategory)..")");
+	--print("SetSelectedCategory("..tostring(thisCategory)..")");
 	if selectedCategory ~= thisCategory then
 		selectedCategory = thisCategory;
 		-- set up tab
@@ -2028,7 +2028,7 @@ CivilopediaCategory[CategoryHomePage].SelectArticle = function( pageID, shouldAd
 end
 
 CivilopediaCategory[CategoryGameConcepts].SelectArticle = function( conceptID, shouldAddToList )
-	print("CivilopediaCategory[CategoryGameConcepts].SelectArticle");
+	--print("CivilopediaCategory[CategoryGameConcepts].SelectArticle");
 	if selectedCategory ~= CategoryGameConcepts then
 		SetSelectedCategory(CategoryGameConcepts);
 	end
@@ -2084,7 +2084,7 @@ end
 
 
 CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToList )
-	print("CivilopediaCategory[CategoryTech].SelectArticle");
+	--print("CivilopediaCategory[CategoryTech].SelectArticle");
 
 	if selectedCategory ~= CategoryTech then
 		SetSelectedCategory(CategoryTech);
@@ -2323,7 +2323,7 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 			if numAbilities > 0 then
 				 abilitiesString = abilitiesString .. "[NEWLINE]";
 			end
-			abilitiesString = abilitiesString .. Locale.ConvertTextKey("TXT_KEY_CIVILOPEDIA_SPECIALABILITIES_YIELDCHANGE", row.Yield, GameInfo.Yields[row.YieldType].IconString, GameInfo.Yields[row.YieldType].Description, GameInfo.Improvements[row.ImprovementType].Description );
+			abilitiesString = abilitiesString .. Locale.ConvertTextKey("TXT_KEY_CIVILOPEDIA_SPECIALABILITIES_YIELDCHANGES", GameInfo.Improvements[row.ImprovementType].Description, GameInfo.Yields[row.YieldType].Description, row.Yield);
 			numAbilities = numAbilities + 1;
 		end	
 
@@ -2425,9 +2425,9 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 		end
 
 		if numAbilities > 0 then
-			UpdateTextBlock( Locale.ConvertTextKey( abilitiesString ), Controls.AbilitiesLabel, Controls.AbilitiesInnerFrame, Controls.AbilitiesFrame );
+			UpdateTextBlock( Locale.ConvertTextKey( abilitiesString ), Controls.SpecialLabel, Controls.SpecialInnerFrame, Controls.SpecialFrame );
 		else
-			Controls.AbilitiesFrame:SetHide( true );			
+			Controls.SpecialFrame:SetHide( true );			
 		end
 		
 		-- update the historical info
@@ -2445,7 +2445,7 @@ CivilopediaCategory[CategoryTech].SelectArticle = function( techID, shouldAddToL
 end
 
 CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddToList )
-	print("CivilopediaCategory[CategoryUnits].SelectArticle");
+	--print("CivilopediaCategory[CategoryUnits].SelectArticle");
 	if selectedCategory ~= CategoryUnits then
 		SetSelectedCategory(CategoryUnits);
 	end
@@ -2752,7 +2752,7 @@ CivilopediaCategory[CategoryUnits].SelectArticle = function( unitID, shouldAddTo
 				
 		-- update the strategy info
 		if thisUnit.Strategy then
-			UpdateTextBlock( Locale.ConvertTextKey( thisUnit.Strategy ), Controls.StrategyLabel, Controls.StrategyInnerFrame, Controls.StrategyFrame );
+			UpdateTextBlock( Locale.ConvertTextKey( thisUnit.Strategy ), Controls.GoodForLabel, Controls.GoodForInnerFrame, Controls.GoodForFrame );
 		end
 		
 		-- update the historical info
@@ -2772,7 +2772,7 @@ end
 local defaultPromotionPortraitOffset = Vector2( 256, 256 );
 
 CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, shouldAddToList )
-	print("CivilopediaCategory[CategoryPromotions].SelectArticle");
+	--print("CivilopediaCategory[CategoryPromotions].SelectArticle");
 	if selectedCategory ~= CategoryPromotions then
 		SetSelectedCategory(CategoryPromotions);
 	end
@@ -2903,9 +2903,9 @@ CivilopediaCategory[CategoryPromotions].SelectArticle = function( promotionID, s
 
 		-- update the game info
 		if thisPromotion.Help then
-			UpdateTextBlock( Locale.ConvertTextKey( thisPromotion.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+			UpdateTextBlock( Locale.ConvertTextKey( thisPromotion.Help ), Controls.AbilitiesLabel, Controls.AbilitiesInnerFrame, Controls.AbilitiesFrame );
 		end
-				
+		
 	end	
 
 	ResizeEtc();
@@ -2927,6 +2927,7 @@ function SelectBuildingOrWonderArticle( buildingID )
 			Controls.PortraitFrame:SetHide( true );
 		end
 		
+		--[=[
 		-- update the cost
 		Controls.CostFrame:SetHide( false );
 		local costString = "";
@@ -3111,6 +3112,7 @@ function SelectBuildingOrWonderArticle( buildingID )
 				Controls.GreatPeopleFrame:SetHide( false );
 			end
 		end
+		--]=]
 
  		local contentSize;
  		local frameSize = {};
@@ -3285,15 +3287,22 @@ function SelectBuildingOrWonderArticle( buildingID )
 		end
 		UpdateButtonFrame( buttonAdded, Controls.CivilizationsInnerFrame, Controls.CivilizationsFrame );
 
-		-- update the game info
-		local buildingHelp = GetHelpTextForBuilding(buildingID, true, false, false)
-		if buildingHelp then
-			UpdateTextBlock( Locale.ConvertTextKey( buildingHelp ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+		-- update the good for
+		local buildingText = GetBuildingTip{buildingID=buildingID, hideName=true, hideGoodFor=false, hideAbilities=true, hideCosts=true}
+		if buildingText then
+			UpdateTextBlock( Locale.ConvertTextKey( buildingText ), Controls.GoodForLabel, Controls.GoodForInnerFrame, Controls.GoodForFrame );
 		end
 				
-		-- update the strategy info
-		if thisBuilding.Strategy then
-			UpdateTextBlock( Locale.ConvertTextKey( thisBuilding.Strategy ), Controls.StrategyLabel, Controls.StrategyInnerFrame, Controls.StrategyFrame );
+		-- update the abilities
+		buildingText = GetBuildingTip{buildingID=buildingID, hideName=true, hideGoodFor=true, hideAbilities=false, hideCosts=true}
+		if buildingText then
+			UpdateTextBlock( Locale.ConvertTextKey( buildingText ), Controls.AbilitiesLabel, Controls.AbilitiesInnerFrame, Controls.AbilitiesFrame );
+		end
+				
+		-- update the costs
+		buildingText = GetBuildingTip{buildingID=buildingID, hideName=true, hideGoodFor=true, hideAbilities=true, hideCosts=false}
+		if buildingText then
+			UpdateTextBlock( Locale.ConvertTextKey( buildingText ), Controls.CostsLabel, Controls.CostsInnerFrame, Controls.CostsFrame );
 		end
 		
 		-- update the historical info
@@ -3312,7 +3321,7 @@ function SelectBuildingOrWonderArticle( buildingID )
 end
 
 CivilopediaCategory[CategoryBuildings].SelectArticle = function( buildingID, shouldAddToList )
-	print("CivilopediaCategory[CategoryBuildings].SelectArticle");
+	--print("CivilopediaCategory[CategoryBuildings].SelectArticle");
 	if selectedCategory ~= CategoryBuildings then
 		SetSelectedCategory(CategoryBuildings);
 	end
@@ -3336,7 +3345,7 @@ end
 
 
 CivilopediaCategory[CategoryWonders].SelectArticle = function( wonderID, shouldAddToList )
-	print("CivilopediaCategory[CategoryWonders].SelectArticle");
+	--print("CivilopediaCategory[CategoryWonders].SelectArticle");
 	if selectedCategory ~= CategoryWonders then
 		SetSelectedCategory(CategoryWonders);
 	end
@@ -3449,12 +3458,12 @@ CivilopediaCategory[CategoryWonders].SelectArticle = function( wonderID, shouldA
 			
 			-- update the game info
 			if thisProject.Help then
-				UpdateTextBlock( Locale.ConvertTextKey( thisProject.Help ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+				UpdateTextBlock( Locale.ConvertTextKey( thisProject.Help ), Controls.AbilitiesLabel, Controls.AbilitiesInnerFrame, Controls.AbilitiesFrame );
 			end
 					
 			-- update the strategy info
 			if (thisProject.Strategy) then
-				UpdateTextBlock( Locale.ConvertTextKey( thisProject.Strategy ), Controls.StrategyLabel, Controls.StrategyInnerFrame, Controls.StrategyFrame );
+				UpdateTextBlock( Locale.ConvertTextKey( thisProject.Strategy ), Controls.GoodForLabel, Controls.GoodForInnerFrame, Controls.GoodForFrame );
 			end
 			
 			-- update the historical info
@@ -3472,7 +3481,7 @@ CivilopediaCategory[CategoryWonders].SelectArticle = function( wonderID, shouldA
 end
 
 CivilopediaCategory[CategoryPolicies].SelectArticle = function( policyID, shouldAddToList )
-	print("CivilopediaCategory[CategoryPolicies].SelectArticle");
+	--print("CivilopediaCategory[CategoryPolicies].SelectArticle");
 	if selectedCategory ~= CategoryPolicies then
 		SetSelectedCategory(CategoryPolicies);
 	end
@@ -3555,7 +3564,7 @@ CivilopediaCategory[CategoryPolicies].SelectArticle = function( policyID, should
 		end
 				
 		-- update the strategy info
-		--UpdateTextBlock( Locale.ConvertTextKey( thisPolicy.Strategy ), Controls.StrategyLabel, Controls.StrategyInnerFrame, Controls.StrategyFrame );
+		--UpdateTextBlock( Locale.ConvertTextKey( thisPolicy.Strategy ), Controls.GoodForLabel, Controls.GoodForInnerFrame, Controls.GoodForFrame );
 		
 		-- update the historical info
 		if (thisPolicy.Civilopedia) then
@@ -3572,7 +3581,7 @@ end
 
 
 CivilopediaCategory[CategoryPeople].SelectArticle =  function( rawPeopleID, shouldAddToList )
-	print("CivilopediaCategory[CategoryPeople].SelectArticle");
+	--print("CivilopediaCategory[CategoryPeople].SelectArticle");
 	if selectedCategory ~= CategoryPeople then
 		SetSelectedCategory(CategoryPeople);
 	end
@@ -3614,7 +3623,7 @@ CivilopediaCategory[CategoryPeople].SelectArticle =  function( rawPeopleID, shou
 					
 			-- update the strategy info
 			if thisPerson.Strategy then
-				UpdateTextBlock( Locale.ConvertTextKey( thisPerson.Strategy ), Controls.StrategyLabel, Controls.StrategyInnerFrame, Controls.StrategyFrame );
+				UpdateTextBlock( Locale.ConvertTextKey( thisPerson.Strategy ), Controls.GoodForLabel, Controls.GoodForInnerFrame, Controls.GoodForFrame );
 			end
 			
 			-- update the historical info
@@ -3653,7 +3662,7 @@ CivilopediaCategory[CategoryPeople].SelectArticle =  function( rawPeopleID, shou
 					
 			-- update the strategy info
 			if (thisPerson.Strategy) then
-				UpdateTextBlock( Locale.ConvertTextKey( thisPerson.Strategy ), Controls.StrategyLabel, Controls.StrategyInnerFrame, Controls.StrategyFrame );
+				UpdateTextBlock( Locale.ConvertTextKey( thisPerson.Strategy ), Controls.GoodForLabel, Controls.GoodForInnerFrame, Controls.GoodForFrame );
 			end
 			
 			-- update the historical info
@@ -3673,7 +3682,7 @@ end
 
 
 CivilopediaCategory[CategoryCivilizations].SelectArticle = function( rawCivID, shouldAddToList )
-	print("CivilopediaCategory[CategoryCivilizations].SelectArticle");
+	--print("CivilopediaCategory[CategoryCivilizations].SelectArticle");
 	if selectedCategory ~= CategoryCivilizations then
 		SetSelectedCategory(CategoryCivilizations);
 	end
@@ -4027,7 +4036,7 @@ CivilopediaCategory[CategoryCivilizations].SelectArticle = function( rawCivID, s
 end
 
 CivilopediaCategory[CategoryCityStates].SelectArticle = function( cityStateID, shouldAddToList )
-	print("CivilopediaCategory[CategoryCityStates].SelectArticle");
+	--print("CivilopediaCategory[CategoryCityStates].SelectArticle");
 	if selectedCategory ~= CategoryCityStates then
 		SetSelectedCategory(CategoryCityStates);
 	end
@@ -4072,7 +4081,7 @@ end
 
 
 CivilopediaCategory[CategoryTerrain].SelectArticle = function( rawTerrainID, shouldAddToList )
-	print("CivilopediaCategory[CategoryTerrain].SelectArticle");
+	--print("CivilopediaCategory[CategoryTerrain].SelectArticle");
 	if selectedCategory ~= CategoryTerrain then
 		SetSelectedCategory(CategoryTerrain);
 	end
@@ -4366,7 +4375,7 @@ end
 
 
 CivilopediaCategory[CategoryResources].SelectArticle = function( resourceID, shouldAddToList )
-	print("CivilopediaCategory[CategoryResources].SelectArticle");
+	--print("CivilopediaCategory[CategoryResources].SelectArticle");
 	if selectedCategory ~= CategoryResources then
 		SetSelectedCategory(CategoryResources);
 	end
@@ -4529,7 +4538,7 @@ end
 
 
 CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementID, shouldAddToList )
-	print("CivilopediaCategory[CategoryImprovements].SelectArticle");
+	--print("CivilopediaCategory[CategoryImprovements].SelectArticle");
 	if selectedCategory ~= CategoryImprovements then
 		SetSelectedCategory(CategoryImprovements);
 	end
@@ -4718,7 +4727,7 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 
 			-- generic text
 			if (thisImprovement.Civilopedia) then
-				UpdateTextBlock( Locale.ConvertTextKey( thisImprovement.Civilopedia ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+				UpdateTextBlock( Locale.ConvertTextKey( thisImprovement.Civilopedia ), Controls.AbilitiesLabel, Controls.AbilitiesInnerFrame, Controls.AbilitiesFrame );
 			end
 			
 			-- update the related images
@@ -4771,7 +4780,7 @@ CivilopediaCategory[CategoryImprovements].SelectArticle = function( improvementI
 
 			-- generic text
 			if (thisImprovement.Civilopedia) then
-				UpdateTextBlock( Locale.ConvertTextKey( thisImprovement.Civilopedia ), Controls.GameInfoLabel, Controls.GameInfoInnerFrame, Controls.GameInfoFrame );
+				UpdateTextBlock( Locale.ConvertTextKey( thisImprovement.Civilopedia ), Controls.AbilitiesLabel, Controls.AbilitiesInnerFrame, Controls.AbilitiesFrame );
 			end
 			
 			-- update the related images
@@ -4871,7 +4880,7 @@ end
 ---------------------------------------------------------------------------------------------------
 
 CivilopediaCategory[CategoryHomePage].SelectHeading = function( selectedEraID, dummy )
-	print("CivilopediaCategory[CategoryHomePage].SelectHeading");
+	--print("CivilopediaCategory[CategoryHomePage].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -4955,7 +4964,7 @@ CivilopediaCategory[CategoryGameConcepts].SelectHeading = function( selectedEraI
 end
 
 CivilopediaCategory[CategoryTech].SelectHeading = function( selectedEraID, dummy )
-	print("CivilopediaCategory[CategoryTech].SelectHeading");
+	--print("CivilopediaCategory[CategoryTech].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5019,7 +5028,7 @@ CivilopediaCategory[CategoryTech].SelectHeading = function( selectedEraID, dummy
 end
 
 CivilopediaCategory[CategoryUnits].SelectHeading = function( selectedEraID, dummy )
-	print("CivilopediaCategory[CategoryUnits].SelectHeading");
+	--print("CivilopediaCategory[CategoryUnits].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5090,7 +5099,7 @@ CivilopediaCategory[CategoryUnits].SelectHeading = function( selectedEraID, dumm
 end
 
 CivilopediaCategory[CategoryPromotions].SelectHeading = function( selectedSection, dummy )
-	print("CivilopediaCategory[CategoryPromotions].SelectHeading");
+	--print("CivilopediaCategory[CategoryPromotions].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5151,7 +5160,7 @@ CivilopediaCategory[CategoryPromotions].SelectHeading = function( selectedSectio
 end
 
 CivilopediaCategory[CategoryBuildings].SelectHeading = function( selectedEraID, dummy )
-	print("CivilopediaCategory[CategoryBuildings].SelectHeading");
+	--print("CivilopediaCategory[CategoryBuildings].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5224,7 +5233,7 @@ end
 
 
 CivilopediaCategory[CategoryWonders].SelectHeading = function( selectedSectionID, dummy )
-	print("CivilopediaCategory[CategoryWonders].SelectHeading");
+	--print("CivilopediaCategory[CategoryWonders].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5287,7 +5296,7 @@ end
 
 
 CivilopediaCategory[CategoryPolicies].SelectHeading = function( selectedBranchID, dummy )
-	print("CivilopediaCategory[CategoryPolicies].SelectHeading");
+	--print("CivilopediaCategory[CategoryPolicies].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5351,7 +5360,7 @@ CivilopediaCategory[CategoryPolicies].SelectHeading = function( selectedBranchID
 end
 
 CivilopediaCategory[CategoryPeople].SelectHeading = function( selectedSectionID, dummy )
-	print("CivilopediaCategory[CategoryPeople].SelectHeading");
+	--print("CivilopediaCategory[CategoryPeople].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5414,7 +5423,7 @@ end
 
 
 CivilopediaCategory[CategoryCivilizations].SelectHeading = function( selectedSectionID, dummy )
-	print("CivilopediaCategory[CategoryCivilizations].SelectHeading");
+	--print("CivilopediaCategory[CategoryCivilizations].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5477,7 +5486,7 @@ end
 
 
 CivilopediaCategory[CategoryCityStates].SelectHeading = function( selectedSectionID, dummy )
-	print("CivilopediaCategory[CategoryCityStates].SelectHeading");
+	--print("CivilopediaCategory[CategoryCityStates].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5542,7 +5551,7 @@ CivilopediaCategory[CategoryCityStates].SelectHeading = function( selectedSectio
 end
 
 CivilopediaCategory[CategoryTerrain].SelectHeading = function( selectedSectionID, dummy )
-	print("CivilopediaCategory[CategoryTerrain].SelectHeading");
+	--print("CivilopediaCategory[CategoryTerrain].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5604,7 +5613,7 @@ CivilopediaCategory[CategoryTerrain].SelectHeading = function( selectedSectionID
 end
 
 CivilopediaCategory[CategoryResources].SelectHeading = function( selectedSectionID, dummy )
-	print("CivilopediaCategory[CategoryResources].SelectHeading");
+	--print("CivilopediaCategory[CategoryResources].SelectHeading");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5738,7 +5747,7 @@ end
 ----------------------------------------------------------------------------------------------------------------------------------
 
 CivilopediaCategory[CategoryHomePage].DisplayList = function( selectedSection, dummy )
-	print("CivilopediaCategory[CategoryHomePage].DisplayList");
+	--print("CivilopediaCategory[CategoryHomePage].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5773,7 +5782,7 @@ CivilopediaCategory[CategoryHomePage].DisplayList = function( selectedSection, d
 end
 
 CivilopediaCategory[CategoryGameConcepts].DisplayList = function( selectedSection, dummy )
-	print("CivilopediaCategory[CategoryGameConcepts].DisplayList");
+	--print("CivilopediaCategory[CategoryGameConcepts].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5842,7 +5851,7 @@ CivilopediaCategory[CategoryGameConcepts].DisplayList = function( selectedSectio
 end
 
 CivilopediaCategory[CategoryTech].DisplayList = function()
-	print("CivilopediaCategory[CategoryTech].DisplayList");
+	--print("CivilopediaCategory[CategoryTech].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 	
@@ -5897,7 +5906,7 @@ CivilopediaCategory[CategoryTech].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryUnits].DisplayList = function()
-	print("CivilopediaCategory[CategoryUnits].DisplayList");
+	--print("CivilopediaCategory[CategoryUnits].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -5965,7 +5974,7 @@ CivilopediaCategory[CategoryUnits].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryPromotions].DisplayList = function()
-	print("start CivilopediaCategory[CategoryPromotions].DisplayList");
+	--print("start CivilopediaCategory[CategoryPromotions].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 	
@@ -6019,7 +6028,7 @@ end
 
 
 CivilopediaCategory[CategoryBuildings].DisplayList = function()
-	print("CivilopediaCategory[CategoryBuildings].DisplayList");
+	--print("CivilopediaCategory[CategoryBuildings].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6082,7 +6091,7 @@ CivilopediaCategory[CategoryBuildings].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryWonders].DisplayList = function()
-	print("CivilopediaCategory[CategoryWonders].DisplayList");
+	--print("CivilopediaCategory[CategoryWonders].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6136,7 +6145,7 @@ CivilopediaCategory[CategoryWonders].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryPolicies].DisplayList = function()
-	print("CivilopediaCategory[CategoryPolicies].DisplayList");
+	--print("CivilopediaCategory[CategoryPolicies].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6192,7 +6201,7 @@ CivilopediaCategory[CategoryPolicies].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryPeople].DisplayList = function()
-	print("CivilopediaCategory[CategoryPeople].DisplayList");
+	--print("CivilopediaCategory[CategoryPeople].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6245,7 +6254,7 @@ CivilopediaCategory[CategoryPeople].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryCivilizations].DisplayList = function()
-	print("CivilopediaCategory[CategoryCivilizations].DisplayList");
+	--print("CivilopediaCategory[CategoryCivilizations].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6298,7 +6307,7 @@ CivilopediaCategory[CategoryCivilizations].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryCityStates].DisplayList = function()
-	print("CivilopediaCategory[CategoryCityStates].DisplayList");
+	--print("CivilopediaCategory[CategoryCityStates].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6354,7 +6363,7 @@ CivilopediaCategory[CategoryCityStates].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryTerrain].DisplayList = function()
-	print("CivilopediaCategory[CategoryTerrain].DisplayList");
+	--print("CivilopediaCategory[CategoryTerrain].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6407,7 +6416,7 @@ CivilopediaCategory[CategoryTerrain].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryResources].DisplayList = function()
-	print("CivilopediaCategory[CategoryResources].DisplayList");
+	--print("CivilopediaCategory[CategoryResources].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 
@@ -6460,7 +6469,7 @@ CivilopediaCategory[CategoryResources].DisplayList = function()
 end
 
 CivilopediaCategory[CategoryImprovements].DisplayList = function()
-	print("start CivilopediaCategory[CategoryImprovements].DisplayList");
+	--print("start CivilopediaCategory[CategoryImprovements].DisplayList");
 	g_ListHeadingManager:ResetInstances();
 	g_ListItemManager:ResetInstances();
 	
@@ -6590,11 +6599,13 @@ function ClearArticle()
 	Controls.SpecialistsFrame:SetHide( true );
 	Controls.RelatedArticlesFrame:SetHide( true );
 	Controls.GameInfoFrame:SetHide( true );
+	Controls.GoodForFrame:SetHide( true );
+	Controls.AbilitiesFrame:SetHide( true );
+	Controls.CostsFrame:SetHide( true );
 	Controls.QuoteFrame:SetHide( true );
 	Controls.SilentQuoteFrame:SetHide( true );
-	Controls.AbilitiesFrame:SetHide( true );			
+	Controls.SpecialFrame:SetHide( true );			
 	Controls.HistoryFrame:SetHide( true );
-	Controls.StrategyFrame:SetHide( true );
 	Controls.RelatedImagesFrame:SetHide( true );		
 	Controls.SummaryFrame:SetHide( true );		
 	Controls.ExtendedFrame:SetHide( true );		

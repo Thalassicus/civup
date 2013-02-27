@@ -1,4 +1,4 @@
--- EN_US/YieldLibrary.sql
+--· EN_US/YieldLibrary.sql
 /*  Yield Breakdown Tooltip */
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CULTURE_WONDER_BONUS', '+{1_Num}% from having a World Wonder', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CULTURE_CITY_MOD', '+{1_Num}% from City', '', '');

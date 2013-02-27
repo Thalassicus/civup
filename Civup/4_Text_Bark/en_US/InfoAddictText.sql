@@ -1,4 +1,4 @@
--- EN_US/InfoAddictText.sql
+--· EN_US/InfoAddictText.sql
 /* Titles in the main info addict screen */
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_INFOADDICT_MAIN_TITLE', 'Info Addict', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_INFOADDICT_HISTORICAL_TITLE', 'Historical Data', '', '');

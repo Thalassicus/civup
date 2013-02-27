@@ -69,7 +69,7 @@ function csebPlotHelpers_GetCurrentPlotYieldString(pPlot)
 
 	local iResourceNum = 0;
 	local pResource;
-	local iHappy = Plot_GetYield(pPlot, YieldTypes.YIELD_HAPPINESS);
+	local iHappy = Plot_GetYield(pPlot, YieldTypes.YIELD_HAPPINESS_CITY) + Plot_GetYield(pPlot, YieldTypes.YIELD_HAPPINESS_NATIONAL);
 
 	local activeTeamID = Game.GetActiveTeam(); -- the ID of the currently active team
 	local pTeam = Teams[activeTeamID]; -- the currently active team

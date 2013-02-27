@@ -25,7 +25,7 @@ LuaEvents.NewImprovement				= LuaEvents.NewImprovement					or function(hexX, hex
 LuaEvents.NewTech						= LuaEvents.NewTech							or function(player, techID, changeID)	end
 LuaEvents.PlotChanged					= LuaEvents.PlotChanged						or function(hexX, hexY) end
 LuaEvents.PlotAcquired					= LuaEvents.PlotAcquired					or function(plot, newOwnerID)			end
-LuaEvents.PolicyAdopted					= LuaEvents.PolicyAdopted					or function(policyID, isPolicy)			end
+LuaEvents.NewPolicy						= LuaEvents.NewPolicy					or function(policyID, isPolicy)			end
 LuaEvents.CityOccupied					= LuaEvents.CityOccupied					or function(city, player, isForced)		end
 LuaEvents.CityPuppeted					= LuaEvents.CityPuppeted					or function(city, player, isForced)		end
 LuaEvents.CityLiberated					= LuaEvents.CityLiberated					or function(city, player, isForced)		end
@@ -54,11 +54,11 @@ log:SetLevel("WARN")
 local startAITurnTime = nil
 
 MapModData.Civup.VanillaTurnTimes	= 0
-MapModData.Civup.StartTurn		= Game.GetGameTurn()
+MapModData.Civup.StartTurn			= Game.GetGameTurn()
 MapModData.Civup.TotalPlayers		= 0
 MapModData.Civup.TotalCities		= 0
-MapModData.Civup.TotalUnits		= 0
-MapModData.Civup.ReplacingUnit	= false
+MapModData.Civup.TotalUnits			= 0
+MapModData.Civup.ReplacingUnit		= false
 
 
 MapModData.Civup.StartTurnTimes = {
@@ -119,7 +119,8 @@ function OnTurnStart()
 	stepClockTime = os.clock()
 	for playerID, player in pairs(Players) do
 		if player:IsAliveCiv() then
-			LuaEvents.ActivePlayerTurnStart_Player(player)
+			if LuaEvents.ActivePlayerTurnStart_Player(player) then
+			end
 			MapModData.Civup.TotalPlayers = MapModData.Civup.TotalPlayers + 1
 		end
 	end
@@ -159,7 +160,7 @@ function OnTurnStart()
 					local policyID = policyInfo.ID
 					if MapModData.Civup.HasPolicy[playerID][policyID] ~= player:HasPolicy(policyID) then
 						MapModData.Civup.HasPolicy[playerID][policyID] = player:HasPolicy(policyID)
-						LuaEvents.PolicyAdopted(player, policyID)
+						LuaEvents.NewPolicy(player, policyID)
 					end
 				end
 			end
@@ -242,7 +243,7 @@ function OnTurnEnd()
 					local policyID = policyInfo.ID
 					if MapModData.Civup.HasPolicy[playerID][policyID] ~= player:HasPolicy(policyID) then
 						MapModData.Civup.HasPolicy[playerID][policyID] = player:HasPolicy(policyID)
-						LuaEvents.PolicyAdopted(player, policyID)
+						LuaEvents.NewPolicy(player, policyID)
 					end
 				end
 			end
@@ -390,14 +391,14 @@ function OnHexCultureChanged(hexX, hexY, newOwnerID, unknown)
 end
 
 ---------------------------------------------------------------------
---[[ LuaEvents.PolicyAdopted(player, policyID) usage example:
+--[[ LuaEvents.NewPolicy(player, policyID) usage example:
 
 function CheckFreeBuildings(player, policyID)
 	-- check for buildings affected by the new policy
 end
 
 LuaEvents.ActivePlayerTurnEnd_Player.Add( CheckFreeBuildings )
-LuaEvents.PolicyAdopted.Add( CheckFreeBuildings )	
+LuaEvents.NewPolicy.Add( CheckFreeBuildings )	
 ]]
 
 Events.PolicyAdopted = Events.PolicyAdopted or function(policyID, isPolicy)
@@ -407,7 +408,7 @@ Events.PolicyAdopted = Events.PolicyAdopted or function(policyID, isPolicy)
 	end
 	local playerID = Game.GetActivePlayer()
 	MapModData.Civup.HasPolicy[playerID][policyID] = true
-	LuaEvents.PolicyAdopted(Players[playerID], policyID)
+	LuaEvents.NewPolicy(Players[playerID], policyID)
 end
 
 if not MapModData.Civup.HasPolicy then

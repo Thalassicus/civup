@@ -545,7 +545,7 @@ end</SetFunction>
     <IntegerControlData>
       <Name>Faith</Name>
       <GetFunction>function()
-  return Players[Game.GetActivePlayer()]:GetFaithPerTurn();
+  return Players[Game.GetActivePlayer()]:GetFaith();
 end</GetFunction>
       <SetFunction>function(value)
    Players[Game.GetActivePlayer()]:SetFaith(value);

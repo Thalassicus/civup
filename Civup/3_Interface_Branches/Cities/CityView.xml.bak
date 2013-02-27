@@ -180,9 +180,9 @@
 	<Instance Name="BuildingInstance">
 		<Button NoStateChange="1" Anchor="L,C" Color="White.0" Offset="0,0" Size="254,64" ID="BuildingButton" ToolTip="Placeholder Tooltip">
 			<Label Anchor="R,T" Offset="64,8" TruncateWidth="185" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="Building Name" ID="BuildingName"/>
-			<Label Anchor="L,B" Offset="-2,6" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="Building Icon" ID="BuildingNameIcon"/>
+			<Label Anchor="L,T" Offset="-2,6" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" String="Building Icon" ID="BuildingNameIcon"/>
 			<Image Anchor="R,C" Size="64,64" Offset="0,-2" Texture="64x64FrameButtons.dds" ID="BuildingImageFrame" Hidden="0">
-				<Image Anchor="C,C" Texture="WonderAtlas512.dds" Size="64,64" ID="BuildingImage"/>
+				<Image Anchor="C,C" Texture="WonderAtlas512.dds" Size="64,64" ID="BuildingImage" Hidden="0"/>
 				<Button Anchor="L,B" AnchorSide="O.I" Size="32,32" Offset="0,6" Texture="assets\UI\Art\Icons\CitizenWorker.dds" ID="BuildingFilledSpecialistSlot1" Hidden="True"/>
 				<Button Anchor="L,B" AnchorSide="O.I" Size="32,32" Offset="32,6" Texture="assets\UI\Art\Icons\CitizenWorker.dds" ID="BuildingFilledSpecialistSlot2" Hidden="True"/>
 				<Button Anchor="L,B" AnchorSide="O.I" Size="32,32" Offset="64,6" Texture="assets\UI\Art\Icons\CitizenWorker.dds" ID="BuildingFilledSpecialistSlot3" Hidden="True"/>
@@ -324,18 +324,18 @@
 				<Button Anchor="L,B" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="WorkerHeader">
 					<Label Anchor="L,C" Offset="12,-2" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="WorkerHeaderLabel"/>
 				</Button>
-				<Stack Anchor="L,T" Offset="0,0" Size="64,64" StackGrowth="Bottom" Padding="0" ID="WorkerManagementBox" Hidden="1">
+				<Stack Anchor="L,T" Offset="0,0" Size="64,64" StackGrowth="Bottom" Padding="0" ID="WorkerManagementBox" Hidden="0">
 					<Box Offset="0,0" Anchor="L,T" Size="254,64" Color="255,255,255,0" ToolTip=" " Hidden="0" ID="WorkerManagementSizeBox">
 						<Stack Anchor="L,T" Offset="0,0" Size="64,64" StackGrowth="Right" Padding="-5" ID="WorkerManagementRightBox" Hidden="0">
-							<RadioButton ID="BalancedFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="1" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TT"/>
-							<RadioButton ID="FoodFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_FOOD_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FOOD_TT"/>
-							<RadioButton ID="ProductionFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_PROD_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_PROD_TT"/>
-							<RadioButton ID="GoldFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_GOLD_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GOLD_TT"/>
-							<RadioButton ID="ResearchFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TT"/>
-							<RadioButton ID="CultureFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TT"/>
-							<RadioButton ID="GPFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TT"/>
-							<RadioButton ID="FaithFocusButton" String="TXT_KEY_CITYVIEW_FOCUS_FAITH_TEXT" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FAITH_TT"/>
-							<CheckBox Style="SquareCheck" ID="AvoidGrowthButton" String="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" ToolTip="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TT"/>
+							<RadioButton ID="BalancedFocusButton" String="[ICON_CITIZEN]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="1" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TT"/>
+							<RadioButton ID="FoodFocusButton" String="[ICON_FOOD]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FOOD_TT"/>
+							<RadioButton ID="ProductionFocusButton" String="[ICON_PRODUCTION]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_PROD_TT"/>
+							<RadioButton ID="GoldFocusButton" String="[ICON_GOLD]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GOLD_TT"/>
+							<RadioButton ID="ResearchFocusButton" String="[ICON_RESEARCH]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TT"/>
+							<RadioButton ID="CultureFocusButton" String="[ICON_CULTURE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TT"/>
+							<RadioButton ID="GPFocusButton" String="[ICON_GREAT_PEOPLE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TT"/>
+							<RadioButton ID="FaithFocusButton" String="[ICON_PEACE]" ButtonTexture="Assets/UI/Art/Controls/CheckBox.dds" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" RadioGroup="FocusGroup" ToolTip="TXT_KEY_CITYVIEW_FOCUS_FAITH_TT"/>
+							<CheckBox Style="SquareCheck" ID="AvoidGrowthButton" String="[ICON_LOCKED]" Font="TwCenMT16" FontStyle="Shadow" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="C,B" TextAnchorSide="O,O" IsChecked="0" ToolTip="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TT"/>
 						</Stack>
 					</Box>
 					<Box Anchor="L,B" Color="27.53.64.255" Offset="0,0" Size="254,2"/>
@@ -374,16 +374,16 @@
 					<Box Anchor="L,B" Color="27.53.64.255" Offset="0,0" Size="254,2"/>
 				</Button>
 				<Stack Anchor="L,T" Size="0,0" StackGrowth="B" Padding="0" ID="BuildingStack">
-					<Button Anchor="L,C" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="MarketplaceHeader">
+					<Button Anchor="L,C" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="MarketplaceHeader" Hidden="0">
 						<Label Anchor="L,C" Offset="12,-2" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="MarketplaceHeaderLabel"/>
 					</Button>
-					<Button Anchor="L,C" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="SpecialBuildingsHeader">
+					<Button Anchor="L,C" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="SpecialBuildingsHeader" Hidden="0">
 						<Label Anchor="L,C" Offset="12,-2" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="SpecialBuildingsHeaderLabel"/>
 					</Button>
-					<Button Anchor="L,C" Size="254,27" Offset="0,0" Texture="CivilopediaButtons272x27.dds" ID="WondersHeader">
+					<Button Anchor="L,C" Size="254,27" Offset="0,0" Texture="CivilopediaButtons272x27.dds" ID="WondersHeader" Hidden="0">
 						<Label Anchor="L,C" Offset="12,-2" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="WondersHeaderLabel"/>
 					</Button>
-					<Button Anchor="L,C" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="BuildingsHeader">
+					<Button Anchor="L,C" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds" ID="BuildingsHeader" Hidden="0">
 						<Label Anchor="L,C" Offset="12,-2" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="BuildingsHeaderLabel"/>
 					</Button>
 				</Stack>

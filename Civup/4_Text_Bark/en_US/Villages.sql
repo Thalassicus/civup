@@ -1,4 +1,4 @@
--- EN_US/Villages.sql
+--· EN_US/Villages.sql
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_IMPROVEMENT_TRADING_POST', 'Village', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT', 'A village is a clustered human settlement or community with a population ranging from a few hundred to a few thousands. These small settlements add to your society''s economy.', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_CIV5_IMPROVEMENTS_TRADINGPOST', 'Village', '', '');

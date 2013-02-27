@@ -258,8 +258,8 @@ function RefreshCityBanner(cityBanner, iActiveTeam, iActivePlayer)
 	end
 
 	-- Connected to capital?
-	if (isActiveTeamCity) then
-		if city:IsCapital() or (player:IsCapitalConnectedToCity(city) and not city:IsBlockaded()) then
+	if isActiveTeamCity then
+		if (city:IsCapital() or player:IsCapitalConnectedToCity(city)) and not city:IsBlockaded() then
 			controls.ConnectedIcon:SetHide(false);
 			if City_HasRailroad(city) then
 				controls.ConnectedIcon:SetString("[ICON_CONNECTED_RAILROAD]")
@@ -274,7 +274,7 @@ function RefreshCityBanner(cityBanner, iActiveTeam, iActivePlayer)
 	end
 		
 	-- Blockaded
-	if (city:IsBlockaded()) then
+	if city:IsBlockaded() then
 		controls.BlockadedIcon:SetHide(false);
 		controls.BlockadedIcon:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_CITY_BLOCKADED"));
 	else

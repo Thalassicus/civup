@@ -59,7 +59,7 @@ function OnPopup( popupInfo )
 	local bExcludeName = true;
 	local bExcludeHeader = true;
 	local bExcludeWritten = true;
-	local strGameInfo = GetHelpTextForBuilding(iBuildingID, bExcludeName, bExcludeHeader, false, nil, bExcludeWritten);
+	local strGameInfo = GetBuildingTip{buildingID=iBuildingID, hideName=true, hideGoodFor=true, hideCosts=true};
     
     if( strGameInfo ~= nil ) then
         Controls.Stats:SetText( Locale.ConvertTextKey( strGameInfo ) );

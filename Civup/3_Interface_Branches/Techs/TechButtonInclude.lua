@@ -469,9 +469,7 @@ function AdjustArtOnGrantedBuildingButton( thisButton, thisBuildingInfo, texture
 	if thisButton then
 		
 		-- Tooltip
-		local bExcludeName = false;
-		local bExcludeHeader = false;
-		thisButton:SetToolTipString( GetHelpTextForBuilding(thisBuildingInfo.ID, bExcludeName, bExcludeHeader, false) );
+		thisButton:SetToolTipString( GetBuildingTip{buildingID=thisBuildingInfo.ID} );
 		
 		local textureOffset, textureSheet = IconLookup( thisBuildingInfo.PortraitIndex, textureSize, thisBuildingInfo.IconAtlas );				
 		if textureOffset == nil then
@@ -534,7 +532,7 @@ end
 function AdjustArtOnGrantedActionButton( thisButton, thisBuildInfo, textureSize )
 	if thisButton then
 		local helpText = Locale.ConvertTextKey(thisBuildInfo.Description)		
-		if Civup.SHOW_POWER_FOR_BUILDS == 1 then
+		if Civup.SHOW_GOOD_FOR_BUILDS == 1 then
 			helpText = helpText .. "[NEWLINE]----------------";
 			helpText = helpText .. Game.GetFlavors("Build_Flavors", "BuildType", thisBuildInfo.Type)
 		end

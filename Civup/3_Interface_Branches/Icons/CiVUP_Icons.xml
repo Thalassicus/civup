@@ -9,99 +9,109 @@
 
 	<IconFontMapping>
 		<Row>
-			<IconName>ICON_NAVAL</IconName>
+			<IconName>ICON_ENGINEER</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>1</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_AIR</IconName>
+			<IconName>ICON_SCIENTIST</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>2</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_VANGUARD</IconName>
+			<IconName>ICON_MERCHANT</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>3</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_DEFENSE</IconName>
+			<IconName>ICON_ARTIST</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>4</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_CITY_DEFENSE</IconName>
+			<IconName>ICON_CONNECTED_RAILROAD</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>5</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_ENGINEER</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>6</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_SCIENTIST</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>7</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_MERCHANT</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>8</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_ARTIST</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>9</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_CONNECTED_RAILROAD</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>10</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_HEAL</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>11</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_DETECT</IconName>
+			<IconName>ICON_DETECT_LAND</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>12</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_ANTI_SHIP</IconName>
+			<IconName>ICON_BLITZ</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>13</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_BOMBARD</IconName>
+			<IconName>ICON_HEAL</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>14</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_BLITZ</IconName>
+			<IconName>ICON_DEFENSE</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>15</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_ATTRIBUTE_NEGATIVE</IconName>
+			<IconName>ICON_CITY_DEFENSE</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
 			<IconMapping>16</IconMapping>
 		</Row>
 		<Row>
-			<IconName>ICON_ATTRIBUTE_POSITIVE</IconName>
+			<IconName>ICON_DETECT</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>17</IconMapping>
-		</Row>
-		<Row>
-			<IconName>ICON_ATTRIBUTE_PERSISTS</IconName>
-			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>18</IconMapping>
+			<IconMapping>23</IconMapping>
 		</Row>
 		<Row>
 			<IconName>ICON_ANTI_MOBILE</IconName>
 			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
-			<IconMapping>19</IconMapping>
+			<IconMapping>24</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_AIR</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>25</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_VANGUARD</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>26</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_DETECT_SEA</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>34</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_ANTI_SHIP</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>35</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_BOMBARD</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>36</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_NAVAL</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>37</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_ATTRIBUTE_NEGATIVE</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>45</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_ATTRIBUTE_POSITIVE</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>46</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_ATTRIBUTE_PERSISTS</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_CIVUP</IconFontTexture>
+			<IconMapping>47</IconMapping>
 		</Row>
 	</IconFontMapping>
 	

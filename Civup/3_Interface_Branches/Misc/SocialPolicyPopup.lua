@@ -336,11 +336,15 @@ function UpdateDisplay()
 			end
 			--local thisEraLabel = Controls[EraLabelName];
 			
-			local helpText = string.format("[COLOR_POSITIVE_TEXT]%s[ENDCOLOR][NEWLINE]", Locale.ConvertTextKey(policyBranchInfo.Description))
-			helpText = helpText .. (Locale.ConvertTextKey(policyBranchInfo.Help) or " ");
+			local helpText = Locale.ConvertTextKey(policyBranchInfo.Help or "")
+			local helpExtra = (Civup.USING_CSD == 1) and Locale.ConvertTextKey((policyBranchInfo.Description or "") .. "_HELP_EXTRA") or ""
+			if helpExtra == (policyBranchInfo.Description or "") .. "_HELP_EXTRA" then
+				helpExtra = ""
+			end
+			helpText = string.format("[COLOR_POSITIVE_TEXT]%s[ENDCOLOR][NEWLINE]%s%s", Locale.ConvertTextKey(policyBranchInfo.Description), helpText, helpExtra)
 			
 			-- Power
-			if Civup.SHOW_POWER_FOR_POLICIES == 1 then
+			if Civup.SHOW_GOOD_FOR_POLICIES == 1 then
 				helpText = helpText .. "[NEWLINE][NEWLINE]----------------"
 				helpText = helpText .. Game.GetFlavors("Policy_Flavors", "PolicyType", policyInfo.Type)
 			end
@@ -478,18 +482,17 @@ function UpdateDisplay()
 			
 			
 			-- Tooltip
-			local tipText = string.format("[COLOR_POSITIVE_TEXT]%s[ENDCOLOR][NEWLINE]", Locale.ConvertTextKey(policyInfo.Description))
-			tipText = tipText .. (Locale.ConvertTextKey( policyInfo.Help ) or " ");
-	
+			local helpText = Locale.ConvertTextKey(policyInfo.Help or "")
+			local helpExtra = (Civup.USING_CSD == 1) and Locale.ConvertTextKey((policyInfo.Description or "") .. "_HELP_EXTRA") or ""
+			if helpExtra == (policyInfo.Description or "") .. "_HELP_EXTRA" then
+				helpExtra = ""
+			end
+			helpText = string.format("[COLOR_POSITIVE_TEXT]%s[ENDCOLOR][NEWLINE]%s%s", Locale.ConvertTextKey(policyInfo.Description), helpText, helpExtra)
+			
 			-- Power
-			if Civup.SHOW_POWER_FOR_POLICIES == 1 then
-				tipText = tipText .. "[NEWLINE][NEWLINE]----------------"
-				tipText = tipText .. Game.GetFlavors("Policy_Flavors", "PolicyType", policyInfo.Type)
-				--[[
-				for flavorInfo in GameInfo.Policy_Flavors(string.format("PolicyType = '%s'", policyInfo.Type)) do
-					tipText = tipText .. string.format("[NEWLINE]%s %s", flavorInfo.Flavor, Locale.ToLower(string.gsub(flavorInfo.FlavorType, "FLAVOR_", "")));
-				end
-				--]]
+			if Civup.SHOW_GOOD_FOR_POLICIES == 1 then
+				helpText = helpText .. "[NEWLINE][NEWLINE]----------------"
+				helpText = helpText .. Game.GetFlavors("Policy_Flavors", "PolicyType", policyInfo.Type)
 			end
 			
 			-- Player already has Policy
@@ -512,7 +515,7 @@ function UpdateDisplay()
 				thisPolicyIcon.PolicyImage:SetColor( fadeColorRV );
 				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, thisPolicyIcon.PolicyImage );
 				-- Tooltip
-				tipText = tipText .. "[NEWLINE][NEWLINE]"
+				--helpText = helpText .. "[NEWLINE][NEWLINE]"
 			
 			-- Can adopt the Policy right now
 			elseif player:CanAdoptPolicy( i ) then
@@ -539,7 +542,7 @@ function UpdateDisplay()
 				thisPolicyIcon.PolicyImage:SetColor( fadeColorRV );
 				IconHookup( policyInfo.PortraitIndex, 64, policyInfo.IconAtlas, thisPolicyIcon.PolicyImage );
 				-- Tooltip
-				tipText = tipText .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_CANNOT_UNLOCK");
+				helpText = helpText .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_CANNOT_UNLOCK");
 			end
 			
 			-- Policy is Blocked
@@ -549,11 +552,11 @@ function UpdateDisplay()
 				
 				-- Update tooltip if we have this Policy
 				if player:HasPolicy( i ) then
-					tipText = tipText .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_BLOCKED");
+					helpText = helpText .. "[NEWLINE][NEWLINE]" .. Locale.ConvertTextKey("TXT_KEY_POLICY_BRANCH_BLOCKED");
 				end
 			end
 				
-			thisPolicyIcon.PolicyIcon:SetToolTipString( tipText );
+			thisPolicyIcon.PolicyIcon:SetToolTipString( helpText );
 		end
 		
 		i = i + 1;

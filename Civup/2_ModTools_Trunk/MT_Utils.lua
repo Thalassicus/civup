@@ -8,6 +8,64 @@ local log = Events.LuaLogger:New()
 log:SetLevel("WARN")
 
 
+
+------------------------------------------------------------------
+-- Game.CivupSaveGame(fileName)
+-- Game.CivupLoadGame()
+-- Fixes a bug causing defense buildings to not update city max health upon game load.
+--
+MapModData.Civup.DefenseBuildingsReal = MapModData.Civup.DefenseBuildingsReal or {}
+MapModData.Civup.DefenseBuildingsFree = MapModData.Civup.DefenseBuildingsFree or {}
+
+function Game.CivupSaveGame(fileName)
+	for playerID, player in pairs(Players) do
+		for city in player:Cities() do
+			local cityID = City_GetID(city)
+			if not MapModData.Civup.DefenseBuildingsReal[cityID] then MapModData.Civup.DefenseBuildingsReal[cityID] = {} end
+			for buildingInfo in GameInfo.Buildings("ExtraCityHitPoints <> 0") do
+				local numBuilding = city:GetNumRealBuilding(buildingInfo.ID)
+				if MapModData.Civup.DefenseBuildingsReal[cityID][buildingInfo.ID] ~= numBuilding then
+					MapModData.Civup.DefenseBuildingsReal[cityID][buildingInfo.ID] = numBuilding
+					SaveValue(numBuilding, "MapModData.Civup.DefenseBuildingsReal[%s][%s]", cityID, buildingInfo.ID)
+					--log:Info("Save %s %s", city:GetName(), buildingInfo.Type)
+				end
+				city:SetNumRealBuilding(buildingInfo.ID, 0)
+				
+				-- city:SetNumFreeBuilding core function not pushed to lua?!
+				--MapModData.Civup.DefenseBuildingsFree[cityID][buildingInfo.ID] = city:GetNumFreeBuilding(buildingInfo.ID)
+				--SaveValue(MapModData.Civup.DefenseBuildingsFree[cityID][buildingInfo.ID], "MapModData.Civup.DefenseBuildingsFree[%s][%s]", cityID, buildingInfo.ID)
+				--city:SetNumFreeBuilding(buildingInfo.ID, 0)
+			end			
+		end
+	end
+
+	UI.SaveGame(fileName)
+
+	for playerID, player in pairs(Players) do
+		for city in player:Cities() do
+			local cityID = City_GetID(city)
+			for buildingInfo in GameInfo.Buildings("ExtraCityHitPoints <> 0") do
+				city:SetNumRealBuilding(buildingInfo.ID, MapModData.Civup.DefenseBuildingsReal[cityID][buildingInfo.ID])
+				--city:SetNumFreeBuilding(buildingInfo.ID, MapModData.Civup.DefenseBuildingsFree[cityID][buildingInfo.ID])
+			end			
+		end
+	end
+end
+
+function Game.CivupLoadGame()
+	for playerID, player in pairs(Players) do
+		for city in player:Cities() do
+			local cityID = City_GetID(city)
+			if not MapModData.Civup.DefenseBuildingsReal[cityID] then MapModData.Civup.DefenseBuildingsReal[cityID] = {} end
+			for buildingInfo in GameInfo.Buildings("ExtraCityHitPoints <> 0") do
+				local numBuilding = LoadValue("MapModData.Civup.DefenseBuildingsReal[%s][%s]", cityID, buildingInfo.ID) or 0
+				MapModData.Civup.DefenseBuildingsReal[cityID][buildingInfo.ID] = numBuilding
+				city:SetNumRealBuilding(buildingInfo.ID, numBuilding)
+				--city:SetNumFreeBuilding(buildingInfo.ID, LoadValue("MapModData.Civup.DefenseBuildingsFree[%s][%s]", cityID, buildingInfo.ID) or 0)
+			end
+		end
+	end
+end
 ----------------------------------------------------------------
 --[[ Init(string) usage example:
 Game.DoOnce("TurnAcquired") and LuaEvents.MT_Initialize.Add(InitTurnAcquired)
@@ -96,7 +154,7 @@ function Game.Constrain(lower, mid, upper)
 end
 
 ----------------------------------------------------------------
--- Game.GetFlavors(itemTable, itemColumn, itemType) usage example:
+-- Game.GetFlavors(itemTable, itemColumn, itemType, minVal, skipHeader)
 --
 local flavorColors = {
 	[128] = "[COLOR_PLAYER_ORANGE_TEXT]",
@@ -109,11 +167,11 @@ local flavorColors = {
 function Game.GetFlavorColor(flavor)
 	return flavorColors[Game.Constrain(4, Game.RoundToPowerOf2(flavor), 128)] or "[COLOR_WHITE]"
 end
-function Game.GetFlavors(itemTable, itemColumn, itemType, minVal)
-	local priorities = {}
+function Game.GetFlavors(itemTable, itemColumn, itemType, minVal, skipHeader)
+	local flavors = {}
 	local showBasicHelp = not OptionsManager.IsNoBasicHelp()
 
-	if Civup.SHOW_POWER_RAW_NUMBERS == 1 then
+	if Civup.SHOW_GOOD_FOR_RAW_NUMBERS == 1 then
 		minVal = 1
 	else
 		minVal = minVal or 1
@@ -134,7 +192,7 @@ function Game.GetFlavors(itemTable, itemColumn, itemType, minVal)
 				description = "NO DESCRIPTION"
 			end		
 			if flavorInfo.Flavor >= minVal then
-				table.insert(priorities, {
+				table.insert(flavors, {
 					FlavorType	= flavorInfo.FlavorType,
 					FlavorName	= description,
 					Flavor		= math.max(1, Game.Round(flavorInfo.Flavor))
@@ -143,26 +201,26 @@ function Game.GetFlavors(itemTable, itemColumn, itemType, minVal)
 		end
 	end
 
-	if #priorities == 0 then
+	if #flavors == 0 then
 		return ""
 	end
 	
-	table.sort(priorities, function (a,b)
+	table.sort(flavors, function (a,b)
 		if a.Flavor ~= b.Flavor then
 			return a.Flavor > b.Flavor
 		end
 		return a.FlavorName < b.FlavorName
 	end)
 	
-	local helpText = "[NEWLINE]"..Locale.ConvertTextKey("TXT_KEY_ITEM_POWER")
+	local helpText = skipHeader and "" or string.format("[NEWLINE]%s", Locale.ConvertTextKey("TXT_KEY_TOOLTIP_GOOD_FOR"))
 	local firstLine = true
 
-	for k, v in ipairs(priorities) do
+	for k, v in ipairs(flavors) do
 		local flavorInfo = GameInfo.Flavors[v.FlavorType]
 		helpText = string.format(
 			"%s[NEWLINE]%s%s %s[ENDCOLOR]",
 			helpText,
-			(Civup.SHOW_POWER_RAW_NUMBERS == 1) and (v.Flavor.." ") or Game.GetFlavorColor(v.Flavor),
+			(Civup.SHOW_GOOD_FOR_RAW_NUMBERS == 1) and (v.Flavor.." ") or Game.GetFlavorColor(v.Flavor),
 			flavorInfo.IconString or "[ICON_HAPPINESS_2]",
 			v.FlavorName
 		);

@@ -236,7 +236,7 @@ function GetScoreFromMode(iPlayer, iMode)
 		
 	-- Happiness Mode
 	elseif (iMode == g_ListMode_Happiness) then
-		return pPlayer:GetYieldRate(YieldTypes.YIELD_HAPPINESS);
+		return pPlayer:GetYieldRate(YieldTypes.YIELD_HAPPINESS_NATIONAL);
 		
 	-- Wonders Mode
 	elseif (iMode == g_ListMode_Wonders) then

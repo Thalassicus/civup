@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{4746fd17-873e-40e4-b531-63afb3f7f235}</ProjectGuid>
-    <Name>Civ V Unofficial Patch v2.4.1 (GK)</Name>
+    <Name>Civ V Unofficial Patch (GnK v2.6 Beta)</Name>
     <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Beta</Stability>
@@ -54,6 +54,11 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>1_Core_Roots/Civup_Buildings.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>3_Interface_Branches/Interface_Data.sql</FileName>
       </Action>
       <Action>
@@ -99,7 +104,7 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>1_Core_Roots/CiVUP_TooltipPriorities.xml</FileName>
+        <FileName>1_Core_Roots/Civup_TooltipPriorities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -119,7 +124,7 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>2_ModTools_Trunk/AutoTips/AT_BuildingStats.xml</FileName>
+        <FileName>2_ModTools_Trunk/AutoTips/AT_BuildingStats.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -179,52 +184,52 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/en_US/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/en_US/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/AttilaMods.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/AttilaMods.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -234,42 +239,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/AutoTips_Tips.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/AutoTips_Tips.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -279,42 +284,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/AutoTips_Help.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/AutoTips_Help.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -324,42 +329,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/CopaseticUITweaks.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/CopaseticUITweaks.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/Core.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -369,42 +374,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/Core.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/Core.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/Core.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/Core.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/Core.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/Core.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/Core.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Core.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -414,42 +419,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/Promotions.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Promotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -459,42 +464,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/CustomNotifications.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/CustomNotifications.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -504,42 +509,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/ExtraDiplomacyText.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/ExtraDiplomacyText.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -549,42 +554,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/Diplomacy.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Diplomacy.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -594,42 +599,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/CsebExtendedPlotMouseover.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/CsebExtendedPlotMouseover.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -639,42 +644,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/Opportunities.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Opportunities.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -684,42 +689,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/UnitTrees.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/UnitTrees.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/Villages.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -729,87 +734,87 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/Villages.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/Villages.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/Villages.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/Villages.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/Villages.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/Villages.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/Villages.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Villages.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/en_US/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/en_US/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/WWGD.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/WWGD.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -819,42 +824,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/FlagPromotions.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/FlagPromotions.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -864,42 +869,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/FreeResearchBalance.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/FreeResearchBalance.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -909,42 +914,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/MapPins.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/MapPins.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/Trade.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -954,42 +959,42 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/Trade.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/Trade.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/Trade.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/Trade.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/Trade.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/Trade.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/Trade.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/Trade.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/DE_DE/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/DE_DE/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -999,37 +1004,37 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ES_ES/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/ES_ES/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/FR_FR/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/FR_FR/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/IT_IT/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/IT_IT/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/JA_JP/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/JA_JP/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/PL_PL/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/PL_PL/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/RU_RU/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/RU_RU/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>4_Text_Bark/ZH_CN/YieldLibrary.xml</FileName>
+        <FileName>4_Text_Bark/ZH_CN/YieldLibrary.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -1150,6 +1155,12 @@
         <Description />
         <FileName>2_ModTools_Trunk/CustomNotifications/ImprovedEvents.lua</FileName>
       </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Interface_AutoSaveTimed.lua</Name>
+        <Description />
+        <FileName>3_Interface_Branches/Saving/Interface_AutoSaveTimed.lua</FileName>
+      </Content>
     </ModContent>
     <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
     <ReloadUnitSystem>false</ReloadUnitSystem>
@@ -1225,7 +1236,11 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="1_Core_Roots/CiVUP_TooltipPriorities.xml">
+    <Content Include="1_Core_Roots\Civup_Buildings.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots\Civup_TooltipPriorities.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -1285,7 +1300,7 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="2_ModTools_Trunk/AutoTips/AT_BuildingStats.xml">
+    <Content Include="2_ModTools_Trunk\AutoTips\AT_BuildingStats.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -1973,6 +1988,26 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="3_Interface_Branches\Misc\CivilopediaScreen.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches\Saving\Interface_AutoSaveTimed.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches\Saving\OptionsMenu.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches\Saving\OptionsMenu.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="3_Interface_Branches\Saving\SaveMenu.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="4_Text_Bark\en_US\AutoTips_Help.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -1997,7 +2032,7 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="4_Text_Bark\en_US\Diplomacy.sql">
+    <Content Include="4_Text_Bark\en_US\_Diplomacy.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -2633,6 +2668,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Civup_Details.xls">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Civup_Language.xls">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -2718,6 +2757,7 @@
     <Folder Include="1_Core_Roots" />
     <Folder Include="1_Core_Roots\Start" />
     <Folder Include="2_ModTools_Trunk\_ClassMethods" />
+    <Folder Include="3_Interface_Branches\Saving" />
     <Folder Include="3_Interface_Branches\_Mods\CityLimits" />
     <Folder Include="3_Interface_Branches\_Mods\Global Relations" />
     <Folder Include="3_Interface_Branches\Diplomacy" />

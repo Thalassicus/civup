@@ -1982,6 +1982,8 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 			end
 		end
 		
+		--[[
+		-- IsHigherTechThan method requires unit-vs-unit battle
 		-- CombatBonusVsHigherTech
 		if (theirPlot:GetOwner() == theirPlayerID) then
 			iModifier = theirPlayer:GetCombatBonusVsHigherTech();
@@ -1994,12 +1996,14 @@ function UpdateCombatOddsCityVsUnit(myCity, theirUnit)
 		end
 		
 		-- CombatBonusVsLargerCiv
+		-- IsLargerCivThan method requires unit-vs-unit battle
 		iModifier = theirPlayer:GetCombatBonusVsLargerCiv();
 		if (iModifier ~= 0 and pMyUnit:IsLargerCivThan(theirUnit)) then
 			controlTable = g_TheirCombatDataIM:GetInstance();
 			controlTable.Text:LocalizeAndSetText(  "TXT_KEY_EUPANEL_TRAIT_SMALL_SIZE_BONUS" );
 			controlTable.Value:SetText( GetFormattedText(strText, iModifier, false, true) );
 		end
+		--]]
 
 		-- CapitalDefenseModifier
 		iModifier = theirUnit:CapitalDefenseModifier();

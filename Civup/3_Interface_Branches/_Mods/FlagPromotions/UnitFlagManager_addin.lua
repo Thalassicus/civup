@@ -51,7 +51,7 @@ g_UnitFlagClass.UpdateVisibility = function ( self )
     	end
 	end
     self.m_Instance.FlagShadow:SetHide(not self.m_IsUnitIconDisplayed)
-	if (not bDisplayAllFlagPromotions) and (self.m_Promotions[1] ~= nil) then
+	if (not bDisplayAllFlagPromotions) and self.m_Promotion and self.m_Promotions[1] then
 		self:SetHideAllPromotions(true)
 	end
 	self:UpdatePromotions()

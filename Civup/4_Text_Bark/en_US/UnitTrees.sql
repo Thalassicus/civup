@@ -1,4 +1,4 @@
--- EN_US/UnitTrees.sql
+--· EN_US/UnitTrees.sql
 /*  Promotion Trees */
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK', 'Promotion Tree', '', '');
 INSERT INTO Civup_Language_EN_US (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-01-18'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK_TT', 'Display the Promotion Tree to easily see which promotions are available for a combat class (recon, naval, melee, siege, etc)', '', '');
