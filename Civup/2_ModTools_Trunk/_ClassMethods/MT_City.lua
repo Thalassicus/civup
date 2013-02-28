@@ -280,6 +280,10 @@ function City_GetNumBuildingClass(city, buildingClass)
 end
 
 function City_SetNumBuildingClass(city, buildingClass, count)
+	if count < 0 then
+		log:Error("City_SetNumBuildingClass %s %s count=%s", city:GetName(), buildingClass, count)
+		return
+	end
 	city:SetNumRealBuilding(Players[city:GetOwner()]:GetUniqueBuildingID(buildingClass), count)
 end
 

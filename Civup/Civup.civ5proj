@@ -1998,15 +1998,15 @@
     </Content>
     <Content Include="3_Interface_Branches\Saving\OptionsMenu.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="3_Interface_Branches\Saving\OptionsMenu.xml">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="3_Interface_Branches\Saving\SaveMenu.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="4_Text_Bark\en_US\AutoTips_Help.sql">
       <SubType>Lua</SubType>

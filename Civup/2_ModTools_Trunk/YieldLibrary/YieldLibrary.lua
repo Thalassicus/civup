@@ -175,9 +175,14 @@ function SetYieldCache(object, yieldLevel, yieldID, yield, itemTable, itemID, qu
 		--]]
 	else
 		MapModData.YieldCache[yieldLevel][yieldID][City_GetID(object)] = yield
+		--[[
 		if yieldID == YieldTypes.YIELD_HAPPINESS_CITY then
+			if yield < 0 then
+				log:Warn("SetYieldCache %s city happiness = %s", object:GetName(), yield)
+			end
 			object:SetNumRealBuilding(GameInfo.Buildings.BUILDING_HAPPINESS_CITY.ID, yield)
 		end
+		--]]
 	end
 end
 
@@ -449,7 +454,10 @@ function City_GetBaseYieldFromTerrain(city, yieldID)
 			end
 		end
 		--log:Warn("%20s %5s city happiness from mod", city:GetName(), yield)
-		city:SetNumRealBuilding(GameInfo.Buildings.BUILDING_HAPPINESS_CITY.ID, yield)
+		if yield < 0 then
+			log:Warn("City_GetBaseYieldFromTerrain %s city happiness is %s", object:GetName(), yield)
+		end
+		City_SetNumBuildingClass(city, "BUILDINGCLASS_HAPPINESS_CITY", yield)
 	elseif yieldID == YieldTypes.YIELD_HAPPINESS_NATIONAL then
 		-- todo
 	else
@@ -1752,8 +1760,8 @@ function PlayerClass.GetYieldRate(player, yieldID, skipGlobalMods)
 		return 0
 	end
 	
-	local yield = 0
-	--[[
+	--local yield = 0
+	--
 	local yield = GetYieldCache(player, "playerRate", yieldID)
 	if yield and player:GetID() == Game.GetActivePlayer() then
 		return yield
@@ -1868,7 +1876,7 @@ function PlayerClass.GetYieldRate(player, yieldID, skipGlobalMods)
 			end
 		end
 	end
-	--SetYieldCache(player, "playerRate", yieldID, yield)
+	SetYieldCache(player, "playerRate", yieldID, yield)
 	if showTimers == 3 then print(string.format("%3s ms for PlayerClass.GetYieldRate", math.floor((os.clock() - timeStart)*1000))) end
 	return yield
 end
@@ -2198,11 +2206,11 @@ function City_UpdateModdedYields(city, player)
 				yield = yield * 1.5
 			end
 			yield = Game.Round(math.min(city:GetPopulation(), yield))
-			city:SetNumRealBuilding(GameInfo.Buildings.BUILDING_AI_PRODUCTION.ID, yield)
+			City_SetNumBuildingClass(city, "BUILDINGCLASS_AI_PRODUCTION", yield)
 			if not city:IsHasBuilding(GameInfo.Buildings.BUILDING_AI_GOLD.ID) then
-				city:SetNumRealBuilding(GameInfo.Buildings.BUILDING_AI_GOLD.ID, yield + GameInfo.Yields.YIELD_GOLD.MinPlayer)
-				city:SetNumRealBuilding(GameInfo.Buildings.BUILDING_AI_SCIENCE.ID, yield + GameInfo.Yields.YIELD_SCIENCE.MinPlayer)
-				city:SetNumRealBuilding(GameInfo.Buildings.BUILDING_AI_CULTURE.ID, yield)
+				City_SetNumBuildingClass(city, "BUILDINGCLASS_AI_GOLD", yield + GameInfo.Yields.YIELD_GOLD.MinPlayer)
+				City_SetNumBuildingClass(city, "BUILDINGCLASS_AI_SCIENCE", yield + GameInfo.Yields.YIELD_SCIENCE.MinPlayer)
+				City_SetNumBuildingClass(city, "BUILDINGCLASS_AI_CULTURE", yield)
 			end
 			--log:Debug("Set AI Buildings %3s %25s %25s", City_GetNumBuilding(city, GameInfo.Buildings.BUILDING_AI_PRODUCTION.ID), player:GetName(), city:GetName())
 			LuaEvents.DirtyYieldCacheCity(city)
@@ -2333,7 +2341,10 @@ function PlayerClass.UpdateModdedHappiness(player)
 		yield = yield + player:GetYieldsFromCitystates()[yieldID]
 	end
 	--log:Debug("%5s %20s national happiness from mod", yield, player:GetName())
-	capital:SetNumRealBuilding(GameInfo.Buildings.BUILDING_HAPPINESS_NATIONAL.ID, yield)
+	if yield < 0 then
+		log:Error("Happiness from resources=%s citystates=%s", player:GetYieldFromSurplusResources(yieldID), player:GetYieldsFromCitystates()[yieldID])
+	end
+	City_SetNumBuildingClass(capital, "BUILDINGCLASS_HAPPINESS_NATIONAL", yield)
 	
 	--yield = Game.Round(player:GetYieldRate(yieldID) * Civup.PERCENT_SCIENCE_FOR_1_SURPLUS_HAPPINESS)
 

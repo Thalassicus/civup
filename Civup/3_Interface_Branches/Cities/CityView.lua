@@ -394,7 +394,7 @@ function AddBuildingButton( city, building )
 
 	-- Multiple copies of the building
 	local numCopies = City_GetNumBuilding(city, buildingID)
-	if numCopies > 1 then
+	if numCopies ~= 1 then
 		strBuildingName = strBuildingName .. " (x" .. numCopies .. ")"
 	end
 	

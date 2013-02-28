@@ -23,12 +23,14 @@ LuaEvents.ActivePlayerTurnStart_Player	.Add(PlayerClass.UpdateModdedHappiness)
 LuaEvents.ActivePlayerTurnEnd_Player	.Add(PlayerClass.UpdateModdedYieldsEnd)
 LuaEvents.ActivePlayerTurnStart_Player	.Add(PlayerClass.UpdateModdedYieldsStart)
 
+--[[
 Events.SerialEventGameDataDirty.Add(function()
 	for playerID, player in pairs(Players) do
 		-- unsure why core CvPlayer::DoUpdateHappiness() function is creating weird happiness values, but this seems to reset things
 		player:SetHappiness(player:GetYieldRate(YieldTypes.YIELD_HAPPINESS_NATIONAL) + player:GetUnhappiness())
 	end
 end)
+--]]
 
 --LuaEvents.ActivePlayerTurnStart_Player.Add(UpdatePlayerRewardsFromMinorCivs)
 

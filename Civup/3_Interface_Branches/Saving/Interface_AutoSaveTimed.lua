@@ -3,8 +3,6 @@
 -- DateCreated: 2/4/2013 5:24:38 PM
 --------------------------------------------------------------
 
-return
-
 local ModID					= "01127f62-3896-4897-b169-ecab445786cd"
 local ModVersion			= Modding.GetActivatedModVersion(ModID) or 2
 local ModUserData			= Modding.OpenUserData(ModID, ModVersion)
