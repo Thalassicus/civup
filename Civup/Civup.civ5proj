@@ -1049,6 +1049,11 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>1_Core_Roots/Civup__End.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>4_Text_Bark/Language_End.sql</FileName>
       </Action>
     </ModActions>
@@ -1237,6 +1242,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="1_Core_Roots\Civup_Buildings.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="1_Core_Roots\Civup__End.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

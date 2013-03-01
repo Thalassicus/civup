@@ -2299,7 +2299,7 @@ function PlayerClass.UpdateModdedYieldsEnd(player)
 		player:ChangeYieldStored(yieldID, modYield-vanillaYield)
 	end
 	
-	--[[
+	--
 	local yieldID = YieldTypes.YIELD_HAPPINESS_NATIONAL
 	vanillaYield = player:GetExcessHappiness()
 	modYield = player:GetYieldRate(yieldID)
