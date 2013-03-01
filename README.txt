@@ -6,12 +6,17 @@ Support:    http://tinyurl.com/civupbug
 News:       http://civmodding.wordpress.com
 Credits:    http://communitas.wikia.com/wiki/Credits
 
+
+
+=== Contributions ===
+
 Contributing to the project is very easy!
 
 Steps:
 1. Get your personal "forked" copy.
 2. Make changes.
 3. "Pull" your changes into the original project.
+
 
 This is called the "fork-pull" method. See here for details:
 https://help.github.com/articles/using-pull-requests
