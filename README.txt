@@ -9,11 +9,11 @@ Credits:    http://communitas.wikia.com/wiki/Credits
 Contributing to the project is very easy!
 
 Steps:
-1. Get your personal copy.
+1. Get your personal "forked" copy.
 2. Make changes.
-3. Submit your changes.
+3. "Pull" your changes into the original project.
 
-See here for details:
+This is called the "fork-pull" method. See here for details:
 https://help.github.com/articles/using-pull-requests
 
 1. Click "Fork" button at top-right to create your personal copy of this project.
@@ -24,3 +24,5 @@ https://help.github.com/articles/using-pull-requests
 6. Commit your changes in the app, then sync.
 7. Open your forked copy of the project webpage.
 8. Click the "pull request" button.
+9. Fill out your pull request.
+10. A project leader will later merge your changes into the root project.
