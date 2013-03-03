@@ -28,7 +28,6 @@ if (Game:IsNetworkMultiPlayer()
 	or Modding.AnyActivatedModsContainPropertyValue( "DisableSaveMapOption", "1" )
 	or Game.IsOption( GameOptionTypes.GAMEOPTION_LOCK_MODS )
 	or OptionsManager.GetNumAutosavesKept_Cached() <= 0 
-	or MapModData.AutosaveMinutes <= 0
 	) then
 	return
 end
@@ -48,6 +47,9 @@ function SaveGame(fileIndex)
 end
 
 ContextPtr:SetUpdate(function (secSinceUpdate)
+	if MapModData.AutosaveMinutes <= 0 then
+		return
+	end
 	secElapsed = secElapsed + secSinceUpdate
 	if secElapsed >= MapModData.AutosaveMinutes * 60 then
 		SaveGame()
