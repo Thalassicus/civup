@@ -15,3 +15,6 @@ UPDATE Technologies SET AudioIntroHeader = "" WHERE EXISTS
 UPDATE Technologies SET AudioIntro = "" WHERE EXISTS 
 (SELECT Value FROM Civup WHERE Type='PLAY_SPEECH_TECHS' AND Value=0);
 
+UPDATE Era_NewEraVOs SET VOScript = "" WHERE EXISTS
+(Select Value FROM Civup Where Type='PLAY_SPEECH_ERAS' AND Value=0);
+
