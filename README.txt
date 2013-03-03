@@ -22,7 +22,7 @@ This is called the "fork-pull" method. See here for details:
 https://help.github.com/articles/using-pull-requests
 
 1. Click "Fork" button at top-right to create your personal copy of this project.
-2. Click "Branch", select master or beta.
+2. Click "Branch" and select beta (unless you specifically know you need a different branch).
 3. Click "Clone in Windows".
 4. Improve the project.
 5. Open the project in the github for windows app.
