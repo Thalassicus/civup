@@ -26,7 +26,7 @@ Details:
 => Get your copy
 1. Click "Fork" button at top-right to create your personal copy of this project.
 2. You should be on your forked version of the project webpage.
-3. Click "Branch" and select beta (unless you specifically know you need a different branch).
+3. Click "Branch" and select beta (unless you know you need a different branch).
 4. Click "Clone in Windows".
 5. Open the project in the github for windows app ("the app"), and ensure the branch is set to beta.
 
