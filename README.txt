@@ -14,7 +14,7 @@ Contributing to the project is simple!
 
 Steps:
 1. Get your personal "forked" copy.
-2. Make changes.
+2. Make changes. Add a short note of each change in /gem/patchnotes.txt.
 3. Requst a merge with the original project.
 
 See tutorial here:
