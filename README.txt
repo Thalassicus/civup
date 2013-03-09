@@ -14,7 +14,7 @@ Contributing to the project is very easy!
 
 Steps:
 1. Get your personal "forked" copy.
-2. Make changes.
+2. Make changes. Add a short note of each change in /civup/patchnotes.txt.
 3. "Pull" your changes into the original project.
 
 

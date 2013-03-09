@@ -1,0 +1,30 @@
+'''Civup 2.6 Beta 3'''
+
+This file is in "MediaWiki format" (google it for details). The most important formatting options are:
+Header:     === text ===
+List item:  * item
+Icon:       [[File:Food.png]
+
+Available icons:
+
+[[File:Food.png]] [[File:Production.png]] [[File:Gold.png]] [[File:Science.png]] [[File:Culture.png]] [[File:Faith.png]] [[File:GoldenAge.png]] [[File:Happy.png]] [[File:Unhappy.png]] [[File:Angry.png]] [[File:GreatPerson.png]] [[File:Citizen.png]] [[File:War.png]]
+
+[[File:Moves.png]] [[File:Strength.png]] [[File:RangedStrength.png]] [[File:Capital.png]] [[File:CityState.png]] [[File:Influence.png]] [[File:Trade.png]] [[File:Razing.png]] [[File:Occupied.png]] [[File:Puppet.png]] [[File:Plus.png]] [[File:Minus.png]]
+
+
+===Civup: Interface===
+*The game now autosaves every 15 minutes. You can control this in the Interface tab of Game Options (ctrl+o).
+*City and national happiness now show on city view screens (by [http://steamcommunity.com/id/erfikes/myworkshopfiles/?appid=8930 NoSkill] and [http://forums.civfanatics.com/member.php?u=210828 whoward69]).
+*The top bar now shows faith "stored/needed", instead of "stored (turns remaining)".
+*The "declare war" button for citystates now indicates capturing a CS gives a reward equal to 40 turns of alliance.
+*Added new versions of the Detect icon (eye).
+*The Civup_Options file now contains options to disable speech for specific parts of the game:
+**Starting a game (default off).
+**Getting a wonder (default on).
+**Getting a tech (default on).
+
+===Civup: Mod Tools===
+*Added a "Pillage" flavor for units.
+
+===Misc===
+*
