@@ -69,6 +69,7 @@ Speech
 INSERT INTO Civup (Type, Value) VALUES ('PLAY_SPEECH_START'		, 0);
 INSERT INTO Civup (Type, Value) VALUES ('PLAY_SPEECH_WONDERS'	, 1);
 INSERT INTO Civup (Type, Value) VALUES ('PLAY_SPEECH_TECHS'		, 1);
+INSERT INTO Civup (Type, Value) VALUES ('PLAY_SPEECH_ERAS'		, 1);
 
 
 /*
