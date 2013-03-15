@@ -27,6 +27,6 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_UPGRADE_UNIT_MOVES', 'Movimientos: {1_Num}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_UPGRADE_UNIT_COMBAT', 'Fuerza: {1_Num}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_UPGRADE_UNIT_RANGED', 'Fuerza a distancia: {1_Num} a {2_Num}', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_UPGRADE_UNIT_UPGRADE_COST', '[ICON_GOLD] {1_Num} para modernizar.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_UPGRADE_UNIT_UPGRADE_COST', '{1_Num} [ICON_GOLD] para modernizar.', '', '');
 
 UPDATE LoadedFile SET Value=1 WHERE Type='Civup_UnitTrees.sql';
