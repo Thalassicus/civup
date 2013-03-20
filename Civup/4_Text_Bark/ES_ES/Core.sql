@@ -39,7 +39,10 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_ESPIONAGE', 'Espionaje', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_RELIGION', 'Religión', '', '');
 /*Caravanas del desierto */
-
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS', 'Caravanas del desierto.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_HELP', '+5% de oro [ICON_GOLD] en todas las ciudades por cada recurso de lujo.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY', 'Las Caravanas del Desierto incrementan el oro de todo el imperio por recursos de lujo.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA', 'Las rutas comerciales a través de Arabia eran caminos importantes para el intercambio cultural, comercial y tecnológico entre los comerciantes, mercaderes, peregrinos, misioneros, soldados, nómadas y habitantes urbanos de la antigua China, la antigua India, el antiguo Tíbet, el Imperio persa y los países mediterráneos desde hace casi 3.000 años.', '', '');
 /*  Tecnologías */
 
 /*  Unidades  */
