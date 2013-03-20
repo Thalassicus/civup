@@ -50,7 +50,19 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 /* Edificios */
 
 /*  Recursos */
-
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_NATIONAL', 'Felicidad nacional', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_NATIONAL_HELP', 'Felicidad para la nación.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_CITY', 'Felicidad de la ciudad', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_CITY_HELP', 'Felicidad limitada por población en esta ciudad.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_IMPORTED', '{1_num} Importado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_CITYSTATES', '{1_num} por [ICON_CITY_STATE]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_EXPORTED', '{1_num} Exportado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_USED', '{1_num} Usado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_SURPLUS', '{1_num} Superávit', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_MOVES', '{1_num}[ICON_MOVES]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_EXPERIENCE', '{1_num}/{2_num}[ICON_WAR]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_HEALTH', '[COLOR_NEGATIVE_TEXT]{1_num} {TXT_KEY_UPANEL_HEALTH}[ENDCOLOR]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_HEALTH_CITY', '{1_num} / {2_num} {TXT_KEY_UPANEL_HEALTH}', '', '');
 /*  Textos de daño */
 
 /* Varios */
