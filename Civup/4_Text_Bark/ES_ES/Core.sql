@@ -38,3 +38,16 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_SPACESHIP', 'Nave espacial', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_ESPIONAGE', 'Espionaje', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_RELIGION', 'Religión', '', '');
+/*Caravanas del desierto */
+
+/*  Tecnologías */
+
+/*  Unidades  */
+
+/* Edificios */
+
+/*  Recursos */
+
+/*  Textos de daño */
+
+/* Varios */
