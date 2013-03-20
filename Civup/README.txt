@@ -29,7 +29,7 @@ Thalassicus
     Marketing.
     Anything else not credited earlier.
 	
-mystikx21 – Extensive help with documenation wiki and project code updates.
+mystikx21 ï¿½ Extensive help with documenation wiki and project code updates.
 Seek - Assisted in keeping online website documentation up to date for years.
 rf900 - Helped learn how to do core mods.
 
@@ -44,7 +44,7 @@ Wonder Art:
 Adam Watkins - Enhancements to the terrain hover tooltip.
 Albie_123 - Icon artwork for Levy.
 Alpaca
-	DiploCorner Addin” system.
+	DiploCorner Addinï¿½ system.
 	Finite research for great scientist lightbulb mission.
 	Miscellaneous utilities. 
 Aristos - Combat odds panel bugfix.
@@ -78,6 +78,7 @@ Whoward69
 Whys - Utility to store data in savegame files.
 X-Worf - Map Pins German translation.
 yche2990 - Simplified Chinese translations. 
+Johnny Deacon, Liam_Xadow and Maverik - Spanish translations.
 
 Special thanks:
 	Ahriman

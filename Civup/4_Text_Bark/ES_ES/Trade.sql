@@ -1,1 +1,24 @@
---·
+--· ES_ES/Trade.sql
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_SORT_BY_TRAIT', 'Ordenar por trato.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_SORT_BY_CS_NAME', 'Ordenar por nombre de ciudad-estado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_SORT_BY_CS_ALLY', 'Ordenar por ciudad-estado aliada.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_SORT_BY_INFLUENCE', 'Ordenar por influencia.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT', 'Dobla los ingresos de los Acuerdos de Investigación [ICON_RESEARCH] con este líder. [NEWLINE] [NEWLINE] Una alianza promueve la diplomacia amigable y disuade a los agresores externos. Los aliados pueden solicitar asistencia diplomática o económica, y la falta de apoyo a su aliado puede molestarlos.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DIPLO_OPEN_BORDERS_TT', 'Con la [COLOR_YIELD_GOLD] apertura de fronteras mutua [/ COLOR], ambos jugadores pueden pasar por el territorio del otro. [NEWLINE] [NEWLINE] (Dura {1_Num } turnos.)', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DIPLO_RESCH_AGREEMENT_TT', 'Costo [ICON_GOLD]: {1_cost } [NEWLINE] [NEWLINE] 4% de la investigación conjunta de ambos jugadores se suma a la Ciencia [ICON_RESEARCH] al final del acuerdo (8% si son aliados) [NEWLINE] [NEWLINE] (Dura {2_turns } turnos.)', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DO_REFRESH', 'Actualizar.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DEAL_STATUS', 'Comerciar.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DEAL_RESOURCE', '{1_iconstring} {2_resource}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DEAL_FROM', '{1_iconstring} Comprar {2_resource}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DEAL_TO', '{1_iconstring} Vender {2_resource}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_RESOURCE_DEMANDED_BY', 'Demandado por', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_POSSIBLE_DEALS', '{1_iconstring} [COLOR_POSITIVE_TEXT]{2_num}[ENDCOLOR] possible {3_type}.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DO_CIV_STATUS', '{1_status}[NEWLINE]{1_era}[NEWLINE]{2_Num} Score', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_RATE', 'Tasa', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_CLICK_TO_TRADE', 'Clic para comerciar[COLOR_POSITIVE_TEXT][ENDCOLOR]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_LASTS_TURNS', 'Dura {1_num} turnos.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_EMBASSIES', 'embajadas.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_BORDER_DEALS', 'acuerdos fronterizos.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_RESEARCH_DEALS', 'acuerdos de investigación.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_DEFENSE_PACTS', 'pactos defensivos.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_ALLIANCES', 'alianzas.', '', '');
