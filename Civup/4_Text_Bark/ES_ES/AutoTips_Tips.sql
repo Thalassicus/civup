@@ -70,5 +70,33 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_BUILDING_EFFECT_ALREADY_BUILT', 'Ya está construído [ICON_LOCKED]', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_BUILDING_EFFECT_REPLACES', 'Reemplaza [ICON_PLUS]: {3_value}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_BUILDING_EFFECT_INSTANT_BORDER_PLOTS', 'Expansion de fronteras [ICON_CULTURE]: {3_value}', '', '');
-/* Expansion */
+/* Expansión */
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_FOUNDS_RELIGION', 'Religiones Fundadas [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_IS_RELIGIOUS', 'Es religiosa [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_PLAYER_BORDER_OBSTACLE', 'Obstaculos fronterizos del jugador [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_NUKE_IMMUNE', 'Inmune a ataques nucleares [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_AFFECT_SPIES_NOW', 'Ahora afecta a los espías [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_UNLOCKED_BY_BELIEF', 'Desbloqueado por creencia [ICON_LOCKED]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_MIN_AREA_SIZE', 'Tamaño mínimo del mar [ICON_LOCKED]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_CITIES_PREREQ', 'Requiere ciudades [ICON_LOCKED]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_LEVEL_PREREQ', 'Requiere nivel [ICON_LOCKED]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_AIRLIFT', 'Puente aéreo [ICON_BULLET]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_NUKE_EXPLOSION_RAND', 'Puede ocasionar explosión nuclear [ICON_BULLET]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_ALLOWS_RANGE_STRIKE', 'Permite ataque de ciudades [ICON_BULLET]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_ESPIONAGE', 'Espionaje [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_EXTRA_CITY_HIT_POINTS', 'Curación de la ciudad [ICON_BULLET]: {2_sign}{3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_EXTRA_MISSIONARY_SPREADS', 'Extra difusión de misioneros [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_ESPIONAGE_MODIFIER', 'Espías enemigos [ICON_BULLET]: {2_sign}{3_value}% en esta ciudad', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_GLOBAL_ESPIONAGE_MODIFIER', 'Espías enemigos [ICON_BULLET]: {2_sign}{3_value}% en todas las ciudades', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_EXTRA_SPIES', 'Extra espionaje [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_SPY_RANK_CHANGE', 'Rango de espía [ICON_BULLET] Spy Rank: {2_sign}{3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_INSTANT_SPY_RANK_CHANGE', 'Rango inmediato de espía [ICON_BULLET]: {2_sign}{3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_REPLACEMENT_BUILDING_CLASS', 'Reemplaza edificio [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_SPECIALIST_EXTRA_CULTURE', 'Extra cultura de especialista [ICON_BULLET]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_RELIGIOUS_PRESSURE_MODIFIER', 'Presión religiosa [ICON_PEACE]: {2_sign}{3_value}%', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_HOLY_CITY', 'Requiere [ICON_LOCKED]: Ciudad Santa', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_EFFECT_FREE_RESOURCES', '{1_prefix} Gratis {4_extra}: {3_value}', '', '');
+
+
+UPDATE LoadedFile SET Value=1 WHERE Type='Civup_AutoTips_Tips.sql';
 
