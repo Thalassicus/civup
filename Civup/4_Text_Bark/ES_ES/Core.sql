@@ -39,30 +39,31 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_ESPIONAGE', 'Espionaje', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_RELIGION', 'Religión', '', '');
 /*Caravanas del desierto */
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS', 'Caravanas del desierto.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_HELP', '+5% de oro [ICON_GOLD] en todas las ciudades por cada recurso de lujo.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY', 'Las Caravanas del Desierto incrementan el oro de todo el imperio por recursos de lujo.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA', 'Las rutas comerciales a través de Arabia eran caminos importantes para el intercambio cultural, comercial y tecnológico entre los comerciantes, mercaderes, peregrinos, misioneros, soldados, nómadas y habitantes urbanos de la antigua China, la antigua India, el antiguo Tíbet, el Imperio persa y los países mediterráneos desde hace casi 3.000 años.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_DESERT_CARAVANS', 'Caravanas del desierto.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_HELP', '+5% de oro [ICON_GOLD] en todas las ciudades por cada recurso de lujo.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY', 'Las Caravanas del Desierto incrementan el oro de todo el imperio por recursos de lujo.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA', 'Las rutas comerciales a través de Arabia eran caminos importantes para el intercambio cultural, comercial y tecnológico entre los comerciantes, mercaderes, peregrinos, misioneros, soldados, nómadas y habitantes urbanos de la antigua China, la antigua India, el antiguo Tíbet, el Imperio persa y los países mediterráneos desde hace casi 3.000 años.', '', '');
 /*  Tecnologías */
-
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_TECH_RIFLING_TITLE', 'Pólvora sin humo.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_TECH_RIFLING_DESC', 'La invención de la pólvora sin humo revolucionó las armas y las tácticas militares. Las antiguas formas de pólvora (llamada polvo negro) producían grandes cantidades de hollín sólido. Este humo ensuciaba los barriles, impidiendo un disparo preciso e hizo difícil a los comandantes dar órdenes a través de la bruma en el campo de batalla. El polvo sin humo literalmente allanó el camino para las tácticas centradas en la precisión de las armas de fuego de recamaras, y armas de fuego de carga automática con muchas partes móviles.', '', '');
 /*  Unidades  */
 
 /* Edificios */
 
 /*  Recursos */
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_NATIONAL', 'Felicidad nacional', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_NATIONAL_HELP', 'Felicidad para la nación.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_CITY', 'Felicidad de la ciudad', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HAPPINESS_CITY_HELP', 'Felicidad limitada por población en esta ciudad.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_IMPORTED', '{1_num} Importado', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_CITYSTATES', '{1_num} por [ICON_CITY_STATE]', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_EXPORTED', '{1_num} Exportado', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_USED', '{1_num} Usado', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_RES_SURPLUS', '{1_num} Superávit', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_MOVES', '{1_num}[ICON_MOVES]', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_EXPERIENCE', '{1_num}/{2_num}[ICON_WAR]', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_HEALTH', '[COLOR_NEGATIVE_TEXT]{1_num} {TXT_KEY_UPANEL_HEALTH}[ENDCOLOR]', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('41353'), 'TXT_KEY_HOVERINFO_HEALTH_CITY', '{1_num} / {2_num} {TXT_KEY_UPANEL_HEALTH}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HAPPINESS_NATIONAL', 'Felicidad nacional', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HAPPINESS_NATIONAL_HELP', 'Felicidad para la nación.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HAPPINESS_CITY', 'Felicidad de la ciudad', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HAPPINESS_CITY_HELP', 'Felicidad limitada por población en esta ciudad.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_RES_IMPORTED', '{1_num} Importado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_RES_CITYSTATES', '{1_num} por [ICON_CITY_STATE]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_RES_EXPORTED', '{1_num} Exportado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_RES_USED', '{1_num} Usado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_RES_SURPLUS', '{1_num} Superávit', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HOVERINFO_MOVES', '{1_num}[ICON_MOVES]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HOVERINFO_EXPERIENCE', '{1_num}/{2_num}[ICON_WAR]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HOVERINFO_HEALTH', '[COLOR_NEGATIVE_TEXT]{1_num} {TXT_KEY_UPANEL_HEALTH}[ENDCOLOR]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_HOVERINFO_HEALTH_CITY', '{1_num} / {2_num} {TXT_KEY_UPANEL_HEALTH}', '', '');
 /*  Textos de daño */
 
 /* Varios */
