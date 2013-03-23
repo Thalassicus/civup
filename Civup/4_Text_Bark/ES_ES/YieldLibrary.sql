@@ -1,4 +1,4 @@
-/*  Yield Breakdown Tooltip */
+/*  Info emergente sobre distibución de rendimientos */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_CULTURE_WONDER_BONUS', '+{1_Num}% por tener una maravilla del mundo.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_CULTURE_CITY_MOD', '+{1_Num}% por una ciudad.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_CULTURE_PLAYER_MOD', '+{1_Num}% por el imperio.', '', '');
@@ -42,7 +42,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_PRODMOD_YIELD_PLAYER', '[NEWLINE][ICON_BULLET]{1_Num}% por miscelánea.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_PRODMOD_YIELD_CAPITAL', '[NEWLINE][ICON_BULLET]{1_Num}% por Capital [ICON_CAPITAL]', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_PRODMOD_YIELD_GOLDEN_AGE', '[NEWLINE][ICON_BULLET]{1_Num}% por edad de oro.', '', '');
-/*  Misc */
+/*  Misceláneos */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_YIELD_BREAKDOWN', '[{1_color}]{2_stored}[ENDCOLOR]/[{1_color}]{3_needed}[ENDCOLOR] ([{1_color}]+{4_rate}[ENDCOLOR] por turno) {5_icon} {6_desc}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TOPIC_LAW', 'Ley', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TOPIC_POPULATION', 'Ciudadano', '', '');
