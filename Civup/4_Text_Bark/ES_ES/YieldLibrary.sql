@@ -54,8 +54,8 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_SCIENCE_FROM_UNHAPPINESS', '[ICON_BULLET][COLOR_POSITIVE_TEXT]-{1_Num}%[ENDCOLOR] [ICON_RESEARCH] por {1_Num} infelicidad [ICON_HAPPINESS_4]', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_GOLD_FOR_FREE', '{1_Num} gratis.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_GOLD_FROM_OPEN_BORDERS', '{1_Num} por acuerdo de apertura mutua de fronteras con otros lideres.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_HAPPINESS_CITYSTATES', '{1_Num} felicidad nacional por ciudades-estado.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_HAPPINESS_DIFFICULTY_LEVEL', '{1_Num} felicidad nacional gratuita.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_HAPPINESS_CITYSTATES', '{1_Num} de Felicidad Nacional por ciudades-estado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_HAPPINESS_DIFFICULTY_LEVEL', '{1_Num} de Felicidad Nacional gratuita.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_SCIENCE_FROM_RESEARCH_AGREEMENTS', '[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_RESEARCH] por acuerdos de investigacion.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_YIELD_FROM_LUXURIES', '{1_Num} por recursos de lujo.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_GOLD_FROM_POLICIES', '{1_Num} por políticas', '', '');
@@ -91,6 +91,6 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_YIELD_FROM_HAPPINESS', '[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por exceso de felicidad [ICON_HAPPINESS_1]', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_YIELD_FROM_RESEARCH_AGREEMENTS', '[ICON_BULLET][COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] {2_icon} por acuerdos de investigación por otros jugadores.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_TP_SCIENCE', 'Ciencia [ICON_RESEARCH] que se produce en todo el imperio para el proyecto de investigación en curso.', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_NEXT_POLICY_TURN_LABEL', '{1_Num: number #} Turno/s to para la siguiente política', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_NEXT_POLICY_TURN_LABEL', '{1_Num: number #} Turno/s para la siguiente política', '', '');
 
 UPDATE LoadedFile SET Value=1 WHERE Type='Civup_YieldLibrary.sql';
