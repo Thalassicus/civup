@@ -1,7 +1,7 @@
 /*  Árbol de ascensos */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK', 'Árbol de ascensos', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK_TT', 'Muestra el árbol de promociones para ver fácilmente que los ascensos que están disponibles para cada clase de combate (reconocimiento, naval, cuerpo a cuerpo, asedio, etc)', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_OPEN_TREE_FOR_UNIT_TT', 'Muestra el árbol de promociones de ver fácilmente con que ascensos cuenta esta unidad y cuales están disponibles.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK_TT', 'Muestra el árbol de ascensos para ver fácilmente que los ascensos que están disponibles para cada clase de combate (reconocimiento, naval, cuerpo a cuerpo, asedio, etc)', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_OPEN_TREE_FOR_UNIT_TT', 'Muestra el árbol de ascensos de ver fácilmente con que ascensos cuenta esta unidad y cuales están disponibles.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_SIZE', 'Pequeño.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_EARNT', 'Ganado.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_EARNT_TT', 'Ascensos ya obtenidos por la unidad (se omiten los de habilidades especiales y maravillas)', '', '');
