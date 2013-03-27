@@ -53,7 +53,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 /* Otros */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_SPECIALIST_TYPE', '{1_prefix}: {3_value}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_SPECIALIST_POINTS', '{1_prefix}: {3_value}', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_GREAT_PERSON_POINTS', '{1_prefix} Grandes {4_extra} Puntos: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_GREAT_PERSON_POINTS', '{1_prefix} Puntos de Gran {4_extra}: {3_value}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_GREAT_PEOPLE_RATE_MODIFIER', 'Tasa de Grandes Personajes [ICON_GREAT_PEOPLE]: {3_value}%', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_GLOBAL_GREAT_PEOPLE_RATE_MODIFIER', 'Tasa de Grandes Personajes [ICON_GREAT_PEOPLE]: {3_value}% en todas las ciudades', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_UNMODDED_HAPPINESS', 'Felicidad nacional [ICON_HAPPINESS_1]: {3_value}', '', '');
@@ -125,7 +125,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_OBSOLETE_TECH', 'Obsoleto [ICON_PIRATE]: {3_value}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_NATIONAL_LIMIT', 'Limite Nacional [ICON_LOCKED]: {3_value}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_TEAM_LIMIT', 'Limite de Equipos [ICON_LOCKED]: {3_value}', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_WORLD_LIMIT', 'limite Mundial [ICON_LOCKED]: {3_value}', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_BUILDING_EFFECT_WORLD_LIMIT', 'Limite Mundial [ICON_LOCKED]: {3_value}', '', '');
 /* Agregado por Civup */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_BUILDING_EFFECT_NOT_FEATURE', 'No mejora [ICON_MINUS] {3_value}', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-19'), 'TXT_KEY_BUILDING_EFFECT_HEAL_RATE_CHANGE', 'Tasa de curación [ICON_PLUS]: {3_value}', '', '');
