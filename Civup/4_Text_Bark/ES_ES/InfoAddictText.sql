@@ -51,7 +51,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_LANDAREA', 'Área del Terreno', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_MILITARYMANPOWER', 'Fuerzas Militares', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_APPROVAL', 'Aprobación', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_LITERACY', 'Alfabetismo', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_INFOADDICT_RANKTITLE_LITERACY', 'Alfabetización', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_SOCIALSTANDING', 'Posición Social', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_HAPPINESS', 'Felicidad', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RANKTITLE_TECHNOLOGIES', 'Tecnologías', '', '');
@@ -95,7 +95,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_INDUSTRIALOUTPUT', 'Producción Industrial (millones of toneladas)', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_APPROVALRATE', 'Tasa de aprobación del Jefe de Estado', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_NETHAPPY', 'Felicidad Neta', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_LITERACY', 'Índice de alfabetismo', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_INFOADDICT_EMPIREATTR_LITERACY', 'Índice de alfabetización', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_TECHDISCOVERED', 'Tecnologías Descubiertas', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_POLICIES', 'Políticas Sociales promulgadas', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_EMPIREATTR_NUMCITIES', 'Número de Ciudades', '', '');
@@ -120,7 +120,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_GPT', 'Oro por turno', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_RESOURCE', 'Recurso', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_HOSTILE', 'Hostil', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_GUARDED', 'Custodiado', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_INFOADDICT_RELATIONKEY_GUARDED', 'Cauteloso', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_AFRAID', 'Temeroso', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_FRIENDLY', 'Amistoso', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONKEY_NEUTRAL', 'Neutral', '', '');
@@ -134,8 +134,8 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_IMPORTS', 'Importaciones', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_RESEARCH_AGREEMENTS', 'Acuerdos de Investigación', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_HOSTILE', 'Hostil hacia', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_GUARDED', 'Custodia a ', '', '');
-INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_AFRAID', 'Temeroso de', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_GUARDED', 'Cauteloso de', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_AFRAID', 'Temeroso de', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_FRIENDLY', 'Amistoso con', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_INFOADDICT_RELATIONTOOLTIP_NEUTRAL', 'Neutral hacia', '', '');
 / * Texto en la pantalla de opciones * /
