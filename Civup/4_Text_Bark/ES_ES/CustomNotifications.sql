@@ -1,3 +1,4 @@
+--· ES_ES/CustomNotifications.sql
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_POPUP_PLOT', 'Clic en este mensaje para abrir una ventana emergente. Clic-central para centrarse en la casilla. Clic-derecho para descartarla.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_POPUP_MISC', 'Clic en este mensaje para abrir una ventana emergente. Clic-derecho para descartarla.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CENTER_CITY', 'Clic en este mensaje para centrar la pantalla en la ciudad. Clic-central para abrir la vista de la ciudad. Clic-derecho para descartarla.', '', '');

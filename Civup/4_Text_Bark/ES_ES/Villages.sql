@@ -1,3 +1,4 @@
+--· ES_ES/Villages.sql
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_IMPROVEMENT_TRADING_POST', 'Pueblo', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT', 'Un pueblo es una agrupación de personas en un asentamiento o una comunidad, con una población que van desde unos pocos cientos a unos pocos miles. Estos pequeños asentamientos también agregan a la economía de la sociedad.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_CIV5_IMPROVEMENTS_TRADINGPOST', 'Pueblo', '', '');

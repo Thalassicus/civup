@@ -1,3 +1,4 @@
+--· ES_ES/UnitTrees.sql
 /*  Árbol de ascensos */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK', 'Árbol de ascensos', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-15'), 'TXT_KEY_PROMO_DIPLO_CORNER_HOOK_TT', 'Muestra el árbol de ascensos para ver fácilmente que los ascensos que están disponibles para cada clase de combate (reconocimiento, naval, cuerpo a cuerpo, asedio, etc)', '', '');

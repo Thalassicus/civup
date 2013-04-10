@@ -1,3 +1,4 @@
+--· ES_ES/Core.sql
 /* Sabores */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_FLAVOR_MILITARY_TRAINING', 'Entrenamiento militar', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-20'), 'TXT_KEY_FLAVOR_OFFENSE', 'Ataque', '', '');
@@ -190,6 +191,7 @@ INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VA
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-08'), 'TXT_KEY_MISC_YOU_UNIT_WITHDRAW_CITY', '¡Tu {@1_UnitName} ([COLOR_NEGATIVE_TEXT]{2_Num} daño[ENDCOLOR]) atacó la ciudad enemiga de {@3_CityName} ([COLOR_POSITIVE_TEXT]{4_Num} daño[ENDCOLOR])!', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-08'), 'TXT_KEY_MISC_YOUR_CITY_ATTACKED_BY_AIR', '¡La ciudad de {@1_CityName} ([COLOR_NEGATIVE_TEXT]{3_Num} daño[ENDCOLOR]) fue bombardeada por un {@2_EnUName} enemigo!', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-08'), 'TXT_KEY_MISC_YOUR_CITY_RANGE_ATTACK', '¡{@1_Name} bombardeó un {@2_EnUName} enemigo! ([COLOR_POSITIVE_TEXT]{3_Damage} daño[ENDCOLOR])', '', '');
+
 /* Varios */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_CIV5_SPECIALTERRAIN_SEA', 'Mar', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-24'), 'TXT_KEY_CIV5_SPECIALTERRAIN_SEA_TEXT', 'Mar', '', '');

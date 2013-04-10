@@ -1,3 +1,4 @@
+--· ES_ES/Trade.sql
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_SORT_BY_TRAIT', 'Ordenar por trato', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_SORT_BY_CS_NAME', 'Ordenar por nombre de ciudad-estado', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-04-07'), 'TXT_KEY_SORT_BY_CS_ALLY', 'Ordenar por ciudad-estado aliada', '', '');

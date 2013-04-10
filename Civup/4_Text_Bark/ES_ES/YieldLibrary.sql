@@ -1,3 +1,4 @@
+--· ES_ES/YieldLibrary.sql
 /*  Info emergente sobre distibución de rendimientos */
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_CULTURE_WONDER_BONUS', '+{1_Num}% por tener una maravilla del mundo.', '', '');
 INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-23'), 'TXT_KEY_CULTURE_CITY_MOD', '+{1_Num}% por una ciudad.', '', '');
