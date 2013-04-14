@@ -1,1 +1,66 @@
---·
+--· ES_ES/CustomNotifications.sql
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_POPUP_PLOT', 'Clic en este mensaje para abrir una ventana emergente. Clic-central para centrarse en la casilla. Clic-derecho para descartarla.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_POPUP_MISC', 'Clic en este mensaje para abrir una ventana emergente. Clic-derecho para descartarla.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CENTER_CITY', 'Clic en este mensaje para centrar la pantalla en la ciudad. Clic-central para abrir la vista de la ciudad. Clic-derecho para descartarla.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CENTER_PLOT', 'Clic en este mensaje para centrar la pantalla en la casilla. Clic-derecho para descartarla.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CENTER_MISC', 'Clic-derecho para descartarla.', '', '');
+/*   Improved Events  */
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CITY_GROWTH_2', '¡La ciudad de {1_CityName} ahora tiene {2_Pop} ciudadanos! [ICON_CITIZEN] Los nuevos ciudadanos trabajaran automática la tierra de cerca de la ciudad por alimento, [ICON_FOOD] producción, [ICON_PRODUCTION] u oro [ICON_GOLD]', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_SUMMARY_CITY_GROWTH_2', '¡{1_CityName} ha crecido!', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CITY_TILE', '¡La ciudad de {1_CityName} ha conseguido nuevas casillas para trabajar en ellas [ICON_CITIZEN]!', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_SUMMARY_CITY_TILE', '¡{1_CityName} a adquirido una nueva casilla!', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_SUMMARY_EMPIRE_TILE', '¡Nueva casilla adquirida!', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_EMPIRE_TILE', 'Una nueva casilla a sido adquirida por tu imperio. Sin embargo no es tierra trabajable para tus ciudadanos', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_CNOTIFICATION_CITY_GROWTH', 'Eventos mejorados – Crecimiento de la ciudad', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_CNOTIFICATION_CITY_GROWTH_OPTION', 'Crecimiento [ICON_FOOD] de la ciudad', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_CNOTIFICATION_CULTURE_GROWTH', 'Eventos mejorados – Difusión de la cultura', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_CNOTIFICATION_CULTURE_GROWTH_OPTION', 'Difusión de la cultura [ICON_CULTURE]', '', '');
+/*   Notification Options  */
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_DISMISS_NOTIFICATION_OPTION', 'DESESTIMAR LA NOTIFICACION', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DENUNCIATION_EXPIRED_OPTION', '[ICON_INFLUENCE] La denuncia a caducado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_FRIENDSHIP_EXPIRED_OPTION', '[ICON_INFLUENCE] Declaración de amistad expirada.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_MINOR_QUEST_OPTION', '[ICON_CITY_STATE] Misión de ciudad-estado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_MINOR_OPTION', '[ICON_CITY_STATE] Ciudad-estado genérica', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_WAR_OPTION', '[ICON_WAR] Guerra declarada – Otros', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_WAR_ACTIVE_PLAYER_OPTION', '[ICON_WAR] Guerra declarada – Tu', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CAPITAL_LOST_ACTIVE_PLAYER_OPTION', '[ICON_RAZING] Capital perdida – Tu', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_MET_MINOR_OPTION', '[ICON_CITY_STATE] Ciudad-estado encontrada.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_STARVING_OPTION', '[ICON_HAPPINESS_3] Ciudad hambrienta.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_ENEMY_IN_TERRITORY_OPTION', '[ICON_WAR] Enemigo en el territorio.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_GOODY_OPTION', '[ICON_FLOWER] Ruinas descubiertas.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PROJECT_COMPLETED_OPTION', '[ICON_PRODUCTION] Proyecto completado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_GOLDEN_AGE_ENDED_ACTIVE_PLAYER_OPTION', '[ICON_GOLDEN_AGE] Termino la edad de oro.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEAL_EXPIRED_TRADE_AGREEMENT_OPTION', '[ICON_GOLD] Negocio finalizado – Tratado de libre comercio.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEAL_EXPIRED_RESEARCH_AGREEMENT_OPTION', '[ICON_GOLD] Negocio finalizado – Acuerdo de investigación', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEAL_EXPIRED_DEFENSIVE_PACT_OPTION', '[ICON_GOLD] Negocio finalizado – Pacto defensivo.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_BARBARIAN_OPTION', '[ICON_PIRATE] Campamento bárbaro', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEAL_EXPIRED_OPEN_BORDERS_OPTION', '[ICON_GOLD] Negocio finalizado – Apertura de fronteras.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_VICTORY_OPTION', '[ICON_TEAM_1] Victoria de la partida.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER_OPTION', '[ICON_GOLDEN_AGE] Nacimiento de un gran personaje.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_TECH_AWARD_OPTION', '[ICON_RESEARCH] Tecnología descubierta.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DIPLOMACY_DECLARATION_OPTION', '[ICON_INFLUENCE] Declaración diplomática', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_UNIT_DIED_OPTION', '[ICON_WAR] Unidad eliminada.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PLAYER_DEAL_OPTION', '[ICON_GOLD] Oferta del jugador.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PLAYER_DEAL_RECEIVED_OPTION', '[ICON_GOLD] Oferta del jugador – Recibida', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PLAYER_DEAL_RESOLVED_OPTION', '[ICON_GOLD] Oferta del jugador – Resuelta', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_WONDER_BEATEN_OPTION', '[ICON_PRODUCTION] Maravilla terminada – Perdida.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CITY_RANGE_ATTACK_OPTION', '[ICON_RANGE_STRENGTH] Una ciudad puede atacar.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_WONDER_COMPLETED_ACTIVE_PLAYER_OPTION', '[ICON_PRODUCTION] Maravilla terminada – Tu', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CITY_GROWTH_OPTION', '[ICON_CITIZEN] Crecimiento de la ciudad (a 5 de Población)', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEAL_EXPIRED_RESOURCE_OPTION', '[ICON_GOLD] Oferta caducada – Recursos', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CITY_LOST_OPTION', '[ICON_RAZING] Ciudad perdida.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CAPITAL_LOST_OPTION', '[ICON_RAZING] Ciudad perdida – Otros.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_CAPITAL_RECOVERED_OPTION', '[ICON_CAPITAL] Capital retomada.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DISCOVERED_STRATEGIC_RESOURCE_OPTION', '[ICON_RES_IRON] Recurso estratégico encontrado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DISCOVERED_LUXURY_RESOURCE_OPTION', '[ICON_RES_GEMS] Recurso de lujo encontrado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEMAND_RESOURCE_OPTION', '[ICON_RES_GEMS] Demanda de recurso para el Día de amamos al rey.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PLAYER_KILLED_OPTION', '[ICON_RAZING] Jugador eliminado.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PEACE_OPTION', '[ICON_PEACE] Tratado de paz – Otros.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_PEACE_ACTIVE_PLAYER_OPTION', 'Tratado de paz [ICON_PEACE]  – Tu.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_REBELS_OPTION', 'Rebelión [ICON_RESISTANCE] ', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_OPTION', 'Oferta caducada – Oro [ICON_GOLD] por turno.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_WONDER_COMPLETED_OPTION', '[ICON_PRODUCTION] Maravilla completada – Otros.', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER_OPTION', 'Comienza la edad de oro [ICON_GOLDEN_AGE] ', '', '');
+INSERT INTO Civup_Language_ES_ES (DateModified, Tag, Text, Gender, Plurality) VALUES (date('2013-03-21'), 'TXT_KEY_NOTIFICATION_EXPLORATION_RACE_OPTION', '[ICON_FLOWER] Maravilla natural descubierta,', '', '');
+
+UPDATE LoadedFile SET Value=1 WHERE Type='Civup_CustomNotifications.sql';
