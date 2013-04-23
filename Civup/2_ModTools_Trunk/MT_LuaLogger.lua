@@ -27,8 +27,7 @@ local LEVEL = {
 }
 
 Events.LuaLogger = Events.LuaLogger or {}
-Events.LuaLogger.New = Events.LuaLogger.New or function(self, ...)
-	local arg = {...}
+Events.LuaLogger.New = Events.LuaLogger.New or function(self)
 	local logger = {}
 	setmetatable(logger, self)
 	self.__index = self
@@ -40,6 +39,7 @@ Events.LuaLogger.New = Events.LuaLogger.New or function(self, ...)
 	end
 
 	logger.Message = function (self, level, ...)
+		local arg = {...}
 		if LEVEL[level] < LEVEL[self.level] then
 			return false
 		end
