@@ -508,10 +508,10 @@ function serialize( p )
         else r = p;
         end
       end
-      r = r:gsub( "{", "\[LCB\]" );
-      r = r:gsub( "}", "\[RCB\]" );
-      r = r:gsub( "=", "\[EQL\]" );
-      r = r:gsub( ",", "\[COM\]" );
+      r = r:gsub( "{", "%[LCB%]" );
+      r = r:gsub( "}", "%[RCB%]" );
+      r = r:gsub( "=", "%[EQL%]" );
+      r = r:gsub( ",", "%[COM%]" );
     else
       r = "{"; local b = false;
       for k,v in pairs( p ) do
