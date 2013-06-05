@@ -39,6 +39,7 @@ Events.LuaLogger.New = Events.LuaLogger.New or function(self)
 	end
 
 	logger.Message = function (self, level, ...)
+		local arg = {...}
 		if LEVEL[level] < LEVEL[self.level] then
 			return false
 		end
@@ -52,7 +53,7 @@ Events.LuaLogger.New = Events.LuaLogger.New or function(self)
 		else
 			arg[1] = tostring(arg[1])
 		end
-		local message = string.format(unpack(arg))
+		local message = string.format(...)
 		if level == LOG_FATAL then
 			message = string.format("Turn %-3s %s", Game.GetGameTurn(), message)
 			print(level .. string.rep(" ", 7-level:len()) .. message)
@@ -66,11 +67,11 @@ Events.LuaLogger.New = Events.LuaLogger.New or function(self)
 		return true
 	end
 
-	logger.Trace = function (logger, ...) return logger:Message(LOG_TRACE, unpack(arg)) end
-	logger.Debug = function (logger, ...) return logger:Message(LOG_DEBUG, unpack(arg)) end
-	logger.Info  = function (logger, ...) return logger:Message(LOG_INFO,  unpack(arg)) end
-	logger.Warn  = function (logger, ...) return logger:Message(LOG_WARN,  unpack(arg)) end
-	logger.Error = function (logger, ...) return logger:Message(LOG_ERROR, unpack(arg)) end
-	logger.Fatal = function (logger, ...) return logger:Message(LOG_FATAL, unpack(arg)) end
+	logger.Trace = function (logger, ...) return logger:Message(LOG_TRACE, ...) end
+	logger.Debug = function (logger, ...) return logger:Message(LOG_DEBUG, ...) end
+	logger.Info  = function (logger, ...) return logger:Message(LOG_INFO,  ...) end
+	logger.Warn  = function (logger, ...) return logger:Message(LOG_WARN,  ...) end
+	logger.Error = function (logger, ...) return logger:Message(LOG_ERROR, ...) end
+	logger.Fatal = function (logger, ...) return logger:Message(LOG_FATAL, ...) end
 	return logger
 end
